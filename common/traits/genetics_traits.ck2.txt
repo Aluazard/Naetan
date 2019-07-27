@@ -218,9 +218,6 @@ tiny_dick = { # Tiny dick ~2-3 inches
 		enormous_dick
         gigantic_dick
 	}
-    is_visible = {
-        sast_knows_about_my_dick_size = yes
-    }
 	learning = 1 # Drawn to books as a means of escape
 	fertility = -0.25 # Has a hard time getting deep enough to plant any seed
 	ai_zeal = 10 # Commonly supporters of their faith
@@ -238,9 +235,6 @@ small_dick = { # Small dick ~4-5 inches
 		enormous_dick
         gigantic_dick
 	}
-    is_visible = {
-        sast_knows_about_my_dick_size = yes
-    }
 	martial = 1 # Constantly getting into contests of strength and wit as a means of compensating
 	fertility = -0.10 # Has a hard time getting deep enough to plant any seed
 	ai_ambition = 20 # Napoleon complex
@@ -258,9 +252,6 @@ regular_dick = { # Average dick ~ 6-7 inches
 		enormous_dick
         gigantic_dick
 	}
-    is_visible = {
-        sast_knows_about_my_dick_size = yes
-    }
 	diplomacy = 1 # Thinks this whole penis size things is overrated, since it's how you use it
 	ai_rationality = 10 # Prone to being more logical
 }
@@ -277,9 +268,6 @@ big_dick = { # Large dick ~ 7-8 inches
 		enormous_dick
         gigantic_dick
 	}
-    is_visible = {
-        sast_knows_about_my_dick_size = yes
-    }
 	intrigue = 1 # People are curious if it's really as big as they say
 	fertility = 0.10 # Deeper seed deposits
 	ai_zeal = -5 # Generally inviting of those who'd like to see their dick
@@ -297,9 +285,6 @@ huge_dick = { # Huge dick ~ 9-10 inches
 		enormous_dick
         gigantic_dick
 	}
-    is_visible = {
-        sast_knows_about_my_dick_size = yes
-    }
 	intrigue = 1 # People are curious if it's really as big as they say
 	learning = -1 # Not enough blood to split between two heads
 	fertility = 0.15 # Deeper seed deposits
@@ -319,9 +304,6 @@ enormous_dick = { # Enormous dick ~ 11-12 inches
 		huge_dick
         gigantic_dick
 	}
-    is_visible = {
-        sast_knows_about_my_dick_size = yes
-    }
 	intrigue = 2 # Certainly the rumors exhaggerate, right?
 	learning = -2 # Not enough blood to split between two heads
 	fertility = 0.25 # Deeper seed deposits and a lot of it too
@@ -342,9 +324,6 @@ gigantic_dick = { # larger than 12 inches
 		huge_dick
 		enormous_dick
 	}
-    is_visible = {
-        sast_knows_about_my_dick_size = yes
-    }
     intrigue = 2 # Certainly the rumors exhaggerate, right?
 	learning = -2 # Not enough blood to split between two heads
 	fertility = 0.30 # Deeper seed deposits and a lot of it too
