@@ -1,0 +1,5 @@
+	title = c_kakimur
+	max_settlements = 2
+	culture = dutch
+	religion = qarmatian
+	b_weulas = tribal

@@ -1,0 +1,5 @@
+	title = c_nuhalka
+	max_settlements = 5
+	culture = marathi
+	religion = hindu
+	b_sinyut = tribal

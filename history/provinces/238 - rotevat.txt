@@ -1,0 +1,5 @@
+	title = c_rotevat
+	max_settlements = 7
+	culture = old_frankish
+	religion = finnish_pagan
+	b_lemyut = tribal

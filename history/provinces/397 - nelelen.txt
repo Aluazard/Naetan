@@ -1,0 +1,5 @@
+	title = c_nelelen
+	max_settlements = 4
+	culture = nahuatl
+	religion = orthodox
+	b_lelegen = tribal

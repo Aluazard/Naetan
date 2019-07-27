@@ -1,0 +1,5 @@
+	title = c_butarkad
+	max_settlements = 4
+	culture = egyptian_arabic
+	religion = zoroastrian
+	b_ryadupa = tribal

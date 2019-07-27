@@ -1,0 +1,5 @@
+	title = c_tansur
+	max_settlements = 4
+	culture = catalan
+	religion = finnish_pagan_reformed
+	b_riviram = tribal

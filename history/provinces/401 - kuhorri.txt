@@ -1,0 +1,5 @@
+	title = c_kuhorri
+	max_settlements = 2
+	culture = songhay
+	religion = jewish
+	b_wosii = tribal

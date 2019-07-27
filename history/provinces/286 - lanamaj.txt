@@ -1,0 +1,5 @@
+	title = c_lanamaj
+	max_settlements = 2
+	culture = suebi
+	religion = samaritan
+	b_nence = tribal

@@ -1,0 +1,5 @@
+	title = c_binir
+	max_settlements = 3
+	culture = occitan
+	religion = mazdaki
+	b_neish = tribal

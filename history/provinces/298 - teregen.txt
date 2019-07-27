@@ -1,0 +1,5 @@
+	title = c_teregen
+	max_settlements = 2
+	culture = arberian
+	religion = qarmatian
+	b_dawegen = tribal

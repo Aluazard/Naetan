@@ -1,0 +1,5 @@
+	title = c_kolarak
+	max_settlements = 7
+	culture = scottish
+	religion = interface_skin
+	b_bubict = tribal

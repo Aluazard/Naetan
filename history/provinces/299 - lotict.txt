@@ -1,0 +1,5 @@
+	title = c_lotict
+	max_settlements = 3
+	culture = catalan
+	religion = bogomilist
+	b_luhevat = tribal

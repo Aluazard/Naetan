@@ -1,0 +1,5 @@
+	title = c_natas
+	max_settlements = 4
+	culture = breton
+	religion = ibadi
+	b_tomarha = tribal

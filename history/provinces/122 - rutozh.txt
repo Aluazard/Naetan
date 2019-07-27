@@ -1,0 +1,5 @@
+	title = c_rutozh
+	max_settlements = 4
+	culture = ugricbaltic
+	religion = manichean
+	b_tosiram = tribal

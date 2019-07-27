@@ -1,0 +1,5 @@
+	title = c_teuluju
+	max_settlements = 6
+	culture = arberian
+	religion = hindu
+	b_bome = tribal

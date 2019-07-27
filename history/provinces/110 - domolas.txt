@@ -1,0 +1,5 @@
+	title = c_domolas
+	max_settlements = 6
+	culture = panjabi
+	religion = paulician
+	b_egija = tribal

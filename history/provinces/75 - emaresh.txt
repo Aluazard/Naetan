@@ -1,0 +1,5 @@
+	title = c_emaresh
+	max_settlements = 4
+	culture = khazar
+	religion = catholic
+	b_qaneba = tribal

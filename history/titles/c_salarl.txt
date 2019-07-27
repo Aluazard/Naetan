@@ -1,0 +1,146 @@
+758.2.1 = {
+	holder = 1000009
+	law = succ_seniority
+	law = cognatic_succession
+}
+
+758.2.2 = {
+	holder = 1000502
+	law = succ_seniority
+	law = cognatic_succession
+}
+
+758.2.3 = {
+	liege = d_dandf
+}
+
+758.2.4 = {
+	holder = 1000501
+	law = succ_seniority
+	law = cognatic_succession
+}
+
+805.2.1 = {
+	holder = 1001093
+}
+
+818.2.1 = {
+	holder = 1002414
+}
+
+870.2.1 = {
+	holder = 1002881
+}
+
+891.2.1 = {
+	holder = 1003054
+}
+
+907.2.1 = {
+	liege = d_tohinop
+}
+
+907.2.2 = {
+	liege = d_kubarl
+}
+
+907.2.3 = {
+	liege = d_wirarl
+}
+
+907.2.4 = {
+	liege = d_larime
+}
+
+907.2.5 = {
+	holder = 1003435
+}
+
+907.2.6 = {
+	liege = k_doharda
+}
+
+912.2.1 = {
+	liege = d_dandf
+}
+
+912.2.2 = {
+	liege = d_tohinop
+}
+
+912.2.3 = {
+	liege = d_kubarl
+}
+
+912.2.4 = {
+	liege = d_wirarl
+}
+
+912.2.5 = {
+	liege = d_larime
+}
+
+912.2.6 = {
+	holder = 1003958
+}
+
+912.2.7 = {
+	liege = k_doharda
+}
+
+942.2.1 = {
+	liege = d_dandf
+}
+
+942.2.2 = {
+	liege = d_tohinop
+}
+
+942.2.3 = {
+	liege = d_kubarl
+}
+
+942.2.4 = {
+	liege = d_wirarl
+}
+
+942.2.5 = {
+	liege = d_larime
+}
+
+942.2.6 = {
+	holder = 1004100
+}
+
+942.2.7 = {
+	liege = k_doharda
+}
+
+967.2.1 = {
+	liege = d_telala
+}
+
+967.2.2 = {
+	liege = d_kicilen
+}
+
+967.2.3 = {
+	liege = 0
+}
+
+967.2.4 = {
+	holder = 1004669
+}
+
+1012.2.1 = {
+	holder = 1004689
+}
+
+1027.2.1 = {
+	holder = 1005266
+}
+
+1064.2.1 = {
+	holder = 1005529
+}
+

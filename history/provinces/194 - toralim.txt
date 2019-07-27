@@ -1,0 +1,5 @@
+	title = c_toralim
+	max_settlements = 3
+	culture = somali
+	religion = samaritan
+	b_qomolun = tribal

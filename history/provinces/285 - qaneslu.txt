@@ -1,0 +1,5 @@
+	title = c_qaneslu
+	max_settlements = 7
+	culture = afghan
+	religion = norse_pagan
+	b_loleslu = tribal

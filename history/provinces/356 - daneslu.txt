@@ -1,0 +1,5 @@
+	title = c_daneslu
+	max_settlements = 6
+	culture = basque
+	religion = interface_skin
+	b_daharl = tribal

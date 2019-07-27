@@ -1,0 +1,5 @@
+	title = c_divelin
+	max_settlements = 4
+	culture = ugricbaltic
+	religion = hindu
+	b_tirelin = tribal

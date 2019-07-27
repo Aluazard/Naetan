@@ -1,0 +1,5 @@
+	title = c_anupa
+	max_settlements = 7
+	culture = hindustani
+	religion = waldensian
+	b_amuhurli = tribal

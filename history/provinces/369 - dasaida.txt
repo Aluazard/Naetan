@@ -1,0 +1,5 @@
+	title = c_dasaida
+	max_settlements = 2
+	culture = pommeranian
+	religion = miaphysite
+	b_ryaura = tribal

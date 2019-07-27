@@ -1,0 +1,5 @@
+	title = c_reslu
+	max_settlements = 4
+	culture = samoyed
+	religion = interface_skin
+	b_ranay = tribal

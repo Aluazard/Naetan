@@ -1,0 +1,5 @@
+	title = c_nagostas
+	max_settlements = 2
+	culture = zaghawa
+	religion = bogomilist
+	b_tagas = tribal

@@ -1,0 +1,5 @@
+	title = c_remary
+	max_settlements = 7
+	culture = ashkenazi
+	religion = zun_pagan_reformed
+	b_daysan = tribal

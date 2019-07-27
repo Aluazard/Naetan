@@ -1,0 +1,5 @@
+	title = c_tocega
+	max_settlements = 7
+	culture = roman
+	religion = bon
+	b_lalibai = tribal

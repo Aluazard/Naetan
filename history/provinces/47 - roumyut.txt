@@ -1,0 +1,5 @@
+	title = c_roumyut
+	max_settlements = 2
+	culture = lombard
+	religion = finnish_pagan
+	b_liryut = tribal

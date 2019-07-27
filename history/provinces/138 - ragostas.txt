@@ -1,0 +1,5 @@
+	title = c_ragostas
+	max_settlements = 2
+	culture = mongol
+	religion = pagan
+	b_egoriban = tribal

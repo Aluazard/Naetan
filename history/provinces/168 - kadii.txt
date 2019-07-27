@@ -1,0 +1,5 @@
+	title = c_kadii
+	max_settlements = 7
+	culture = marathi
+	religion = jewish
+	b_linaatun = tribal

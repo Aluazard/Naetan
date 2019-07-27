@@ -1,0 +1,5 @@
+	title = c_wobelen
+	max_settlements = 6
+	culture = gujurati
+	religion = orthodox
+	b_domila = tribal

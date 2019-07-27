@@ -1,0 +1,130 @@
+758.2.1 = {
+	holder = 1000006
+	law = succ_ultimogeniture
+	law = agnatic_succession
+}
+
+758.2.2 = {
+	holder = 1000007
+	law = succ_feudal_elective
+	law = agnatic_succession
+}
+
+758.2.3 = {
+	holder = 1000390
+	law = succ_elective_gavelkind
+	law = cognatic_succession
+}
+
+758.2.4 = {
+	liege = d_tolilia
+}
+
+758.2.5 = {
+	holder = 1000391
+	law = succ_feudal_elective
+	law = agnatic_succession
+}
+
+758.2.6 = {
+	holder = 1000388
+	law = succ_elective_gavelkind
+	law = cognatic_succession
+}
+
+762.2.1 = {
+	holder = 1000361
+}
+
+796.2.1 = {
+	liege = d_riuls
+}
+
+796.2.2 = {
+	holder = 1001787
+}
+
+796.2.3 = {
+	liege = d_tolilia
+}
+
+817.2.1 = {
+	liege = d_riuls
+}
+
+817.2.2 = {
+	holder = 1002152
+}
+
+828.2.1 = {
+	holder = 1002612
+}
+
+835.2.1 = {
+	holder = 1002884
+}
+
+858.2.1 = {
+	liege = d_radanoz
+}
+
+858.2.2 = {
+	holder = 1003229
+}
+
+902.2.1 = {
+	liege = d_riuls
+}
+
+902.2.2 = {
+	holder = 1003301
+}
+
+921.2.1 = {
+	liege = d_radanoz
+}
+
+921.2.2 = {
+	holder = 1004012
+}
+
+956.2.1 = {
+	liege = d_riuls
+}
+
+956.2.2 = {
+	holder = 1004562
+}
+
+965.2.1 = {
+	liege = d_radanoz
+}
+
+965.2.2 = {
+	holder = 1004637
+}
+
+972.2.1 = {
+	holder = 1004749
+}
+
+996.2.1 = {
+	liege = d_riuls
+}
+
+996.2.2 = {
+	holder = 1004817
+}
+
+1033.2.1 = {
+	holder = 1005119
+}
+
+1056.2.1 = {
+	liege = d_radanoz
+}
+
+1056.2.2 = {
+	holder = 1005589
+}
+

@@ -1,0 +1,5 @@
+	title = c_ranta
+	max_settlements = 3
+	culture = greek
+	religion = hurufi
+	b_qilanoz = tribal

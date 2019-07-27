@@ -1,0 +1,5 @@
+	title = c_susilen
+	max_settlements = 2
+	culture = andalusian_arabic
+	religion = interface_skin
+	b_tirba = tribal

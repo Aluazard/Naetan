@@ -1,0 +1,5 @@
+	title = c_tariya
+	max_settlements = 5
+	culture = russian
+	religion = mazdaki
+	b_teitta = tribal

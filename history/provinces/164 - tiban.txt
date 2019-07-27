@@ -1,0 +1,5 @@
+	title = c_tiban
+	max_settlements = 7
+	culture = alan
+	religion = zun_pagan_reformed
+	b_nakani = tribal

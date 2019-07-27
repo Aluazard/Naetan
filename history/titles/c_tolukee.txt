@@ -1,0 +1,86 @@
+758.2.1 = {
+	holder = 1000008
+	law = succ_primogeniture
+	law = agnatic_succession
+}
+
+758.2.2 = {
+	holder = 1000416
+	law = succ_primogeniture
+	law = agnatic_succession
+}
+
+758.2.3 = {
+	liege = d_sammena
+}
+
+758.2.4 = {
+	holder = 1000414
+	law = succ_primogeniture
+	law = agnatic_succession
+}
+
+760.2.1 = {
+	holder = 1001086
+}
+
+785.2.1 = {
+	holder = 1001680
+}
+
+828.2.1 = {
+	holder = 1002109
+}
+
+832.2.1 = {
+	holder = 1002599
+}
+
+858.2.1 = {
+	holder = 1002785
+}
+
+880.2.1 = {
+	holder = 1003302
+}
+
+927.2.1 = {
+	holder = 1003608
+}
+
+928.2.1 = {
+	holder = 1004216
+}
+
+990.2.1 = {
+	holder = 1004247
+}
+
+1005.2.1 = {
+	holder = 1005083
+}
+
+1013.2.1 = {
+	holder = 1004373
+}
+
+1015.2.1 = {
+	holder = 1005251
+}
+
+1054.2.1 = {
+	holder = 1005659
+}
+
+1056.2.1 = {
+	holder = 1005681
+}
+
+1062.2.1 = {
+	holder = 1005158
+}
+
+1063.2.1 = {
+	holder = 1005754
+}
+

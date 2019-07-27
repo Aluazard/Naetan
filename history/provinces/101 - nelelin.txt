@@ -1,0 +1,5 @@
+	title = c_nelelin
+	max_settlements = 7
+	culture = mongol
+	religion = pagan
+	b_adukolun = tribal

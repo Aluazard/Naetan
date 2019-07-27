@@ -1,0 +1,5 @@
+	title = c_ruluju
+	max_settlements = 5
+	culture = ashkenazi
+	religion = interface_skin
+	b_agostas = tribal

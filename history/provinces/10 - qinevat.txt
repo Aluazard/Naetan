@@ -1,0 +1,5 @@
+	title = c_qinevat
+	max_settlements = 2
+	culture = bosnian
+	religion = waldensian
+	b_kevat = tribal

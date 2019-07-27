@@ -1,0 +1,5 @@
+	title = c_ageregen
+	max_settlements = 4
+	culture = sardinian
+	religion = monophysite
+	b_tilqis = tribal

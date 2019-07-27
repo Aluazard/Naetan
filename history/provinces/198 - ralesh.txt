@@ -1,0 +1,5 @@
+	title = c_ralesh
+	max_settlements = 4
+	culture = khitan
+	religion = khurmazta
+	b_nalibai = tribal

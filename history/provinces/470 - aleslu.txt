@@ -1,0 +1,5 @@
+	title = c_aleslu
+	max_settlements = 7
+	culture = frisian
+	religion = finnish_pagan
+	b_rande = tribal

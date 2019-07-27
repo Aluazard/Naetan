@@ -1,0 +1,214 @@
+758.2.1 = {
+	holder = 1000001
+	law = succ_ultimogeniture
+	law = agnatic_succession
+}
+
+758.2.2 = {
+	holder = 1000082
+	law = succ_ultimogeniture
+	law = agnatic_succession
+}
+
+758.2.3 = {
+	liege = d_ralern
+}
+
+758.2.4 = {
+	liege = d_qinarda
+}
+
+758.2.5 = {
+	holder = 1000089
+	law = succ_ultimogeniture
+	law = agnatic_succession
+}
+
+900.2.1 = {
+	holder = 1003104
+}
+
+906.2.1 = {
+	liege = d_sanict
+}
+
+906.2.2 = {
+	liege = d_linaide
+}
+
+906.2.3 = {
+	liege = d_tolence
+}
+
+906.2.4 = {
+	liege = d_kosutka
+}
+
+906.2.5 = {
+	liege = d_ralern
+}
+
+906.2.6 = {
+	liege = d_toumay
+}
+
+906.2.7 = {
+	liege = d_kaudayn
+}
+
+906.2.8 = {
+	liege = d_lurara
+}
+
+906.2.9 = {
+	liege = d_kurila
+}
+
+906.2.10 = {
+	holder = 1003752
+}
+
+906.2.11 = {
+	liege = k_roziban
+}
+
+919.2.1 = {
+	liege = d_sanict
+}
+
+919.2.2 = {
+	liege = d_linaide
+}
+
+919.2.3 = {
+	liege = d_tolence
+}
+
+919.2.4 = {
+	liege = d_kosutka
+}
+
+919.2.5 = {
+	liege = d_ralern
+}
+
+919.2.6 = {
+	liege = d_toumay
+}
+
+919.2.7 = {
+	liege = d_kaudayn
+}
+
+919.2.8 = {
+	liege = d_lurara
+}
+
+919.2.9 = {
+	liege = d_kurila
+}
+
+919.2.10 = {
+	holder = 1003956
+}
+
+919.2.11 = {
+	liege = k_roziban
+}
+
+968.2.1 = {
+	liege = d_tolence
+}
+
+968.2.2 = {
+	liege = d_linaide
+}
+
+968.2.3 = {
+	liege = d_sanict
+}
+
+968.2.4 = {
+	liege = d_qinarda
+}
+
+968.2.5 = {
+	liege = d_lurara
+}
+
+968.2.6 = {
+	liege = d_kaudayn
+}
+
+968.2.7 = {
+	liege = d_toumay
+}
+
+968.2.8 = {
+	liege = d_ralern
+}
+
+968.2.9 = {
+	liege = d_biet
+}
+
+968.2.10 = {
+	liege = d_kurila
+}
+
+968.2.11 = {
+	holder = 1004224
+}
+
+993.2.1 = {
+	holder = 1004711
+}
+
+993.2.2 = {
+	liege = k_roziban
+}
+
+1037.2.1 = {
+	liege = d_sanict
+}
+
+1037.2.2 = {
+	liege = d_linaide
+}
+
+1037.2.3 = {
+	liege = d_tolence
+}
+
+1037.2.4 = {
+	liege = d_kosutka
+}
+
+1037.2.5 = {
+	liege = d_ralern
+}
+
+1037.2.6 = {
+	liege = d_toumay
+}
+
+1037.2.7 = {
+	liege = d_kaudayn
+}
+
+1037.2.8 = {
+	liege = d_lurara
+}
+
+1037.2.9 = {
+	liege = d_kurila
+}
+
+1037.2.10 = {
+	holder = 1005138
+}
+
+1037.2.11 = {
+	liege = k_roziban
+}
+

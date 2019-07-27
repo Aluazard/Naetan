@@ -1,0 +1,5 @@
+	title = c_kuyavat
+	max_settlements = 2
+	culture = avar
+	religion = samaritan
+	b_kuyatka = tribal

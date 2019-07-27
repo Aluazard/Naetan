@@ -1,0 +1,5 @@
+	title = c_lalarda
+	max_settlements = 3
+	culture = saxon
+	religion = west_african_pagan
+	b_sotict = tribal

@@ -1,0 +1,5 @@
+	title = c_ebabarda
+	max_settlements = 5
+	culture = lithuanian
+	religion = hindu
+	b_dirence = tribal

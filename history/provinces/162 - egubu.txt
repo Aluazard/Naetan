@@ -1,0 +1,5 @@
+	title = c_egubu
+	max_settlements = 2
+	culture = bengali
+	religion = cathar
+	b_alagai = tribal

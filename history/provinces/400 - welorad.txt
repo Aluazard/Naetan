@@ -1,0 +1,5 @@
+	title = c_welorad
+	max_settlements = 2
+	culture = pommeranian
+	religion = manichean
+	b_watanoz = tribal

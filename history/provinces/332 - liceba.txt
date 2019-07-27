@@ -1,0 +1,5 @@
+	title = c_liceba
+	max_settlements = 3
+	culture = persian
+	religion = catholic
+	b_dipati = tribal

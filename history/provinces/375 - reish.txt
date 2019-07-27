@@ -1,0 +1,5 @@
+	title = c_reish
+	max_settlements = 2
+	culture = finnish
+	religion = lollard
+	b_danija = tribal

@@ -1,0 +1,5 @@
+	title = c_wuninda
+	max_settlements = 3
+	culture = pecheneg
+	religion = monothelite
+	b_ekukudev = tribal

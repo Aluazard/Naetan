@@ -1,0 +1,5 @@
+	title = c_somolas
+	max_settlements = 7
+	culture = mongol
+	religion = messalian
+	b_telila = tribal

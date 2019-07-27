@@ -1,0 +1,5 @@
+	title = c_kajaura
+	max_settlements = 2
+	culture = turkish
+	religion = manichean
+	b_reralku = tribal

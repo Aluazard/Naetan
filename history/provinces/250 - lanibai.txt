@@ -1,0 +1,5 @@
+	title = c_lanibai
+	max_settlements = 4
+	culture = ilmenian
+	religion = monophysite
+	b_tanija = tribal

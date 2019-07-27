@@ -1,0 +1,5 @@
+	title = c_raleslu
+	max_settlements = 7
+	culture = croatian
+	religion = paulician
+	b_dyedam = tribal

@@ -1,0 +1,5 @@
+	title = c_lelalim
+	max_settlements = 2
+	culture = uyghur
+	religion = aztec
+	b_wukuju = tribal

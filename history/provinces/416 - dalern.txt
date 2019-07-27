@@ -1,0 +1,5 @@
+	title = c_dalern
+	max_settlements = 7
+	culture = khitan
+	religion = buddhist
+	b_nokayn = tribal

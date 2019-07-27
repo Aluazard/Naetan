@@ -1,0 +1,5 @@
+	title = c_timaaz
+	max_settlements = 3
+	culture = lettigallish
+	religion = shiite
+	b_qagunda = tribal

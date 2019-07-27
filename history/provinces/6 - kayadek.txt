@@ -1,0 +1,5 @@
+	title = c_kayadek
+	max_settlements = 2
+	culture = sindhi
+	religion = hellenic_pagan
+	b_rerera = tribal

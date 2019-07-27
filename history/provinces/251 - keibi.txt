@@ -1,0 +1,5 @@
+	title = c_keibi
+	max_settlements = 7
+	culture = hungarian
+	religion = interface_skin
+	b_qocar = tribal

@@ -1,0 +1,5 @@
+	title = c_wohayn
+	max_settlements = 7
+	culture = russian
+	religion = monophysite
+	b_soras = tribal

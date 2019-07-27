@@ -1,0 +1,5 @@
+	title = c_livansur
+	max_settlements = 2
+	culture = ugricbaltic
+	religion = mazdaki
+	b_kelin = tribal

@@ -1,0 +1,5 @@
+	title = c_quraila
+	max_settlements = 7
+	culture = finnish
+	religion = bon_reformed
+	b_ewalarda = tribal

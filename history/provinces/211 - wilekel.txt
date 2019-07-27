@@ -1,0 +1,5 @@
+	title = c_wilekel
+	max_settlements = 7
+	culture = kanuri
+	religion = hurufi
+	b_egraria = tribal

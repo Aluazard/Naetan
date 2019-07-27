@@ -1,0 +1,5 @@
+	title = c_begalk
+	max_settlements = 2
+	culture = khazar
+	religion = baltic_pagan_reformed
+	b_tinarak = tribal

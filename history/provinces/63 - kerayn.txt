@@ -1,0 +1,5 @@
+	title = c_kerayn
+	max_settlements = 4
+	culture = bohemian
+	religion = baltic_pagan
+	b_sarak = tribal

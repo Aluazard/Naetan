@@ -1,0 +1,5 @@
+	title = c_dainuri
+	max_settlements = 4
+	culture = marathi
+	religion = messalian
+	b_denara = tribal

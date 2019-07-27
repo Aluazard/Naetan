@@ -1,0 +1,5 @@
+	title = c_akukure
+	max_settlements = 4
+	culture = dalmatian
+	religion = slavic_pagan
+	b_alamapal = tribal

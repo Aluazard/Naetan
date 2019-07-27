@@ -1,0 +1,5 @@
+	title = c_nilun
+	max_settlements = 2
+	culture = basque
+	religion = miaphysite
+	b_kivern = tribal

@@ -1,0 +1,5 @@
+	title = c_borand
+	max_settlements = 5
+	culture = persian
+	religion = pagan
+	b_tadacia = tribal

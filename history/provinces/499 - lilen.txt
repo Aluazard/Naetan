@@ -1,0 +1,5 @@
+	title = c_lilen
+	max_settlements = 3
+	culture = sumpa
+	religion = taoist
+	b_sotha = tribal

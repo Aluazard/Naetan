@@ -1,0 +1,5 @@
+	title = c_dyilara
+	max_settlements = 2
+	culture = romanian
+	religion = hellenic_pagan
+	b_buri = tribal

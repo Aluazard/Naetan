@@ -1,0 +1,5 @@
+	title = c_kandlu
+	max_settlements = 4
+	culture = coptic
+	religion = finnish_pagan
+	b_qalastu = tribal

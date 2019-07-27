@@ -1,0 +1,5 @@
+	title = c_lalali
+	max_settlements = 7
+	culture = sardinian
+	religion = hurufi
+	b_seibi = tribal

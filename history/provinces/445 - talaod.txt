@@ -1,0 +1,5 @@
+	title = c_talaod
+	max_settlements = 7
+	culture = meshchera
+	religion = jain
+	b_kakada = tribal

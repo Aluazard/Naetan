@@ -1,0 +1,5 @@
+	title = c_wigolas
+	max_settlements = 2
+	culture = lappish
+	religion = messalian
+	b_tekel = tribal

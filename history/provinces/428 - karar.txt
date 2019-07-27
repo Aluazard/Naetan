@@ -1,0 +1,5 @@
+	title = c_karar
+	max_settlements = 2
+	culture = crimean_gothic
+	religion = norse_pagan
+	b_rineba = tribal

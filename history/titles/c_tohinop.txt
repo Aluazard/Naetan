@@ -1,0 +1,240 @@
+758.2.1 = {
+	holder = 1000009
+	law = succ_seniority
+	law = cognatic_succession
+}
+
+758.2.2 = {
+	holder = 1000460
+	law = succ_seniority
+	law = cognatic_succession
+}
+
+758.2.3 = {
+	liege = d_nubarl
+}
+
+758.2.4 = {
+	holder = 1000461
+	law = succ_feudal_elective
+	law = agnatic_succession
+}
+
+758.2.5 = {
+	holder = 1000458
+	law = succ_seniority
+	law = cognatic_succession
+}
+
+770.2.1 = {
+	holder = 1000469
+}
+
+776.2.1 = {
+	holder = 1001195
+}
+
+783.2.1 = {
+	liege = d_sohay
+}
+
+783.2.2 = {
+	holder = 1001788
+}
+
+794.2.1 = {
+	holder = 1000758
+}
+
+794.2.2 = {
+	holder = 1001392
+}
+
+826.2.1 = {
+	liege = d_arogele
+}
+
+826.2.2 = {
+	liege = d_eporine
+}
+
+826.2.3 = {
+	liege = d_wiacan
+}
+
+826.2.4 = {
+	holder = 1002139
+}
+
+833.2.1 = {
+	holder = 1002350
+}
+
+861.2.1 = {
+	holder = 1002724
+}
+
+886.2.1 = {
+	holder = 1003456
+}
+
+886.2.2 = {
+	liege = k_danadza
+}
+
+915.2.1 = {
+	liege = d_wologna
+}
+
+915.2.2 = {
+	liege = d_tanaya
+}
+
+915.2.3 = {
+	liege = d_nubarl
+}
+
+915.2.4 = {
+	liege = d_sohay
+}
+
+915.2.5 = {
+	liege = d_arogele
+}
+
+915.2.6 = {
+	liege = d_eporine
+}
+
+915.2.7 = {
+	liege = d_wiacan
+}
+
+915.2.8 = {
+	liege = d_tanesh
+}
+
+915.2.9 = {
+	holder = 1003686
+}
+
+915.2.10 = {
+	liege = k_danadza
+}
+
+920.2.1 = {
+	liege = d_tanesh
+}
+
+920.2.2 = {
+	liege = d_sohay
+}
+
+920.2.3 = {
+	liege = d_nubarl
+}
+
+920.2.4 = {
+	liege = d_tanaya
+}
+
+920.2.5 = {
+	liege = d_wologna
+}
+
+920.2.6 = {
+	liege = d_wiacan
+}
+
+920.2.7 = {
+	holder = 1004085
+}
+
+920.2.8 = {
+	liege = k_danadza
+}
+
+927.2.1 = {
+	liege = d_tanesh
+}
+
+927.2.2 = {
+	liege = d_sohay
+}
+
+927.2.3 = {
+	liege = d_nubarl
+}
+
+927.2.4 = {
+	liege = d_tanaya
+}
+
+927.2.5 = {
+	liege = d_wologna
+}
+
+927.2.6 = {
+	liege = d_wiacan
+}
+
+927.2.7 = {
+	holder = 1004156
+}
+
+927.2.8 = {
+	liege = k_danadza
+}
+
+941.2.1 = {
+	liege = d_wologna
+}
+
+941.2.2 = {
+	liege = d_tanaya
+}
+
+941.2.3 = {
+	liege = d_nubarl
+}
+
+941.2.4 = {
+	liege = d_sohay
+}
+
+941.2.5 = {
+	liege = d_tanesh
+}
+
+941.2.6 = {
+	liege = d_arogele
+}
+
+941.2.7 = {
+	liege = d_eporine
+}
+
+941.2.8 = {
+	liege = d_wiacan
+}
+
+941.2.9 = {
+	holder = 1004376
+}
+
+986.2.1 = {
+	holder = 1004443
+}
+
+989.2.1 = {
+	holder = 1004933
+}
+
+1044.2.1 = {
+	holder = 1005443
+}
+
+1044.2.2 = {
+	liege = k_danadza
+}
+

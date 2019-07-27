@@ -1,0 +1,5 @@
+	title = c_analo
+	max_settlements = 7
+	culture = bodpa
+	religion = hurufi
+	b_dalo = tribal

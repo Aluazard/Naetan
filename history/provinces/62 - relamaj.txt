@@ -1,0 +1,5 @@
+	title = c_relamaj
+	max_settlements = 6
+	culture = greek
+	religion = zikri
+	b_kayn = tribal

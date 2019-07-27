@@ -1,0 +1,5 @@
+	title = c_sajary
+	max_settlements = 2
+	culture = romanian
+	religion = interface_skin
+	b_tasukee = tribal

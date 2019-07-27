@@ -1,0 +1,5 @@
+	title = c_dacadga
+	max_settlements = 2
+	culture = zhangzhung
+	religion = mazdaki
+	b_kiladga = tribal

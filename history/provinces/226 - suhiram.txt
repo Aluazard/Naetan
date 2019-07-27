@@ -1,0 +1,5 @@
+	title = c_suhiram
+	max_settlements = 5
+	culture = welsh
+	religion = lollard
+	b_kagaaz = tribal

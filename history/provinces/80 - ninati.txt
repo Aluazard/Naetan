@@ -1,0 +1,5 @@
+	title = c_ninati
+	max_settlements = 7
+	culture = panjabi
+	religion = hellenic_pagan
+	b_seitta = tribal

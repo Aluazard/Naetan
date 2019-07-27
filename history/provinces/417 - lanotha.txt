@@ -1,0 +1,5 @@
+	title = c_lanotha
+	max_settlements = 5
+	culture = assyrian
+	religion = west_african_pagan
+	b_lahilen = tribal

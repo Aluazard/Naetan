@@ -1,0 +1,5 @@
+	title = c_welen
+	max_settlements = 6
+	culture = sogdian
+	religion = tengri_pagan
+	b_kugekel = tribal

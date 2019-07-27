@@ -1,0 +1,5 @@
+	title = c_qemary
+	max_settlements = 6
+	culture = ashkenazi
+	religion = cathar
+	b_wajary = tribal

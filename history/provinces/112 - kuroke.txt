@@ -1,0 +1,5 @@
+	title = c_kuroke
+	max_settlements = 5
+	culture = manden
+	religion = zoroastrian
+	b_qimibi = tribal

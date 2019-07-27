@@ -1,0 +1,5 @@
+	title = c_qanesh
+	max_settlements = 4
+	culture = bolghar
+	religion = catholic
+	b_saleba = tribal

@@ -1,0 +1,5 @@
+	title = c_esusarl
+	max_settlements = 4
+	culture = basque
+	religion = hindu
+	b_doleslu = tribal

@@ -1,0 +1,5 @@
+	title = c_byadtun
+	max_settlements = 6
+	culture = nahuatl
+	religion = slavic_pagan_reformed
+	b_wosupa = tribal

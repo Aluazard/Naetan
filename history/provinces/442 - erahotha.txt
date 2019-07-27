@@ -1,0 +1,5 @@
+	title = c_erahotha
+	max_settlements = 2
+	culture = irish
+	religion = jain
+	b_qicam = tribal

@@ -1,0 +1,5 @@
+	title = c_aborgia
+	max_settlements = 7
+	culture = norman
+	religion = west_african_pagan_reformed
+	b_qegayn = tribal

@@ -1,0 +1,5 @@
+	title = c_naudint
+	max_settlements = 7
+	culture = sephardi
+	religion = nestorian
+	b_kera = tribal

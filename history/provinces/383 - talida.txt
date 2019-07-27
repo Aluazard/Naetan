@@ -1,0 +1,5 @@
+	title = c_talida
+	max_settlements = 3
+	culture = nepali
+	religion = qarmatian
+	b_saudyut = tribal

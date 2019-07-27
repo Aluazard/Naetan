@@ -1,0 +1,5 @@
+	title = c_esaura
+	max_settlements = 2
+	culture = zaghawa
+	religion = interface_skin
+	b_dolen = tribal

@@ -1,0 +1,136 @@
+758.2.1 = {
+	holder = 1000003
+	law = succ_tanistry
+	law = cognatic_succession
+}
+
+758.2.2 = {
+	holder = 1000004
+	law = succ_feudal_elective
+	law = agnatic_succession
+}
+
+758.2.3 = {
+	holder = 1000235
+	law = succ_gavelkind
+	law = agnatic_succession
+}
+
+758.2.4 = {
+	liege = d_toun
+}
+
+758.2.5 = {
+	liege = d_kalayn
+}
+
+758.2.6 = {
+	holder = 1000213
+	law = succ_tanistry
+	law = cognatic_succession
+}
+
+900.2.1 = {
+	holder = 1003726
+}
+
+934.2.1 = {
+	liege = d_ratagai
+}
+
+934.2.2 = {
+	liege = d_ragolun
+}
+
+934.2.3 = {
+	liege = d_kagelin
+}
+
+934.2.4 = {
+	liege = d_tucas
+}
+
+934.2.5 = {
+	liege = d_qalimha
+}
+
+934.2.6 = {
+	holder = 1003811
+}
+
+966.2.1 = {
+	holder = 1004677
+}
+
+984.2.1 = {
+	holder = 1004881
+}
+
+984.2.2 = {
+	liege = k_dern
+}
+
+995.2.1 = {
+	liege = d_kalayn
+}
+
+995.2.2 = {
+	liege = d_kagelin
+}
+
+995.2.3 = {
+	liege = d_ragolun
+}
+
+995.2.4 = {
+	liege = d_tucas
+}
+
+995.2.5 = {
+	liege = d_lulubu
+}
+
+995.2.6 = {
+	liege = d_qalimha
+}
+
+995.2.7 = {
+	holder = 1005034
+}
+
+995.2.8 = {
+	liege = k_dern
+}
+
+1028.2.1 = {
+	liege = d_kalayn
+}
+
+1028.2.2 = {
+	liege = d_kagelin
+}
+
+1028.2.3 = {
+	liege = d_ragolun
+}
+
+1028.2.4 = {
+	liege = d_tucas
+}
+
+1028.2.5 = {
+	liege = d_lulubu
+}
+
+1028.2.6 = {
+	liege = d_qalimha
+}
+
+1028.2.7 = {
+	holder = 1005383
+}
+
+1028.2.8 = {
+	liege = k_dern
+}
+

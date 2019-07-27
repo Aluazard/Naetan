@@ -1,0 +1,5 @@
+	title = c_badalo
+	max_settlements = 5
+	culture = bolghar
+	religion = yazidi
+	b_enii = tribal

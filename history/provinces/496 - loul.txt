@@ -1,0 +1,5 @@
+	title = c_loul
+	max_settlements = 2
+	culture = avar
+	religion = finnish_pagan
+	b_bayn = tribal

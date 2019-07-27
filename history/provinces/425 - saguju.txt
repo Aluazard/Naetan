@@ -1,0 +1,5 @@
+	title = c_saguju
+	max_settlements = 2
+	culture = baloch
+	religion = hindu
+	b_dagani = tribal

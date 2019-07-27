@@ -1,0 +1,5 @@
+	title = c_wanati
+	max_settlements = 7
+	culture = old_frankish
+	religion = hindu
+	b_exinanya = tribal

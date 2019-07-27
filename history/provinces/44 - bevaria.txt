@@ -1,0 +1,5 @@
+	title = c_bevaria
+	max_settlements = 2
+	culture = basque
+	religion = zoroastrian
+	b_beobele = tribal

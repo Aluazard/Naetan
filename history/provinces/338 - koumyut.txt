@@ -1,0 +1,5 @@
+	title = c_koumyut
+	max_settlements = 4
+	culture = daju
+	religion = aztec_reformed
+	b_rotyut = tribal

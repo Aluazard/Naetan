@@ -1,0 +1,5 @@
+	title = c_salarl
+	max_settlements = 2
+	culture = prussian
+	religion = sunni
+	b_rusotha = tribal

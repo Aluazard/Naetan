@@ -1,0 +1,5 @@
+	title = c_nirarda
+	max_settlements = 2
+	culture = outremer
+	religion = pagan
+	b_disele = tribal

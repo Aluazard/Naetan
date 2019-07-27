@@ -1,0 +1,5 @@
+	title = c_nasyut
+	max_settlements = 2
+	culture = bosnian
+	religion = west_african_pagan_reformed
+	b_emasevat = tribal

@@ -1,0 +1,5 @@
+	title = c_nalinop
+	max_settlements = 2
+	culture = egyptian_arabic
+	religion = zikri
+	b_daliulf = tribal

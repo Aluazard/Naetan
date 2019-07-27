@@ -1,0 +1,5 @@
+	title = c_lelekel
+	max_settlements = 3
+	culture = armenian
+	religion = interface_skin
+	b_ticila = tribal

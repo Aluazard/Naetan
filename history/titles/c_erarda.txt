@@ -1,0 +1,46 @@
+758.2.1 = {
+	holder = 1000046
+	law = succ_feudal_elective
+	law = agnatic_succession
+}
+
+758.2.2 = {
+	liege = d_arogele
+}
+
+816.2.1 = {
+	holder = 1001220
+}
+
+842.2.1 = {
+	holder = 1002560
+}
+
+859.2.1 = {
+	holder = 1003239
+}
+
+880.2.1 = {
+	holder = 1003343
+}
+
+901.2.1 = {
+	holder = 1003657
+}
+
+907.2.1 = {
+	holder = 1003889
+}
+
+950.2.1 = {
+	holder = 1003941
+}
+
+973.2.1 = {
+	holder = 1004742
+}
+
+1010.2.1 = {
+	holder = 1005135
+}
+

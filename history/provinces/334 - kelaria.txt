@@ -1,0 +1,5 @@
+	title = c_kelaria
+	max_settlements = 2
+	culture = sogdian
+	religion = orthodox
+	b_egiuls = tribal

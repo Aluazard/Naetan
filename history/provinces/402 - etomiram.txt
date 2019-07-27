@@ -1,0 +1,5 @@
+	title = c_etomiram
+	max_settlements = 2
+	culture = arberian
+	religion = tengri_pagan
+	b_borii = tribal

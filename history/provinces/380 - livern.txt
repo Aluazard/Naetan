@@ -1,0 +1,5 @@
+	title = c_livern
+	max_settlements = 3
+	culture = pictish
+	religion = monophysite
+	b_wagubu = tribal

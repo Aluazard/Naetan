@@ -1,0 +1,5 @@
+	title = c_qupa
+	max_settlements = 5
+	culture = khitan
+	religion = hurufi
+	b_qinozh = tribal

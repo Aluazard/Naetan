@@ -1,0 +1,5 @@
+	title = c_tizimir
+	max_settlements = 3
+	culture = sinhala
+	religion = color
+	b_lilude = tribal

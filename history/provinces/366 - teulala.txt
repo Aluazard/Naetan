@@ -1,0 +1,5 @@
+	title = c_teulala
+	max_settlements = 2
+	culture = coptic
+	religion = bon
+	b_relagai = tribal

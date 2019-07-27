@@ -1,0 +1,5 @@
+	title = c_nasutka
+	max_settlements = 2
+	culture = bedouin_arabic
+	religion = ibadi
+	b_ralka = tribal

@@ -1,0 +1,5 @@
+	title = c_egisyut
+	max_settlements = 2
+	culture = gujurati
+	religion = aztec_reformed
+	b_bokara = tribal

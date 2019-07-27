@@ -1,0 +1,5 @@
+	title = c_lara
+	max_settlements = 7
+	culture = kannada
+	religion = interface_skin
+	b_tolarda = tribal

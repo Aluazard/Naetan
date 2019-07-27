@@ -1,0 +1,5 @@
+	title = c_qoruri
+	max_settlements = 5
+	culture = kanuri
+	religion = aztec
+	b_rolartin = tribal

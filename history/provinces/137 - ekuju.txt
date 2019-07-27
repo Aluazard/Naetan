@@ -1,0 +1,5 @@
+	title = c_ekuju
+	max_settlements = 7
+	culture = baloch
+	religion = kharijite
+	b_qomala = tribal

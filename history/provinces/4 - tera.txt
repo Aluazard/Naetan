@@ -1,0 +1,5 @@
+	title = c_tera
+	max_settlements = 2
+	culture = pictish
+	religion = tengri_pagan_reformed
+	b_agrina = tribal

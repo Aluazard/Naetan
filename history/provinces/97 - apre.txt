@@ -1,0 +1,5 @@
+	title = c_apre
+	max_settlements = 6
+	culture = romanian
+	religion = bon_reformed
+	b_ragansur = tribal

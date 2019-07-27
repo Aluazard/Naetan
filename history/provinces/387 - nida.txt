@@ -1,0 +1,5 @@
+	title = c_nida
+	max_settlements = 3
+	culture = norman
+	religion = shiite
+	b_qotevat = tribal

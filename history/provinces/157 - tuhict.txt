@@ -1,0 +1,5 @@
+	title = c_tuhict
+	max_settlements = 7
+	culture = dalmatian
+	religion = bon_reformed
+	b_adarda = tribal

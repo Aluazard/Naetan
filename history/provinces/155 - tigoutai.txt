@@ -1,0 +1,5 @@
+	title = c_tigoutai
+	max_settlements = 3
+	culture = dalmatian
+	religion = baltic_pagan_reformed
+	b_tobali = tribal

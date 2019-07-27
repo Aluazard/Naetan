@@ -1,0 +1,5 @@
+	title = c_ranarl
+	max_settlements = 2
+	culture = armenian
+	religion = jewish
+	b_dusodio = tribal

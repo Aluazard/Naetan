@@ -1,0 +1,5 @@
+	title = c_bulalo
+	max_settlements = 3
+	culture = khazar
+	religion = zun_pagan
+	b_wimaaz = tribal

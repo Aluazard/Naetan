@@ -1,0 +1,5 @@
+	title = c_agalim
+	max_settlements = 4
+	culture = komi
+	religion = nestorian
+	b_amatubu = tribal

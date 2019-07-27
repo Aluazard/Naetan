@@ -1,0 +1,5 @@
+	title = c_epotele
+	max_settlements = 5
+	culture = panjabi
+	religion = zoroastrian
+	b_dotyut = tribal

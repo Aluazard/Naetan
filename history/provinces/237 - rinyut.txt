@@ -1,0 +1,5 @@
+	title = c_rinyut
+	max_settlements = 7
+	culture = khanty
+	religion = orthodox
+	b_rokern = tribal

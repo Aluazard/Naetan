@@ -1,0 +1,5 @@
+	title = c_kuitan
+	max_settlements = 6
+	culture = turkish
+	religion = monophysite
+	b_qecomas = tribal

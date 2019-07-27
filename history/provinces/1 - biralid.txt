@@ -1,0 +1,5 @@
+	title = c_biralid
+	max_settlements = 2
+	culture = nepali
+	religion = finnish_pagan
+	b_diryut = tribal

@@ -1,0 +1,5 @@
+	title = c_wokay
+	max_settlements = 5
+	culture = castillan
+	religion = west_african_pagan
+	b_ninarda = tribal

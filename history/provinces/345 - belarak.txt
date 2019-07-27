@@ -1,0 +1,5 @@
+	title = c_belarak
+	max_settlements = 6
+	culture = saka
+	religion = interface_skin
+	b_darda = tribal

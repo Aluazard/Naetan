@@ -1,0 +1,5 @@
+	title = c_ricilen
+	max_settlements = 2
+	culture = assamese
+	religion = cathar
+	b_emanastu = tribal

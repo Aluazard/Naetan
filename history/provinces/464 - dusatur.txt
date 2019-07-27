@@ -1,0 +1,5 @@
+	title = c_dusatur
+	max_settlements = 5
+	culture = rajput
+	religion = zun_pagan_reformed
+	b_taleuba = tribal

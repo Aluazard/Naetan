@@ -1,0 +1,5 @@
+	title = c_wannarl
+	max_settlements = 2
+	culture = hausa
+	religion = iconoclast
+	b_amielmur = tribal

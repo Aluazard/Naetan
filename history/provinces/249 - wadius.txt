@@ -1,0 +1,5 @@
+	title = c_wadius
+	max_settlements = 7
+	culture = portuguese
+	religion = zun_pagan_reformed
+	b_welerm = tribal

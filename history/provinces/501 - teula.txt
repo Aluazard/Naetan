@@ -1,0 +1,5 @@
+	title = c_teula
+	max_settlements = 2
+	culture = songhay
+	religion = slavic_pagan
+	b_edevuara = tribal

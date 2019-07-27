@@ -1,0 +1,5 @@
+	title = c_esilia
+	max_settlements = 2
+	culture = armenian
+	religion = bon_reformed
+	b_tilidu = tribal

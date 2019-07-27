@@ -1,0 +1,5 @@
+	title = c_wigekel
+	max_settlements = 2
+	culture = basque
+	religion = ibadi
+	b_banta = tribal

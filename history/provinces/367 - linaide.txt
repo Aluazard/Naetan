@@ -1,0 +1,5 @@
+	title = c_linaide
+	max_settlements = 3
+	culture = sogdian
+	religion = orthodox
+	b_egern = tribal

@@ -1,0 +1,166 @@
+758.2.1 = {
+	holder = 1000001
+	law = succ_ultimogeniture
+	law = agnatic_succession
+}
+
+758.2.2 = {
+	holder = 1000073
+	law = succ_ultimogeniture
+	law = agnatic_succession
+}
+
+758.2.3 = {
+	liege = d_edayn
+}
+
+758.2.4 = {
+	holder = 1000072
+	law = succ_ultimogeniture
+	law = agnatic_succession
+}
+
+758.2.5 = {
+	holder = 1000738
+}
+
+776.2.1 = {
+	liege = d_nazict
+}
+
+776.2.2 = {
+	holder = 1001285
+}
+
+776.2.3 = {
+	liege = k_delalim
+}
+
+785.2.1 = {
+	liege = d_ratani
+}
+
+785.2.2 = {
+	liege = d_nazict
+}
+
+785.2.3 = {
+	liege = d_edayn
+}
+
+785.2.4 = {
+	holder = 1001771
+}
+
+815.2.1 = {
+	liege = d_nazict
+}
+
+815.2.2 = {
+	liege = d_ratani
+}
+
+815.2.3 = {
+	holder = 1001269
+}
+
+818.2.1 = {
+	holder = 1002038
+}
+
+831.2.1 = {
+	liege = d_nazict
+}
+
+831.2.2 = {
+	liege = d_edayn
+}
+
+831.2.3 = {
+	holder = 1002427
+}
+
+847.2.1 = {
+	liege = d_nazict
+}
+
+847.2.2 = {
+	liege = d_ratani
+}
+
+847.2.3 = {
+	holder = 1003007
+}
+
+849.2.1 = {
+	holder = 1003105
+}
+
+864.2.1 = {
+	liege = d_nazict
+}
+
+864.2.2 = {
+	liege = d_edayn
+}
+
+864.2.3 = {
+	holder = 1003190
+}
+
+922.2.1 = {
+	liege = d_nazict
+}
+
+922.2.2 = {
+	liege = d_ratani
+}
+
+922.2.3 = {
+	holder = 1003617
+}
+
+947.2.1 = {
+	liege = d_nazict
+}
+
+947.2.2 = {
+	liege = d_edayn
+}
+
+947.2.3 = {
+	holder = 1004255
+}
+
+952.2.1 = {
+	holder = 1004504
+}
+
+1003.2.1 = {
+	liege = d_nazict
+}
+
+1003.2.2 = {
+	liege = d_ratani
+}
+
+1003.2.3 = {
+	holder = 1005139
+}
+
+1051.2.1 = {
+	holder = 1005175
+}
+
+1065.2.1 = {
+	liege = d_nazict
+}
+
+1065.2.2 = {
+	liege = d_edayn
+}
+
+1065.2.3 = {
+	holder = 1005630
+}
+

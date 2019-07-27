@@ -1,0 +1,5 @@
+	title = c_tarata
+	max_settlements = 3
+	culture = manden
+	religion = pagan
+	b_qanibai = tribal

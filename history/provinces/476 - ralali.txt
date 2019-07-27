@@ -1,0 +1,5 @@
+	title = c_ralali
+	max_settlements = 3
+	culture = italian
+	religion = cathar
+	b_ralibai = tribal

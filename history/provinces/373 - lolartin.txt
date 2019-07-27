@@ -1,0 +1,5 @@
+	title = c_lolartin
+	max_settlements = 4
+	culture = alan
+	religion = karaite
+	b_walele = tribal

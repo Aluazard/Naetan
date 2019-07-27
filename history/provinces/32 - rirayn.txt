@@ -1,0 +1,5 @@
+	title = c_rirayn
+	max_settlements = 5
+	culture = greek
+	religion = hellenic_pagan
+	b_tecarda = tribal

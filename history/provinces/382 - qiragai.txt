@@ -1,0 +1,5 @@
+	title = c_qiragai
+	max_settlements = 3
+	culture = sindhi
+	religion = cathar
+	b_wagoda = tribal

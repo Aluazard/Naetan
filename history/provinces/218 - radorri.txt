@@ -1,0 +1,5 @@
+	title = c_radorri
+	max_settlements = 2
+	culture = norse
+	religion = pagan
+	b_sorunda = tribal

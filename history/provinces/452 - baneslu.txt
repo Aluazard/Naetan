@@ -1,0 +1,5 @@
+	title = c_baneslu
+	max_settlements = 7
+	culture = visigothic
+	religion = iconoclast
+	b_siceuba = tribal

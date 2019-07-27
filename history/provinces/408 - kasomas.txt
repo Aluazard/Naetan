@@ -1,0 +1,5 @@
+	title = c_kasomas
+	max_settlements = 7
+	culture = lettigallish
+	religion = tengri_pagan
+	b_siyeayn = tribal

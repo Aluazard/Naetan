@@ -1,0 +1,5 @@
+	title = c_wutabga
+	max_settlements = 6
+	culture = serbian
+	religion = pagan
+	b_eradoke = tribal

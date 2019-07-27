@@ -1,0 +1,5 @@
+	title = c_ebarda
+	max_settlements = 7
+	culture = outremer
+	religion = interface_skin
+	b_erara = tribal

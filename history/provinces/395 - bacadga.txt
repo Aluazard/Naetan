@@ -1,0 +1,5 @@
+	title = c_bacadga
+	max_settlements = 2
+	culture = norwegian
+	religion = lollard
+	b_tacali = tribal

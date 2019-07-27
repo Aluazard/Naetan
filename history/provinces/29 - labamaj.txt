@@ -1,0 +1,5 @@
+	title = c_labamaj
+	max_settlements = 2
+	culture = suebi
+	religion = jain
+	b_lilorgia = tribal

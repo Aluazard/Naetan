@@ -1,0 +1,5 @@
+	title = c_al
+	max_settlements = 2
+	culture = mongol
+	religion = yazidi
+	b_aganesh = tribal

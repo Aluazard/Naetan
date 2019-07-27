@@ -1,0 +1,5 @@
+	title = c_ranolas
+	max_settlements = 2
+	culture = sinhala
+	religion = baltic_pagan
+	b_kanaya = tribal

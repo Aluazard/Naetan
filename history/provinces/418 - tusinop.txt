@@ -1,0 +1,5 @@
+	title = c_tusinop
+	max_settlements = 2
+	culture = bolghar
+	religion = interface_skin
+	b_nolyukha = tribal

@@ -1,0 +1,5 @@
+	title = c_ririct
+	max_settlements = 7
+	culture = sindhi
+	religion = hellenic_pagan
+	b_ralyut = tribal

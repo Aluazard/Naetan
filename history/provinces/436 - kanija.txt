@@ -1,0 +1,5 @@
+	title = c_kanija
+	max_settlements = 2
+	culture = suebi
+	religion = finnish_pagan
+	b_taminda = tribal

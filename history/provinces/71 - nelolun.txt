@@ -1,0 +1,5 @@
+	title = c_nelolun
+	max_settlements = 6
+	culture = pecheneg
+	religion = west_african_pagan_reformed
+	b_liroda = tribal

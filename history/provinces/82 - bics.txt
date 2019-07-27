@@ -1,0 +1,5 @@
+	title = c_bics
+	max_settlements = 3
+	culture = karluk
+	religion = interface_skin
+	b_qanapal = tribal

@@ -1,0 +1,5 @@
+	title = c_tuehija
+	max_settlements = 3
+	culture = saxon
+	religion = buddhist
+	b_ebaleba = tribal

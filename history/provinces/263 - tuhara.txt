@@ -1,0 +1,5 @@
+	title = c_tuhara
+	max_settlements = 6
+	culture = roman
+	religion = qarmatian
+	b_tasay = tribal

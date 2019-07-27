@@ -1,0 +1,5 @@
+	title = c_raloan
+	max_settlements = 4
+	culture = finnish
+	religion = aztec_reformed
+	b_keraide = tribal

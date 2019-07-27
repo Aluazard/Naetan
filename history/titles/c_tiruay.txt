@@ -1,0 +1,334 @@
+758.2.1 = {
+	holder = 1000009
+	law = succ_seniority
+	law = cognatic_succession
+}
+
+758.2.2 = {
+	holder = 1000511
+	law = succ_seniority
+	law = cognatic_succession
+}
+
+758.2.3 = {
+	liege = d_aleslu
+}
+
+758.2.4 = {
+	holder = 1000510
+	law = succ_seniority
+	law = cognatic_succession
+}
+
+796.2.1 = {
+	liege = d_kusarda
+}
+
+796.2.2 = {
+	holder = 1001156
+}
+
+796.2.3 = {
+	liege = d_aleslu
+}
+
+803.2.1 = {
+	holder = 1002134
+}
+
+838.2.1 = {
+	liege = d_qohotha
+}
+
+838.2.2 = {
+	liege = d_sicodio
+}
+
+838.2.3 = {
+	holder = 1002542
+}
+
+838.2.4 = {
+	liege = k_ecanda
+}
+
+874.2.1 = {
+	liege = d_lubiulf
+}
+
+874.2.2 = {
+	liege = d_aleslu
+}
+
+874.2.3 = {
+	liege = d_qohotha
+}
+
+874.2.4 = {
+	liege = d_sicodio
+}
+
+874.2.5 = {
+	liege = d_anii
+}
+
+874.2.6 = {
+	liege = d_renold
+}
+
+874.2.7 = {
+	holder = 1003163
+}
+
+874.2.8 = {
+	liege = k_ecanda
+}
+
+912.2.1 = {
+	liege = d_lubiulf
+}
+
+912.2.2 = {
+	liege = d_aleslu
+}
+
+912.2.3 = {
+	liege = d_qohotha
+}
+
+912.2.4 = {
+	liege = d_komozh
+}
+
+912.2.5 = {
+	liege = d_ajyadii
+}
+
+912.2.6 = {
+	liege = d_sicodio
+}
+
+912.2.7 = {
+	liege = d_anii
+}
+
+912.2.8 = {
+	liege = d_renold
+}
+
+912.2.9 = {
+	holder = 1003527
+}
+
+912.2.10 = {
+	liege = k_ecanda
+}
+
+941.2.1 = {
+	liege = d_lubiulf
+}
+
+941.2.2 = {
+	liege = d_aleslu
+}
+
+941.2.3 = {
+	liege = d_qohotha
+}
+
+941.2.4 = {
+	liege = d_komozh
+}
+
+941.2.5 = {
+	liege = d_ajyadii
+}
+
+941.2.6 = {
+	liege = d_sicodio
+}
+
+941.2.7 = {
+	liege = d_anii
+}
+
+941.2.8 = {
+	liege = d_renold
+}
+
+941.2.9 = {
+	holder = 1004029
+}
+
+941.2.10 = {
+	liege = k_ecanda
+}
+
+985.2.1 = {
+	liege = d_lubiulf
+}
+
+985.2.2 = {
+	liege = d_aleslu
+}
+
+985.2.3 = {
+	liege = d_qohotha
+}
+
+985.2.4 = {
+	liege = d_komozh
+}
+
+985.2.5 = {
+	liege = d_ajyadii
+}
+
+985.2.6 = {
+	liege = d_sicodio
+}
+
+985.2.7 = {
+	liege = d_anii
+}
+
+985.2.8 = {
+	liege = d_renold
+}
+
+985.2.9 = {
+	holder = 1004391
+}
+
+985.2.10 = {
+	liege = k_ecanda
+}
+
+993.2.1 = {
+	liege = d_lubiulf
+}
+
+993.2.2 = {
+	liege = d_aleslu
+}
+
+993.2.3 = {
+	liege = d_qohotha
+}
+
+993.2.4 = {
+	liege = d_komozh
+}
+
+993.2.5 = {
+	liege = d_ajyadii
+}
+
+993.2.6 = {
+	liege = d_sicodio
+}
+
+993.2.7 = {
+	liege = d_anii
+}
+
+993.2.8 = {
+	liege = d_renold
+}
+
+993.2.9 = {
+	holder = 1004956
+}
+
+993.2.10 = {
+	liege = k_ecanda
+}
+
+1024.2.1 = {
+	liege = d_lubiulf
+}
+
+1024.2.2 = {
+	liege = d_aleslu
+}
+
+1024.2.3 = {
+	liege = d_qohotha
+}
+
+1024.2.4 = {
+	liege = d_komozh
+}
+
+1024.2.5 = {
+	liege = d_ajyadii
+}
+
+1024.2.6 = {
+	liege = d_sicodio
+}
+
+1024.2.7 = {
+	liege = d_anii
+}
+
+1024.2.8 = {
+	liege = d_renold
+}
+
+1024.2.9 = {
+	holder = 1005177
+}
+
+1024.2.10 = {
+	liege = k_ecanda
+}
+
+1051.2.1 = {
+	liege = d_ajyadii
+}
+
+1051.2.2 = {
+	liege = d_komozh
+}
+
+1051.2.3 = {
+	liege = d_qohotha
+}
+
+1051.2.4 = {
+	liege = d_aleslu
+}
+
+1051.2.5 = {
+	liege = d_lubiulf
+}
+
+1051.2.6 = {
+	liege = d_anii
+}
+
+1051.2.7 = {
+	liege = d_sicodio
+}
+
+1051.2.8 = {
+	liege = d_qaratta
+}
+
+1051.2.9 = {
+	liege = d_ecatar
+}
+
+1051.2.10 = {
+	liege = d_quyu
+}
+
+1051.2.11 = {
+	liege = d_renold
+}
+
+1051.2.12 = {
+	holder = 1005484
+}
+

@@ -1,0 +1,5 @@
+	title = c_tubiulf
+	max_settlements = 4
+	culture = karluk
+	religion = orthodox
+	b_nanotha = tribal

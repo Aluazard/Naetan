@@ -1,0 +1,5 @@
+	title = c_atoheslu
+	max_settlements = 2
+	culture = norse
+	religion = manichean
+	b_emielmur = tribal

@@ -1,0 +1,5 @@
+	title = c_atribai
+	max_settlements = 7
+	culture = lombard
+	religion = yazidi
+	b_tipatta = tribal

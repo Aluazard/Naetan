@@ -1,0 +1,5 @@
+	title = c_relali
+	max_settlements = 2
+	culture = afghan
+	religion = slavic_pagan
+	b_dolas = tribal

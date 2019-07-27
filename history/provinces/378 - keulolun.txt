@@ -1,0 +1,5 @@
+	title = c_keulolun
+	max_settlements = 3
+	culture = old_saxon
+	religion = zun_pagan
+	b_rakalim = tribal

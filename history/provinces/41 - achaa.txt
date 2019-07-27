@@ -1,0 +1,5 @@
+	title = c_achaa
+	max_settlements = 4
+	culture = kanuri
+	religion = monophysite
+	b_elourda = tribal

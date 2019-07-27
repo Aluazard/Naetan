@@ -1,0 +1,5 @@
+	title = c_kirtur
+	max_settlements = 3
+	culture = romanian
+	religion = aztec
+	b_ticodio = tribal

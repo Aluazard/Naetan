@@ -1,0 +1,5 @@
+	title = c_begazu
+	max_settlements = 5
+	culture = somali
+	religion = nestorian
+	b_bucemba = tribal

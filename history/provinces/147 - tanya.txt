@@ -1,0 +1,5 @@
+	title = c_tanya
+	max_settlements = 5
+	culture = danish
+	religion = fraticelli
+	b_bipija = tribal

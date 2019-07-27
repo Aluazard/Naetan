@@ -1,0 +1,5 @@
+	title = c_sayara
+	max_settlements = 2
+	culture = armenian
+	religion = aztec_reformed
+	b_avirula = tribal

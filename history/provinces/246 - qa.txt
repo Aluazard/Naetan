@@ -1,0 +1,5 @@
+	title = c_qa
+	max_settlements = 5
+	culture = gujurati
+	religion = shiite
+	b_ehuitlis = tribal

@@ -1,0 +1,250 @@
+758.2.1 = {
+	holder = 1000005
+	law = succ_gavelkind
+	law = cognatic_succession
+}
+
+758.2.2 = {
+	holder = 1000305
+	law = succ_gavelkind
+	law = cognatic_succession
+}
+
+758.2.3 = {
+	liege = d_wicata
+}
+
+758.2.4 = {
+	holder = 1000304
+	law = succ_gavelkind
+	law = cognatic_succession
+}
+
+804.2.1 = {
+	holder = 1000905
+}
+
+813.2.1 = {
+	holder = 1002059
+}
+
+819.2.1 = {
+	holder = 1002373
+}
+
+835.2.1 = {
+	liege = d_sobila
+}
+
+835.2.2 = {
+	liege = d_kayatka
+}
+
+835.2.3 = {
+	holder = 1002711
+}
+
+835.2.4 = {
+	liege = k_nelaria
+}
+
+876.2.1 = {
+	liege = d_qava
+}
+
+876.2.2 = {
+	liege = d_agolidu
+}
+
+876.2.3 = {
+	liege = d_wicata
+}
+
+876.2.4 = {
+	liege = d_sobila
+}
+
+876.2.5 = {
+	liege = d_kayatka
+}
+
+876.2.6 = {
+	holder = 1003512
+}
+
+876.2.7 = {
+	liege = k_nelaria
+}
+
+907.2.1 = {
+	liege = d_qava
+}
+
+907.2.2 = {
+	liege = d_agolidu
+}
+
+907.2.3 = {
+	liege = d_wicata
+}
+
+907.2.4 = {
+	liege = d_sobila
+}
+
+907.2.5 = {
+	liege = d_kayatka
+}
+
+907.2.6 = {
+	holder = 1003896
+}
+
+907.2.7 = {
+	liege = k_nelaria
+}
+
+938.2.1 = {
+	liege = d_agolidu
+}
+
+938.2.2 = {
+	liege = d_qava
+}
+
+938.2.3 = {
+	liege = d_sobila
+}
+
+938.2.4 = {
+	liege = d_wicata
+}
+
+938.2.5 = {
+	liege = d_kinet
+}
+
+938.2.6 = {
+	liege = d_agabima
+}
+
+938.2.7 = {
+	liege = d_kayatka
+}
+
+938.2.8 = {
+	holder = 1003946
+}
+
+954.2.1 = {
+	holder = 1004475
+}
+
+954.2.2 = {
+	liege = k_nelaria
+}
+
+960.2.1 = {
+	liege = d_agolidu
+}
+
+960.2.2 = {
+	liege = d_qava
+}
+
+960.2.3 = {
+	liege = d_sobila
+}
+
+960.2.4 = {
+	liege = d_wicata
+}
+
+960.2.5 = {
+	liege = d_kinet
+}
+
+960.2.6 = {
+	liege = d_agabima
+}
+
+960.2.7 = {
+	liege = d_kayatka
+}
+
+960.2.8 = {
+	holder = 1004607
+}
+
+967.2.1 = {
+	holder = 1004626
+}
+
+982.2.1 = {
+	holder = 1004866
+}
+
+982.2.2 = {
+	liege = k_nelaria
+}
+
+1022.2.1 = {
+	liege = d_qava
+}
+
+1022.2.2 = {
+	liege = d_agolidu
+}
+
+1022.2.3 = {
+	liege = d_wicata
+}
+
+1022.2.4 = {
+	liege = d_sobila
+}
+
+1022.2.5 = {
+	liege = d_kayatka
+}
+
+1022.2.6 = {
+	holder = 1005011
+}
+
+1022.2.7 = {
+	liege = k_nelaria
+}
+
+1057.2.1 = {
+	liege = d_agolidu
+}
+
+1057.2.2 = {
+	liege = d_qava
+}
+
+1057.2.3 = {
+	liege = d_sobila
+}
+
+1057.2.4 = {
+	liege = d_wicata
+}
+
+1057.2.5 = {
+	liege = d_kinet
+}
+
+1057.2.6 = {
+	liege = d_agabima
+}
+
+1057.2.7 = {
+	liege = d_kayatka
+}
+
+1057.2.8 = {
+	holder = 1005388
+}
+

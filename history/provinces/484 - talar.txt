@@ -1,0 +1,5 @@
+	title = c_talar
+	max_settlements = 2
+	culture = norwegian
+	religion = druze
+	b_bacali = tribal

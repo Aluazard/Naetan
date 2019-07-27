@@ -1,0 +1,5 @@
+	title = c_kuitand
+	max_settlements = 2
+	culture = uyghur
+	religion = manichean
+	b_secassi = tribal

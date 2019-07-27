@@ -1,0 +1,5 @@
+	title = c_dalava
+	max_settlements = 2
+	culture = sinhala
+	religion = miaphysite
+	b_nilatta = tribal

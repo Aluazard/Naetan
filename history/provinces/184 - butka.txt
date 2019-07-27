@@ -1,0 +1,5 @@
+	title = c_butka
+	max_settlements = 7
+	culture = scottish
+	religion = bon
+	b_lasict = tribal

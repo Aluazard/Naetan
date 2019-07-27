@@ -1,0 +1,5 @@
+	title = c_rainict
+	max_settlements = 3
+	culture = levantine_arabic
+	religion = monophysite
+	b_rabarda = tribal

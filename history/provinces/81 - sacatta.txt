@@ -1,0 +1,5 @@
+	title = c_sacatta
+	max_settlements = 6
+	culture = karluk
+	religion = color
+	b_sacanya = tribal

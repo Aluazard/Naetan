@@ -1,0 +1,5 @@
+	title = c_koracia
+	max_settlements = 7
+	culture = zhangzhung
+	religion = pagan
+	b_en = tribal

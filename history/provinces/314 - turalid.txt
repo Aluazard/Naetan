@@ -1,0 +1,5 @@
+	title = c_turalid
+	max_settlements = 2
+	culture = hausa
+	religion = buddhist
+	b_duyarda = tribal

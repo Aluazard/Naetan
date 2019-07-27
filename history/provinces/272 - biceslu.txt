@@ -1,0 +1,5 @@
+	title = c_biceslu
+	max_settlements = 2
+	culture = norse
+	religion = khurmazta
+	b_daniulf = tribal

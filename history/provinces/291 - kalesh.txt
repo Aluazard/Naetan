@@ -1,0 +1,5 @@
+	title = c_kalesh
+	max_settlements = 7
+	culture = levantine_arabic
+	religion = karaite
+	b_qinega = tribal

@@ -1,0 +1,5 @@
+	title = c_raudida
+	max_settlements = 4
+	culture = cuman
+	religion = baltic_pagan_reformed
+	b_sisarda = tribal

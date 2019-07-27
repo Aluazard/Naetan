@@ -1,0 +1,5 @@
+	title = c_wila
+	max_settlements = 5
+	culture = avar
+	religion = aztec
+	b_lija = tribal

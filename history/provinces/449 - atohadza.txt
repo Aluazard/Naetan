@@ -1,0 +1,5 @@
+	title = c_atohadza
+	max_settlements = 3
+	culture = sogdian
+	religion = tengri_pagan_reformed
+	b_noladar = tribal

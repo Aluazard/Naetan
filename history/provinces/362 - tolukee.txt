@@ -1,0 +1,5 @@
+	title = c_tolukee
+	max_settlements = 7
+	culture = mordvin
+	religion = bon_reformed
+	b_kosilia = tribal

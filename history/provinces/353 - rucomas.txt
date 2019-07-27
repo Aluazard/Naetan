@@ -1,0 +1,5 @@
+	title = c_rucomas
+	max_settlements = 3
+	culture = english
+	religion = qarmatian
+	b_qucayn = tribal

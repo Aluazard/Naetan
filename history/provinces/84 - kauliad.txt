@@ -1,0 +1,5 @@
+	title = c_kauliad
+	max_settlements = 3
+	culture = lappish
+	religion = jewish
+	b_datija = tribal

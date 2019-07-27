@@ -1,0 +1,5 @@
+	title = c_toan
+	max_settlements = 7
+	culture = mongol
+	religion = interface_skin
+	b_qanuri = tribal

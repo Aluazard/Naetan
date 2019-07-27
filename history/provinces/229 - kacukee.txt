@@ -1,0 +1,5 @@
+	title = c_kacukee
+	max_settlements = 6
+	culture = russian
+	religion = monophysite
+	b_dacamad = tribal

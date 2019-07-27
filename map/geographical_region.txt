@@ -1,0 +1,65 @@
+wanara = {
+	duchies = {
+			d_buri d_berarak d_ezuhida d_tolence d_naudida d_tomern d_sanict d_kauday d_telani d_linaide d_kagelin d_nazict d_ratani d_kaudayn d_ragolun d_telarha d_lurara d_lulubu d_kelagai d_tirarha d_keuliban d_tularkad d_kosutka	}
+}
+
+adyut = {
+	duchies = {
+			d_edayn d_kalay d_anoummur d_qiragai d_toumay d_ranodio d_totalka d_womas d_qinarda d_laneuba d_ruhiram d_disyut d_wuuram d_aradaaz d_telala d_raliulf d_rannilen d_womorri d_nagiban d_kicilen	}
+}
+
+lauday = {
+	duchies = {
+			d_ralern d_nozimur d_dandf	}
+}
+
+eprolun = {
+	duchies = {
+			d_wakuju d_ratagai d_nelimur d_tinapal d_tucas d_qadyar d_toran d_banija d_beularha d_ateiar d_kanesh d_dorayn d_emuhii d_toun d_kalayn d_savanay d_wosozh d_lanatta d_kanali d_wineba d_tamomas d_keitta	}
+}
+
+naneba = {
+	duchies = {
+			d_winata d_daradga d_sobila d_qava d_dekel	}
+}
+
+daleba = {
+	duchies = {
+			d_ranya d_soborad d_riuls d_wanta d_telorad	}
+}
+
+talati = {
+	duchies = {
+			d_dananya d_egiad d_rilali d_domegen d_banoz d_siciad	}
+}
+
+lareba = {
+	duchies = {
+			d_wicata d_tivuara d_riad d_agolidu d_bunada d_asaura d_sammena d_tolilia d_radanoz d_setula d_nakuna d_tobija d_tutaatun d_tasucia d_turarkad d_qelekel d_nevondo d_seza d_tilurz d_nosii d_toge	}
+}
+
+dila = {
+	duchies = {
+			d_epadolas d_nekel d_komekel d_tyadaaz d_kuhupa d_kyadtun d_simunda d_wiralo d_tarkad d_etjaatun d_ralinda d_luhoke	}
+}
+
+danarl = {
+	duchies = {
+			d_qohotha d_ajyadii d_kusarda d_aleslu d_komozh d_lubiulf d_wirarl d_diceuba d_anii d_taisii d_emuhorri d_qiraaz d_kubarl d_talarl d_sicodio d_radurli d_tohinop d_tulurli d_sohay d_byeday d_ruurarl	}
+}
+
+etaparl = {
+	duchies = {
+			d_ecando d_nubarl d_wologna d_tanesh	}
+}
+
+bardin = {
+	duchies = {
+			d_dukadar d_elaya d_taladza d_danadza d_dasa d_tanaya d_surarkad d_ecatava d_kayrija d_qilan d_qatayan	}
+}
+
+rabarda = {
+	duchies = {
+			d_tenarda d_rajalk d_laudint d_tivia d_reenoan d_toan d_lererva d_kence d_qyiluri	}
+}
+

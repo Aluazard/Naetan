@@ -1,0 +1,5 @@
+	title = c_qagiram
+	max_settlements = 7
+	culture = frankish
+	religion = lollard
+	b_ragimur = tribal

@@ -1,0 +1,5 @@
+	title = c_kimela
+	max_settlements = 7
+	culture = polish
+	religion = yazidi
+	b_dolapal = tribal

@@ -1,0 +1,5 @@
+	title = c_sinele
+	max_settlements = 5
+	culture = bosnian
+	religion = mazdaki
+	b_rotict = tribal

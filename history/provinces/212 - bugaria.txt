@@ -1,0 +1,5 @@
+	title = c_bugaria
+	max_settlements = 6
+	culture = komi
+	religion = yazidi
+	b_belolas = tribal

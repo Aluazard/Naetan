@@ -1,0 +1,5 @@
+	title = c_wevaric
+	max_settlements = 4
+	culture = turkish
+	religion = interface_skin
+	b_lakula = tribal

@@ -1,0 +1,5 @@
+	title = c_dipesh
+	max_settlements = 2
+	culture = ethiopian
+	religion = zoroastrian
+	b_racija = tribal

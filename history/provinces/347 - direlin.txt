@@ -1,0 +1,5 @@
+	title = c_direlin
+	max_settlements = 2
+	culture = tocharian
+	religion = hurufi
+	b_biragai = tribal

@@ -1,0 +1,5 @@
+	title = c_apotalid
+	max_settlements = 4
+	culture = marathi
+	religion = mazdaki
+	b_ekirara = tribal

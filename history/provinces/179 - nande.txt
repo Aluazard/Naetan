@@ -1,0 +1,5 @@
+	title = c_nande
+	max_settlements = 7
+	culture = nubian
+	religion = west_african_pagan_reformed
+	b_danesh = tribal

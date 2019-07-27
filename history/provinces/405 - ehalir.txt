@@ -1,0 +1,5 @@
+	title = c_ehalir
+	max_settlements = 6
+	culture = castillan
+	religion = samaritan
+	b_wuehir = tribal

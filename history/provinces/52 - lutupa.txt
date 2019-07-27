@@ -1,0 +1,5 @@
+	title = c_lutupa
+	max_settlements = 7
+	culture = tocharian
+	religion = tengri_pagan_reformed
+	b_tiroge = tribal

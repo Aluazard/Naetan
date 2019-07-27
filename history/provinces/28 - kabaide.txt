@@ -1,0 +1,5 @@
+	title = c_kabaide
+	max_settlements = 6
+	culture = somali
+	religion = baltic_pagan_reformed
+	b_lolaila = tribal

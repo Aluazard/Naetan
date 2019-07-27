@@ -1,0 +1,5 @@
+	title = c_kauday
+	max_settlements = 2
+	culture = old_saxon
+	religion = interface_skin
+	b_walara = tribal

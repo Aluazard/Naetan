@@ -1,0 +1,5 @@
+	title = c_walarak
+	max_settlements = 7
+	culture = bulgarian
+	religion = fraticelli
+	b_awinaide = tribal

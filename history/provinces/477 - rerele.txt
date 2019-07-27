@@ -1,0 +1,5 @@
+	title = c_rerele
+	max_settlements = 2
+	culture = mongol
+	religion = karaite
+	b_qolaila = tribal

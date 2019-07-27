@@ -1,0 +1,5 @@
+	title = c_weitta
+	max_settlements = 6
+	culture = lettigallish
+	religion = aztec_reformed
+	b_quehija = tribal

@@ -1,0 +1,5 @@
+	title = c_kalarda
+	max_settlements = 2
+	culture = manden
+	religion = bogomilist
+	b_karak = tribal

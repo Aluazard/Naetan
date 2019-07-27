@@ -1,0 +1,5 @@
+	title = c_sororad
+	max_settlements = 7
+	culture = kannada
+	religion = color
+	b_ejohazu = tribal

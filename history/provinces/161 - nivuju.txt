@@ -1,0 +1,5 @@
+	title = c_nivuju
+	max_settlements = 6
+	culture = maghreb_arabic
+	religion = fraticelli
+	b_sule = tribal

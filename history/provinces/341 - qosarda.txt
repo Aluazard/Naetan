@@ -1,0 +1,5 @@
+	title = c_qosarda
+	max_settlements = 7
+	culture = alan
+	religion = orthodox
+	b_bosay = tribal

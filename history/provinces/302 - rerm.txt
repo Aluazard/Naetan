@@ -1,0 +1,5 @@
+	title = c_rerm
+	max_settlements = 3
+	culture = hindustani
+	religion = buddhist
+	b_qouca = tribal

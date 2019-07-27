@@ -1,0 +1,5 @@
+	title = c_atalapal
+	max_settlements = 7
+	culture = telugu
+	religion = paulician
+	b_dicali = tribal

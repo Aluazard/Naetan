@@ -1,0 +1,5 @@
+	title = c_delorad
+	max_settlements = 7
+	culture = volhynian
+	religion = bon
+	b_rila = tribal

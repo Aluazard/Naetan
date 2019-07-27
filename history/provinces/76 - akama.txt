@@ -1,0 +1,5 @@
+	title = c_akama
+	max_settlements = 7
+	culture = mongol
+	religion = yazidi
+	b_lonan = tribal

@@ -1,0 +1,5 @@
+	title = c_karamaj
+	max_settlements = 4
+	culture = khitan
+	religion = bon
+	b_karayn = tribal

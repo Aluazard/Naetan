@@ -1,0 +1,5 @@
+	title = c_seobava
+	max_settlements = 4
+	culture = soninke
+	religion = mazdaki
+	b_adevava = tribal

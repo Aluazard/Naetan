@@ -1,0 +1,5 @@
+	title = c_dalanya
+	max_settlements = 2
+	culture = tocharian
+	religion = qarmatian
+	b_tarali = tribal

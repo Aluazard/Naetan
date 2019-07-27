@@ -1,0 +1,5 @@
+	title = c_delimur
+	max_settlements = 5
+	culture = ugricbaltic
+	religion = buddhist
+	b_teulubu = tribal

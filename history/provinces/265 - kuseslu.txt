@@ -1,0 +1,5 @@
+	title = c_kuseslu
+	max_settlements = 6
+	culture = old_frankish
+	religion = cathar
+	b_tusotha = tribal

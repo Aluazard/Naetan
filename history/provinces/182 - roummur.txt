@@ -1,0 +1,5 @@
+	title = c_roummur
+	max_settlements = 3
+	culture = armenian
+	religion = color
+	b_ehalid = tribal

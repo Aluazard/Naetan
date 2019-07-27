@@ -1,0 +1,5 @@
+	title = c_kucemba
+	max_settlements = 7
+	culture = oriya
+	religion = samaritan
+	b_qucazu = tribal

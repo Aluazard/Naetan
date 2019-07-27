@@ -1,0 +1,5 @@
+	title = c_waleba
+	max_settlements = 2
+	culture = bodpa
+	religion = hellenic_pagan
+	b_baneba = tribal

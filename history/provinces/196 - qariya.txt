@@ -1,0 +1,5 @@
+	title = c_qariya
+	max_settlements = 2
+	culture = italian
+	religion = norse_pagan
+	b_waleba = tribal

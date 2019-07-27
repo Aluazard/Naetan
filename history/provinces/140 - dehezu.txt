@@ -1,0 +1,5 @@
+	title = c_dehezu
+	max_settlements = 5
+	culture = marathi
+	religion = druze
+	b_kadyar = tribal

@@ -1,0 +1,5 @@
+	title = c_ebalata
+	max_settlements = 5
+	culture = norse
+	religion = aztec
+	b_bocir = tribal

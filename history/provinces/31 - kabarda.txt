@@ -1,0 +1,5 @@
+	title = c_kabarda
+	max_settlements = 6
+	culture = coptic
+	religion = baltic_pagan
+	b_lyilara = tribal

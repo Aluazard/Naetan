@@ -1,0 +1,5 @@
+	title = c_enuyaay
+	max_settlements = 7
+	culture = baloch
+	religion = aztec_reformed
+	b_emokarda = tribal

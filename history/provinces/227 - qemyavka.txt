@@ -1,0 +1,5 @@
+	title = c_qemyavka
+	max_settlements = 2
+	culture = avar
+	religion = interface_skin
+	b_suhele = tribal

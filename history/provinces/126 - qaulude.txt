@@ -1,0 +1,5 @@
+	title = c_qaulude
+	max_settlements = 5
+	culture = nubian
+	religion = bon_reformed
+	b_lelucia = tribal

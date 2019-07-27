@@ -1,0 +1,5 @@
+	title = c_kukimur
+	max_settlements = 3
+	culture = bohemian
+	religion = pagan
+	b_teluju = tribal

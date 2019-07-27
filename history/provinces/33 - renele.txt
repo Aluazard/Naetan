@@ -1,0 +1,5 @@
+	title = c_renele
+	max_settlements = 7
+	culture = maghreb_arabic
+	religion = jain
+	b_tenict = tribal

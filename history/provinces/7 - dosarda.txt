@@ -1,0 +1,5 @@
+	title = c_dosarda
+	max_settlements = 2
+	culture = meshchera
+	religion = finnish_pagan
+	b_totida = tribal

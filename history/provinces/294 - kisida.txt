@@ -1,0 +1,5 @@
+	title = c_kisida
+	max_settlements = 3
+	culture = serbian
+	religion = ibadi
+	b_ragalid = tribal

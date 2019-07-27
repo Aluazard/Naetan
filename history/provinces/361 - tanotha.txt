@@ -1,0 +1,5 @@
+	title = c_tanotha
+	max_settlements = 6
+	culture = soninke
+	religion = mazdaki
+	b_etapeslu = tribal

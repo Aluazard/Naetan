@@ -1,0 +1,5 @@
+	title = c_rohern
+	max_settlements = 4
+	culture = zhangzhung
+	religion = khurmazta
+	b_salarda = tribal

@@ -1,0 +1,5 @@
+	title = c_ripadga
+	max_settlements = 7
+	culture = sumpa
+	religion = messalian
+	b_nicar = tribal

@@ -1,0 +1,5 @@
+	title = c_kirani
+	max_settlements = 2
+	culture = volhynian
+	religion = baltic_pagan_reformed
+	b_divalim = tribal

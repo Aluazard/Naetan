@@ -1,0 +1,5 @@
+	title = c_wisay
+	max_settlements = 2
+	culture = norman
+	religion = messalian
+	b_nokyut = tribal

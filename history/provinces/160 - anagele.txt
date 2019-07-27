@@ -1,0 +1,5 @@
+	title = c_anagele
+	max_settlements = 6
+	culture = kanuri
+	religion = waldensian
+	b_amasalid = tribal

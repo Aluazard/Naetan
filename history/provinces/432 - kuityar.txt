@@ -1,0 +1,5 @@
+	title = c_kuityar
+	max_settlements = 7
+	culture = croatian
+	religion = waldensian
+	b_waojan = tribal

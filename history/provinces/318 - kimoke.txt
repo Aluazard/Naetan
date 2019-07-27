@@ -1,0 +1,5 @@
+	title = c_kimoke
+	max_settlements = 3
+	culture = crimean_gothic
+	religion = slavic_pagan
+	b_kyadoke = tribal

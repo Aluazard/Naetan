@@ -1,0 +1,5 @@
+	title = c_tuehava
+	max_settlements = 5
+	culture = croatian
+	religion = monophysite
+	b_acipadga = tribal

@@ -1,0 +1,5 @@
+	title = c_qagala
+	max_settlements = 3
+	culture = old_saxon
+	religion = yazidi
+	b_wagalim = tribal

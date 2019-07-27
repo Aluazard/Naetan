@@ -1,0 +1,118 @@
+758.2.1 = {
+	holder = 1000005
+	law = succ_gavelkind
+	law = cognatic_succession
+}
+
+758.2.2 = {
+	holder = 1000006
+	law = succ_feudal_elective
+	law = agnatic_succession
+}
+
+758.2.3 = {
+	holder = 1000348
+	law = succ_ultimogeniture
+	law = agnatic_succession
+}
+
+758.2.4 = {
+	liege = d_domegen
+}
+
+758.2.5 = {
+	holder = 1000349
+	law = succ_feudal_elective
+	law = agnatic_succession
+}
+
+758.2.6 = {
+	holder = 1000346
+	law = succ_ultimogeniture
+	law = agnatic_succession
+}
+
+758.2.7 = {
+	holder = 1000749
+}
+
+799.2.1 = {
+	holder = 1001334
+}
+
+827.2.1 = {
+	holder = 1002747
+}
+
+886.2.1 = {
+	liege = d_wineba
+}
+
+886.2.2 = {
+	holder = 1002895
+}
+
+895.2.1 = {
+	holder = 1003713
+}
+
+906.2.1 = {
+	liege = d_domegen
+}
+
+906.2.2 = {
+	holder = 1003880
+}
+
+919.2.1 = {
+	holder = 1004047
+}
+
+935.2.1 = {
+	liege = d_wineba
+}
+
+935.2.2 = {
+	holder = 1004301
+}
+
+966.2.1 = {
+	holder = 1004363
+}
+
+971.2.1 = {
+	holder = 1004735
+}
+
+972.2.1 = {
+	holder = 1004748
+}
+
+996.2.1 = {
+	liege = d_domegen
+}
+
+996.2.2 = {
+	holder = 1004761
+}
+
+1027.2.1 = {
+	holder = 1005104
+}
+
+1049.2.1 = {
+	liege = d_wineba
+}
+
+1049.2.2 = {
+	holder = 1005481
+}
+
+1064.2.1 = {
+	liege = d_domegen
+}
+
+1064.2.2 = {
+	holder = 1005765
+}
+

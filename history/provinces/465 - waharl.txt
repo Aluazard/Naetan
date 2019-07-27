@@ -1,0 +1,5 @@
+	title = c_waharl
+	max_settlements = 5
+	culture = marathi
+	religion = pagan
+	b_qapodio = tribal

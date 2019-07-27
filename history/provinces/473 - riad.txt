@@ -1,0 +1,5 @@
+	title = c_riad
+	max_settlements = 7
+	culture = pictish
+	religion = manichean
+	b_ticekel = tribal

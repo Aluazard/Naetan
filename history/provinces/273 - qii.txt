@@ -1,0 +1,5 @@
+	title = c_qii
+	max_settlements = 4
+	culture = bohemian
+	religion = qarmatian
+	b_quralo = tribal

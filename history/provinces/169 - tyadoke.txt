@@ -1,0 +1,5 @@
+	title = c_tyadoke
+	max_settlements = 7
+	culture = occitan
+	religion = norse_pagan
+	b_nuhofia = tribal

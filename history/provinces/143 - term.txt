@@ -1,0 +1,5 @@
+	title = c_term
+	max_settlements = 7
+	culture = armenian
+	religion = nestorian
+	b_tonyar = tribal

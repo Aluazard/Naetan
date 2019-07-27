@@ -1,0 +1,5 @@
+	title = c_kocadga
+	max_settlements = 7
+	culture = cuman
+	religion = bogomilist
+	b_niladga = tribal

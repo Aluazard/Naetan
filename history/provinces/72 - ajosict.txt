@@ -1,0 +1,5 @@
+	title = c_ajosict
+	max_settlements = 7
+	culture = ugricbaltic
+	religion = lollard
+	b_tirict = tribal

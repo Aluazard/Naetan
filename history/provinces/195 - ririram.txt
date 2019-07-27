@@ -1,0 +1,5 @@
+	title = c_ririram
+	max_settlements = 4
+	culture = lithuanian
+	religion = tengri_pagan
+	b_keloda = tribal

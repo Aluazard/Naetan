@@ -1,0 +1,5 @@
+	title = c_nunadza
+	max_settlements = 2
+	culture = zhangzhung
+	religion = zun_pagan_reformed
+	b_ranudev = tribal

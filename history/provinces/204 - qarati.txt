@@ -1,0 +1,5 @@
+	title = c_qarati
+	max_settlements = 3
+	culture = nubian
+	religion = baltic_pagan
+	b_dalesh = tribal

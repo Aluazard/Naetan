@@ -1,0 +1,5 @@
+	title = c_badaaz
+	max_settlements = 7
+	culture = ethiopian
+	religion = hurufi
+	b_agaaz = tribal

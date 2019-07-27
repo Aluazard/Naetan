@@ -1,0 +1,5 @@
+	title = c_sareba
+	max_settlements = 2
+	culture = panjabi
+	religion = bon
+	b_sinava = tribal

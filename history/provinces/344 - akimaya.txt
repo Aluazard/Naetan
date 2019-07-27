@@ -1,0 +1,5 @@
+	title = c_akimaya
+	max_settlements = 2
+	culture = somali
+	religion = jewish
+	b_nandh = tribal

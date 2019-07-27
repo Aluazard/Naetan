@@ -1,0 +1,5 @@
+	title = c_reena
+	max_settlements = 3
+	culture = castillan
+	religion = zun_pagan_reformed
+	b_woleena = tribal

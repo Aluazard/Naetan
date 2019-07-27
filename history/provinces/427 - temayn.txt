@@ -1,0 +1,5 @@
+	title = c_temayn
+	max_settlements = 5
+	culture = andalusian_arabic
+	religion = jain
+	b_anoumyut = tribal

@@ -1,0 +1,5 @@
+	title = c_naninop
+	max_settlements = 2
+	culture = bohemian
+	religion = buddhist
+	b_ralarl = tribal

@@ -1,0 +1,5 @@
+	title = c_qelagai
+	max_settlements = 7
+	culture = bulgarian
+	religion = iconoclast
+	b_qelimur = tribal

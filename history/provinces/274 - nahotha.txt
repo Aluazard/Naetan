@@ -1,0 +1,5 @@
+	title = c_nahotha
+	max_settlements = 7
+	culture = gujurati
+	religion = aztec_reformed
+	b_ralilen = tribal

@@ -1,0 +1,5 @@
+	title = c_losalid
+	max_settlements = 7
+	culture = persian
+	religion = interface_skin
+	b_kisarda = tribal

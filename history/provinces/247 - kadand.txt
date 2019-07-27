@@ -1,0 +1,5 @@
+	title = c_kadand
+	max_settlements = 3
+	culture = songhay
+	religion = mazdaki
+	b_qamerm = tribal

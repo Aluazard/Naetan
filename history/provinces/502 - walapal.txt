@@ -1,0 +1,5 @@
+	title = c_walapal
+	max_settlements = 2
+	culture = coptic
+	religion = hindu
+	b_ehanure = tribal

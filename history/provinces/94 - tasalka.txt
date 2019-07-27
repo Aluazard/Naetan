@@ -1,0 +1,5 @@
+	title = c_tasalka
+	max_settlements = 3
+	culture = kurdish
+	religion = ibadi
+	b_sasayn = tribal

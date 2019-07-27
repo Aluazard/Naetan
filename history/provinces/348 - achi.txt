@@ -1,0 +1,5 @@
+	title = c_achi
+	max_settlements = 3
+	culture = italian
+	religion = druze
+	b_sakuju = tribal

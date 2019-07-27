@@ -1,0 +1,5 @@
+	title = c_kandda
+	max_settlements = 5
+	culture = oriya
+	religion = aztec
+	b_avaleslu = tribal

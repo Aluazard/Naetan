@@ -1,0 +1,5 @@
+	title = c_qalukh
+	max_settlements = 6
+	culture = khitan
+	religion = iconoclast
+	b_akimapal = tribal

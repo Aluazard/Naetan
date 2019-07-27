@@ -1,0 +1,5 @@
+	title = c_exinadga
+	max_settlements = 2
+	culture = hungarian
+	religion = bon
+	b_enesh = tribal

@@ -1,0 +1,5 @@
+	title = c_darern
+	max_settlements = 2
+	culture = romanian
+	religion = jain
+	b_becict = tribal

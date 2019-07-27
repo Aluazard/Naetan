@@ -1,0 +1,5 @@
+	title = c_dazay
+	max_settlements = 3
+	culture = alan
+	religion = kharijite
+	b_notarda = tribal

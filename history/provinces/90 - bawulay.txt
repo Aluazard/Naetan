@@ -1,0 +1,5 @@
+	title = c_bawulay
+	max_settlements = 4
+	culture = andalusian_arabic
+	religion = interface_skin
+	b_demulay = tribal

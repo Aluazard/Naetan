@@ -1,0 +1,5 @@
+	title = c_ladiram
+	max_settlements = 7
+	culture = rajput
+	religion = iconoclast
+	b_rimaaz = tribal

@@ -1,0 +1,5 @@
+	title = c_etelelen
+	max_settlements = 7
+	culture = marathi
+	religion = kharijite
+	b_ricelen = tribal

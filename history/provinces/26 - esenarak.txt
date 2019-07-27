@@ -1,0 +1,5 @@
+	title = c_esenarak
+	max_settlements = 4
+	culture = persian
+	religion = shiite
+	b_atsuri = tribal

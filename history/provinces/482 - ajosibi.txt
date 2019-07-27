@@ -1,0 +1,5 @@
+	title = c_ajosibi
+	max_settlements = 7
+	culture = nubian
+	religion = qarmatian
+	b_anibi = tribal

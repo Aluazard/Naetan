@@ -1,0 +1,5 @@
+	title = c_rokorad
+	max_settlements = 2
+	culture = maghreb_arabic
+	religion = jain
+	b_tegulnaz = tribal

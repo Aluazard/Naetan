@@ -1,0 +1,5 @@
+	title = c_kozoda
+	max_settlements = 3
+	culture = bodpa
+	religion = pagan
+	b_dakala = tribal

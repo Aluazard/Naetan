@@ -1,0 +1,5 @@
+	title = c_rularkad
+	max_settlements = 2
+	culture = sumpa
+	religion = zun_pagan
+	b_aloke = tribal

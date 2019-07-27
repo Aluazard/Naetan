@@ -1,0 +1,208 @@
+758.2.1 = {
+	holder = 1000010
+	law = succ_seniority
+	law = agnatic_succession
+}
+
+758.2.2 = {
+	holder = 1000012
+	law = succ_feudal_elective
+	law = agnatic_succession
+}
+
+758.2.3 = {
+	holder = 1000665
+	law = succ_elective_gavelkind
+	law = cognatic_succession
+}
+
+758.2.4 = {
+	liege = d_ecatava
+}
+
+758.2.5 = {
+	holder = 1000663
+	law = succ_elective_gavelkind
+	law = cognatic_succession
+}
+
+769.2.1 = {
+	holder = 1000763
+}
+
+800.2.1 = {
+	liege = d_seza
+}
+
+800.2.2 = {
+	liege = d_qatayan
+}
+
+800.2.3 = {
+	liege = d_lalyamo
+}
+
+800.2.4 = {
+	holder = 1001257
+}
+
+825.2.1 = {
+	holder = 1002286
+}
+
+825.2.2 = {
+	liege = k_raria
+}
+
+847.2.1 = {
+	liege = d_seza
+}
+
+847.2.2 = {
+	liege = d_qatayan
+}
+
+847.2.3 = {
+	liege = d_lalyamo
+}
+
+847.2.4 = {
+	holder = 1002907
+}
+
+893.2.1 = {
+	holder = 1003164
+}
+
+916.2.1 = {
+	holder = 1004016
+}
+
+916.2.2 = {
+	liege = k_raria
+}
+
+918.2.1 = {
+	liege = d_qilan
+}
+
+918.2.2 = {
+	liege = d_qatayan
+}
+
+918.2.3 = {
+	liege = d_seza
+}
+
+918.2.4 = {
+	liege = d_lalyamo
+}
+
+918.2.5 = {
+	holder = 1004050
+}
+
+918.2.6 = {
+	liege = k_raria
+}
+
+928.2.1 = {
+	liege = d_ecatava
+}
+
+928.2.2 = {
+	liege = d_seza
+}
+
+928.2.3 = {
+	liege = d_qatayan
+}
+
+928.2.4 = {
+	liege = d_lalyamo
+}
+
+928.2.5 = {
+	holder = 1004086
+}
+
+950.2.1 = {
+	holder = 1004377
+}
+
+950.2.2 = {
+	liege = k_raria
+}
+
+991.2.1 = {
+	liege = d_qilan
+}
+
+991.2.2 = {
+	liege = d_qatayan
+}
+
+991.2.3 = {
+	liege = d_seza
+}
+
+991.2.4 = {
+	liege = d_lalyamo
+}
+
+991.2.5 = {
+	holder = 1004725
+}
+
+991.2.6 = {
+	liege = k_raria
+}
+
+1032.2.1 = {
+	liege = d_qilan
+}
+
+1032.2.2 = {
+	liege = d_qatayan
+}
+
+1032.2.3 = {
+	liege = d_seza
+}
+
+1032.2.4 = {
+	liege = d_lalyamo
+}
+
+1032.2.5 = {
+	holder = 1005054
+}
+
+1032.2.6 = {
+	liege = k_raria
+}
+
+1065.2.1 = {
+	liege = d_qilan
+}
+
+1065.2.2 = {
+	liege = d_qatayan
+}
+
+1065.2.3 = {
+	liege = d_seza
+}
+
+1065.2.4 = {
+	liege = d_lalyamo
+}
+
+1065.2.5 = {
+	holder = 1005447
+}
+
+1065.2.6 = {
+	liege = k_raria
+}
+

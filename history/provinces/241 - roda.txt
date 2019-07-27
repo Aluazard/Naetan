@@ -1,0 +1,5 @@
+	title = c_roda
+	max_settlements = 6
+	culture = songhay
+	religion = yazidi
+	b_relansur = tribal

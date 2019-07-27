@@ -1,0 +1,5 @@
+	title = c_tetaham
+	max_settlements = 2
+	culture = nubian
+	religion = color
+	b_tedena = tribal

@@ -1,0 +1,5 @@
+	title = c_eljanoz
+	max_settlements = 6
+	culture = alan
+	religion = slavic_pagan_reformed
+	b_raria = tribal

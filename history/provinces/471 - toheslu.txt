@@ -1,0 +1,5 @@
+	title = c_toheslu
+	max_settlements = 4
+	culture = bengali
+	religion = bon_reformed
+	b_wolarda = tribal

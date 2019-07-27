@@ -1,0 +1,5 @@
+	title = c_nusarl
+	max_settlements = 2
+	culture = lithuanian
+	religion = pagan
+	b_soheslu = tribal

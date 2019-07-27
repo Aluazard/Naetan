@@ -1,0 +1,5 @@
+	title = c_romanoz
+	max_settlements = 5
+	culture = norwegian
+	religion = iconoclast
+	b_nija = tribal

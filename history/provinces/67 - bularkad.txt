@@ -1,0 +1,5 @@
+	title = c_bularkad
+	max_settlements = 7
+	culture = mongol
+	religion = norse_pagan_reformed
+	b_lulupa = tribal

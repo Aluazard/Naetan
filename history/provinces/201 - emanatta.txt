@@ -1,0 +1,5 @@
+	title = c_emanatta
+	max_settlements = 7
+	culture = roman
+	religion = karaite
+	b_amaribai = tribal

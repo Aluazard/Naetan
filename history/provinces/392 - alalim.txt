@@ -1,0 +1,5 @@
+	title = c_alalim
+	max_settlements = 2
+	culture = levantine_arabic
+	religion = bogomilist
+	b_reuluju = tribal

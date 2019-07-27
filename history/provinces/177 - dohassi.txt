@@ -1,0 +1,5 @@
+	title = c_dohassi
+	max_settlements = 4
+	culture = ilmenian
+	religion = tengri_pagan_reformed
+	b_rasorad = tribal

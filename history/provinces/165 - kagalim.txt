@@ -1,0 +1,5 @@
+	title = c_kagalim
+	max_settlements = 2
+	culture = kannada
+	religion = samaritan
+	b_batelin = tribal

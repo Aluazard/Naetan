@@ -1,0 +1,5 @@
+	title = c_qelaide
+	max_settlements = 2
+	culture = english
+	religion = baltic_pagan_reformed
+	b_walence = tribal

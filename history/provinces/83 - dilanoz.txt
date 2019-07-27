@@ -1,0 +1,5 @@
+	title = c_dilanoz
+	max_settlements = 6
+	culture = alan
+	religion = norse_pagan
+	b_kiuln = tribal

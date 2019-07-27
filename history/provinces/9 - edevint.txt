@@ -1,0 +1,5 @@
+	title = c_edevint
+	max_settlements = 3
+	culture = assamese
+	religion = yazidi
+	b_rakina = tribal

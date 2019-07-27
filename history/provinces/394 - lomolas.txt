@@ -1,0 +1,5 @@
+	title = c_lomolas
+	max_settlements = 2
+	culture = oriya
+	religion = bon_reformed
+	b_licolas = tribal

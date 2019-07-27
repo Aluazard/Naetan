@@ -1,0 +1,5 @@
+	title = c_kivostas
+	max_settlements = 2
+	culture = dalmatian
+	religion = shiite
+	b_rorimur = tribal

@@ -1,0 +1,5 @@
+	title = c_duhofia
+	max_settlements = 7
+	culture = castillan
+	religion = baltic_pagan_reformed
+	b_radibi = tribal

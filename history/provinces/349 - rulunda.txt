@@ -1,0 +1,5 @@
+	title = c_rulunda
+	max_settlements = 3
+	culture = breton
+	religion = karaite
+	b_tomorri = tribal

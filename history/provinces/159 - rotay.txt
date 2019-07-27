@@ -1,0 +1,5 @@
+	title = c_rotay
+	max_settlements = 4
+	culture = roman
+	religion = hurufi
+	b_ragayn = tribal

@@ -1,0 +1,5 @@
+	title = c_dulupa
+	max_settlements = 7
+	culture = samoyed
+	religion = bogomilist
+	b_losoge = tribal

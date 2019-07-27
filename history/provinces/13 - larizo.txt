@@ -1,0 +1,5 @@
+	title = c_larizo
+	max_settlements = 2
+	culture = hungarian
+	religion = orthodox
+	b_decaide = tribal

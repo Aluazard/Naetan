@@ -1,0 +1,5 @@
+	title = c_evaliulf
+	max_settlements = 7
+	culture = maghreb_arabic
+	religion = tengri_pagan
+	b_kaham = tribal

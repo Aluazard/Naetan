@@ -1,0 +1,5 @@
+	title = c_ebizo
+	max_settlements = 6
+	culture = kanuri
+	religion = yazidi
+	b_bara = tribal

@@ -1,0 +1,5 @@
+	title = c_tecomas
+	max_settlements = 6
+	culture = egyptian_arabic
+	religion = west_african_pagan_reformed
+	b_wamacia = tribal

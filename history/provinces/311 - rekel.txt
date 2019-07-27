@@ -1,0 +1,5 @@
+	title = c_rekel
+	max_settlements = 3
+	culture = pommeranian
+	religion = aztec
+	b_qadelen = tribal

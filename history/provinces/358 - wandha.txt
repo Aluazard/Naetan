@@ -1,0 +1,5 @@
+	title = c_wandha
+	max_settlements = 5
+	culture = english
+	religion = cathar
+	b_dapay = tribal

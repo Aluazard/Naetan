@@ -1,0 +1,5 @@
+	title = c_tobelen
+	max_settlements = 2
+	culture = sumpa
+	religion = interface_skin
+	b_dekel = tribal

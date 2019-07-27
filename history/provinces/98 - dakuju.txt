@@ -1,0 +1,5 @@
+	title = c_dakuju
+	max_settlements = 6
+	culture = mordvin
+	religion = iconoclast
+	b_dozubu = tribal

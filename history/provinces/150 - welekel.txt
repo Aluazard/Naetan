@@ -1,0 +1,5 @@
+	title = c_welekel
+	max_settlements = 7
+	culture = russian
+	religion = baltic_pagan_reformed
+	b_dugija = tribal

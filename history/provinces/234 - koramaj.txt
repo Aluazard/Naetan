@@ -1,0 +1,5 @@
+	title = c_koramaj
+	max_settlements = 7
+	culture = breton
+	religion = buddhist
+	b_ninarak = tribal

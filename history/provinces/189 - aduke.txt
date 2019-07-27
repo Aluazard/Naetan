@@ -1,0 +1,5 @@
+	title = c_aduke
+	max_settlements = 2
+	culture = russian
+	religion = slavic_pagan_reformed
+	b_elalim = tribal

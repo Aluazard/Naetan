@@ -1,0 +1,5 @@
+	title = c_kelen
+	max_settlements = 4
+	culture = tangut
+	religion = tengri_pagan_reformed
+	b_nadiad = tribal

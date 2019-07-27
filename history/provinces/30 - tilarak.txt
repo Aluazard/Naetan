@@ -1,0 +1,5 @@
+	title = c_tilarak
+	max_settlements = 7
+	culture = sogdian
+	religion = samaritan
+	b_babict = tribal

@@ -1,0 +1,52 @@
+758.2.1 = {
+	holder = 1000002
+	law = succ_primogeniture
+	law = agnatic_succession
+}
+
+758.2.2 = {
+	holder = 1000177
+	law = succ_primogeniture
+	law = agnatic_succession
+}
+
+758.2.3 = {
+	liege = d_nagiban
+}
+
+758.2.4 = {
+	holder = 1000178
+	law = succ_feudal_elective
+	law = agnatic_succession
+}
+
+758.2.5 = {
+	holder = 1000175
+	law = succ_primogeniture
+	law = agnatic_succession
+}
+
+900.2.1 = {
+	holder = 1003346
+}
+
+912.2.1 = {
+	holder = 1003788
+}
+
+961.2.1 = {
+	holder = 1003996
+}
+
+965.2.1 = {
+	holder = 1004669
+}
+
+1013.2.1 = {
+	holder = 1004689
+}
+
+1031.2.1 = {
+	holder = 1005415
+}
+

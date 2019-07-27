@@ -1,0 +1,5 @@
+	title = c_bipija
+	max_settlements = 4
+	culture = gujurati
+	religion = tengri_pagan_reformed
+	b_kalava = tribal

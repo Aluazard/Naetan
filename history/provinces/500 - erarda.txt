@@ -1,0 +1,5 @@
+	title = c_erarda
+	max_settlements = 6
+	culture = bengali
+	religion = samaritan
+	b_surara = tribal

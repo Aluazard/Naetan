@@ -1,0 +1,5 @@
+	title = c_kajen
+	max_settlements = 7
+	culture = gujurati
+	religion = druze
+	b_sacegen = tribal

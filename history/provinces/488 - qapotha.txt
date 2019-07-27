@@ -1,0 +1,5 @@
+	title = c_qapotha
+	max_settlements = 7
+	culture = sumpa
+	religion = paulician
+	b_amicarl = tribal

@@ -1,0 +1,5 @@
+	title = c_tagostas
+	max_settlements = 7
+	culture = italian
+	religion = pagan
+	b_ratuju = tribal

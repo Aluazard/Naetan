@@ -1,0 +1,5 @@
+	title = c_bohas
+	max_settlements = 5
+	culture = telugu
+	religion = taoist
+	b_tohisam = tribal

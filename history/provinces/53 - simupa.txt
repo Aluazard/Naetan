@@ -1,0 +1,5 @@
+	title = c_simupa
+	max_settlements = 7
+	culture = irish
+	religion = finnish_pagan_reformed
+	b_adimii = tribal

@@ -1,0 +1,5 @@
+	title = c_daranya
+	max_settlements = 7
+	culture = oriya
+	religion = west_african_pagan_reformed
+	b_bipava = tribal

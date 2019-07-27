@@ -1,0 +1,5 @@
+	title = c_qera
+	max_settlements = 7
+	culture = norse
+	religion = bon
+	b_dinava = tribal

@@ -1,0 +1,5 @@
+	title = c_ewalarak
+	max_settlements = 5
+	culture = nubian
+	religion = catholic
+	b_toramaj = tribal

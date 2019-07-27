@@ -1,0 +1,5 @@
+	title = c_dasalka
+	max_settlements = 7
+	culture = crimean_gothic
+	religion = druze
+	b_qasayn = tribal

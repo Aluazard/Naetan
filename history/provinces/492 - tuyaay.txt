@@ -1,0 +1,5 @@
+	title = c_tuyaay
+	max_settlements = 2
+	culture = norwegian
+	religion = baltic_pagan_reformed
+	b_kuhara = tribal

@@ -1,0 +1,5 @@
+	title = c_kasyut
+	max_settlements = 2
+	culture = kanuri
+	religion = shiite
+	b_balid = tribal

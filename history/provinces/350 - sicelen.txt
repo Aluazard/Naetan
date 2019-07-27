@@ -1,0 +1,5 @@
+	title = c_sicelen
+	max_settlements = 2
+	culture = uyghur
+	religion = samaritan
+	b_welali = tribal

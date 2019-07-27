@@ -1,0 +1,5 @@
+	title = c_egansur
+	max_settlements = 7
+	culture = lombard
+	religion = interface_skin
+	b_suliram = tribal

@@ -1,0 +1,5 @@
+	title = c_tostas
+	max_settlements = 2
+	culture = bedouin_arabic
+	religion = jain
+	b_wivuju = tribal

@@ -1,0 +1,5 @@
+	title = c_qaleuba
+	max_settlements = 4
+	culture = afghan
+	religion = west_african_pagan
+	b_ralotha = tribal

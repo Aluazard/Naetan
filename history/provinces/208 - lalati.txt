@@ -1,0 +1,5 @@
+	title = c_lalati
+	max_settlements = 7
+	culture = karluk
+	religion = sunni
+	b_echicta = tribal

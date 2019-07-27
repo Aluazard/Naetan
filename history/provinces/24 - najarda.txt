@@ -1,0 +1,5 @@
+	title = c_najarda
+	max_settlements = 7
+	culture = lappish
+	religion = shiite
+	b_erajara = tribal

@@ -1,0 +1,5 @@
+	title = c_bimurli
+	max_settlements = 7
+	culture = bedouin_arabic
+	religion = baltic_pagan_reformed
+	b_qururli = tribal

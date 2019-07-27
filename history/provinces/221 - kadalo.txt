@@ -1,0 +1,5 @@
+	title = c_kadalo
+	max_settlements = 6
+	culture = songhay
+	religion = paulician
+	b_daisalo = tribal

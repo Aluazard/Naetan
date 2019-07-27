@@ -1,0 +1,5 @@
+	title = c_eferuri
+	max_settlements = 2
+	culture = bedouin_arabic
+	religion = norse_pagan_reformed
+	b_sohict = tribal

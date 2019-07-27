@@ -1,0 +1,5 @@
+	title = c_wyiloan
+	max_settlements = 2
+	culture = russian
+	religion = kharijite
+	b_kubayn = tribal

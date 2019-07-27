@@ -1,0 +1,5 @@
+	title = c_wigorad
+	max_settlements = 2
+	culture = sephardi
+	religion = monophysite
+	b_abraria = tribal

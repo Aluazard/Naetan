@@ -1,0 +1,5 @@
+	title = c_bareba
+	max_settlements = 3
+	culture = pommeranian
+	religion = bon_reformed
+	b_kipesh = tribal

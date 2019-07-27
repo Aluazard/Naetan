@@ -1,0 +1,5 @@
+	title = c_barar
+	max_settlements = 2
+	culture = norse
+	religion = manichean
+	b_salar = tribal

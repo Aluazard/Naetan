@@ -1,0 +1,5 @@
+	title = c_kolas
+	max_settlements = 7
+	culture = norman
+	religion = buddhist
+	b_qomekel = tribal

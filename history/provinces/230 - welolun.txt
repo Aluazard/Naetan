@@ -1,0 +1,5 @@
+	title = c_welolun
+	max_settlements = 2
+	culture = prussian
+	religion = iconoclast
+	b_achiha = tribal

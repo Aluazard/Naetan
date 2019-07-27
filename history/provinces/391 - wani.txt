@@ -1,0 +1,5 @@
+	title = c_wani
+	max_settlements = 3
+	culture = somali
+	religion = west_african_pagan
+	b_dulas = tribal

@@ -1,0 +1,5 @@
+	title = c_alele
+	max_settlements = 3
+	culture = portuguese
+	religion = cathar
+	b_sasutka = tribal

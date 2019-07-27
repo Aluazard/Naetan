@@ -1,0 +1,5 @@
+	title = c_tanudev
+	max_settlements = 7
+	culture = sardinian
+	religion = cathar
+	b_kalogna = tribal

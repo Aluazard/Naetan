@@ -1,0 +1,5 @@
+	title = c_adukala
+	max_settlements = 2
+	culture = turkish
+	religion = kharijite
+	b_atiriram = tribal

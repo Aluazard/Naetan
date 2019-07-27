@@ -1,0 +1,5 @@
+	title = c_nelarda
+	max_settlements = 7
+	culture = norse
+	religion = yazidi
+	b_efolict = tribal

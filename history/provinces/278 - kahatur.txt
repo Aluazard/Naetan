@@ -1,0 +1,5 @@
+	title = c_kahatur
+	max_settlements = 5
+	culture = avar
+	religion = color
+	b_solinop = tribal

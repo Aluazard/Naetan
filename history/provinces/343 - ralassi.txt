@@ -1,0 +1,5 @@
+	title = c_ralassi
+	max_settlements = 7
+	culture = german
+	religion = bon_reformed
+	b_ecalorad = tribal

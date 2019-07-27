@@ -1,0 +1,5 @@
+	title = c_wurorri
+	max_settlements = 7
+	culture = coptic
+	religion = sunni
+	b_lagibi = tribal

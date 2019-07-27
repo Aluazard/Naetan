@@ -1,0 +1,5 @@
+	title = c_sapilen
+	max_settlements = 2
+	culture = mongol
+	religion = color
+	b_ticay = tribal

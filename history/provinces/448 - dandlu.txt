@@ -1,0 +1,5 @@
+	title = c_dandlu
+	max_settlements = 3
+	culture = tangut
+	religion = west_african_pagan
+	b_etoharl = tribal

@@ -1,0 +1,5 @@
+	title = c_nagyut
+	max_settlements = 2
+	culture = basque
+	religion = yazidi
+	b_asurevat = tribal

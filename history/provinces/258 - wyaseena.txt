@@ -1,0 +1,5 @@
+	title = c_wyaseena
+	max_settlements = 7
+	culture = samoyed
+	religion = ibadi
+	b_asajaura = tribal

@@ -1,0 +1,5 @@
+	title = c_tapotha
+	max_settlements = 2
+	culture = outremer
+	religion = interface_skin
+	b_sirsu = tribal

@@ -1,0 +1,5 @@
+	title = c_rolele
+	max_settlements = 2
+	culture = norwegian
+	religion = interface_skin
+	b_qararda = tribal

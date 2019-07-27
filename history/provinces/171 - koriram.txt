@@ -1,0 +1,5 @@
+	title = c_koriram
+	max_settlements = 3
+	culture = catalan
+	religion = west_african_pagan
+	b_byadaaz = tribal

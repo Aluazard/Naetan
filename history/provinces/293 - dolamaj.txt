@@ -1,0 +1,5 @@
+	title = c_dolamaj
+	max_settlements = 2
+	culture = portuguese
+	religion = khurmazta
+	b_wegence = tribal

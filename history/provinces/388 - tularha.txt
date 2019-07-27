@@ -1,0 +1,5 @@
+	title = c_tularha
+	max_settlements = 2
+	culture = daju
+	religion = paulician
+	b_qeliram = tribal

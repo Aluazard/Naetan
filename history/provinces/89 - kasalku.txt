@@ -1,0 +1,5 @@
+	title = c_kasalku
+	max_settlements = 4
+	culture = songhay
+	religion = monophysite
+	b_nacalku = tribal

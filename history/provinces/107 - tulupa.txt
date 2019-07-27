@@ -1,0 +1,5 @@
+	title = c_tulupa
+	max_settlements = 7
+	culture = bengali
+	religion = miaphysite
+	b_kuroge = tribal

@@ -1,0 +1,5 @@
+	title = c_qiurd
+	max_settlements = 3
+	culture = nahuatl
+	religion = bon_reformed
+	b_epadila = tribal

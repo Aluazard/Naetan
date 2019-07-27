@@ -1,0 +1,5 @@
+	title = c_quhurli
+	max_settlements = 6
+	culture = komi
+	religion = nestorian
+	b_rimunda = tribal

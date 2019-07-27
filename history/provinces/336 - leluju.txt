@@ -1,0 +1,5 @@
+	title = c_leluju
+	max_settlements = 2
+	culture = russian
+	religion = interface_skin
+	b_ragoda = tribal

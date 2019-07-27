@@ -1,0 +1,5 @@
+	title = c_serm
+	max_settlements = 7
+	culture = lombard
+	religion = catholic
+	b_buitlis = tribal

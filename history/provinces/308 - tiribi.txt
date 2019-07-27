@@ -1,0 +1,5 @@
+	title = c_tiribi
+	max_settlements = 4
+	culture = khitan
+	religion = aztec_reformed
+	b_rarkad = tribal

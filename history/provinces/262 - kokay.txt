@@ -1,0 +1,5 @@
+	title = c_kokay
+	max_settlements = 7
+	culture = norse
+	religion = tengri_pagan
+	b_kotevat = tribal

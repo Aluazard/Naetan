@@ -1,0 +1,5 @@
+	title = c_kitrio
+	max_settlements = 5
+	culture = khitan
+	religion = waldensian
+	b_tevonza = tribal

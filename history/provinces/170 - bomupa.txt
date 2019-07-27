@@ -1,0 +1,5 @@
+	title = c_bomupa
+	max_settlements = 6
+	culture = croatian
+	religion = hellenic_pagan
+	b_ragabga = tribal

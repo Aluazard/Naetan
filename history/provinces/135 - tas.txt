@@ -1,0 +1,5 @@
+	title = c_tas
+	max_settlements = 4
+	culture = ashkenazi
+	religion = hellenic_pagan
+	b_agarha = tribal

@@ -1,0 +1,5 @@
+	title = c_kocega
+	max_settlements = 6
+	culture = pommeranian
+	religion = catholic
+	b_reia = tribal

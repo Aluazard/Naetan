@@ -1,0 +1,5 @@
+	title = c_ateitta
+	max_settlements = 2
+	culture = meshchera
+	religion = finnish_pagan
+	b_karar = tribal

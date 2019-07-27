@@ -1,0 +1,5 @@
+	title = c_kecele
+	max_settlements = 7
+	culture = khitan
+	religion = zoroastrian
+	b_arajuri = tribal

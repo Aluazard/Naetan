@@ -1,0 +1,86 @@
+758.2.1 = {
+	holder = 1000747
+	law = succ_primogeniture
+	law = agnatic_succession
+}
+
+758.2.2 = {
+	liege = e_womagai
+}
+
+758.2.3 = {
+	liege = e_amielka
+}
+
+758.2.4 = {
+	liege = e_abelagai
+}
+
+758.2.5 = {
+	liege = e_tolas
+}
+
+758.2.6 = {
+	liege = e_amatija
+}
+
+758.2.7 = {
+	liege = e_lelen
+}
+
+783.2.1 = {
+	holder = 1001663
+}
+
+790.2.1 = {
+	holder = 1000375
+}
+
+802.2.1 = {
+	holder = 1001409
+}
+
+829.2.1 = {
+	holder = 1002464
+}
+
+862.2.1 = {
+	holder = 1002835
+}
+
+871.2.1 = {
+	holder = 1003388
+}
+
+894.2.1 = {
+	holder = 1003635
+}
+
+895.2.1 = {
+	holder = 1003755
+}
+
+941.2.1 = {
+	holder = 1004028
+}
+
+943.2.1 = {
+	holder = 1004399
+}
+
+985.2.1 = {
+	holder = 1004441
+}
+
+1010.2.1 = {
+	holder = 1005206
+}
+
+1021.2.1 = {
+	holder = 1005308
+}
+
+1036.2.1 = {
+	holder = 1005480
+}
+

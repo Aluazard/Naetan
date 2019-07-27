@@ -1,0 +1,5 @@
+	title = c_wunacia
+	max_settlements = 7
+	culture = carantanian
+	religion = sunni
+	b_kan = tribal

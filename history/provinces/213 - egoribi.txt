@@ -1,0 +1,5 @@
+	title = c_egoribi
+	max_settlements = 7
+	culture = sardinian
+	religion = zun_pagan
+	b_saisii = tribal

@@ -1,0 +1,5 @@
+	title = c_danamaj
+	max_settlements = 7
+	culture = pictish
+	religion = khurmazta
+	b_balern = tribal

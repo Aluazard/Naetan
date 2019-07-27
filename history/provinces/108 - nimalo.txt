@@ -1,0 +1,5 @@
+	title = c_nimalo
+	max_settlements = 5
+	culture = jurchen
+	religion = hellenic_pagan_reformed
+	b_turoge = tribal

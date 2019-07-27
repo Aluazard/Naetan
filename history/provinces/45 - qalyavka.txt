@@ -1,0 +1,5 @@
+	title = c_qalyavka
+	max_settlements = 2
+	culture = tocharian
+	religion = shiite
+	b_kalid = tribal

@@ -1,0 +1,5 @@
+	title = c_tuyarda
+	max_settlements = 5
+	culture = lithuanian
+	religion = sunni
+	b_nisay = tribal

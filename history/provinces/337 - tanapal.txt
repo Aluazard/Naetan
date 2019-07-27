@@ -1,0 +1,5 @@
+	title = c_tanapal
+	max_settlements = 2
+	culture = georgian
+	religion = shiite
+	b_balali = tribal

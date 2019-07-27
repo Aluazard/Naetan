@@ -1,0 +1,5 @@
+	title = c_karak
+	max_settlements = 7
+	culture = sephardi
+	religion = pagan
+	b_lanarda = tribal

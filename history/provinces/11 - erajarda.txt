@@ -1,0 +1,5 @@
+	title = c_erajarda
+	max_settlements = 7
+	culture = roman
+	religion = qarmatian
+	b_atjele = tribal

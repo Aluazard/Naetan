@@ -1,0 +1,5 @@
+	title = c_tuhozh
+	max_settlements = 3
+	culture = gujurati
+	religion = bogomilist
+	b_aradalo = tribal

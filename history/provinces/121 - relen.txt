@@ -1,0 +1,5 @@
+	title = c_relen
+	max_settlements = 5
+	culture = kurdish
+	religion = bon_reformed
+	b_tatila = tribal

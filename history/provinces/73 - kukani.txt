@@ -1,0 +1,5 @@
+	title = c_kukani
+	max_settlements = 5
+	culture = nubian
+	religion = manichean
+	b_telarha = tribal

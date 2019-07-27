@@ -1,0 +1,5 @@
+	title = c_rapotha
+	max_settlements = 2
+	culture = catalan
+	religion = lollard
+	b_nannam = tribal

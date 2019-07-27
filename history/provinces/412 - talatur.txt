@@ -1,0 +1,5 @@
+	title = c_talatur
+	max_settlements = 5
+	culture = irish
+	religion = color
+	b_qaniulf = tribal

@@ -1,0 +1,5 @@
+	title = c_segaila
+	max_settlements = 7
+	culture = alan
+	religion = shiite
+	b_qorgia = tribal

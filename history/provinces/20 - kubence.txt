@@ -1,0 +1,5 @@
+	title = c_kubence
+	max_settlements = 2
+	culture = kirghiz
+	religion = interface_skin
+	b_amubamaj = tribal

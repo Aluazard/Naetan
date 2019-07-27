@@ -1,0 +1,5 @@
+	title = c_rubu
+	max_settlements = 7
+	culture = telugu
+	religion = shiite
+	b_tagalim = tribal

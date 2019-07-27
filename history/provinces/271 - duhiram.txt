@@ -1,0 +1,5 @@
+	title = c_duhiram
+	max_settlements = 5
+	culture = bohemian
+	religion = tengri_pagan_reformed
+	b_eraisalo = tribal

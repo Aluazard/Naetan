@@ -1,0 +1,5 @@
+	title = c_kelezu
+	max_settlements = 3
+	culture = bolghar
+	religion = nestorian
+	b_ratezu = tribal

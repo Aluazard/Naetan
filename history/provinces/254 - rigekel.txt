@@ -1,0 +1,5 @@
+	title = c_rigekel
+	max_settlements = 2
+	culture = saka
+	religion = shiite
+	b_ematali = tribal

@@ -1,0 +1,5 @@
+	title = c_legen
+	max_settlements = 4
+	culture = nahuatl
+	religion = tengri_pagan_reformed
+	b_wija = tribal

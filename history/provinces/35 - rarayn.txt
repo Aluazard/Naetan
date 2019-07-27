@@ -1,0 +1,5 @@
+	title = c_rarayn
+	max_settlements = 7
+	culture = hungarian
+	religion = color
+	b_noan = tribal

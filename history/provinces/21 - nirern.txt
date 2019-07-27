@@ -1,0 +1,5 @@
+	title = c_nirern
+	max_settlements = 2
+	culture = egyptian_arabic
+	religion = pagan
+	b_danuri = tribal

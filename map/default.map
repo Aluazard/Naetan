@@ -1,0 +1,47 @@
+
+max_provinces = 879
+definitions = "definition.csv"
+provinces = "provinces.bmp"
+positions = "positions.txt"
+terrain = "terrain.bmp"
+rivers = "rivers.bmp"
+terrain_definition = "terrain.txt"
+heightmap = "topology.bmp"
+tree_definition = "trees.bmp"
+continent = "continent.txt"
+adjacencies = "adjacencies.csv"
+climate = "climate.txt"
+region = "island_region.txt"
+geographical_region = "geographical_region.txt"
+static = "statics"
+seasons = "seasons.txt"
+
+sea_zones = { 512 541}
+sea_zones = { 542 570}
+sea_zones = { 571 601}
+sea_zones = { 602 630}
+sea_zones = { 631 660}
+sea_zones = { 661 693}
+sea_zones = { 694 722}
+sea_zones = { 723 752}
+sea_zones = { 753 782}
+sea_zones = { 783 811}
+sea_zones = { 812 821}
+sea_zones = { 822 850}
+sea_zones = { 851 862}
+sea_zones = { 863 870}
+sea_zones = { 871 872}
+sea_zones = { 873 873}
+sea_zones = { 874 875}
+sea_zones = { 876 876}
+sea_zones = { 877 877}
+sea_zones = { 878 878}
+ocean_region = { 
+     sea_zones = { 1 12 2 4 7 13 3 16 17 18 8 5 14 9 6 10 15 11 }
+}
+ocean_region = { 
+     sea_zones = { 19 }
+}
+ocean_region = { 
+     sea_zones = { 20 }
+}

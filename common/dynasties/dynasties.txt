@@ -1,0 +1,14995 @@
+1 = {
+	name = Terele
+	culture = ilmenian
+}
+
+2 = {
+	name = Lagyut
+	culture = levantine_arabic
+}
+
+3 = {
+	name = Belern
+	culture = khitan
+}
+
+4 = {
+	name = Edavayn
+	culture = assamese
+}
+
+5 = {
+	name = Suityar
+	culture = meshchera
+}
+
+6 = {
+	name = Ecipati
+	culture = polish
+}
+
+7 = {
+	name = Kobila
+	culture = sindhi
+}
+
+8 = {
+	name = Kacaria
+	culture = serbian
+}
+
+9 = {
+	name = Niveario
+	culture = meshchera
+}
+
+10 = {
+	name = Dannarl
+	culture = kannada
+}
+
+11 = {
+	name = Limorri
+	culture = alan
+}
+
+12 = {
+	name = Balesh
+	culture = maghreb_arabic
+}
+
+13 = {
+	name = Waulurz
+	culture = castillan
+}
+
+14 = {
+	name = Lanayn
+	culture = kannada
+}
+
+15 = {
+	name = Kerorgia
+	culture = bengali
+}
+
+16 = {
+	name = Tibaye
+	culture = roman
+}
+
+17 = {
+	name = Nediel
+	culture = swedish
+}
+
+18 = {
+	name = Kuyalid
+	culture = prussian
+}
+
+19 = {
+	name = Laliyar
+	culture = maghreb_arabic
+}
+
+20 = {
+	name = Qolammed
+	culture = portuguese
+}
+
+21 = {
+	name = Biohr
+	culture = russian
+}
+
+22 = {
+	name = Sohanna
+	culture = karluk
+}
+
+23 = {
+	name = Kurimha
+	culture = han
+}
+
+24 = {
+	name = Agunund
+	culture = ugricbaltic
+}
+
+25 = {
+	name = Latict
+	culture = catalan
+}
+
+26 = {
+	name = Qernena
+	culture = volhynian
+}
+
+27 = {
+	name = Qoziad
+	culture = ilmenian
+}
+
+28 = {
+	name = Terifon
+	culture = bodpa
+}
+
+29 = {
+	name = Asirere
+	culture = norse
+}
+
+30 = {
+	name = Kinai
+	culture = assyrian
+}
+
+31 = {
+	name = Sanudev
+	culture = saxon
+}
+
+32 = {
+	name = Tisisii
+	culture = tangut
+}
+
+33 = {
+	name = Apareid
+	culture = ashkenazi
+}
+
+34 = {
+	name = Dularia
+	culture = norwegian
+}
+
+35 = {
+	name = Tiçahab
+	culture = kannada
+}
+
+36 = {
+	name = Bafiat
+	culture = prussian
+}
+
+37 = {
+	name = Talime
+	culture = welsh
+}
+
+38 = {
+	name = Nilayaka
+	culture = german
+}
+
+39 = {
+	name = Baryamo
+	culture = saxon
+}
+
+40 = {
+	name = Dilatka
+	culture = frankish
+}
+
+41 = {
+	name = Kabucai
+	culture = manden
+}
+
+42 = {
+	name = Laheaz
+	culture = kanuri
+}
+
+43 = {
+	name = Ejusujam
+	culture = hindustani
+}
+
+44 = {
+	name = Kilera
+	culture = alan
+}
+
+45 = {
+	name = Wugitë
+	culture = saka
+}
+
+46 = {
+	name = Abjicius
+	culture = danish
+}
+
+47 = {
+	name = Amarana
+	culture = nubian
+}
+
+48 = {
+	name = Ehuneter
+	culture = soninke
+}
+
+49 = {
+	name = Ekurold
+	culture = bodpa
+}
+
+50 = {
+	name = Egananda
+	culture = croatian
+}
+
+51 = {
+	name = Ewinayn
+	culture = ashkenazi
+}
+
+52 = {
+	name = Aferalk
+	culture = rajput
+}
+
+53 = {
+	name = Talict
+	culture = kurdish
+}
+
+54 = {
+	name = Ramaj
+	culture = suebi
+}
+
+55 = {
+	name = Afolarak
+	culture = english
+}
+
+56 = {
+	name = Elourk
+	culture = kirghiz
+}
+
+57 = {
+	name = Awalaila
+	culture = lappish
+}
+
+58 = {
+	name = Qolence
+	culture = breton
+}
+
+59 = {
+	name = Rerarda
+	culture = ashkenazi
+}
+
+60 = {
+	name = Eteramaj
+	culture = telugu
+}
+
+61 = {
+	name = Elarda
+	culture = komi
+}
+
+62 = {
+	name = Kolayn
+	culture = occitan
+}
+
+63 = {
+	name = Werara
+	culture = avar
+}
+
+64 = {
+	name = Afolamaj
+	culture = coptic
+}
+
+65 = {
+	name = Nalarak
+	culture = baloch
+}
+
+66 = {
+	name = Norgia
+	culture = norwegian
+}
+
+67 = {
+	name = Wourda
+	culture = suebi
+}
+
+68 = {
+	name = Tolence
+	culture = assamese
+}
+
+69 = {
+	name = Tazele
+	culture = tocharian
+}
+
+70 = {
+	name = Anazida
+	culture = khitan
+}
+
+71 = {
+	name = Lokalka
+	culture = castillan
+}
+
+72 = {
+	name = Nuyarda
+	culture = norman
+}
+
+73 = {
+	name = Tuyarda
+	culture = coptic
+}
+
+74 = {
+	name = Lotarda
+	culture = somali
+}
+
+75 = {
+	name = Anazict
+	culture = hindustani
+}
+
+76 = {
+	name = Ruyalka
+	culture = mordvin
+}
+
+77 = {
+	name = Salka
+	culture = frisian
+}
+
+78 = {
+	name = Wotele
+	culture = saxon
+}
+
+79 = {
+	name = Nagele
+	culture = lappish
+}
+
+80 = {
+	name = Sotida
+	culture = kannada
+}
+
+81 = {
+	name = Lotevat
+	culture = somali
+}
+
+82 = {
+	name = Wokele
+	culture = zhangzhung
+}
+
+83 = {
+	name = Buyatka
+	culture = armenian
+}
+
+84 = {
+	name = Duhele
+	culture = sephardi
+}
+
+85 = {
+	name = Enagyut
+	culture = bolghar
+}
+
+86 = {
+	name = Qazarda
+	culture = pecheneg
+}
+
+87 = {
+	name = Lisict
+	culture = kanuri
+}
+
+88 = {
+	name = Qisevat
+	culture = saxon
+}
+
+89 = {
+	name = Noumyut
+	culture = turkish
+}
+
+90 = {
+	name = Nasara
+	culture = prussian
+}
+
+91 = {
+	name = Bokarda
+	culture = hindustani
+}
+
+92 = {
+	name = Risyut
+	culture = bulgarian
+}
+
+93 = {
+	name = Qyavka
+	culture = roman
+}
+
+94 = {
+	name = Dazarda
+	culture = soninke
+}
+
+95 = {
+	name = Tasevat
+	culture = khanty
+}
+
+96 = {
+	name = Risida
+	culture = kirghiz
+}
+
+97 = {
+	name = Kaudict
+	culture = avar
+}
+
+98 = {
+	name = Qalutka
+	culture = irish
+}
+
+99 = {
+	name = Remaimur
+	culture = hausa
+}
+
+100 = {
+	name = Kinyut
+	culture = khanty
+}
+
+101 = {
+	name = Kalalka
+	culture = carantanian
+}
+
+102 = {
+	name = Enazayn
+	culture = catalan
+}
+
+103 = {
+	name = Demaimur
+	culture = danish
+}
+
+104 = {
+	name = Sokarda
+	culture = crimean_gothic
+}
+
+105 = {
+	name = Duyarda
+	culture = mordvin
+}
+
+106 = {
+	name = Wuyalka
+	culture = nepali
+}
+
+107 = {
+	name = Rosevat
+	culture = norwegian
+}
+
+108 = {
+	name = Lotyut
+	culture = afghan
+}
+
+109 = {
+	name = Botern
+	culture = gujurati
+}
+
+110 = {
+	name = Enazalka
+	culture = russian
+}
+
+111 = {
+	name = Rasutka
+	culture = khazar
+}
+
+112 = {
+	name = Notida
+	culture = panjabi
+}
+
+113 = {
+	name = Remalid
+	culture = slovieni
+}
+
+114 = {
+	name = Azuhict
+	culture = cuman
+}
+
+115 = {
+	name = Lotalka
+	culture = dutch
+}
+
+116 = {
+	name = Ralalka
+	culture = breton
+}
+
+117 = {
+	name = Kasarda
+	culture = occitan
+}
+
+118 = {
+	name = Qukelin
+	culture = mordvin
+}
+
+119 = {
+	name = Kukalim
+	culture = sephardi
+}
+
+120 = {
+	name = Womarha
+	culture = outremer
+}
+
+121 = {
+	name = Tivalim
+	culture = avar
+}
+
+122 = {
+	name = Toroda
+	culture = nepali
+}
+
+123 = {
+	name = Bulalim
+	culture = mordvin
+}
+
+124 = {
+	name = Natalim
+	culture = croatian
+}
+
+125 = {
+	name = Rakelin
+	culture = telugu
+}
+
+126 = {
+	name = Koriban
+	culture = songhay
+}
+
+127 = {
+	name = Roreæ'
+	culture = danish
+}
+
+128 = {
+	name = Beluju
+	culture = bengali
+}
+
+129 = {
+	name = Ebeliram
+	culture = khitan
+}
+
+130 = {
+	name = Bani
+	culture = german
+}
+
+131 = {
+	name = Rakarha
+	culture = welsh
+}
+
+132 = {
+	name = Takalim
+	culture = pecheneg
+}
+
+133 = {
+	name = Nagala
+	culture = khanty
+}
+
+134 = {
+	name = Kagern
+	culture = serbian
+}
+
+135 = {
+	name = Relimur
+	culture = volhynian
+}
+
+136 = {
+	name = Relalim
+	culture = scottish
+}
+
+137 = {
+	name = Etirolun
+	culture = serbian
+}
+
+138 = {
+	name = Alelin
+	culture = norwegian
+}
+
+139 = {
+	name = Leulolun
+	culture = georgian
+}
+
+140 = {
+	name = Qubu
+	culture = bodpa
+}
+
+141 = {
+	name = Sagalim
+	culture = tocharian
+}
+
+142 = {
+	name = Ragalim
+	culture = tamil
+}
+
+143 = {
+	name = Bagalim
+	culture = levantine_arabic
+}
+
+144 = {
+	name = Qivalim
+	culture = polish
+}
+
+145 = {
+	name = Qeulern
+	culture = lombard
+}
+
+146 = {
+	name = Woroda
+	culture = kirghiz
+}
+
+147 = {
+	name = Lagani
+	culture = marathi
+}
+
+148 = {
+	name = Lelani
+	culture = serbian
+}
+
+149 = {
+	name = Natarha
+	culture = dalmatian
+}
+
+150 = {
+	name = Tilim
+	culture = dutch
+}
+
+151 = {
+	name = Selarha
+	culture = old_frankish
+}
+
+152 = {
+	name = Lirelin
+	culture = bodpa
+}
+
+153 = {
+	name = Keliram
+	culture = portuguese
+}
+
+154 = {
+	name = Tubu
+	culture = sardinian
+}
+
+155 = {
+	name = Elani
+	culture = serbian
+}
+
+156 = {
+	name = Ragiram
+	culture = norwegian
+}
+
+157 = {
+	name = Kukiram
+	culture = andalusian_arabic
+}
+
+158 = {
+	name = Sagubu
+	culture = soninke
+}
+
+159 = {
+	name = Teulalim
+	culture = scottish
+}
+
+160 = {
+	name = Diralim
+	culture = sumpa
+}
+
+161 = {
+	name = Roziban
+	culture = komi
+}
+
+162 = {
+	name = Biram
+	culture = basque
+}
+
+163 = {
+	name = Reulalim
+	culture = frisian
+}
+
+164 = {
+	name = Wukolun
+	culture = catalan
+}
+
+165 = {
+	name = Wukalim
+	culture = norman
+}
+
+166 = {
+	name = Bimur
+	culture = bosnian
+}
+
+167 = {
+	name = Tulalim
+	culture = zhangzhung
+}
+
+168 = {
+	name = Wagiram
+	culture = romanian
+}
+
+169 = {
+	name = Dukern
+	culture = hindustani
+}
+
+170 = {
+	name = Niruju
+	culture = georgian
+}
+
+171 = {
+	name = Bakeæ'
+	culture = carantanian
+}
+
+172 = {
+	name = Elolun
+	culture = zhangzhung
+}
+
+173 = {
+	name = Agulubu
+	culture = avar
+}
+
+174 = {
+	name = Wukagai
+	culture = old_saxon
+}
+
+175 = {
+	name = Agarha
+	culture = karluk
+}
+
+176 = {
+	name = Wern
+	culture = manden
+}
+
+177 = {
+	name = Agulubu
+	culture = carantanian
+}
+
+178 = {
+	name = Añsoa
+	culture = bohemian
+}
+
+179 = {
+	name = Lani
+	culture = sogdian
+}
+
+180 = {
+	name = Bagansur
+	culture = bulgarian
+}
+
+181 = {
+	name = Rivolun
+	culture = norse
+}
+
+182 = {
+	name = Selagai
+	culture = somali
+}
+
+183 = {
+	name = Kimur
+	culture = hindustani
+}
+
+184 = {
+	name = Ajorassi
+	culture = baloch
+}
+
+185 = {
+	name = Kavanay
+	culture = english
+}
+
+186 = {
+	name = Rasalid
+	culture = han
+}
+
+187 = {
+	name = Teayn
+	culture = khazar
+}
+
+188 = {
+	name = Lucalid
+	culture = polish
+}
+
+189 = {
+	name = Karisam
+	culture = bulgarian
+}
+
+190 = {
+	name = Nohalid
+	culture = pictish
+}
+
+191 = {
+	name = Relalid
+	culture = rajput
+}
+
+192 = {
+	name = Tavemba
+	culture = assamese
+}
+
+193 = {
+	name = Terayn
+	culture = scottish
+}
+
+194 = {
+	name = Abohayn
+	culture = khitan
+}
+
+195 = {
+	name = Wucozar
+	culture = norwegian
+}
+
+196 = {
+	name = Dorahar
+	culture = hungarian
+}
+
+197 = {
+	name = Berayn
+	culture = irish
+}
+
+198 = {
+	name = Ralomas
+	culture = russian
+}
+
+199 = {
+	name = Roralid
+	culture = roman
+}
+
+200 = {
+	name = Kunomas
+	culture = turkish
+}
+
+201 = {
+	name = Kinacia
+	culture = gujurati
+}
+
+202 = {
+	name = Namyar
+	culture = sumpa
+}
+
+203 = {
+	name = Ladius
+	culture = georgian
+}
+
+204 = {
+	name = Qorassi
+	culture = portuguese
+}
+
+205 = {
+	name = Relezu
+	culture = songhay
+}
+
+206 = {
+	name = Boussa
+	culture = manden
+}
+
+207 = {
+	name = Kamius
+	culture = sindhi
+}
+
+208 = {
+	name = Kogassi
+	culture = catalan
+}
+
+209 = {
+	name = Ajorius
+	culture = assyrian
+}
+
+210 = {
+	name = Nuityar
+	culture = samoyed
+}
+
+211 = {
+	name = Saojsa
+	culture = crimean_gothic
+}
+
+212 = {
+	name = Baojyar
+	culture = pictish
+}
+
+213 = {
+	name = Rerm
+	culture = bolghar
+}
+
+214 = {
+	name = Nipanya
+	culture = scottish
+}
+
+215 = {
+	name = Sanija
+	culture = tocharian
+}
+
+216 = {
+	name = Rarija
+	culture = tamil
+}
+
+217 = {
+	name = Silati
+	culture = komi
+}
+
+218 = {
+	name = Tuehati
+	culture = karluk
+}
+
+219 = {
+	name = Kitirí
+	culture = cuman
+}
+
+220 = {
+	name = Rocibai
+	culture = tangut
+}
+
+221 = {
+	name = Tilesh
+	culture = german
+}
+
+222 = {
+	name = Ritiya
+	culture = zaghawa
+}
+
+223 = {
+	name = Reinya
+	culture = komi
+}
+
+224 = {
+	name = Ticali
+	culture = khitan
+}
+
+225 = {
+	name = Balibai
+	culture = andalusian_arabic
+}
+
+226 = {
+	name = Kanatta
+	culture = welsh
+}
+
+227 = {
+	name = Laladga
+	culture = carantanian
+}
+
+228 = {
+	name = Kalesh
+	culture = telugu
+}
+
+229 = {
+	name = Sipiya
+	culture = sindhi
+}
+
+230 = {
+	name = Lilava
+	culture = meshchera
+}
+
+231 = {
+	name = Bileba
+	culture = ugricbaltic
+}
+
+232 = {
+	name = Ehuehata
+	culture = tamil
+}
+
+233 = {
+	name = Ecipatta
+	culture = bodpa
+}
+
+234 = {
+	name = Qipali
+	culture = sumpa
+}
+
+235 = {
+	name = Lilatta
+	culture = kannada
+}
+
+236 = {
+	name = Amananya
+	culture = serbian
+}
+
+237 = {
+	name = Kuehega
+	culture = dutch
+}
+
+238 = {
+	name = Atalesh
+	culture = egyptian_arabic
+}
+
+239 = {
+	name = Raresh
+	culture = arberian
+}
+
+240 = {
+	name = Sileba
+	culture = german
+}
+
+241 = {
+	name = Teipl
+	culture = bulgarian
+}
+
+242 = {
+	name = Lileba
+	culture = occitan
+}
+
+243 = {
+	name = Anibai
+	culture = khitan
+}
+
+244 = {
+	name = Bipatta
+	culture = songhay
+}
+
+245 = {
+	name = Ralali
+	culture = bohemian
+}
+
+246 = {
+	name = Bipirí
+	culture = manden
+}
+
+247 = {
+	name = Tuehar
+	culture = bulgarian
+}
+
+248 = {
+	name = Neinya
+	culture = sinhala
+}
+
+249 = {
+	name = Etratta
+	culture = coptic
+}
+
+250 = {
+	name = Ripava
+	culture = bengali
+}
+
+251 = {
+	name = Biceba
+	culture = soninke
+}
+
+252 = {
+	name = Tinatta
+	culture = old_frankish
+}
+
+253 = {
+	name = Kipadga
+	culture = armenian
+}
+
+254 = {
+	name = Kiladga
+	culture = frisian
+}
+
+255 = {
+	name = Ralibai
+	culture = bolghar
+}
+
+256 = {
+	name = Ralatta
+	culture = ashkenazi
+}
+
+257 = {
+	name = Tocirí
+	culture = hausa
+}
+
+258 = {
+	name = Silega
+	culture = frisian
+}
+
+259 = {
+	name = Leish
+	culture = catalan
+}
+
+260 = {
+	name = Noceba
+	culture = kanuri
+}
+
+261 = {
+	name = Naceba
+	culture = frankish
+}
+
+262 = {
+	name = Tiuln
+	culture = hausa
+}
+
+263 = {
+	name = Qanta
+	culture = zaghawa
+}
+
+264 = {
+	name = Bobelen
+	culture = lombard
+}
+
+265 = {
+	name = Bugolas
+	culture = manden
+}
+
+266 = {
+	name = Epadolas
+	culture = avar
+}
+
+267 = {
+	name = Robali
+	culture = lettigallish
+}
+
+268 = {
+	name = Atomiad
+	culture = russian
+}
+
+269 = {
+	name = Qicorad
+	culture = croatian
+}
+
+270 = {
+	name = Rolas
+	culture = breton
+}
+
+271 = {
+	name = Katolas
+	culture = turkish
+}
+
+272 = {
+	name = Bilolas
+	culture = serbian
+}
+
+273 = {
+	name = Agugali
+	culture = khanty
+}
+
+274 = {
+	name = Worad
+	culture = oriya
+}
+
+275 = {
+	name = Radija
+	culture = khazar
+}
+
+276 = {
+	name = Romelen
+	culture = avar
+}
+
+277 = {
+	name = Romegen
+	culture = polish
+}
+
+278 = {
+	name = Tomorad
+	culture = panjabi
+}
+
+279 = {
+	name = Nicaria
+	culture = occitan
+}
+
+280 = {
+	name = Diunz
+	culture = baloch
+}
+
+281 = {
+	name = Lugorad
+	culture = kirghiz
+}
+
+282 = {
+	name = Kicekel
+	culture = norse
+}
+
+283 = {
+	name = Routai
+	culture = bolghar
+}
+
+284 = {
+	name = Komanoz
+	culture = lithuanian
+}
+
+285 = {
+	name = Aljoutai
+	culture = songhay
+}
+
+286 = {
+	name = Sadekel
+	culture = alan
+}
+
+287 = {
+	name = Ticegen
+	culture = kurdish
+}
+
+288 = {
+	name = Relorad
+	culture = welsh
+}
+
+289 = {
+	name = Agoutai
+	culture = daju
+}
+
+290 = {
+	name = Nekel
+	culture = ugricbaltic
+}
+
+291 = {
+	name = Telen
+	culture = serbian
+}
+
+292 = {
+	name = Dobanoz
+	culture = russian
+}
+
+293 = {
+	name = Agiunz
+	culture = bosnian
+}
+
+294 = {
+	name = Wekel
+	culture = soninke
+}
+
+295 = {
+	name = Lorad
+	culture = persian
+}
+
+296 = {
+	name = Egroutai
+	culture = visigothic
+}
+
+297 = {
+	name = Dadila
+	culture = hungarian
+}
+
+298 = {
+	name = Rilali
+	culture = assyrian
+}
+
+299 = {
+	name = Abilaria
+	culture = ugricbaltic
+}
+
+300 = {
+	name = Sobekel
+	culture = volhynian
+}
+
+301 = {
+	name = Kelaria
+	culture = russian
+}
+
+302 = {
+	name = Nataria
+	culture = samoyed
+}
+
+303 = {
+	name = Rugolas
+	culture = baloch
+}
+
+304 = {
+	name = Robali
+	culture = khazar
+}
+
+305 = {
+	name = Danoz
+	culture = bengali
+}
+
+306 = {
+	name = Worad
+	culture = han
+}
+
+307 = {
+	name = Raria
+	culture = prussian
+}
+
+308 = {
+	name = Tomelen
+	culture = suebi
+}
+
+309 = {
+	name = Tomila
+	culture = sephardi
+}
+
+310 = {
+	name = Soutai
+	culture = soninke
+}
+
+311 = {
+	name = Bomegen
+	culture = saka
+}
+
+312 = {
+	name = Kadolas
+	culture = lithuanian
+}
+
+313 = {
+	name = Rilegen
+	culture = kurdish
+}
+
+314 = {
+	name = Somolas
+	culture = croatian
+}
+
+315 = {
+	name = Abrelen
+	culture = oriya
+}
+
+316 = {
+	name = Belen
+	culture = slovieni
+}
+
+317 = {
+	name = Selen
+	culture = lettigallish
+}
+
+318 = {
+	name = Tolas
+	culture = serbian
+}
+
+319 = {
+	name = Radelen
+	culture = sindhi
+}
+
+320 = {
+	name = Eljekel
+	culture = ugricbaltic
+}
+
+321 = {
+	name = Soutai
+	culture = gujurati
+}
+
+322 = {
+	name = Taria
+	culture = nubian
+}
+
+323 = {
+	name = Qobanoz
+	culture = norwegian
+}
+
+324 = {
+	name = Santa
+	culture = coptic
+}
+
+325 = {
+	name = Wasuraj
+	culture = pecheneg
+}
+
+326 = {
+	name = Byasidu
+	culture = pommeranian
+}
+
+327 = {
+	name = Ryasidu
+	culture = ethiopian
+}
+
+328 = {
+	name = Bajaria
+	culture = khazar
+}
+
+329 = {
+	name = Tacaysan
+	culture = manden
+}
+
+330 = {
+	name = Nyasaida
+	culture = carantanian
+}
+
+331 = {
+	name = Eöyiia
+	culture = samoyed
+}
+
+332 = {
+	name = Dasaria
+	culture = bodpa
+}
+
+333 = {
+	name = Tacanta
+	culture = severian
+}
+
+334 = {
+	name = Qyasidu
+	culture = breton
+}
+
+335 = {
+	name = Karia
+	culture = georgian
+}
+
+336 = {
+	name = Kacamad
+	culture = frisian
+}
+
+337 = {
+	name = Arahena
+	culture = hausa
+}
+
+338 = {
+	name = Emahella
+	culture = swedish
+}
+
+339 = {
+	name = Kahyla
+	culture = kannada
+}
+
+340 = {
+	name = Nevula
+	culture = croatian
+}
+
+341 = {
+	name = Dedonza
+	culture = norwegian
+}
+
+342 = {
+	name = Bakaura
+	culture = prussian
+}
+
+343 = {
+	name = Rahaham
+	culture = karluk
+}
+
+344 = {
+	name = Redaham
+	culture = turkish
+}
+
+345 = {
+	name = Taraham
+	culture = mordvin
+}
+
+346 = {
+	name = Naruara
+	culture = catalan
+}
+
+347 = {
+	name = Lanena
+	culture = serbian
+}
+
+348 = {
+	name = Rivedrik
+	culture = zhangzhung
+}
+
+349 = {
+	name = Emanuna
+	culture = saka
+}
+
+350 = {
+	name = Enaihada
+	culture = old_frankish
+}
+
+351 = {
+	name = Ehakyla
+	culture = lithuanian
+}
+
+352 = {
+	name = Tarula
+	culture = carantanian
+}
+
+353 = {
+	name = Bakonza
+	culture = suebi
+}
+
+354 = {
+	name = Avirondo
+	culture = dalmatian
+}
+
+355 = {
+	name = Revondo
+	culture = hindustani
+}
+
+356 = {
+	name = Betasu
+	culture = bulgarian
+}
+
+357 = {
+	name = Boliulf
+	culture = italian
+}
+
+358 = {
+	name = Bicilen
+	culture = swedish
+}
+
+359 = {
+	name = Esuseslu
+	culture = mordvin
+}
+
+360 = {
+	name = Weslu
+	culture = ashkenazi
+}
+
+361 = {
+	name = Tanilen
+	culture = khazar
+}
+
+362 = {
+	name = Ruseslu
+	culture = carantanian
+}
+
+363 = {
+	name = Kaniulf
+	culture = lettigallish
+}
+
+364 = {
+	name = Banastu
+	culture = coptic
+}
+
+365 = {
+	name = Qyeday
+	culture = visigothic
+}
+
+366 = {
+	name = Dubarda
+	culture = mongol
+}
+
+367 = {
+	name = Rirarl
+	culture = visigothic
+}
+
+368 = {
+	name = Dicatur
+	culture = crimean_gothic
+}
+
+369 = {
+	name = Rielarl
+	culture = saxon
+}
+
+370 = {
+	name = Waleslu
+	culture = dutch
+}
+
+371 = {
+	name = Dicarl
+	culture = severian
+}
+
+372 = {
+	name = Nirarl
+	culture = kannada
+}
+
+373 = {
+	name = Kannatur
+	culture = afghan
+}
+
+374 = {
+	name = Kolaimur
+	culture = tamil
+}
+
+375 = {
+	name = Lirlen
+	culture = pictish
+}
+
+376 = {
+	name = Baneslu
+	culture = swedish
+}
+
+377 = {
+	name = Saparda
+	culture = bedouin_arabic
+}
+
+378 = {
+	name = Rapodio
+	culture = sinhala
+}
+
+379 = {
+	name = Rahatur
+	culture = bedouin_arabic
+}
+
+380 = {
+	name = Ruseslu
+	culture = karluk
+}
+
+381 = {
+	name = Wanda
+	culture = portuguese
+}
+
+382 = {
+	name = Danatur
+	culture = nahuatl
+}
+
+383 = {
+	name = Bielam
+	culture = baloch
+}
+
+384 = {
+	name = Kaneuba
+	culture = visigothic
+}
+
+385 = {
+	name = Sapinop
+	culture = hindustani
+}
+
+386 = {
+	name = Arahastu
+	culture = irish
+}
+
+387 = {
+	name = Nyedam
+	culture = frankish
+}
+
+388 = {
+	name = Wielka
+	culture = saka
+}
+
+389 = {
+	name = Esyedarl
+	culture = lombard
+}
+
+390 = {
+	name = Tolothar
+	culture = egyptian_arabic
+}
+
+391 = {
+	name = Lalinop
+	culture = saxon
+}
+
+392 = {
+	name = Qaleuba
+	culture = manden
+}
+
+393 = {
+	name = Kandda
+	culture = georgian
+}
+
+394 = {
+	name = Ethirsu
+	culture = old_frankish
+}
+
+395 = {
+	name = Tusastu
+	culture = tangut
+}
+
+396 = {
+	name = Tusilen
+	culture = egyptian_arabic
+}
+
+397 = {
+	name = Qicatur
+	culture = bohemian
+}
+
+398 = {
+	name = Nuurarl
+	culture = irish
+}
+
+399 = {
+	name = Balinop
+	culture = russian
+}
+
+400 = {
+	name = Ethiruay
+	culture = kannada
+}
+
+401 = {
+	name = Nielarl
+	culture = sardinian
+}
+
+402 = {
+	name = Salilen
+	culture = welsh
+}
+
+403 = {
+	name = Tapinop
+	culture = ashkenazi
+}
+
+404 = {
+	name = Tapinop
+	culture = visigothic
+}
+
+405 = {
+	name = Talyukha
+	culture = serbian
+}
+
+406 = {
+	name = Qannatur
+	culture = danish
+}
+
+407 = {
+	name = Tastu
+	culture = lombard
+}
+
+408 = {
+	name = Bapastu
+	culture = lettigallish
+}
+
+409 = {
+	name = Sicarl
+	culture = greek
+}
+
+410 = {
+	name = Wolarda
+	culture = persian
+}
+
+411 = {
+	name = Roheslu
+	culture = bolghar
+}
+
+412 = {
+	name = Rusiulf
+	culture = mordvin
+}
+
+413 = {
+	name = Tapotha
+	culture = polish
+}
+
+414 = {
+	name = Wanodio
+	culture = oriya
+}
+
+415 = {
+	name = Kicilen
+	culture = ashkenazi
+}
+
+416 = {
+	name = Sohodio
+	culture = tamil
+}
+
+417 = {
+	name = Nielam
+	culture = persian
+}
+
+418 = {
+	name = Bielam
+	culture = saka
+}
+
+419 = {
+	name = Quuram
+	culture = russian
+}
+
+420 = {
+	name = Tohilen
+	culture = finnish
+}
+
+421 = {
+	name = Ralastu
+	culture = frisian
+}
+
+422 = {
+	name = Quseslu
+	culture = basque
+}
+
+423 = {
+	name = Bubotha
+	culture = han
+}
+
+424 = {
+	name = Kaheuba
+	culture = german
+}
+
+425 = {
+	name = Kaninop
+	culture = bolghar
+}
+
+426 = {
+	name = Enninop
+	culture = khazar
+}
+
+427 = {
+	name = Evalotha
+	culture = visigothic
+}
+
+428 = {
+	name = Taneslu
+	culture = uyghur
+}
+
+429 = {
+	name = Ranatur
+	culture = zaghawa
+}
+
+430 = {
+	name = Sannarda
+	culture = mongol
+}
+
+431 = {
+	name = Wirta
+	culture = assyrian
+}
+
+432 = {
+	name = Rolilen
+	culture = crimean_gothic
+}
+
+433 = {
+	name = Atapeslu
+	culture = nahuatl
+}
+
+434 = {
+	name = Nirlen
+	culture = zhangzhung
+}
+
+435 = {
+	name = Duuram
+	culture = panjabi
+}
+
+436 = {
+	name = Sapodio
+	culture = bohemian
+}
+
+437 = {
+	name = Wozh
+	culture = serbian
+}
+
+438 = {
+	name = Rutofia
+	culture = castillan
+}
+
+439 = {
+	name = Byadaaz
+	culture = occitan
+}
+
+440 = {
+	name = Toribi
+	culture = finnish
+}
+
+441 = {
+	name = Qomoge
+	culture = saxon
+}
+
+442 = {
+	name = Tutozh
+	culture = kannada
+}
+
+443 = {
+	name = Baisoge
+	culture = swedish
+}
+
+444 = {
+	name = Ajosiði
+	culture = norse
+}
+
+445 = {
+	name = Nomiði
+	culture = marathi
+}
+
+446 = {
+	name = Buhorri
+	culture = hausa
+}
+
+447 = {
+	name = Kuhoge
+	culture = assamese
+}
+
+448 = {
+	name = Lurozh
+	culture = finnish
+}
+
+449 = {
+	name = Buhibi
+	culture = somali
+}
+
+450 = {
+	name = Lularkad
+	culture = andalusian_arabic
+}
+
+451 = {
+	name = Tyadiði
+	culture = bolghar
+}
+
+452 = {
+	name = Ejyadiði
+	culture = severian
+}
+
+453 = {
+	name = Koralo
+	culture = severian
+}
+
+454 = {
+	name = Tinozh
+	culture = marathi
+}
+
+455 = {
+	name = Ryadiði
+	culture = hungarian
+}
+
+456 = {
+	name = Sagarkad
+	culture = outremer
+}
+
+457 = {
+	name = Butorri
+	culture = tamil
+}
+
+458 = {
+	name = Sutiram
+	culture = hausa
+}
+
+459 = {
+	name = Tomunda
+	culture = gujurati
+}
+
+460 = {
+	name = Winarkad
+	culture = karluk
+}
+
+461 = {
+	name = Tagaatun
+	culture = zaghawa
+}
+
+462 = {
+	name = Wimoge
+	culture = catalan
+}
+
+463 = {
+	name = Dulaatun
+	culture = nepali
+}
+
+464 = {
+	name = Nomoke
+	culture = scottish
+}
+
+465 = {
+	name = Kimoke
+	culture = assamese
+}
+
+466 = {
+	name = Tinunda
+	culture = crimean_gothic
+}
+
+467 = {
+	name = Nosunda
+	culture = finnish
+}
+
+468 = {
+	name = Egorofia
+	culture = georgian
+}
+
+469 = {
+	name = Sulaatun
+	culture = frankish
+}
+
+470 = {
+	name = Kadunda
+	culture = somali
+}
+
+471 = {
+	name = Birunda
+	culture = norse
+}
+
+472 = {
+	name = Sorri
+	culture = suebi
+}
+
+473 = {
+	name = Kyadaaz
+	culture = tangut
+}
+
+474 = {
+	name = Tuhibi
+	culture = marathi
+}
+
+475 = {
+	name = Ryadoke
+	culture = afghan
+}
+
+476 = {
+	name = Rimiram
+	culture = hausa
+}
+
+477 = {
+	name = Sulabgaç
+	culture = catalan
+}
+
+478 = {
+	name = Dinabgaç
+	culture = scottish
+}
+
+479 = {
+	name = Radalo
+	culture = portuguese
+}
+
+480 = {
+	name = Daisoke
+	culture = norse
+}
+
+481 = {
+	name = Roriram
+	culture = marathi
+}
+
+482 = {
+	name = Rimalo
+	culture = saxon
+}
+
+483 = {
+	name = Kuhibi
+	culture = serbian
+}
+
+484 = {
+	name = Byadaaz
+	culture = armenian
+}
+
+485 = {
+	name = Sarkad
+	culture = swedish
+}
+
+486 = {
+	name = Ryadtun
+	culture = sogdian
+}
+
+487 = {
+	name = Rimunda
+	culture = prussian
+}
+
+488 = {
+	name = Egüarkad
+	culture = dutch
+}
+
+489 = {
+	name = Torurli
+	culture = norse
+}
+
+490 = {
+	name = Raistun
+	culture = pommeranian
+}
+
+491 = {
+	name = Bulurli
+	culture = bohemian
+}
+
+492 = {
+	name = Nomozh
+	culture = sephardi
+}
+
+493 = {
+	name = Dagozh
+	culture = greek
+}
+
+494 = {
+	name = Dagozh
+	culture = kannada
+}
+
+495 = {
+	name = Wagabgaç
+	culture = kannada
+}
+
+496 = {
+	name = Ryadoke
+	culture = meshchera
+}
+
+497 = {
+	name = Rabgaç
+	culture = german
+}
+
+498 = {
+	name = Kiriram
+	culture = romanian
+}
+
+499 = {
+	name = Simozh
+	culture = pictish
+}
+
+500 = {
+	name = Tyadupa
+	culture = bedouin_arabic
+}
+
+501 = {
+	name = Korri
+	culture = sogdian
+}
+
+502 = {
+	name = Kagabgaç
+	culture = uyghur
+}
+
+503 = {
+	name = Kagiram
+	culture = tangut
+}
+
+504 = {
+	name = Dururli
+	culture = zhangzhung
+}
+
+505 = {
+	name = Boriram
+	culture = finnish
+}
+
+506 = {
+	name = Amadibi
+	culture = crimean_gothic
+}
+
+507 = {
+	name = Tarkad
+	culture = ilmenian
+}
+
+508 = {
+	name = Lyadtun
+	culture = ilmenian
+}
+
+509 = {
+	name = Dimunda
+	culture = sindhi
+}
+
+510 = {
+	name = Suhiram
+	culture = uyghur
+}
+
+511 = {
+	name = Dimoge
+	culture = bedouin_arabic
+}
+
+512 = {
+	name = Nagiram
+	culture = nubian
+}
+
+513 = {
+	name = Tutarkad
+	culture = romanian
+}
+
+514 = {
+	name = Nuroke
+	culture = frisian
+}
+
+515 = {
+	name = Darkad
+	culture = lappish
+}
+
+516 = {
+	name = Dagunda
+	culture = kirghiz
+}
+
+517 = {
+	name = Tinorri
+	culture = romanian
+}
+
+518 = {
+	name = Kiroke
+	culture = hausa
+}
+
+519 = {
+	name = Toribi
+	culture = khanty
+}
+
+520 = {
+	name = Eganapal
+	culture = polish
+}
+
+521 = {
+	name = Wadææ
+	culture = avar
+}
+
+522 = {
+	name = Qanaya
+	culture = russian
+}
+
+523 = {
+	name = Wardin
+	culture = hindustani
+}
+
+524 = {
+	name = Tukudev
+	culture = jurchen
+}
+
+525 = {
+	name = Banudev
+	culture = tangut
+}
+
+526 = {
+	name = Wanapal
+	culture = egyptian_arabic
+}
+
+527 = {
+	name = Rukh
+	culture = bengali
+}
+
+528 = {
+	name = Kalela
+	culture = zaghawa
+}
+
+529 = {
+	name = Sandza
+	culture = uyghur
+}
+
+530 = {
+	name = Sunogna
+	culture = norse
+}
+
+531 = {
+	name = Rææ
+	culture = castillan
+}
+
+532 = {
+	name = Adhadza
+	culture = bosnian
+}
+
+533 = {
+	name = Kanaya
+	culture = volhynian
+}
+
+534 = {
+	name = Sielija
+	culture = serbian
+}
+
+535 = {
+	name = Wimææ
+	culture = bodpa
+}
+
+536 = {
+	name = Ralukh
+	culture = lappish
+}
+
+537 = {
+	name = Banure
+	culture = khitan
+}
+
+538 = {
+	name = Tanadza
+	culture = sindhi
+}
+
+539 = {
+	name = Tadadar
+	culture = mongol
+}
+
+540 = {
+	name = Walogna
+	culture = outremer
+}
+
+541 = {
+	name = Nanda
+	culture = scottish
+}
+
+542 = {
+	name = Qimukh
+	culture = english
+}
+
+543 = {
+	name = Daladza
+	culture = saxon
+}
+
+544 = {
+	name = Kohela
+	culture = komi
+}
+
+545 = {
+	name = Aganudev
+	culture = hungarian
+}
+
+546 = {
+	name = Qohinda
+	culture = persian
+}
+
+547 = {
+	name = Baladza
+	culture = tamil
+}
+
+548 = {
+	name = Ranadar
+	culture = frisian
+}
+
+549 = {
+	name = Tadææ
+	culture = coptic
+}
+
+550 = {
+	name = Kukure
+	culture = khanty
+}
+
+551 = {
+	name = Nanadza
+	culture = prussian
+}
+
+552 = {
+	name = Wande
+	culture = bodpa
+}
+
+553 = {
+	name = Tasutin
+	culture = lettigallish
+}
+
+554 = {
+	name = Tezude
+	culture = welsh
+}
+
+555 = {
+	name = Qedezu
+	culture = panjabi
+}
+
+556 = {
+	name = Durimir
+	culture = oriya
+}
+
+557 = {
+	name = Rilimir
+	culture = pommeranian
+}
+
+558 = {
+	name = Qiirava
+	culture = soninke
+}
+
+559 = {
+	name = Wyii
+	culture = kurdish
+}
+
+560 = {
+	name = Nukava
+	culture = sephardi
+}
+
+561 = {
+	name = Karid
+	culture = sindhi
+}
+
+562 = {
+	name = Kurimir
+	culture = levantine_arabic
+}
+
+563 = {
+	name = Qatoke
+	culture = hungarian
+}
+
+564 = {
+	name = Naulezu
+	culture = kurdish
+}
+
+565 = {
+	name = Rezava
+	culture = bengali
+}
+
+566 = {
+	name = Kasimir
+	culture = hausa
+}
+
+567 = {
+	name = Naulezu
+	culture = coptic
+}
+
+568 = {
+	name = Tarid
+	culture = khazar
+}
+
+569 = {
+	name = Dilarel
+	culture = bosnian
+}
+
+570 = {
+	name = Warid
+	culture = lettigallish
+}
+
+571 = {
+	name = Kilezu
+	culture = saka
+}
+
+572 = {
+	name = Reducia
+	culture = lappish
+}
+
+573 = {
+	name = Abiegava
+	culture = khazar
+}
+
+574 = {
+	name = Kiiran
+	culture = karluk
+}
+
+575 = {
+	name = Kizarkad
+	culture = slovieni
+}
+
+576 = {
+	name = Raulašî
+	culture = zhangzhung
+}
+
+577 = {
+	name = Tohayan
+	culture = andalusian_arabic
+}
+
+578 = {
+	name = Natutin
+	culture = sumpa
+}
+
+579 = {
+	name = Ebezezu
+	culture = pictish
+}
+
+580 = {
+	name = Sukayan
+	culture = rajput
+}
+
+581 = {
+	name = Dedutin
+	culture = hindustani
+}
+
+582 = {
+	name = Emasutin
+	culture = norwegian
+}
+
+583 = {
+	name = Niegezu
+	culture = catalan
+}
+
+584 = {
+	name = Sukude
+	culture = dalmatian
+}
+
+585 = {
+	name = Lelarid
+	culture = tamil
+}
+
+586 = {
+	name = Qelucia
+	culture = tocharian
+}
+
+587 = {
+	name = Amedava
+	culture = georgian
+}
+
+588 = {
+	name = Kyuia
+	culture = egyptian_arabic
+}
+
+589 = {
+	name = Tilezu
+	culture = saxon
+}
+
+590 = {
+	name = Kyilict
+	culture = outremer
+}
+
+591 = {
+	name = Kiralk
+	culture = alan
+}
+
+592 = {
+	name = Lararak
+	culture = welsh
+}
+
+593 = {
+	name = Subizo
+	culture = levantine_arabic
+}
+
+594 = {
+	name = Naruri
+	culture = bulgarian
+}
+
+595 = {
+	name = Nenarda
+	culture = turkish
+}
+
+596 = {
+	name = Rilarak
+	culture = outremer
+}
+
+597 = {
+	name = Rolence
+	culture = tangut
+}
+
+598 = {
+	name = Tolarda
+	culture = saxon
+}
+
+599 = {
+	name = Qaboan
+	culture = khitan
+}
+
+600 = {
+	name = Senele
+	culture = komi
+}
+
+601 = {
+	name = Nabizo
+	culture = alan
+}
+
+602 = {
+	name = Asenara
+	culture = serbian
+}
+
+603 = {
+	name = Adiroan
+	culture = nepali
+}
+
+604 = {
+	name = Tubamaj
+	culture = norwegian
+}
+
+605 = {
+	name = Tarara
+	culture = kanuri
+}
+
+606 = {
+	name = Rolarda
+	culture = coptic
+}
+
+607 = {
+	name = Kenayn
+	culture = zhangzhung
+}
+
+608 = {
+	name = Secizo
+	culture = danish
+}
+
+609 = {
+	name = Risele
+	culture = alan
+}
+
+610 = {
+	name = Risence
+	culture = sardinian
+}
+
+611 = {
+	name = Wayaslo
+	culture = sardinian
+}
+
+612 = {
+	name = Qaredek
+	culture = danish
+}
+
+613 = {
+	name = Seredek
+	culture = persian
+}
+
+614 = {
+	name = Kester
+	culture = frisian
+}
+
+615 = {
+	name = Keobore
+	culture = armenian
+}
+
+616 = {
+	name = Delera
+	culture = khanty
+}
+
+617 = {
+	name = Wakint
+	culture = lithuanian
+}
+
+618 = {
+	name = Kolaria
+	culture = mordvin
+}
+
+619 = {
+	name = Leraria
+	culture = bodpa
+}
+
+620 = {
+	name = Kinivia
+	culture = old_saxon
+}
+
+621 = {
+	name = Eridia
+	culture = georgian
+}
+
+622 = {
+	name = Agolele
+	culture = scottish
+}
+
+623 = {
+	name = Niveæ'
+	culture = panjabi
+}
+
+624 = {
+	name = Ragala
+	culture = frisian
+}
+
+625 = {
+	name = Tularha
+	culture = bodpa
+}
+
+626 = {
+	name = Eñsoa
+	culture = khitan
+}
+
+627 = {
+	name = Ralern
+	culture = bedouin_arabic
+}
+
+628 = {
+	name = Tegartin
+	culture = assamese
+}
+
+629 = {
+	name = Latuju
+	culture = outremer
+}
+
+630 = {
+	name = Taniulf
+	culture = mongol
+}
+
+631 = {
+	name = Esyedam
+	culture = egyptian_arabic
+}
+
+632 = {
+	name = Raheslu
+	culture = bulgarian
+}
+
+633 = {
+	name = Kaneslu
+	culture = egyptian_arabic
+}
+
+634 = {
+	name = Ebozarha
+	culture = scottish
+}
+
+635 = {
+	name = Atomija
+	culture = croatian
+}
+
+636 = {
+	name = Siray
+	culture = irish
+}
+
+637 = {
+	name = Rugali
+	culture = finnish
+}
+
+638 = {
+	name = Dalaimur
+	culture = bolghar
+}
+
+639 = {
+	name = Qilaria
+	culture = bodpa
+}
+
+640 = {
+	name = Wadali
+	culture = turkish
+}
+
+641 = {
+	name = Agugali
+	culture = turkish
+}
+
+642 = {
+	name = Kanilen
+	culture = serbian
+}
+
+643 = {
+	name = Begen
+	culture = norwegian
+}
+
+644 = {
+	name = Erahinop
+	culture = pommeranian
+}
+
+645 = {
+	name = Ramapal
+	culture = karluk
+}
+
+646 = {
+	name = Sukesh
+	culture = hungarian
+}
+
+647 = {
+	name = Kielmur
+	culture = basque
+}
+
+648 = {
+	name = Kanadza
+	culture = uyghur
+}
+
+649 = {
+	name = Qukure
+	culture = avar
+}
+
+650 = {
+	name = Bekel
+	culture = somali
+}
+
+651 = {
+	name = Kanaide
+	culture = khanty
+}
+
+652 = {
+	name = Tanartin
+	culture = carantanian
+}
+
+653 = {
+	name = Bobelen
+	culture = zaghawa
+}
+
+654 = {
+	name = Sagalim
+	culture = norman
+}
+
+655 = {
+	name = Telolun
+	culture = frisian
+}
+
+656 = {
+	name = Releæ'
+	culture = avar
+}
+
+657 = {
+	name = Kalyukha
+	culture = alan
+}
+
+658 = {
+	name = Emicegen
+	culture = tamil
+}
+
+659 = {
+	name = Ranta
+	culture = slovieni
+}
+
+660 = {
+	name = Tamela
+	culture = panjabi
+}
+
+661 = {
+	name = Achii
+	culture = daju
+}
+
+662 = {
+	name = Kagiban
+	culture = panjabi
+}
+
+663 = {
+	name = Ruju
+	culture = somali
+}
+
+664 = {
+	name = Lansur
+	culture = jurchen
+}
+
+665 = {
+	name = Talarak
+	culture = german
+}
+
+666 = {
+	name = Burarda
+	culture = english
+}
+
+667 = {
+	name = Alalim
+	culture = zaghawa
+}
+
+668 = {
+	name = Sielarl
+	culture = assyrian
+}
+
+669 = {
+	name = Kaninop
+	culture = sardinian
+}
+
+670 = {
+	name = Tohotha
+	culture = carantanian
+}
+
+671 = {
+	name = Ranastu
+	culture = norman
+}
+
+672 = {
+	name = Tukalim
+	culture = soninke
+}
+
+673 = {
+	name = Kelolas
+	culture = roman
+}
+
+674 = {
+	name = Walotha
+	culture = russian
+}
+
+675 = {
+	name = Licegen
+	culture = occitan
+}
+
+676 = {
+	name = Ranotha
+	culture = finnish
+}
+
+677 = {
+	name = Atomekel
+	culture = saka
+}
+
+678 = {
+	name = Qomanoz
+	culture = tamil
+}
+
+679 = {
+	name = Delila
+	culture = welsh
+}
+
+680 = {
+	name = Randu
+	culture = rajput
+}
+
+681 = {
+	name = Sugolas
+	culture = nahuatl
+}
+
+682 = {
+	name = Kalotha
+	culture = jurchen
+}
+
+683 = {
+	name = Ralapal
+	culture = bohemian
+}
+
+684 = {
+	name = Wamukh
+	culture = polish
+}
+
+685 = {
+	name = Sanarda
+	culture = croatian
+}
+
+686 = {
+	name = Nalatta
+	culture = welsh
+}
+
+687 = {
+	name = Qanadar
+	culture = kurdish
+}
+
+688 = {
+	name = Tomija
+	culture = turkish
+}
+
+689 = {
+	name = Qiukl
+	culture = tocharian
+}
+
+690 = {
+	name = Rilamaj
+	culture = irish
+}
+
+691 = {
+	name = Berarda
+	culture = lombard
+}
+
+692 = {
+	name = Asinarda
+	culture = dutch
+}
+
+693 = {
+	name = Nuhele
+	culture = lombard
+}
+
+694 = {
+	name = Kazalka
+	culture = occitan
+}
+
+695 = {
+	name = Tuyanay
+	culture = telugu
+}
+
+696 = {
+	name = Wuyalka
+	culture = meshchera
+}
+
+697 = {
+	name = Kuyarda
+	culture = polish
+}
+
+698 = {
+	name = Qotutka
+	culture = russian
+}
+
+699 = {
+	name = Nanarda
+	culture = bohemian
+}
+
+700 = {
+	name = Afolarda
+	culture = danish
+}
+
+701 = {
+	name = Kaudarda
+	culture = outremer
+}
+
+702 = {
+	name = Qerizo
+	culture = avar
+}
+
+703 = {
+	name = Lotutka
+	culture = cuman
+}
+
+704 = {
+	name = Ryilict
+	culture = finnish
+}
+
+705 = {
+	name = Tahof
+	culture = gujurati
+}
+
+706 = {
+	name = Werophia
+	culture = breton
+}
+
+707 = {
+	name = Akinava
+	culture = slovieni
+}
+
+708 = {
+	name = Dacali
+	culture = coptic
+}
+
+709 = {
+	name = Rinerva
+	culture = bodpa
+}
+
+710 = {
+	name = Neraria
+	culture = saka
+}
+
+711 = {
+	name = Qaheslu
+	culture = norse
+}
+
+712 = {
+	name = Tirsu
+	culture = polish
+}
+
+713 = {
+	name = Saneslu
+	culture = kirghiz
+}
+
+714 = {
+	name = Bilayan
+	culture = roman
+}
+
+715 = {
+	name = Rivaham
+	culture = meshchera
+}
+
+716 = {
+	name = Najulay
+	culture = finnish
+}
+
+717 = {
+	name = Sasilia
+	culture = bedouin_arabic
+}
+
+718 = {
+	name = Karda
+	culture = oriya
+}
+
+719 = {
+	name = Ratezu
+	culture = finnish
+}
+
+720 = {
+	name = Tielija
+	culture = ilmenian
+}
+
+721 = {
+	name = Qalolas
+	culture = rajput
+}
+
+722 = {
+	name = Rezimir
+	culture = suebi
+}
+
+723 = {
+	name = Qukern
+	culture = lombard
+}
+
+724 = {
+	name = Komeæ'
+	culture = scottish
+}
+
+725 = {
+	name = Delala
+	culture = norwegian
+}
+
+726 = {
+	name = Dakagai
+	culture = khanty
+}
+
+727 = {
+	name = Domuju
+	culture = croatian
+}
+
+728 = {
+	name = Sulimur
+	culture = castillan
+}
+
+729 = {
+	name = Lozoda
+	culture = alan
+}
+
+730 = {
+	name = Wozeæ'
+	culture = turkish
+}
+
+731 = {
+	name = Nalalk
+	culture = zhangzhung
+}
+
+732 = {
+	name = Eñsuu
+	culture = meshchera
+}
+
+733 = {
+	name = Rerizo
+	culture = soninke
+}
+
+734 = {
+	name = Teuluju
+	culture = armenian
+}
+
+735 = {
+	name = Talarda
+	culture = breton
+}
+
+736 = {
+	name = Borarha
+	culture = baloch
+}
+
+737 = {
+	name = Efolarda
+	culture = slovieni
+}
+
+738 = {
+	name = Kegarda
+	culture = arberian
+}
+
+739 = {
+	name = Dagarha
+	culture = sogdian
+}
+
+740 = {
+	name = Koda
+	culture = ilmenian
+}
+
+741 = {
+	name = Dalatur
+	culture = hindustani
+}
+
+742 = {
+	name = Nalim
+	culture = bulgarian
+}
+
+743 = {
+	name = Kukelin
+	culture = sinhala
+}
+
+744 = {
+	name = Reuloda
+	culture = avar
+}
+
+745 = {
+	name = Walinop
+	culture = kannada
+}
+
+746 = {
+	name = Reuluju
+	culture = slovieni
+}
+
+747 = {
+	name = Qulubu
+	culture = coptic
+}
+
+748 = {
+	name = Tostas
+	culture = tangut
+}
+
+749 = {
+	name = Dagiban
+	culture = levantine_arabic
+}
+
+750 = {
+	name = Tubastu
+	culture = arberian
+}
+
+751 = {
+	name = Kuliban
+	culture = dutch
+}
+
+752 = {
+	name = Doda
+	culture = greek
+}
+
+753 = {
+	name = Bozala
+	culture = jurchen
+}
+
+754 = {
+	name = Kagalim
+	culture = romanian
+}
+
+755 = {
+	name = Kukuju
+	culture = nepali
+}
+
+756 = {
+	name = Keuluju
+	culture = soninke
+}
+
+757 = {
+	name = Talotha
+	culture = komi
+}
+
+758 = {
+	name = Nubu
+	culture = frankish
+}
+
+759 = {
+	name = Epadaria
+	culture = coptic
+}
+
+760 = {
+	name = Dielmur
+	culture = karluk
+}
+
+761 = {
+	name = Tolas
+	culture = norse
+}
+
+762 = {
+	name = Laparl
+	culture = hungarian
+}
+
+763 = {
+	name = Wicila
+	culture = bolghar
+}
+
+764 = {
+	name = Sirl
+	culture = kannada
+}
+
+765 = {
+	name = Tobolas
+	culture = crimean_gothic
+}
+
+766 = {
+	name = Kaneuba
+	culture = mordvin
+}
+
+767 = {
+	name = Belaria
+	culture = mordvin
+}
+
+768 = {
+	name = Kolaimur
+	culture = crimean_gothic
+}
+
+769 = {
+	name = Emicekel
+	culture = swedish
+}
+
+770 = {
+	name = Sicali
+	culture = panjabi
+}
+
+771 = {
+	name = Eåsekel
+	culture = hungarian
+}
+
+772 = {
+	name = Atomelen
+	culture = severian
+}
+
+773 = {
+	name = Taninop
+	culture = levantine_arabic
+}
+
+774 = {
+	name = Toheslu
+	culture = bedouin_arabic
+}
+
+775 = {
+	name = Lanoz
+	culture = saxon
+}
+
+776 = {
+	name = Koutai
+	culture = assyrian
+}
+
+777 = {
+	name = Eåsanta
+	culture = arberian
+}
+
+778 = {
+	name = Nandu
+	culture = mordvin
+}
+
+779 = {
+	name = Rannodio
+	culture = daju
+}
+
+780 = {
+	name = Sekel
+	culture = baloch
+}
+
+781 = {
+	name = Wohatur
+	culture = danish
+}
+
+782 = {
+	name = Riceuba
+	culture = mordvin
+}
+
+783 = {
+	name = Komolas
+	culture = avar
+}
+
+784 = {
+	name = Naparda
+	culture = norman
+}
+
+785 = {
+	name = Nigoutai
+	culture = soninke
+}
+
+786 = {
+	name = Teliad
+	culture = ashkenazi
+}
+
+787 = {
+	name = Tatija
+	culture = pictish
+}
+
+788 = {
+	name = Tanta
+	culture = maghreb_arabic
+}
+
+789 = {
+	name = Wiganta
+	culture = norse
+}
+
+790 = {
+	name = Egugila
+	culture = breton
+}
+
+791 = {
+	name = Sadolas
+	culture = kannada
+}
+
+792 = {
+	name = Komanoz
+	culture = mongol
+}
+
+793 = {
+	name = Womegen
+	culture = gujurati
+}
+
+794 = {
+	name = Lastu
+	culture = cuman
+}
+
+795 = {
+	name = Sanaila
+	culture = coptic
+}
+
+796 = {
+	name = Elotha
+	culture = songhay
+}
+
+797 = {
+	name = Talarda
+	culture = kirghiz
+}
+
+798 = {
+	name = Sannastu
+	culture = norman
+}
+
+799 = {
+	name = Rimolas
+	culture = polish
+}
+
+800 = {
+	name = Ralodio
+	culture = baloch
+}
+
+801 = {
+	name = Darda
+	culture = georgian
+}
+
+802 = {
+	name = Tanija
+	culture = old_frankish
+}
+
+803 = {
+	name = Wusiulf
+	culture = bohemian
+}
+
+804 = {
+	name = Kiray
+	culture = portuguese
+}
+
+805 = {
+	name = Nohææ
+	culture = soninke
+}
+
+806 = {
+	name = Sahinop
+	culture = hindustani
+}
+
+807 = {
+	name = Raheuba
+	culture = dutch
+}
+
+808 = {
+	name = Amanarl
+	culture = nepali
+}
+
+809 = {
+	name = Soheslu
+	culture = alan
+}
+
+810 = {
+	name = Nolinop
+	culture = arberian
+}
+
+811 = {
+	name = Nyedam
+	culture = kirghiz
+}
+
+812 = {
+	name = Edheuba
+	culture = basque
+}
+
+813 = {
+	name = Danesh
+	culture = telugu
+}
+
+814 = {
+	name = Kirsu
+	culture = lettigallish
+}
+
+815 = {
+	name = Kalinop
+	culture = bohemian
+}
+
+816 = {
+	name = Bomorad
+	culture = hausa
+}
+
+817 = {
+	name = Qalinop
+	culture = sumpa
+}
+
+818 = {
+	name = Asalarl
+	culture = ugricbaltic
+}
+
+819 = {
+	name = Rielay
+	culture = tangut
+}
+
+820 = {
+	name = Qolyukha
+	culture = saxon
+}
+
+821 = {
+	name = Nolilen
+	culture = basque
+}
+
+822 = {
+	name = Rirnop
+	culture = slovieni
+}
+
+823 = {
+	name = Kirl
+	culture = irish
+}
+
+824 = {
+	name = Tunadar
+	culture = swedish
+}
+
+825 = {
+	name = Qohodio
+	culture = mongol
+}
+
+826 = {
+	name = Qanarl
+	culture = portuguese
+}
+
+827 = {
+	name = Tanatta
+	culture = khitan
+}
+
+828 = {
+	name = Aganudev
+	culture = english
+}
+
+829 = {
+	name = Toharl
+	culture = georgian
+}
+
+830 = {
+	name = Syukha
+	culture = roman
+}
+
+831 = {
+	name = Wusarl
+	culture = outremer
+}
+
+832 = {
+	name = Kaparl
+	culture = outremer
+}
+
+833 = {
+	name = Bahinop
+	culture = suebi
+}
+
+834 = {
+	name = Danukh
+	culture = telugu
+}
+
+835 = {
+	name = Danda
+	culture = bodpa
+}
+
+836 = {
+	name = Dukadza
+	culture = tangut
+}
+
+837 = {
+	name = Ranadar
+	culture = gujurati
+}
+
+838 = {
+	name = Danææ
+	culture = maghreb_arabic
+}
+
+839 = {
+	name = Waladar
+	culture = crimean_gothic
+}
+
+840 = {
+	name = Qolas
+	culture = slovieni
+}
+
+841 = {
+	name = Welen
+	culture = armenian
+}
+
+842 = {
+	name = Tanatta
+	culture = prussian
+}
+
+843 = {
+	name = Wicanoz
+	culture = polish
+}
+
+844 = {
+	name = Taninda
+	culture = sindhi
+}
+
+845 = {
+	name = Wadogna
+	culture = roman
+}
+
+846 = {
+	name = Telali
+	culture = ethiopian
+}
+
+847 = {
+	name = Tomelen
+	culture = volhynian
+}
+
+848 = {
+	name = Romekel
+	culture = bedouin_arabic
+}
+
+849 = {
+	name = Rigorad
+	culture = alan
+}
+
+850 = {
+	name = Akarence
+	culture = crimean_gothic
+}
+
+851 = {
+	name = Karict
+	culture = danish
+}
+
+852 = {
+	name = Wararak
+	culture = german
+}
+
+853 = {
+	name = Tajarak
+	culture = finnish
+}
+
+854 = {
+	name = Alarda
+	culture = tangut
+}
+
+855 = {
+	name = Tenalk
+	culture = lithuanian
+}
+
+856 = {
+	name = Lilarda
+	culture = oriya
+}
+
+857 = {
+	name = Qenict
+	culture = ugricbaltic
+}
+
+858 = {
+	name = Eboziban
+	culture = slovieni
+}
+
+859 = {
+	name = Takelin
+	culture = telugu
+}
+
+860 = {
+	name = Tomani
+	culture = khazar
+}
+
+861 = {
+	name = Amatern
+	culture = samoyed
+}
+
+862 = {
+	name = Baloan
+	culture = nubian
+}
+
+863 = {
+	name = Kuri
+	culture = persian
+}
+
+864 = {
+	name = Qagoda
+	culture = bodpa
+}
+
+865 = {
+	name = Ranneslu
+	culture = lombard
+}
+
+866 = {
+	name = Diceuba
+	culture = prussian
+}
+
+867 = {
+	name = Waleslu
+	culture = occitan
+}
+
+868 = {
+	name = Belagai
+	culture = sinhala
+}
+
+869 = {
+	name = Danta
+	culture = samoyed
+}
+
+870 = {
+	name = Tahilen
+	culture = volhynian
+}
+
+871 = {
+	name = Tomelen
+	culture = manden
+}
+
+872 = {
+	name = Bubarl
+	culture = nepali
+}
+
+873 = {
+	name = Kelekel
+	culture = persian
+}
+
+874 = {
+	name = Routai
+	culture = sindhi
+}
+
+875 = {
+	name = Radekel
+	culture = somali
+}
+
+876 = {
+	name = Qandarl
+	culture = uyghur
+}
+
+877 = {
+	name = Relorad
+	culture = swedish
+}
+
+878 = {
+	name = Emubilen
+	culture = bulgarian
+}
+
+879 = {
+	name = Ranadza
+	culture = hungarian
+}
+
+880 = {
+	name = Ralolas
+	culture = norse
+}
+
+881 = {
+	name = Taleuba
+	culture = sindhi
+}
+
+882 = {
+	name = Rohija
+	culture = old_saxon
+}
+
+883 = {
+	name = Kanija
+	culture = irish
+}
+
+884 = {
+	name = Ladaria
+	culture = mordvin
+}
+
+885 = {
+	name = Qaraila
+	culture = bedouin_arabic
+}
+
+886 = {
+	name = Waralk
+	culture = bodpa
+}
+
+887 = {
+	name = Kegen
+	culture = pommeranian
+}
+
+888 = {
+	name = Kirele
+	culture = norman
+}
+
+889 = {
+	name = Tolarda
+	culture = manden
+}
+
+890 = {
+	name = Rolas
+	culture = baloch
+}
+
+891 = {
+	name = Enneslu
+	culture = zaghawa
+}
+
+892 = {
+	name = Wandha
+	culture = avar
+}
+
+893 = {
+	name = Etomolas
+	culture = norwegian
+}
+
+894 = {
+	name = Wohiulf
+	culture = greek
+}
+
+895 = {
+	name = Delelen
+	culture = daju
+}
+
+896 = {
+	name = Nandda
+	culture = georgian
+}
+
+897 = {
+	name = Nannotha
+	culture = samoyed
+}
+
+898 = {
+	name = Romaria
+	culture = tocharian
+}
+
+899 = {
+	name = Koumida
+	culture = andalusian_arabic
+}
+
+900 = {
+	name = Soleuba
+	culture = karluk
+}
+
+901 = {
+	name = Torad
+	culture = ethiopian
+}
+
+902 = {
+	name = Kalothar
+	culture = frankish
+}
+
+903 = {
+	name = Abozalim
+	culture = turkish
+}
+
+904 = {
+	name = Toharda
+	culture = old_saxon
+}
+
+905 = {
+	name = Bisalid
+	culture = khanty
+}
+
+906 = {
+	name = Sanapal
+	culture = danish
+}
+
+907 = {
+	name = Nelen
+	culture = manden
+}
+
+908 = {
+	name = Wicaria
+	culture = avar
+}
+
+909 = {
+	name = Tugija
+	culture = castillan
+}
+
+910 = {
+	name = Dohence
+	culture = kanuri
+}
+
+911 = {
+	name = Rakaod
+	culture = russian
+}
+
+912 = {
+	name = Nohudev
+	culture = welsh
+}
+
+913 = {
+	name = Satude
+	culture = polish
+}
+
+914 = {
+	name = Telagai
+	culture = avar
+}
+
+915 = {
+	name = Ticarda
+	culture = tamil
+}
+
+916 = {
+	name = Kielmur
+	culture = swedish
+}
+
+917 = {
+	name = Ahanence
+	culture = mongol
+}
+
+918 = {
+	name = Kadija
+	culture = scottish
+}
+
+919 = {
+	name = Tubuara
+	culture = breton
+}
+
+920 = {
+	name = Kuseslu
+	culture = georgian
+}
+
+921 = {
+	name = Tagalim
+	culture = russian
+}
+
+922 = {
+	name = Wagarha
+	culture = nepali
+}
+
+923 = {
+	name = Belila
+	culture = serbian
+}
+
+924 = {
+	name = Qorolun
+	culture = han
+}
+
+925 = {
+	name = Tadadza
+	culture = ilmenian
+}
+
+926 = {
+	name = Taladza
+	culture = kannada
+}
+
+927 = {
+	name = Tarda
+	culture = suebi
+}
+
+928 = {
+	name = Rilude
+	culture = ethiopian
+}
+
+929 = {
+	name = Tatašî
+	culture = polish
+}
+
+930 = {
+	name = Amasude
+	culture = visigothic
+}
+
+931 = {
+	name = Sagagai
+	culture = alan
+}
+
+932 = {
+	name = Keleæ'
+	culture = levantine_arabic
+}
+
+933 = {
+	name = Nulolun
+	culture = frankish
+}
+
+934 = {
+	name = Roheslu
+	culture = basque
+}
+
+935 = {
+	name = Esusinop
+	culture = catalan
+}
+
+936 = {
+	name = Banaya
+	culture = bodpa
+}
+
+937 = {
+	name = Qolas
+	culture = samoyed
+}
+
+938 = {
+	name = Tomuju
+	culture = severian
+}
+
+939 = {
+	name = Nasarda
+	culture = jurchen
+}
+
+940 = {
+	name = Rasayan
+	culture = swedish
+}
+
+941 = {
+	name = Taheslu
+	culture = nubian
+}
+
+942 = {
+	name = Rirl
+	culture = dutch
+}
+
+943 = {
+	name = Ryasaura
+	culture = bodpa
+}
+
+944 = {
+	name = Etohinop
+	culture = suebi
+}
+
+945 = {
+	name = Elinop
+	culture = norwegian
+}
+
+946 = {
+	name = Tilaria
+	culture = coptic
+}
+
+947 = {
+	name = Aljegen
+	culture = persian
+}
+
+948 = {
+	name = Rusiulf
+	culture = bohemian
+}
+
+949 = {
+	name = Baheria
+	culture = finnish
+}
+
+950 = {
+	name = Lakaria
+	culture = breton
+}
+
+951 = {
+	name = Reulolun
+	culture = andalusian_arabic
+}
+
+952 = {
+	name = Qomegen
+	culture = alan
+}
+
+953 = {
+	name = Wolas
+	culture = manden
+}
+
+954 = {
+	name = Ethiruay
+	culture = danish
+}
+
+955 = {
+	name = Kalinda
+	culture = daju
+}
+
+956 = {
+	name = Qadudev
+	culture = crimean_gothic
+}
+
+957 = {
+	name = Walaila
+	culture = danish
+}
+
+958 = {
+	name = Sayaslo
+	culture = norwegian
+}
+
+959 = {
+	name = Tanotha
+	culture = tamil
+}
+
+960 = {
+	name = Kiliad
+	culture = khazar
+}
+
+961 = {
+	name = Komekel
+	culture = slovieni
+}
+
+962 = {
+	name = Kalapal
+	culture = lithuanian
+}
+
+963 = {
+	name = Rurarda
+	culture = carantanian
+}
+
+964 = {
+	name = Tolatur
+	culture = nepali
+}
+
+965 = {
+	name = Eljanta
+	culture = prussian
+}
+
+966 = {
+	name = Kadela
+	culture = soninke
+}
+
+967 = {
+	name = Lubeslu
+	culture = bulgarian
+}
+
+968 = {
+	name = Esalinop
+	culture = afghan
+}
+
+969 = {
+	name = Lajalk
+	culture = maghreb_arabic
+}
+
+970 = {
+	name = Bahotha
+	culture = komi
+}
+
+971 = {
+	name = Eganaya
+	culture = georgian
+}
+
+972 = {
+	name = Kabarak
+	culture = basque
+}
+
+973 = {
+	name = Kotida
+	culture = tocharian
+}
+
+974 = {
+	name = Relašî
+	culture = carantanian
+}
+
+975 = {
+	name = Wagimur
+	culture = ugricbaltic
+}
+
+976 = {
+	name = Telen
+	culture = telugu
+}
+
+977 = {
+	name = Nelelen
+	culture = pictish
+}
+
+978 = {
+	name = Nigelen
+	culture = assamese
+}
+
+979 = {
+	name = Teliad
+	culture = afghan
+}
+
+980 = {
+	name = Enneslu
+	culture = romanian
+}
+
+981 = {
+	name = Randha
+	culture = carantanian
+}
+
+982 = {
+	name = Saninop
+	culture = italian
+}
+
+983 = {
+	name = Ebisern
+	culture = saxon
+}
+
+984 = {
+	name = Tarore
+	culture = polish
+}
+
+985 = {
+	name = Sanure
+	culture = dutch
+}
+
+986 = {
+	name = Lorelin
+	culture = visigothic
+}
+
+987 = {
+	name = Talukh
+	culture = georgian
+}
+
+988 = {
+	name = Dielay
+	culture = coptic
+}
+
+989 = {
+	name = Wukuju
+	culture = somali
+}
+
+990 = {
+	name = Tukoda
+	culture = croatian
+}
+
+991 = {
+	name = Amaneslu
+	culture = manden
+}
+
+992 = {
+	name = Ririct
+	culture = norse
+}
+
+993 = {
+	name = Danence
+	culture = greek
+}
+
+994 = {
+	name = Rakidia
+	culture = portuguese
+}
+
+995 = {
+	name = Qaleuba
+	culture = sephardi
+}
+
+996 = {
+	name = Akeæ'
+	culture = frankish
+}
+
+997 = {
+	name = Naleslu
+	culture = kurdish
+}
+
+998 = {
+	name = Tekel
+	culture = assamese
+}
+
+999 = {
+	name = Nomelen
+	culture = daju
+}
+
+1000 = {
+	name = Ligekel
+	culture = crimean_gothic
+}
+
+1001 = {
+	name = Tatelen
+	culture = persian
+}
+
+1002 = {
+	name = Ralothar
+	culture = sardinian
+}
+
+1003 = {
+	name = Ruyalid
+	culture = slovieni
+}
+
+1004 = {
+	name = Terarda
+	culture = pommeranian
+}
+
+1005 = {
+	name = Deredek
+	culture = assyrian
+}
+
+1006 = {
+	name = Kolarda
+	culture = german
+}
+
+1007 = {
+	name = Laleslu
+	culture = assamese
+}
+
+1008 = {
+	name = Ralatur
+	culture = english
+}
+
+1009 = {
+	name = Lusarl
+	culture = hungarian
+}
+
+1010 = {
+	name = Walodio
+	culture = irish
+}
+
+1011 = {
+	name = Lanatur
+	culture = khanty
+}
+
+1012 = {
+	name = Silartin
+	culture = welsh
+}
+
+1013 = {
+	name = Rannilen
+	culture = mordvin
+}
+
+1014 = {
+	name = Nisarda
+	culture = lappish
+}
+
+1015 = {
+	name = Bolaimur
+	culture = nepali
+}
+
+1016 = {
+	name = Teluju
+	culture = lettigallish
+}
+
+1017 = {
+	name = Bagelin
+	culture = greek
+}
+
+1018 = {
+	name = Qulagai
+	culture = cuman
+}
+
+1019 = {
+	name = Dalarda
+	culture = marathi
+}
+
+1020 = {
+	name = Ralinop
+	culture = kurdish
+}
+
+1021 = {
+	name = Nubeslu
+	culture = bengali
+}
+
+1022 = {
+	name = Atapastu
+	culture = kurdish
+}
+
+1023 = {
+	name = Naninda
+	culture = bosnian
+}
+
+1024 = {
+	name = Ticelen
+	culture = breton
+}
+
+1025 = {
+	name = Emasict
+	culture = old_frankish
+}
+
+1026 = {
+	name = Rageæ'
+	culture = bedouin_arabic
+}
+
+1027 = {
+	name = Seliban
+	culture = levantine_arabic
+}
+
+1028 = {
+	name = Subeslu
+	culture = breton
+}
+
+1029 = {
+	name = Sapeslu
+	culture = nahuatl
+}
+
+1030 = {
+	name = Ehanotha
+	culture = ashkenazi
+}
+
+1031 = {
+	name = Sukuju
+	culture = andalusian_arabic
+}
+
+1032 = {
+	name = Esaladza
+	culture = panjabi
+}
+
+1033 = {
+	name = Nicarl
+	culture = jurchen
+}
+
+1034 = {
+	name = Ninevat
+	culture = uyghur
+}
+
+1035 = {
+	name = Docirí
+	culture = crimean_gothic
+}
+
+1036 = {
+	name = Niruju
+	culture = sephardi
+}
+
+1037 = {
+	name = Romekel
+	culture = sindhi
+}
+
+1038 = {
+	name = Atelelen
+	culture = karluk
+}
+
+1039 = {
+	name = Tanarda
+	culture = oriya
+}
+
+1040 = {
+	name = Tolotha
+	culture = frankish
+}
+
+1041 = {
+	name = Kalinop
+	culture = welsh
+}
+
+1042 = {
+	name = Somolas
+	culture = german
+}
+
+1043 = {
+	name = Tuuram
+	culture = irish
+}
+
+1044 = {
+	name = Woleuba
+	culture = finnish
+}
+
+1045 = {
+	name = Waneslu
+	culture = outremer
+}
+
+1046 = {
+	name = Tukolas
+	culture = norwegian
+}
+
+1047 = {
+	name = Kilun
+	culture = bulgarian
+}
+
+1048 = {
+	name = Kalarda
+	culture = sindhi
+}
+
+1049 = {
+	name = Nolaide
+	culture = tocharian
+}
+
+1050 = {
+	name = Kurern
+	culture = carantanian
+}
+
+1051 = {
+	name = Telele
+	culture = andalusian_arabic
+}
+
+1052 = {
+	name = Kaharl
+	culture = khanty
+}
+
+1053 = {
+	name = Qadadar
+	culture = andalusian_arabic
+}
+
+1054 = {
+	name = Karda
+	culture = kannada
+}
+
+1055 = {
+	name = Tuju
+	culture = hungarian
+}
+
+1056 = {
+	name = Delorad
+	culture = khazar
+}
+
+1057 = {
+	name = Bamadza
+	culture = baloch
+}
+
+1058 = {
+	name = Tainara
+	culture = bodpa
+}
+
+1059 = {
+	name = Kaninop
+	culture = ugricbaltic
+}
+
+1060 = {
+	name = Tirta
+	culture = tangut
+}
+
+1061 = {
+	name = Ladelen
+	culture = assyrian
+}
+
+1062 = {
+	name = Tanilen
+	culture = jurchen
+}
+
+1063 = {
+	name = Runatta
+	culture = norwegian
+}
+
+1064 = {
+	name = Buyavat
+	culture = sinhala
+}
+
+1065 = {
+	name = Teslu
+	culture = mongol
+}
+
+1066 = {
+	name = Qyedam
+	culture = ethiopian
+}
+
+1067 = {
+	name = Runææ
+	culture = lappish
+}
+
+1068 = {
+	name = Rolun
+	culture = castillan
+}
+
+1069 = {
+	name = Takelin
+	culture = tocharian
+}
+
+1070 = {
+	name = Diroda
+	culture = egyptian_arabic
+}
+
+1071 = {
+	name = Diriban
+	culture = italian
+}
+
+1072 = {
+	name = Wukoda
+	culture = cuman
+}
+
+1073 = {
+	name = Tomila
+	culture = ethiopian
+}
+
+1074 = {
+	name = Bilija
+	culture = soninke
+}
+
+1075 = {
+	name = Eåsanta
+	culture = frankish
+}
+
+1076 = {
+	name = Dalotha
+	culture = coptic
+}
+
+1077 = {
+	name = Kalayn
+	culture = afghan
+}
+
+1078 = {
+	name = Rohastu
+	culture = lombard
+}
+
+1079 = {
+	name = Wandlu
+	culture = mongol
+}
+
+1080 = {
+	name = Emilurz
+	culture = visigothic
+}
+
+1081 = {
+	name = Tagalim
+	culture = catalan
+}
+
+1082 = {
+	name = Deloda
+	culture = dutch
+}
+
+1083 = {
+	name = Sirubu
+	culture = ugricbaltic
+}
+
+1084 = {
+	name = Tomila
+	culture = italian
+}
+
+1085 = {
+	name = Qicarl
+	culture = severian
+}
+
+1086 = {
+	name = Dicarda
+	culture = georgian
+}
+
+1087 = {
+	name = Kekel
+	culture = saka
+}
+
+1088 = {
+	name = Wakiram
+	culture = hindustani
+}
+
+1089 = {
+	name = Wozala
+	culture = severian
+}
+
+1090 = {
+	name = Silelen
+	culture = nubian
+}
+
+1091 = {
+	name = Nasarda
+	culture = finnish
+}
+
+1092 = {
+	name = Retasu
+	culture = manden
+}
+
+1093 = {
+	name = Takiban
+	culture = severian
+}
+
+1094 = {
+	name = Esalilen
+	culture = marathi
+}
+
+1095 = {
+	name = Esusarl
+	culture = coptic
+}
+
+1096 = {
+	name = Ranoz
+	culture = levantine_arabic
+}
+
+1097 = {
+	name = Qirra
+	culture = kanuri
+}
+
+1098 = {
+	name = Talukh
+	culture = mordvin
+}
+
+1099 = {
+	name = Wenizo
+	culture = portuguese
+}
+
+1100 = {
+	name = Kugorad
+	culture = basque
+}
+
+1101 = {
+	name = Rolodio
+	culture = carantanian
+}
+
+1102 = {
+	name = Busarl
+	culture = nahuatl
+}
+
+1103 = {
+	name = Ethekel
+	culture = croatian
+}
+
+1104 = {
+	name = Qanence
+	culture = italian
+}
+
+1105 = {
+	name = Sazara
+	culture = ashkenazi
+}
+
+1106 = {
+	name = Tororgia
+	culture = zaghawa
+}
+
+1107 = {
+	name = Rubiulf
+	culture = frisian
+}
+
+1108 = {
+	name = Tadelen
+	culture = ugricbaltic
+}
+
+1109 = {
+	name = Laudalka
+	culture = outremer
+}
+
+1110 = {
+	name = Lalija
+	culture = kirghiz
+}
+
+1111 = {
+	name = Tusodio
+	culture = kannada
+}
+
+1112 = {
+	name = Landlu
+	culture = khazar
+}
+
+1113 = {
+	name = Bolinda
+	culture = tamil
+}
+
+1114 = {
+	name = Lisutka
+	culture = bosnian
+}
+
+1115 = {
+	name = Baulezu
+	culture = komi
+}
+
+1116 = {
+	name = Rolas
+	culture = italian
+}
+
+1117 = {
+	name = Kauliad
+	culture = nepali
+}
+
+1118 = {
+	name = Ralodio
+	culture = songhay
+}
+
+1119 = {
+	name = Kicodio
+	culture = samoyed
+}
+
+1120 = {
+	name = Dielka
+	culture = frankish
+}
+
+1121 = {
+	name = Arahinop
+	culture = norman
+}
+
+1122 = {
+	name = Qoutai
+	culture = mongol
+}
+
+1123 = {
+	name = Nunudev
+	culture = bulgarian
+}
+
+1124 = {
+	name = Dinaide
+	culture = castillan
+}
+
+1125 = {
+	name = Balalk
+	culture = lappish
+}
+
+1126 = {
+	name = Beroszó
+	culture = han
+}
+
+1127 = {
+	name = Apagiban
+	culture = dutch
+}
+
+1128 = {
+	name = Rolas
+	culture = roman
+}
+
+1129 = {
+	name = Ralilen
+	culture = somali
+}
+
+1130 = {
+	name = Tirsu
+	culture = croatian
+}
+
+1131 = {
+	name = Qilarda
+	culture = welsh
+}
+
+1132 = {
+	name = Ruboan
+	culture = ethiopian
+}
+
+1133 = {
+	name = Kaide
+	culture = afghan
+}
+
+1134 = {
+	name = Wereena
+	culture = old_frankish
+}
+
+1135 = {
+	name = Daluri
+	culture = roman
+}
+
+1136 = {
+	name = Dagiram
+	culture = norman
+}
+
+1137 = {
+	name = Simur
+	culture = uyghur
+}
+
+1138 = {
+	name = Bozubu
+	culture = swedish
+}
+
+1139 = {
+	name = Tataria
+	culture = dutch
+}
+
+1140 = {
+	name = Ezaynela
+	culture = khazar
+}
+
+1141 = {
+	name = Sotalka
+	culture = bodpa
+}
+
+1142 = {
+	name = Kazict
+	culture = nubian
+}
+
+1143 = {
+	name = Ababamaj
+	culture = scottish
+}
+
+1144 = {
+	name = Satayan
+	culture = polish
+}
+
+1145 = {
+	name = Tukeæ'
+	culture = maghreb_arabic
+}
+
+1146 = {
+	name = Egulalim
+	culture = kanuri
+}
+
+1147 = {
+	name = Wiray
+	culture = nahuatl
+}
+
+1148 = {
+	name = Tunææ
+	culture = english
+}
+
+1149 = {
+	name = Waheslu
+	culture = outremer
+}
+
+1150 = {
+	name = Danarda
+	culture = russian
+}
+
+1151 = {
+	name = Tasyut
+	culture = marathi
+}
+
+1152 = {
+	name = Racamad
+	culture = danish
+}
+
+1153 = {
+	name = Tucia
+	culture = telugu
+}
+
+1154 = {
+	name = Komolas
+	culture = alan
+}
+
+1155 = {
+	name = Aleuba
+	culture = crimean_gothic
+}
+
+1156 = {
+	name = Bolyukha
+	culture = kurdish
+}
+
+1157 = {
+	name = Aljekel
+	culture = slovieni
+}
+
+1158 = {
+	name = Sandtu
+	culture = bodpa
+}
+
+1159 = {
+	name = Tanarda
+	culture = bulgarian
+}
+
+1160 = {
+	name = Kelila
+	culture = ethiopian
+}
+
+1161 = {
+	name = Kasimir
+	culture = mongol
+}
+
+1162 = {
+	name = Tarda
+	culture = han
+}
+
+1163 = {
+	name = Satiram
+	culture = bengali
+}
+
+1164 = {
+	name = Borad
+	culture = scottish
+}
+
+1165 = {
+	name = Kadija
+	culture = levantine_arabic
+}
+
+1166 = {
+	name = Derele
+	culture = baloch
+}
+
+1167 = {
+	name = Bevint
+	culture = dutch
+}
+
+1168 = {
+	name = Qukeæ'
+	culture = hausa
+}
+
+1169 = {
+	name = Tolyukha
+	culture = sindhi
+}
+
+1170 = {
+	name = Tolarda
+	culture = english
+}
+
+1171 = {
+	name = Rigai
+	culture = tangut
+}
+
+1172 = {
+	name = Sobaria
+	culture = zaghawa
+}
+
+1173 = {
+	name = Kapeuba
+	culture = nepali
+}
+
+1174 = {
+	name = Lamaj
+	culture = khazar
+}
+
+1175 = {
+	name = Tolilen
+	culture = dutch
+}
+
+1176 = {
+	name = Rasude
+	culture = pecheneg
+}
+
+1177 = {
+	name = Lyeena
+	culture = arberian
+}
+
+1178 = {
+	name = Aferamaj
+	culture = carantanian
+}
+
+1179 = {
+	name = Kirimur
+	culture = rajput
+}
+
+1180 = {
+	name = Siram
+	culture = levantine_arabic
+}
+
+1181 = {
+	name = Egiura
+	culture = komi
+}
+
+1182 = {
+	name = Dirsu
+	culture = kanuri
+}
+
+1183 = {
+	name = Sorani
+	culture = suebi
+}
+
+1184 = {
+	name = Sekel
+	culture = tangut
+}
+
+1185 = {
+	name = Raulali
+	culture = greek
+}
+
+1186 = {
+	name = Kasarda
+	culture = songhay
+}
+
+1187 = {
+	name = Ruhida
+	culture = norse
+}
+
+1188 = {
+	name = Raudele
+	culture = saxon
+}
+
+1189 = {
+	name = Lannotha
+	culture = georgian
+}
+
+1190 = {
+	name = Loharak
+	culture = karluk
+}
+
+1191 = {
+	name = Rohatur
+	culture = severian
+}
+
+1192 = {
+	name = Doleslu
+	culture = saxon
+}
+
+1193 = {
+	name = Qolastu
+	culture = sumpa
+}
+
+1194 = {
+	name = Nannodio
+	culture = visigothic
+}
+
+1195 = {
+	name = Lagutka
+	culture = bolghar
+}
+
+1196 = {
+	name = Ninyut
+	culture = norwegian
+}
+
+1197 = {
+	name = Wuharda
+	culture = irish
+}
+
+1198 = {
+	name = Loan
+	culture = bedouin_arabic
+}
+
+1199 = {
+	name = Belelin
+	culture = serbian
+}
+
+1200 = {
+	name = Nukarha
+	culture = soninke
+}
+
+1201 = {
+	name = Tanotha
+	culture = greek
+}
+
+1202 = {
+	name = Dielka
+	culture = kanuri
+}
+
+1203 = {
+	name = Toziram
+	culture = coptic
+}
+
+1204 = {
+	name = Atomanoz
+	culture = ashkenazi
+}
+
+1205 = {
+	name = Komaria
+	culture = frankish
+}
+
+1206 = {
+	name = Kelila
+	culture = italian
+}
+
+1207 = {
+	name = Kolotha
+	culture = turkish
+}
+
+1208 = {
+	name = Qielarl
+	culture = hungarian
+}
+
+1209 = {
+	name = Tolodio
+	culture = italian
+}
+
+1210 = {
+	name = Wuurka
+	culture = finnish
+}
+
+1211 = {
+	name = Rugorad
+	culture = khanty
+}
+
+1212 = {
+	name = Toleslu
+	culture = afghan
+}
+
+1213 = {
+	name = Raudida
+	culture = ashkenazi
+}
+
+1214 = {
+	name = Tasara
+	culture = hindustani
+}
+
+1215 = {
+	name = Welara
+	culture = norwegian
+}
+
+1216 = {
+	name = Komolas
+	culture = sinhala
+}
+
+1217 = {
+	name = Tuurarl
+	culture = soninke
+}
+
+1218 = {
+	name = Kanela
+	culture = ethiopian
+}
+
+1219 = {
+	name = Nurict
+	culture = levantine_arabic
+}
+
+1220 = {
+	name = Rirta
+	culture = castillan
+}
+
+1221 = {
+	name = Lilila
+	culture = nahuatl
+}
+
+1222 = {
+	name = Aåsanta
+	culture = gujurati
+}
+
+1223 = {
+	name = Rasict
+	culture = manden
+}
+
+1224 = {
+	name = Anoummur
+	culture = russian
+}
+
+1225 = {
+	name = Amatagai
+	culture = lombard
+}
+
+1226 = {
+	name = Tagai
+	culture = lombard
+}
+
+1227 = {
+	name = Lomiad
+	culture = breton
+}
+
+1228 = {
+	name = Ticastu
+	culture = english
+}
+
+1229 = {
+	name = Lalodio
+	culture = ethiopian
+}
+
+1230 = {
+	name = Kanehre
+	culture = outremer
+}
+
+1231 = {
+	name = Neulani
+	culture = slovieni
+}
+
+1232 = {
+	name = Kelekel
+	culture = saxon
+}
+
+1233 = {
+	name = Qamapal
+	culture = zhangzhung
+}
+
+1234 = {
+	name = Duurmur
+	culture = arberian
+}
+
+1235 = {
+	name = Toumayn
+	culture = italian
+}
+
+1236 = {
+	name = Tokyut
+	culture = bolghar
+}
+
+1237 = {
+	name = Bueheba
+	culture = carantanian
+}
+
+1238 = {
+	name = Takuna
+	culture = russian
+}
+
+1239 = {
+	name = Rolalk
+	culture = soninke
+}
+
+1240 = {
+	name = Tirubu
+	culture = tangut
+}
+
+1241 = {
+	name = Teulolun
+	culture = bosnian
+}
+
+1242 = {
+	name = Bozala
+	culture = khanty
+}
+
+1243 = {
+	name = Baleslu
+	culture = norman
+}
+
+1244 = {
+	name = Emubern
+	culture = ashkenazi
+}
+
+1245 = {
+	name = Anecarda
+	culture = karluk
+}
+
+1246 = {
+	name = Qeuleæ'
+	culture = lithuanian
+}
+
+1247 = {
+	name = Ralotha
+	culture = afghan
+}
+
+1248 = {
+	name = Rerayn
+	culture = swedish
+}
+
+1249 = {
+	name = Rokalka
+	culture = maghreb_arabic
+}
+
+1250 = {
+	name = Luyavat
+	culture = afghan
+}
+
+1251 = {
+	name = Satta
+	culture = bolghar
+}
+
+1252 = {
+	name = Rirarl
+	culture = english
+}
+
+1253 = {
+	name = Badali
+	culture = telugu
+}
+
+1254 = {
+	name = Nigoutai
+	culture = andalusian_arabic
+}
+
+1255 = {
+	name = Nalastu
+	culture = ugricbaltic
+}
+
+1256 = {
+	name = Sielmur
+	culture = avar
+}
+
+1257 = {
+	name = Qaulija
+	culture = russian
+}
+
+1258 = {
+	name = Ranatta
+	culture = hungarian
+}
+
+1259 = {
+	name = Dilorad
+	culture = arberian
+}
+
+1260 = {
+	name = Ralarda
+	culture = nepali
+}
+
+1261 = {
+	name = Sukava
+	culture = severian
+}
+
+1262 = {
+	name = Laninda
+	culture = sardinian
+}
+
+1263 = {
+	name = Borani
+	culture = lombard
+}
+
+1264 = {
+	name = Rannatur
+	culture = hausa
+}
+
+1265 = {
+	name = Kayraya
+	culture = egyptian_arabic
+}
+
+1266 = {
+	name = Dunapal
+	culture = kurdish
+}
+
+1267 = {
+	name = Tadekel
+	culture = sinhala
+}
+
+1268 = {
+	name = Tagansur
+	culture = castillan
+}
+
+1269 = {
+	name = Sele
+	culture = old_frankish
+}
+
+1270 = {
+	name = Banneuba
+	culture = jurchen
+}
+
+1271 = {
+	name = Kugekel
+	culture = bedouin_arabic
+}
+
+1272 = {
+	name = Tatorad
+	culture = carantanian
+}
+
+1273 = {
+	name = Dicilen
+	culture = bohemian
+}
+
+1274 = {
+	name = Echaila
+	culture = tangut
+}
+
+1275 = {
+	name = Elastu
+	culture = bulgarian
+}
+
+1276 = {
+	name = Achii
+	culture = lappish
+}
+
+1277 = {
+	name = Nolarak
+	culture = levantine_arabic
+}
+
+1278 = {
+	name = Nanta
+	culture = marathi
+}
+
+1279 = {
+	name = Saparda
+	culture = arberian
+}
+
+1280 = {
+	name = Lubeslu
+	culture = sindhi
+}
+
+1281 = {
+	name = Liunz
+	culture = hindustani
+}
+
+1282 = {
+	name = Waudint
+	culture = occitan
+}
+
+1283 = {
+	name = Tannilen
+	culture = bedouin_arabic
+}
+
+1284 = {
+	name = Bilašî
+	culture = volhynian
+}
+
+1285 = {
+	name = Bukelin
+	culture = dalmatian
+}
+
+1286 = {
+	name = Kiganta
+	culture = lithuanian
+}
+
+1287 = {
+	name = Etobaria
+	culture = tangut
+}
+
+1288 = {
+	name = Runadar
+	culture = somali
+}
+
+1289 = {
+	name = Rahiulf
+	culture = panjabi
+}
+
+1290 = {
+	name = Seraide
+	culture = zaghawa
+}
+
+1291 = {
+	name = Epadija
+	culture = portuguese
+}
+
+1292 = {
+	name = Kapiulf
+	culture = slovieni
+}
+
+1293 = {
+	name = Nelen
+	culture = hausa
+}
+
+1294 = {
+	name = Lahinop
+	culture = pommeranian
+}
+
+1295 = {
+	name = Relen
+	culture = sumpa
+}
+
+1296 = {
+	name = Nisyut
+	culture = kurdish
+}
+
+1297 = {
+	name = Kaila
+	culture = sinhala
+}
+
+1298 = {
+	name = Kerivia
+	culture = severian
+}
+
+1299 = {
+	name = Rarivia
+	culture = karluk
+}
+
+1300 = {
+	name = Ralilen
+	culture = bohemian
+}
+
+1301 = {
+	name = Epäarkad
+	culture = italian
+}
+
+1302 = {
+	name = Kakena
+	culture = turkish
+}
+
+1303 = {
+	name = Teuluju
+	culture = arberian
+}
+
+1304 = {
+	name = Rurarda
+	culture = turkish
+}
+
+1305 = {
+	name = Etapeslu
+	culture = sumpa
+}
+
+1306 = {
+	name = Lajayn
+	culture = tamil
+}
+
+1307 = {
+	name = Bunadza
+	culture = frankish
+}
+
+1308 = {
+	name = Wyii
+	culture = norman
+}
+
+1309 = {
+	name = Qahotha
+	culture = irish
+}
+
+1310 = {
+	name = Wolilen
+	culture = nepali
+}
+
+1311 = {
+	name = Arahatur
+	culture = hindustani
+}
+
+1312 = {
+	name = Walarlah
+	culture = serbian
+}
+
+1313 = {
+	name = Risarda
+	culture = italian
+}
+
+1314 = {
+	name = Toumva
+	culture = uyghur
+}
+
+1315 = {
+	name = Edukelin
+	culture = basque
+}
+
+1316 = {
+	name = Qilorad
+	culture = slovieni
+}
+
+1317 = {
+	name = Kanarda
+	culture = outremer
+}
+
+1318 = {
+	name = Loutai
+	culture = hausa
+}
+
+1319 = {
+	name = Ragimur
+	culture = gujurati
+}
+
+1320 = {
+	name = Rence
+	culture = alan
+}
+
+1321 = {
+	name = Ethirlen
+	culture = crimean_gothic
+}
+
+1322 = {
+	name = Lelansur
+	culture = norman
+}
+
+1323 = {
+	name = Sicotha
+	culture = alan
+}
+
+1324 = {
+	name = Qurevat
+	culture = marathi
+}
+
+1325 = {
+	name = Qosayn
+	culture = assyrian
+}
+
+1326 = {
+	name = Liralk
+	culture = kurdish
+}
+
+1327 = {
+	name = Reobore
+	culture = zhangzhung
+}
+
+1328 = {
+	name = Tyasulay
+	culture = norse
+}
+
+1329 = {
+	name = Borubu
+	culture = sogdian
+}
+
+1330 = {
+	name = Dalodio
+	culture = polish
+}
+
+1331 = {
+	name = Emiciulf
+	culture = tangut
+}
+
+1332 = {
+	name = Kalyukha
+	culture = egyptian_arabic
+}
+
+1333 = {
+	name = Agiurd
+	culture = irish
+}
+
+1334 = {
+	name = Lageæ'
+	culture = polish
+}
+
+1335 = {
+	name = Qartin
+	culture = scottish
+}
+
+1336 = {
+	name = Ratiad
+	culture = avar
+}
+
+1337 = {
+	name = Kukolas
+	culture = persian
+}
+
+1338 = {
+	name = Nagern
+	culture = tangut
+}
+
+1339 = {
+	name = Baria
+	culture = visigothic
+}
+
+1340 = {
+	name = Abilamad
+	culture = carantanian
+}
+
+1341 = {
+	name = Laulucia
+	culture = norse
+}
+
+1342 = {
+	name = Tugija
+	culture = zhangzhung
+}
+
+1343 = {
+	name = Tubeslu
+	culture = romanian
+}
+
+1344 = {
+	name = Badali
+	culture = bedouin_arabic
+}
+
+1345 = {
+	name = Rabamaj
+	culture = bulgarian
+}
+
+1346 = {
+	name = Relamaj
+	culture = roman
+}
+
+1347 = {
+	name = Nasalka
+	culture = tocharian
+}
+
+1348 = {
+	name = Desof
+	culture = bohemian
+}
+
+1349 = {
+	name = Kohela
+	culture = assyrian
+}
+
+1350 = {
+	name = Erašî
+	culture = zaghawa
+}
+
+1351 = {
+	name = Qivostas
+	culture = lettigallish
+}
+
+1352 = {
+	name = Tusilen
+	culture = basque
+}
+
+1353 = {
+	name = Raparl
+	culture = italian
+}
+
+1354 = {
+	name = Annodio
+	culture = sindhi
+}
+
+1355 = {
+	name = Kanoz
+	culture = croatian
+}
+
+1356 = {
+	name = Wasutka
+	culture = bulgarian
+}
+
+1357 = {
+	name = Kagostas
+	culture = catalan
+}
+
+1358 = {
+	name = Bugali
+	culture = mordvin
+}
+
+1359 = {
+	name = Kelara
+	culture = irish
+}
+
+1360 = {
+	name = Tuyarda
+	culture = croatian
+}
+
+1361 = {
+	name = Waruslo
+	culture = cuman
+}
+
+1362 = {
+	name = Enneslu
+	culture = serbian
+}
+
+1363 = {
+	name = Kirarha
+	culture = meshchera
+}
+
+1364 = {
+	name = Sohatur
+	culture = hindustani
+}
+
+1365 = {
+	name = Kolesh
+	culture = crimean_gothic
+}
+
+1366 = {
+	name = Nadija
+	culture = bolghar
+}
+
+1367 = {
+	name = Relija
+	culture = frisian
+}
+
+1368 = {
+	name = Ahanarda
+	culture = assyrian
+}
+
+1369 = {
+	name = Dacukee
+	culture = sumpa
+}
+
+1370 = {
+	name = Banda
+	culture = zhangzhung
+}
+
+1371 = {
+	name = Qolas
+	culture = outremer
+}
+
+1372 = {
+	name = Telaria
+	culture = uyghur
+}
+
+1373 = {
+	name = Reliad
+	culture = zhangzhung
+}
+
+1374 = {
+	name = Qasarda
+	culture = sardinian
+}
+
+1375 = {
+	name = Wezezu
+	culture = swedish
+}
+
+1376 = {
+	name = Woziram
+	culture = welsh
+}
+
+1377 = {
+	name = Tohapal
+	culture = maghreb_arabic
+}
+
+1378 = {
+	name = Kolotha
+	culture = andalusian_arabic
+}
+
+1379 = {
+	name = Doda
+	culture = meshchera
+}
+
+1380 = {
+	name = Banoz
+	culture = romanian
+}
+
+1381 = {
+	name = Dalatur
+	culture = khazar
+}
+
+1382 = {
+	name = Bekel
+	culture = rajput
+}
+
+1383 = {
+	name = Woladza
+	culture = norwegian
+}
+
+1384 = {
+	name = Bararak
+	culture = armenian
+}
+
+1385 = {
+	name = Duseuba
+	culture = welsh
+}
+
+1386 = {
+	name = Ahaninop
+	culture = arberian
+}
+
+1387 = {
+	name = Baneuba
+	culture = nubian
+}
+
+1388 = {
+	name = Ranta
+	culture = swedish
+}
+
+1389 = {
+	name = Kielam
+	culture = occitan
+}
+
+1390 = {
+	name = Rolarda
+	culture = castillan
+}
+
+1391 = {
+	name = Kinayn
+	culture = somali
+}
+
+1392 = {
+	name = Tanotha
+	culture = norwegian
+}
+
+1393 = {
+	name = Syaa
+	culture = andalusian_arabic
+}
+
+1394 = {
+	name = Afolele
+	culture = sardinian
+}
+
+1395 = {
+	name = Qeuluju
+	culture = nahuatl
+}
+
+1396 = {
+	name = Qanotha
+	culture = sumpa
+}
+
+1397 = {
+	name = Nalotha
+	culture = tamil
+}
+
+1398 = {
+	name = Sorgia
+	culture = pictish
+}
+
+1399 = {
+	name = Danninop
+	culture = ugricbaltic
+}
+
+1400 = {
+	name = Rilolas
+	culture = dalmatian
+}
+
+1401 = {
+	name = Kielam
+	culture = avar
+}
+
+1402 = {
+	name = Ralotha
+	culture = levantine_arabic
+}
+
+1403 = {
+	name = Kotern
+	culture = maghreb_arabic
+}
+
+1404 = {
+	name = Noumara
+	culture = old_saxon
+}
+
+1405 = {
+	name = Anagyut
+	culture = severian
+}
+
+1406 = {
+	name = Balotha
+	culture = norman
+}
+
+1407 = {
+	name = Toan
+	culture = danish
+}
+
+1408 = {
+	name = Epadelen
+	culture = lappish
+}
+
+1409 = {
+	name = Kanarl
+	culture = manden
+}
+
+1410 = {
+	name = Avalukh
+	culture = kanuri
+}
+
+1411 = {
+	name = Eparele
+	culture = ilmenian
+}
+
+1412 = {
+	name = Naleslu
+	culture = english
+}
+
+1413 = {
+	name = Taniulf
+	culture = pommeranian
+}
+
+1414 = {
+	name = Qiulf
+	culture = welsh
+}
+
+1415 = {
+	name = Nalodio
+	culture = samoyed
+}
+
+1416 = {
+	name = Lirelin
+	culture = cuman
+}
+
+1417 = {
+	name = Reuliban
+	culture = mordvin
+}
+
+1418 = {
+	name = Razayn
+	culture = panjabi
+}
+
+1419 = {
+	name = Lasarda
+	culture = basque
+}
+
+1420 = {
+	name = Rapeslu
+	culture = bodpa
+}
+
+1421 = {
+	name = Liriban
+	culture = bedouin_arabic
+}
+
+1422 = {
+	name = Kateæ'
+	culture = saxon
+}
+
+1423 = {
+	name = Riban
+	culture = lettigallish
+}
+
+1424 = {
+	name = Niriram
+	culture = avar
+}
+
+1425 = {
+	name = Wuju
+	culture = ashkenazi
+}
+
+1426 = {
+	name = Lanastu
+	culture = slovieni
+}
+
+1427 = {
+	name = Taleuba
+	culture = sephardi
+}
+
+1428 = {
+	name = Baheslu
+	culture = bedouin_arabic
+}
+
+1429 = {
+	name = Qandlu
+	culture = khitan
+}
+
+1430 = {
+	name = Tielka
+	culture = suebi
+}
+
+1431 = {
+	name = Tubaila
+	culture = nubian
+}
+
+1432 = {
+	name = Balarl
+	culture = sephardi
+}
+
+1433 = {
+	name = Asuralka
+	culture = norman
+}
+
+1434 = {
+	name = Worarda
+	culture = baloch
+}
+
+1435 = {
+	name = Naguju
+	culture = finnish
+}
+
+1436 = {
+	name = Emanææ
+	culture = somali
+}
+
+1437 = {
+	name = Egorad
+	culture = uyghur
+}
+
+1438 = {
+	name = Kosayn
+	culture = slovieni
+}
+
+1439 = {
+	name = Tenaila
+	culture = afghan
+}
+
+1440 = {
+	name = Qizarkad
+	culture = norman
+}
+
+1441 = {
+	name = Nobija
+	culture = telugu
+}
+
+1442 = {
+	name = Taharda
+	culture = arberian
+}
+
+1443 = {
+	name = Kiganta
+	culture = bosnian
+}
+
+1444 = {
+	name = Siulf
+	culture = catalan
+}
+
+1445 = {
+	name = Tukija
+	culture = hungarian
+}
+
+1446 = {
+	name = Rolint
+	culture = arberian
+}
+
+1447 = {
+	name = Egekel
+	culture = prussian
+}
+
+1448 = {
+	name = Liceslu
+	culture = manden
+}
+
+1449 = {
+	name = Tapeuba
+	culture = norwegian
+}
+
+1450 = {
+	name = Rukani
+	culture = songhay
+}
+
+1451 = {
+	name = Talarda
+	culture = turkish
+}
+
+1452 = {
+	name = Lugekel
+	culture = hausa
+}
+
+1453 = {
+	name = Alotha
+	culture = dalmatian
+}
+
+1454 = {
+	name = Tilolas
+	culture = visigothic
+}
+
+1455 = {
+	name = Busotha
+	culture = sinhala
+}
+
+1456 = {
+	name = Qazalid
+	culture = tamil
+}
+
+1457 = {
+	name = Terence
+	culture = outremer
+}
+
+1458 = {
+	name = Dubiulf
+	culture = volhynian
+}
+
+1459 = {
+	name = Dolapal
+	culture = khitan
+}
+
+1460 = {
+	name = Ranoan
+	culture = slovieni
+}
+
+1461 = {
+	name = Boholas
+	culture = norse
+}
+
+1462 = {
+	name = Kigoutai
+	culture = gujurati
+}
+
+1463 = {
+	name = Nurarda
+	culture = khitan
+}
+
+1464 = {
+	name = Kotyut
+	culture = lettigallish
+}
+
+1465 = {
+	name = Qolaide
+	culture = daju
+}
+
+1466 = {
+	name = Deitta
+	culture = somali
+}
+
+1467 = {
+	name = Bielarl
+	culture = ilmenian
+}
+
+1468 = {
+	name = Relarel
+	culture = khitan
+}
+
+1469 = {
+	name = Araharl
+	culture = mongol
+}
+
+1470 = {
+	name = Sapinop
+	culture = karluk
+}
+
+1471 = {
+	name = Ticodio
+	culture = german
+}
+
+1472 = {
+	name = Randa
+	culture = polish
+}
+
+1473 = {
+	name = Domija
+	culture = roman
+}
+
+1474 = {
+	name = Luluju
+	culture = saxon
+}
+
+1475 = {
+	name = Tuyaay
+	culture = polish
+}
+
+1476 = {
+	name = Dorehre
+	culture = bengali
+}
+
+1477 = {
+	name = Warerva
+	culture = catalan
+}
+
+1478 = {
+	name = Ratern
+	culture = slovieni
+}
+
+1479 = {
+	name = Qamija
+	culture = komi
+}
+
+1480 = {
+	name = Sanodio
+	culture = bedouin_arabic
+}
+
+1481 = {
+	name = Wolarak
+	culture = khitan
+}
+
+1482 = {
+	name = Ramaj
+	culture = severian
+}
+
+1483 = {
+	name = Ebroutai
+	culture = greek
+}
+
+1484 = {
+	name = Kaneuba
+	culture = crimean_gothic
+}
+
+1485 = {
+	name = Bapilen
+	culture = saka
+}
+
+1486 = {
+	name = Awaluri
+	culture = lombard
+}
+
+1487 = {
+	name = Ejohalk
+	culture = bosnian
+}
+
+1488 = {
+	name = Nyasalku
+	culture = portuguese
+}
+
+1489 = {
+	name = Qeleæ'
+	culture = visigothic
+}
+
+1490 = {
+	name = Etapeuba
+	culture = bohemian
+}
+
+1491 = {
+	name = Tandija
+	culture = english
+}
+
+1492 = {
+	name = Biram
+	culture = bedouin_arabic
+}
+
+1493 = {
+	name = Relagai
+	culture = swedish
+}
+
+1494 = {
+	name = Apeluri
+	culture = old_frankish
+}
+
+1495 = {
+	name = Toutai
+	culture = ethiopian
+}
+
+1496 = {
+	name = Doheslu
+	culture = castillan
+}
+
+1497 = {
+	name = Kannastu
+	culture = visigothic
+}
+
+1498 = {
+	name = Nerict
+	culture = suebi
+}
+
+1499 = {
+	name = Daihula
+	culture = greek
+}
+
+1500 = {
+	name = Kudev
+	culture = ilmenian
+}
+
+1501 = {
+	name = Rannotha
+	culture = zhangzhung
+}
+
+1502 = {
+	name = Kaleslu
+	culture = meshchera
+}
+
+1503 = {
+	name = Ragern
+	culture = kurdish
+}
+
+1504 = {
+	name = Tisida
+	culture = crimean_gothic
+}
+
+1505 = {
+	name = Luslo
+	culture = norse
+}
+
+1506 = {
+	name = Lakuna
+	culture = welsh
+}
+
+1507 = {
+	name = Qagelin
+	culture = italian
+}
+
+1508 = {
+	name = Avalarda
+	culture = gujurati
+}
+
+1509 = {
+	name = Enaide
+	culture = crimean_gothic
+}
+
+1510 = {
+	name = Basida
+	culture = zaghawa
+}
+
+1511 = {
+	name = Epotern
+	culture = welsh
+}
+
+1512 = {
+	name = Bajarda
+	culture = prussian
+}
+
+1513 = {
+	name = Salaimur
+	culture = bosnian
+}
+
+1514 = {
+	name = Esusiulf
+	culture = andalusian_arabic
+}
+
+1515 = {
+	name = Dobolas
+	culture = italian
+}
+
+1516 = {
+	name = Totern
+	culture = crimean_gothic
+}
+
+1517 = {
+	name = Kasaura
+	culture = panjabi
+}
+
+1518 = {
+	name = Nozani
+	culture = khitan
+}
+
+1519 = {
+	name = Welolun
+	culture = bulgarian
+}
+
+1520 = {
+	name = Nandarl
+	culture = norman
+}
+
+1521 = {
+	name = Etomaria
+	culture = bodpa
+}
+
+1522 = {
+	name = Rastu
+	culture = alan
+}
+
+1523 = {
+	name = Wadanoz
+	culture = assyrian
+}
+
+1524 = {
+	name = Naninda
+	culture = marathi
+}
+
+1525 = {
+	name = Qoliulf
+	culture = german
+}
+
+1526 = {
+	name = Lubilen
+	culture = frisian
+}
+
+1527 = {
+	name = Rirba
+	culture = ugricbaltic
+}
+
+1528 = {
+	name = Atelanoz
+	culture = polish
+}
+
+1529 = {
+	name = Wusarl
+	culture = kannada
+}
+
+1530 = {
+	name = Kirsu
+	culture = sogdian
+}
+
+1531 = {
+	name = Ralalka
+	culture = scottish
+}
+
+1532 = {
+	name = Noluslo
+	culture = tangut
+}
+
+1533 = {
+	name = Nolas
+	culture = bedouin_arabic
+}
+
+1534 = {
+	name = Kandarl
+	culture = danish
+}
+
+1535 = {
+	name = Botutka
+	culture = suebi
+}
+
+1536 = {
+	name = Risaide
+	culture = lombard
+}
+
+1537 = {
+	name = Noutai
+	culture = meshchera
+}
+
+1538 = {
+	name = Egoutai
+	culture = han
+}
+
+1539 = {
+	name = Rirern
+	culture = prussian
+}
+
+1540 = {
+	name = Bekel
+	culture = swedish
+}
+
+1541 = {
+	name = Tukatta
+	culture = suebi
+}
+
+1542 = {
+	name = Buboan
+	culture = serbian
+}
+
+1543 = {
+	name = Ricija
+	culture = georgian
+}
+
+1544 = {
+	name = Esenayn
+	culture = levantine_arabic
+}
+
+1545 = {
+	name = Edinidia
+	culture = portuguese
+}
+
+1546 = {
+	name = Wozagai
+	culture = romanian
+}
+
+1547 = {
+	name = Reluslo
+	culture = roman
+}
+
+1548 = {
+	name = Dirarl
+	culture = khanty
+}
+
+1549 = {
+	name = Reenara
+	culture = hausa
+}
+
+1550 = {
+	name = Sukuju
+	culture = kurdish
+}
+
+1551 = {
+	name = Taleslu
+	culture = tocharian
+}
+
+1552 = {
+	name = Dobekel
+	culture = irish
+}
+
+1553 = {
+	name = Asinayn
+	culture = severian
+}
+
+1554 = {
+	name = Talaimur
+	culture = frankish
+}
+
+1555 = {
+	name = Tirta
+	culture = bedouin_arabic
+}
+
+1556 = {
+	name = Noleslu
+	culture = samoyed
+}
+
+1557 = {
+	name = Nobaria
+	culture = bosnian
+}
+
+1558 = {
+	name = Lirolun
+	culture = frankish
+}
+
+1559 = {
+	name = Rubeuba
+	culture = karluk
+}
+
+1560 = {
+	name = Akimaya
+	culture = bodpa
+}
+
+1561 = {
+	name = Rolera
+	culture = welsh
+}
+
+1562 = {
+	name = Kapatur
+	culture = uyghur
+}
+
+1563 = {
+	name = Randlu
+	culture = carantanian
+}
+
+1564 = {
+	name = Lalinop
+	culture = sindhi
+}
+
+1565 = {
+	name = Talinda
+	culture = slovieni
+}
+
+1566 = {
+	name = Wagayn
+	culture = sumpa
+}
+
+1567 = {
+	name = Agredek
+	culture = prussian
+}
+
+1568 = {
+	name = Tagašî
+	culture = cuman
+}
+
+1569 = {
+	name = Deuluju
+	culture = daju
+}
+
+1570 = {
+	name = Kelegen
+	culture = carantanian
+}
+
+1571 = {
+	name = Dotarda
+	culture = portuguese
+}
+
+1572 = {
+	name = Raudevat
+	culture = arberian
+}
+
+1573 = {
+	name = Terarda
+	culture = hungarian
+}
+
+1574 = {
+	name = Ataparda
+	culture = bosnian
+}
+
+1575 = {
+	name = Selelen
+	culture = rajput
+}
+
+1576 = {
+	name = Avîorgia
+	culture = soninke
+}
+
+1577 = {
+	name = Kotha
+	culture = crimean_gothic
+}
+
+1578 = {
+	name = Rorad
+	culture = hindustani
+}
+
+1579 = {
+	name = Akalamaj
+	culture = han
+}
+
+1580 = {
+	name = Tinidia
+	culture = slovieni
+}
+
+1581 = {
+	name = Bocibai
+	culture = levantine_arabic
+}
+
+1582 = {
+	name = Winedek
+	culture = andalusian_arabic
+}
+
+1583 = {
+	name = Kimir
+	culture = castillan
+}
+
+1584 = {
+	name = Tanukh
+	culture = severian
+}
+
+1585 = {
+	name = Lozelin
+	culture = egyptian_arabic
+}
+
+1586 = {
+	name = Naleslu
+	culture = bedouin_arabic
+}
+
+1587 = {
+	name = Qanadar
+	culture = assyrian
+}
+
+1588 = {
+	name = Teliban
+	culture = severian
+}
+
+1589 = {
+	name = Razalka
+	culture = norman
+}
+
+1590 = {
+	name = Kacirí
+	culture = jurchen
+}
+
+1591 = {
+	name = Keulalim
+	culture = severian
+}
+
+1592 = {
+	name = Weroan
+	culture = dutch
+}
+
+1593 = {
+	name = Esusarda
+	culture = oriya
+}
+
+1594 = {
+	name = Ramadar
+	culture = kirghiz
+}
+
+1595 = {
+	name = Roloan
+	culture = norman
+}
+
+1596 = {
+	name = Qahatur
+	culture = cuman
+}
+
+1597 = {
+	name = Suseuba
+	culture = croatian
+}
+
+1598 = {
+	name = Emokarda
+	culture = bosnian
+}
+
+1599 = {
+	name = Dasutka
+	culture = gujurati
+}
+
+1600 = {
+	name = Toumyut
+	culture = tocharian
+}
+
+1601 = {
+	name = Ahasary
+	culture = frisian
+}
+
+1602 = {
+	name = Danniulf
+	culture = afghan
+}
+
+1603 = {
+	name = Kelarha
+	culture = norman
+}
+
+1604 = {
+	name = Korartin
+	culture = dutch
+}
+
+1605 = {
+	name = Adalka
+	culture = danish
+}
+
+1606 = {
+	name = Rizo
+	culture = russian
+}
+
+1607 = {
+	name = Totida
+	culture = polish
+}
+
+1608 = {
+	name = Keitta
+	culture = andalusian_arabic
+}
+
+1609 = {
+	name = Qoharda
+	culture = norse
+}
+
+1610 = {
+	name = Kelin
+	culture = crimean_gothic
+}
+
+1611 = {
+	name = Reuluju
+	culture = norman
+}
+
+1612 = {
+	name = Ratelen
+	culture = zhangzhung
+}
+
+1613 = {
+	name = Noutai
+	culture = bodpa
+}
+
+1614 = {
+	name = Rayadek
+	culture = telugu
+}
+
+1615 = {
+	name = Raulurz
+	culture = coptic
+}
+
+1616 = {
+	name = Qeulalim
+	culture = levantine_arabic
+}
+
+1617 = {
+	name = Toda
+	culture = slovieni
+}
+
+1618 = {
+	name = Asyedarl
+	culture = kurdish
+}
+
+1619 = {
+	name = Toheslu
+	culture = crimean_gothic
+}
+
+1620 = {
+	name = Alubu
+	culture = romanian
+}
+
+1621 = {
+	name = Banta
+	culture = bodpa
+}
+
+1622 = {
+	name = Sicelen
+	culture = mongol
+}
+
+1623 = {
+	name = Nuhalka
+	culture = sogdian
+}
+
+1624 = {
+	name = Wenarda
+	culture = komi
+}
+
+1625 = {
+	name = Terva
+	culture = saxon
+}
+
+1626 = {
+	name = Alamaj
+	culture = irish
+}
+
+1627 = {
+	name = Naniulf
+	culture = lombard
+}
+
+1628 = {
+	name = Ticeuba
+	culture = carantanian
+}
+
+1629 = {
+	name = Nusarl
+	culture = egyptian_arabic
+}
+
+1630 = {
+	name = Banadza
+	culture = frankish
+}
+
+1631 = {
+	name = Baulayan
+	culture = carantanian
+}
+
+1632 = {
+	name = Wusilen
+	culture = slovieni
+}
+
+1633 = {
+	name = Kirarl
+	culture = german
+}
+
+1634 = {
+	name = Emanarl
+	culture = sogdian
+}
+
+1635 = {
+	name = Walela
+	culture = swedish
+}
+
+1636 = {
+	name = Lapodio
+	culture = manden
+}
+
+1637 = {
+	name = Qirubu
+	culture = assyrian
+}
+
+1638 = {
+	name = Emiceslu
+	culture = somali
+}
+
+1639 = {
+	name = Kuseslu
+	culture = croatian
+}
+
+1640 = {
+	name = Bozolun
+	culture = tangut
+}
+
+1641 = {
+	name = Kielmur
+	culture = maghreb_arabic
+}
+
+1642 = {
+	name = Tozelin
+	culture = breton
+}
+
+1643 = {
+	name = Nahilen
+	culture = ethiopian
+}
+
+1644 = {
+	name = Nence
+	culture = swedish
+}
+
+1645 = {
+	name = Raleuba
+	culture = sephardi
+}
+
+1646 = {
+	name = Esnucia
+	culture = meshchera
+}
+
+1647 = {
+	name = Randio
+	culture = hausa
+}
+
+1648 = {
+	name = Qoheslu
+	culture = mordvin
+}
+
+1649 = {
+	name = Amiceslu
+	culture = armenian
+}
+
+1650 = {
+	name = Lelen
+	culture = lombard
+}
+
+1651 = {
+	name = Kaparl
+	culture = panjabi
+}
+
+1652 = {
+	name = Rirarak
+	culture = khanty
+}
+
+1653 = {
+	name = Qartin
+	culture = sindhi
+}
+
+1654 = {
+	name = Raheham
+	culture = sindhi
+}
+
+1655 = {
+	name = Aöyaa
+	culture = assamese
+}
+
+1656 = {
+	name = Qatelen
+	culture = nepali
+}
+
+1657 = {
+	name = Atohastu
+	culture = tamil
+}
+
+1658 = {
+	name = Karia
+	culture = bohemian
+}
+
+1659 = {
+	name = Soutai
+	culture = uyghur
+}
+
+1660 = {
+	name = Walodio
+	culture = catalan
+}
+
+1661 = {
+	name = Evelint
+	culture = kannada
+}
+
+1662 = {
+	name = Kani
+	culture = pecheneg
+}
+
+1663 = {
+	name = Tannarda
+	culture = hindustani
+}
+
+1664 = {
+	name = Lugila
+	culture = alan
+}
+
+1665 = {
+	name = Bomelen
+	culture = serbian
+}
+
+1666 = {
+	name = Karid
+	culture = kirghiz
+}
+
+1667 = {
+	name = Kapastu
+	culture = occitan
+}
+
+1668 = {
+	name = Teluju
+	culture = kurdish
+}
+
+1669 = {
+	name = Kulagai
+	culture = tocharian
+}
+
+1670 = {
+	name = Buju
+	culture = pommeranian
+}
+
+1671 = {
+	name = Elakaham
+	culture = sephardi
+}
+
+1672 = {
+	name = Qiviban
+	culture = daju
+}
+
+1673 = {
+	name = Atomubu
+	culture = lappish
+}
+
+1674 = {
+	name = Nekel
+	culture = italian
+}
+
+1675 = {
+	name = Tegarda
+	culture = khanty
+}
+
+1676 = {
+	name = Akarena
+	culture = bosnian
+}
+
+1677 = {
+	name = Nakaham
+	culture = pictish
+}
+
+1678 = {
+	name = Kadar
+	culture = zhangzhung
+}
+
+1679 = {
+	name = Reuluju
+	culture = soninke
+}
+
+1680 = {
+	name = Ryedarl
+	culture = han
+}
+
+1681 = {
+	name = Tielay
+	culture = bulgarian
+}
+
+1682 = {
+	name = Waudict
+	culture = bodpa
+}
+
+1683 = {
+	name = Ruurka
+	culture = croatian
+}
+
+1684 = {
+	name = Anaihada
+	culture = frisian
+}
+
+1685 = {
+	name = Wanoz
+	culture = ethiopian
+}
+
+1686 = {
+	name = Risas
+	culture = sinhala
+}
+
+1687 = {
+	name = Egiuln
+	culture = maghreb_arabic
+}
+
+1688 = {
+	name = Nukela
+	culture = catalan
+}
+
+1689 = {
+	name = Kubarda
+	culture = nepali
+}
+
+1690 = {
+	name = Sanarda
+	culture = old_frankish
+}
+
+1691 = {
+	name = Taide
+	culture = somali
+}
+
+1692 = {
+	name = Nomelin
+	culture = volhynian
+}
+
+1693 = {
+	name = Relen
+	culture = samoyed
+}
+
+1694 = {
+	name = Naila
+	culture = telugu
+}
+
+1695 = {
+	name = Erurayn
+	culture = irish
+}
+
+1696 = {
+	name = Sugolas
+	culture = afghan
+}
+
+1697 = {
+	name = Buganoz
+	culture = avar
+}
+
+1698 = {
+	name = Toksa
+	culture = croatian
+}
+
+1699 = {
+	name = Evîedek
+	culture = saka
+}
+
+1700 = {
+	name = Wolamad
+	culture = pictish
+}
+
+1701 = {
+	name = Sukude
+	culture = bohemian
+}
+
+1702 = {
+	name = Rugali
+	culture = gujurati
+}
+
+1703 = {
+	name = Sagalim
+	culture = mongol
+}
+
+1704 = {
+	name = Tanta
+	culture = turkish
+}
+
+1705 = {
+	name = Sunudev
+	culture = hindustani
+}
+
+1706 = {
+	name = Enuyalid
+	culture = lombard
+}
+
+1707 = {
+	name = Wegorgia
+	culture = baloch
+}
+
+1708 = {
+	name = Tilezu
+	culture = sumpa
+}
+
+1709 = {
+	name = Salyukha
+	culture = hausa
+}
+
+1710 = {
+	name = Winayn
+	culture = finnish
+}
+
+1711 = {
+	name = Lasarda
+	culture = levantine_arabic
+}
+
+1712 = {
+	name = Dalothar
+	culture = karluk
+}
+
+1713 = {
+	name = Negen
+	culture = songhay
+}
+
+1714 = {
+	name = Wielay
+	culture = rajput
+}
+
+1715 = {
+	name = Sajizo
+	culture = frisian
+}
+
+1716 = {
+	name = Sanaric
+	culture = rajput
+}
+
+1717 = {
+	name = Sinuri
+	culture = old_saxon
+}
+
+1718 = {
+	name = Ramela
+	culture = ashkenazi
+}
+
+1719 = {
+	name = Lelayn
+	culture = dutch
+}
+
+1720 = {
+	name = Kandæ
+	culture = kannada
+}
+
+1721 = {
+	name = Qirba
+	culture = cuman
+}
+
+1722 = {
+	name = Banoz
+	culture = daju
+}
+
+1723 = {
+	name = Radaria
+	culture = breton
+}
+
+1724 = {
+	name = Daladar
+	culture = croatian
+}
+
+1725 = {
+	name = Kokutka
+	culture = tangut
+}
+
+1726 = {
+	name = Taridia
+	culture = crimean_gothic
+}
+
+1727 = {
+	name = Nirena
+	culture = ashkenazi
+}
+
+1728 = {
+	name = Lourda
+	culture = nubian
+}
+
+1729 = {
+	name = Qandza
+	culture = slovieni
+}
+
+1730 = {
+	name = Rannotha
+	culture = saka
+}
+
+1731 = {
+	name = Nanadza
+	culture = nubian
+}
+
+1732 = {
+	name = Kuliram
+	culture = songhay
+}
+
+1733 = {
+	name = Kicilen
+	culture = occitan
+}
+
+1734 = {
+	name = Latolas
+	culture = lombard
+}
+
+1735 = {
+	name = Komekel
+	culture = sephardi
+}
+
+1736 = {
+	name = Taladar
+	culture = egyptian_arabic
+}
+
+1737 = {
+	name = Bahastu
+	culture = frisian
+}
+
+1738 = {
+	name = Diraila
+	culture = lombard
+}
+
+1739 = {
+	name = Ehanizo
+	culture = volhynian
+}
+
+1740 = {
+	name = Nulalim
+	culture = zaghawa
+}
+
+1741 = {
+	name = Avalilen
+	culture = occitan
+}
+
+1742 = {
+	name = Kandu
+	culture = uyghur
+}
+
+1743 = {
+	name = Epotara
+	culture = panjabi
+}
+
+1744 = {
+	name = Tolun
+	culture = khitan
+}
+
+1745 = {
+	name = Weulala
+	culture = bodpa
+}
+
+1746 = {
+	name = Lukadar
+	culture = pecheneg
+}
+
+1747 = {
+	name = Ranudev
+	culture = karluk
+}
+
+1748 = {
+	name = Dielka
+	culture = ethiopian
+}
+
+1749 = {
+	name = Qalizo
+	culture = avar
+}
+
+1750 = {
+	name = Luramaj
+	culture = komi
+}
+
+1751 = {
+	name = Tevera
+	culture = roman
+}
+
+1752 = {
+	name = Dalilen
+	culture = basque
+}
+
+1753 = {
+	name = Tatagai
+	culture = welsh
+}
+
+1754 = {
+	name = Nandio
+	culture = polish
+}
+
+1755 = {
+	name = Qelolun
+	culture = volhynian
+}
+
+1756 = {
+	name = Rapodio
+	culture = polish
+}
+
+1757 = {
+	name = Walotha
+	culture = italian
+}
+
+1758 = {
+	name = Ekukadza
+	culture = bedouin_arabic
+}
+
+1759 = {
+	name = Acandda
+	culture = suebi
+}
+
+1760 = {
+	name = Siirurz
+	culture = uyghur
+}
+
+1761 = {
+	name = Agoruju
+	culture = italian
+}
+
+1762 = {
+	name = Koutai
+	culture = old_saxon
+}
+
+1763 = {
+	name = Tyilara
+	culture = bolghar
+}
+
+1764 = {
+	name = Keroszó
+	culture = bodpa
+}
+
+1765 = {
+	name = Lilayan
+	culture = occitan
+}
+
+1766 = {
+	name = Kaleslu
+	culture = bedouin_arabic
+}
+
+1767 = {
+	name = Wuroan
+	culture = suebi
+}
+
+1768 = {
+	name = Rotele
+	culture = bodpa
+}
+
+1769 = {
+	name = Epotevat
+	culture = occitan
+}
+
+1770 = {
+	name = Wasida
+	culture = baloch
+}
+
+1771 = {
+	name = Kelidia
+	culture = saxon
+}
+
+1772 = {
+	name = Ahakena
+	culture = bohemian
+}
+
+1773 = {
+	name = Lucia
+	culture = ilmenian
+}
+
+1774 = {
+	name = Kielarl
+	culture = hindustani
+}
+
+1775 = {
+	name = Qaudarda
+	culture = lettigallish
+}
+
+1776 = {
+	name = Tasevat
+	culture = baloch
+}
+
+1777 = {
+	name = Kamolas
+	culture = bengali
+}
+
+1778 = {
+	name = Rolotha
+	culture = ashkenazi
+}
+
+1779 = {
+	name = Kolotha
+	culture = frankish
+}
+
+1780 = {
+	name = Nokida
+	culture = daju
+}
+
+1781 = {
+	name = Talesh
+	culture = rajput
+}
+
+1782 = {
+	name = Ruseslu
+	culture = roman
+}
+
+1783 = {
+	name = Noheuba
+	culture = saka
+}
+
+1784 = {
+	name = Kubiulf
+	culture = ethiopian
+}
+
+1785 = {
+	name = Wusotha
+	culture = panjabi
+}
+
+1786 = {
+	name = Nigekel
+	culture = persian
+}
+
+1787 = {
+	name = Qanukh
+	culture = english
+}
+
+1788 = {
+	name = Etomolas
+	culture = levantine_arabic
+}
+
+1789 = {
+	name = Kasutka
+	culture = kannada
+}
+
+1790 = {
+	name = Rasyut
+	culture = old_saxon
+}
+
+1791 = {
+	name = Lalirí
+	culture = georgian
+}
+
+1792 = {
+	name = Lakaric
+	culture = turkish
+}
+
+1793 = {
+	name = Tyukha
+	culture = crimean_gothic
+}
+
+1794 = {
+	name = Ririda
+	culture = kanuri
+}
+
+1795 = {
+	name = Lohastu
+	culture = hungarian
+}
+
+1796 = {
+	name = Dalizo
+	culture = songhay
+}
+
+1797 = {
+	name = Kirala
+	culture = serbian
+}
+
+1798 = {
+	name = Tothar
+	culture = dutch
+}
+
+1799 = {
+	name = Bomali
+	culture = panjabi
+}
+
+1800 = {
+	name = Recele
+	culture = old_frankish
+}
+
+1801 = {
+	name = Kuyaay
+	culture = scottish
+}
+
+1802 = {
+	name = Reobint
+	culture = egyptian_arabic
+}
+
+1803 = {
+	name = Ryeday
+	culture = ethiopian
+}
+
+1804 = {
+	name = Kapastu
+	culture = danish
+}
+
+1805 = {
+	name = Nagarha
+	culture = zaghawa
+}
+
+1806 = {
+	name = Rimur
+	culture = pictish
+}
+
+1807 = {
+	name = Tohodio
+	culture = serbian
+}
+
+1808 = {
+	name = Tanotha
+	culture = nubian
+}
+
+1809 = {
+	name = Ataparl
+	culture = bohemian
+}
+
+1810 = {
+	name = Asaleslu
+	culture = croatian
+}
+
+1811 = {
+	name = Subarl
+	culture = zhangzhung
+}
+
+1812 = {
+	name = Semalka
+	culture = panjabi
+}
+
+1813 = {
+	name = Rahint
+	culture = uyghur
+}
+
+1814 = {
+	name = Romuju
+	culture = pecheneg
+}
+
+1815 = {
+	name = Rakostas
+	culture = basque
+}
+
+1816 = {
+	name = Ragubu
+	culture = bodpa
+}
+
+1817 = {
+	name = Denele
+	culture = sephardi
+}
+
+1818 = {
+	name = Raruri
+	culture = khazar
+}
+
+1819 = {
+	name = Komekel
+	culture = basque
+}
+
+1820 = {
+	name = Larint
+	culture = lappish
+}
+
+1821 = {
+	name = Nalastu
+	culture = alan
+}
+
+1822 = {
+	name = Lanadza
+	culture = soninke
+}
+
+1823 = {
+	name = Ratezu
+	culture = bolghar
+}
+
+1824 = {
+	name = Danday
+	culture = egyptian_arabic
+}
+
+1825 = {
+	name = Dulubu
+	culture = kurdish
+}
+
+1826 = {
+	name = Rorarha
+	culture = lithuanian
+}
+
+1827 = {
+	name = Dubence
+	culture = carantanian
+}
+
+1828 = {
+	name = Roksa
+	culture = bohemian
+}
+
+1829 = {
+	name = Qaudof
+	culture = polish
+}
+
+1830 = {
+	name = Sanolas
+	culture = saka
+}
+
+1831 = {
+	name = Kusilen
+	culture = oriya
+}
+
+1832 = {
+	name = Taninda
+	culture = greek
+}
+
+1833 = {
+	name = Totict
+	culture = zhangzhung
+}
+
+1834 = {
+	name = Tutka
+	culture = cuman
+}
+
+1835 = {
+	name = Echukee
+	culture = somali
+}
+
+1836 = {
+	name = Dakostas
+	culture = ashkenazi
+}
+
+1837 = {
+	name = Kakolun
+	culture = armenian
+}
+
+1838 = {
+	name = Qalatur
+	culture = soninke
+}
+
+1839 = {
+	name = Kiceslu
+	culture = carantanian
+}
+
+1840 = {
+	name = Rajele
+	culture = mordvin
+}
+
+1841 = {
+	name = Kaheria
+	culture = jurchen
+}
+
+1842 = {
+	name = Nannarl
+	culture = tamil
+}
+
+1843 = {
+	name = Lorimur
+	culture = outremer
+}
+
+1844 = {
+	name = Kukuju
+	culture = hungarian
+}
+
+1845 = {
+	name = Atobolas
+	culture = welsh
+}
+
+1846 = {
+	name = Qegen
+	culture = sindhi
+}
+
+1847 = {
+	name = Qoutai
+	culture = lappish
+}
+
+1848 = {
+	name = Telen
+	culture = visigothic
+}
+
+1849 = {
+	name = Asinele
+	culture = ethiopian
+}
+
+1850 = {
+	name = Epritasu
+	culture = castillan
+}
+
+1851 = {
+	name = Tezimir
+	culture = lappish
+}
+
+1852 = {
+	name = Toharak
+	culture = soninke
+}
+
+1853 = {
+	name = Delen
+	culture = manden
+}
+
+1854 = {
+	name = Buhele
+	culture = karluk
+}
+
+1855 = {
+	name = Akararak
+	culture = khanty
+}
+
+1856 = {
+	name = Emubeslu
+	culture = bedouin_arabic
+}
+
+1857 = {
+	name = Kajaida
+	culture = bodpa
+}
+
+1858 = {
+	name = Qalict
+	culture = levantine_arabic
+}
+
+1859 = {
+	name = Biegeh
+	culture = ilmenian
+}
+
+1860 = {
+	name = Raleslu
+	culture = lombard
+}
+
+1861 = {
+	name = Elarha
+	culture = hausa
+}
+
+1862 = {
+	name = Lalid
+	culture = catalan
+}
+
+1863 = {
+	name = Egolaria
+	culture = karluk
+}
+
+1864 = {
+	name = Qanarl
+	culture = saka
+}
+
+1865 = {
+	name = Lusarl
+	culture = hindustani
+}
+
+1866 = {
+	name = Dalardin
+	culture = mordvin
+}
+
+1867 = {
+	name = Arahilen
+	culture = ugricbaltic
+}
+
+1868 = {
+	name = Nanniulf
+	culture = tangut
+}
+
+1869 = {
+	name = Kahina
+	culture = lettigallish
+}
+
+1870 = {
+	name = Alalim
+	culture = kurdish
+}
+
+1871 = {
+	name = Randio
+	culture = tocharian
+}
+
+1872 = {
+	name = Qoutai
+	culture = severian
+}
+
+1873 = {
+	name = Dicilen
+	culture = songhay
+}
+
+1874 = {
+	name = Rorarda
+	culture = hungarian
+}
+
+1875 = {
+	name = Kanolas
+	culture = jurchen
+}
+
+1876 = {
+	name = Nakeæ'
+	culture = scottish
+}
+
+1877 = {
+	name = Ehéalka
+	culture = sephardi
+}
+
+1878 = {
+	name = Sagele
+	culture = dutch
+}
+
+1879 = {
+	name = Qeredek
+	culture = telugu
+}
+
+1880 = {
+	name = Dukudev
+	culture = pictish
+}
+
+1881 = {
+	name = Qimudev
+	culture = suebi
+}
+
+1882 = {
+	name = Simur
+	culture = egyptian_arabic
+}
+
+1883 = {
+	name = Daria
+	culture = sinhala
+}
+
+1884 = {
+	name = Dorad
+	culture = italian
+}
+
+1885 = {
+	name = Tinara
+	culture = norwegian
+}
+
+1886 = {
+	name = Rosara
+	culture = sardinian
+}
+
+1887 = {
+	name = Natimur
+	culture = finnish
+}
+
+1888 = {
+	name = Daultai
+	culture = khazar
+}
+
+1889 = {
+	name = Eåsekel
+	culture = samoyed
+}
+
+1890 = {
+	name = Tugelen
+	culture = tamil
+}
+
+1891 = {
+	name = Qelekel
+	culture = sardinian
+}
+
+1892 = {
+	name = Tomanoz
+	culture = saka
+}
+
+1893 = {
+	name = Kezezu
+	culture = bengali
+}
+
+1894 = {
+	name = Waloan
+	culture = carantanian
+}
+
+1895 = {
+	name = Sohudev
+	culture = prussian
+}
+
+1896 = {
+	name = Teulimur
+	culture = bolghar
+}
+
+1897 = {
+	name = Rande
+	culture = khazar
+}
+
+1898 = {
+	name = Koroda
+	culture = frankish
+}
+
+1899 = {
+	name = Qelolas
+	culture = arberian
+}
+
+1900 = {
+	name = Asusilen
+	culture = german
+}
+
+1901 = {
+	name = Eganaya
+	culture = tamil
+}
+
+1902 = {
+	name = Tiukl
+	culture = soninke
+}
+
+1903 = {
+	name = Sadadza
+	culture = panjabi
+}
+
+1904 = {
+	name = Rivostas
+	culture = jurchen
+}
+
+1905 = {
+	name = Raimur
+	culture = ethiopian
+}
+
+1906 = {
+	name = Kalastu
+	culture = roman
+}
+
+1907 = {
+	name = Nerarak
+	culture = somali
+}
+
+1908 = {
+	name = Bagiban
+	culture = jurchen
+}
+
+1909 = {
+	name = Sabayn
+	culture = kurdish
+}
+
+1910 = {
+	name = Azuhyut
+	culture = norse
+}
+
+1911 = {
+	name = Amatuju
+	culture = saka
+}
+
+1912 = {
+	name = Tapatur
+	culture = serbian
+}
+
+1913 = {
+	name = Kandarl
+	culture = kanuri
+}
+
+1914 = {
+	name = Tabarda
+	culture = russian
+}
+
+1915 = {
+	name = Dotern
+	culture = pecheneg
+}
+
+1916 = {
+	name = Binutka
+	culture = english
+}
+
+1917 = {
+	name = Qalarl
+	culture = sogdian
+}
+
+1918 = {
+	name = Barlah
+	culture = oriya
+}
+
+1919 = {
+	name = Recalk
+	culture = tangut
+}
+
+1920 = {
+	name = Kielarl
+	culture = italian
+}
+
+1921 = {
+	name = Wandlu
+	culture = bulgarian
+}
+
+1922 = {
+	name = Kanotha
+	culture = croatian
+}
+
+1923 = {
+	name = Niciulf
+	culture = nepali
+}
+
+1924 = {
+	name = Dodio
+	culture = nubian
+}
+
+1925 = {
+	name = Korgia
+	culture = kirghiz
+}
+
+1926 = {
+	name = Laleuba
+	culture = sardinian
+}
+
+1927 = {
+	name = Birevat
+	culture = jurchen
+}
+
+1928 = {
+	name = Kasalka
+	culture = pecheneg
+}
+
+1929 = {
+	name = Suuram
+	culture = finnish
+}
+
+1930 = {
+	name = Rakarha
+	culture = bolghar
+}
+
+1931 = {
+	name = Batagai
+	culture = uyghur
+}
+
+1932 = {
+	name = Sosarda
+	culture = soninke
+}
+
+1933 = {
+	name = Tarirí
+	culture = daju
+}
+
+1934 = {
+	name = Qauloke
+	culture = panjabi
+}
+
+1935 = {
+	name = Aflanoz
+	culture = roman
+}
+
+1936 = {
+	name = Kanda
+	culture = severian
+}
+
+1937 = {
+	name = Dekel
+	culture = croatian
+}
+
+1938 = {
+	name = Salarda
+	culture = pommeranian
+}
+
+1939 = {
+	name = Waleslu
+	culture = maghreb_arabic
+}
+
+1940 = {
+	name = Kaulašî
+	culture = uyghur
+}
+
+1941 = {
+	name = Tyedka
+	culture = scottish
+}
+
+1942 = {
+	name = Kaulila
+	culture = german
+}
+
+1943 = {
+	name = Danta
+	culture = ashkenazi
+}
+
+1944 = {
+	name = Lubarda
+	culture = polish
+}
+
+1945 = {
+	name = Quralid
+	culture = slovieni
+}
+
+1946 = {
+	name = Echeena
+	culture = maghreb_arabic
+}
+
+1947 = {
+	name = Leslu
+	culture = lappish
+}
+
+1948 = {
+	name = Nelarha
+	culture = arberian
+}
+
+1949 = {
+	name = Sukolun
+	culture = bolghar
+}
+
+1950 = {
+	name = Kurarda
+	culture = bengali
+}
+
+1951 = {
+	name = Baudutka
+	culture = hungarian
+}
+
+1952 = {
+	name = Delostas
+	culture = romanian
+}
+
+1953 = {
+	name = Tubiulf
+	culture = lombard
+}
+
+1954 = {
+	name = Romubu
+	culture = german
+}
+
+1955 = {
+	name = Korarha
+	culture = gujurati
+}
+
+1956 = {
+	name = Kobija
+	culture = volhynian
+}
+
+1957 = {
+	name = Dartin
+	culture = maghreb_arabic
+}
+
+1958 = {
+	name = Talalid
+	culture = norse
+}
+
+1959 = {
+	name = Qohence
+	culture = kanuri
+}
+
+1960 = {
+	name = Ralarl
+	culture = somali
+}
+
+1961 = {
+	name = Lamapal
+	culture = samoyed
+}
+
+1962 = {
+	name = Danta
+	culture = bengali
+}
+
+1963 = {
+	name = Tirarl
+	culture = lombard
+}
+
+1964 = {
+	name = Avaleuba
+	culture = lettigallish
+}
+
+1965 = {
+	name = Tilolas
+	culture = scottish
+}
+
+1966 = {
+	name = Dyukha
+	culture = jurchen
+}
+
+1967 = {
+	name = Sazevat
+	culture = basque
+}
+
+1968 = {
+	name = Sannotha
+	culture = croatian
+}
+
+1969 = {
+	name = Tanadza
+	culture = ethiopian
+}
+
+1970 = {
+	name = Rayaslo
+	culture = coptic
+}
+
+1971 = {
+	name = Atapotha
+	culture = irish
+}
+
+1972 = {
+	name = Qubotha
+	culture = severian
+}
+
+1973 = {
+	name = Bomelen
+	culture = outremer
+}
+
+1974 = {
+	name = Esajukee
+	culture = polish
+}
+
+1975 = {
+	name = Lalim
+	culture = ashkenazi
+}
+
+1976 = {
+	name = Kukadza
+	culture = kurdish
+}
+
+1977 = {
+	name = Taila
+	culture = andalusian_arabic
+}
+
+1978 = {
+	name = Rerence
+	culture = marathi
+}
+
+1979 = {
+	name = Qohern
+	culture = catalan
+}
+
+1980 = {
+	name = Ralara
+	culture = nubian
+}
+
+1981 = {
+	name = Qoharda
+	culture = persian
+}
+
+1982 = {
+	name = Rohayn
+	culture = zaghawa
+}
+
+1983 = {
+	name = Darda
+	culture = dalmatian
+}
+
+1984 = {
+	name = Telarda
+	culture = kirghiz
+}
+
+1985 = {
+	name = Kounce
+	culture = saxon
+}
+
+1986 = {
+	name = Nolaide
+	culture = hungarian
+}
+
+1987 = {
+	name = Tarda
+	culture = suebi
+}
+
+1988 = {
+	name = Aruroan
+	culture = khazar
+}
+
+1989 = {
+	name = Aferern
+	culture = rajput
+}
+
+1990 = {
+	name = Keroan
+	culture = uyghur
+}
+
+1991 = {
+	name = Borehre
+	culture = bohemian
+}
+
+1992 = {
+	name = Soharda
+	culture = karluk
+}
+
+1993 = {
+	name = Kanaila
+	culture = bosnian
+}
+
+1994 = {
+	name = Kartin
+	culture = finnish
+}
+
+1995 = {
+	name = Kamaj
+	culture = hungarian
+}
+
+1996 = {
+	name = Suralk
+	culture = breton
+}
+
+1997 = {
+	name = Eferarda
+	culture = slovieni
+}
+
+1998 = {
+	name = Weramaj
+	culture = bodpa
+}
+
+1999 = {
+	name = Nerele
+	culture = hindustani
+}
+
+2000 = {
+	name = Kalizo
+	culture = armenian
+}
+
+2001 = {
+	name = Burizo
+	culture = bohemian
+}
+
+2002 = {
+	name = Ewinara
+	culture = portuguese
+}
+
+2003 = {
+	name = Nern
+	culture = uyghur
+}
+
+2004 = {
+	name = Rerarda
+	culture = gujurati
+}
+
+2005 = {
+	name = Tarda
+	culture = afghan
+}
+
+2006 = {
+	name = Lerarda
+	culture = bohemian
+}
+
+2007 = {
+	name = Reluri
+	culture = lithuanian
+}
+
+2008 = {
+	name = Bohence
+	culture = norse
+}
+
+2009 = {
+	name = Teroan
+	culture = khazar
+}
+
+2010 = {
+	name = Abéamaj
+	culture = italian
+}
+
+2011 = {
+	name = Apelara
+	culture = suebi
+}
+
+2012 = {
+	name = Kerele
+	culture = georgian
+}
+
+2013 = {
+	name = Ewinarak
+	culture = greek
+}
+
+2014 = {
+	name = Abéence
+	culture = scottish
+}
+
+2015 = {
+	name = Lence
+	culture = roman
+}
+
+2016 = {
+	name = Rorarda
+	culture = avar
+}
+
+2017 = {
+	name = Aferalk
+	culture = nepali
+}
+
+2018 = {
+	name = Rorarda
+	culture = telugu
+}
+
+2019 = {
+	name = Kerara
+	culture = jurchen
+}
+
+2020 = {
+	name = Wolalk
+	culture = visigothic
+}
+
+2021 = {
+	name = Dorgia
+	culture = basque
+}
+
+2022 = {
+	name = Tarda
+	culture = bosnian
+}
+
+2023 = {
+	name = Nalaide
+	culture = nahuatl
+}
+
+2024 = {
+	name = Larda
+	culture = bodpa
+}
+
+2025 = {
+	name = Tarda
+	culture = old_frankish
+}
+
+2026 = {
+	name = Bolence
+	culture = baloch
+}
+
+2027 = {
+	name = Serarak
+	culture = welsh
+}
+
+2028 = {
+	name = Rara
+	culture = volhynian
+}
+
+2029 = {
+	name = Narda
+	culture = panjabi
+}
+
+2030 = {
+	name = Nelalk
+	culture = egyptian_arabic
+}
+
+2031 = {
+	name = Rerern
+	culture = daju
+}
+
+2032 = {
+	name = Kerele
+	culture = songhay
+}
+
+2033 = {
+	name = Tehre
+	culture = sinhala
+}
+
+2034 = {
+	name = Kerarda
+	culture = khitan
+}
+
+2035 = {
+	name = Luroan
+	culture = polish
+}
+
+2036 = {
+	name = Waloan
+	culture = hausa
+}
+
+2037 = {
+	name = Barda
+	culture = bodpa
+}
+
+2038 = {
+	name = Rurern
+	culture = nahuatl
+}
+
+2039 = {
+	name = Lerict
+	culture = volhynian
+}
+
+2040 = {
+	name = Nolaide
+	culture = manden
+}
+
+2041 = {
+	name = Akalarak
+	culture = occitan
+}
+
+2042 = {
+	name = Reramaj
+	culture = bosnian
+}
+
+2043 = {
+	name = Dolarda
+	culture = han
+}
+
+2044 = {
+	name = Erarak
+	culture = sindhi
+}
+
+2045 = {
+	name = Ruraila
+	culture = irish
+}
+
+2046 = {
+	name = Rarda
+	culture = zaghawa
+}
+
+2047 = {
+	name = Rarda
+	culture = bolghar
+}
+
+2048 = {
+	name = Deralk
+	culture = alan
+}
+
+2049 = {
+	name = Linaide
+	culture = catalan
+}
+
+2050 = {
+	name = Awalict
+	culture = hungarian
+}
+
+2051 = {
+	name = Welalk
+	culture = dalmatian
+}
+
+2052 = {
+	name = Darda
+	culture = meshchera
+}
+
+2053 = {
+	name = Welict
+	culture = suebi
+}
+
+2054 = {
+	name = Erehre
+	culture = arberian
+}
+
+2055 = {
+	name = Tohamaj
+	culture = sardinian
+}
+
+2056 = {
+	name = Binamaj
+	culture = zaghawa
+}
+
+2057 = {
+	name = Derarda
+	culture = volhynian
+}
+
+2058 = {
+	name = Ralalk
+	culture = occitan
+}
+
+2059 = {
+	name = Teraide
+	culture = carantanian
+}
+
+2060 = {
+	name = Ablarda
+	culture = outremer
+}
+
+2061 = {
+	name = Tarda
+	culture = telugu
+}
+
+2062 = {
+	name = Kaloan
+	culture = mordvin
+}
+
+2063 = {
+	name = Dolern
+	culture = kurdish
+}
+
+2064 = {
+	name = Rolern
+	culture = mongol
+}
+
+2065 = {
+	name = Kalalk
+	culture = armenian
+}
+
+2066 = {
+	name = Kanamaj
+	culture = sinhala
+}
+
+2067 = {
+	name = Awalence
+	culture = lappish
+}
+
+2068 = {
+	name = Tolamaj
+	culture = manden
+}
+
+2069 = {
+	name = Lurarda
+	culture = lombard
+}
+
+2070 = {
+	name = Banara
+	culture = uyghur
+}
+
+2071 = {
+	name = Qinoan
+	culture = norman
+}
+
+2072 = {
+	name = Rerict
+	culture = dalmatian
+}
+
+2073 = {
+	name = Agence
+	culture = sinhala
+}
+
+2074 = {
+	name = Afoluri
+	culture = danish
+}
+
+2075 = {
+	name = Norgia
+	culture = german
+}
+
+2076 = {
+	name = Sarda
+	culture = danish
+}
+
+2077 = {
+	name = Torgia
+	culture = bulgarian
+}
+
+2078 = {
+	name = Terele
+	culture = polish
+}
+
+2079 = {
+	name = Echada
+	culture = bengali
+}
+
+2080 = {
+	name = Tarak
+	culture = mordvin
+}
+
+2081 = {
+	name = Wartin
+	culture = bedouin_arabic
+}
+
+2082 = {
+	name = Dinayn
+	culture = khazar
+}
+
+2083 = {
+	name = Negarda
+	culture = sindhi
+}
+
+2084 = {
+	name = Dehre
+	culture = lithuanian
+}
+
+2085 = {
+	name = Worarda
+	culture = soninke
+}
+
+2086 = {
+	name = Nelalk
+	culture = lombard
+}
+
+2087 = {
+	name = Worence
+	culture = bosnian
+}
+
+2088 = {
+	name = Qerarda
+	culture = hindustani
+}
+
+2089 = {
+	name = Dele
+	culture = assyrian
+}
+
+2090 = {
+	name = Aálaila
+	culture = welsh
+}
+
+2091 = {
+	name = Tyedarl
+	culture = mordvin
+}
+
+2092 = {
+	name = Dagai
+	culture = maghreb_arabic
+}
+
+2093 = {
+	name = Kilen
+	culture = somali
+}
+
+2094 = {
+	name = Bielay
+	culture = saka
+}
+
+2095 = {
+	name = Esalku
+	culture = suebi
+}
+
+2096 = {
+	name = Ramure
+	culture = lithuanian
+}
+
+2097 = {
+	name = Reulala
+	culture = old_saxon
+}
+
+2098 = {
+	name = Bando
+	culture = prussian
+}
+
+2099 = {
+	name = Kielay
+	culture = bohemian
+}
+
+2100 = {
+	name = Somila
+	culture = coptic
+}
+
+2101 = {
+	name = Ruyanay
+	culture = persian
+}
+
+2102 = {
+	name = Qeledek
+	culture = mongol
+}
+
+2103 = {
+	name = Solary
+	culture = suebi
+}
+
+2104 = {
+	name = Dannodio
+	culture = bedouin_arabic
+}
+
+2105 = {
+	name = Relin
+	culture = scottish
+}
+
+2106 = {
+	name = Lobaria
+	culture = lithuanian
+}
+
+2107 = {
+	name = Tubatur
+	culture = finnish
+}
+
+2108 = {
+	name = Seluri
+	culture = prussian
+}
+
+2109 = {
+	name = Nemaimur
+	culture = telugu
+}
+
+2110 = {
+	name = Ajosyut
+	culture = saka
+}
+
+2111 = {
+	name = Laruslo
+	culture = khazar
+}
+
+2112 = {
+	name = Sanatur
+	culture = dutch
+}
+
+2113 = {
+	name = Raihuru
+	culture = polish
+}
+
+2114 = {
+	name = Tiriban
+	culture = severian
+}
+
+2115 = {
+	name = Waria
+	culture = castillan
+}
+
+2116 = {
+	name = Roumay
+	culture = welsh
+}
+
+2117 = {
+	name = Keyla
+	culture = crimean_gothic
+}
+
+2118 = {
+	name = Watucia
+	culture = dutch
+}
+
+2119 = {
+	name = Asusarl
+	culture = khitan
+}
+
+2120 = {
+	name = Danadar
+	culture = persian
+}
+
+2121 = {
+	name = Kiganta
+	culture = breton
+}
+
+2122 = {
+	name = Rielka
+	culture = saxon
+}
+
+2123 = {
+	name = Apäašî
+	culture = sephardi
+}
+
+2124 = {
+	name = Akimapal
+	culture = dalmatian
+}
+
+2125 = {
+	name = Bolarda
+	culture = welsh
+}
+
+2126 = {
+	name = Lohizo
+	culture = sephardi
+}
+
+2127 = {
+	name = Ralim
+	culture = scottish
+}
+
+2128 = {
+	name = Diram
+	culture = egyptian_arabic
+}
+
+2129 = {
+	name = Dubiulf
+	culture = cuman
+}
+
+2130 = {
+	name = Danta
+	culture = arberian
+}
+
+2131 = {
+	name = Qiciulf
+	culture = scottish
+}
+
+2132 = {
+	name = Walalk
+	culture = marathi
+}
+
+2133 = {
+	name = Sirsu
+	culture = roman
+}
+
+2134 = {
+	name = Nekel
+	culture = lithuanian
+}
+
+2135 = {
+	name = Ranastu
+	culture = castillan
+}
+
+2136 = {
+	name = Belolas
+	culture = castillan
+}
+
+2137 = {
+	name = Tyeday
+	culture = kirghiz
+}
+
+2138 = {
+	name = Ticilen
+	culture = croatian
+}
+
+2139 = {
+	name = Nadali
+	culture = sindhi
+}
+
+2140 = {
+	name = Sasevat
+	culture = bosnian
+}
+
+2141 = {
+	name = Esenele
+	culture = nepali
+}
+
+2142 = {
+	name = Nolarda
+	culture = coptic
+}
+
+2143 = {
+	name = Kubeuba
+	culture = kanuri
+}
+
+2144 = {
+	name = Tomolas
+	culture = nubian
+}
+
+2145 = {
+	name = Waparl
+	culture = sardinian
+}
+
+2146 = {
+	name = Lalele
+	culture = romanian
+}
+
+2147 = {
+	name = Babayn
+	culture = lombard
+}
+
+2148 = {
+	name = Elitatta
+	culture = jurchen
+}
+
+2149 = {
+	name = Lirba
+	culture = panjabi
+}
+
+2150 = {
+	name = Sarda
+	culture = bengali
+}
+
+2151 = {
+	name = Qoksa
+	culture = gujurati
+}
+
+2152 = {
+	name = Tosara
+	culture = frisian
+}
+
+2153 = {
+	name = Weridia
+	culture = welsh
+}
+
+2154 = {
+	name = Amanastu
+	culture = bedouin_arabic
+}
+
+2155 = {
+	name = Talotha
+	culture = han
+}
+
+2156 = {
+	name = Lasyut
+	culture = outremer
+}
+
+2157 = {
+	name = Sinara
+	culture = english
+}
+
+2158 = {
+	name = Egrerva
+	culture = pommeranian
+}
+
+2159 = {
+	name = Keulalim
+	culture = old_saxon
+}
+
+2160 = {
+	name = Nicastu
+	culture = sinhala
+}
+
+2161 = {
+	name = Edheslu
+	culture = georgian
+}
+
+2162 = {
+	name = Wanela
+	culture = pictish
+}
+
+2163 = {
+	name = Ranarak
+	culture = castillan
+}
+
+2164 = {
+	name = Sarda
+	culture = armenian
+}
+
+2165 = {
+	name = Tiram
+	culture = polish
+}
+
+2166 = {
+	name = Raharl
+	culture = breton
+}
+
+2167 = {
+	name = Tuhayn
+	culture = kurdish
+}
+
+2168 = {
+	name = Ekinore
+	culture = assamese
+}
+
+2169 = {
+	name = Lalim
+	culture = sindhi
+}
+
+2170 = {
+	name = Kirra
+	culture = swedish
+}
+
+2171 = {
+	name = Tatila
+	culture = old_saxon
+}
+
+2172 = {
+	name = Naliulf
+	culture = nubian
+}
+
+2173 = {
+	name = Tinyut
+	culture = ilmenian
+}
+
+2174 = {
+	name = Tajamaj
+	culture = saxon
+}
+
+2175 = {
+	name = Reredek
+	culture = mordvin
+}
+
+2176 = {
+	name = Ahanilen
+	culture = jurchen
+}
+
+2177 = {
+	name = Sandu
+	culture = italian
+}
+
+2178 = {
+	name = Delašî
+	culture = maghreb_arabic
+}
+
+2179 = {
+	name = Tohinop
+	culture = alan
+}
+
+2180 = {
+	name = Tararda
+	culture = polish
+}
+
+2181 = {
+	name = Kagida
+	culture = daju
+}
+
+2182 = {
+	name = Wirele
+	culture = kannada
+}
+
+2183 = {
+	name = Ryae
+	culture = zaghawa
+}
+
+2184 = {
+	name = Balarl
+	culture = lettigallish
+}
+
+2185 = {
+	name = Kubeslu
+	culture = egyptian_arabic
+}
+
+2186 = {
+	name = Bilolas
+	culture = sumpa
+}
+
+2187 = {
+	name = Luyalka
+	culture = tangut
+}
+
+2188 = {
+	name = Baide
+	culture = uyghur
+}
+
+2189 = {
+	name = Qelint
+	culture = tamil
+}
+
+2190 = {
+	name = Sadga
+	culture = sindhi
+}
+
+2191 = {
+	name = Taleslu
+	culture = manden
+}
+
+2192 = {
+	name = Syea
+	culture = sinhala
+}
+
+2193 = {
+	name = Rilerav
+	culture = welsh
+}
+
+2194 = {
+	name = Eganapal
+	culture = norse
+}
+
+2195 = {
+	name = Kuseslu
+	culture = italian
+}
+
+2196 = {
+	name = Lelelen
+	culture = visigothic
+}
+
+2197 = {
+	name = Bainoan
+	culture = lappish
+}
+
+2198 = {
+	name = Notalid
+	culture = frankish
+}
+
+2199 = {
+	name = Danastu
+	culture = hindustani
+}
+
+2200 = {
+	name = Amilava
+	culture = saxon
+}
+
+2201 = {
+	name = Tirta
+	culture = greek
+}
+
+2202 = {
+	name = Tatarha
+	culture = khazar
+}
+
+2203 = {
+	name = Beuliram
+	culture = roman
+}
+
+2204 = {
+	name = Taleslu
+	culture = saka
+}
+
+2205 = {
+	name = Kotalka
+	culture = greek
+}
+
+2206 = {
+	name = Taudarda
+	culture = mordvin
+}
+
+2207 = {
+	name = Emasyut
+	culture = avar
+}
+
+2208 = {
+	name = Luhalid
+	culture = finnish
+}
+
+2209 = {
+	name = Anazele
+	culture = maghreb_arabic
+}
+
+2210 = {
+	name = Tajuraj
+	culture = kurdish
+}
+
+2211 = {
+	name = Kandlu
+	culture = lombard
+}
+
+2212 = {
+	name = Benayn
+	culture = egyptian_arabic
+}
+
+2213 = {
+	name = Nalilen
+	culture = lettigallish
+}
+
+2214 = {
+	name = Rigorad
+	culture = swedish
+}
+
+2215 = {
+	name = Lele
+	culture = basque
+}
+
+2216 = {
+	name = Eferaide
+	culture = manden
+}
+
+2217 = {
+	name = Laheslu
+	culture = bulgarian
+}
+
+2218 = {
+	name = Wukukh
+	culture = georgian
+}
+
+2219 = {
+	name = Qelelin
+	culture = zhangzhung
+}
+
+2220 = {
+	name = Randay
+	culture = catalan
+}
+
+2221 = {
+	name = Tamogna
+	culture = egyptian_arabic
+}
+
+2222 = {
+	name = Datanoz
+	culture = maghreb_arabic
+}
+
+2223 = {
+	name = Ababaide
+	culture = oriya
+}
+
+2224 = {
+	name = Dinayn
+	culture = irish
+}
+
+2225 = {
+	name = Karda
+	culture = sardinian
+}
+
+2226 = {
+	name = Dajeena
+	culture = cuman
+}
+
+2227 = {
+	name = Dyasukee
+	culture = ugricbaltic
+}
+
+2228 = {
+	name = Senalk
+	culture = marathi
+}
+
+2229 = {
+	name = Etuurka
+	culture = mordvin
+}
+
+2230 = {
+	name = Qunure
+	culture = danish
+}
+
+2231 = {
+	name = Kaudarda
+	culture = severian
+}
+
+2232 = {
+	name = Tinayn
+	culture = karluk
+}
+
+2233 = {
+	name = Kirevat
+	culture = assyrian
+}
+
+2234 = {
+	name = Wolarda
+	culture = russian
+}
+
+2235 = {
+	name = Dapeslu
+	culture = avar
+}
+
+2236 = {
+	name = Rakuna
+	culture = ilmenian
+}
+
+2237 = {
+	name = Ahasuraj
+	culture = karluk
+}
+
+2238 = {
+	name = Talotha
+	culture = catalan
+}
+
+2239 = {
+	name = Norern
+	culture = croatian
+}
+
+2240 = {
+	name = Ranta
+	culture = marathi
+}
+
+2241 = {
+	name = Kadila
+	culture = lithuanian
+}
+
+2242 = {
+	name = Etuuray
+	culture = bosnian
+}
+
+2243 = {
+	name = Qalilen
+	culture = carantanian
+}
+
+2244 = {
+	name = Rielarl
+	culture = kirghiz
+}
+
+2245 = {
+	name = Lugaria
+	culture = greek
+}
+
+2246 = {
+	name = Bevat
+	culture = old_frankish
+}
+
+2247 = {
+	name = Berivia
+	culture = lombard
+}
+
+2248 = {
+	name = Rinedek
+	culture = georgian
+}
+
+2249 = {
+	name = Asalarl
+	culture = ugricbaltic
+}
+
+2250 = {
+	name = Siceslu
+	culture = romanian
+}
+
+2251 = {
+	name = Tanotha
+	culture = panjabi
+}
+
+2252 = {
+	name = Eprostas
+	culture = songhay
+}
+
+2253 = {
+	name = Esurevat
+	culture = serbian
+}
+
+2254 = {
+	name = Anazyut
+	culture = armenian
+}
+
+2255 = {
+	name = Dahedek
+	culture = bedouin_arabic
+}
+
+2256 = {
+	name = Reobele
+	culture = daju
+}
+
+2257 = {
+	name = Kukadza
+	culture = hindustani
+}
+
+2258 = {
+	name = Amedarid
+	culture = danish
+}
+
+2259 = {
+	name = Wubu
+	culture = old_frankish
+}
+
+2260 = {
+	name = Kazict
+	culture = assyrian
+}
+
+2261 = {
+	name = Alitati
+	culture = sinhala
+}
+
+2262 = {
+	name = Sesina
+	culture = dalmatian
+}
+
+2263 = {
+	name = Kelimir
+	culture = hindustani
+}
+
+2264 = {
+	name = Qaleslu
+	culture = sinhala
+}
+
+2265 = {
+	name = Eramaj
+	culture = levantine_arabic
+}
+
+2266 = {
+	name = Duurarl
+	culture = marathi
+}
+
+2267 = {
+	name = Ranela
+	culture = khanty
+}
+
+2268 = {
+	name = Asyedka
+	culture = tangut
+}
+
+2269 = {
+	name = Digekel
+	culture = ashkenazi
+}
+
+2270 = {
+	name = Relekel
+	culture = prussian
+}
+
+2271 = {
+	name = Qanogna
+	culture = croatian
+}
+
+2272 = {
+	name = Ehedonza
+	culture = pictish
+}
+
+2273 = {
+	name = Di'æ
+	culture = serbian
+}
+
+2274 = {
+	name = Baneslu
+	culture = sogdian
+}
+
+2275 = {
+	name = Kamaj
+	culture = sinhala
+}
+
+2276 = {
+	name = Kanarl
+	culture = zhangzhung
+}
+
+2277 = {
+	name = Dandtu
+	culture = avar
+}
+
+2278 = {
+	name = Negen
+	culture = tocharian
+}
+
+2279 = {
+	name = Regen
+	culture = coptic
+}
+
+2280 = {
+	name = Nanamaj
+	culture = pommeranian
+}
+
+2281 = {
+	name = Atelelen
+	culture = hungarian
+}
+
+2282 = {
+	name = Winalk
+	culture = swedish
+}
+
+2283 = {
+	name = Neraura
+	culture = levantine_arabic
+}
+
+2284 = {
+	name = Kalesh
+	culture = khazar
+}
+
+2285 = {
+	name = Rorelin
+	culture = pictish
+}
+
+2286 = {
+	name = Atomarha
+	culture = visigothic
+}
+
+2287 = {
+	name = Qoragai
+	culture = maghreb_arabic
+}
+
+2288 = {
+	name = Niliad
+	culture = ashkenazi
+}
+
+2289 = {
+	name = Rugekel
+	culture = zaghawa
+}
+
+2290 = {
+	name = Apotict
+	culture = coptic
+}
+
+2291 = {
+	name = Lolas
+	culture = old_frankish
+}
+
+2292 = {
+	name = Telen
+	culture = russian
+}
+
+2293 = {
+	name = Demoksa
+	culture = hungarian
+}
+
+2294 = {
+	name = Eprahore
+	culture = frisian
+}
+
+2295 = {
+	name = Wadelen
+	culture = kanuri
+}
+
+2296 = {
+	name = Buhevat
+	culture = sumpa
+}
+
+2297 = {
+	name = Amielarl
+	culture = severian
+}
+
+2298 = {
+	name = Rapastu
+	culture = jurchen
+}
+
+2299 = {
+	name = Ruju
+	culture = bodpa
+}
+
+2300 = {
+	name = Tugegen
+	culture = ilmenian
+}
+
+2301 = {
+	name = Dakint
+	culture = mordvin
+}
+
+2302 = {
+	name = Naide
+	culture = assyrian
+}
+
+2303 = {
+	name = Lomolun
+	culture = breton
+}
+
+2304 = {
+	name = Dahatur
+	culture = rajput
+}
+
+2305 = {
+	name = Rorad
+	culture = rajput
+}
+
+2306 = {
+	name = Ahéalid
+	culture = assamese
+}
+
+2307 = {
+	name = Qarava
+	culture = finnish
+}
+
+2308 = {
+	name = Noszó
+	culture = sindhi
+}
+
+2309 = {
+	name = Werivia
+	culture = slovieni
+}
+
+2310 = {
+	name = Karava
+	culture = marathi
+}
+
+2311 = {
+	name = Dubarl
+	culture = tamil
+}
+
+2312 = {
+	name = Keulubu
+	culture = polish
+}
+
+2313 = {
+	name = Qirnop
+	culture = khanty
+}
+
+2314 = {
+	name = Rahiulf
+	culture = karluk
+}
+
+2315 = {
+	name = Datur
+	culture = serbian
+}
+
+2316 = {
+	name = Tomelen
+	culture = german
+}
+
+2317 = {
+	name = Wasele
+	culture = baloch
+}
+
+2318 = {
+	name = Woumida
+	culture = croatian
+}
+
+2319 = {
+	name = Nularha
+	culture = bosnian
+}
+
+2320 = {
+	name = Kelalim
+	culture = oriya
+}
+
+2321 = {
+	name = Adukeæ'
+	culture = tocharian
+}
+
+2322 = {
+	name = Ricarl
+	culture = jurchen
+}
+
+2323 = {
+	name = Domegen
+	culture = volhynian
+}
+
+2324 = {
+	name = Kenuri
+	culture = sumpa
+}
+
+2325 = {
+	name = Borarda
+	culture = visigothic
+}
+
+2326 = {
+	name = Barda
+	culture = roman
+}
+
+2327 = {
+	name = Ramela
+	culture = assyrian
+}
+
+2328 = {
+	name = Kiruay
+	culture = songhay
+}
+
+2329 = {
+	name = Telija
+	culture = komi
+}
+
+2330 = {
+	name = Wacadga
+	culture = sardinian
+}
+
+2331 = {
+	name = Dubiulf
+	culture = oriya
+}
+
+2332 = {
+	name = Sirlen
+	culture = pommeranian
+}
+
+2333 = {
+	name = Loheuba
+	culture = kirghiz
+}
+
+2334 = {
+	name = Kusinop
+	culture = visigothic
+}
+
+2335 = {
+	name = Kauliad
+	culture = basque
+}
+
+2336 = {
+	name = Sannodio
+	culture = russian
+}
+
+2337 = {
+	name = Rilali
+	culture = prussian
+}
+
+2338 = {
+	name = Satekel
+	culture = occitan
+}
+
+2339 = {
+	name = Nanatur
+	culture = tangut
+}
+
+2340 = {
+	name = Dotern
+	culture = soninke
+}
+
+2341 = {
+	name = Quyarda
+	culture = scottish
+}
+
+2342 = {
+	name = Kosutka
+	culture = han
+}
+
+2343 = {
+	name = Kagarid
+	culture = welsh
+}
+
+2344 = {
+	name = Welen
+	culture = bolghar
+}
+
+2345 = {
+	name = Lalid
+	culture = armenian
+}
+
+2346 = {
+	name = Nannarl
+	culture = outremer
+}
+
+2347 = {
+	name = Kalukh
+	culture = hindustani
+}
+
+2348 = {
+	name = Eganææ
+	culture = bolghar
+}
+
+2349 = {
+	name = Elolas
+	culture = daju
+}
+
+2350 = {
+	name = Kusarl
+	culture = catalan
+}
+
+2351 = {
+	name = Korgia
+	culture = hausa
+}
+
+2352 = {
+	name = Lomuju
+	culture = alan
+}
+
+2353 = {
+	name = Kigoutai
+	culture = breton
+}
+
+2354 = {
+	name = Ethelen
+	culture = telugu
+}
+
+2355 = {
+	name = Kiceslu
+	culture = polish
+}
+
+2356 = {
+	name = Wandlu
+	culture = tocharian
+}
+
+2357 = {
+	name = Kalogna
+	culture = norman
+}
+
+2358 = {
+	name = Terorgia
+	culture = catalan
+}
+
+2359 = {
+	name = Nuliram
+	culture = pecheneg
+}
+
+2360 = {
+	name = Danotha
+	culture = avar
+}
+
+2361 = {
+	name = Kegen
+	culture = dutch
+}
+
+2362 = {
+	name = Ejosarda
+	culture = bedouin_arabic
+}
+
+2363 = {
+	name = Lanatta
+	culture = tangut
+}
+
+2364 = {
+	name = Aroszó
+	culture = italian
+}
+
+2365 = {
+	name = Talaimur
+	culture = portuguese
+}
+
+2366 = {
+	name = Lozalim
+	culture = norse
+}
+
+2367 = {
+	name = Tobali
+	culture = panjabi
+}
+
+2368 = {
+	name = Rotarda
+	culture = dalmatian
+}
+
+2369 = {
+	name = Ryeday
+	culture = meshchera
+}
+
+2370 = {
+	name = Tapatur
+	culture = severian
+}
+
+2371 = {
+	name = Nohadza
+	culture = hindustani
+}
+
+2372 = {
+	name = Dinaide
+	culture = zaghawa
+}
+
+2373 = {
+	name = Ranudev
+	culture = hindustani
+}
+
+2374 = {
+	name = Racaysan
+	culture = hindustani
+}
+
+2375 = {
+	name = Talogna
+	culture = armenian
+}
+
+2376 = {
+	name = Lusarda
+	culture = lithuanian
+}
+
+2377 = {
+	name = Azakina
+	culture = jurchen
+}
+
+2378 = {
+	name = Nakyla
+	culture = hungarian
+}
+
+2379 = {
+	name = Relarha
+	culture = russian
+}
+
+2380 = {
+	name = Tagict
+	culture = old_saxon
+}
+
+2381 = {
+	name = Qawary
+	culture = frankish
+}
+
+2382 = {
+	name = Wireæ'
+	culture = gujurati
+}
+
+2383 = {
+	name = Qeæ'
+	culture = nepali
+}
+
+2384 = {
+	name = Epaulali
+	culture = roman
+}
+
+2385 = {
+	name = Ryilalk
+	culture = bulgarian
+}
+
+2386 = {
+	name = Satuju
+	culture = baloch
+}
+
+2387 = {
+	name = Asainizo
+	culture = bulgarian
+}
+
+2388 = {
+	name = Lasayn
+	culture = armenian
+}
+
+2389 = {
+	name = Losayn
+	culture = jurchen
+}
+
+2390 = {
+	name = Raudida
+	culture = egyptian_arabic
+}
+
+2391 = {
+	name = Remyavka
+	culture = coptic
+}
+
+2392 = {
+	name = Tayan
+	culture = gujurati
+}
+
+2393 = {
+	name = Daparda
+	culture = zhangzhung
+}
+
+2394 = {
+	name = Eferamaj
+	culture = dutch
+}
+
+2395 = {
+	name = Riryut
+	culture = lappish
+}
+
+2396 = {
+	name = Nicotha
+	culture = samoyed
+}
+
+2397 = {
+	name = Relen
+	culture = lappish
+}
+
+2398 = {
+	name = Solizo
+	culture = carantanian
+}
+
+2399 = {
+	name = Boumara
+	culture = breton
+}
+
+2400 = {
+	name = Rerorgia
+	culture = kanuri
+}
+
+2401 = {
+	name = Wanatur
+	culture = volhynian
+}
+
+2402 = {
+	name = Luri
+	culture = irish
+}
+
+2403 = {
+	name = Epagiram
+	culture = old_saxon
+}
+
+2404 = {
+	name = Dasalid
+	culture = norman
+}
+
+2405 = {
+	name = Surayn
+	culture = swedish
+}
+
+2406 = {
+	name = Devivia
+	culture = roman
+}
+
+2407 = {
+	name = Aganudev
+	culture = bosnian
+}
+
+2408 = {
+	name = Danodio
+	culture = suebi
+}
+
+2409 = {
+	name = Telubu
+	culture = frisian
+}
+
+2410 = {
+	name = Asusastu
+	culture = irish
+}
+
+2411 = {
+	name = Azuhalka
+	culture = panjabi
+}
+
+2412 = {
+	name = Lorarda
+	culture = severian
+}
+
+2413 = {
+	name = Kizutin
+	culture = ethiopian
+}
+
+2414 = {
+	name = Nelagai
+	culture = kanuri
+}
+
+2415 = {
+	name = Qatur
+	culture = finnish
+}
+
+2416 = {
+	name = Ruyalid
+	culture = komi
+}
+
+2417 = {
+	name = Terara
+	culture = tocharian
+}
+
+2418 = {
+	name = Kagern
+	culture = basque
+}
+
+2419 = {
+	name = Dinaria
+	culture = samoyed
+}
+
+2420 = {
+	name = Tiulf
+	culture = assyrian
+}
+
+2421 = {
+	name = Woherav
+	culture = egyptian_arabic
+}
+
+2422 = {
+	name = Kakula
+	culture = portuguese
+}
+
+2423 = {
+	name = Alukarel
+	culture = afghan
+}
+
+2424 = {
+	name = Atapodio
+	culture = komi
+}
+
+2425 = {
+	name = Tohastu
+	culture = dutch
+}
+
+2426 = {
+	name = Tenalk
+	culture = baloch
+}
+
+2427 = {
+	name = Agisele
+	culture = dalmatian
+}
+
+2428 = {
+	name = Rerayn
+	culture = volhynian
+}
+
+2429 = {
+	name = Bakonza
+	culture = han
+}
+
+2430 = {
+	name = Sirarha
+	culture = old_saxon
+}
+
+2431 = {
+	name = Degen
+	culture = mordvin
+}
+
+2432 = {
+	name = Dapiulf
+	culture = han
+}
+
+2433 = {
+	name = Wanadar
+	culture = old_frankish
+}
+
+2434 = {
+	name = Azunogna
+	culture = manden
+}
+
+2435 = {
+	name = Kisarak
+	culture = roman
+}
+
+2436 = {
+	name = Tanastu
+	culture = russian
+}
+
+2437 = {
+	name = Tasara
+	culture = tamil
+}
+
+2438 = {
+	name = Kinava
+	culture = sinhala
+}
+
+2439 = {
+	name = Nicpal
+	culture = lithuanian
+}
+
+2440 = {
+	name = Raluru
+	culture = telugu
+}
+
+2441 = {
+	name = Riban
+	culture = bosnian
+}
+
+2442 = {
+	name = Baliulf
+	culture = english
+}
+
+2443 = {
+	name = Nilelen
+	culture = songhay
+}
+
+2444 = {
+	name = Talara
+	culture = sumpa
+}
+
+2445 = {
+	name = Sisalid
+	culture = sogdian
+}
+
+2446 = {
+	name = Nelen
+	culture = marathi
+}
+
+2447 = {
+	name = Wuyanay
+	culture = visigothic
+}
+
+2448 = {
+	name = Quhict
+	culture = cuman
+}
+
+2449 = {
+	name = Tiukl
+	culture = crimean_gothic
+}
+
+2450 = {
+	name = Rinara
+	culture = uyghur
+}
+
+2451 = {
+	name = Danoan
+	culture = assamese
+}
+
+2452 = {
+	name = Kolegen
+	culture = greek
+}
+
+2453 = {
+	name = Bapodio
+	culture = pictish
+}
+
+2454 = {
+	name = Atobolas
+	culture = finnish
+}
+
+2455 = {
+	name = Bobekel
+	culture = ugricbaltic
+}
+
+2456 = {
+	name = Waneuba
+	culture = greek
+}
+
+2457 = {
+	name = Kilanoz
+	culture = bodpa
+}
+
+2458 = {
+	name = Talern
+	culture = frankish
+}
+
+2459 = {
+	name = Darore
+	culture = panjabi
+}
+
+2460 = {
+	name = Nalotha
+	culture = outremer
+}
+
+2461 = {
+	name = Begaila
+	culture = avar
+}
+
+2462 = {
+	name = Salodio
+	culture = coptic
+}
+
+2463 = {
+	name = Wyedarl
+	culture = dutch
+}
+
+2464 = {
+	name = Dazara
+	culture = swedish
+}
+
+2465 = {
+	name = Telaria
+	culture = outremer
+}
+
+2466 = {
+	name = Ralatur
+	culture = songhay
+}
+
+2467 = {
+	name = Qalatta
+	culture = ethiopian
+}
+
+2468 = {
+	name = Lecara
+	culture = maghreb_arabic
+}
+
+2469 = {
+	name = Tasyut
+	culture = slovieni
+}
+
+2470 = {
+	name = Kuhalid
+	culture = romanian
+}
+
+2471 = {
+	name = Begarda
+	culture = ethiopian
+}
+
+2472 = {
+	name = Lisaide
+	culture = avar
+}
+
+2473 = {
+	name = Azacati
+	culture = frisian
+}
+
+2474 = {
+	name = Tilegen
+	culture = ethiopian
+}
+
+2475 = {
+	name = Delarha
+	culture = crimean_gothic
+}
+
+2476 = {
+	name = Atomelen
+	culture = lettigallish
+}
+
+2477 = {
+	name = Rapeslu
+	culture = bohemian
+}
+
+2478 = {
+	name = Kelila
+	culture = italian
+}
+
+2479 = {
+	name = Nolukh
+	culture = italian
+}
+
+2480 = {
+	name = Tigaria
+	culture = irish
+}
+
+2481 = {
+	name = Lelin
+	culture = khazar
+}
+
+2482 = {
+	name = Kivalim
+	culture = italian
+}
+
+2483 = {
+	name = Kukelin
+	culture = sardinian
+}
+
+2484 = {
+	name = Kaniulf
+	culture = kanuri
+}
+
+2485 = {
+	name = Tapilen
+	culture = baloch
+}
+
+2486 = {
+	name = Talarl
+	culture = georgian
+}
+
+2487 = {
+	name = Toliulf
+	culture = tamil
+}
+
+2488 = {
+	name = Kaliulf
+	culture = kirghiz
+}
+
+2489 = {
+	name = Ladolas
+	culture = ugricbaltic
+}
+
+2490 = {
+	name = Lalilen
+	culture = ashkenazi
+}
+
+2491 = {
+	name = Aparera
+	culture = assyrian
+}
+
+2492 = {
+	name = Suuray
+	culture = manden
+}
+
+2493 = {
+	name = Qoborad
+	culture = breton
+}
+
+2494 = {
+	name = Asusiulf
+	culture = bosnian
+}
+
+2495 = {
+	name = Lande
+	culture = khazar
+}
+
+2496 = {
+	name = Keuluju
+	culture = scottish
+}
+
+2497 = {
+	name = Kalamaj
+	culture = suebi
+}
+
+2498 = {
+	name = Notevat
+	culture = saka
+}
+
+2499 = {
+	name = Amubeslu
+	culture = lappish
+}
+
+2500 = {
+	name = Kimir
+	culture = zhangzhung
+}
+
+2501 = {
+	name = Weulelin
+	culture = karluk
+}
+
+2502 = {
+	name = Tivelin
+	culture = basque
+}
+
+2503 = {
+	name = Kirarda
+	culture = russian
+}
+
+2504 = {
+	name = Dizarkad
+	culture = mongol
+}
+
+2505 = {
+	name = Namaj
+	culture = crimean_gothic
+}
+
+2506 = {
+	name = Liegude
+	culture = ilmenian
+}
+
+2507 = {
+	name = Siralka
+	culture = samoyed
+}
+
+2508 = {
+	name = Watude
+	culture = italian
+}
+
+2509 = {
+	name = Nologna
+	culture = samoyed
+}
+
+2510 = {
+	name = Kadolas
+	culture = telugu
+}
+
+2511 = {
+	name = Talothar
+	culture = german
+}
+
+2512 = {
+	name = Keobina
+	culture = assamese
+}
+
+2513 = {
+	name = Nolodio
+	culture = swedish
+}
+
+2514 = {
+	name = Acandha
+	culture = kanuri
+}
+
+2515 = {
+	name = Taneuba
+	culture = bosnian
+}
+
+2516 = {
+	name = Qelorad
+	culture = andalusian_arabic
+}
+
+2517 = {
+	name = Kielmur
+	culture = rajput
+}
+
+2518 = {
+	name = Tasalka
+	culture = coptic
+}
+
+2519 = {
+	name = Qoluslo
+	culture = somali
+}
+
+2520 = {
+	name = Kohadar
+	culture = hungarian
+}
+
+2521 = {
+	name = Belansur
+	culture = rajput
+}
+
+2522 = {
+	name = Subotha
+	culture = marathi
+}
+
+2523 = {
+	name = Nugekel
+	culture = slovieni
+}
+
+2524 = {
+	name = Busiulf
+	culture = oriya
+}
+
+2525 = {
+	name = Nalotha
+	culture = khitan
+}
+
+2526 = {
+	name = Relaila
+	culture = pecheneg
+}
+
+2527 = {
+	name = Talalka
+	culture = danish
+}
+
+2528 = {
+	name = Baudutka
+	culture = serbian
+}
+
+2529 = {
+	name = Banarda
+	culture = afghan
+}
+
+2530 = {
+	name = Karaila
+	culture = dutch
+}
+
+2531 = {
+	name = Syedarl
+	culture = finnish
+}
+
+2532 = {
+	name = Sahodio
+	culture = rajput
+}
+
+2533 = {
+	name = Raudalka
+	culture = gujurati
+}
+
+2534 = {
+	name = Anuyaay
+	culture = rajput
+}
+
+2535 = {
+	name = Aparidia
+	culture = tamil
+}
+
+2536 = {
+	name = Kesore
+	culture = hungarian
+}
+
+2537 = {
+	name = Evîaria
+	culture = khazar
+}
+
+2538 = {
+	name = Laparl
+	culture = bolghar
+}
+
+2539 = {
+	name = Datolas
+	culture = meshchera
+}
+
+2540 = {
+	name = Waliulf
+	culture = sogdian
+}
+
+2541 = {
+	name = Serophia
+	culture = nepali
+}
+
+2542 = {
+	name = Tagimur
+	culture = kannada
+}
+
+2543 = {
+	name = Athirl
+	culture = greek
+}
+
+2544 = {
+	name = Nelaria
+	culture = outremer
+}
+
+2545 = {
+	name = Rohotha
+	culture = hungarian
+}
+
+2546 = {
+	name = Nanatur
+	culture = crimean_gothic
+}
+
+2547 = {
+	name = Sanudev
+	culture = tangut
+}
+
+2548 = {
+	name = Sagiram
+	culture = hindustani
+}
+
+2549 = {
+	name = Rilolas
+	culture = catalan
+}
+
+2550 = {
+	name = Alamela
+	culture = assyrian
+}
+
+2551 = {
+	name = Taudutka
+	culture = kurdish
+}
+
+2552 = {
+	name = Kapiulf
+	culture = ugricbaltic
+}
+
+2553 = {
+	name = Qirani
+	culture = danish
+}
+
+2554 = {
+	name = Tokarda
+	culture = mordvin
+}
+
+2555 = {
+	name = Kirutka
+	culture = lettigallish
+}
+
+2556 = {
+	name = Qazayn
+	culture = levantine_arabic
+}
+
+2557 = {
+	name = Dararda
+	culture = turkish
+}
+
+2558 = {
+	name = Derester
+	culture = songhay
+}
+
+2559 = {
+	name = Sukh
+	culture = egyptian_arabic
+}
+
+2560 = {
+	name = Qatiad
+	culture = breton
+}
+
+2561 = {
+	name = Nazict
+	culture = assyrian
+}
+
+2562 = {
+	name = Tinint
+	culture = english
+}
+
+2563 = {
+	name = Tarlah
+	culture = songhay
+}
+
+2564 = {
+	name = Lukh
+	culture = polish
+}
+
+2565 = {
+	name = Raneslu
+	culture = nepali
+}
+
+2566 = {
+	name = Landarl
+	culture = tamil
+}
+
+2567 = {
+	name = Nagalid
+	culture = polish
+}
+
+2568 = {
+	name = Qosele
+	culture = khitan
+}
+
+2569 = {
+	name = Kakuslo
+	culture = polish
+}
+
+2570 = {
+	name = Tielay
+	culture = breton
+}
+
+2571 = {
+	name = Raceena
+	culture = norwegian
+}
+
+2572 = {
+	name = Kohadar
+	culture = arberian
+}
+
+2573 = {
+	name = Deulimur
+	culture = welsh
+}
+
+2574 = {
+	name = Nomeæ'
+	culture = kirghiz
+}
+
+2575 = {
+	name = Romolas
+	culture = italian
+}
+
+2576 = {
+	name = Danta
+	culture = occitan
+}
+
+2577 = {
+	name = Tokyut
+	culture = ashkenazi
+}
+
+2578 = {
+	name = Roud
+	culture = bodpa
+}
+
+2579 = {
+	name = Agresele
+	culture = lithuanian
+}
+
+2580 = {
+	name = Tyasaura
+	culture = ashkenazi
+}
+
+2581 = {
+	name = Biriban
+	culture = alan
+}
+
+2582 = {
+	name = Aganadza
+	culture = turkish
+}
+
+2583 = {
+	name = Renele
+	culture = sinhala
+}
+
+2584 = {
+	name = Nolence
+	culture = alan
+}
+
+2585 = {
+	name = Atomali
+	culture = breton
+}
+
+2586 = {
+	name = Ryedarl
+	culture = sardinian
+}
+
+2587 = {
+	name = Echaida
+	culture = old_frankish
+}
+
+2588 = {
+	name = Lilin
+	culture = lettigallish
+}
+
+2589 = {
+	name = Ricatur
+	culture = pommeranian
+}
+
+2590 = {
+	name = Elakada
+	culture = hindustani
+}
+
+2591 = {
+	name = Salilen
+	culture = norse
+}
+
+2592 = {
+	name = Amayrija
+	culture = tangut
+}
+
+2593 = {
+	name = Saudava
+	culture = manden
+}
+
+2594 = {
+	name = Warar
+	culture = tamil
+}
+
+2595 = {
+	name = Nalotha
+	culture = komi
+}
+
+2596 = {
+	name = Bobiad
+	culture = norman
+}
+
+2597 = {
+	name = Baniulf
+	culture = castillan
+}
+
+2598 = {
+	name = Qimadar
+	culture = portuguese
+}
+
+2599 = {
+	name = Enagern
+	culture = daju
+}
+
+2600 = {
+	name = Qoummur
+	culture = afghan
+}
+
+2601 = {
+	name = Quslo
+	culture = lappish
+}
+
+2602 = {
+	name = Qaheria
+	culture = lithuanian
+}
+
+2603 = {
+	name = Wolalku
+	culture = visigothic
+}
+
+2604 = {
+	name = Rirsu
+	culture = khazar
+}
+
+2605 = {
+	name = Esalinop
+	culture = komi
+}
+
+2606 = {
+	name = Salatta
+	culture = volhynian
+}
+
+2607 = {
+	name = Tolele
+	culture = greek
+}
+
+2608 = {
+	name = Waynary
+	culture = occitan
+}
+
+2609 = {
+	name = Achaura
+	culture = arberian
+}
+
+2610 = {
+	name = Rerele
+	culture = kanuri
+}
+
+2611 = {
+	name = Agucia
+	culture = bedouin_arabic
+}
+
+2612 = {
+	name = Lukolas
+	culture = afghan
+}
+
+2613 = {
+	name = Tolamad
+	culture = hausa
+}
+
+2614 = {
+	name = Burayan
+	culture = komi
+}
+
+2615 = {
+	name = Awinence
+	culture = hungarian
+}
+
+2616 = {
+	name = Boruju
+	culture = ugricbaltic
+}
+
+2617 = {
+	name = Diciad
+	culture = sumpa
+}
+
+2618 = {
+	name = Landa
+	culture = rajput
+}
+
+2619 = {
+	name = Tidia
+	culture = tamil
+}
+
+2620 = {
+	name = Talibai
+	culture = pictish
+}
+
+2621 = {
+	name = Weulolun
+	culture = tamil
+}
+
+2622 = {
+	name = Qagern
+	culture = russian
+}
+
+2623 = {
+	name = Qelorad
+	culture = visigothic
+}
+
+2624 = {
+	name = Kukela
+	culture = tangut
+}
+
+2625 = {
+	name = Rotele
+	culture = komi
+}
+
+2626 = {
+	name = Rotern
+	culture = saxon
+}
+
+2627 = {
+	name = Basara
+	culture = tamil
+}
+
+2628 = {
+	name = Kerict
+	culture = marathi
+}
+
+2629 = {
+	name = Nemulay
+	culture = norse
+}
+
+2630 = {
+	name = Ebilolas
+	culture = catalan
+}
+
+2631 = {
+	name = Bolodio
+	culture = armenian
+}
+
+2632 = {
+	name = Enuyanay
+	culture = sinhala
+}
+
+2633 = {
+	name = Bakaura
+	culture = assyrian
+}
+
+2634 = {
+	name = Kanta
+	culture = pecheneg
+}
+
+2635 = {
+	name = Nasidu
+	culture = pictish
+}
+
+2636 = {
+	name = Satimur
+	culture = sinhala
+}
+
+2637 = {
+	name = Qekel
+	culture = sephardi
+}
+
+2638 = {
+	name = Agiuln
+	culture = alan
+}
+
+2639 = {
+	name = Aferarda
+	culture = croatian
+}
+
+2640 = {
+	name = Tuyalid
+	culture = samoyed
+}
+
+2641 = {
+	name = Tahevia
+	culture = zhangzhung
+}
+
+2642 = {
+	name = Avalatur
+	culture = sephardi
+}
+
+2643 = {
+	name = Leloke
+	culture = severian
+}
+
+2644 = {
+	name = Ranta
+	culture = carantanian
+}
+
+2645 = {
+	name = Tagostas
+	culture = avar
+}
+
+2646 = {
+	name = Qelubu
+	culture = polish
+}
+
+2647 = {
+	name = Wurara
+	culture = sardinian
+}
+
+2648 = {
+	name = Semalid
+	culture = jurchen
+}
+
+2649 = {
+	name = Winint
+	culture = pictish
+}
+
+2650 = {
+	name = Worelin
+	culture = arberian
+}
+
+2651 = {
+	name = Kakansur
+	culture = turkish
+}
+
+2652 = {
+	name = Rorad
+	culture = roman
+}
+
+2653 = {
+	name = Wuurarl
+	culture = arberian
+}
+
+2654 = {
+	name = Lotarda
+	culture = komi
+}
+
+2655 = {
+	name = Darava
+	culture = old_saxon
+}
+
+2656 = {
+	name = Qerictor
+	culture = volhynian
+}
+
+2657 = {
+	name = Talinop
+	culture = khitan
+}
+
+2658 = {
+	name = Nuliban
+	culture = russian
+}
+
+2659 = {
+	name = Delen
+	culture = maghreb_arabic
+}
+
+2660 = {
+	name = Lirsu
+	culture = swedish
+}
+
+2661 = {
+	name = Taudof
+	culture = gujurati
+}
+
+2662 = {
+	name = Egolaria
+	culture = castillan
+}
+
+2663 = {
+	name = Somern
+	culture = croatian
+}
+
+2664 = {
+	name = Kirarak
+	culture = panjabi
+}
+
+2665 = {
+	name = Turevat
+	culture = cuman
+}
+
+2666 = {
+	name = Ninivia
+	culture = norman
+}
+
+2667 = {
+	name = Eleuba
+	culture = old_frankish
+}
+
+2668 = {
+	name = Kakaric
+	culture = karluk
+}
+
+2669 = {
+	name = Qohure
+	culture = castillan
+}
+
+2670 = {
+	name = Loleslu
+	culture = sumpa
+}
+
+2671 = {
+	name = Etobelen
+	culture = bulgarian
+}
+
+2672 = {
+	name = Ranotha
+	culture = occitan
+}
+
+2673 = {
+	name = Ruseslu
+	culture = mongol
+}
+
+2674 = {
+	name = Sigoutai
+	culture = oriya
+}
+
+2675 = {
+	name = Woumva
+	culture = breton
+}
+
+2676 = {
+	name = Wedava
+	culture = georgian
+}
+
+2677 = {
+	name = Dusinop
+	culture = severian
+}
+
+2678 = {
+	name = Tirtur
+	culture = zaghawa
+}
+
+2679 = {
+	name = Sakivia
+	culture = levantine_arabic
+}
+
+2680 = {
+	name = Athirta
+	culture = italian
+}
+
+2681 = {
+	name = Qando
+	culture = karluk
+}
+
+2682 = {
+	name = Salilen
+	culture = khazar
+}
+
+2683 = {
+	name = Qarda
+	culture = old_frankish
+}
+
+2684 = {
+	name = Rinatta
+	culture = pecheneg
+}
+
+2685 = {
+	name = Lalastu
+	culture = sogdian
+}
+
+2686 = {
+	name = Agulern
+	culture = maghreb_arabic
+}
+
+2687 = {
+	name = Ebelimur
+	culture = kurdish
+}
+
+2688 = {
+	name = Nomolas
+	culture = slovieni
+}
+
+2689 = {
+	name = Ekinava
+	culture = afghan
+}
+
+2690 = {
+	name = Balastu
+	culture = manden
+}
+
+2691 = {
+	name = Dolegen
+	culture = assyrian
+}
+
+2692 = {
+	name = Najuri
+	culture = karluk
+}
+
+2693 = {
+	name = Daudict
+	culture = lombard
+}
+
+2694 = {
+	name = Nerivia
+	culture = tocharian
+}
+
+2695 = {
+	name = Tubatur
+	culture = serbian
+}
+
+2696 = {
+	name = Laladar
+	culture = slovieni
+}
+
+2697 = {
+	name = Qohotha
+	culture = severian
+}
+
+2698 = {
+	name = Emubarda
+	culture = old_saxon
+}
+
+2699 = {
+	name = Talarda
+	culture = welsh
+}
+
+2700 = {
+	name = Tinerva
+	culture = bolghar
+}
+
+2701 = {
+	name = Keluslo
+	culture = jurchen
+}
+
+2702 = {
+	name = Danija
+	culture = carantanian
+}
+
+2703 = {
+	name = Agagai
+	culture = sumpa
+}
+
+2704 = {
+	name = Dimolas
+	culture = basque
+}
+
+2705 = {
+	name = Saide
+	culture = coptic
+}
+
+2706 = {
+	name = Turele
+	culture = norse
+}
+
+2707 = {
+	name = Kateæ'
+	culture = sogdian
+}
+
+2708 = {
+	name = Tegen
+	culture = meshchera
+}
+
+2709 = {
+	name = Annotha
+	culture = kannada
+}
+
+2710 = {
+	name = Tanalk
+	culture = italian
+}
+
+2711 = {
+	name = Ricija
+	culture = frankish
+}
+
+2712 = {
+	name = Byaa
+	culture = suebi
+}
+
+2713 = {
+	name = Licarl
+	culture = crimean_gothic
+}
+
+2714 = {
+	name = Wawamad
+	culture = severian
+}
+
+2715 = {
+	name = Weducia
+	culture = kurdish
+}
+
+2716 = {
+	name = Lomija
+	culture = andalusian_arabic
+}
+
+2717 = {
+	name = Razara
+	culture = hungarian
+}
+
+2718 = {
+	name = Nahevia
+	culture = pommeranian
+}
+
+2719 = {
+	name = Kadelen
+	culture = avar
+}
+
+2720 = {
+	name = Kisyut
+	culture = ethiopian
+}
+
+2721 = {
+	name = Naheof
+	culture = lithuanian
+}
+
+2722 = {
+	name = Niegan
+	culture = daju
+}
+
+2723 = {
+	name = Qomanoz
+	culture = jurchen
+}
+
+2724 = {
+	name = Rotevat
+	culture = georgian
+}
+
+2725 = {
+	name = Tester
+	culture = portuguese
+}
+
+2726 = {
+	name = Qeipl
+	culture = manden
+}
+
+2727 = {
+	name = Lelelen
+	culture = outremer
+}
+
+2728 = {
+	name = Soutai
+	culture = roman
+}
+
+2729 = {
+	name = Ebranta
+	culture = manden
+}
+
+2730 = {
+	name = Saramaj
+	culture = russian
+}
+
+2731 = {
+	name = Sourda
+	culture = georgian
+}
+
+2732 = {
+	name = Qolaimur
+	culture = bengali
+}
+
+2733 = {
+	name = Qasarid
+	culture = bohemian
+}
+
+2734 = {
+	name = Ebrelen
+	culture = pictish
+}
+
+2735 = {
+	name = Sanara
+	culture = saka
+}
+
+2736 = {
+	name = Berizo
+	culture = assamese
+}
+
+2737 = {
+	name = Nesint
+	culture = oriya
+}
+
+2738 = {
+	name = Kilava
+	culture = serbian
+}
+
+2739 = {
+	name = Lanotha
+	culture = arberian
+}
+
+2740 = {
+	name = Balotha
+	culture = sephardi
+}
+
+2741 = {
+	name = Kolukh
+	culture = khanty
+}
+
+2742 = {
+	name = Rulalim
+	culture = occitan
+}
+
+2743 = {
+	name = Ticija
+	culture = bohemian
+}
+
+2744 = {
+	name = Ezunadza
+	culture = lappish
+}
+
+2745 = {
+	name = Kubatur
+	culture = panjabi
+}
+
+2746 = {
+	name = Resava
+	culture = somali
+}
+
+2747 = {
+	name = Loruju
+	culture = avar
+}
+
+2748 = {
+	name = Dategen
+	culture = russian
+}
+
+2749 = {
+	name = Dalati
+	culture = jurchen
+}
+
+2750 = {
+	name = Kalalid
+	culture = somali
+}
+
+2751 = {
+	name = Sagara
+	culture = telugu
+}
+
+2752 = {
+	name = Kahint
+	culture = greek
+}
+
+2753 = {
+	name = Daura
+	culture = lappish
+}
+
+2754 = {
+	name = Relansur
+	culture = carantanian
+}
+
+2755 = {
+	name = Abéehre
+	culture = english
+}
+
+2756 = {
+	name = Lagalim
+	culture = panjabi
+}
+
+2757 = {
+	name = Evalatur
+	culture = bengali
+}
+
+2758 = {
+	name = Rolastu
+	culture = scottish
+}
+
+2759 = {
+	name = Lalalka
+	culture = panjabi
+}
+
+2760 = {
+	name = Asinara
+	culture = samoyed
+}
+
+2761 = {
+	name = Agrester
+	culture = ethiopian
+}
+
+2762 = {
+	name = Telalim
+	culture = swedish
+}
+
+2763 = {
+	name = Tozalim
+	culture = tamil
+}
+
+2764 = {
+	name = Anoumern
+	culture = old_frankish
+}
+
+2765 = {
+	name = Qanotha
+	culture = cuman
+}
+
+2766 = {
+	name = Kagucia
+	culture = russian
+}
+
+2767 = {
+	name = Suuram
+	culture = breton
+}
+
+2768 = {
+	name = Tarda
+	culture = prussian
+}
+
+2769 = {
+	name = Lolizo
+	culture = kanuri
+}
+
+2770 = {
+	name = Bakula
+	culture = dalmatian
+}
+
+2771 = {
+	name = Rajukee
+	culture = marathi
+}
+
+2772 = {
+	name = Tarak
+	culture = slovieni
+}
+
+2773 = {
+	name = Nanatta
+	culture = slovieni
+}
+
+2774 = {
+	name = Qezutin
+	culture = kirghiz
+}
+
+2775 = {
+	name = Telila
+	culture = lombard
+}
+
+2776 = {
+	name = Ranukh
+	culture = meshchera
+}
+
+2777 = {
+	name = Berara
+	culture = bengali
+}
+
+2778 = {
+	name = Reulolun
+	culture = han
+}
+
+2779 = {
+	name = Nanure
+	culture = tocharian
+}
+
+2780 = {
+	name = Narern
+	culture = danish
+}
+
+2781 = {
+	name = Eveledek
+	culture = visigothic
+}
+
+2782 = {
+	name = Syukha
+	culture = egyptian_arabic
+}
+
+2783 = {
+	name = Wosalka
+	culture = bodpa
+}
+
+2784 = {
+	name = Qolore
+	culture = ethiopian
+}
+
+2785 = {
+	name = Demamad
+	culture = saxon
+}
+
+2786 = {
+	name = Agugaria
+	culture = kannada
+}
+
+2787 = {
+	name = Kolææ
+	culture = lettigallish
+}
+
+2788 = {
+	name = Rolarda
+	culture = finnish
+}
+
+2789 = {
+	name = Wasara
+	culture = lombard
+}
+
+2790 = {
+	name = Enazarda
+	culture = assamese
+}
+
+2791 = {
+	name = Kasarda
+	culture = turkish
+}
+
+2792 = {
+	name = Ranalk
+	culture = crimean_gothic
+}
+
+2793 = {
+	name = Qoutai
+	culture = lettigallish
+}
+
+2794 = {
+	name = Rilašî
+	culture = persian
+}
+
+2795 = {
+	name = Qomala
+	culture = georgian
+}
+
+2796 = {
+	name = Dohiulf
+	culture = sindhi
+}
+
+2797 = {
+	name = Bilen
+	culture = portuguese
+}
+
+2798 = {
+	name = Ethirarl
+	culture = irish
+}
+
+2799 = {
+	name = Kyukha
+	culture = mordvin
+}
+
+2800 = {
+	name = Qelolun
+	culture = greek
+}
+
+2801 = {
+	name = Bamela
+	culture = turkish
+}
+
+2802 = {
+	name = Wimolas
+	culture = sindhi
+}
+
+2803 = {
+	name = Disayn
+	culture = hindustani
+}
+
+2804 = {
+	name = Nalaimur
+	culture = roman
+}
+
+2805 = {
+	name = Tukubu
+	culture = ugricbaltic
+}
+
+2806 = {
+	name = Raleslu
+	culture = polish
+}
+
+2807 = {
+	name = Wigekel
+	culture = sephardi
+}
+
+2808 = {
+	name = Qaheslu
+	culture = bosnian
+}
+
+2809 = {
+	name = Teslu
+	culture = croatian
+}
+
+2810 = {
+	name = Telaria
+	culture = pommeranian
+}
+
+2811 = {
+	name = Kohatta
+	culture = tangut
+}
+
+2812 = {
+	name = Lanta
+	culture = sinhala
+}
+
+2813 = {
+	name = Bisevat
+	culture = dutch
+}
+
+2814 = {
+	name = Saudevat
+	culture = lappish
+}
+
+2815 = {
+	name = Tuyanay
+	culture = volhynian
+}
+
+2816 = {
+	name = Rinidia
+	culture = italian
+}
+
+2817 = {
+	name = Emasida
+	culture = ugricbaltic
+}
+
+2818 = {
+	name = Rotayn
+	culture = rajput
+}
+
+2819 = {
+	name = Dalaimur
+	culture = bosnian
+}
+
+2820 = {
+	name = Egolera
+	culture = komi
+}
+
+2821 = {
+	name = Waulezu
+	culture = hausa
+}
+
+2822 = {
+	name = Kilolas
+	culture = kannada
+}
+
+2823 = {
+	name = Ramadza
+	culture = khanty
+}
+
+2824 = {
+	name = Nalatur
+	culture = soninke
+}
+
+2825 = {
+	name = Kazyut
+	culture = maghreb_arabic
+}
+
+2826 = {
+	name = Nalevat
+	culture = mordvin
+}
+
+2827 = {
+	name = Nerester
+	culture = breton
+}
+
+2828 = {
+	name = Edhilen
+	culture = nahuatl
+}
+
+2829 = {
+	name = Abeloda
+	culture = manden
+}
+
+2830 = {
+	name = Nunadza
+	culture = cuman
+}
+
+2831 = {
+	name = Wosida
+	culture = avar
+}
+
+2832 = {
+	name = Tuseuba
+	culture = oriya
+}
+
+2833 = {
+	name = Kalarda
+	culture = andalusian_arabic
+}
+
+2834 = {
+	name = Enuyarda
+	culture = pecheneg
+}
+
+2835 = {
+	name = Daudutka
+	culture = kirghiz
+}
+
+2836 = {
+	name = Bahiulf
+	culture = serbian
+}
+
+2837 = {
+	name = Dirsu
+	culture = lettigallish
+}
+
+2838 = {
+	name = Kanadar
+	culture = serbian
+}
+
+2839 = {
+	name = Kurarda
+	culture = ethiopian
+}
+
+2840 = {
+	name = Tarint
+	culture = polish
+}
+
+2841 = {
+	name = Deraria
+	culture = tamil
+}
+
+2842 = {
+	name = Nalogna
+	culture = manden
+}
+
+2843 = {
+	name = Werara
+	culture = nepali
+}
+
+2844 = {
+	name = Qiliad
+	culture = soninke
+}
+
+2845 = {
+	name = Tiurd
+	culture = frankish
+}
+
+2846 = {
+	name = Lielay
+	culture = kanuri
+}
+
+2847 = {
+	name = Neulolun
+	culture = ugricbaltic
+}
+
+2848 = {
+	name = Luyarda
+	culture = kirghiz
+}
+
+2849 = {
+	name = Arorgia
+	culture = persian
+}
+
+2850 = {
+	name = Taura
+	culture = norman
+}
+
+2851 = {
+	name = Ragubu
+	culture = norwegian
+}
+
+2852 = {
+	name = Tanija
+	culture = sephardi
+}
+
+2853 = {
+	name = Bern
+	culture = afghan
+}
+
+2854 = {
+	name = Egrekel
+	culture = georgian
+}
+
+2855 = {
+	name = Koutai
+	culture = scottish
+}
+
+2856 = {
+	name = Ligegen
+	culture = lithuanian
+}
+
+2857 = {
+	name = Asinict
+	culture = hindustani
+}
+
+2858 = {
+	name = Telen
+	culture = visigothic
+}
+
+2859 = {
+	name = Kannarl
+	culture = sinhala
+}
+
+2860 = {
+	name = Sanarda
+	culture = hungarian
+}
+
+2861 = {
+	name = Naudele
+	culture = lettigallish
+}
+
+2862 = {
+	name = Saulurz
+	culture = sindhi
+}
+
+2863 = {
+	name = Bani
+	culture = sinhala
+}
+
+2864 = {
+	name = Rotevat
+	culture = welsh
+}
+
+2865 = {
+	name = Tosutka
+	culture = norman
+}
+
+2866 = {
+	name = Ajelarid
+	culture = pommeranian
+}
+
+2867 = {
+	name = Toheslu
+	culture = sumpa
+}
+
+2868 = {
+	name = Walukh
+	culture = sardinian
+}
+
+2869 = {
+	name = Tecict
+	culture = sephardi
+}
+
+2870 = {
+	name = Salalid
+	culture = nepali
+}
+
+2871 = {
+	name = Nielarl
+	culture = komi
+}
+
+2872 = {
+	name = Taserav
+	culture = uyghur
+}
+
+2873 = {
+	name = Kaneuba
+	culture = maghreb_arabic
+}
+
+2874 = {
+	name = Qajoan
+	culture = ethiopian
+}
+
+2875 = {
+	name = Rasalka
+	culture = hungarian
+}
+
+2876 = {
+	name = Rararia
+	culture = carantanian
+}
+
+2877 = {
+	name = Ryasukee
+	culture = greek
+}
+
+2878 = {
+	name = Daninda
+	culture = zhangzhung
+}
+
+2879 = {
+	name = Lomija
+	culture = prussian
+}
+
+2880 = {
+	name = Byiloan
+	culture = pommeranian
+}
+
+2881 = {
+	name = Kanadza
+	culture = italian
+}
+
+2882 = {
+	name = Agiukl
+	culture = kannada
+}
+
+2883 = {
+	name = Lolarda
+	culture = pecheneg
+}
+
+2884 = {
+	name = Tirani
+	culture = italian
+}
+
+2885 = {
+	name = Waimur
+	culture = mongol
+}
+
+2886 = {
+	name = Takonza
+	culture = frankish
+}
+
+2887 = {
+	name = Taihrio
+	culture = baloch
+}
+
+2888 = {
+	name = Wohesh
+	culture = bosnian
+}
+
+2889 = {
+	name = Surayn
+	culture = khanty
+}
+
+2890 = {
+	name = Takaod
+	culture = khitan
+}
+
+2891 = {
+	name = Bakondo
+	culture = pecheneg
+}
+
+2892 = {
+	name = Dimudev
+	culture = sogdian
+}
+
+2893 = {
+	name = Lannodio
+	culture = suebi
+}
+
+2894 = {
+	name = Tuganoz
+	culture = bosnian
+}
+
+2895 = {
+	name = Ladanoz
+	culture = ugricbaltic
+}
+
+2896 = {
+	name = Qaparl
+	culture = irish
+}
+
+2897 = {
+	name = Lotyut
+	culture = telugu
+}
+
+2898 = {
+	name = Qemuraj
+	culture = nubian
+}
+
+2899 = {
+	name = Aganinda
+	culture = turkish
+}
+
+2900 = {
+	name = Naliulf
+	culture = frankish
+}
+
+2901 = {
+	name = Liciulf
+	culture = komi
+}
+
+2902 = {
+	name = Kilarak
+	culture = frisian
+}
+
+2903 = {
+	name = Qaudutka
+	culture = dalmatian
+}
+
+2904 = {
+	name = Quraila
+	culture = pommeranian
+}
+
+2905 = {
+	name = Linop
+	culture = kannada
+}
+
+2906 = {
+	name = Ruburi
+	culture = polish
+}
+
+2907 = {
+	name = Dalatta
+	culture = coptic
+}
+
+2908 = {
+	name = Ajohalk
+	culture = croatian
+}
+
+2909 = {
+	name = Nalinop
+	culture = greek
+}
+
+2910 = {
+	name = Salotha
+	culture = bulgarian
+}
+
+2911 = {
+	name = Samukh
+	culture = irish
+}
+
+2912 = {
+	name = Sekel
+	culture = kurdish
+}
+
+2913 = {
+	name = Wirayn
+	culture = tocharian
+}
+
+2914 = {
+	name = Rinidia
+	culture = old_frankish
+}
+
+2915 = {
+	name = Dukinda
+	culture = hindustani
+}
+
+2916 = {
+	name = Ranastu
+	culture = bodpa
+}
+
+2917 = {
+	name = Rekel
+	culture = cuman
+}
+
+2918 = {
+	name = Ranoz
+	culture = lithuanian
+}
+
+2919 = {
+	name = Tohezu
+	culture = sindhi
+}
+
+2920 = {
+	name = Wanda
+	culture = bolghar
+}
+
+2921 = {
+	name = Tigoutai
+	culture = polish
+}
+
+2922 = {
+	name = Kotyut
+	culture = pommeranian
+}
+
+2923 = {
+	name = Kamatta
+	culture = basque
+}
+
+2924 = {
+	name = Nilava
+	culture = hindustani
+}
+
+2925 = {
+	name = Nirsu
+	culture = han
+}
+
+2926 = {
+	name = Amubeuba
+	culture = sogdian
+}
+
+2927 = {
+	name = Rapeuba
+	culture = meshchera
+}
+
+2928 = {
+	name = Alilen
+	culture = saka
+}
+
+2929 = {
+	name = Tiryut
+	culture = carantanian
+}
+
+2930 = {
+	name = Demalid
+	culture = old_saxon
+}
+
+2931 = {
+	name = Sanarl
+	culture = baloch
+}
+
+2932 = {
+	name = Lalilen
+	culture = somali
+}
+
+2933 = {
+	name = Ehéalid
+	culture = levantine_arabic
+}
+
+2934 = {
+	name = Baburi
+	culture = portuguese
+}
+
+2935 = {
+	name = Berva
+	culture = tocharian
+}
+
+2936 = {
+	name = Qiceslu
+	culture = serbian
+}
+
+2937 = {
+	name = Dacaysan
+	culture = manden
+}
+
+2938 = {
+	name = Wacaria
+	culture = ugricbaltic
+}
+
+2939 = {
+	name = Etiralim
+	culture = hindustani
+}
+
+2940 = {
+	name = Danoz
+	culture = afghan
+}
+
+2941 = {
+	name = Ragarda
+	culture = pommeranian
+}
+
+2942 = {
+	name = Ruyarda
+	culture = romanian
+}
+
+2943 = {
+	name = Nolalk
+	culture = alan
+}
+
+2944 = {
+	name = Ematiad
+	culture = rajput
+}
+
+2945 = {
+	name = Birani
+	culture = avar
+}
+
+2946 = {
+	name = Balalid
+	culture = romanian
+}
+
+2947 = {
+	name = Relarha
+	culture = castillan
+}
+
+2948 = {
+	name = Barda
+	culture = tamil
+}
+
+2949 = {
+	name = Nirayn
+	culture = armenian
+}
+
+2950 = {
+	name = Ahanayn
+	culture = basque
+}
+
+2951 = {
+	name = Resele
+	culture = manden
+}
+
+2952 = {
+	name = Telolun
+	culture = prussian
+}
+
+2953 = {
+	name = Riliad
+	culture = andalusian_arabic
+}
+
+2954 = {
+	name = Subamaj
+	culture = severian
+}
+
+2955 = {
+	name = Tusarl
+	culture = georgian
+}
+
+2956 = {
+	name = Laimur
+	culture = oriya
+}
+
+2957 = {
+	name = Amielam
+	culture = baloch
+}
+
+2958 = {
+	name = Elukh
+	culture = pommeranian
+}
+
+2959 = {
+	name = Rurara
+	culture = scottish
+}
+
+2960 = {
+	name = Akirutka
+	culture = outremer
+}
+
+2961 = {
+	name = Beraria
+	culture = kannada
+}
+
+2962 = {
+	name = Athirba
+	culture = khazar
+}
+
+2963 = {
+	name = Seena
+	culture = norse
+}
+
+2964 = {
+	name = Wanadar
+	culture = afghan
+}
+
+2965 = {
+	name = Reuluju
+	culture = bengali
+}
+
+2966 = {
+	name = Nern
+	culture = sephardi
+}
+
+2967 = {
+	name = Burayn
+	culture = han
+}
+
+2968 = {
+	name = Kukude
+	culture = serbian
+}
+
+2969 = {
+	name = Nanniulf
+	culture = crimean_gothic
+}
+
+2970 = {
+	name = Danadza
+	culture = manden
+}
+
+2971 = {
+	name = Relala
+	culture = prussian
+}
+
+2972 = {
+	name = Raudint
+	culture = kanuri
+}
+
+2973 = {
+	name = Wiciad
+	culture = meshchera
+}
+
+2974 = {
+	name = Qiukl
+	culture = sinhala
+}
+
+2975 = {
+	name = Dalotha
+	culture = lombard
+}
+
+2976 = {
+	name = Bilanoz
+	culture = norse
+}
+
+2977 = {
+	name = Qaninda
+	culture = kannada
+}
+
+2978 = {
+	name = Emasara
+	culture = afghan
+}
+
+2979 = {
+	name = Aruslo
+	culture = sinhala
+}
+
+2980 = {
+	name = Eruslo
+	culture = crimean_gothic
+}
+
+2981 = {
+	name = Telarid
+	culture = frisian
+}
+
+2982 = {
+	name = Laninda
+	culture = norse
+}
+
+2983 = {
+	name = Dolas
+	culture = dalmatian
+}
+
+2984 = {
+	name = Lielay
+	culture = nahuatl
+}
+
+2985 = {
+	name = Karia
+	culture = lombard
+}
+
+2986 = {
+	name = Eraria
+	culture = sogdian
+}
+
+2987 = {
+	name = Emielarl
+	culture = coptic
+}
+
+2988 = {
+	name = Belayan
+	culture = visigothic
+}
+
+2989 = {
+	name = Qanneuba
+	culture = georgian
+}
+
+2990 = {
+	name = Salææ
+	culture = kanuri
+}
+
+2991 = {
+	name = Dosern
+	culture = mongol
+}
+
+2992 = {
+	name = Lemoksa
+	culture = pecheneg
+}
+
+2993 = {
+	name = Rosyut
+	culture = bohemian
+}
+
+2994 = {
+	name = Wosyut
+	culture = romanian
+}
+
+2995 = {
+	name = Taudayn
+	culture = saka
+}
+
+2996 = {
+	name = Ebisara
+	culture = pommeranian
+}
+
+2997 = {
+	name = Kohilen
+	culture = tocharian
+}
+
+2998 = {
+	name = Timadza
+	culture = sumpa
+}
+
+2999 = {
+	name = Belegen
+	culture = egyptian_arabic
+}
+

@@ -1,0 +1,5 @@
+	title = c_kiroda
+	max_settlements = 2
+	culture = finnish
+	religion = tengri_pagan_reformed
+	b_kani = tribal

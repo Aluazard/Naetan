@@ -1,0 +1,5 @@
+	title = c_ranay
+	max_settlements = 7
+	culture = nahuatl
+	religion = monothelite
+	b_rubarl = tribal

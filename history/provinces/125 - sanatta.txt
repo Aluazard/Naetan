@@ -1,0 +1,5 @@
+	title = c_sanatta
+	max_settlements = 6
+	culture = greek
+	religion = west_african_pagan_reformed
+	b_taninda = tribal

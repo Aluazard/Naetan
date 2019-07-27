@@ -1,0 +1,5 @@
+	title = c_esuu
+	max_settlements = 7
+	culture = lithuanian
+	religion = hurufi
+	b_tomubu = tribal

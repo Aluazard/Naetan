@@ -1,0 +1,5 @@
+	title = c_neulalim
+	max_settlements = 6
+	culture = norman
+	religion = khurmazta
+	b_nimur = tribal

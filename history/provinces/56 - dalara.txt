@@ -1,0 +1,5 @@
+	title = c_dalara
+	max_settlements = 7
+	culture = slovieni
+	religion = manichean
+	b_naluri = tribal
