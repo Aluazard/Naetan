@@ -1,0 +1,135 @@
+namespace = genetics
+
+# .01 global flag for those seeking to have their mod check to see if sast is present or not
+character_event = {
+    id = genetics.01
+    is_triggered_only = yes
+    hide_window = yes
+    trigger = { NOT = { has_global_flag = genetics_is_present }} # We check to ensure that the global flag isn't already there
+    immediate = { set_global_flag = genetics_is_present } # We go ahead and set the global flag
+}
+
+# .10 males get their penis size at start-up (hidden event)
+character_event = {
+	id = genetics.10
+	is_triggered_only = yes # triggered via on_action
+	hide_window = yes # hidden from the player
+	trigger = {
+		NOT = { has_character_flag = genitals_assigned_male } # If we already checked their junk, we don't need to again.
+		is_adult = yes # only adults get them, in order to not impact the trait count during educational development
+		has_cock = yes # Should be for men and futas only
+	}
+	immediate = {
+		if = {
+			limit = {
+				NOR = {
+					trait = gigantic_dick
+					trait = enormous_dick
+					trait = huge_dick
+					trait = big_dick
+					trait = regular_dick
+					trait = small_dick
+					trait = tiny_dick
+				}
+			}
+			add_cock = yes
+			set_character_flag = genitals_assigned_male
+		}
+	}
+}
+# .15 Those with cocks get their trait upon adulthood
+character_event = {
+	id = genetics.15
+	is_triggered_only = yes # triggered via on_action
+	hide_window = yes # hidden from the player
+	trigger = {
+		NOT = { has_character_flag = genitals_assigned_male } #If we already checked their junk, we don't need to again.
+		has_cock = yes # Should limit it to men and futas
+	}
+	immediate = {
+		if = {
+			limit = {
+				NOR = {
+					trait = gigantic_dick
+					trait = enormous_dick
+					trait = huge_dick
+					trait = big_dick
+					trait = regular_dick
+					trait = small_dick
+					trait = tiny_dick
+				}
+			}
+			add_cock = yes
+			set_character_flag = genitals_assigned_male
+		}
+	}
+}
+
+# .20 Women get their breast size (hidden event)
+character_event = {
+	id = genetics.20
+	is_triggered_only = yes # triggered via on_action
+	hide_window = yes # hidden from the player
+	trigger = {
+		NOT = {	has_character_flag = dw_boobs_checked } #If we already checked their breasts, we don't need to again.
+		OR = {
+			is_female = yes
+			AND = {
+				is_female = no
+				trait = feminine
+			}
+		}
+		is_adult = yes # only adults get them, in order to not impact the trait count during educational development
+	}
+	immediate = {
+		if = {
+			limit = {
+				NOR = {
+					trait = gigantic_tits
+					trait = enormous_tits
+					trait = huge_tits
+					trait = big_tits
+					trait = regular_tits
+					trait = small_tits
+					trait = tiny_tits
+				}
+			}
+			add_tits = yes
+			set_character_flag = dw_boobs_checked
+		}
+	}
+}
+# .25 females get their breast size defined upon adulthood (hidden event)
+character_event = {
+	id = genetics.25
+	is_triggered_only = yes # triggered via on_action
+	hide_window = yes # hidden from the player
+	trigger = {
+		NOT = { has_character_flag = dw_boobs_checked } #If we already checked their breasts, we don't need to again.
+		OR = {
+			is_female = yes
+			AND = {
+				is_female = no
+				trait = feminine
+			}
+		}
+	}
+	immediate = {
+		# We check to ensure there is a variable to use, and if so, we assign a tit trait
+		if = {
+			limit = {
+				NOR = {
+					trait = gigantic_tits
+					trait = enormous_tits
+					trait = huge_tits
+					trait = big_tits
+					trait = regular_tits
+					trait = small_tits
+					trait = tiny_tits
+				}
+			}
+			add_tits = yes
+			set_character_flag = dw_boobs_checked
+		}
+	}
+}

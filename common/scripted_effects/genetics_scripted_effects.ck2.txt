@@ -1,0 +1,225 @@
+add_tits = {
+	random_list = {
+		8 = {
+			trigger = { NOT = { trait = feminine }}
+			modifier = {
+				factor = 5
+				mother_even_if_dead = {	trait = gigantic_tits }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = {	trait = enormous_tits }
+			}
+			add_trait = gigantic_tits
+		}
+		10 = {
+            trigger = { NOT = { trait = feminine }}
+			modifier = {
+				factor = 5
+				mother_even_if_dead = { trait = enormous_tits }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = {
+                    OR = {
+                        trait = gigantic_tits
+                        trait = huge_tits
+                    }
+                }
+			}
+			add_trait = enormous_tits
+		}
+		11 = {
+            trigger = { NOT = { trait = feminine }}
+			modifier = {
+				factor = 5
+				mother_even_if_dead = { trait = huge_tits }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = {
+                    OR = {
+                        trait = enormous_tits
+                        trait = big_tits
+                    }
+                }
+			}
+			add_trait = huge_tits
+		}
+		12 = {
+            trigger = { NOT = { trait = feminine }}
+			modifier = {
+				factor = 5
+				mother_even_if_dead = { trait = big_tits }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = {
+                    OR = {
+                        trait = huge_tits
+                        trait = regular_tits
+                    }
+                }
+			}
+			add_trait = big_tits
+		}
+		15 = {
+            trigger = { NOT = { trait = feminine }}
+			modifier = {
+				factor = 5
+				mother_even_if_dead = { trait = regular_tits }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = {
+                    OR = {
+                        trait = big_tits
+                        trait = small_tits
+                    }
+                }
+			}
+			add_trait = regular_tits
+		}
+		12 = {
+            modifier = {
+				factor = 5
+				mother_even_if_dead = { trait = small_tits }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = {
+                    OR = {
+                        trait = regular_tits
+                        trait = tiny_tits
+                    }
+                }
+			}
+			add_trait = small_tits
+		}
+		8 = {
+            modifier = {
+				factor = 5
+                OR = {
+                    mother_even_if_dead = { trait = tiny_tits }
+                    trait = feminine
+                }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = { trait = small_tits }
+			}
+			add_trait = tiny_tits
+		}
+	}
+	set_character_flag = dw_boobs_checked # flag set to help prevent follow-up size executions
+
+}
+add_cock = {
+	random_list = {
+		5 = {
+			modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = gigantic_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = { trait = enormous_dick }
+			}
+			add_trait = gigantic_dick
+		}
+		8 = {
+			modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = enormous_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = {
+                    OR = {
+                        trait = gigantic_dick
+    					trait = huge_dick
+                    }
+				}
+			}
+			add_trait = enormous_dick
+		}
+		10 = {
+            modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = huge_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = {
+                    OR = {
+                        trait = enormous_dick
+    					trait = big_dick
+                    }
+				}
+			}
+			add_trait = huge_dick
+		}
+		12 = {
+            modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = big_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = {
+                    OR = {
+                        trait = huge_dick
+    					trait = regular_dick
+                    }
+				}
+			}
+			add_trait = big_dick
+		}
+		15 = {
+            modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = regular_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = {
+                    OR = {
+                        trait = big_dick
+    					trait = small_dick
+                    }
+				}
+			}
+			add_trait = regular_dick
+		}
+		12 = {
+            trigger = { NOT = { trait = futa }}
+            modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = small_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = {
+                    OR = {
+                        trait = regular_dick
+    					trait = tiny_dick
+                    }
+				}
+			}
+			add_trait = small_dick
+		}
+		8 = {
+            trigger = { NOT = { trait = futa }}
+            modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = tiny_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = { trait = small_dick }
+			}
+			add_trait = tiny_dick
+		}
+	}
+	set_character_flag = genitals_assigned_male
+}
