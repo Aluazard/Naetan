@@ -1,0 +1,21 @@
+decisions = {
+	purity_of_blood= {
+	  is_high_prio = yes 
+	  potential = {
+		trait = inbred
+	  }
+	  
+	  effect = {
+		prestige = 200
+		remove_trait = inbred
+		add_trait = pureblood
+		
+	  }
+	  revoke_allowed = {
+		always = no #Not used in vanilla
+	  }
+	  ai_will_do = {
+		factor = 1 #Factors for an AI character to take the decision (1 = 100% chance)
+	  }
+	}
+}
