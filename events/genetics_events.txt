@@ -2,7 +2,7 @@ namespace = genetics
 
 # .01 global flag for those seeking to have their mod check to see if sast is present or not
 character_event = {
-    id = genetics.01
+	id = genetics.01
     is_triggered_only = yes
     hide_window = yes
     trigger = { NOT = { has_global_flag = genetics_is_present }} # We check to ensure that the global flag isn't already there
