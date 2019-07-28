@@ -1,26 +1,12 @@
-bm_charlemagne768 = { 
-	                    name = "BM_CHARLEMAGNE768"
+naetan_start = { 
+	                    name = "Beginning Of an Age"
 
-                        desc = "BM_BM_CHARLEMAGNE_DESC768"
+                        desc = "The time is nigh, with growing tension between the races and dark foul creatures on the rise it is time for a cleansing. This world has become corrupted with sin and perversion, we must root out all those who would seek to corrupt the ways of our land. To the pyres my fellow men, kill them all. --Garad Andolf, Butcher of Aavikas"
 
-                        date = 768.9.15
-
-
-                                    era = yes						## Will be shown on Era screen.
-	                                picture = GFX_pick_era_image_1
-
-                                }
-                    
-bm_charlemagne1066 = { 
-	                    name = "BM_CHARLEMAGNE1066"
-
-                        desc = "BM_BM_CHARLEMAGNE_DESC1066"
-
-                        date = 1066.9.15
+                        date = 14327.1.1
 
 
                                     era = yes						## Will be shown on Era screen.
 	                                picture = GFX_pick_era_image_1
 
                                 }
-                    
