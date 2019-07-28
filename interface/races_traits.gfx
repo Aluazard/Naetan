@@ -1,0 +1,45 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_aossi"
+		texturefile = "gfx/traits/races/aos_si.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+		name = "GFX_trait_aossi_1"
+		texturefile = "gfx/traits/races/aos_si.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+		name = "GFX_trait_aossi_2"
+		texturefile = "gfx/traits/races/aos_si.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+		name = "GFX_trait_aossi_3"
+		texturefile = "gfx/traits/races/aos_si.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+		name = "GFX_trait_aossi_4"
+		texturefile = "gfx/traits/races/aos_si.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+		name = "GFX_trait_aossi_5"
+		texturefile = "gfx/traits/races/aos_si.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

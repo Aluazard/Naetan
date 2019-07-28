@@ -1,0 +1,110 @@
+### Aos Si Race Traits
+aossi = {	
+	learning = 2
+	martial = -1
+	fertility = -0.5
+
+	ai_rationality = 10
+	ai_honor = -5
+	
+	immortal = yes
+	
+	customizer = no
+	
+	is_visible = { 
+		NOT = { has_character_flag = racial_traits_off }
+	}
+}
+
+aossi_1 = {
+	learning = 2
+	martial = -1
+	
+	health = 1
+	fertility = -0.5
+
+	ai_rationality = 10
+	ai_honor = -5
+	
+	customizer = no
+	
+	is_visible = { 
+		NOT = { has_character_flag = racial_traits_off }
+	}
+}
+
+aossi_2 = {
+	learning = 2
+	martial = -1
+	
+	health = 2
+    fertility = -0.1
+    
+    immortal = yes
+
+	ai_rationality = 10
+	ai_honor = -5
+	
+	customizer = no
+	
+	is_visible = { 
+		NOT = { has_character_flag = racial_traits_off }
+	}
+}
+
+aossi_3 = {
+	learning = 2
+	martial = -1
+	
+	health = 0
+    fertility = -0.5
+    
+    immortal = yes
+
+	ai_rationality = 10
+	ai_honor = -5
+	
+	customizer = no
+	
+	is_visible = { 
+		NOT = { has_character_flag = racial_traits_off }
+	}
+}
+
+aossi_4 = {
+	learning = 2
+	martial = -1
+	
+	health = -1
+    fertility = -1
+    
+    immortal = yes
+
+	ai_rationality = 10
+	ai_honor = -5
+	
+	customizer = no
+	
+	is_visible = { 
+		NOT = { has_character_flag = racial_traits_off }
+	}
+}
+
+aossi_5 = {
+	learning = 2
+	martial = -1
+	
+	health = -2
+    fertility = -2
+    
+    immortal = yes
+
+	ai_rationality = 10
+	ai_honor = -5
+	
+	customizer = no
+	
+	is_visible = { 
+		NOT = { has_character_flag = racial_traits_off }
+	}
+}

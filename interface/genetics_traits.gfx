@@ -2,133 +2,133 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_trait_pureblood"
-		texturefile = "gfx/traits/inbred.tga"
+		texturefile = "gfx/traits/genetics/inbred.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_futa"
-		texturefile = "gfx/traits/futa.tga"
+		texturefile = "gfx/traits/genetics/futa.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 			name = "GFX_trait_feminine"
-			texturefile = "gfx/traits/feminine.tga"
+			texturefile = "gfx/traits/genetics/feminine.tga"
 			noOfFrames = 1
 			norefcount = yes
 			effectFile = "gfx/FX/buttonstate.lua"
 		}
 	spriteType = {
 			name = "GFX_trait_masculine"
-			texturefile = "gfx/traits/masculine.tga"
+			texturefile = "gfx/traits/genetics/masculine.tga"
 			noOfFrames = 1
 			norefcount = yes
 			effectFile = "gfx/FX/buttonstate.lua"
 		}
 	spriteType = {
 			name = "GFX_trait_tiny_tits"
-			texturefile = "gfx/traits/tiny_tits.tga"
+			texturefile = "gfx/traits/genetics/tiny_tits.tga"
 			noOfFrames = 1
 			norefcount = yes
 			effectFile = "gfx/FX/buttonstate.lua"
 		}
 	spriteType = {
 			name = "GFX_trait_small_tits"
-			texturefile = "gfx/traits/small_tits.tga"
+			texturefile = "gfx/traits/genetics/small_tits.tga"
 			noOfFrames = 1
 			norefcount = yes
 			effectFile = "gfx/FX/buttonstate.lua"
 		}
 	spriteType = {
 			name = "GFX_trait_regular_tits"
-			texturefile = "gfx/traits/regular_tits.tga"
+			texturefile = "gfx/traits/genetics/regular_tits.tga"
 			noOfFrames = 1
 			norefcount = yes
 			effectFile = "gfx/FX/buttonstate.lua"
 		}
 	spriteType = {
 			name = "GFX_trait_big_tits"
-			texturefile = "gfx/traits/big_tits.tga"
+			texturefile = "gfx/traits/genetics/big_tits.tga"
 			noOfFrames = 1
 			norefcount = yes
 			effectFile = "gfx/FX/buttonstate.lua"
 		}
 	spriteType = {
 			name = "GFX_trait_huge_tits"
-			texturefile = "gfx/traits/huge_tits.tga"
+			texturefile = "gfx/traits/genetics/huge_tits.tga"
 			noOfFrames = 1
 			norefcount = yes
 			effectFile = "gfx/FX/buttonstate.lua"
 		}
 	spriteType = {
 			name = "GFX_trait_enormous_tits"
-			texturefile = "gfx/traits/enormous_tits.tga"
+			texturefile = "gfx/traits/genetics/enormous_tits.tga"
 			noOfFrames = 1
 			norefcount = yes
 			effectFile = "gfx/FX/buttonstate.lua"
 		}
 	spriteType = {
 			name = "GFX_trait_gigantic_tits"
-			texturefile = "gfx/traits/gigantic_tits.tga"
+			texturefile = "gfx/traits/genetics/gigantic_tits.tga"
 			noOfFrames = 1
 			norefcount = yes
 			effectFile = "gfx/FX/buttonstate.lua"
 		}
 	spriteType = {
 		name = "GFX_trait_tiny_dick"
-		texturefile = "gfx/traits/dick_tiny.tga"
+		texturefile = "gfx/traits/genetics/dick_tiny.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_small_dick"
-		texturefile = "gfx/traits/dick_small.tga"
+		texturefile = "gfx/traits/genetics/dick_small.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_regular_dick"
-		texturefile = "gfx/traits/dick_average.tga"
+		texturefile = "gfx/traits/genetics/dick_average.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_big_dick"
-		texturefile = "gfx/traits/dick_large.tga"
+		texturefile = "gfx/traits/genetics/dick_large.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_huge_dick"
-		texturefile = "gfx/traits/dick_huge.tga"
+		texturefile = "gfx/traits/genetics/dick_huge.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_enormous_dick"
-		texturefile = "gfx/traits/dick_horse.tga"
+		texturefile = "gfx/traits/genetics/dick_horse.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_gigantic_dick"
-		texturefile = "gfx/traits/dick_gigantic.tga"
+		texturefile = "gfx/traits/genetics/dick_gigantic.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 		spriteType = {
 		name = "GFX_trait_bombshell"
-		texturefile = "gfx/traits/bombshell.tga"
+		texturefile = "gfx/traits/genetics/bombshell.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
