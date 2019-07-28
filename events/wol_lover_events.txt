@@ -1,0 +1,819 @@
+#########################################################
+#
+# Way of Life - New Lover Events
+#
+# Written by Henrik Fåhraeus
+# Edited by Free Love to remove negative consequences and scandals
+#
+# ID Range: WoL.1000 to WoL.1999
+#
+#########################################################
+
+namespace = WoL
+
+##########################################
+# SPOUSE SUSPECTS REAL LOVE AFFAIR
+##########################################
+
+# Edited by [FL] to never happen
+character_event = {
+	id = WoL.1000
+	hide_window = yes
+    is_triggered_only = yes
+	
+	trigger = {
+		always = no
+	}
+	
+	immediate = {
+	}
+}
+
+##########################################
+# LOVERS FALLING OUT OF LOVE
+##########################################
+
+character_event = {
+	id = WoL.1100
+	hide_window = yes
+	
+	capable_only = yes
+	min_age = 16
+	
+	trigger = {
+		has_dlc = "Way of Life"
+		has_lover = yes
+		any_lover = {
+			NOT = {
+				reverse_opinion = { who = ROOT value = 25 }
+			}
+			NOT = { has_character_flag = gbc_courtly_lover }
+		}
+		NOT = { has_character_flag = gbc_courtly_lover }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.2
+			trait = cruel
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 0.75
+			trait = wroth
+		}
+		modifier = {
+			factor = 2.0
+			trait = patient
+		}
+		modifier = {
+			factor = 3.0
+			trait = kind
+		}
+		modifier = {
+			factor = 3.0
+			has_focus = focus_seduction
+		}
+	}
+	
+	immediate = {
+		random_lover = {
+			limit = {
+				NOT = {
+					reverse_opinion = { who = ROOT value = 25 }
+				}
+			}
+			character_event = { id = WoL.1101 }
+		}
+	}
+}
+
+# Ping the lover
+character_event = {
+	id = WoL.1101
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = { character_event = { id = WoL.1102 } }
+	}
+}
+
+character_event = {
+	id = WoL.1102
+	desc = EVTDESC_WOL_1102
+	
+	picture = GFX_evt_quarrel
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_WOL_1102 # Such is life
+		trigger = { NOT = { any_spouse = { character = FROM } } }
+		
+		ai_chance = {
+			factor = 100
+		}
+			
+		FROM = { character_event = { id = WoL.1103 days = 3 tooltip = EVTTOOLTIP64046 } }
+		clr_character_flag = lost_loving_feeling # Set in chief Qadi event chain (105035). Zina.
+	}
+	
+	option = {
+		name = EVTOPTB_WOL_1102 # Such is life. Married.
+		trigger = { any_spouse = { character = FROM } }
+		
+		ai_chance = {
+			factor = 100
+		}
+			
+		FROM = { character_event = { id = WoL.1103 days = 3 tooltip = EVTTOOLTIP64046 } }
+		clr_character_flag = lost_loving_feeling # Set in chief Qadi event chain (105035). Zina.
+	}
+	
+	option = {
+		name = EVTOPTC_WOL_1102 # Rekindle our love!
+		trigger = {
+			OR = {
+				has_focus = focus_seduction
+				trait = seducer
+				trait = seductress
+				has_character_modifier = wol_seducer_2
+			}
+			NOT = {
+				has_opinion_modifier = {
+					who = FROM
+					modifier = opinion_rekindle_love
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_rekindle_love
+			months = 24
+		}
+	}
+}
+
+#Lover is notified
+character_event = {
+	id = WoL.1103
+	desc = EVTDESC_WOL_1103
+	
+	picture = GFX_evt_bad_news
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA64046
+		trigger = { NOT = { any_spouse = { character = FROM } } }
+		ai_chance = {
+			factor = 100
+		}
+		remove_lover = FROM
+		clr_character_flag = lost_loving_feeling # Set in chief Qadi event chain (105035). Zina.
+	}
+	
+	option = {
+		name = EVTOPTB_WOL_1102
+		trigger = { any_spouse = { character = FROM } }
+		ai_chance = {
+			factor = 100
+		}
+		remove_lover = FROM
+		clr_character_flag = lost_loving_feeling # Set in chief Qadi event chain (105035). Zina.
+	}
+	
+	option = {
+		name = EVTOPTC_WOL_1103 # Re-seduction!
+		trigger = {
+			OR = {
+				has_focus = focus_seduction
+				trait = seducer
+				trait = seductress
+				has_character_modifier = wol_seducer_1
+				has_character_modifier = wol_seducer_2
+			}
+		}
+		ai_chance = {
+			factor = 1000
+		}
+		FROM = { character_event = { id = WoL.1104 days = 1 tooltip = EVTTOOLTIP_WoL_1104 } }
+	}
+}
+
+# Lover attempts re-seduction
+character_event = {
+	id = WoL.1104
+	desc = EVTDESC_WOL_1104
+	
+	picture = GFX_evt_lovers
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_WOL_1104 # Oh yes!
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2.0
+				FROM = { has_character_modifier = wol_seducer_1 }
+			}
+			modifier = {
+				factor = 4.0
+				FROM = { has_character_modifier = wol_seducer_2 }
+			}
+			modifier = {
+				factor = 5.0
+				FROM = {
+					OR = {
+						trait = seducer
+						trait = seductress
+					}
+				}
+			}
+			modifier = {
+				factor = 5.0
+				trait = hedonist
+			}
+			modifier = {
+				factor = 5.0
+				trait = lustful
+			}
+		}
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_rekindle_love
+			months = 36
+		}
+		
+		FROM = { character_event = { id = WoL.1105 days = 3 tooltip = EVTTOOLTIP_WoL_1105 } }
+	}
+	
+	option = {
+		name = EVTOPTB_WOL_1104 # Nope
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2.0
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 3.0
+				trait = cruel
+			}
+			modifier = {
+				factor = 5.0
+				trait = chaste
+			}
+		}
+		
+		remove_lover = FROM
+		hidden_tooltip = {
+			FROM = { character_event = { id = WoL.1106 days = 3 } }
+		}
+	}
+}
+	
+# Lover succeeds with re-seduction
+character_event = {
+	id = WoL.1105
+	desc = EVTDESC_WOL_1105
+	
+	picture = GFX_evt_lovers
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_WOL_1105
+	}
+}
+
+# Lover fails with re-seduction
+character_event = {
+	id = WoL.1106
+	desc = EVTDESC_WOL_1106
+	
+	picture = GFX_evt_bad_news
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_WOL_1106
+	}
+}
+
+# Bounce for scope correction
+character_event = {
+	id = WoL.1109
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			character_event = { id = WoL.1103 }
+		}
+	}
+}
+
+
+##########################################
+# THE STRESS OF MULTIPLE LOVERS
+##########################################
+# Edited by [FL] to never happen, fuck this event
+character_event = {
+	id = WoL.1150
+	hide_window = yes
+    is_triggered_only = yes
+	
+	trigger = {
+		always = no
+	}
+	
+    immediate = {
+	}
+}
+
+##################################################
+# THE COMFORT OF A LOVER (WHEN MARRIAGE IS SOUR)
+##################################################
+
+# Starts with the lover
+character_event = {
+	id = WoL.1160
+	desc = EVTDESC_WOL_1160
+	
+	picture = GFX_evt_lovers
+	border = GFX_event_normal_frame_intrigue
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	has_dlc = "Way of Life"
+	
+	trigger = {
+		any_lover = {
+			is_married = yes
+			has_polygamy = no
+			in_command = no
+			has_regent = no
+			is_ill = no
+			prisoner = no
+			NOT = { trait = incapable }
+			spouse = {
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { character = ROOT }
+				NOT = { is_lover = PREV }
+				NOT = {
+					opinion = {
+						who = PREV
+						value = 0
+					}
+				}
+			}
+			reverse_opinion = {
+				who = ROOT
+				value = 25
+			}
+			NOT = {
+				reverse_has_opinion_modifier = {
+					who = ROOT
+					modifier = opinion_seduced_yearning
+				}
+			}
+		}
+		is_ill = no
+		in_command = no
+		has_regent = no
+	}
+	
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.5
+			trait = kind
+		}
+		modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+		modifier = {
+			factor = 2.0
+			trait = depressed
+		}
+		modifier = {
+			factor = 2.0
+			trait = stressed
+		}
+		modifier = {
+			factor = 3.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 3.0
+			trait = cruel
+		}
+	}
+	
+	immediate = {
+		random_lover = {
+			limit = {
+				is_married = yes
+				has_polygamy = no
+				in_command = no
+				has_regent = no
+				is_ill = no
+				prisoner = no
+				NOT = { trait = incapable }
+				spouse = {
+					prisoner = no
+					NOT = { trait = incapable }
+					NOT = { character = ROOT }
+					NOT = { is_lover = PREV }
+					NOT = {
+						opinion = {
+							who = PREV
+							value = 0
+						}
+					}
+				}
+				reverse_opinion = {
+					who = ROOT
+					value = 25
+				}
+				NOT = {
+					reverse_has_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_seduced_yearning
+					}
+				}
+			}
+			save_event_target_as = my_lover
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_WOL_1160 # Suggest time together
+		ai_chance = {
+			factor = 100
+		}
+		event_target:my_lover = {
+			character_event = { id = WoL.1161 days = 3 tooltip = EVTTOOLTIP_WoL_1161 }
+			hidden_tooltip = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_seduced_yearning
+					months = 36
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_WOL_1160 # Should not interfere
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# The married lover
+character_event = {
+	id = WoL.1161
+	desc = EVTDESC_WOL_1161
+	
+	picture = GFX_evt_lovers
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_WOL_1161 # Agree, country retreat
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				trait = slothful
+			}
+			modifier = {
+				factor = 2
+				trait = honest
+			}
+			modifier = {
+				factor = 5
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+		}
+		if = {
+			limit = { trait = stressed }
+			random = {
+				chance = 50
+				remove_trait = stressed
+				hidden_tooltip = {
+					character_event = { id = 38313 days = 1 } # Notify lost Stressed
+				}
+			}
+		}
+		if = {
+			limit = { trait = depressed }
+			random = {
+				chance = 25
+				remove_trait = depressed
+				hidden_tooltip = {
+					character_event = { id = 38314 days = 1 } # Notify lost Depressed
+				}
+			}
+		}
+		
+		add_character_modifier = {
+			modifier = comfort_of_lover
+			days = 365
+		}
+		
+		FROM = { character_event = { id = WoL.1163 days = 3 tooltip = EVTTOOLTIP_WoL_1163 } }
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					fertility = 0.33
+					FROM = { fertility = 0.33 }
+				}
+				if = {
+					limit = {
+						is_female = yes
+						NOT = { practical_age = 45 }
+						is_pregnant = no
+						FROM = { has_cock = yes }
+					}
+					random = {
+						chance = 25
+						impregnate = FROM
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+							is_female = yes
+							NOT = { practical_age = 45 }
+							is_pregnant = no
+						}
+						has_cock = yes
+					}
+					random = {
+						chance = 25
+						FROM = { impregnate = PREV }
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_WOL_1161 # Do it right here
+		
+		trigger = {
+			OR = {
+				trait = depressed
+				trait = stressed
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.25
+				is_female = yes
+			}
+			modifier = {
+				factor = 5
+				trait = cruel
+			}
+			modifier = {
+				factor = 5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+		}
+		if = {
+			limit = { trait = stressed }
+			remove_trait = stressed
+		}
+		if = {
+			limit = { trait = depressed }
+			random = {
+				chance = 50
+				remove_trait = depressed
+				hidden_tooltip = {
+					character_event = { id = 38314 days = 1 } # Notify lost Depressed
+				}
+			}
+		}
+		
+		add_character_modifier = {
+			modifier = thrill_of_lover
+			days = 365
+		}
+		
+		FROM = { character_event = { id = WoL.1162 days = 3 tooltip = EVTTOOLTIP_WoL_1162 } }
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					fertility = 0.33
+					FROM = { fertility = 0.33 }
+				}
+				if = {
+					limit = {
+						is_female = yes
+						NOT = { practical_age = 45 }
+						is_pregnant = no
+						FROM = { has_cock = yes }
+					}
+					random = {
+						chance = 25
+						impregnate = FROM
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+							is_female = yes
+							NOT = { practical_age = 45 }
+							is_pregnant = no
+						}
+						has_cock = yes
+					}
+					random = {
+						chance = 25
+						FROM = { impregnate = PREV }
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_WOL_1161 # I don't need comfort
+		trigger = { NOT = { trait = lunatic } }
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 5
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+		}
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_declined_romance
+			months = 24
+		}
+		
+		hidden_tooltip = {
+			FROM = { character_event = { id = WoL.1164 days = 3 } }
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_WOL_1161 # Lunatic text
+		trigger = { trait = lunatic }
+		tooltip_info = lunatic
+		ai_chance = {
+			factor = 1000
+		}
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_declined_romance
+			months = 24
+		}
+		
+		hidden_tooltip = {
+			FROM = { character_event = { id = WoL.1164 days = 3 } }
+		}
+	}
+}
+
+# Stayed in castle. Notify the lover.
+character_event = {
+	id = WoL.1162
+	desc = EVTDESC_WOL_1162
+	
+	picture = GFX_evt_lovers
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		#STDs and pregnancy
+		unprotected_sex_effect = yes
+	}
+	
+	option = {
+		name = EVTOPTA_WOL_1162 # Naughty...
+	}
+}
+
+# Countryside Romance. Notify the lover.
+character_event = {
+	id = WoL.1163
+	desc = EVTDESC_WOL_1163
+	
+	picture = GFX_evt_lovers
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		#STDs and pregnancy
+		unprotected_sex_effect = yes
+	}
+	
+	option = {
+		name = EVTOPTA_WOL_1163 # Lovely!
+	}
+}
+
+# Lover declines
+character_event = {
+	id = WoL.1164
+	desc = {
+		text = EVTDESC_WOL_1164
+		trigger = { FROM = { NOT = { trait = lunatic } } }
+	}
+	desc = {
+		text = EVTDESC_WOL_1164_MAD
+		trigger = { FROM = { trait = lunatic } }
+	}
+	
+	picture = GFX_evt_lovers
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = {
+			text = EVTOPTA_WOL_1164 # Awww
+			trigger = { FROM = { NOT = { trait = lunatic } } }
+		}
+		name = {
+			text = EVTOPTA_WOL_1164_MAD
+			trigger = {
+				FROM = { trait = lunatic }
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+			}
+		}
+		name = {
+			text = EVTOPTA_WOL_1164_MAD_MAD
+			trigger = {
+				FROM = { trait = lunatic }
+				OR = {
+					trait = lunatic
+					trait = possessed
+				}
+			}
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_declined_romance
+			months = 24
+		}
+	}
+}
