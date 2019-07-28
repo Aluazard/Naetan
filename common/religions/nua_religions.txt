@@ -70,6 +70,7 @@ eros_group = {
     }
 
     communion_whispers = {
+        parent = eros_triad
         graphical_culture = westerngfx
         interface_skin = { christian_interface }
         
@@ -99,15 +100,46 @@ eros_group = {
         men_can_take_consorts = yes
         women_can_take_consorts = yes
     }
+
+    paragons_cryta = {
+        parent = eros_triad
+        graphical_culture = westerngfx
+        interface_skin = { christian_interface }
+        
+        icon = 1
+        color = { 0.8 0.8 0.6 }
+            
+        scripture_name = PARAGONS_WORD
+        god_names = {
+             PARAGON
+        }
+        
+        can_excommunicate = yes
+        can_grant_divorce = yes
+        can_grant_invasion_cb = invasion
+        can_grant_claim = yes
+        can_call_crusade = yes
+        can_demand_religious_conversion = yes
+
+        piety_name = PARAGONS_PIETY
+
+        bs_marriage = yes
+        pc_marriage = yes
+        psc_marriage = yes
+        divine_blood = yes
+        max_consorts = 50
+        men_can_take_consorts = yes
+        women_can_take_consorts = yes
+    }
 }
 
-thalassa_grop = {
+thalassa_group = {
 	has_coa_on_barony_only =yes
 	graphical_culture = muslimgfx
 	
 }
 
-thanatos_grop = {
+thanatos_gruop = {
 	has_coa_on_barony_only =yes
 	graphical_culture = muslimgfx
 	
