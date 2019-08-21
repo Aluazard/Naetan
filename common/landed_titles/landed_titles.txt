@@ -1,13 +1,65 @@
-c_lisele = {
-	capital = 49
-	b_temarda = {
-		title = baron
-		title_female = baron
-	}
+d_ante_cryta = {
 	color = { 252 219 67 }
 	color2 = { 252 219 67 }
 	culture = crytan
 	religion = eros_triad
-	title = count
-	title_female = count
+	title = aearl
+	title_female = aearl
+	capital = 49
+
+	c_lisele = {
+		capital = 49
+		b_temarda = {
+			title = sherriff
+			title_female = sherriff
+		}
+		color = { 252 219 67 }
+		color2 = { 252 219 67 }
+		culture = crytan
+		religion = eros_triad
+		title = comte
+		title_female = comtess
+	}
+	
+	c_larda = {
+		capital = 50
+		b_talleon = {
+			title = sherriff
+			title_female = sherriff
+		}
+		color = { 252 200 67 }
+		color2 = { 252 200 67 }
+		culture = crytan
+		religion = eros_triad
+		title = comte
+		title_female = comtess
+	}
+	
+	c_dazay = {
+		capital = 181
+		b_aras = {
+			title = sherriff
+			title_female = sherriff
+		}
+		color = { 250 200 67 }
+		color2 = { 250 200 67 }
+		culture = crytan
+		religion = eros_triad
+		title = comte
+		title_female = comtess
+	}
+
+	c_roummur = {
+		capital = 182
+		b_kelfast = {
+			title = sherriff
+			title_female = sherriff
+		}
+		color = { 150 178 67 }
+		color2 = { 150 178 67 }
+		culture = crytan
+		religion = eros_triad
+		title = comte
+		title_female = comtess
+	}
 }

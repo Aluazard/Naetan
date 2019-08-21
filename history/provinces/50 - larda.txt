@@ -1,5 +1,5 @@
 	title = c_larda
 	max_settlements = 4
-	culture = somali
-	religion = iconoclast
-	b_koumyut = tribal
+	culture = crytan
+	religion = eros_triad
+	b_talleon = castle
