@@ -1,5 +1,6 @@
 	title = c_lisele
 	max_settlements = 3
-	culture = kanuri
-	religion = bon
-	b_temarda = tribal
+	culture = crytan
+	religion = eros_triad
+
+	b_temarda = castle

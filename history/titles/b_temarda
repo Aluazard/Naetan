@@ -1,5 +1,4 @@
 14325.1.1 = {
-	holder = 1
-	law = succ_ultimogeniture
 	law = agnatic_succession
+	liege = c_lisele
 }

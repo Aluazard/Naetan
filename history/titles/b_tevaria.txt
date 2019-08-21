@@ -1,4 +1,0 @@
-758.2.1 = {
-	liege = c_bevaria
-}
-
