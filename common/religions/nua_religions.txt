@@ -34,7 +34,7 @@ eros_group = {
         psc_marriage = yes
         divine_blood = yes
         max_consorts = 50
-        men_can_take_consorts = yes
+        max_wives = 50
         women_can_take_consorts = yes
     }
 
@@ -65,7 +65,7 @@ eros_group = {
         psc_marriage = yes
         divine_blood = yes
         max_consorts = 50
-        men_can_take_consorts = yes
+        max_wives = 50
         women_can_take_consorts = yes
     }
 
@@ -97,7 +97,7 @@ eros_group = {
         psc_marriage = yes
         divine_blood = yes
         max_consorts = 50
-        men_can_take_consorts = yes
+        max_wives = 50
         women_can_take_consorts = yes
     }
 
@@ -128,7 +128,7 @@ eros_group = {
         psc_marriage = yes
         divine_blood = yes
         max_consorts = 50
-        men_can_take_consorts = yes
+        max_wives = 50
         women_can_take_consorts = yes
     }
 }

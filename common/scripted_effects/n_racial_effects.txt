@@ -27,20 +27,20 @@ add_nua_age = {
 	remove_trait = nua_5
 	
 	if = {
-		limit = { age < 13 }
+		limit = { age < 18 }
 		add_trait = nua_1
 	}
 	if = {
 		limit = {
-			age >= 13
-			age < 21
+			age >= 18
+			age < 31
 		}
 		remove_trait = nua_1
 		add_trait = nua_2
 	}
 	if = {
 		limit = {
-			age >= 21
+			age >= 31
 			age < 41
 		}
 		remove_trait = nua_2
