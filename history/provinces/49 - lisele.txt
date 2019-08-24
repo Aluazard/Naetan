@@ -1,6 +1,9 @@
 	title = c_lisele
-	max_settlements = 3
+	max_settlements = 6
 	culture = crytan
 	religion = eros_triad
 
 	b_temarda = castle
+	b_saran = city
+	b_kalleas = city
+	b_avenham = temple

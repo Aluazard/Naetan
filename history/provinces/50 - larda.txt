@@ -2,4 +2,5 @@
 	max_settlements = 4
 	culture = crytan
 	religion = eros_triad
+
 	b_talleon = castle

@@ -21,6 +21,10 @@ d_ante_cryta = {
 			title = sherriff
 			title_female = sherriff
 		}
+		b_avenham = {
+			title = sherriff
+			title_female = sherriff
+		}
 		color = { 252 219 67 }
 		color2 = { 252 219 67 }
 		culture = crytan

@@ -1,0 +1,39 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_charframe_150_fiefdom"
+		texturefile = "gfx/interface/charframes/charframe_150_fiefdom.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_fiefdom"
+		texturefile = "gfx/interface/charframes/charframe_100_fiefdom.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_fiefdom"
+		texturefile = "gfx/interface/charframes/charframe_75_fiefdom.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_fiefdom"
+		texturefile = "gfx/interface/charframes/charframe_50_fiefdom.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_fiefdom"
+		texturefile = "gfx/interface/charframes/charframe_34_fiefdom.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	
+	### government icons
+	spriteType = {
+		name = "GFX_icon_fiefdom_government"
+		texturefile = "gfx/interface/governments/government_icon_fiefdom.dds"
+	}
+}
+
