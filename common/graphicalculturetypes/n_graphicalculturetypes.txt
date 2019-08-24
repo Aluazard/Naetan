@@ -1,0 +1,3 @@
+nuagfx = {
+	skin_tone = 0
+}

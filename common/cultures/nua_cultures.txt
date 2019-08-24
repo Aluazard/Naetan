@@ -1,11 +1,11 @@
 nua = {
     graphical_cultures = {
-        englishgfx
+        nuagfx
     }
 
     crytan = {
         graphical_cultures = {
-            englishgfx
+            nuagfx
         }
         
         color = { 0.8 0.2 0.2 }
@@ -31,7 +31,7 @@ nua = {
 
     kalleon = {
         graphical_cultures = {
-            englishgfx
+            nuagfx
         }
         
         color = { 0.8 0.2 0.2 }
@@ -57,7 +57,7 @@ nua = {
 
     belfast = {
         graphical_cultures = {
-            englishgfx
+            nuagfx
         }
         
         color = { 0.8 0.2 0.2 }
@@ -83,7 +83,7 @@ nua = {
 
     alanis = {
         graphical_cultures = {
-            englishgfx
+            nuagfx
         }
         
         color = { 0.8 0.2 0.2 }
@@ -109,7 +109,7 @@ nua = {
 
     tocharian = {
         graphical_cultures = {
-            englishgfx
+            nuagfx
         }
         
         color = { 0.8 0.2 0.2 }
@@ -135,7 +135,7 @@ nua = {
 
     nuan = {
         graphical_cultures = {
-            englishgfx
+            nuagfx
         }
         
         color = { 0.8 0.2 0.2 }

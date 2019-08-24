@@ -1,0 +1,19 @@
+on_yearly_pulse = { # Meant to catch anyone added over the course of the year by the game
+	events = {
+		aging_events.02 # Sets age
+	}
+}
+
+# character
+on_adulthood = {
+	events = {
+		aging_events.02 # Sets age
+	}
+}
+
+# character
+on_birth = {
+	events = {
+		aging_events.02 # Sets age
+	}
+}

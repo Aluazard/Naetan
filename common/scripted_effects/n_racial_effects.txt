@@ -1,0 +1,64 @@
+remove_racial_trait = {
+	remove_trait = nua
+	remove_trait = nua_1
+	remove_trait = nua_2
+	remove_trait = nua_3
+	remove_trait = nua_4
+	remove_trait = nua_5
+}
+
+add_racial_trait = {
+	if = {
+		limit = {
+			OR = {
+				graphical_culture = nuagfx
+			}
+		}
+		add_trait = nua
+	}
+}
+
+add_nua_age = {
+	remove_trait = nua
+	remove_trait = nua_1
+	remove_trait = nua_2
+	remove_trait = nua_3
+	remove_trait = nua_4
+	remove_trait = nua_5
+	
+	if = {
+		limit = { age < 13 }
+		add_trait = nua_1
+	}
+	if = {
+		limit = {
+			age >= 13
+			age < 21
+		}
+		remove_trait = nua_1
+		add_trait = nua_2
+	}
+	if = {
+		limit = {
+			age >= 21
+			age < 41
+		}
+		remove_trait = nua_2
+		add_trait = nua_3
+	}
+	if = {
+		limit = {
+			age >= 41
+			age < 51
+		}
+		remove_trait = nua_3
+		add_trait = nua_4
+	}
+	if = {
+		limit = {
+			age >= 51
+		}
+		remove_trait = nua_4
+		add_trait = nua_5
+	}
+}

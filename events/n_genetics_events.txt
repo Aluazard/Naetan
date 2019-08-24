@@ -1,5 +1,21 @@
 namespace = genetics
 
+# .02 add race traits to characters
+character_event = { #Sign & Racial Trait for RD characters
+	id = genetics.02
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { has_character_flag = has_racial_trait }
+	}
+	
+	immediate = {
+		add_racial_trait = yes
+		set_character_flag = has_racial_trait
+	}
+}
+
 # .01 global flag for those seeking to have their mod check to see if sast is present or not
 character_event = {
 	id = genetics.01

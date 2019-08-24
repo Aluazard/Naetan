@@ -1,0 +1,40 @@
+#Nua_1 = Young 12 - 20
+#Nua_2 = Adult 21 - 40
+#Nua_3 = Aging 41 - 50
+#Nua_4 = Old 51- 65
+#Nua_5 = Ancient 66 ->
+
+is_nua = {
+	graphical_culture = nuagfx
+}
+
+is_young_race = {
+	OR = {
+		trait = nua_1
+		trait = nua
+	}
+}
+
+is_adult_race = {
+	OR = {
+		trait = nua_2
+	}
+}
+
+is_aging_race = {
+	OR = {
+		trait = nua_3
+	}
+}
+
+is_old_race = {
+	OR = {
+		trait = nua_4
+	}
+}
+
+is_ancient_race = {
+	OR = {
+		trait = nua_5
+	}
+}

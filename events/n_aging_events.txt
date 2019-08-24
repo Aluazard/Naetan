@@ -1,0 +1,17 @@
+namespace = aging_events
+
+# .01 aging events for nua
+character_event = { 
+	id = aging_events.02
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				is_nua = yes
+			}
+			add_nua_age = yes
+		}
+	}
+}
