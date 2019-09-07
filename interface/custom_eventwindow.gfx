@@ -1,0 +1,13 @@
+spriteTypes = 
+{
+	##########
+	spriteType = {
+		name = "GFX_event_custom_area"
+		texturefile = "gfx\\interface\\event_bigger_area.tga"
+	}
+	spriteType = {
+		name = "GFX_event_custom_bg"
+		texturefile = "gfx\\interface\\event_bigger_bg.tga"
+		allwaystransparent = yes
+	}
+}
