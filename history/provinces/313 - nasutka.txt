@@ -1,5 +1,7 @@
 	title = c_nasutka
-	max_settlements = 2
-	culture = bedouin_arabic
-	religion = ibadi
-	b_ralka = tribal
+	max_settlements = 4
+	culture = crytan
+	religion = eros_triad
+
+	b_narsis = castle
+	b_anas = city

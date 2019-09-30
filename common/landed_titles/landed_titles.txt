@@ -74,4 +74,94 @@ d_ante_cryta = {
 		title = comte
 		title_female = comtess
 	}
+
+	c_butka = {
+		capital = 184
+		b_lasict = {
+			title = sherriff
+			title_female = sherriff
+		}
+		b_anarsis = {
+			title = sherriff
+			title_female = sherriff
+		}
+		color = { 150 120 40 }
+		color2 = { 150 120 40 }
+		culture = crytan
+		religion = eros_triad
+		title = comte
+		title_female = comtess
+	}
+
+	c_nasutka = {
+		capital = 313
+		b_narsis = {
+			title = sherriff
+			title_female = sherriff
+		}
+		b_anas = {
+			title = sherriff
+			title_female = sherriff
+		}
+		color = { 43 120 40 }
+		color2 = { 43 120 40 }
+		culture = crytan
+		religion = eros_triad
+		title = comte
+		title_female = comtess
+	}
+
+	c_luray = {
+		capital = 183
+		b_tiseva = {
+			title = sherriff
+			title_female = sherriff
+		}
+		b_fellhall = {
+			title = sherriff
+			title_female = sherriff
+		}
+		color = { 43 100 40 }
+		color2 = { 43 100 40 }
+		culture = crytan
+		religion = eros_triad
+		title = comte
+		title_female = comtess
+	}
+}
+
+d_postre_cryta = {
+	color = { 252 219 67 }
+	color2 = { 252 219 67 }
+	culture = crytan
+	religion = eros_triad
+	title = aearl
+	title_female = aearl
+	capital = 127
+
+	c_ablizo = {
+		capital = 127
+		b_neras = {
+			title = sherriff
+			title_female = sherriff
+		}
+		b_avantar = {
+			title = sherriff
+			title_female = sherriff
+		}
+		b_allas = {
+			title = sherriff
+			title_female = sherriff
+		}
+		b_pomas = {
+			title = sherriff
+			title_female = sherriff
+		}
+		color = { 252 219 67 }
+		color2 = { 252 219 67 }
+		culture = crytan
+		religion = eros_triad
+		title = comte
+		title_female = comtess
+	}
 }

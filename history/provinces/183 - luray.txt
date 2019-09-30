@@ -1,5 +1,7 @@
 	title = c_luray
 	max_settlements = 3
-	culture = pecheneg
-	religion = baltic_pagan_reformed
-	b_tisevat = tribal
+	culture = crytan
+	religion = eros_triad
+	
+	b_tiseva = castle
+	b_fellhall = city

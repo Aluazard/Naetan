@@ -7,3 +7,33 @@
 	}
 	dynasty = 1
 }
+
+2 = {
+	name = Geoffrey
+	culture = crytan
+	religion = eros_triad
+	14315.1.1 = {
+		birth = 14315.1.1
+	}
+	dynasty = 2
+}
+
+3 = {
+	name = Karlas
+	culture = crytan
+	religion = eros_triad
+	14300.1.1 = {
+		birth = 14300.1.1
+	}
+	dynasty = 3
+}
+
+4 = {
+	name = Karl
+	culture = crytan
+	religion = eros_triad
+	14300.1.1 = {
+		birth = 14300.1.1
+	}
+	dynasty = 3
+}

@@ -1,5 +1,7 @@
 	title = c_butka
 	max_settlements = 7
-	culture = scottish
-	religion = bon
-	b_lasict = tribal
+	culture = crytan
+	religion = eros_triad
+
+	b_lasict = castle
+	b_anarsis = city

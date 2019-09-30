@@ -1,5 +1,9 @@
 	title = c_ablizo
 	max_settlements = 7
-	culture = levantine_arabic
-	religion = slavic_pagan
-	b_neruri = tribal
+	culture = crytan
+	religion = eros_triad
+
+	b_neras = castle
+	b_avantar = city
+	b_allas = city
+	b_pomas = temple

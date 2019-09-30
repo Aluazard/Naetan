@@ -1,7 +1,14 @@
 d_ante_cryta;Ante-Cryta;;;;;;;;;;;;;
+d_postre_cryta;Postre-Cryta;;;;;;;;;;;;;
+
 c_lisele;Cryta;;;;;;;;;;;;;
 c_dazay;Dayan;;;;;;;;;;;;;
 c_roummur;Runmoor;;;;;;;;;;;;;
+c_nasutka;Nara;;;;;;;;;;;;;
+c_butka;Butka;;;;;;;;;;;;;
+c_luray;Luray;;;;;;;;;;;;;
+c_ablizo;Krytis;;;;;;;;;;;;;
+
 b_temarda;Crytan Citadel;;;;;;;;;;;;;
 b_talleon;Talleon;;;;;;;;;;;;;
 b_aras;Aras;;;;;;;;;;;;;
@@ -9,3 +16,13 @@ b_kelfast;Kelfast;;;;;;;;;;;;;
 b_saran;Saran;;;;;;;;;;;;;
 b_kalleas;Kalleas;;;;;;;;;;;;;
 b_avenham;Avenham;;;;;;;;;;;;;
+b_anarsis;Anarsis;;;;;;;;;;;;;
+b_anas;Anas;;;;;;;;;;;;;
+b_fellhall;Fell-Hall;;;;;;;;;;;;;
+b_lasict;Lasict;;;;;;;;;;;;;
+b_narsis;Narsis;;;;;;;;;;;;;
+b_tiseva;Tiseva;;;;;;;;;;;;;
+b_neras;Neras;;;;;;;;;;;;;
+b_avantar;Avantar;;;;;;;;;;;;;
+b_allas;Allas;;;;;;;;;;;;;
+b_pomas;Pomas;;;;;;;;;;;;;
