@@ -1,5 +1,8 @@
-	title = c_qoruri
+	title = c_belfast
 	max_settlements = 5
-	culture = kanuri
-	religion = aztec
-	b_rolartin = tribal
+	culture = crytan
+	religion = eros_triad
+
+	b_rolartin = castle
+	b_avast = city
+	b_caras = temple

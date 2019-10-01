@@ -37,3 +37,14 @@
 	}
 	dynasty = 3
 }
+
+5 = {
+	name = Fenestra
+	female = yes
+	culture = crytan
+	religion = eros_triad
+	14309.1.1 = {
+		birth = 14309.1.1
+	}
+	dynasty = 3
+}

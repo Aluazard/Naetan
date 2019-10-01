@@ -131,8 +131,8 @@ d_ante_cryta = {
 }
 
 d_postre_cryta = {
-	color = { 252 219 67 }
-	color2 = { 252 219 67 }
+	color = { 12 201 44 }
+	color2 = { 12 201 44 }
 	culture = crytan
 	religion = eros_triad
 	title = aearl
@@ -157,8 +157,69 @@ d_postre_cryta = {
 			title = sherriff
 			title_female = sherriff
 		}
-		color = { 252 219 67 }
-		color2 = { 252 219 67 }
+		color = { 12 201 44 }
+		color2 = { 12 201 44 }
+		culture = crytan
+		religion = eros_triad
+		title = comte
+		title_female = comtess
+	}
+
+	c_dalara = {
+		capital = 56
+		b_naluri = {
+			title = sherriff
+			title_female = sherriff
+		}
+		b_kossan = {
+			title = sherriff
+			title_female = sherriff
+		}
+		color = { 100 238 123 }
+		color2 = { 100 238 123 }
+		culture = crytan
+		religion = eros_triad
+		title = comte
+		title_female = comtess
+	}
+
+	c_belfast = {
+		capital = 371
+		b_rolartin = {
+			title = sherriff
+			title_female = sherriff
+		}
+		b_caras = {
+			title = sherriff
+			title_female = sherriff
+		}
+		b_avast = {
+			title = sherriff
+			title_female = sherriff
+		}
+		color = { 100 215 123 }
+		color2 = { 100 215 123 }
+		culture = crytan
+		religion = eros_triad
+		title = comte
+		title_female = comtess
+	}
+	c_lourda = {
+		capital = 117
+		b_waernell = {
+			title = sherriff
+			title_female = sherriff
+		}
+		b_clapton = {
+			title = sherriff
+			title_female = sherriff
+		}
+		b_curdington = {
+			title = sherriff
+			title_female = sherriff
+		}
+		color = { 100 215 123 }
+		color2 = { 100 215 123 }
 		culture = crytan
 		religion = eros_triad
 		title = comte

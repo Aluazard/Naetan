@@ -1,5 +1,8 @@
 	title = c_lourda
-	max_settlements = 2
-	culture = pictish
-	religion = interface_skin
-	b_kelern = tribal
+	max_settlements = 4
+	culture = crytan
+	religion = eros_triad
+
+	b_waernell = castle
+	b_clapton = city
+	b_curdington = temple

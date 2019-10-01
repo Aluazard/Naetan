@@ -1,5 +1,7 @@
 	title = c_dalara
-	max_settlements = 7
-	culture = slovieni
-	religion = manichean
-	b_naluri = tribal
+	max_settlements = 3
+	culture = crytan
+	religion = eros_triad
+
+	b_naluri = castle
+	b_kossan = city
