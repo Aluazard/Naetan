@@ -78,3 +78,13 @@
 	}
 	dynasty = 6
 }
+
+9 = {
+	name = Tad 
+	culture = kalleon
+	religion = eros_triad
+	14290.1.1 = {
+		birth = 14290.1.1
+	}
+	dynasty = 7
+}

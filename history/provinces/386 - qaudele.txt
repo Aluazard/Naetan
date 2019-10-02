@@ -1,5 +1,9 @@
-	title = c_qaudele
+	title = c_kalleon
 	max_settlements = 2
-	culture = avar
-	religion = catholic
-	b_toumele = tribal
+	culture = kalleon
+	religion = eros_triad
+
+	b_kalleon = castle
+	b_darnstall = city
+	b_dorston = city
+	b_parverhill = temple

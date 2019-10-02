@@ -1,0 +1,12 @@
+technology = {
+	titles = {
+		d_ante_cryta
+		d_kings_shore
+		d_postre_cryta
+	}
+	14327 = {
+		military = 2.0
+		economy = 2.0
+		culture = 2.0
+	}
+}

@@ -1,5 +1,7 @@
-	title = c_wokay
+	title = c_postre_kalleon
 	max_settlements = 5
-	culture = castillan
-	religion = west_african_pagan
-	b_ninarda = tribal
+	culture = kalleon
+	religion = eros_triad
+
+	b_mearley = castle
+	b_glottenham = temple

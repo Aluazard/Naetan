@@ -1,0 +1,5 @@
+14325.1.1 = {
+	holy_site = eros_triad
+	law = agnatic_succession
+	liege = c_regehre
+}

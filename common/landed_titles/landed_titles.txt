@@ -49,6 +49,116 @@ k_crinia = {
 			title = comte
 			title_female = comtess
 		}
+
+		c_kalleon = {
+			capital = 386
+			b_kalleon = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_dorston = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_darnstall = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_parverhill = {
+				title = sherriff
+				title_female = sherriff
+			}
+			color = { 252 219 67 }
+			color2 = { 252 219 67 }
+			culture = kalleon
+			religion = eros_triad
+			title = comte
+			title_female = comtess
+		}
+
+		c_ante_kalleon = {
+			capital = 94
+			b_sasayn = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_miserth = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_arnstey = {
+				title = sherriff
+				title_female = sherriff
+			}
+			color = { 252 219 67 }
+			color2 = { 252 219 67 }
+			culture = kalleon
+			religion = eros_triad
+			title = comte
+			title_female = comtess
+		}
+
+		c_postre_kalleon = {
+			capital = 186
+			b_mearley = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_glottenham = {
+				title = sherriff
+				title_female = sherriff
+			}
+			color = { 252 219 67 }
+			color2 = { 252 219 67 }
+			culture = kalleon
+			religion = eros_triad
+			title = comte
+			title_female = comtess
+		}
+
+		c_wessen = {
+			capital = 185
+			b_tegara = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_warington = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_hartelon = {
+				title = sherriff
+				title_female = sherriff
+			}
+			color = { 252 219 67 }
+			color2 = { 252 219 67 }
+			culture = kalleon
+			religion = eros_triad
+			title = comte
+			title_female = comtess
+		}
+
+		c_regehre = {
+			capital = 222
+			b_arnas = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_ranhold = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_sella = {
+				title = sherriff
+				title_female = sherriff
+			}
+			color = { 252 219 67 }
+			color2 = { 252 219 67 }
+			culture = kalleon
+			religion = eros_triad
+			title = comte
+			title_female = comtess
+		}
 	}
 	d_ante_cryta = {
 		color = { 252 219 67 }

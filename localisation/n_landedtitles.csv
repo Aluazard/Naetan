@@ -1,4 +1,4 @@
-k_crinia;Crinia;;;;;;;;;;;;;
+k_crinia;Kalleon;;;;;;;;;;;;;
 
 d_ante_cryta;Ante-Cryta;;;;;;;;;;;;;
 d_postre_cryta;Postre-Cryta;;;;;;;;;;;;;
@@ -18,7 +18,15 @@ c_minbury;Minbury;;;;;;;;;;;;;;
 c_tegartin;Tegartin;;;;;;;;;;;;;;
 c_summerswind;Summerswind;;;;;;;;;;;;;;
 c_kings_shore;Kings Shore;;;;;;;;;;;;;;
+c_wessen;Wessen;;;;;;;;;;;;;;
+c_regehre;Regehre;;;;;;;;;;;;;;
+c_kalleon;Kalleon;;;;;;;;;;;;;;
+c_ante_kalleon;Ante-Kalleon;;;;;;;;;;;;;;
+c_postre_kalleon;Postre-Kalleon;;;;;;;;;;;;;;
 
+b_sasayn;Sasayn;;;;;;;;;;;;;
+b_miserth;Miserth;;;;;;;;;;;;;
+b_arnstey;Arnstey;;;;;;;;;;;;;
 b_temarda;Crytan Citadel;;;;;;;;;;;;;
 b_talleon;Talleon;;;;;;;;;;;;;
 b_aras;Aras;;;;;;;;;;;;;
@@ -57,3 +65,15 @@ b_garring;Garring;;;;;;;;;;;;;
 b_falkerstone;Falkerstone;;;;;;;;;;;;;
 b_raefus;Raefus;;;;;;;;;;;;;
 b_braewood;Braewood;;;;;;;;;;;;;
+b_warington;Warginton;;;;;;;;;;;;;
+b_hartelon;Hartelon;;;;;;;;;;;;;
+b_tegara;Tegara;;;;;;;;;;;;;
+b_ranhold;Ranhold;;;;;;;;;;;;;
+b_arnas;Arnas;;;;;;;;;;;;;
+b_sella;Sella;;;;;;;;;;;;;
+b_parverhill;Parverhill;;;;;;;;;;;;;
+b_dorston;Dorston;;;;;;;;;;;;;
+b_darnstall;Darnstall;;;;;;;;;;;;;
+b_kalleon;Kalleon;;;;;;;;;;;;;
+b_mearley;Mearley;;;;;;;;;;;;;
+b_glottenham;Glottenham;;;;;;;;;;;;;

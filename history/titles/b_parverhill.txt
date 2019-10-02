@@ -1,5 +1,4 @@
 14325.1.1 = {
-	holder = 8
 	law = agnatic_succession
-	liege = c_kings_shore
+	liege = c_kalleon
 }

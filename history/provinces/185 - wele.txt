@@ -1,5 +1,8 @@
-	title = c_wele
-	max_settlements = 2
-	culture = ashkenazi
-	religion = zikri
-	b_tegara = tribal
+	title = c_wessen
+	max_settlements = 4
+	culture = kalleon
+	religion = eros_triad
+
+	b_tegara = castle
+	b_hartelon = city
+	b_warington = city

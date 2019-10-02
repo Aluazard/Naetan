@@ -1,5 +1,8 @@
 	title = c_regehre
 	max_settlements = 7
-	culture = crimean_gothic
-	religion = interface_skin
-	b_tolizo = tribal
+	culture = kalleon
+	religion = eros_triad
+
+	b_arnas = castle
+	b_ranhold = castle
+	b_sella = city

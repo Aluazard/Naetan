@@ -1,5 +1,8 @@
-	title = c_tasalka
-	max_settlements = 3
-	culture = kurdish
-	religion = ibadi
-	b_sasayn = tribal
+	title = c_ante_kalleon
+	max_settlements = 4
+	culture = kalleon
+	religion = eros_triad
+
+	b_sasayn = castle
+	b_miserth = city
+	b_arnstey = temple

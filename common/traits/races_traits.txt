@@ -147,8 +147,6 @@ nua_2 = {
 	ai_rationality = 10
 	ai_honor = 20
 	
-	immortal = yes
-	
 	customizer = no
 	
 	is_visible = { 
@@ -162,8 +160,6 @@ nua_3 = {
 
 	ai_rationality = 10
 	ai_honor = 20
-	
-	immortal = yes
 	
 	customizer = no
 	
@@ -179,8 +175,6 @@ nua_4 = {
 	ai_rationality = 10
 	ai_honor = 20
 	
-	immortal = yes
-	
 	customizer = no
 	
 	is_visible = { 
@@ -194,8 +188,6 @@ nua_5 = {
 
 	ai_rationality = 10
 	ai_honor = 20
-	
-	immortal = yes
 	
 	customizer = no
 	
