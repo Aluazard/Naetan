@@ -41,10 +41,40 @@
 5 = {
 	name = Fenestra
 	female = yes
-	culture = crytan
+	culture = belfast
 	religion = eros_triad
 	14309.1.1 = {
 		birth = 14309.1.1
 	}
 	dynasty = 3
+}
+
+6 = {
+	name = Oros
+	culture = crytan
+	religion = eros_triad
+	14312.1.1 = {
+		birth = 14312.1.1
+	}
+	dynasty = 4
+}
+
+7 = {
+	name = Casil
+	culture = crytan
+	religion = eros_triad
+	14299.1.1 = {
+		birth = 14299.1.1
+	}
+	dynasty = 5
+}
+
+8 = {
+	name = Daras 
+	culture = kalleon
+	religion = eros_triad
+	14290.1.1 = {
+		birth = 14290.1.1
+	}
+	dynasty = 6
 }

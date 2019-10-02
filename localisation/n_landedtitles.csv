@@ -1,5 +1,8 @@
+k_crinia;Crinia;;;;;;;;;;;;;
+
 d_ante_cryta;Ante-Cryta;;;;;;;;;;;;;
 d_postre_cryta;Postre-Cryta;;;;;;;;;;;;;
+d_kings_shore;Kings Shore;;;;;;;;;;;;;
 
 c_lisele;Cryta;;;;;;;;;;;;;
 c_dazay;Dayan;;;;;;;;;;;;;
@@ -11,6 +14,10 @@ c_ablizo;Krytis;;;;;;;;;;;;;
 c_dalara;Dalara;;;;;;;;;;;;;;
 c_belfast;Belfast;;;;;;;;;;;;;;
 c_lourda;Lourda;;;;;;;;;;;;;;
+c_minbury;Minbury;;;;;;;;;;;;;;
+c_tegartin;Tegartin;;;;;;;;;;;;;;
+c_summerswind;Summerswind;;;;;;;;;;;;;;
+c_kings_shore;Kings Shore;;;;;;;;;;;;;;
 
 b_temarda;Crytan Citadel;;;;;;;;;;;;;
 b_talleon;Talleon;;;;;;;;;;;;;
@@ -37,3 +44,16 @@ b_avast;Avast;;;;;;;;;;;;;
 b_waernell;Waernell;;;;;;;;;;;;;
 b_curdington;Curdington;;;;;;;;;;;;;
 b_clapton;Clapton;;;;;;;;;;;;;
+b_wegence;Wegence;;;;;;;;;;;;;
+b_gancaster;Gancaster;;;;;;;;;;;;;
+b_barnacton;Barnacton;;;;;;;;;;;;;
+b_nartley;Nartley;;;;;;;;;;;;;
+b_winict;Winict;;;;;;;;;;;;;
+b_unas;Unas;;;;;;;;;;;;;
+b_summerswind;Summerswind Castle;;;;;;;;;;;;;
+b_kings_shore;Kings Shore;;;;;;;;;;;;;
+b_werth;Werth;;;;;;;;;;;;;
+b_garring;Garring;;;;;;;;;;;;;
+b_falkerstone;Falkerstone;;;;;;;;;;;;;
+b_raefus;Raefus;;;;;;;;;;;;;
+b_braewood;Braewood;;;;;;;;;;;;;

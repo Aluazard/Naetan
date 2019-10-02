@@ -3,3 +3,8 @@
 	culture = crytan
 }
 
+6 = {
+	name = Kalleas
+	culture = kalleon
+}
+

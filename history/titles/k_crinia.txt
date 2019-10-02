@@ -1,0 +1,5 @@
+14325.1.1 = {
+    holder = 8
+    law = succ_primogeniture
+	law = agnatic_succession
+}

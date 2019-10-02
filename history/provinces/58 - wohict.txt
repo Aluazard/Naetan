@@ -1,5 +1,6 @@
-	title = c_wohict
+	title = c_summerswind
 	max_settlements = 5
-	culture = italian
-	religion = monophysite
-	b_tence = tribal
+	culture = crytan
+	religion = eros_triad
+
+	b_summerswind = castle

@@ -1,5 +1,12 @@
-	title = c_nolarda
+	title = c_kings_shore
 	max_settlements = 7
-	culture = german
-	religion = fraticelli
-	b_quri = tribal
+	culture = kalleon
+	religion = eros_triad
+
+	b_kings_shore = castle
+	b_garring = city
+	b_werth = castle
+	b_braewood = city
+	b_raefus = castle
+	b_falkerstone = temple
+

@@ -1,5 +1,7 @@
 	title = c_tegartin
 	max_settlements = 5
-	culture = lappish
-	religion = zun_pagan
-	b_winict = tribal
+	culture = crytan
+	religion = eros_triad
+
+	b_winict = city
+	b_unas = city

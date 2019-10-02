@@ -1,5 +1,9 @@
-	title = c_dolamaj
-	max_settlements = 2
-	culture = portuguese
-	religion = khurmazta
-	b_wegence = tribal
+	title = c_minbury
+	max_settlements = 5
+	culture = crytan
+	religion = eros_triad
+
+	b_wegence = castle
+	b_gancaster = city
+	b_barnacton = city
+	b_nartley = city

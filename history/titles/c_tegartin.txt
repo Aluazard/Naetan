@@ -1,0 +1,6 @@
+14325.1.1 = {
+	holder = 6
+	law = succ_primogeniture
+	law = agnatic_succession
+	liege = d_postre_cryta
+}
