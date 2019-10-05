@@ -19,28 +19,18 @@ k_crinia = {
 		c_kings_shore = {
 			capital = 93
 			b_kings_shore = {
-				title = sherriff
-				title_female = sherriff
 			}
 			b_werth = {
-				title = sherriff
-				title_female = sherriff
 			}
 			b_garring = {
-				title = sherriff
-				title_female = sherriff
 			}
 			b_falkerstone = {
-				title = sherriff
-				title_female = sherriff
 			}
 			b_raefus = {
-				title = sherriff
-				title_female = sherriff
 			}
 			b_braewood = {
-				title = sherriff
-				title_female = sherriff
+			}
+			b_alar = {
 			}
 			color = { 252 219 67 }
 			color2 = { 252 219 67 }

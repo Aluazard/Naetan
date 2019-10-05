@@ -1,0 +1,30 @@
+namespace = n_population
+
+province_event = { #Assign
+	id = n_population.01
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { has_province_flag = has_population_modifier }
+	}
+	
+	immediate = {
+		root = {
+			add_province_modifier = { name = nua_population_1 duration = -1 }
+		}
+		set_province_flag = has_population_modifier
+	}
+}
+
+character_event = { #Assign
+	id = n_population.02
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		root = {
+			
+		}
+	}
+}

@@ -1,0 +1,19 @@
+on_startup = {
+	events = {
+		n_population.01
+	}
+}
+
+# Fires for the player when the game starts
+on_chronicle_start = {
+	events = {
+		n_population.01
+	}
+}
+
+#character
+on_yearly_pulse = { # Meant to catch anyone added over the course of the year by the game, and give them parts
+	events = {
+		n_population.01
+	}
+}

@@ -9,4 +9,3 @@
 	b_braewood = city
 	b_raefus = castle
 	b_falkerstone = temple
-

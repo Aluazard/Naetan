@@ -1,0 +1,3 @@
+add_population_modifiers = {
+	nua_population_1 = yes
+}

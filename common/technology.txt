@@ -1,0 +1,224 @@
+TECH_GROUP_MILITARY = {
+	TECH_LIGHT_INFANTRY = {
+		modifier = {
+		}	
+	}
+	TECH_HEAVY_INFANTRY = {
+		modifier = {
+		}		
+	}
+	TECH_CAVALRY = {
+		modifier = {
+		}
+	}
+	TECH_SIEGE_EQUIPMENT = {
+		modifier = {
+		}
+	}
+	TECH_NAVAL = {
+		modifier = {
+		}
+		1 = {
+		}
+		2 = {
+		}
+		3 = {
+		}
+		4 = {
+		}
+		5 = {
+		}
+		6 = {
+		}
+		7 = {
+		}
+	}
+	TECH_RECRUITMENT = {
+		modifier = {
+		}
+	}
+}
+
+TECH_GROUP_ECONOMY = {
+	TECH_CASTLE_CONSTRUCTION = { #castle buildings
+		modifier = {
+		}
+		1 = {
+		}
+		2 = {
+		}
+		3 = {
+		}
+		4 = {
+		}
+		5 = {
+		}
+		6 = {
+		}
+		7 = {
+		}
+		8 = {
+		}
+	}
+	TECH_CITY_CONSTRUCTION = { #city buildings
+		modifier = {
+		}
+		1 = {
+		}
+		2 = {
+		}
+		3 = {
+		}
+		4 = {
+		}
+		5 = {
+		}
+		6 = {
+		}
+		7 = {
+		}
+		8 = {
+		}
+	}
+	TECH_TEMPLE_CONSTRUCTION = { #temple buildings
+		modifier = {
+		}
+		1 = {
+		}
+		2 = {
+		}
+		3 = {
+		}
+		4 = {
+		}
+		5 = {
+		}
+		6 = {
+		}
+		7 = {
+		}
+		8 = {
+		}
+	}
+	TECH_FORTIFICATIONS_CONSTRUCTION = { # walls and levy buildings
+		modifier = {
+		}
+		1 = {
+		}
+		2 = {
+		}
+		3 = {
+		}
+		4 = {
+		}
+		5 = {
+		}
+		6 = {
+		}
+		7 = {
+		}
+		8 = {
+		}
+	}
+	TECH_TRADE_PRACTICES = {
+		modifier = {
+		}
+		1 = {
+		}
+		2 = {
+		}
+		3 = {
+		}
+		4 = {
+		}
+		5 = {
+		}
+		6 = {
+		}
+	}
+	TECH_CONSTRUCTION = { #improved construction of all buildings
+		modifier = {
+		}
+		1 = {
+		}
+		2 = {
+		}
+		3 = {
+		}
+		4 = {
+		}
+		5 = {
+		}
+		6 = {
+		}
+	}
+}
+
+TECH_GROUP_CULTURE = {
+	TECH_NOBLE_CUSTOMS = {
+		modifier = {
+		}
+	}
+	TECH_POPULAR_CUSTOMS = {
+		modifier = {
+		}
+	}
+	TECH_RELIGIOUS_CUSTOMS = {
+		modifier = {
+		}
+	}
+	TECH_MAJESTY = {
+		modifier = {
+		}
+		1 = {
+		}
+		2 = {
+		}
+		3 = {
+		}
+		4 = {
+		}
+		5 = {
+		}
+	}
+	TECH_CULTURE_FLEX = {
+		modifier = {
+		}
+		1 = {
+		}
+		2 = {
+		}
+		3 = {
+		}
+		4 = {
+		}
+		5 = {
+		}
+		6 = {
+		}
+		7 = {
+		}
+		8 = {
+		}
+	}
+	TECH_LEGALISM = {
+		modifier = {
+		}
+		1 = {
+		}
+		2 = {
+		}
+		3 = {
+		}
+		4 = {
+		}
+		5 = {
+		}
+		6 = {
+		}
+		7 = {
+		}
+		8 = {
+		}
+	}
+}
