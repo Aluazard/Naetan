@@ -195,3 +195,88 @@ nua_5 = {
 		NOT = { has_character_flag = racial_traits_off }
 	}
 }
+
+## Leshnik Traits
+leshnik = {
+	stewardship = -5
+	martial = 10
+
+	ai_rationality = 10
+	ai_honor = -100
+	
+	customizer = no
+	
+	is_visible = { 
+		NOT = { has_character_flag = racial_traits_off }
+	}
+}
+
+leshnik_1 = {
+	stewardship = -5
+	martial = 10
+
+	ai_rationality = 10
+	ai_honor = -100
+	
+	customizer = no
+	
+	is_visible = { 
+		NOT = { has_character_flag = racial_traits_off }
+	}
+}
+
+leshnik_2 = {
+	stewardship = -5
+	martial = 10
+
+	ai_rationality = 10
+	ai_honor = -100
+
+	customizer = no
+	
+	is_visible = { 
+		NOT = { has_character_flag = racial_traits_off }
+	}
+}
+
+leshnik_3 = {
+	stewardship = -5
+	martial = 10
+
+	ai_rationality = 10
+	ai_honor = -100
+	
+	customizer = no
+	
+	is_visible = { 
+		NOT = { has_character_flag = racial_traits_off }
+	}
+}
+
+leshnik_4 = {
+	stewardship = -5
+	martial = 10
+
+	ai_rationality = 10
+	ai_honor = -100
+	
+	customizer = no
+	
+	is_visible = { 
+		NOT = { has_character_flag = racial_traits_off }
+	}
+}
+
+leshnik_5 = {
+	stewardship = -5
+	martial = 10
+
+	ai_rationality = 10
+	ai_honor = -100
+	
+	customizer = no
+	
+	is_visible = { 
+		NOT = { has_character_flag = racial_traits_off }
+	}
+}

@@ -1,0 +1,44 @@
+phezeth_group = {
+    has_coa_on_barony_only =yes
+    graphical_culture = leshnikgfx
+    crusade_cb = crusade
+    playable = yes
+    ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+    ai_convert_same_group = 1
+	ai_convert_other_group = 1
+	
+	phezeth = {
+        graphical_culture = leshnikgfx
+        interface_skin = { pagan_interface }
+        
+        icon = 35
+        color = { 0.5 0.1 0.6 }
+            
+        crusade_name = "PHEZETHS_PURGE"
+        scripture_name = PHEZETHS_CODE
+        god_names = {
+             PHEZETH
+        }
+        
+        can_excommunicate = yes
+        can_grant_divorce = yes
+        can_grant_invasion_cb = invasion
+        can_grant_claim = yes
+        can_call_crusade = yes
+        can_demand_religious_conversion = yes
+
+        piety_name = BLOOD
+
+        bs_marriage = yes
+        pc_marriage = yes
+        psc_marriage = yes
+        divine_blood = yes
+        max_wives = 100
+		women_can_take_consorts = no
+		
+		allow_viking_invasion = yes
+		allow_looting = yes
+		seafarer = yes
+		aggression = 10
+    }
+}

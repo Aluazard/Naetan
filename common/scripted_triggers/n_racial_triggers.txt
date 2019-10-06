@@ -8,33 +8,43 @@ is_nua = {
 	graphical_culture = nuagfx
 }
 
+is_leshnik = {
+	graphical_culture = leshnikgfx
+}
+
 is_young_race = {
 	OR = {
 		trait = nua_1
 		trait = nua
+		trait = leshnik
+		trait = leshnik_1
 	}
 }
 
 is_adult_race = {
 	OR = {
 		trait = nua_2
+		trait = leshnik_2
 	}
 }
 
 is_aging_race = {
 	OR = {
 		trait = nua_3
+		trait = leshnik_3
 	}
 }
 
 is_old_race = {
 	OR = {
 		trait = nua_4
+		trait = leshnik_4
 	}
 }
 
 is_ancient_race = {
 	OR = {
 		trait = nua_5
+		trait = leshnik_5
 	}
 }

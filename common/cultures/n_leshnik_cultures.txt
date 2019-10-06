@@ -1,0 +1,109 @@
+leshnik = {
+	graphical_cultures = {
+        leshnikgfx englishgfx 
+	}
+	
+	leshanka = {
+        graphical_cultures = {
+            leshnikgfx englishgfx
+        }
+        
+        color = { 0.8 0.2 0.2 }
+        
+        male_names = {
+            Aedgrugg Maedkrax Bushkath Drudge Transhe Srunshux Stroshkonaks Kracrorug Hesacnaik Strebiodkrand Sacdeoz Ocdrend Silgriund Socruk Zergrus Krorgrand Mendralend Grukthoshaex Oraskrek Arirzrez Strirshog Vondriz Othen Aecraiks Dreorzrex Hadgix Triodrusend Bruzgikuc Kijailzax
+        }
+        female_names = {
+            Anhru Tasno Khialies Gadnush Oldi Phignuz Dulkona Makkomu Zuthuno Hiaxaroth Lerze Phadhi Zhutra Trili Sthalmiz Tralsu Ildrashuh Zhurcoshax Dethundhei Tuthuki Agto Rugtesh Aiki Andah Bunzu Geadhra Zheigtranix Azhezi Earilmu Eirelgre Trengus Telkhae Chokhu Shruzhi
+        }
+        from_dynasty_prefix = "kal "
+        bastard_dynasty_prefix = "Vzenk'"
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+        mother_name_chance = 5
+	}
+	
+	kvanka = {
+        graphical_cultures = {
+            leshnikgfx englishgfx
+        }
+        
+        color = { 0.8 0.2 0.2 }
+        
+        male_names = {
+            Aedgrugg Maedkrax Bushkath Drudge Transhe Srunshux Stroshkonaks Kracrorug Hesacnaik Strebiodkrand Sacdeoz Ocdrend Silgriund Socruk Zergrus Krorgrand Mendralend Grukthoshaex Oraskrek Arirzrez Strirshog Vondriz Othen Aecraiks Dreorzrex Hadgix Triodrusend Bruzgikuc Kijailzax
+        }
+        female_names = {
+            Anhru Tasno Khialies Gadnush Oldi Phignuz Dulkona Makkomu Zuthuno Hiaxaroth Lerze Phadhi Zhutra Trili Sthalmiz Tralsu Ildrashuh Zhurcoshax Dethundhei Tuthuki Agto Rugtesh Aiki Andah Bunzu Geadhra Zheigtranix Azhezi Earilmu Eirelgre Trengus Telkhae Chokhu Shruzhi
+        }
+        from_dynasty_prefix = "kal "
+        bastard_dynasty_prefix = "Vzenk'"
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+        mother_name_chance = 5
+	}
+
+	ulkhu = {
+        graphical_cultures = {
+            leshnikgfx englishgfx
+        }
+        
+        color = { 0.8 0.2 0.2 }
+        
+        male_names = {
+            Aedgrugg Maedkrax Bushkath Drudge Transhe Srunshux Stroshkonaks Kracrorug Hesacnaik Strebiodkrand Sacdeoz Ocdrend Silgriund Socruk Zergrus Krorgrand Mendralend Grukthoshaex Oraskrek Arirzrez Strirshog Vondriz Othen Aecraiks Dreorzrex Hadgix Triodrusend Bruzgikuc Kijailzax
+        }
+        female_names = {
+            Anhru Tasno Khialies Gadnush Oldi Phignuz Dulkona Makkomu Zuthuno Hiaxaroth Lerze Phadhi Zhutra Trili Sthalmiz Tralsu Ildrashuh Zhurcoshax Dethundhei Tuthuki Agto Rugtesh Aiki Andah Bunzu Geadhra Zheigtranix Azhezi Earilmu Eirelgre Trengus Telkhae Chokhu Shruzhi
+        }
+        from_dynasty_prefix = "kal "
+        bastard_dynasty_prefix = "Vzenk'"
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+        mother_name_chance = 5
+	}
+
+	phroko = {
+        graphical_cultures = {
+            leshnikgfx englishgfx
+        }
+        
+        color = { 0.8 0.2 0.2 }
+        
+        male_names = {
+            Aedgrugg Maedkrax Bushkath Drudge Transhe Srunshux Stroshkonaks Kracrorug Hesacnaik Strebiodkrand Sacdeoz Ocdrend Silgriund Socruk Zergrus Krorgrand Mendralend Grukthoshaex Oraskrek Arirzrez Strirshog Vondriz Othen Aecraiks Dreorzrex Hadgix Triodrusend Bruzgikuc Kijailzax
+        }
+        female_names = {
+            Anhru Tasno Khialies Gadnush Oldi Phignuz Dulkona Makkomu Zuthuno Hiaxaroth Lerze Phadhi Zhutra Trili Sthalmiz Tralsu Ildrashuh Zhurcoshax Dethundhei Tuthuki Agto Rugtesh Aiki Andah Bunzu Geadhra Zheigtranix Azhezi Earilmu Eirelgre Trengus Telkhae Chokhu Shruzhi
+        }
+        from_dynasty_prefix = "kal "
+        bastard_dynasty_prefix = "Vzenk'"
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+        mother_name_chance = 5
+	}
+}

@@ -13,5 +13,11 @@ character_event = {
 			}
 			add_nua_age = yes
 		}
+		if = {
+			limit = {
+				is_leshnik = yes
+			}
+			add_leshnik_age = yes
+		}
 	}
 }

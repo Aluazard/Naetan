@@ -1,0 +1,161 @@
+nua = {
+    graphical_cultures = {
+        nuagfx englishgfx 
+    }
+
+    crytan = {
+        graphical_cultures = {
+            nuagfx englishgfx
+        }
+        
+        color = { 0.8 0.2 0.2 }
+        
+        male_names = {
+            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet Geoff Gabel 
+        }
+        female_names = {
+            Bèle Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+        }
+        from_dynasty_prefix = "of "
+        bastard_dynasty_prefix = "Bast"
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+        mother_name_chance = 5
+    }
+
+    kalleon = {
+        graphical_cultures = {
+            nuagfx englishgfx
+        }
+        
+        color = { 0.8 0.2 0.2 }
+        
+        male_names = {
+            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet Geoff Gabel 
+        }
+        female_names = {
+            Bèle Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+        }
+        from_dynasty_prefix = "of "
+        bastard_dynasty_prefix = "Bast"
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+        mother_name_chance = 5
+    }
+
+    belfast = {
+        graphical_cultures = {
+            nuagfx englishgfx
+        }
+        
+        color = { 0.8 0.2 0.2 }
+        
+        male_names = {
+            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet Geoff Gabel 
+        }
+        female_names = {
+            Bèle Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+        }
+        from_dynasty_prefix = "of "
+        bastard_dynasty_prefix = "Bast"
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+        mother_name_chance = 5
+    }
+
+    alanis = {
+        graphical_cultures = {
+            nuagfx englishgfx
+        }
+        
+        color = { 0.8 0.2 0.2 }
+        
+        male_names = {
+            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet Geoff Gabel 
+        }
+        female_names = {
+            Bèle Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+        }
+        from_dynasty_prefix = "of "
+        bastard_dynasty_prefix = "Bast"
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+        mother_name_chance = 5
+    }
+
+    tocharian = {
+        graphical_cultures = {
+            nuagfx englishgfx
+        }
+        
+        color = { 0.8 0.2 0.2 }
+        
+        male_names = {
+            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet Geoff Gabel 
+        }
+        female_names = {
+            Bèle Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+        }
+        from_dynasty_prefix = "of "
+        bastard_dynasty_prefix = "Bast"
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+        mother_name_chance = 5
+    }
+
+    nuan = {
+        graphical_cultures = {
+            nuagfx englishgfx
+        }
+        
+        color = { 0.8 0.2 0.2 }
+        
+        male_names = {
+            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet Geoff Gabel 
+        }
+        female_names = {
+            Bèle Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+        }
+        from_dynasty_prefix = "of "
+        bastard_dynasty_prefix = "of "
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+        mother_name_chance = 5
+    }
+}

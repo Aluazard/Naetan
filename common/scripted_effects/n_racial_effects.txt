@@ -62,3 +62,48 @@ add_nua_age = {
 		add_trait = nua_5
 	}
 }
+
+add_leshnik_age = {
+	remove_trait = leshnik
+	remove_trait = leshnik_1
+	remove_trait = leshnik_2
+	remove_trait = leshnik_3
+	remove_trait = leshnik_4
+	remove_trait = leshnik_5
+	
+	if = {
+		limit = { age < 15 }
+		add_trait = leshnik_1
+	}
+	if = {
+		limit = {
+			age >= 15
+			age < 20
+		}
+		remove_trait = leshnik_1
+		add_trait = leshnik_2
+	}
+	if = {
+		limit = {
+			age >= 20
+			age < 35
+		}
+		remove_trait = leshnik_2
+		add_trait = leshnik_3
+	}
+	if = {
+		limit = {
+			age >= 35
+			age < 40
+		}
+		remove_trait = leshnik_3
+		add_trait = leshnik_4
+	}
+	if = {
+		limit = {
+			age >= 45
+		}
+		remove_trait = leshnik_4
+		add_trait = leshnik_5
+	}
+}
