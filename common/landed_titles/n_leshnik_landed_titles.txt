@@ -1,0 +1,31 @@
+d_dhezlarn = {
+	color = { 15 15 15 }
+	color2 = { 15 15 15 }
+	culture = leshanka
+	religion = phezeth
+	title = vizzen
+	title_female = vizzen
+	capital = 8
+
+	c_isle_damned = {
+		capital = 8
+		b_field_pieces = {
+			title = keric
+			title_female = keric
+		}
+		b_town_necrosis = {
+			title = keric
+			title_female = keric
+		}
+		b_oblivion_forest = {
+			title = keric
+			title_female = keric
+		}
+		color = { 15 15 15 }
+		color2 = { 15 15 15 }
+		culture = leshanka
+		religion = phezeth
+		title = contra
+		title_female = contras
+	}	
+}

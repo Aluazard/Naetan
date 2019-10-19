@@ -1,5 +1,8 @@
-	title = c_rohern
+	title = c_isle_damned
 	max_settlements = 4
-	culture = zhangzhung
-	religion = khurmazta
-	b_salarda = tribal
+	culture = leshanka
+	religion = phezeth
+
+	b_oblivion_forest = tribal
+	b_town_necrosis = tribal
+	b_field_pieces = tribal

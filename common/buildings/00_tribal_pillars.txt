@@ -6,6 +6,7 @@ tribal = {
 		desc = tb_great_pillar_norse_desc
 		potential = { 
 			location = { has_province_flag = flag_great_pillar_norse } 
+			has_game_started = yes
 		}
 		is_active_trigger = {
 			FROM = { #Owner and his liege must be of the founding religion, otherwise the building becomes inactive.
@@ -55,6 +56,7 @@ tribal = {
 		desc = tb_great_pillar_tengri_desc
 		potential = { 
 			location = { has_province_flag = flag_great_pillar_tengri } 
+			has_game_started = yes
 		}
 		is_active_trigger = {
 			FROM = { 
@@ -102,6 +104,7 @@ tribal = {
 		desc = tb_great_pillar_slavic_desc
 		potential = { 
 			location = { has_province_flag = flag_great_pillar_slavic } 
+			has_game_started = yes
 		}
 		is_active_trigger = {
 			FROM = { 
@@ -148,6 +151,7 @@ tribal = {
 		desc = tb_great_pillar_baltic_desc
 		potential = { 
 			location = { has_province_flag = flag_great_pillar_baltic } 
+			has_game_started = yes
 		}
 		is_active_trigger = {
 			FROM = { 
@@ -193,6 +197,7 @@ tribal = {
 		desc = tb_great_pillar_finnish_desc
 		potential = { 
 			location = { has_province_flag = flag_great_pillar_finnish } 
+			has_game_started = yes
 		}
 		is_active_trigger = {
 			FROM = { 
@@ -238,6 +243,7 @@ tribal = {
 		desc = tb_great_pillar_west_african_desc
 		potential = { 
 			location = { has_province_flag = flag_great_pillar_west_african } 
+			has_game_started = yes
 		}
 		is_active_trigger = {
 			FROM = { 
@@ -284,6 +290,7 @@ tribal = {
 		desc = tb_great_pillar_aztec_desc
 		potential = { 
 			location = { has_province_flag = flag_great_pillar_aztec } 
+			has_game_started = yes
 		}
 		is_active_trigger = {
 			FROM = { 
@@ -330,6 +337,7 @@ tribal = {
 		desc = tb_great_pillar_bon_desc
 		potential = { 
 			location = { has_province_flag = flag_great_pillar_bon } 
+			has_game_started = yes
 		}
 		is_active_trigger = {
 			FROM = { 
@@ -374,6 +382,7 @@ tribal = {
 		desc = tb_great_pillar_zun_desc
 		potential = { 
 			location = { has_province_flag = flag_great_pillar_zun } 
+			has_game_started = yes
 		}
 		is_active_trigger = {
 			FROM = { 
@@ -420,6 +429,7 @@ tribal = {
 		desc = tb_great_pillar_hellenic_desc
 		potential = { 
 			location = { has_province_flag = flag_great_pillar_hellenic } 
+			has_game_started = yes
 		}
 		is_active_trigger = {
 			FROM = { 
@@ -469,6 +479,7 @@ temple = { #Historical Irminsul's holding is set as a temple.
 		desc = tb_great_pillar_norse_desc
 		potential = { 
 			location = { has_province_flag = flag_great_pillar_norse_irminsul } 
+			has_game_started = yes
 		}
 		is_active_trigger = {
 			FROM = { 

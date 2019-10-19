@@ -29,11 +29,41 @@ spriteTypes = {
 		noOfFrames = 6
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_charframe_150_pillagers"
+		texturefile = "gfx/interface/charframes/charframe_150_tribal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_pillagers"
+		texturefile = "gfx/interface/charframes/charframe_100_tribal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_pillagers"
+		texturefile = "gfx/interface/charframes/charframe_75_tribal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_pillagers"
+		texturefile = "gfx/interface/charframes/charframe_50_tribal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_pillagers"
+		texturefile = "gfx/interface/charframes/charframe_34_tribal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
 	
 	### government icons
 	spriteType = {
-		name = "GFX_icon_fiefdom_government"
-		texturefile = "gfx/interface/governments/government_icon_fiefdom.dds"
+		name = "GFX_icon_pillagers_government"
+		texturefile = "gfx/interface/governments/government_icon_pillagers.dds"
 	}
 }
 
