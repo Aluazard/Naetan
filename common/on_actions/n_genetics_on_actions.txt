@@ -1,6 +1,8 @@
 on_startup = {
 	events = {
 		genetics.01 # Sets global flag
+		genetics.02
+		genetics.03
 		genetics.10 # Sets dick
 		genetics.20 # Sets breast
 	}
@@ -11,6 +13,8 @@ on_chronicle_start = {
 	events = {
 		genetics.10 # Sets dick
 		genetics.20 # Sets breast
+		genetics.02
+		genetics.03
 	}
 }
 
@@ -19,6 +23,8 @@ on_yearly_pulse = { # Meant to catch anyone added over the course of the year by
 	events = {
 		genetics.10 # Sets dick
 		genetics.20 # Sets breast
+		genetics.02
+		genetics.03
 	}
 }
 
@@ -27,5 +33,7 @@ on_adulthood = {
 	events = {
 		genetics.15 # Sets dick
 		genetics.25 # Sets breast
+		genetics.02
+		genetics.03
 	}
 }

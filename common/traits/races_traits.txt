@@ -10,6 +10,17 @@ aossi = {
 	immortal = yes
 	
 	customizer = no
+
+	opposites = {
+		nua
+		nua_1
+		nua_2
+		nua_3
+		nua_4
+		nua_5
+	}
+
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -27,6 +38,17 @@ aossi_1 = {
 	ai_honor = -5
 	
 	customizer = no
+
+	opposites = {
+		nua
+		nua_1
+		nua_2
+		nua_3
+		nua_4
+		nua_5
+	}
+
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -46,6 +68,17 @@ aossi_2 = {
 	ai_honor = -5
 	
 	customizer = no
+
+	opposites = {
+		nua
+		nua_1
+		nua_2
+		nua_3
+		nua_4
+		nua_5
+	}
+
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -65,6 +98,17 @@ aossi_3 = {
 	ai_honor = -5
 	
 	customizer = no
+
+	opposites = {
+		nua
+		nua_1
+		nua_2
+		nua_3
+		nua_4
+		nua_5
+	}
+
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -84,6 +128,17 @@ aossi_4 = {
 	ai_honor = -5
 	
 	customizer = no
+
+	opposites = {
+		nua
+		nua_1
+		nua_2
+		nua_3
+		nua_4
+		nua_5
+	}
+
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -103,6 +158,17 @@ aossi_5 = {
 	ai_honor = -5
 	
 	customizer = no
+
+	opposites = {
+		nua
+		nua_1
+		nua_2
+		nua_3
+		nua_4
+		nua_5
+	}
+
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -120,6 +186,23 @@ nua = {
 	immortal = yes
 	
 	customizer = no
+
+	opposites = {
+		aossi
+		aossi_1
+		aossi_2
+		aossi_3
+		aossi_4
+		aossi_5
+		leshnik
+		leshnik_1
+		leshnik_2
+		leshnik_3
+		leshnik_4
+		leshnik_5
+	}
+
+	opposite_opinion = -1000
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -134,6 +217,23 @@ nua_1 = {
 	ai_honor = 20
 	
 	customizer = no
+
+	opposites = {
+		aossi
+		aossi_1
+		aossi_2
+		aossi_3
+		aossi_4
+		aossi_5
+		leshnik
+		leshnik_1
+		leshnik_2
+		leshnik_3
+		leshnik_4
+		leshnik_5
+	}
+
+	opposite_opinion = -1000
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -148,6 +248,23 @@ nua_2 = {
 	ai_honor = 20
 	
 	customizer = no
+
+	opposites = {
+		aossi
+		aossi_1
+		aossi_2
+		aossi_3
+		aossi_4
+		aossi_5
+		leshnik
+		leshnik_1
+		leshnik_2
+		leshnik_3
+		leshnik_4
+		leshnik_5
+	}
+
+	opposite_opinion = -1000
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -162,6 +279,23 @@ nua_3 = {
 	ai_honor = 20
 	
 	customizer = no
+
+	opposites = {
+		aossi
+		aossi_1
+		aossi_2
+		aossi_3
+		aossi_4
+		aossi_5
+		leshnik
+		leshnik_1
+		leshnik_2
+		leshnik_3
+		leshnik_4
+		leshnik_5
+	}
+
+	opposite_opinion = -1000
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -176,6 +310,23 @@ nua_4 = {
 	ai_honor = 20
 	
 	customizer = no
+
+	opposites = {
+		aossi
+		aossi_1
+		aossi_2
+		aossi_3
+		aossi_4
+		aossi_5
+		leshnik
+		leshnik_1
+		leshnik_2
+		leshnik_3
+		leshnik_4
+		leshnik_5
+	}
+
+	opposite_opinion = -1000
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -190,6 +341,23 @@ nua_5 = {
 	ai_honor = 20
 	
 	customizer = no
+
+	opposites = {
+		aossi
+		aossi_1
+		aossi_2
+		aossi_3
+		aossi_4
+		aossi_5
+		leshnik
+		leshnik_1
+		leshnik_2
+		leshnik_3
+		leshnik_4
+		leshnik_5
+	}
+
+	opposite_opinion = -1000
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -205,6 +373,17 @@ leshnik = {
 	ai_honor = -100
 	
 	customizer = no
+
+	opposites = {
+		nua
+		nua_1
+		nua_2
+		nua_3
+		nua_4
+		nua_5
+	}
+
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -219,6 +398,17 @@ leshnik_1 = {
 	ai_honor = -100
 	
 	customizer = no
+
+	opposites = {
+		nua
+		nua_1
+		nua_2
+		nua_3
+		nua_4
+		nua_5
+	}
+
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -233,6 +423,17 @@ leshnik_2 = {
 	ai_honor = -100
 
 	customizer = no
+
+	opposites = {
+		nua
+		nua_1
+		nua_2
+		nua_3
+		nua_4
+		nua_5
+	}
+
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -247,6 +448,17 @@ leshnik_3 = {
 	ai_honor = -100
 	
 	customizer = no
+
+	opposites = {
+		nua
+		nua_1
+		nua_2
+		nua_3
+		nua_4
+		nua_5
+	}
+
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -261,6 +473,17 @@ leshnik_4 = {
 	ai_honor = -100
 	
 	customizer = no
+
+	opposites = {
+		nua
+		nua_1
+		nua_2
+		nua_3
+		nua_4
+		nua_5
+	}
+
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -275,6 +498,17 @@ leshnik_5 = {
 	ai_honor = -100
 	
 	customizer = no
+
+	opposites = {
+		nua
+		nua_1
+		nua_2
+		nua_3
+		nua_4
+		nua_5
+	}
+
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }

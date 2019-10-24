@@ -8,3 +8,8 @@
 	culture = kalleon
 }
 
+1000 = {
+	name = Goldrix
+	culture = leshanka
+}
+

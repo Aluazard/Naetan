@@ -1,21 +1,5 @@
 namespace = genetics
 
-# .02 add race traits to characters
-character_event = { #Sign & Racial Trait for RD characters
-	id = genetics.02
-	is_triggered_only = yes
-	hide_window = yes
-	
-	trigger = {
-		NOT = { has_character_flag = has_racial_trait }
-	}
-	
-	immediate = {
-		add_racial_trait = yes
-		set_character_flag = has_racial_trait
-	}
-}
-
 # .01 global flag for those seeking to have their mod check to see if sast is present or not
 character_event = {
 	id = genetics.01
@@ -23,6 +7,115 @@ character_event = {
     hide_window = yes
     trigger = { NOT = { has_global_flag = genetics_is_present }} # We check to ensure that the global flag isn't already there
     immediate = { set_global_flag = genetics_is_present } # We go ahead and set the global flag
+}
+
+# .02 add gender
+character_event = { #gender for characters
+	id = genetics.02
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { has_character_flag = has_assigned_gender }
+		OR = {
+			trait = gigantic_dick
+			trait = enormous_dick
+			trait = huge_dick
+			trait = big_dick
+			trait = regular_dick
+			trait = small_dick
+			trait = tiny_dick
+		}
+		AND = {
+			is_female = no
+		}
+	}
+	
+	immediate = {
+		set_character_flag = has_assigned_gender
+		set_character_flag = gender_male
+	}
+}
+
+character_event = { #gender for characters
+	id = genetics.03
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { has_character_flag = has_assigned_gender }
+		OR = {
+			trait = gigantic_tits
+			trait = enormous_tits
+			trait = huge_tits
+			trait = big_tits
+			trait = regular_tits
+			trait = small_tits
+			trait = tiny_tits
+		}
+		AND = {
+			is_female = yes
+		}
+	}
+	
+	immediate = {
+		set_character_flag = has_assigned_gender
+		set_character_flag = gender_female
+	}
+}
+
+character_event = { #gender for characters
+	id = genetics.04
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { has_character_flag = has_assigned_gender }
+		OR = {
+			trait = gigantic_tits
+			trait = enormous_tits
+			trait = huge_tits
+			trait = big_tits
+			trait = regular_tits
+			trait = small_tits
+			trait = tiny_tits
+		}
+		AND = {
+			is_female = no
+		}
+	}
+	
+	immediate = {
+		set_character_flag = has_assigned_gender
+		set_character_flag = gender_trap
+	}
+}
+
+character_event = { #gender for characters
+	id = genetics.05
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { has_character_flag = has_assigned_gender }
+		OR = {
+			trait = gigantic_dick
+			trait = enormous_dick
+			trait = huge_dick
+			trait = big_dick
+			trait = regular_dick
+			trait = small_dick
+			trait = tiny_dick
+		}
+		AND = {
+			is_female = yes
+		}
+	}
+	
+	immediate = {
+		set_character_flag = has_assigned_gender
+		set_character_flag = gender_futanari
+	}
 }
 
 # .10 males get their penis size at start-up (hidden event)
