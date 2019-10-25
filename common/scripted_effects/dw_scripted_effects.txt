@@ -1,0 +1,4441 @@
+###TRAIT ADDING EFFECTS###
+
+# Audax Validator "!" Ignore_1006
+
+# Portrait Trait Assignments
+add_random_orc_portrait = {
+	random_list = {
+		## Male images 456 - 468
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait456
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait457
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait458
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait459
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait460
+			add_trait = scarred
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait461
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait462
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait463
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait464
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait465
+			add_trait = wroth
+			add_trait = berserker
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait466
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait467
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait468
+			add_trait = scarred
+		}
+		## Female images 443 - 455
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait443
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait444
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait445
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait446
+			add_trait = scarred
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait447
+			add_trait = scarred
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait448
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait449
+			add_trait = lustful
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait450
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait451
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait452
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait453
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait454
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait455
+			add_trait = wroth
+		}
+	}
+}
+add_random_kitsune_portrait = {
+	random_list = {
+		## Male images 433 - 442
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait433
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait434
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait435
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait436
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait437
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait438
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait439
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait440
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait441
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait442
+		}
+		## Female images 417 - 432
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait417
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait418
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait419
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait420
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait421
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait422
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait423
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait424
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait425
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait426
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait427
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait428
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait429
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait430
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait431
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait432
+		}
+	}
+}
+add_random_tentacle_portrait = {
+	random_list = {
+		## Male images 377 - 390
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait377
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait378
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait379
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait380
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait381
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait382
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait383
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait384
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait385
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait386
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait387
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait388
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait389
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait390
+		}
+		## Female images 365 - 376
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait365
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait366
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait367
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait368
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait369
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait370
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait371
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait372
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait373
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait374
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait375
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait376
+		}
+	}
+}
+add_random_elf_portrait = {
+	random_list = {
+		## Male images 405 - 416
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait405
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait406
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait407
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait408
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait409
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait410
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait411
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait412
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait413
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait414
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait415
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait416
+		}
+		## Female images 391 - 404
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait391
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait392
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait393
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait394
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait395
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait396
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait397
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait398
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait399
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait400
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait401
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait402
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait403
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait404
+		}
+	}
+}
+add_random_werewolf_portrait = {
+	random_list = {
+		## Male images
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait106
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait107
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait108
+			add_trait = scarred
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait109
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait110
+			add_trait = scarred
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait111
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait112
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait113
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait114
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait115
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait117
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait118
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait120
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait122
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait123
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = yes
+			}
+			add_trait = portrait124
+		}
+		## Female images
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait105
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait116
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait119
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait121
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait125
+			add_trait = fair
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait126
+			add_trait = fair
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait127
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait128
+			add_trait = fair
+		}
+		25 = {
+			modifier = {
+				factor = 0
+				is_female = no
+			}
+			add_trait = portrait129
+			add_trait = lustful
+		}
+	}
+}
+add_random_neko_portrait = {
+	random_list = {
+		## Male Neko images 485 - 488, 490 - 494
+		10 = {
+			trigger = {
+				is_female = no
+			}
+			add_trait = portrait485
+			add_trait = one_eyed # While it's not clearly obvious - the image has an eye-patch over the left eye.
+		}
+		20 = {
+			trigger = {
+				is_female = no
+			}
+			add_trait = portrait486
+		}
+		20 = {
+			trigger = {
+				is_female = no
+			}
+			add_trait = portrait487
+		}
+		20 = {
+			trigger = {
+				is_female = no
+			}
+			add_trait = portrait488
+		}
+		10 = {
+			trigger = {
+				is_female = no
+			}
+			add_trait = portrait490
+			add_trait = fair # I'm adding the fair here, as it's a very feminine look (based on a trap neko)
+		}
+		10 = {
+			trigger = {
+				is_female = no
+			}
+			add_trait = portrait491
+			add_trait = fair # As opposed to the feminine influence for the previous entry, this time it's due to a greater than normal (for a neko) supernatural allure
+		}
+		20 = {
+			trigger = {
+				is_female = no
+			}
+			add_trait = portrait492
+		}
+		20 = {
+			trigger = {
+				is_female = no
+			}
+			add_trait = portrait493
+		}
+		20 = {
+			trigger = {
+				is_female = no
+			}
+			add_trait = portrait494
+		}
+		## Female Neko images 469 - 472 474 - 483 496
+		20 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait469
+		}
+		20 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait470
+		}
+		20 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait471
+		}
+		20 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait472
+		}
+		10 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait474
+			add_trait = scarred
+		}
+		20 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait475
+		}
+		20 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait476
+		}
+		20 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait477
+		}
+		20 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait478
+		}
+		10 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait479
+			add_trait = heterochromia
+		}
+		20 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait480
+		}
+		10 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait481
+			add_trait = heterochromia
+		}
+		20 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait482
+		}
+		20 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait483
+		}
+		20 = {
+			trigger = {
+				is_female = yes
+			}
+			add_trait = portrait496
+		}
+	}
+}
+add_random_vampire_portrait = {
+	random_list = {
+		## Male Nosferatu Images 131-133   134 is also one, but meant for a special story event, so isn't part of the random assignment
+		20 = {
+			trigger = {
+				is_female = no
+				trait = ugly
+				trait = vampire
+			}
+			add_trait = portrait131
+		}
+		20 = {
+			trigger = {
+				is_female = no
+				trait = ugly
+				trait = vampire
+			}
+			add_trait = portrait132
+		}
+		20 = {
+			trigger = {
+				is_female = no
+				trait = ugly
+				trait = vampire
+			}
+			add_trait = portrait133
+		}
+	}
+}
+remove_custom_portrait = {
+	remove_trait = portrait1
+	remove_trait = portrait2
+	remove_trait = portrait3
+	remove_trait = portrait4
+	remove_trait = portrait5
+	remove_trait = portrait6
+	remove_trait = portrait7
+	remove_trait = portrait8
+	remove_trait = portrait9
+	remove_trait = portrait10
+	remove_trait = portrait11
+	remove_trait = portrait12
+	remove_trait = portrait13
+	remove_trait = portrait14
+	remove_trait = portrait15
+	remove_trait = portrait16
+	remove_trait = portrait17
+	remove_trait = portrait18
+	remove_trait = portrait19
+	remove_trait = portrait20
+	remove_trait = portrait21
+	remove_trait = portrait22
+	remove_trait = portrait23
+	remove_trait = portrait24
+	remove_trait = portrait25
+	remove_trait = portrait26
+	remove_trait = portrait27
+	remove_trait = portrait28
+	remove_trait = portrait29
+	remove_trait = portrait30
+	remove_trait = portrait31
+	remove_trait = portrait32
+	remove_trait = portrait33
+	remove_trait = portrait34
+	remove_trait = portrait35
+	remove_trait = portrait36
+	remove_trait = portrait37
+	remove_trait = portrait38
+	remove_trait = portrait39
+	remove_trait = portrait40
+	remove_trait = portrait41
+	remove_trait = portrait42
+	remove_trait = portrait43
+	remove_trait = portrait44
+	remove_trait = portrait45
+	remove_trait = portrait46
+	remove_trait = portrait47
+	remove_trait = portrait48
+	remove_trait = portrait49
+	remove_trait = portrait50
+	remove_trait = portrait51
+	remove_trait = portrait52
+	remove_trait = portrait53
+	remove_trait = portrait54
+	remove_trait = portrait55
+	remove_trait = portrait56
+	remove_trait = portrait57
+	remove_trait = portrait58
+	remove_trait = portrait59
+	remove_trait = portrait60
+	remove_trait = portrait61
+	remove_trait = portrait62
+	remove_trait = portrait63
+	remove_trait = portrait64
+	remove_trait = portrait65
+	remove_trait = portrait66
+	remove_trait = portrait67
+	remove_trait = portrait68
+	remove_trait = portrait69
+	remove_trait = portrait70
+	remove_trait = portrait71
+	remove_trait = portrait72
+	remove_trait = portrait73
+	remove_trait = portrait74
+	remove_trait = portrait75
+	remove_trait = portrait76
+	remove_trait = portrait77
+	remove_trait = portrait78
+	remove_trait = portrait79
+	remove_trait = portrait80
+	remove_trait = portrait81
+	remove_trait = portrait82
+	remove_trait = portrait83
+	remove_trait = portrait84
+	remove_trait = portrait85
+	remove_trait = portrait86
+	remove_trait = portrait87
+	remove_trait = portrait88
+	remove_trait = portrait89
+	remove_trait = portrait90
+	remove_trait = portrait91
+	remove_trait = portrait92
+	remove_trait = portrait93
+	remove_trait = portrait94
+	remove_trait = portrait95
+	remove_trait = portrait96
+	remove_trait = portrait97
+	remove_trait = portrait98
+	remove_trait = portrait99
+	remove_trait = portrait100
+	remove_trait = portrait101
+	remove_trait = portrait102
+	remove_trait = portrait103
+	remove_trait = portrait104
+	remove_trait = portrait105
+	remove_trait = portrait106
+	remove_trait = portrait107
+	remove_trait = portrait108
+	remove_trait = portrait109
+	remove_trait = portrait110
+	remove_trait = portrait111
+	remove_trait = portrait112
+	remove_trait = portrait113
+	remove_trait = portrait114
+	remove_trait = portrait115
+	remove_trait = portrait116
+	remove_trait = portrait117
+	remove_trait = portrait118
+	remove_trait = portrait119
+	remove_trait = portrait120
+	remove_trait = portrait121
+	remove_trait = portrait122
+	remove_trait = portrait123
+	remove_trait = portrait124
+	remove_trait = portrait125
+	remove_trait = portrait126
+	remove_trait = portrait127
+	remove_trait = portrait128
+	remove_trait = portrait129
+	remove_trait = portrait130
+	remove_trait = portrait131
+	remove_trait = portrait132
+	remove_trait = portrait133
+	remove_trait = portrait134
+	remove_trait = portrait135
+	remove_trait = portrait136
+	remove_trait = portrait137
+	remove_trait = portrait138
+	remove_trait = portrait139
+	remove_trait = portrait140
+	remove_trait = portrait141
+	remove_trait = portrait142
+	remove_trait = portrait143
+	remove_trait = portrait144
+	remove_trait = portrait145
+	remove_trait = portrait146
+	remove_trait = portrait147
+	remove_trait = portrait148
+	remove_trait = portrait149
+	remove_trait = portrait150
+	remove_trait = portrait151
+	remove_trait = portrait152
+	remove_trait = portrait153
+	remove_trait = portrait154
+	remove_trait = portrait155
+	remove_trait = portrait156
+	remove_trait = portrait157
+	remove_trait = portrait158
+	remove_trait = portrait159
+	remove_trait = portrait160
+	remove_trait = portrait161
+	remove_trait = portrait162
+	remove_trait = portrait163
+	remove_trait = portrait164
+	remove_trait = portrait165
+	remove_trait = portrait166
+	remove_trait = portrait167
+	remove_trait = portrait168
+	remove_trait = portrait169
+	remove_trait = portrait170
+	remove_trait = portrait171
+	remove_trait = portrait172
+	remove_trait = portrait173
+	remove_trait = portrait174
+	remove_trait = portrait175
+	remove_trait = portrait176
+	remove_trait = portrait177
+	remove_trait = portrait178
+	remove_trait = portrait179
+	remove_trait = portrait180
+	remove_trait = portrait181
+	remove_trait = portrait182
+	remove_trait = portrait183
+	remove_trait = portrait184
+	remove_trait = portrait185
+	remove_trait = portrait186
+	remove_trait = portrait187
+	remove_trait = portrait188
+	remove_trait = portrait189
+	remove_trait = portrait190
+	remove_trait = portrait191
+	remove_trait = portrait192
+	remove_trait = portrait193
+	remove_trait = portrait194
+	remove_trait = portrait195
+	remove_trait = portrait196
+	remove_trait = portrait197
+	remove_trait = portrait198
+	remove_trait = portrait199
+	remove_trait = portrait200
+	remove_trait = portrait201
+	remove_trait = portrait202
+	remove_trait = portrait203
+	remove_trait = portrait204
+	remove_trait = portrait205
+	remove_trait = portrait206
+	remove_trait = portrait207
+	remove_trait = portrait208
+	remove_trait = portrait209
+	remove_trait = portrait210
+	remove_trait = portrait211
+	remove_trait = portrait212
+	remove_trait = portrait213
+	remove_trait = portrait214
+	remove_trait = portrait215
+	remove_trait = portrait216
+	remove_trait = portrait217
+	remove_trait = portrait218
+	remove_trait = portrait219
+	remove_trait = portrait220
+	remove_trait = portrait221
+	remove_trait = portrait222
+	remove_trait = portrait223
+	remove_trait = portrait224
+	remove_trait = portrait225
+	remove_trait = portrait226
+	remove_trait = portrait227
+	remove_trait = portrait228
+	remove_trait = portrait229
+	remove_trait = portrait230
+	remove_trait = portrait231
+	remove_trait = portrait232
+	remove_trait = portrait233
+	remove_trait = portrait234
+	remove_trait = portrait235
+	remove_trait = portrait236
+	remove_trait = portrait237
+	remove_trait = portrait238
+	remove_trait = portrait239
+	remove_trait = portrait240
+	remove_trait = portrait241
+	remove_trait = portrait242
+	remove_trait = portrait243
+	remove_trait = portrait244
+	remove_trait = portrait245
+	remove_trait = portrait246
+	remove_trait = portrait247
+	remove_trait = portrait248
+	remove_trait = portrait249
+	remove_trait = portrait250
+	remove_trait = portrait251
+	remove_trait = portrait252
+	remove_trait = portrait253
+	remove_trait = portrait254
+	remove_trait = portrait255
+	remove_trait = portrait256
+	remove_trait = portrait257
+	remove_trait = portrait258
+	remove_trait = portrait259
+	remove_trait = portrait260
+	remove_trait = portrait261
+	remove_trait = portrait262
+	remove_trait = portrait263
+	remove_trait = portrait264
+	remove_trait = portrait265
+	remove_trait = portrait266
+	remove_trait = portrait267
+	remove_trait = portrait268
+	remove_trait = portrait269
+	remove_trait = portrait270
+	remove_trait = portrait271
+	remove_trait = portrait272
+	remove_trait = portrait273
+	remove_trait = portrait274
+	remove_trait = portrait275
+	remove_trait = portrait276
+	remove_trait = portrait277
+	remove_trait = portrait278
+	remove_trait = portrait279
+	remove_trait = portrait280
+	remove_trait = portrait281
+	remove_trait = portrait282
+	remove_trait = portrait283
+	remove_trait = portrait284
+	remove_trait = portrait285
+	remove_trait = portrait286
+	remove_trait = portrait287
+	remove_trait = portrait288
+	remove_trait = portrait289
+	remove_trait = portrait290
+	remove_trait = portrait291
+	remove_trait = portrait292
+	remove_trait = portrait293
+	remove_trait = portrait294
+	remove_trait = portrait295
+	remove_trait = portrait296
+	remove_trait = portrait297
+	remove_trait = portrait298
+	remove_trait = portrait299
+	remove_trait = portrait300
+	remove_trait = portrait301
+	remove_trait = portrait302
+	remove_trait = portrait303
+	remove_trait = portrait304
+	remove_trait = portrait305
+	remove_trait = portrait306
+	remove_trait = portrait307
+	remove_trait = portrait308
+	remove_trait = portrait309
+	remove_trait = portrait310
+	remove_trait = portrait311
+	remove_trait = portrait312
+	remove_trait = portrait313
+	remove_trait = portrait314
+	remove_trait = portrait315
+	remove_trait = portrait316
+	remove_trait = portrait317
+	remove_trait = portrait318
+	remove_trait = portrait319
+	remove_trait = portrait320
+	remove_trait = portrait321
+	remove_trait = portrait322
+	remove_trait = portrait323
+	remove_trait = portrait324
+	remove_trait = portrait325
+	remove_trait = portrait326
+	remove_trait = portrait327
+	remove_trait = portrait328
+	remove_trait = portrait329
+	remove_trait = portrait330
+	remove_trait = portrait331
+	remove_trait = portrait332
+	remove_trait = portrait333
+	remove_trait = portrait334
+	remove_trait = portrait335
+	remove_trait = portrait336
+	remove_trait = portrait337
+	remove_trait = portrait338
+	remove_trait = portrait339
+	remove_trait = portrait340
+	remove_trait = portrait341
+	remove_trait = portrait342
+	remove_trait = portrait343
+	remove_trait = portrait344
+	remove_trait = portrait345
+	remove_trait = portrait346
+	remove_trait = portrait347
+	remove_trait = portrait348
+	remove_trait = portrait349
+	remove_trait = portrait350
+	remove_trait = portrait351
+	remove_trait = portrait352
+	remove_trait = portrait353
+	remove_trait = portrait354
+	remove_trait = portrait355
+	remove_trait = portrait356
+	remove_trait = portrait357
+	remove_trait = portrait358
+	remove_trait = portrait359
+	remove_trait = portrait360
+	remove_trait = portrait361
+	remove_trait = portrait362
+	remove_trait = portrait363
+	remove_trait = portrait364
+	remove_trait = portrait365
+	remove_trait = portrait366
+	remove_trait = portrait367
+	remove_trait = portrait368
+	remove_trait = portrait369
+	remove_trait = portrait370
+	remove_trait = portrait371
+	remove_trait = portrait372
+	remove_trait = portrait373
+	remove_trait = portrait374
+	remove_trait = portrait375
+	remove_trait = portrait376
+	remove_trait = portrait377
+	remove_trait = portrait378
+	remove_trait = portrait379
+	remove_trait = portrait380
+	remove_trait = portrait381
+	remove_trait = portrait382
+	remove_trait = portrait383
+	remove_trait = portrait384
+	remove_trait = portrait385
+	remove_trait = portrait386
+	remove_trait = portrait387
+	remove_trait = portrait388
+	remove_trait = portrait389
+	remove_trait = portrait390
+	remove_trait = portrait391
+	remove_trait = portrait392
+	remove_trait = portrait393
+	remove_trait = portrait394
+	remove_trait = portrait395
+	remove_trait = portrait396
+	remove_trait = portrait397
+	remove_trait = portrait398
+	remove_trait = portrait399
+	remove_trait = portrait400
+	remove_trait = portrait401
+	remove_trait = portrait402
+	remove_trait = portrait403
+	remove_trait = portrait404
+	remove_trait = portrait405
+	remove_trait = portrait406
+	remove_trait = portrait407
+	remove_trait = portrait408
+	remove_trait = portrait409
+	remove_trait = portrait410
+	remove_trait = portrait411
+	remove_trait = portrait412
+	remove_trait = portrait413
+	remove_trait = portrait414
+	remove_trait = portrait415
+	remove_trait = portrait416
+	remove_trait = portrait417
+	remove_trait = portrait418
+	remove_trait = portrait419
+	remove_trait = portrait420
+	remove_trait = portrait421
+	remove_trait = portrait422
+	remove_trait = portrait423
+	remove_trait = portrait424
+	remove_trait = portrait425
+	remove_trait = portrait426
+	remove_trait = portrait427
+	remove_trait = portrait428
+	remove_trait = portrait429
+	remove_trait = portrait430
+	remove_trait = portrait431
+	remove_trait = portrait432
+	remove_trait = portrait433
+	remove_trait = portrait434
+	remove_trait = portrait435
+	remove_trait = portrait436
+	remove_trait = portrait437
+	remove_trait = portrait438
+	remove_trait = portrait439
+	remove_trait = portrait440
+	remove_trait = portrait441
+	remove_trait = portrait442
+	remove_trait = portrait443
+	remove_trait = portrait444
+	remove_trait = portrait445
+	remove_trait = portrait446
+	remove_trait = portrait447
+	remove_trait = portrait448
+	remove_trait = portrait449
+	remove_trait = portrait450
+	remove_trait = portrait451
+	remove_trait = portrait452
+	remove_trait = portrait453
+	remove_trait = portrait454
+	remove_trait = portrait455
+	remove_trait = portrait456
+	remove_trait = portrait457
+	remove_trait = portrait458
+	remove_trait = portrait459
+	remove_trait = portrait460
+	remove_trait = portrait461
+	remove_trait = portrait462
+	remove_trait = portrait463
+	remove_trait = portrait464
+	remove_trait = portrait465
+	remove_trait = portrait466
+	remove_trait = portrait467
+	remove_trait = portrait468
+	remove_trait = portrait469
+	remove_trait = portrait470
+	remove_trait = portrait471
+	remove_trait = portrait472
+	remove_trait = portrait473
+	remove_trait = portrait474
+	remove_trait = portrait475
+	remove_trait = portrait476
+	remove_trait = portrait477
+	remove_trait = portrait478
+	remove_trait = portrait479
+	remove_trait = portrait480
+	remove_trait = portrait481
+	remove_trait = portrait482
+	remove_trait = portrait483
+	remove_trait = portrait484
+	remove_trait = portrait485
+	remove_trait = portrait486
+	remove_trait = portrait487
+	remove_trait = portrait488
+	remove_trait = portrait489
+	remove_trait = portrait490
+	remove_trait = portrait491
+	remove_trait = portrait492
+	remove_trait = portrait493
+	remove_trait = portrait494
+	remove_trait = portrait495
+	remove_trait = portrait496
+	remove_trait = portrait497
+	remove_trait = portrait498
+	remove_trait = portrait499
+	remove_trait = portrait500
+	remove_trait = portrait501
+	remove_trait = portrait502
+	remove_trait = portrait503
+	remove_trait = portrait504
+	remove_trait = portrait505
+	remove_trait = portrait506
+	remove_trait = portrait507
+	remove_trait = portrait508
+	remove_trait = portrait509
+	remove_trait = portrait510
+	remove_trait = portrait511
+	remove_trait = portrait512
+	remove_trait = portrait513
+	remove_trait = portrait514
+	remove_trait = portrait515
+	remove_trait = portrait516
+	remove_trait = portrait517
+	remove_trait = portrait518
+	remove_trait = portrait519
+	remove_trait = portrait520
+	remove_trait = portrait521
+	remove_trait = portrait522
+	remove_trait = portrait523
+	remove_trait = portrait524
+	remove_trait = portrait525
+	remove_trait = portrait526
+	remove_trait = portrait527
+	remove_trait = portrait528
+	remove_trait = portrait529
+	remove_trait = portrait530
+	remove_trait = portrait531
+	remove_trait = portrait532
+	remove_trait = portrait533
+	remove_trait = portrait534
+	remove_trait = portrait535
+	remove_trait = portrait536
+	remove_trait = portrait537
+	remove_trait = portrait538
+	remove_trait = portrait539
+	remove_trait = portrait540
+	remove_trait = portrait541
+	remove_trait = portrait542
+	remove_trait = portrait543
+	remove_trait = portrait544
+	remove_trait = portrait545
+	remove_trait = portrait546
+	remove_trait = portrait547
+	remove_trait = portrait548
+	remove_trait = portrait549
+	remove_trait = portrait550
+	remove_trait = portrait551
+	remove_trait = portrait552
+	remove_trait = portrait553
+	remove_trait = portrait554
+	remove_trait = portrait555
+	remove_trait = portrait556
+	remove_trait = portrait557
+	remove_trait = portrait558
+	remove_trait = portrait559
+	remove_trait = portrait560
+	remove_trait = portrait561
+	remove_trait = portrait562
+	remove_trait = portrait563
+	remove_trait = portrait564
+	remove_trait = portrait565
+	remove_trait = portrait566
+	remove_trait = portrait567
+	remove_trait = portrait568
+	remove_trait = portrait569
+	remove_trait = portrait570
+	remove_trait = portrait571
+	remove_trait = portrait572
+	remove_trait = portrait573
+	remove_trait = portrait574
+	remove_trait = portrait575
+	remove_trait = portrait576
+	remove_trait = portrait577
+	remove_trait = portrait578
+	remove_trait = portrait579
+	remove_trait = portrait580
+	remove_trait = portrait581
+	remove_trait = portrait582
+	remove_trait = portrait583
+	remove_trait = portrait584
+	remove_trait = portrait585
+	remove_trait = portrait586
+	remove_trait = portrait587
+	remove_trait = portrait588
+	remove_trait = portrait589
+	remove_trait = portrait590
+	remove_trait = portrait591
+	remove_trait = portrait592
+	remove_trait = portrait593
+	remove_trait = portrait594
+	remove_trait = portrait595
+	remove_trait = portrait596
+	remove_trait = portrait597
+	remove_trait = portrait598
+	remove_trait = portrait599
+	remove_trait = portrait600
+	remove_trait = portrait601
+	remove_trait = portrait602
+	remove_trait = portrait603
+	remove_trait = portrait604
+	remove_trait = portrait605
+	remove_trait = portrait606
+	remove_trait = portrait607
+	remove_trait = portrait608
+	remove_trait = portrait609
+	remove_trait = portrait610
+	remove_trait = portrait611
+	remove_trait = portrait612
+	remove_trait = portrait613
+	remove_trait = portrait614
+	remove_trait = portrait615
+	remove_trait = portrait616
+	remove_trait = portrait617
+	remove_trait = portrait618
+	remove_trait = portrait619
+	remove_trait = portrait620
+	remove_trait = portrait621
+	remove_trait = portrait622
+	remove_trait = portrait623
+	remove_trait = portrait624
+	remove_trait = portrait625
+	remove_trait = portrait626
+	remove_trait = portrait627
+	remove_trait = portrait628
+	remove_trait = portrait629
+	remove_trait = portrait630
+	remove_trait = portrait631
+	remove_trait = portrait632
+	remove_trait = portrait633
+	remove_trait = portrait634
+	remove_trait = portrait635
+	remove_trait = portrait636
+	remove_trait = portrait637
+	remove_trait = portrait638
+	remove_trait = portrait639
+	remove_trait = portrait640
+	remove_trait = portrait641
+	remove_trait = portrait642
+	remove_trait = portrait643
+	remove_trait = portrait644
+	remove_trait = portrait645
+	remove_trait = portrait646
+	remove_trait = portrait647
+	remove_trait = portrait648
+	remove_trait = portrait649
+	remove_trait = portrait650
+}
+
+# Arena / Combat related
+process_combat_round = { # 2 fighters
+	# Expects specific event targets
+	# event_target:first_fighter
+	# event_target:second_fighter
+
+	# Audax Validator "first_combat_damage" Ignore_1006
+
+	# We grab some values and hold onto them.
+	if = {
+		limit = {
+			NOT = { event_target:first_fighter = { has_character_flag = dw_involved_in_combat } }
+		}
+		# We set-up the first fighters key information
+		event_target:first_fighter = { export_to_variable = { which = first_combat_rating value = combat_rating who = event_target:first_fighter } }
+		event_target:first_fighter = { set_variable = { which = first_combat_damage value = 0 } }
+		# We set-up the second fighters key information
+		event_target:second_fighter = { export_to_variable = { which = second_combat_rating value = combat_rating who = event_target:second_fighter } }
+		event_target:second_fighter = { set_variable = { which = second_combat_damage value = 0 } }
+		# We then do some error handling, where if any of the combat ratings are 0 (like a non-character, then we set the combat rating to 1)
+	}
+
+	# We clear the combat round flags so we can turn around and set a new one
+	clear_combat_round_end_flags = yes
+
+	# Now for the actual combat round, based on the different combat ratings
+	random_list = {
+		10 = {
+			# First fighter wounds the second
+			modifier = { event_target:first_fighter = { combat_rating_diff = { character = event_target:second_fighter value = 1 } } factor = 1.5 }
+			modifier = { event_target:first_fighter = { combat_rating_diff = { character = event_target:second_fighter value = 2 } } factor = 1.5 }
+			modifier = { event_target:first_fighter = { combat_rating_diff = { character = event_target:second_fighter value = 4 } } factor = 2.0 }
+			modifier = { event_target:first_fighter = { combat_rating_diff = { character = event_target:second_fighter value = 6 } } factor = 2.0 }
+			# Damage dealt
+			event_target:second_fighter = { change_variable = { which = second_combat_damage value = 1 } }
+			# Flag for event description
+			event_target:first_fighter = { set_character_flag = dw_first_wounds_second_standard }
+		}
+		10 = {
+			# Fighters wound each other
+			modifier = {
+				event_target:first_fighter = { combat_rating_diff = { character = event_target:second_fighter value = 0 } }
+				event_target:second_fighter = { combat_rating_diff = { character = event_target:first_fighter value = 0 } }
+				factor = 2.0
+			}
+			# Both fighters wound each other - no check
+			event_target:second_fighter = { change_variable = { which = second_combat_damage value = 1 } }
+			event_target:first_fighter = { change_variable = { which = first_combat_damage value = 1 } }
+			# Flag for event description
+			event_target:first_fighter = { set_character_flag = dw_dual_wounds_standard }
+		}
+		10 = {
+			# Second fighter wounds the first
+			modifier = { event_target:second_fighter = { combat_rating_diff = { character = event_target:first_fighter value = 1 } } factor = 1.5 }
+			modifier = { event_target:second_fighter = { combat_rating_diff = { character = event_target:first_fighter value = 2 } } factor = 1.5 }
+			modifier = { event_target:second_fighter = { combat_rating_diff = { character = event_target:first_fighter value = 4 } } factor = 2.0 }
+			modifier = { event_target:second_fighter = { combat_rating_diff = { character = event_target:first_fighter value = 6 } } factor = 2.0 }
+			# Damage dealt
+			event_target:first_fighter = { change_variable = { which = first_combat_damage value = 1 } }
+			# Flag for event description
+			event_target:first_fighter = { set_character_flag = dw_second_wounds_first_standard }
+		}
+	}
+
+	# We set the combat flag so we don't overwrite our variables that were exported
+	if = {
+		limit = {
+			NOT = { event_target:first_fighter = { has_character_flag = dw_involved_in_combat } }
+		}
+		event_target:first_fighter = { set_character_flag = dw_involved_in_combat }
+	}
+}
+clear_combat_round_end_flags = {
+	event_target:first_fighter = {
+		clr_character_flag = dw_first_wounds_second_standard
+		clr_character_flag = dw_second_wounds_first_standard
+		clr_character_flag = dw_dual_wounds_standard
+	}
+}
+clear_combat_end_flags = {
+	event_target:first_fighter = {
+		clr_character_flag = dw_involved_in_combat
+		clr_character_flag = dw_first_wounds_second_standard
+		clr_character_flag = dw_second_wounds_first_standard
+		clr_character_flag = dw_dual_wounds_standard
+	}
+}
+# Prisoner related
+select_prisoner_for_sacrifice = {
+	random_courtier = {
+		limit = {
+			prisoner = yes # Needs to be a prisoner
+			host = { character = ROOT } # Needs to be the prisoner of ROOT (the person having the event)
+			NOT = { has_character_modifier = dw_slave_training } # Avoids grabbing a slave in training
+			NOT = { has_character_flag = dw_spared_sacrifice } # We don't choose someone we already spared
+			is_alive = yes # In hopes of avoiding reselecting someone who was recently sacrificed - since some folks reported that happened
+		}
+		save_event_target_as = dw_sacrifice # Sets our target for use in localization and event calls
+	}
+}
+clear_prisoner_for_sacrifice = {
+	clear_event_target = dw_sacrifice
+}
+
+# Court related
+kidnap_attempt_basic = {
+	# Check to see if the opposing SpyMaster catches wind of the kidnapping attempt
+	# Results based on competing SpyMaster/SpyMaster Intrigue Ratings
+	# Results based on competing SpyMaster/Target Intrigue Ratings
+	random_list ={
+		25 = { # Opposing SpyMaster involved
+			modifier = { # No chance Opposing SpyMaster gets involved if our SpyMaster is 10 points better in intrigue
+				factor = 0
+				job_spymaster = {
+					attribute_diff = {
+						character = event_target:dw_kidnap_target_spymaster
+						attribute = intrigue
+						value = 10
+					}
+				}
+			}
+			modifier = { # 50% less chance Opposing SpyMaster gets involved if our SpyMaster is 5 points better in intrigue
+				factor = 0.5
+				job_spymaster = {
+					attribute_diff = {
+						character = event_target:dw_kidnap_target_spymaster
+						attribute = intrigue
+						value = 5
+					}
+				}
+			}
+			# Random List
+			random_list = { # new potential results list that is more risky and less likely to succeed
+				20 = { # Basic Failure - only loss of money
+					# TODO event regarding the failure and opposing SpyMaster involvement
+				}
+				60 = { # Bad Failure
+					random_list = { # Variations of bad failures.
+						# TODO Add events regarding each failure - perhaps add more failure options
+						40 = { # SpyMaster is caught and imprisoned
+							job_spymaster = {
+								imprison = event_target:dw_kidnap_target_liege
+							}
+						}
+						40 = { # SpyMaster is wounded, but escapes
+							job_spymaster = {
+								add_trait = wounded
+							}
+						}
+						20 = { # SpyMaster 'falls' to their death accidentally
+							job_spymaster = {
+								death = {
+									death_reason = death_accident_fall
+								}
+							}
+						}
+					}
+				}
+				20 = { # Success
+					narrative_event = { id = DWCourt.3801 days = 7 }
+				}
+			}
+		}
+		25 = { # Basic Failure - only loss of money
+			modifier = { # 75% less chance of basic failure if our SpyMaster is 10 points better in intrigue
+				factor = 0.25
+				job_spymaster = {
+					attribute_diff = {
+						character = event_target:dw_kidnap_target
+						attribute = intrigue
+						value = 10
+					}
+				}
+			}
+			modifier = { # 50% less chance of basic failure if our SpyMaster is 5 points better in intrigue
+				factor = 0.5
+				job_spymaster = {
+					attribute_diff = {
+						character = event_target:dw_kidnap_target
+						attribute = intrigue
+						value = 5
+					}
+				}
+			}
+			# TODO Add event regarding the failure
+		}
+		25 = { # Bad Failure - SpyMaster injured / imprisoned / or killed
+			modifier = { # No chance of a bad failure if our SpyMaster is 10 points better in intrigue
+				factor = 0
+				job_spymaster = {
+					attribute_diff = {
+						character = event_target:dw_kidnap_target
+						attribute = intrigue
+						value = 10
+					}
+				}
+			}
+			modifier = { # 50% less chance of a bad failure if our SpyMaster is 5 points better in intrigue
+				factor = 0.5
+				job_spymaster = {
+					attribute_diff = {
+						character = event_target:dw_kidnap_target
+						attribute = intrigue
+						value = 5
+					}
+				}
+			}
+			random_list = { # Variations of bad failures.
+				# TODO Add events regarding each failure - perhaps add more failure options
+				40 = { # SpyMaster is caught and imprisoned
+					job_spymaster = {
+						imprison = event_target:dw_kidnap_target_liege
+					}
+				}
+				40 = { # SpyMaster is wounded, but escapes
+					job_spymaster = {
+						add_trait = wounded
+					}
+				}
+				20 = { # SpyMaster 'falls' to their death accidentally
+					job_spymaster = {
+						death = {
+							death_reason = death_accident_fall
+						}
+					}
+				}
+			}
+		}
+		25 = { # Success
+			narrative_event = { id = DWCourt.3801 days = 7 }
+		}
+	}
+}
+kidnap_attempt_improved = { # Very similar to the basic setting - yet the additional money improves odds
+	random_list ={
+		20 = { # Opposing SpyMaster involved
+			modifier = { # No chance Opposing SpyMaster gets involved if our SpyMaster is 8 points better in intrigue
+				factor = 0
+				job_spymaster = {
+					attribute_diff = {
+						character = event_target:dw_kidnap_target_spymaster
+						attribute = intrigue
+						value = 8
+					}
+				}
+			}
+			modifier = { # 50% less chance Opposing SpyMaster gets involved if our SpyMaster is 4 points better in intrigue
+				factor = 0.5
+				job_spymaster = {
+					attribute_diff = {
+						character = event_target:dw_kidnap_target_spymaster
+						attribute = intrigue
+						value = 4
+					}
+				}
+			}
+			# Random List
+			random_list = { # new potential results list that is more risky and less likely to succeed
+				25 = { # Basic Failure - only loss of money
+					# TODO event regarding the failure and opposing SpyMaster involvement
+				}
+				50 = { # Bad Failure
+					random_list = { # Variations of bad failures.
+						# TODO Add events regarding each failure - perhaps add more failure options
+						45 = { # SpyMaster is caught and imprisoned
+							job_spymaster = {
+								imprison = event_target:dw_kidnap_target_liege
+							}
+						}
+						45 = { # SpyMaster is wounded, but escapes
+							job_spymaster = {
+								add_trait = wounded
+							}
+						}
+						10 = { # SpyMaster 'falls' to their death accidentally
+							job_spymaster = {
+								death = {
+									death_reason = death_accident_fall
+								}
+							}
+						}
+					}
+				}
+				25 = { # Success
+					narrative_event = { id = DWCourt.3801 days = 7 }
+				}
+			}
+		}
+		20 = { # Basic Failure - only loss of money
+			modifier = { # 75% less chance of basic failure if our SpyMaster is 8 points better in intrigue
+				factor = 0.25
+				job_spymaster = {
+					attribute_diff = {
+						character = event_target:dw_kidnap_target
+						attribute = intrigue
+						value = 8
+					}
+				}
+			}
+			modifier = { # 50% less chance of basic failure if our SpyMaster is 4 points better in intrigue
+				factor = 0.5
+				job_spymaster = {
+					attribute_diff = {
+						character = event_target:dw_kidnap_target
+						attribute = intrigue
+						value = 4
+					}
+				}
+			}
+			# TODO Add event regarding the failure
+		}
+		20 = { # Bad Failure - SpyMaster injured / imprisoned / or killed
+			modifier = { # No chance of a bad failure if our SpyMaster is 8 points better in intrigue
+				factor = 0
+				job_spymaster = {
+					attribute_diff = {
+						character = event_target:dw_kidnap_target
+						attribute = intrigue
+						value = 8
+					}
+				}
+			}
+			modifier = { # 50% less chance of a bad failure if our SpyMaster is 4 points better in intrigue
+				factor = 0.5
+				job_spymaster = {
+					attribute_diff = {
+						character = event_target:dw_kidnap_target
+						attribute = intrigue
+						value = 4
+					}
+				}
+			}
+			random_list = { # Variations of bad failures.
+				# TODO Add events regarding each failure - perhaps add more failure options
+				45 = { # SpyMaster is caught and imprisoned
+					job_spymaster = {
+						imprison = event_target:dw_kidnap_target_liege
+					}
+				}
+				45 = { # SpyMaster is wounded, but escapes
+					job_spymaster = {
+						add_trait = wounded
+					}
+				}
+				10 = { # SpyMaster 'falls' to their death accidentally
+					job_spymaster = {
+						death = {
+							death_reason = death_accident_fall
+						}
+					}
+				}
+			}
+		}
+		40 = { # Success
+			narrative_event = { id = DWCourt.3801 days = 7 }
+		}
+	}
+}
+progress_brothel_improvement = {
+	if = {
+		limit = {
+			has_character_modifier = dw_brothel_improvement_3
+		}
+		remove_character_modifier = dw_brothel_improvement_3
+		add_character_modifier = { name = dw_brothel_improvement_4 duration = -1 }
+		narrative_event = { id = DWCourt.399 days = 14 }
+	}
+	if = {
+		limit = {
+			has_character_modifier = dw_brothel_improvement_2
+		}
+		remove_character_modifier = dw_brothel_improvement_2
+		add_character_modifier = { name = dw_brothel_improvement_3 duration = -1 }
+		narrative_event = { id = DWCourt.306 days = 14 }
+	}
+	if = {
+		limit = {
+			has_character_modifier = dw_brothel_improvement_1
+		}
+		remove_character_modifier = dw_brothel_improvement_1
+		add_character_modifier = { name = dw_brothel_improvement_2 duration = -1 }
+		narrative_event = { id = DWCourt.306 days = 14 }
+	}
+	if = {
+		limit = {
+			NOR = {
+				has_character_modifier = dw_brothel_improvement_1
+				has_character_modifier = dw_brothel_improvement_2
+				has_character_modifier = dw_brothel_improvement_3
+				has_character_modifier = dw_brothel_improvement_4
+			}
+		}
+		add_character_modifier = { name = dw_brothel_improvement_1 duration = -1 }
+		narrative_event = { id = DWCourt.306 days = 14 }
+	}
+}
+clear_brothel_improvement_flags = {
+	clr_character_flag = dw_bordello_whore
+	clr_character_flag = dw_bordello_food
+	clr_character_flag = dw_bordello_mystery
+	clr_character_flag = dw_bordello_entertainment
+	clr_character_flag = dw_bordello_poledancer
+	clr_character_flag = dw_bordello_masks
+	clr_character_flag = dw_bordello_hired_jessica
+	clr_character_flag = dw_bordello_bard
+}
+# Child of Lilith related
+clear_blood_moon_flags = {
+	clr_character_flag = dw_blood_moon_cooldown
+	clr_character_flag = dw_attending_blood_moon
+	clr_character_flag = dw_spared_sacrifice
+	clr_character_flag = dw_blood_moon_drunkard
+	clr_character_flag = dw_blood_moon_gluttony
+	clr_character_flag = dw_blood_moon_lesbian_wine
+	clr_character_flag = dw_blood_moon_spanked
+	clr_character_flag = dw_blood_moon_ass_ale
+	clr_character_flag = dw_blood_moon_intimate_art
+}
+grant_col_staged_piety_reward_minor = { # A piety reward based on the stage of the Child of Lilith
+	if = {
+		limit = {
+			is_col1 = yes
+		}
+		piety = 10
+	}
+	if = {
+		limit = {
+			is_col2 = yes
+		}
+		piety = 25
+	}
+	if = {
+		limit = {
+			is_col3 = yes
+		}
+		piety = 35
+	}
+	if = {
+		limit = {
+			is_col4 = yes
+		}
+		piety = 45
+	}
+	if = {
+		limit = {
+			is_col5 = yes
+		}
+		piety = 50
+	}
+}
+grant_col_staged_piety_reward_moderate = { # A piety reward based on the stage of the Child of Lilith
+	if = {
+		limit = {
+			is_col1 = yes
+		}
+		piety = 25
+	}
+	if = {
+		limit = {
+			is_col2 = yes
+		}
+		piety = 40
+	}
+	if = {
+		limit = {
+			is_col3 = yes
+		}
+		piety = 50
+	}
+	if = {
+		limit = {
+			is_col4 = yes
+		}
+		piety = 60
+	}
+	if = {
+		limit = {
+			is_col5 = yes
+		}
+		piety = 75
+	}
+}
+grant_col_staged_piety_reward_major = { # A piety reward based on the stage of the Child of Lilith
+	if = {
+		limit = {
+			is_col1 = yes
+		}
+		piety = 40
+	}
+	if = {
+		limit = {
+			is_col2 = yes
+		}
+		piety = 60
+	}
+	if = {
+		limit = {
+			is_col3 = yes
+		}
+		piety = 70
+	}
+	if = {
+		limit = {
+			is_col4 = yes
+		}
+		piety = 80
+	}
+	if = {
+		limit = {
+			is_col5 = yes
+		}
+		piety = 100
+	}
+}
+# Tentacle related
+remove_good_mental_traits = {
+	remove_trait = genius
+	remove_trait = quick
+	remove_trait = shrewd
+}
+remove_good_virtues = {
+	remove_trait = chaste
+	remove_trait = temperate
+	remove_trait = charitable
+	remove_trait = diligent
+	remove_trait = patient
+	remove_trait = kind
+	remove_trait = humble
+}
+
+# Werewolf related
+becomes_alpha_bitch = {
+	if = {
+		limit = {
+			is_female = yes
+		}
+		remove_character_modifier = dw_werewolf_bitch
+		add_character_modifier = { name = dw_alpha_bitch duration = -1 }
+	}
+}
+
+# Vampire related
+becomes_vampire = {
+	# Note: to avoid targeting headaches, it's best to handle any opinion related changes within the applicable event.
+	remove_trait = dhampir
+	remove_character_modifier = dw_vampire_thrall
+	add_trait = vampire
+}
+random_vampire_hunt_event = {
+	random_list = {
+		20 = {
+			narrative_event = { id = DWNight.4530 }
+		}
+	}
+}
+
+# Monster related
+check_for_antimonster_rebellion = {
+	# The greater their intrigue, the more apt they are to hide their tracks
+	if = {
+		limit = {
+			OR = {
+				has_character_modifier = dw_outed_vampire
+				has_character_modifier = dw_outed_dhampir
+			}
+		}
+		random_list = {
+			20 = { add_character_modifier = { name = dw_is_a_monster duration = -1 stacking = yes } }
+			20 = {
+				trigger = { intrigue = 8 }
+				# Chance for nothing to happen
+			}
+			20 = {
+				trigger = { intrigue = 12 }
+				# Chance for nothing to happen
+			}
+			20 = {
+				trigger = { intrigue = 16 }
+				# Chance for nothing to happen
+			}
+			20 = {
+				trigger = { intrigue = 20 }
+				# Chance for nothing to happen
+			}
+		}
+	}
+}
+
+# Sex/Body related
+remove_virginity_trait = {
+	if = {
+		limit = {
+			trait = virgin
+		}
+		remove_trait = virgin
+	}
+}
+#add_body_size_variables = {
+#	## Breast size variable
+#	# Mother's side first
+#	if = {
+#		limit = {
+#			mother_even_if_dead = { check_variable = { which = breast_size value = 1} } # If the mother has a variable, then we'll use it.
+#		}
+#		mother_even_if_dead = {
+#			ROOT = {
+#				set_variable = { which = breast_size which = PREV }
+#			}
+#		}
+#	}
+#	else = {
+#		ROOT = {
+#			set_variable = { which = breast_size value = 3 }
+#		}
+#	}
+#	# Father's side next
+#	if = {
+#		limit = {
+#			OR = {
+#				father_even_if_dead = { check_variable = { which = breast_size value = 1} }
+#				real_father_even_if_dead = { check_variable = { which = breast_size value = 1} }
+#			}
+#		}
+#		trigger_switch = {
+#			on_trigger = is_father_real_father
+#			yes = {
+#				father_even_if_dead = {
+#					ROOT = {
+#						change_variable = { which = breast_size which = PREV }
+#					}
+#				}
+#			}
+#			no = {
+#				real_father_even_if_dead = {
+#					ROOT = {
+#						change_variable = { which = breast_size which = PREV }
+#					}
+#				}
+#			}
+#		}
+#	}
+#	else = {
+#		ROOT = {
+#			change_variable = { which = breast_size value = 3 }
+#		}
+#	}
+#	# Calculate character's size
+#	divide_variable = { which = breast_size value = 2 }
+#	random_list = {
+#		5 = { change_variable = { which = breast_size value = -2 } }
+#		20 = { change_variable = { which = breast_size value = -1 } }
+#		45 = {  } # No change
+#		15 = { change_variable = { which = breast_size value = 1 } }
+#		10 = { change_variable = { which = breast_size value = 2 } }
+#		5 = { change_variable = { which = breast_size value = 3 } }
+#	}
+#	# We ensure the size didn't fall to less than 1
+#	if = {
+#		limit = {
+#			NOT = { check_variable = { which = breast_size value = 1} }
+#		}
+#		set_variable = { which = breast_size value = 1 }
+#	}
+#	# We ensure the size doesn't rise above 7
+#	if = {
+#		limit = {
+#			check_variable = { which = breast_size value = 7}
+#		}
+#		set_variable = { which = breast_size value = 7 }
+#	}
+	## Cock size variable
+	# Mother's side first
+#	if = {
+#		limit = {
+#			mother_even_if_dead = { check_variable = { which = dick_size value = 1} } # If the mother has a variable, then we'll use it.
+#		}
+#		mother_even_if_dead = {
+#			ROOT = {
+#			}
+#				set_variable = { which = dick_size which = PREV }
+#		}
+#	}
+#	else = {
+#		ROOT = {
+#			set_variable = { which = dick_size value = 3 }
+#		}
+#	}
+#	# Father's side next
+#	if = {
+#		limit = {
+#			OR = {
+#				father_even_if_dead = { check_variable = { which = dick_size value = 1} }
+#				real_father_even_if_dead = { check_variable = { which = dick_size value = 1} }
+#			}
+#		}
+#		trigger_switch = {
+#			on_trigger = is_father_real_father
+#			yes = {
+#				father_even_if_dead = {
+#					ROOT = {
+#						change_variable = { which = dick_size which = PREV }
+#					}
+#				}
+#			}
+#			no = {
+#				real_father_even_if_dead = {
+#					ROOT = {
+#						change_variable = { which = dick_size which = PREV }
+#					}
+#				}
+#		}
+#			}
+#	}
+#	else = {
+#		ROOT = {
+#			change_variable = { which = dick_size value = 3 }
+#		}
+#	}
+#	# Calculate character's size
+#	divide_variable = { which = dick_size value = 2 }
+#	random_list = {
+#		5 = { change_variable = { which = dick_size value = -2 } }
+#		20 = { change_variable = { which = dick_size value = -1 } }
+#		45 = {  } # No change
+#		15 = { change_variable = { which = dick_size value = 1 } }
+#		10 = { change_variable = { which = dick_size value = 2 } }
+#	}
+#		5 = { change_variable = { which = dick_size value = 3 } }
+#	# We ensure the size didn't fall to less than 1
+#	if = {
+#		limit = {
+#			NOT = { check_variable = { which = dick_size value = 1} }
+#		}
+#		set_variable = { which = dick_size value = 1 }
+#	}
+#	# We ensure the size doesn't rise above 7
+#		limit = {
+#	if = {
+#			check_variable = { which = dick_size value = 7 }
+#		}
+#		set_variable = { which = dick_size value = 7 }
+#	}
+#}
+add_tits = {
+	random_list = {
+		8 = {
+			trigger = { NOT = { trait = trap }}
+			modifier = {
+				factor = 5
+				mother_even_if_dead = {	trait = gigantic_tits }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = {	trait = enormous_tits }
+			}
+			add_trait = gigantic_tits
+		}
+		10 = {
+            trigger = { NOT = { trait = trap }}
+			modifier = {
+				factor = 5
+				mother_even_if_dead = { trait = enormous_tits }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = {
+                    OR = {
+                        trait = gigantic_tits
+                        trait = huge_tits
+                    }
+                }
+			}
+			add_trait = enormous_tits
+		}
+		11 = {
+            trigger = { NOT = { trait = trap }}
+			modifier = {
+				factor = 5
+				mother_even_if_dead = { trait = huge_tits }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = {
+                    OR = {
+                        trait = enormous_tits
+                        trait = big_tits
+                    }
+                }
+			}
+			add_trait = huge_tits
+		}
+		12 = {
+            trigger = { NOT = { trait = trap }}
+			modifier = {
+				factor = 5
+				mother_even_if_dead = { trait = big_tits }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = {
+                    OR = {
+                        trait = huge_tits
+                        trait = regular_tits
+                    }
+                }
+			}
+			add_trait = big_tits
+		}
+		15 = {
+            trigger = { NOT = { trait = trap }}
+			modifier = {
+				factor = 5
+				mother_even_if_dead = { trait = regular_tits }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = {
+                    OR = {
+                        trait = big_tits
+                        trait = small_tits
+                    }
+                }
+			}
+			add_trait = regular_tits
+		}
+		12 = {
+            modifier = {
+				factor = 5
+				mother_even_if_dead = { trait = small_tits }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = {
+                    OR = {
+                        trait = regular_tits
+                        trait = tiny_tits
+                    }
+                }
+			}
+			add_trait = small_tits
+		}
+		8 = {
+            modifier = {
+				factor = 5
+                OR = {
+                    mother_even_if_dead = { trait = tiny_tits }
+                    trait = trap
+                }
+			}
+            modifier = {
+				factor = 3
+				mother_even_if_dead = { trait = small_tits }
+			}
+			add_trait = tiny_tits
+		}
+	}
+	set_character_flag = dw_boobs_checked # flag set to help prevent follow-up size executions
+
+}
+add_cock = {
+	random_list = {
+		5 = {
+			modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = gigantic_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = { trait = enormous_dick }
+			}
+			add_trait = gigantic_dick
+		}
+		8 = {
+			modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = enormous_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = {
+                    OR = {
+                        trait = gigantic_dick
+    					trait = huge_dick
+                    }
+				}
+			}
+			add_trait = enormous_dick
+		}
+		10 = {
+            modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = huge_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = {
+                    OR = {
+                        trait = enormous_dick
+    					trait = big_dick
+                    }
+				}
+			}
+			add_trait = huge_dick
+		}
+		12 = {
+            modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = big_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = {
+                    OR = {
+                        trait = huge_dick
+    					trait = regular_dick
+                    }
+				}
+			}
+			add_trait = big_dick
+		}
+		15 = {
+            modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = regular_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = {
+                    OR = {
+                        trait = big_dick
+    					trait = small_dick
+                    }
+				}
+			}
+			add_trait = regular_dick
+		}
+		12 = {
+            trigger = { NOT = { trait = futa }}
+            modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = small_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = {
+                    OR = {
+                        trait = regular_dick
+    					trait = tiny_dick
+                    }
+				}
+			}
+			add_trait = small_dick
+		}
+		8 = {
+            trigger = { NOT = { trait = futa }}
+            modifier = {
+				factor = 5
+				true_father_even_if_dead = { trait = tiny_dick }
+			}
+            modifier = {
+				factor = 3
+				true_father_even_if_dead = { trait = small_dick }
+			}
+			add_trait = tiny_dick
+		}
+	}
+	set_character_flag = dw_junk_checked
+}
+remove_cock = {
+	if = {
+		limit = {
+			OR = {
+				trait = micro_dick
+				trait = tiny_dick
+				trait = small_dick
+				trait = regular_dick
+				trait = big_dick
+				trait = huge_dick
+				trait = enormous_dick
+				trait = gigantic_dick
+			}
+		}
+		remove_trait = micro_dick
+		remove_trait = tiny_dick
+		remove_trait = small_dick
+		remove_trait = regular_dick
+		remove_trait = big_dick
+		remove_trait = huge_dick
+		remove_trait = enormous_dick
+		remove_trait = gigantic_dick
+		clr_character_flag = dw_junk_checked
+	}
+}
+cock_grows = {
+	if = {
+		limit = {
+			trait = enormous_dick
+		}
+		remove_trait = enormous_dick
+		add_trait = gigantic_dick
+	}
+	else_if = {
+		limit = {
+			trait = huge_dick
+		}
+		remove_trait = huge_dick
+		add_trait = enormous_dick
+	}
+	else_if = {
+		limit = {
+			trait = big_dick
+		}
+		remove_trait = big_dick
+		add_trait = huge_dick
+	}
+	else_if = {
+		limit = {
+			trait = regular_dick
+		}
+		remove_trait = regular_dick
+		add_trait = big_dick
+	}
+	else_if = {
+		limit = {
+			trait = small_dick
+		}
+		remove_trait = small_dick
+		add_trait = regular_dick
+	}
+	else_if = {
+		limit = {
+			trait = tiny_dick
+		}
+		remove_trait = tiny_dick
+		add_trait = small_dick
+	}
+	else = {
+		remove_trait = micro_dick
+		add_trait = tiny_dick
+	}
+	# We also update the variable, so the growth could impact any future children of theirs
+	change_variable = { which = dick_size value = 1 }
+}
+tits_grow = {
+	if = {
+		limit = {
+			trait = enormous_tits
+		}
+		remove_trait = enormous_tits
+		add_trait = gigantic_tits
+	}
+	else_if = {
+		limit = {
+			trait = huge_tits
+		}
+		remove_trait = huge_tits
+		add_trait = enormous_tits
+	}
+	else_if = {
+		limit = {
+			trait = big_tits
+		}
+		remove_trait = big_tits
+		add_trait = huge_tits
+	}
+	else_if = {
+		limit = {
+			trait = regular_tits
+		}
+		remove_trait = regular_tits
+		add_trait = big_tits
+	}
+	else_if = {
+		limit = {
+			trait = small_tits
+		}
+		remove_trait = small_tits
+		add_trait = regular_tits
+	}
+	else_if = {
+		limit = {
+			trait = tiny_tits
+		}
+		remove_trait = tiny_tits
+		add_trait = small_tits
+	}
+	else = {
+		remove_trait = micro_tits
+		add_trait = tiny_tits
+	}
+	# We also update the variable, so the growth could impact any future children of theirs
+	change_variable = { which = breast_size value = 1 }
+}
+beast_lover_check = {
+	if = {
+		limit = {
+			NOT = { check_variable = { which = var_beast_lover value = 1 } } # If they don't have a var_beast_lover value of at least 1, then we need to create the variable
+		}
+		set_variable = { which = var_beast_lover value = 1 } # Sets the initial value
+	}
+	else = {
+		change_variable = { which = var_beast_lover value = 1 } # increase the value by 1
+	}
+	if = {
+		limit = {
+			check_variable = { which = var_beast_lover value = 10 } # If they reach a value of 10, they begin to crave the beast
+		}
+		add_trait = beast_lover
+	}
+	if = {
+		limit = {
+			check_variable = { which = var_beast_lover value = 5 } # If they reach a value of 5, they begin to have chances to create a special bond with their cavalry
+		}
+		random = {
+			chance = 20
+			add_trait = stable_whore
+		}
+	}
+}
+improve_appearance = {
+	# This should never be called if they're already a bombshell
+	if = {
+		limit = { trait = fair }
+		add_trait = bombshell
+	}
+	else_if = {
+		limit = { trait = ugly }
+		remove_trait = ugly
+	}
+	else_if = {
+		limit = { trait = hunchback }
+		remove_trait = hunchback
+	}
+	else_if = {
+		limit = { trait = harelip }
+		remove_trait = harelip
+	}
+	else_if = {
+		limit = { trait = clubfooted }
+		remove_trait = clubfooted
+	}
+	else_if = {
+		limit = { trait = disfigured }
+		remove_trait = disfigured
+	}
+	else_if = {
+		limit = { trait = mangled }
+		remove_trait = mangled
+	}
+	else = {
+		add_trait = fair
+	}
+}
+impregnate_check_standard = {
+	# Standard means two characters can be scoped to
+	# Expects event targets
+	# event_target:new_dad - is the one with the cock doing the seeding (such as a male or a futa)
+	# event_target:new_mom - is the one being seeded (a female - could technically be a guy, but I think CK2 purges pregnant status from males)
+
+	# First we check to even see if someone has a chance of getting pregnant
+	if = {
+		limit = {
+			event_target:new_mom = {
+				OR = {  # Woman can't be over 45+ unless they're immortal
+					NOT = { age = 45 }
+					trait = immortal
+				}
+				is_pregnant = no # Can't already be pregnant
+				health = 3 # body healthy enough for child birth
+				fertility = 0.01 # At least a 1% chance
+			}
+			event_target:new_dad = {
+				fertility = 0.01 # At least a 1% chance
+			}
+		}
+
+		# We get mom's fertility rating, and prep it for combining with dad.
+		export_to_variable = { which = mom_fertility value = fertility who = event_target:new_mom }
+		# We get dad's fertility rating, and prep it for combining with mom.
+		export_to_variable = { which = dad_fertility value = fertility who = event_target:new_dad }
+		#We use mom's rating to set the preggers_chance variable
+		set_variable = { which = preggers_chance which = mom_fertility }
+		# We then add dad's to the preggers_chance
+		change_variable = { which = preggers_chance which = dad_fertility }
+		# We divide by two to get a simple percentage
+		divide_variable = { which = preggers_chance value = 2 }
+		# Then we multiply it in order to give us something to use as our random chance rating
+		multiply_variable = { which = preggers_chance value = 100 }
+
+		# Now we determine if it's a 'normal' pregnancy versus a cuck one
+		if = {
+			limit = {
+				event_target:new_mom = {
+					OR = {
+						AND = {
+							is_married = no
+							is_consort = no
+						}
+						AND = {
+							is_consort = yes
+							consort = { character = event_target:new_dad }
+						}
+						AND = {
+							is_married = yes
+							spouse = { character = event_target:new_dad }
+						}
+					}
+				}
+			}
+			if = {
+				limit = { random < preggers_chance }
+				# The pregnancy happens
+				event_target:new_mom = { impregnate = event_target:new_dad } # Scope gets impregnated by the value
+			}
+		}
+		#event_target:new_mom is consort/spouse of someone else than event_target:new_dad
+		else = {
+			if = {
+				limit = { random < preggers_chance }
+				# The pregnancy happens
+				event_target:new_mom = { impregnate_cuckoo = event_target:new_dad } # Scope gets impregnated by the value
+			}
+		}
+	}
+	# And lastly Remove Virgin trait if it's present
+	event_target:new_mom = { remove_virginity_trait = yes }
+	event_target:new_dad = { remove_virginity_trait = yes }
+}
+clear_target_flags = {
+	clr_character_flag = dw_target_wife
+	clr_character_flag = dw_target_husband
+	clr_character_flag = dw_target_mom
+	clr_character_flag = dw_target_dad
+	clr_character_flag = dw_target_daughter
+	clr_character_flag = dw_target_son
+}
+### Slavery Related
+calculate_slave_sale_value = {
+	## IMPORTANT - this is expecting the event target of dw_slave_target to be established prior to calling this.
+
+	set_variable = { which = local_slave_sell_price value = 1 } # Setting our initial slave value for the sale
+
+	## Slave Training results (only matter if unbroken)
+	if = { # Pleasure slave
+		limit = {
+			event_target:dw_slave_target = {
+				has_character_modifier = dw_slave_pleasure_complete
+				NOT = { has_character_modifier = dw_slave_broken }
+			}
+		}
+		change_variable = { which = local_slave_sell_price value = 2 }
+	}
+	if = { # Warrior slave
+		limit = {
+			event_target:dw_slave_target = {
+				has_character_modifier = dw_slave_warrior_complete
+				NOT = { has_character_modifier = dw_slave_broken }
+			}
+		}
+		change_variable = { which = local_slave_sell_price value = 2.5 }
+	}
+	if = { # Common labor slave
+		limit = {
+			event_target:dw_slave_target = {
+				has_character_modifier = dw_slave_common_complete
+				NOT = { has_character_modifier = dw_slave_broken }
+			}
+		}
+		change_variable = { which = local_slave_sell_price value = 0.5 }
+	}
+	if = { # Skilled labor slave
+		limit = {
+			event_target:dw_slave_target = {
+				has_character_modifier = dw_slave_skilled_complete
+				NOT = { has_character_modifier = dw_slave_broken }
+			}
+		}
+		change_variable = { which = local_slave_sell_price value = 1 }
+	}
+	## Pleasure Slave & Warrior specific
+	# Common and skilled laborers have no special consideration in regards to the dick/tit traits, while pleasure slaves do, for obvious reasons, and warriors for those used as eye candy guards
+	if = {
+		limit = {
+			event_target:dw_slave_target = {
+				OR = {
+					has_character_modifier = dw_slave_pleasure_complete
+					has_character_modifier = dw_slave_warrior_complete
+				}
+				NOT = { has_character_modifier = dw_slave_broken }
+			}
+		}
+		# Tit size
+		if = { limit = { event_target:dw_slave_target = { trait = tiny_tits } } change_variable = { which = local_slave_sell_price value = 0.25 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = small_tits } } change_variable = { which = local_slave_sell_price value = 0.5 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = regular_tits } } change_variable = { which = local_slave_sell_price value = 1 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = big_tits } } change_variable = { which = local_slave_sell_price value = 1.25 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = huge_tits } }	change_variable = { which = local_slave_sell_price value = 1.5 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = enormous_tits } } change_variable = { which = local_slave_sell_price value = 1.75 } }
+		else = { change_variable = { which = local_slave_sell_price value = 2 } } # Gigantic tit size
+		# Dick size
+		if = { limit = { event_target:dw_slave_target = { trait = tiny_dick } }	change_variable = { which = local_slave_sell_price value = 0.3 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = small_dick } } change_variable = { which = local_slave_sell_price value = 0.6 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = regular_dick } }	change_variable = { which = local_slave_sell_price value = 1 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = big_dick } } change_variable = { which = local_slave_sell_price value = 1.3 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = huge_dick } }	change_variable = { which = local_slave_sell_price value = 1.6 } }
+		else = { change_variable = { which = local_slave_sell_price value = 2 } } # Horse dick size
+		# Exotic considerations
+		if = { limit = { event_target:dw_slave_target = { trait = trap } } change_variable = { which = local_slave_sell_price value = 3 } }
+		if = { limit = { event_target:dw_slave_target = { trait = futa } } change_variable = { which = local_slave_sell_price value = 1 } } # Lower as it gets the benefit of both tit and dick sizes as well
+	}
+	## Physical State modifiers
+	if = {
+		limit = {
+			event_target:dw_slave_target = {
+				trait = virgin
+			}
+		}
+		change_variable = { which = local_slave_sell_price value = 4 } # Virgins have extra value, regardless of their training.
+	}
+	if = { # Physical prowess
+		limit = {
+			event_target:dw_slave_target = {
+				OR = {
+					trait = strong
+					trait = robust
+				}
+				NOT = { trait = weak }
+				NOT = { trait = feeble }
+			}
+		}
+		change_variable = { which = local_slave_sell_price value = 2 } # Strong slaves are generally viewed favorably
+	}
+	if = { # Physical limitations
+		limit = {
+			event_target:dw_slave_target = {
+				OR = {
+					trait = weak
+					trait = feeble
+				}
+				NOT = { trait = strong }
+				NOT = { trait = robust }
+			}
+		}
+		change_variable = { which = local_slave_sell_price value = -3 } # Weak slaves have considerably less value to prospective owners
+	}
+	if = { # Physical Beauty
+		limit = { event_target:dw_slave_target = { trait = fair } }
+		change_variable = { which = local_slave_sell_price value = 2 }
+	}
+	if = { # Physical Beauty
+		limit = { event_target:dw_slave_target = { trait = bombshell } }
+		change_variable = { which = local_slave_sell_price value = 1 }
+	}
+	if = { # Physically Undesirable
+		limit = {
+			event_target:dw_slave_target = {
+				is_physically_undesirable = yes
+			}
+		}
+		change_variable = { which = local_slave_sell_price value = -2 }
+	}
+	## Highly skilled slave modifier
+	if = {
+		limit = {
+			event_target:dw_slave_target = {
+				OR = {
+					martial = 10
+					diplomacy = 10
+					intrigue = 10
+					learning = 10
+					stewardship = 10
+				}
+			}
+		}
+		change_variable = { which = local_slave_sell_price value = 3 } # People who are considered highly skilled can pull in a higher value
+	}
+	## Compliance to the slave life
+	if = {
+		limit = {
+			event_target:dw_slave_target = { is_disobedient_slave = yes }
+		}
+		multiply_variable = { which = local_slave_sell_price value = 0.5 } # If they're likely to be disobedient, then they're half off
+	}
+	if = {
+		limit = {
+			event_target:dw_slave_target = { is_obedient_slave = yes }
+		}
+		change_variable = { which = local_slave_sell_price value = 1 } # If they're naturally wired to be more obedient, it's a bonus
+	}
+	## Age considerations (old = cheaper, as less time to reap the benefits, too young = cheaper as higher upkeep/potential for trouble)
+	if = { # <10
+		limit = {
+			event_target:dw_slave_target = { age < 12 }
+		}
+		change_variable = { which = local_slave_sell_price value = -2 } # Young enough to be costly to maintain, with a chance for breaking before prime
+	}
+	else_if = { # 12-19
+		limit = {
+			event_target:dw_slave_target = { age <= 19 }
+		}
+		change_variable = { which = local_slave_sell_price value = 3 } # High value slave age, old enough to listen, young enough to establish loyalty to their new master
+	}
+	else_if = { # 20-29
+		limit = {
+			event_target:dw_slave_target = { age <= 29 }
+		}
+		change_variable = { which = local_slave_sell_price value = 2 } # The 'average' age for a slave in terms of expected maturity for return on investment
+	}
+	else_if = { # 30-39
+		limit = {
+			event_target:dw_slave_target = { age <= 39 }
+		}
+		change_variable = { which = local_slave_sell_price value = 1 } # Still useful, but with concerns about return on investment
+	}
+	else_if = { # 40-50
+		limit = {
+			event_target:dw_slave_target = { age <= 50 }
+		}
+		change_variable = { which = local_slave_sell_price value = -2 } # Old enough to bring clear long term investment concerns
+	}
+	else = { # 51+
+		multiply_variable = { which = local_slave_sell_price value = 0.5 } # If we hit here, they should be old as dirt, and we're halving the value as they've little investment value
+	}
+	if = { # Someone who is immortal though brings a hefty bonus - although we're still allowing the age modifiers above - in case they 'ascend' later in life
+		limit = {
+			event_target:dw_slave_target = { trait = immortal }
+		}
+		multiply_variable = { which = local_slave_sell_price value = 2 } # We double their value should the be immortal
+	}
+	## Broken Slave check - if broken, we reduce the sale price to a tenth of their value
+	if = {
+		limit = {
+			event_target:dw_slave_target = { has_character_modifier = dw_slave_broken }
+		}
+		multiply_variable = { which = local_slave_sell_price value = 0.1 } # A broken slave has little value - yet could still be sought after by certain individuals
+	}
+	## Checking to ensure our slave value is at least 0.1 gold, if it's less, we set it to 0.1 gold
+	if = {
+		limit = {
+			NOT = { check_variable = { which = local_slave_sell_price value = 0.1 } }
+		}
+		set_variable = { which = local_slave_sell_price value = 0.1 }
+	}
+	## Here we return the wealth to be obtained
+	wealth = local_slave_sell_price
+}
+remove_slave_prisoner_modifiers_for_sale = {
+	prisoner = no
+	hidden_effect = { # Removing potential prison and training related flags and modifiers that may be hanging around
+		clr_character_flag = asked_for_better_prison
+		remove_character_modifier = dw_slave_training
+		remove_character_modifier = house_arrest
+		remove_character_modifier = the_oubliette
+		remove_character_modifier = the_dungeon
+	}
+}
+
+### Brothel related
+work_hole_of_glory = {
+	# females working it
+	if = {
+		limit = {
+			is_female = yes
+		}
+		random_list = {
+			10 = { # Chick worships the glory hole cock
+				narrative_event = { id = DWWhoring.2001 }
+			}
+		}
+	}
+	# males working it
+	if = {
+		limit = {
+			NOT = { is_female = yes }
+		}
+		random_list = {
+			10 = { # Dude takes a big one that rains down
+				narrative_event = { id = DWWhoring.2000 }
+			}
+		}
+	}
+}
+calculate_gloryhole_payment = {
+	random_list = {
+		40 = {
+			wealth = 1
+			modifier = { # Born to gobble cock like it's going out of style
+				factor = 0.25 # This actually reduces the odds of only getting 1, which in turn makes the others a better chance
+				trait = gluttonous
+				trait = lustful
+			}
+			modifier = { # A pro
+				factor = 0.5
+				OR = {
+					trait = seducer
+					trait = seductress
+					trait = experienced_whore
+					trait = exclusive_whore
+				}
+			}
+			modifier = { # Above Average
+				factor = 0.75
+				OR = {
+					trait = cheap_whore
+					trait = retired_whore
+					trait = possessed
+					trait = hedonist
+					trait = lustful
+					trait = gluttonous
+					trait = greedy
+					trait = ambitious
+					trait = homosexual
+				}
+			}
+		}
+		30 = {
+			wealth = 2
+			modifier = { # Born to gobble cock like it's going out of style
+				factor = 0.5 # This actually reduces the odds of only getting 1, which in turn makes the others a better chance
+				trait = gluttonous
+				trait = lustful
+			}
+			modifier = { # A pro
+				factor = 0.75
+				OR = {
+					trait = seducer
+					trait = seductress
+					trait = experienced_whore
+					trait = exclusive_whore
+				}
+			}
+		}
+		20 = {
+			wealth = 3
+			modifier = { # Born to gobble cock like it's going out of style
+				factor = 2
+				trait = gluttonous
+				trait = lustful
+			}
+		}
+		10 = {
+			wealth = 4
+			modifier = { # Born to gobble cock like it's going out of style
+				factor = 5
+				trait = gluttonous
+				trait = lustful
+			}
+			modifier = { # A pro
+				factor = 2
+				OR = {
+					trait = seducer
+					trait = seductress
+					trait = experienced_whore
+					trait = exclusive_whore
+				}
+			}
+			modifier = { # Above Average
+				factor = 1.5
+				OR = {
+					trait = cheap_whore
+					trait = retired_whore
+					trait = possessed
+					trait = hedonist
+					trait = lustful
+					trait = gluttonous
+					trait = greedy
+					trait = ambitious
+					trait = homosexual
+				}
+			}
+		}
+		1 = {
+			wealth = 5
+			modifier = { # Born to gobble cock like it's going out of style
+				factor = 10
+				trait = gluttonous
+				trait = lustful
+			}
+			modifier = { # A pro
+				factor = 5
+				OR = {
+					trait = seducer
+					trait = seductress
+					trait = experienced_whore
+					trait = exclusive_whore
+				}
+			}
+			modifier = { # Above Average
+				factor = 3
+				OR = {
+					trait = cheap_whore
+					trait = retired_whore
+					trait = possessed
+					trait = hedonist
+					trait = lustful
+					trait = gluttonous
+					trait = greedy
+					trait = ambitious
+					trait = homosexual
+				}
+			}
+		}
+	}
+}
+watch_jessica_performance = {
+	random_list = {
+		10 = { # Outfit shows nipples while performing
+			narrative_event = { id = DWWhoring.5000 }
+		}
+		10 = { # Strip tease while performing
+			narrative_event = { id = DWWhoring.5001 }
+		}
+		100 = { # Halloween Special - October performance
+			modifier = { # Don't allow outside of October
+				factor = 0
+				NOT = { month = 9 } # the month = check when used like this goes from 0 (January) to 11 (December). So October is 9 instead of 10.
+			}
+			narrative_event = { id = DWWhoring.5002 }
+		}
+	}
+}
+seek_jessica_company_after_show = {
+	random_list = {
+		10 = { # Jessica enjoying a smoke - non-lover
+			trigger = {
+				event_target:dw_jessica_target = {
+					NOT = { is_lover = ROOT }
+				}
+			}
+			narrative_event = { id = DWWhoring.5003 }
+		}
+		10 = { # Jessica's entertaining company (group sex)
+			trigger = {
+				has_cock = yes
+			}
+			narrative_event = { id = DWWhoring.5010 }
+		}
+	}
+}
+determine_jessica_bribery_attempt = {
+	random_list = {
+		50 = { # Attempt failed
+			narrative_event = { id = DWWhoring.5004 }
+		}
+		50 = { # Attempt succeeded
+			# Customer a female
+			if = {
+				limit = {
+					is_female = yes
+				}
+				narrative_event = { id = DWWhoring.5005 }
+			}
+			# Customer a male
+			if = {
+				limit = {
+					NOT = { is_female = yes }
+				}
+			}
+		}
+	}
+}
+assign_jessica_show_outcome = {
+	random_list = {
+		25 = { # Watching Jessica perform makes your worries melt away
+			modifier = {
+				factor = 0
+				NOT = { trait = stressed }
+			}
+			remove_trait = stressed
+		}
+		25 = { # Watching Jessica perform can awaken the carnal feelings within
+			modifier = {
+				factor = 0
+				OR = {
+					trait = lustful
+					trait = chaste
+					trait = celibate
+				}
+			}
+			add_trait = lustful
+		}
+		25 = { # Watching Jessica sometimes just leaves us entertained
+			add_character_modifier = {
+				name = dw_attended_great_show
+				duration = 30
+			}
+		}
+		25 = { # Watching Jessica sometimes results in juicy discussion bits - either from her performance or from observing behavior in the crowd
+			add_character_modifier = {
+				name = dw_has_rumor_material
+				duration = 30
+			}
+		}
+		10 = { # Watching Jessica sometimes just leaves us entertained
+			modifier = {
+				factor = 0
+				has_character_modifier = dw_attended_epic_show
+			}
+			add_character_modifier = {
+				name = dw_attended_epic_show
+				duration = 180
+			}
+		}
+		10 = {
+			# And sometimes nothing special happens at all.
+		}
+	}
+}
+
+### Shopping related
+determine_potions_for_sale = {
+	# We're generating up to three possibilities (via character flags the options will look for), to give variety to some of the visits
+	random_list = { # Group 1 - Body related
+		20 = { # Penis Enlargement Potion
+			trigger = {
+				is_adult = yes
+				has_cock = yes
+				NOT = { trait = gigantic_dick } # want to ensure there is room to grow
+				wealth = 50
+			}
+			set_character_flag = dw_penis_enlargement_potion_buyer
+		}
+		20 = { # Breast Enlargement Potion
+			trigger = {
+				is_adult = yes
+				is_female = yes
+				NOT = { trait = gigantic_tits } # want to ensure there is room to grow
+				wealth = 50
+			}
+			set_character_flag = dw_breast_enlargement_potion_buyer
+		}
+		20 = { # Health Potion
+			trigger = {
+				NOT = { health = 10 } # Trying to keep it from getting out of hand
+				wealth = 25
+			}
+			set_character_flag = dw_health_potion_buyer
+		}
+		10 = { # Beauty Bath
+			trigger = {
+				wealth = 50
+				NOT = { trait = fair }
+			}
+			set_character_flag = dw_beauty_bath_buyer
+		}
+	}
+	random_list = { # Group 2 - Positive/Good potions
+		20 = { # Good Fortune
+			trigger = {
+				wealth = 50
+			}
+			set_character_flag = dw_fortune_potion_buyer
+		}
+		20 = { # Silver Tongue - temp diplomacy
+			trigger = {
+				wealth = 10
+			}
+			set_character_flag = dw_silver_tongue_buyer
+		}
+	}
+	random_list = { # Group 3 - Negative/Evil potions
+		20 = { # Serpent's Purge
+			trigger = {
+				is_pregnant = yes
+				wealth = 25
+			}
+			set_character_flag = dw_abortion_potion_buyer
+		}
+		20 = { # Aphrodite's Curse
+			trigger = {
+				wealth = 50
+				fertility = 0.1 # We want to ensure they've a positive fertility score - so it shouldn't grab those who can't procreate
+			}
+			set_character_flag = dw_aphrodite_curse_potion_buyer
+		}
+		20 = { # Werewolf Blood
+			trigger = {
+				OR = {
+					trait = werewolf
+					trait = werekin
+					trait = werewolf_ancient
+				}
+				wealth = 100
+				NOT = { has_character_modifier = dw_werewolf_blood_potion } # we ensure they don't already have one they're waiting to use.
+			}
+			set_character_flag = dw_werewolf_blood_potion_buyer
+		}
+	}
+}
+determine_exotics_for_sale = {
+	# We're generating up to three possibilities (via character flags the options will look for), to give variety to some of the visits
+	random_list = { # Items that aren't equipped
+		5 = { # Lycurgus Cup - a jade color cup that turns red when light is behind it, and when filled. It's due to nano-sized gold and silver particles worked into the glass - a technical marvel, read a little about it if you're interested
+			trigger = {
+				wealth = 50
+				NOT = { has_artifact = dw_lycurgus_cup }
+			}
+			set_character_flag = dw_lycurgus_cup_buyer
+		}
+		10 = { # Derrynaflan Cup - An irish chalice, of silver and gold with fine detailed artwork.
+			trigger = {
+				wealth = 50
+				religion_group = christian
+				NOT = { has_artifact = dw_derrynaflan_cup }
+			}
+			set_character_flag = dw_derrynaflan_cup_buyer
+		}
+		20 = { # Water Clock - vanilla artifact
+			trigger = {
+				wealth = 25
+				NOT = { has_artifact = water_clock }
+			}
+			set_character_flag = dw_water_clock_buyer
+		}
+		30 = { # Basic Diplomacy Book
+			trigger = {
+				wealth = 10
+				NOT = { has_artifact = dw_basic_diplomacy_book }
+			}
+			set_character_flag = dw_basic_diplomacy_buyer
+		}
+		30 = { # Basic Intrigue Book
+			trigger = {
+				wealth = 10
+				NOT = { has_artifact = dw_basic_intrigue_book }
+			}
+			set_character_flag = dw_basic_intrigue_buyer
+		}
+		30 = { # Basic Stewardship Book
+			trigger = {
+				wealth = 10
+				NOT = { has_artifact = dw_basic_stewardship_book }
+			}
+			set_character_flag = dw_basic_stewardship_buyer
+		}
+		30 = { # Basic Martial Book
+			trigger = {
+				wealth = 10
+				NOT = { has_artifact = dw_basic_martial_book }
+			}
+			set_character_flag = dw_basic_martial_buyer
+		}
+		30 = { # Basic Learning Book
+			trigger = {
+				wealth = 10
+				NOT = { has_artifact = dw_basic_learning_book }
+			}
+			set_character_flag = dw_basic_learning_buyer
+		}
+		5 = { # Diablerie book - Secret to Vampire Immortality
+			trigger = {
+				wealth = 50
+				NOT = { has_artifact = dw_diablerie_book }
+				trait = vampire
+			}
+			set_character_flag = dw_diablerie_book_buyer
+			modifier = {
+				factor = 4 # four times as likely
+				has_character_flag = dw_seeks_vampire_evolution
+			}
+		}
+	}
+	random_list = { # Items that are equipped
+		5 = { # Female's Wolf Plate Armor
+			trigger = {
+				is_female = yes
+				wealth = 150
+				NOT = { trait = werewolf }
+			}
+			set_character_flag = dw_female_wolf_plate_armor_buyer
+		}
+		20 = { } # Nothing available at this time
+	}
+	random_list = { # Special event items
+		10 = {
+			trigger = {
+				wealth = 50
+				NOT = { ai = yes } # We only want the player getting this option
+				NOT = { has_artifact = dw_aladdins_lamp }
+			}
+			set_character_flag = dw_aladdins_lamp_buyer
+		}
+		100 = { } # Nothing available at this time
+	}
+}
+clear_shopping_character_flags = {
+	# Alchemist shopping
+	clr_character_flag = dw_penis_enlargement_potion_buyer
+	clr_character_flag = dw_breast_enlargement_potion_buyer
+	clr_character_flag = dw_health_potion_buyer
+	clr_character_flag = dw_fortune_potion_buyer
+	clr_character_flag = dw_abortion_potion_buyer
+	clr_character_flag = dw_aphrodite_curse_potion_buyer
+	clr_character_flag = dw_beauty_bath_buyer
+	clr_character_flag = dw_silver_tongue_buyer
+	clr_character_flag = dw_werewolf_blood_potion_buyer
+	# Exotic shopping
+	clr_character_flag = dw_lycurgus_cup_buyer
+	clr_character_flag = dw_water_clock_buyer
+	clr_character_flag = dw_derrynaflan_cup_buyer
+	clr_character_flag = dw_basic_diplomacy_buyer
+	clr_character_flag = dw_basic_intrigue_buyer
+	clr_character_flag = dw_basic_stewardship_buyer
+	clr_character_flag = dw_basic_martial_buyer
+	clr_character_flag = dw_basic_learning_buyer
+	clr_character_flag = dw_aladdins_lamp_buyer
+	clr_character_flag = dw_female_wolf_plate_armor_buyer
+	clr_character_flag = dw_diablerie_book_buyer
+}
+
+### Society related scripted effects
+check_for_dw_soul_corruption_effect = {
+	random_list = { #randomizes between big or small effect, both containing a chance of nothing happening
+		100 = {
+			dw_minor_harmful_soul_corruption_effect = yes
+			modifier = {
+				factor = 2 # Those who are pure/positive genetically, tend to suffer when willfully playing with darker powers
+				is_genetically_positive_aligned = yes
+			}
+			modifier = {
+				factor = 0.5 # Those who are negative/corrupt genetically, tend to resist the drawbacks when playing with darker powers
+				is_genetically_negative_aligned = yes
+			}
+		}
+		20 = {
+			dw_minor_beneficial_soul_corruption_effect = yes
+			modifier = {
+				factor = 3 # Those who are negative/corrupt genetically, are more likely to actually benefit from playing with unnatural powers
+				is_genetically_negative_aligned = yes
+			}
+			modifier = {
+				factor = 2 # Mages use the knowledge and ability they've obtained to increase the odds of turning the unnatural powers to their benefit
+				trait = mage
+			}
+		}
+		30 = {
+			dw_major_harmful_soul_corruption_effect = yes
+			modifier = {
+				factor = 2 # Those who are pure/positive genetically, tend to suffer when willfully playing with darker powers
+				is_genetically_positive_aligned = yes
+			}
+			modifier = {
+				factor = 0.5 # Those who are negative/corrupt genetically, tend to resist the drawbacks when playing with darker powers
+				is_genetically_negative_aligned = yes
+			}
+		}
+		10 = {
+			dw_major_beneficial_soul_corruption_effect = yes
+			modifier = {
+				factor = 3 # Those who are negative/corrupt genetically, are more likely to actually benefit from playing with unnatural powers
+				is_genetically_negative_aligned = yes
+			}
+			modifier = {
+				factor = 2 # Mages use the knowledge and ability they've obtained to increase the odds of turning the unnatural powers to their benefit
+				trait = mage
+			}
+		}
+	}
+}
+
+dw_major_harmful_soul_corruption_effect = {
+	custom_tooltip = {
+		text = dw_major_harmful_soul_corruption_effect_tooltip
+	}
+	hidden_effect = {
+		random_list = {
+			5 = {
+				trigger = {
+					NOT = { trait = possessed }
+				}
+				set_character_flag = corruption_add_possessed
+				narrative_event = { id = DWSOC.7050 days = 3 random = 27 }
+			}
+			5 = {
+				trigger = {
+					NOT = { trait = lunatic }
+				}
+				set_character_flag = corruption_add_lunatic
+				narrative_event = { id = DWSOC.7050 days = 3 random = 27 }
+			}
+			5 = {
+				trigger = {
+					NOT = { trait = hunchback }
+				}
+				set_character_flag = corruption_add_hunchback
+				narrative_event = { id = DWSOC.7050 days = 3 random = 27 }
+			}
+			5 = {
+				trigger = {
+					NOT = { trait = ugly }
+					NOT = { trait = fair }
+					NOT = { is_col = yes } # We don't let this trigger for Children of Lilith
+				}
+				set_character_flag = corruption_add_ugly
+				narrative_event = { id = DWSOC.7050 days = 3 random = 27 }
+			}
+			5 = {
+				trigger = {
+					NOT = { trait = weak }
+					NOT = { trait = strong }
+				}
+				set_character_flag = corruption_add_weak
+				narrative_event = { id = DWSOC.7050 days = 3 random = 27 }
+			}
+			100 = { # Nothing happens
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 10 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 15 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 20 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 25 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 30 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 35 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 40 }
+				}
+			}
+		}
+	}
+}
+
+dw_minor_harmful_soul_corruption_effect = {
+	custom_tooltip = {
+		text = dw_minor_soul_corruption_effect_tooltip
+	}
+	hidden_effect = {
+		random_list = {
+			10 = {
+				trigger = {
+					trait = kind
+				}
+				set_character_flag = corruption_remove_kind
+				narrative_event = { id = DWSOC.7050 days = 3 random = 27 }
+			}
+			5 = {
+				trigger = {
+					NOT = { trait = kind }
+					NOT = { trait = cruel }
+				}
+				set_character_flag = corruption_add_cruel
+				narrative_event = { id = DWSOC.7050 days = 3 random = 27 }
+			}
+			10 = {
+				trigger = {
+					trait = just
+				}
+				set_character_flag = corruption_remove_just
+				narrative_event = { id = DWSOC.7050 days = 3 random = 27 }
+			}
+			5 = {
+				trigger = {
+					NOT = { trait = just }
+					NOT = { trait = arbitrary }
+				}
+				set_character_flag = corruption_add_arbitrary
+				narrative_event = { id = DWSOC.7050 days = 3 random = 27 }
+			}
+			10 = {
+				trigger = {
+					trait = honest
+				}
+				set_character_flag = corruption_remove_honest
+				narrative_event = { id = DWSOC.7050 days = 3 random = 27 }
+			}
+			5 = {
+				trigger = {
+					NOT = { trait = honest }
+					NOT = { trait = deceitful }
+				}
+				set_character_flag = corruption_add_deceitful
+				narrative_event = { id = DWSOC.7050 days = 3 random = 27 }
+			}
+			15 = {
+				trigger = { NOT = { trait = stressed } }
+				set_character_flag = corruption_add_stressed
+				narrative_event = { id = DWSOC.7050 days = 32 random = 5 }
+			}
+			5 = {
+				trigger = { NOR = { trait = stutter } }
+				set_character_flag = corruption_add_stutter
+				narrative_event = { id = DWSOC.7050 days = 32 random = 5 }
+			}
+			100 = { # Nothing happens
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 10 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 15 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 20 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 25 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 30 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 35 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 40 }
+				}
+			}
+		}
+	}
+}
+
+dw_major_beneficial_soul_corruption_effect = {
+	custom_tooltip = {
+		text = dw_major_beneficial_soul_corruption_effect_tooltip
+	}
+	if = {
+		limit = {
+			NAND = {
+				trait = fair
+				trait = bombshell
+				trait = strong
+				trait = genius
+			}
+		}
+		random_list = {
+			# lose ugly
+			20 = {
+				trigger = {
+					trait = ugly
+				}
+				set_character_flag = dw_remove_ugly
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# gain fair
+			20 = {
+				trigger = {
+					NOT = { trait = ugly }
+					NOT = { trait = fair }
+				}
+				set_character_flag = dw_add_fair
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# gain bombshell
+			20 = {
+				trigger = {
+					trait = fair
+					NOT = { trait = bombshell }
+				}
+				set_character_flag = dw_add_bombshell
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# lose weak
+			20 = {
+				trigger = {
+					trait = weak
+				}
+				set_character_flag = dw_remove_weak
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# gain strong
+			20 = {
+				trigger = {
+					NOT = { trait = weak }
+					NOT = { trait = strong }
+				}
+				set_character_flag = dw_add_strong
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# lose imbecile
+			20 = {
+				trigger = {
+					trait = imbecile
+				}
+				set_character_flag = dw_remove_imbecile
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# lose slow
+			20 = {
+				trigger = {
+					trait = slow
+				}
+				set_character_flag = dw_remove_slow
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# gain quick
+			20 = {
+				trigger = {
+					NOT = { trait = imbecile }
+					NOT = { trait = slow }
+					NOR = {
+						trait = quick
+						trait = genius
+					}
+				}
+				set_character_flag = dw_add_quick
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# lose quick, gain genius
+			20 = {
+				trigger = {
+					trait = quick
+				}
+				set_character_flag = dw_lose_quick_add_genius
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			20 = { } # Nothing happens
+		}
+	}
+}
+
+dw_minor_beneficial_soul_corruption_effect = {
+	custom_tooltip = {
+		text = dw_minor_beneficial_soul_corruption_effect_tooltip
+	}
+	if = {
+		limit = {
+			NAND = {
+				trait = robust
+				trait = shrewd
+				trait = gregarious
+			}
+		}
+		random_list = {
+			# lose feeble
+			20 = {
+				trigger = {
+					trait = feeble
+				}
+				set_character_flag = dw_remove_feeble
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# gain robust
+			20 = {
+				trigger = {
+					NOT = { trait = feeble }
+					NOT = { trait = robust }
+				}
+				set_character_flag = dw_add_robust
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# lose dull
+			20 = {
+				trigger = {
+					trait = dull
+				}
+				set_character_flag = dw_remove_dull
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# gain shrewd
+			20 = {
+				trigger = {
+					NOT = { trait = dull }
+					NOT = { trait = shrewd }
+				}
+				set_character_flag = dw_add_shrewd
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# lose shy
+			20 = {
+				trigger = {
+					trait = shy
+				}
+				set_character_flag = dw_remove_shy
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			# gain gregarious
+			20 = {
+				trigger = {
+					NOT = { trait = shy }
+					NOT = { trait = gregarious }
+				}
+				set_character_flag = dw_add_gregarious
+				narrative_event = { id = DWSOC.7100 days = 5}
+			}
+			20 = { } # Nothing happens
+		}
+	}
+}
+
+### Dark World Offmap related script effects
+
+add_lilith_offmap_trivial_effect = {
+	add_offmap_currency = {
+		offmap = offmap_lilith
+		value = 100
+	}
+}
+
+add_lilith_offmap_minor_effect = {
+	add_offmap_currency = {
+		offmap = offmap_lilith
+		value = 200
+	}
+}
+
+add_lilith_offmap_medium_effect = {
+	add_offmap_currency = {
+		offmap = offmap_lilith
+		value = 300
+	}
+}
+
+add_lilith_offmap_major_effect = {
+	add_offmap_currency = {
+		offmap = offmap_lilith
+		value = 500
+	}
+}
+
+add_lilith_offmap_massive_effect = {
+	add_offmap_currency = {
+		offmap = offmap_lilith
+		value = 1000
+	}
+}
+
+add_lilith_offmap_super_huge_effect = {
+	add_offmap_currency = {
+		offmap = offmap_lilith
+		value = 2000
+	}
+}
+
+detract_lilith_offmap_trivial_effect = {
+	add_offmap_currency = {
+		offmap = offmap_lilith
+		value = -100
+	}
+}
+
+detract_lilith_offmap_minor_effect = {
+	add_offmap_currency = {
+		offmap = offmap_lilith
+		value = -200
+	}
+}
+
+detract_lilith_offmap_medium_effect = {
+	add_offmap_currency = {
+		offmap = offmap_lilith
+		value = -300
+	}
+}
+
+detract_lilith_offmap_major_effect = {
+	add_offmap_currency = {
+		offmap = offmap_lilith
+		value = -500
+	}
+}
+
+detract_lilith_offmap_massive_effect = {
+	add_offmap_currency = {
+		offmap = offmap_lilith
+		value = -1000
+	}
+}
+
+detract_lilith_offmap_super_huge_effect = {
+	add_offmap_currency = {
+		offmap = offmap_lilith
+		value = -2000
+	}
+}
+
+# The Chosen of Lilith Society Reward consideration
+# Also includes the chance to gain favor from the Lilith offmap power
+#dw_chosen_of_lilith_quest_reward = {
+#	# Assumes quest scales from 0-10, 0-3 is a low reward, 4-7 medium, 8-10 high
+#	if = {
+#		limit = {
+#			check_variable = { NOT = { which = dw_chosen_of_lilith_quest_reward_value value = 4 } } # If the value isn't at least 4, it's 3 or less - our lowest reward
+#		}
+#		add_society_currency_minor_effect = yes
+#	}
+#	else_if = {
+#		limit = {
+#			check_variable = { which = dw_chosen_of_lilith_quest_reward_value value = 8 } # If the value is at least 8, then it's our highest reward
+#		}
+#		add_society_currency_major_effect = yes
+#		add_lilith_offmap_medium_effect = yes
+#	}
+#	else = {
+#		# With the low and high defined above, that leaves us with the middle ground for rewards
+#		add_society_currency_medium_effect = yes
+#		add_lilith_offmap_minor_effect = yes
+#	}
+#}
+
+
+### VANILLA SCRIPTED_EFFECTS THAT ARE MEANT TO BE REPLACED FOR DARK WORLD SUPPORT - POTENTIAL MOD CONFLICT CODE IF ANOTHER MOD ALTERS THESE
+#Tries to impregnate either event_target:sex_partner or THIS if all conditions are met (Duplicate of vanilla scripted_effect meant to alter the original one)
+impregnate_effect_event_target = {
+	# Dark World - Removed the opposite sex if / limit check as a female can be impregnated by another female if it is a futanari
+
+	#If THIS is a female which can get pregnant
+	if = {
+		limit = {
+			is_female = yes
+			OR = {  # No one 45+ unless they're immortal
+				NOT = { age = 45 }
+				trait = immortal # Dark World added
+			}
+			is_pregnant = no
+			health = 3
+			event_target:sex_partner = {
+				has_cock = yes # Dark World added
+			}
+		}
+
+		#THIS is not consort/spouse of anyone or is consort/spouse of event_target:sex_partner
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						is_married = no
+						is_consort = no
+					}
+					AND = {
+						is_consort = yes
+						consort = { character = event_target:sex_partner }
+					}
+					AND = {
+						is_married = yes
+						spouse = { character = event_target:sex_partner }
+					}
+				}
+			}
+			event_target:sex_partner = { impregnate = PREV }
+		}
+
+		#THIS is consort/spouse of someone else than event_target:sex_partner
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						is_married = yes
+						NOT = { spouse = { character = event_target:sex_partner } }
+					}
+					AND = {
+						is_consort = yes
+						NOT = { consort = { character = event_target:sex_partner } }
+					}
+				}
+			}
+			event_target:sex_partner = { impregnate_cuckoo = PREV }
+		}
+	}
+
+	#If event_target:sex_partner is a female which can get pregnant
+	if = {
+		limit = {
+			event_target:sex_partner = {
+				is_female = yes
+				OR = { # No one 45+ unless they're immortal
+					NOT = { age = 45 }
+					trait = immortal # Dark World added
+				}
+				is_pregnant = no
+				health = 3
+				PREV = {
+					has_cock = yes # Dark World added
+				}
+			}
+		}
+
+		#event_target:sex_partner is not consort/spouse of anyone or is consort/spouse of THIS
+		if = {
+			limit = {
+				event_target:sex_partner = {
+					OR = {
+						AND = {
+							is_married = no
+							is_consort = no
+						}
+						AND = {
+							is_consort = yes
+							consort = { character = PREVPREV }
+						}
+						AND = {
+							is_married = yes
+							spouse = { character = PREVPREV }
+						}
+					}
+				}
+			}
+			impregnate = event_target:sex_partner
+		}
+
+		#event_target:sex_partner is consort/spouse of someone else than THIS
+		if = {
+			limit = {
+				event_target:sex_partner = {
+					OR = {
+						AND = {
+							is_married = yes
+							NOT = { spouse = { character = PREVPREV } }
+						}
+						AND = {
+							is_consort = yes
+							NOT = { consort = { character = PREVPREV } }
+						}
+					}
+				}
+			}
+
+			impregnate_cuckoo = event_target:sex_partner
+		}
+	}
+}
+#Tries to impregnate either ROOT or FROM if all conditions are met (Duplicate of vanilla scripted_effect meant to alter the original one)
+impregnate_effect = {
+	# Dark World - Removed the opposite sex if / limit check as a female can be impregnated by another female if it is a futanari
+
+	#If ROOT is a female which can get pregnant
+	if = {
+		limit = {
+			is_female = yes
+			OR = {  # No one 45+ unless they're immortal
+				NOT = { age = 45 }
+				trait = immortal # Dark World added
+			}
+			is_pregnant = no
+			health = 3
+			FROM = {
+				has_cock = yes # Dark World added - We want to ensure the person who's doing the impregnating has a cock
+			}
+		}
+
+		#ROOT is not consort/spouse of anyone or is consort/spouse of FROM
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						is_married = no
+						is_consort = no
+					}
+					AND = {
+						is_consort = yes
+						consort = { character = FROM }
+					}
+					AND = {
+						is_married = yes
+						spouse = { character = FROM }
+					}
+				}
+			}
+			FROM = { impregnate = ROOT }
+		}
+
+		#ROOT is consort/spouse of someone else than FROM
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						is_married = yes
+						NOT = { spouse = { character = FROM } }
+					}
+					AND = {
+						is_consort = yes
+						NOT = { consort = { character = FROM } }
+					}
+				}
+			}
+			FROM = { impregnate_cuckoo = ROOT }
+		}
+	}
+
+	#If FROM is a female which can get pregnant
+	if = {
+		limit = {
+			FROM = {
+				is_female = yes
+				OR = {  # No one 45+ unless they're immortal
+					NOT = { age = 45 }
+					trait = immortal # Dark World added
+				}
+				is_pregnant = no
+				health = 3
+				ROOT = {
+					has_cock = yes # Dark World added - We want to ensure the person who's doing the impregnating has a cock
+				}
+			}
+		}
+
+		#FROM is not consort/spouse of anyone or is consort/spouse of ROOT
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						AND = {
+							is_married = no
+							is_consort = no
+						}
+						AND = {
+							is_consort = yes
+							consort = { character = ROOT }
+						}
+						AND = {
+							is_married = yes
+							spouse = { character = ROOT }
+						}
+					}
+				}
+			}
+			impregnate = FROM
+		}
+
+		#FROM is consort/spouse of someone else than ROOT
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						AND = {
+							is_married = yes
+							NOT = { spouse = { character = ROOT } }
+						}
+						AND = {
+							is_consort = yes
+							NOT = { consort = { character = ROOT } }
+						}
+					}
+				}
+			}
+
+			impregnate_cuckoo = FROM
+		}
+	}
+}

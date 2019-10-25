@@ -1,0 +1,44 @@
+### This file contains events specific to the Neko portion of the Dark World mod
+
+namespace = DWNeko
+
+# .10 The blood line resurfaces
+narrative_event = {
+	id = DWNeko.10
+	picture = a_placeholder
+	is_triggered_only = yes # Triggered by Decision
+	title = dw_neko_start_title	
+	trigger = {
+		has_far_east_content = yes # Content check
+	}
+	desc = { # This multi-desc with pictures code recommendation was made/contributed by ngppgn
+		trigger = {
+			is_female = no
+		}
+		text = DWNeko11
+		picture = neko_start2
+	}
+	desc = {
+		trigger = {
+			is_female = yes
+		}
+		text = DWNeko15
+		picture = neko_start1
+	}
+	option = { # Meow
+		name = DWNeko11A
+		trigger = {
+			is_female = no
+		}
+		add_trait = neko
+		add_random_neko_portrait = yes
+	}
+	option = { # Meow
+		name = DWNeko15A
+		trigger = {
+			is_female = yes
+		}
+		add_trait = neko
+		add_random_neko_portrait = yes
+	}
+}

@@ -1,0 +1,47 @@
+### This file contains both normal and targeted decisions related to the Tentacle-kin portion of the Dark World Reborn mod
+decisions = {
+	# Seeds of Chaos Campaign Style Selection
+	dw_tentacle_campaign = {
+		potential = {
+			ai = no # Only the player should ever see this
+			has_tentacle_start = yes
+			has_seeds_chaos_content = yes
+			has_dw_campaign_started = no
+		}
+		allow = {
+			always = yes # It should always be displayed if it is relevant
+		}
+		effect = {
+			set_global_flag = dw_campaign_started
+			narrative_event = { id = DWTentacle.10 }
+		}
+		ai_will_do = {
+			factor = 0 # Zero chance the ai uses this
+		}
+	}
+}
+targetted_decisions = {
+	# Tentacle-kin Mind Fuck!
+	dw_tentacle_mindfuck = {
+		filter = all
+		ai_target_filter = realm
+		from_potential = {
+			trait = tentacle
+		}
+		potential = {
+			NOT = { character = FROM } # Should NOT be casting this on themselves
+		}
+		allow = {
+			is_within_diplo_range = FROM
+			FROM = { piety = 50 }
+		}
+		effect = {
+			FROM = { 
+				narrative_event = { id = DWTentacle.1000 }  # The Tentacle-kin stalks the target
+			}
+		}
+		ai_will_do = {
+			factor = 0 # Right now we don't want the ai doing this - at least not until I get things ironed out
+		}
+	}
+}

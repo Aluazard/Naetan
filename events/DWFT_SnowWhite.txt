@@ -1,0 +1,9 @@
+### DWFairyTales is a Dark World spin on various, well, fairy tales.
+## Not to self - search for TODO to see where I've potential place holder gaps
+##DWFairyTales.1 - 99 Creation of characters for court
+##DWFairyTales.100 -  Beauty and the Beast
+##DWFairyTales.1000 - Snow White
+##DWFairyTales.9000 - 9999 Spending time with... (Gaston .9000)(Belle .9100)
+
+namespace = DWFairyTales
+

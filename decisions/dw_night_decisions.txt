@@ -1,0 +1,463 @@
+### This file contains both normal and targeted decisions related to the Creatures of Night mod
+decisions = {
+	# Rise of the Pack Campaign Style Selection
+	dw_rise_of_pack_campaign = {
+		potential = {
+			ai = no # Only the player should ever see this
+			has_game_rule = { name = dw_major_campaign value = dw_fenris_pack_campaign }
+			has_classic_monsters_content = yes
+			has_dw_campaign_started = no
+		}
+		allow = {
+			always = yes # It should always be displayed if it is relevant
+		}
+		effect = {
+			set_global_flag = dw_campaign_started
+			narrative_event = { id = DWNight.10 }
+		}
+		ai_will_do = {
+			factor = 0 # Zero chance the ai uses this
+		}
+	}
+	# Werewolf Dominated Campaign start decision
+	dw_werewolf_bitch_start = {
+		is_high_prio = yes
+		potential = {
+			ai = no # Only the player should ever see this
+			has_werewolf_bitch_start = yes
+			has_classic_monsters_content = yes
+			has_dw_campaign_started = no
+		}
+		allow = {
+			always = yes # It should always be displayed if it is relevant
+		}
+		effect = {
+			set_global_flag = dw_campaign_started
+			character_event = { id = DWNight.20 }
+		}
+		ai_will_do = {
+			factor = 0 # Zero chance the ai uses this
+		}
+	}
+	# Vampire Campaign start decision
+	dw_vampire_start = {
+		is_high_prio = yes
+		potential = {
+			ai = no # Only the player should ever see this
+			has_vampire_start = yes
+			has_classic_monsters_content = yes
+			has_dw_campaign_started = no
+		}
+		allow = {
+			always = yes # It should always be displayed if it is relevant
+		}
+		effect = {
+			set_global_flag = dw_campaign_started
+			narrative_event = { id = DWNight.30 }
+		}
+		ai_will_do = {
+			factor = 0 # Zero chance the ai uses this
+		}
+	}
+	# Fenris calls a member of the pack to join his court
+	dw_fenris_pack_brother = {
+		is_high_prio = yes
+		potential = {
+			trait = werewolf_ancient # Fenris is the only one who can directly call new werewolves to his court
+			is_ruler = yes # Only when Fenris is in power
+			prisoner = no # And not if he's a prisoner
+		}
+		allow = {
+			in_command = no # If he's away leading troops, he can't add to his court
+			NOT = { trait = in_hiding }
+			NOT = {
+				any_courtier = { # If he has at least 5 werewolves in court already, we don't need to add any more.
+					count = 5
+					trait = werewolf
+				}
+			}
+		}
+		effect = {
+			character_event = { id = DWNight.1020 } # A new werewolf courtier is created.
+		}
+	}
+	#Werewolf going out on the hunt
+	dw_werewolf_goes_hunting = {
+		is_high_prio = yes # Will show an alert once decision is available
+		potential = {
+			trait = werewolf
+			# Fenris won't be using this hunting option, as he does not struggle with the voices within
+		}
+		allow = {
+			prisoner = no
+			#has_character_modifier = dw_werewolf_beast_whispers
+			NOT = { has_character_modifier = dw_werewolf_hunt_cooldown }
+			age = 12 # To allow for the young werewolf hunt options. It holds the chance for a stat bonus, so I recommend against lowering it by much, unless you've also lowered your adult age.
+		}
+		effect = {
+			# The event below removes the beast whispers modifier and adds a cool down, which lasts six months before flipping back
+			character_event = { id = DWWerewolf.98 }
+			# The event below is the routing event for the hunt routing
+			character_event = { id = DWWerewolf.1000 }
+		}
+		ai_will_do = {
+			factor = 0.50 # ai is 50% likely to hunt when the option presents itself
+			modifier = {
+				factor = 0
+				OR = { #It's possible that the werewolf may become docile if hang around and adopt bad human traits
+					ai_zeal = -10
+					ai_ambition = -20
+				}
+			}
+		}
+	}
+	## Vampire hunts - vampire feeds on a victim to the point of death
+	dw_vampire_hunts = {
+		ai_check_interval = 6 # No more than twice a year for the ai - just to avoid oddities
+		potential = {
+			OR = {
+				trait = vampire
+				trait = vampire_ancient
+			}
+		}
+		allow = {
+			prisoner = no
+			custom_tooltip = { # We want to limit how often the player can hunt
+				text = dw_30_day_cooldown
+				NOT = { has_character_flag = dw_30_day_hunt_cooldown }
+			}
+			custom_tooltip = { # No hunting if we're fasting
+				text = dw_fasting_tooltip
+				NOT = { has_character_flag = dw_fasting_flag }
+			}
+		}
+		effect = {
+			narrative_event = { id = DWNight.4500 }
+			hidden_effect = {
+				set_character_flag = dw_30_day_hunt_cooldown
+				character_event = { id = DWNight.4599 days = 30 } # Removes the cooldown
+			}
+		}
+		ai_will_do = {
+			factor = 0.5 # ai is 50% likely to hunt when the option presents itself
+			modifier = {
+				factor = 0
+				OR = {
+					ai_ambition = -20 #It's possible that the vampire may lack the motivation
+					health = 10 # An ai vampire who's health is over 10, has no real reason to continue feeding, and thus risking exposure.
+				}
+			}
+		}
+	}
+	## Vampire - Diablerie Study
+	dw_diablerie_study = {
+		ai_check_interval = 12 # Once a year, just to help ensure that we don't have a bunch of ai vampire fast tracking things to becoming an ancient
+		is_high_prio = yes # Will show an alert once decision is available
+		potential = {
+			trait = vampire
+			has_artifact = dw_diablerie_book
+			NOT = { has_character_flag = dw_abandoned_diablerie_study }
+		}
+		allow = {
+			prisoner = no
+			has_artifact = dw_diablerie_book
+			NOR = {
+				custom_tooltip = { # It takes time to process information and make advances
+					text = dw_90_day_cooldown
+					has_character_flag = dw_90_day_study_cooldown
+				}
+				custom_tooltip = { # It takes time to process information and make advances
+					text = dw_180_day_cooldown
+					has_character_flag = dw_180_day_study_cooldown
+				}
+			}
+		}
+		effect = {
+			narrative_event = { id = DWNight.4600 }
+			hidden_effect = {
+				set_character_flag = dw_90_day_study_cooldown
+			}
+		}
+		ai_will_do = {
+			factor = 1.0 # ai is 100% likely to do
+			modifier = {
+				factor = 0
+				ai_ambition = -50 # Unless the vampire may lack the desire for power
+			}
+		}
+	}
+}
+targetted_decisions = {
+	### Fenris Specific
+	# Fenris hunts
+	dw_fenris_hunt = {
+		filter = realm
+		ai_target_filter = realm
+		ai_check_interval = 12 # Vlad must go hunting once a year
+		from_potential = {
+			#ai = no
+			has_character_flag = dw_npc_fenris
+			prisoner = no # No hunting from behind bars
+			NOT = { trait = in_hiding } # No hunting while hiding
+			personal_opinion = { who = ROOT value = 0} # Has no positive opinion of the target so the target may have no long term use
+		}
+		potential = {
+			ai = yes # We don't want Fenris hunting the player via this event
+			NOT = { trait = werewolf } # Fenris doesn't purge his pack via the hunt
+			NOT = { trait = werewolf_ancient } # Fenris shouldn't be hunting himself either (what a crazy error this was)
+			NOT = { has_character_modifier = dw_werewolf_bitch } # Fenris won't remove breeding stock
+			NOT = { trait = vampire_ancient } # Vladimir and Fenris shouldn't come to conflict via a quick and dirty event like this
+			personal_opinion = { who = FROM value = 0} # Target has no positive opinion of Fenris - making them a potential threat to be cleansed
+		}
+		allow = {
+			is_within_diplo_range = FROM
+		}
+		effect = {
+			FROM = { 
+				character_event = { id = DWNight.1010 }  # Fenris hunts the target
+			}
+		}
+		ai_will_do = {
+			factor = 1.0 # Percentage based
+		}
+	}
+	### Vladimir Specific
+	# Vladimir hunts
+	dw_vladimir_hunt = {
+		filter = realm
+		ai_target_filter = realm
+		ai_check_interval = 12 # Vlad must go hunting once a year
+		from_potential = {
+			#ai = no
+			has_character_flag = dw_npc_vladimir
+			prisoner = no # No hunting from behind bars
+			NOT = { trait = in_hiding } # No hunting while hiding
+			personal_opinion = { who = ROOT value = 0} # Has no positive opinion of the target so the target may have no long term use
+		}
+		potential = {
+			ai = yes # We don't want Vladimir hunting the player via this event
+			# NOT = { trait = vampire } # It should be noted that Vladimir will purge his own kind if they fail to impress him - which would indicate a personal opinion <= 0 as checked above
+			NOT = { trait = werewolf_ancient } # Vladimir shouldn't be hunted
+			NOT = { trait = vampire_ancient } # Vladimir shouldn't hunt himself
+			personal_opinion = { who = FROM value = 0} # Target has no positive opinion of Vladimir - making them a potential threat to be cleansed
+		}
+		allow = {
+			is_within_diplo_range = FROM
+		}
+		effect = {
+			FROM = { 
+				character_event = { id = DWNight.2010 }  # Vladimir hunts the target
+			}
+		}
+		ai_will_do = {
+			factor = 1.0 # Percentage based
+		}
+	}
+	## Vampire makes thrall - mind control on the weaker beings
+	dw_vampire_create_thrall = {
+		filter = all
+		ai_target_filter = realm
+		ai_check_interval = 24 # every other year - just trying to prevent a boom in thralls.
+		from_potential = {
+			is_adult = yes
+			OR = {
+				trait = vampire
+				trait = vampire_ancient
+			}
+		}
+		potential = {
+			is_adult = yes
+			NOT = { has_character_modifier = dw_vampire_thrall }
+			NOR = {
+				trait = vampire
+				trait = vampire_ancient
+			}
+		}
+		allow = {
+		FROM = { base_health > 2.0 } # This is because using this requires the burning of a health point
+		has_weak_mind = yes # while this could be used as a filter under potential, we include it here, so a person can easily see what they may need to achieve in order to target them
+			is_within_diplo_range = FROM
+		}
+		effect = {
+			FROM = { health = -1.0 }
+			if = { # If the player is the target, then they get events
+				limit = { ai = no }
+				narrative_event = { id = DWNight.4300 }
+			}
+			else = {
+				# If the player isn't the target, then the vampire is the one getting the events
+				FROM = { narrative_event = { id = DWNight.4310 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0.5 # 50 %
+			modifier = {
+				factor = 0
+				# An ai vampire won't go creating another thrall if there are already two other thralls within the same realm
+				any_realm_character = {
+					has_character_modifier = dw_vampire_thrall
+					count = 2
+				}
+			}			
+		}
+	}
+	
+	## Vampire feeds - willing subjects don't resist - those that aren't willing may resist/flee/etc.
+	dw_vampire_feeds = {
+		filter = all
+		ai_target_filter = realm
+		ai_check_interval = 3 # Every three months the ai may feel the need to feed
+		from_potential = {
+			OR = {
+				trait = vampire
+				trait = vampire_ancient
+			}
+		}
+		potential = { # We're wanting to feed on willing victims
+			is_adult = yes
+			OR = { 
+				has_character_modifier = dw_vampire_thrall
+				is_lover = FROM
+			}
+			NOR = { # No feeding on other vampires
+				trait = vampire
+				trait = vampire_ancient
+			}
+		}
+		allow = {
+			is_within_diplo_range = FROM
+			base_health > 1.0
+			custom_tooltip = { # No hunting if we're fasting
+				text = dw_fasting_tooltip
+				FROM = { NOT = { has_character_flag = dw_fasting_flag } }
+			}
+		}
+		effect = {
+			if = { # If the player is the target, then they get events
+				limit = { ai = no }
+				narrative_event = { id = DWNight.4200 }
+			}
+			else = {
+				# If the player isn't the target, then the vampire is the one getting the events
+				FROM = { narrative_event = { id = DWNight.4210 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0.75 # 75 %
+			modifier = {
+				factor = 0
+				# An ai vampire who's health is over 10, has no real reason to continue feeding, and thus risking exposure.
+				health = 10
+			}
+		}
+	}
+	
+	## Vampire creates - vampire sires another vampire
+	dw_vampire_sires = {
+		filter = all
+		ai_target_filter = realm
+		ai_check_interval = 60 # Vampires are typically solitary by nature, so an ai won't look to create another vampire more than every 5 years
+		from_potential = {
+			OR = {
+				trait = vampire
+				trait = vampire_ancient
+			}
+		}
+		potential = { # We're wanting to feed on willing victims
+			is_adult = yes
+			OR = { 
+				has_character_modifier = dw_vampire_thrall
+				is_lover = FROM
+				dynasty = ROOT
+			}
+			NOR = { # They shouldn't already be a vampire
+				trait = vampire
+				trait = vampire_ancient
+			}
+		}
+		allow = {
+			is_within_diplo_range = FROM
+			FROM = { base_health > 2.0 } # A vampire will burn health during the process of creating another
+			NOR = { # Werewolf's don't become vampires - it's a lethal mix
+				trait = werewolf
+				trait = werewolf_ancient
+			}
+			custom_tooltip = { # Creating a vampire involves drinking the targets blood, a no-no during fasting.
+				text = dw_fasting_tooltip
+				FROM = { NOT = { has_character_flag = dw_fasting_flag } }
+			}
+		}
+		effect = {
+			if = { # If the player is the target, then they get events
+				limit = { ai = no }
+				character_event = { id = DWNight.4400 }
+			}
+			else = {
+				# If the player isn't the target, then the vampire is the one getting the events
+				FROM = { character_event = { id = DWNight.4410 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0.5 # 50 %
+			modifier = {
+				factor = 0
+				# An ai vampire will seek to not be the cause of over population of their kind, not seeking to create others if there are already 2 vampires within a realm.
+				any_realm_character = {
+					trait = vampire
+					count = 2
+				}
+			}			
+		}
+	}
+	
+	## Vampire seduces - vampire weakens the will of another, not necessarily sexual at all
+	dw_vampire_seduction = {
+		filter = all
+		ai_target_filter = realm
+		ai_check_interval = 6 # AI Vampires won't try to seduce those around them more than twice a year
+		from_potential = {
+			OR = {
+				trait = vampire
+				trait = vampire_ancient
+			}
+		}
+		potential = { # We're only interested in seducing those who need their will weakened.
+			is_adult = yes
+			NOT = { character = FROM } # No seducing ourselves
+			NOR = { # The power doesn't work against our own kind, including our half-breeds
+				trait = vampire
+				trait = vampire_ancient
+				trait = dhampir
+			}
+		}
+		allow = {
+			is_within_diplo_range = FROM
+			NOR = { # Makes no sense to seduce those already under our spell
+				has_character_modifier = dw_vampire_thrall 
+				is_lover = FROM
+			}
+			NOT = { is_rival = FROM } # A rival is too wary to be approached in seduction
+		}
+		effect = {
+			if = { # If the player is the target, then they get events
+				limit = { ai = no }
+				narrative_event = { id = DWNight.4100 }
+			}
+			else = {
+				# If the player isn't the target, then the vampire is the one getting the events
+				FROM = { narrative_event = { id = DWNight.4150 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0.5 # 50 %
+			modifier = {
+				factor = 0
+				# An ai vampire won't work towards creating another thrall if there are already two other thralls within the same realm
+				any_realm_character = {
+					has_character_modifier = dw_vampire_thrall
+					count = 2
+				}
+			}			
+		}
+	}
+}

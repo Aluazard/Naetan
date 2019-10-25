@@ -1,0 +1,142 @@
+spriteTypes = {
+	spriteType = {
+		name = "caravan"
+		texturefile = "gfx/event_pictures/caravan.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "merchant"
+		texturefile = "gfx/event_pictures/merchant.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "madame_dwarf"
+		texturefile = "gfx/event_pictures/madame_dwarf.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "dwarfmale_female1"
+		texturefile = "gfx/event_pictures/dwarfmale_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "dwarffemale_male1"
+		texturefile = "gfx/event_pictures/dwarffemale_male1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "trap_pegging1"
+		texturefile = "gfx/event_pictures/trap_pegging1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_pegsfemale1"
+		texturefile = "gfx/event_pictures/futa_pegsfemale1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_suckedbymale1"
+		texturefile = "gfx/event_pictures/futa_suckedbymale1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_pegsfuta1"
+		texturefile = "gfx/event_pictures/futa_pegsfuta1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_diplomacyfocus"
+		texturefile = "gfx/event_pictures/futa_diplomacyfocus.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_intriguefocus"
+		texturefile = "gfx/event_pictures/futa_intriguefocus.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_stewardshipfocus"
+		texturefile = "gfx/event_pictures/futa_stewardshipfocus.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_martialfocus"
+		texturefile = "gfx/event_pictures/futa_martialfocus.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_learningfocus"
+		texturefile = "gfx/event_pictures/futa_learningfocus.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_mey_normal"
+		texturefile = "gfx/event_pictures/futa_mey_normal.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_mey_male_fucked1"
+		texturefile = "gfx/event_pictures/futa_mey_male_fucked1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_mey_female_fucks1"
+		texturefile = "gfx/event_pictures/futa_mey_female_fucks1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_mey_futa_fucks1"
+		texturefile = "gfx/event_pictures/futa_mey_futa_fucks1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "futa_bonus_trait"
+		texturefile = "gfx/event_pictures/futa_bonus_trait.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "trap_bonus_trait"
+		texturefile = "gfx/event_pictures/trap_bonus_trait.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

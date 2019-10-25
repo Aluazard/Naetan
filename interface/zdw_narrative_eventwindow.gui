@@ -1,0 +1,347 @@
+guiTypes = {
+	#### NARRATIVE EVENT
+	windowType = 
+	{
+		name = "EventWindowNarrative"
+		backGround="Background"
+		position = { x=-530 y=-385 }	
+		size = { x=770 y=620 }
+		moveable = 1
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "CENTER"
+		click_to_front = yes
+		
+		guiButtonType = 
+		{
+			name = "Background"	
+			quadTextureSprite ="GFX_event_narrative_area"
+		}
+		iconType =
+		{
+			name ="Background_2"
+			spriteType = "GFX_event_narrative_bg"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType =
+		{
+			name ="event_extension_1"
+			spriteType = "GFX_event_narrative_extension"
+			position = { x= -99993 y = 719 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType =
+		{
+			name ="event_extension_2"
+			spriteType = "GFX_event_narrative_extension"
+			position = { x= -99993 y = 759 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType =
+		{
+			name ="event_extension_3"
+			spriteType = "GFX_event_narrative_extension"
+			position = { x= -99993 y = 799 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="event_picture"
+			spriteType = "GFX_evt_throne_room"
+			position = { x= 562 y = 34 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		### colored frames.
+		iconType =
+		{
+			name ="event_frame"
+			spriteType = "GFX_event_narrative_frame_diplomacy"
+			position = { x= 99936 y = 60 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		### portraits.
+		guiButtonType =
+		{
+			name ="EventWindowMainChar_portrait"
+			quadTextureSprite = "GFX_char_75"
+			position = { x = 485 y = 34 }
+			pdx_tooltip = "CHARACTER_TOOLTIP"
+			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
+		}
+		guiButtonType =
+		{
+			name = "EventWindowMainChar_portrait_frame"
+			quadTextureSprite = "GFX_charframe_75"
+			position = { x= 477 y = 25 }
+			Orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name ="EventWindowMainChar_shield"
+			quadTextureSprite = "GFX_shield_medium2"
+			position = { x= 460 y = 72 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = 
+		{
+			name ="EventWindowMainChar_crown"
+			spriteType = "GFX_shield_crown_strip_medium2"
+			position = { x= 470 y = 56 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="EventWindowMainChar_portrait_relation"
+			spriteType = "GFX_overlay_char_relation_75"
+			position = { x= 537 y = 30 }
+			Orientation = "UPPER_LEFT"
+		}
+		###
+		guiButtonType =
+		{
+			name ="EventWindowFromChar_portrait"
+			quadTextureSprite = "GFX_char_75"
+			position = { x = 485 y = 124 }
+			pdx_tooltip = "CHARACTER_TOOLTIP"
+			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
+		}
+		guiButtonType =
+		{
+			name = "EventWindowFromChar_portrait_frame"
+			quadTextureSprite = "GFX_charframe_75"
+			position = { x= 477 y = 115 }
+			Orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name ="EventWindowFromChar_shield"
+			quadTextureSprite = "GFX_shield_medium2"
+			position = { x= 460 y = 162 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = 
+		{
+			name ="EventWindowFromChar_crown"
+			spriteType = "GFX_shield_crown_strip_medium2"
+			position = { x= 470 y = 146 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="EventWindowFromChar_portrait_relation"
+			spriteType = "GFX_overlay_char_relation_75"
+			position = { x= 537 y = 120 }
+			Orientation = "UPPER_LEFT"
+		}
+		#####
+		
+		instantTextBoxType = 
+		{
+			name = "decorative_letter"
+			position = { x = 45 y = 29 }
+			textureFile = ""
+			font = "decorative_color"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 75
+			maxHeight = 75
+			format = left
+		}
+		
+		instantTextBoxType = 
+		{
+			name = "Title"
+			position = { x = 119 y = 31 }
+			textureFile = ""
+			font = "vic_36_black"
+			borderSize = {x = 0 y = 0}
+			text = "UI_MISSING_TEXT"	
+			maxWidth = 366
+			maxHeight = 40
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextBoxType = 
+		{
+			name = "Description_firstpart"
+			position = { x = 122 y = 65 }
+			textureFile = ""
+			font = "vic_18_black"
+			borderSize = {x = 0 y = 0}
+			text = "UI_MISSING_TEXT"
+			maxWidth = 350
+			maxHeight = 37
+			format = left
+		}
+		
+		instantTextBoxType = 
+		{
+			name = "Description"
+			position = { x = 41 y = 101 }
+			textureFile = ""
+			font = "vic_18_black"
+			borderSize = {x = 0 y = 0}
+			text = "UI_MISSING_TEXT"	
+			maxWidth = 435
+			maxHeight = 590	
+			format = left
+			fixedsize = yes
+		}
+	
+		# options:
+		guiButtonType = {
+			name = "EventOptionButton1"
+			position = { x = 542 y = 474 }
+			quadTextureSprite ="GFX_event_normal_option"
+		}
+		instantTextBoxType = 
+		{
+			name = "EventOptionText1"
+			position = { x = 555 y = 484 }
+			textureFile = ""
+			font = "vic_22_black"
+			borderSize = {x = 0 y = 0}
+			text = "UI_MISSING_TEXT"	
+			maxWidth = 456
+			maxHeight = 32	
+			format = left
+			fixedsize = yes
+			allwaystransparent = yes
+		}
+		OverlappingElementsBoxType = 
+		{
+			name = "EventOptionPortraits1"
+			position = { x = 840 y = 476 }
+			size = { x=180 y=40 }
+			format = right
+			spacing = 0
+			Orientation = "UPPER_LEFT"
+		}
+		OverlappingElementsBoxType = {
+			name = "related_traits1"
+			position = { x = 830 y = 470 }
+			size = { x=195 y=40 }
+			format = right
+		}
+		###
+		guiButtonType = {
+			name = "EventOptionButton2"
+			position = { x = 542 y = 514 }
+			quadTextureSprite ="GFX_event_normal_option"
+		}
+		instantTextBoxType = 
+		{
+			name = "EventOptionText2"
+			position = { x = 555 y = 524 }
+			textureFile = ""
+			font = "vic_22_black"
+			borderSize = {x = 0 y = 0}
+			text = "UI_MISSING_TEXT"	
+			maxWidth = 456
+			maxHeight = 32	
+			format = left
+			fixedsize = yes
+		}
+		OverlappingElementsBoxType = 
+		{
+			name = "EventOptionPortraits2"
+			position = { x = 840 y = 516 }
+			size = { x=180 y=40 }
+			format = right
+			spacing = 0
+			Orientation = "UPPER_LEFT"
+		}
+		OverlappingElementsBoxType = {
+			name = "related_traits2"
+			position = { x = 820 y = 520 }
+			size = { x=195 y=40 }
+			format = right
+		}
+		###
+		guiButtonType = {
+			name = "EventOptionButton3"
+			position = { x = 542 y = 554 }
+			quadTextureSprite ="GFX_event_normal_option"
+		}
+		instantTextBoxType = 
+		{
+			name = "EventOptionText3"
+			position = { x = 555 y = 564 }
+			textureFile = ""
+			font = "vic_22_black"
+			borderSize = {x = 0 y = 0}
+			text = "UI_MISSING_TEXT"	
+			maxWidth = 456
+			maxHeight = 32	
+			format = left
+			fixedsize = yes
+		}
+		OverlappingElementsBoxType = 
+		{
+			name = "EventOptionPortraits3"
+			position = { x = 840 y = 556 }
+			size = { x=180 y=40 }
+			format = right
+			spacing = 0
+			Orientation = "UPPER_LEFT"
+		}
+		OverlappingElementsBoxType = {
+			name = "related_traits3"
+			position = { x = 820 y = 560 }
+			size = { x=195 y=40 }
+			format = right
+		}
+		###
+		guiButtonType = {
+			name = "EventOptionButton4"
+			position = { x = 542 y = 594 }
+			quadTextureSprite ="GFX_event_normal_option"
+		}
+		instantTextBoxType = 
+		{
+			name = "EventOptionText4"
+			position = { x = 555 y = 604 }
+			textureFile = ""
+			font = "vic_22_black"
+			borderSize = {x = 0 y = 0}
+			text = "UI_MISSING_TEXT"	
+			maxWidth = 456
+			maxHeight = 32	
+			format = left
+			fixedsize = yes
+		}
+		OverlappingElementsBoxType = 
+		{
+			name = "EventOptionPortraits4"
+			position = { x = 840 y = 596 }
+			size = { x=180 y=40 }
+			format = right
+			spacing = 0
+			Orientation = "UPPER_LEFT"
+		}
+		OverlappingElementsBoxType = {
+			name = "related_traits4"
+			position = { x = 820 y = 600 }
+			size = { x=195 y=40 }
+			format = right
+		}
+					
+		instantTextBoxType = 
+		{
+			name = "CountdownText"
+			position = { x = -5 y = 565 }
+			textureFile = ""
+			font = "vic_18_black"
+			borderSize = {x = 0 y = 0}
+			text = ""
+			maxWidth = 456
+			maxHeight = 32	
+			format = left
+			fixedsize = yes
+		}
+	}
+	
+}

@@ -1,0 +1,1003 @@
+spriteTypes = {
+	spriteType = {
+		name = "chancellor_default"
+		texturefile = "gfx/event_pictures/chancellor_default.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "chancellor__female_default"
+		texturefile = "gfx/event_pictures/chancellor__female_default.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "denied"
+		texturefile = "gfx/event_pictures/denied.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "chancellor_female_female_1"
+		texturefile = "gfx/event_pictures/chancellor_female_female_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "chancellor_male_male_1"
+		texturefile = "gfx/event_pictures/chancellor_male_male_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "chancellor_male_female_1"
+		texturefile = "gfx/event_pictures/chancellor_male_female_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "harley_hello"
+		texturefile = "gfx/event_pictures/harley_hello.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "court_jester_tired"
+		texturefile = "gfx/event_pictures/court_jester_tired.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "facepalm"
+		texturefile = "gfx/event_pictures/facepalm.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "joker_hello"
+		texturefile = "gfx/event_pictures/joker_hello.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "court_jester_dwarf"
+		texturefile = "gfx/event_pictures/court_jester_dwarf.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alchemist"
+		texturefile = "gfx/event_pictures/alchemist.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alchemist_breasts"
+		texturefile = "gfx/event_pictures/alchemist_breasts.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alchemist_penis_futa"
+		texturefile = "gfx/event_pictures/alchemist_penis_futa.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alchemist_penis"
+		texturefile = "gfx/event_pictures/alchemist_penis.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "treasure"
+		texturefile = "gfx/event_pictures/treasure.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alchemist_aphrodites_curse"
+		texturefile = "gfx/event_pictures/alchemist_aphrodites_curse.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alchemist_aphrodites_curse_cock_worship1"
+		texturefile = "gfx/event_pictures/alchemist_aphrodites_curse_cock_worship1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alchemist_aphrodites_curse_cock_worship2"
+		texturefile = "gfx/event_pictures/alchemist_aphrodites_curse_cock_worship2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alchemist_serpentspurge"
+		texturefile = "gfx/event_pictures/alchemist_serpentspurge.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "slavery_female_cell1"
+		texturefile = "gfx/event_pictures/slavery_female_cell1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "slavery_male_cell1"
+		texturefile = "gfx/event_pictures/slavery_male_cell1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "slavery_female_sale1"
+		texturefile = "gfx/event_pictures/slavery_female_sale1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "slavery_bodyguard"
+		texturefile = "gfx/event_pictures/slavery_bodyguard.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "slavery_gladiator"
+		texturefile = "gfx/event_pictures/slavery_gladiator.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "slavery_branding"
+		texturefile = "gfx/event_pictures/slavery_branding.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "slavery_evaluation"
+		texturefile = "gfx/event_pictures/slavery_evaluation.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel"
+		texturefile = "gfx/event_pictures/brothel.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_female1"
+		texturefile = "gfx/event_pictures/brothel_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_female_female_fingerbang"
+		texturefile = "gfx/event_pictures/brothel_female_female_fingerbang.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_female_cock_missionary1"
+		texturefile = "gfx/event_pictures/brothel_female_cock_missionary1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_male1"
+		texturefile = "gfx/event_pictures/brothel_male1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_futa1"
+		texturefile = "gfx/event_pictures/brothel_futa1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_male_male_fuck1"
+		texturefile = "gfx/event_pictures/brothel_male_male_fuck1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_futa_male_fuck1"
+		texturefile = "gfx/event_pictures/brothel_futa_male_fuck1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_default"
+		texturefile = "gfx/event_pictures/wizard_default.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_hermione"
+		texturefile = "gfx/event_pictures/wizard_hermione.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_female_2cock_blow"
+		texturefile = "gfx/event_pictures/brothel_female_2cock_blow.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_trap_male_fuck1"
+		texturefile = "gfx/event_pictures/brothel_trap_male_fuck1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_male_female_fuck1"
+		texturefile = "gfx/event_pictures/brothel_male_female_fuck1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_female_2cock_dp1"
+		texturefile = "gfx/event_pictures/brothel_female_2cock_dp1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_creampie1"
+		texturefile = "gfx/event_pictures/brothel_creampie1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_female_female_munch1"
+		texturefile = "gfx/event_pictures/brothel_female_female_munch1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_futa_group_fuck1"
+		texturefile = "gfx/event_pictures/brothel_futa_group_fuck1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_female_cock_fuck1"
+		texturefile = "gfx/event_pictures/brothel_female_cock_fuck1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_female_male_titfuck1"
+		texturefile = "gfx/event_pictures/brothel_female_male_titfuck1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_sorcey"
+		texturefile = "gfx/event_pictures/wizard_sorcey.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_sorcey_food"
+		texturefile = "gfx/event_pictures/wizard_sorcey_food.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_sorcey_frog"
+		texturefile = "gfx/event_pictures/wizard_sorcey_frog.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_female_2futa_dp1"
+		texturefile = "gfx/event_pictures/brothel_female_2futa_dp1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_futa_male_fuck2"
+		texturefile = "gfx/event_pictures/brothel_futa_male_fuck2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "stable"
+		texturefile = "gfx/event_pictures/stable.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "marshall_default"
+		texturefile = "gfx/event_pictures/marshall_default.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "marshall_female_default"
+		texturefile = "gfx/event_pictures/marshall_female_default.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "stable_commoner_1"
+		texturefile = "gfx/event_pictures/stable_commoner_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "stable_commander_male_1"
+		texturefile = "gfx/event_pictures/stable_commander_male_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "stable_commander_female_1"
+		texturefile = "gfx/event_pictures/stable_commander_female_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "stable_commander_female_2"
+		texturefile = "gfx/event_pictures/stable_commander_female_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "stable_ruler_female_1"
+		texturefile = "gfx/event_pictures/stable_ruler_female_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "stable_ruler_female_2"
+		texturefile = "gfx/event_pictures/stable_ruler_female_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "stable_ruler_female_3"
+		texturefile = "gfx/event_pictures/stable_ruler_female_3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "stable_ruler_female_4"
+		texturefile = "gfx/event_pictures/stable_ruler_female_4.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "stable_ruler_male_1"
+		texturefile = "gfx/event_pictures/stable_ruler_male_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "stable_belle_1"
+		texturefile = "gfx/event_pictures/stable_belle_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_hermione_fucked_futa1"
+		texturefile = "gfx/event_pictures/wizard_hermione_fucked_futa1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_female_futa_fuck1"
+		texturefile = "gfx/event_pictures/brothel_female_futa_fuck1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "arena"
+		texturefile = "gfx/event_pictures/arena.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "arena_stuck"
+		texturefile = "gfx/event_pictures/arena_stuck.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "arena_bookie"
+		texturefile = "gfx/event_pictures/arena_bookie.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "arena_gambling_duel1"
+		texturefile = "gfx/event_pictures/arena_gambling_duel1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "arena_stable"
+		texturefile = "gfx/event_pictures/arena_stable.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "arena_platypoa"
+		texturefile = "gfx/event_pictures/arena_platypoa.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "arena_female_recruit"
+		texturefile = "gfx/event_pictures/arena_female_recruit.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "arena_male_recruit"
+		texturefile = "gfx/event_pictures/arena_male_recruit.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "first_night_right"
+		texturefile = "gfx/event_pictures/first_night_right.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "first_night_behind1"
+		texturefile = "gfx/event_pictures/first_night_behind1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "spymaster_female"
+		texturefile = "gfx/event_pictures/spymaster_female.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "spymaster_male"
+		texturefile = "gfx/event_pictures/spymaster_male.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "prisoner_male_werewolf1"
+		texturefile = "gfx/event_pictures/prisoner_male_werewolf1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "prisoner_female_werewolf1"
+		texturefile = "gfx/event_pictures/prisoner_female_werewolf1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "prisoner_male1"
+		texturefile = "gfx/event_pictures/prisoner_male1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "prisoner_futa1"
+		texturefile = "gfx/event_pictures/prisoner_futa1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "prisoner_female1"
+		texturefile = "gfx/event_pictures/prisoner_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_hermione_masturbate1"
+		texturefile = "gfx/event_pictures/wizard_hermione_masturbate1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_hermione_event1"
+		texturefile = "gfx/event_pictures/wizard_hermione_event1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_hermione_event2"
+		texturefile = "gfx/event_pictures/wizard_hermione_event2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_hermione_event3"
+		texturefile = "gfx/event_pictures/wizard_hermione_event3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_hermione_anal1"
+		texturefile = "gfx/event_pictures/wizard_hermione_anal1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_hermione_futa1"
+		texturefile = "gfx/event_pictures/wizard_hermione_futa1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_hermione_lesbian1"
+		texturefile = "gfx/event_pictures/wizard_hermione_lesbian1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_hermione_lesbian2"
+		texturefile = "gfx/event_pictures/wizard_hermione_lesbian2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "spell_love_potion"
+		texturefile = "gfx/event_pictures/spell_love_potion.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_ginny"
+		texturefile = "gfx/event_pictures/wizard_ginny.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_luna"
+		texturefile = "gfx/event_pictures/wizard_luna.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "arena_conan_bound"
+		texturefile = "gfx/event_pictures/arena_conan_bound.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_madam"
+		texturefile = "gfx/event_pictures/brothel_madam.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_upgrade"
+		texturefile = "gfx/event_pictures/brothel_upgrade.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_prep"
+		texturefile = "gfx/event_pictures/brothel_prep.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_tiana_intro"
+		texturefile = "gfx/event_pictures/brothel_tiana_intro.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_pharah_intro"
+		texturefile = "gfx/event_pictures/brothel_pharah_intro.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_relax_males"
+		texturefile = "gfx/event_pictures/brothel_relax_males.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_monk_wine"
+		texturefile = "gfx/event_pictures/brothel_monk_wine.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_masks"
+		texturefile = "gfx/event_pictures/brothel_masks.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_gloryhole"
+		texturefile = "gfx/event_pictures/brothel_gloryhole.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_mysteryroom"
+		texturefile = "gfx/event_pictures/brothel_mysteryroom.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_jessica_intro"
+		texturefile = "gfx/event_pictures/brothel_jessica_intro.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_tchalla_intro"
+		texturefile = "gfx/event_pictures/brothel_tchalla_intro.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_link_intro"
+		texturefile = "gfx/event_pictures/brothel_link_intro.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_bard"
+		texturefile = "gfx/event_pictures/brothel_bard.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_pole_dancer"
+		texturefile = "gfx/event_pictures/brothel_pole_dancer.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_shantae_dances"
+		texturefile = "gfx/event_pictures/brothel_shantae_dances.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_morrigan_intro"
+		texturefile = "gfx/event_pictures/brothel_morrigan_intro.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_mystery_female1"
+		texturefile = "gfx/event_pictures/brothel_mystery_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_mystery_female2"
+		texturefile = "gfx/event_pictures/brothel_mystery_female2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_mystery_male1"
+		texturefile = "gfx/event_pictures/brothel_mystery_male1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_mystery_trap1"
+		texturefile = "gfx/event_pictures/brothel_mystery_trap1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_mystery_trap2"
+		texturefile = "gfx/event_pictures/brothel_mystery_trap2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_mystery_futa1"
+		texturefile = "gfx/event_pictures/brothel_mystery_futa1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_gloryhole_male1"
+		texturefile = "gfx/event_pictures/brothel_gloryhole_male1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_gloryhole_female1"
+		texturefile = "gfx/event_pictures/brothel_gloryhole_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_jessica_nips"
+		texturefile = "gfx/event_pictures/brothel_jessica_nips.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_jessica_strip1"
+		texturefile = "gfx/event_pictures/brothel_jessica_strip1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_jessica_halloween1"
+		texturefile = "gfx/event_pictures/brothel_jessica_halloween1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_jessica_seduce1"
+		texturefile = "gfx/event_pictures/brothel_jessica_seduce1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_jessica_fuckoff"
+		texturefile = "gfx/event_pictures/brothel_jessica_fuckoff.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_jessica_female1"
+		texturefile = "gfx/event_pictures/brothel_jessica_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_jessica_group1"
+		texturefile = "gfx/event_pictures/brothel_jessica_group1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "brothel_jessica_backstage1"
+		texturefile = "gfx/event_pictures/brothel_jessica_backstage1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "court_queen_throne1"
+		texturefile = "gfx/event_pictures/court_queen_throne1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "court_king_throne1"
+		texturefile = "gfx/event_pictures/court_king_throne1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "shopping_bazaar_1"
+		texturefile = "gfx/event_pictures/shopping_bazaar_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "shopping_marketplace_1"
+		texturefile = "gfx/event_pictures/shopping_marketplace_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alchemist_health_potion_1"
+		texturefile = "gfx/event_pictures/alchemist_health_potion_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alchemist_beauty_potion_1"
+		texturefile = "gfx/event_pictures/alchemist_beauty_potion_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alchemist_potion_1"
+		texturefile = "gfx/event_pictures/alchemist_potion_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "exotic_chalice_1"
+		texturefile = "gfx/event_pictures/exotic_chalice_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "exotic_store"
+		texturefile = "gfx/event_pictures/exotic_store.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "exotic_waterclock_1"
+		texturefile = "gfx/event_pictures/exotic_waterclock_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "exotic_book_1"
+		texturefile = "gfx/event_pictures/exotic_book_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "exotic_lamp_1"
+		texturefile = "gfx/event_pictures/exotic_lamp_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alladin_genie1"
+		texturefile = "gfx/event_pictures/alladin_genie1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "exotic_armor_female_1"
+		texturefile = "gfx/event_pictures/exotic_armor_female_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "alchemist_blood_potion_1"
+		texturefile = "gfx/event_pictures/alchemist_blood_potion_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

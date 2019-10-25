@@ -1,0 +1,583 @@
+spriteTypes = {
+	spriteType = {
+		name = "dw_night_fenris_profile"
+		texturefile = "gfx/event_pictures/dw_night_fenris_profile.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "dw_night_fenris_escapes"
+		texturefile = "gfx/event_pictures/dw_night_fenris_escapes.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_RabbitHunt"
+		texturefile = "gfx/event_pictures/DWWerewolf_RabbitHunt.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_CatRest"
+		texturefile = "gfx/event_pictures/DWWerewolf_CatRest.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Drinking"
+		texturefile = "gfx/event_pictures/DWWerewolf_Drinking.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_EatMeat"
+		texturefile = "gfx/event_pictures/DWWerewolf_EatMeat.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_FemaleFuckFemaleBitch1"
+		texturefile = "gfx/event_pictures/DWWerewolf_FemaleFuckFemaleBitch1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_FutaFuckFemaleBitch1"
+		texturefile = "gfx/event_pictures/DWWerewolf_FutaFuckFemaleBitch1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_CorneredFeral"
+		texturefile = "gfx/event_pictures/DWWerewolf_CorneredFeral.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_FeralHowl"
+		texturefile = "gfx/event_pictures/DWWerewolf_FeralHowl.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_FuckFemaleBitch1"
+		texturefile = "gfx/event_pictures/DWWerewolf_FuckFemaleBitch1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "dw_night_fenris_fuckfemale1"
+		texturefile = "gfx/event_pictures/dw_night_fenris_fuckfemale1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "dw_night_vladimir_profile"
+		texturefile = "gfx/event_pictures/dw_night_vladimir_profile.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "dw_night_vladimir_bats"
+		texturefile = "gfx/event_pictures/dw_night_vladimir_bats.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_ElfDance"
+		texturefile = "gfx/event_pictures/DWWerewolf_ElfDance.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Hunt_Bear1"
+		texturefile = "gfx/event_pictures/DWWerewolf_Hunt_Bear1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Hunt"
+		texturefile = "gfx/event_pictures/DWWerewolf_Hunt.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Hunt_BearSpirit"
+		texturefile = "gfx/event_pictures/DWWerewolf_Hunt_BearSpirit.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Hunt_Deer1"
+		texturefile = "gfx/event_pictures/DWWerewolf_Hunt_Deer1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Hunt_Poachers"
+		texturefile = "gfx/event_pictures/DWWerewolf_Hunt_Poachers.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Hunt_Poachers2"
+		texturefile = "gfx/event_pictures/DWWerewolf_Hunt_Poachers2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Hunt_Poachers3"
+		texturefile = "gfx/event_pictures/DWWerewolf_Hunt_Poachers3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Fuck_FemaleWitch1"
+		texturefile = "gfx/event_pictures/DWWerewolf_Fuck_FemaleWitch1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Fuck_Fail_Female1"
+		texturefile = "gfx/event_pictures/DWWerewolf_Fuck_Fail_Female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Rest_Read_Female1"
+		texturefile = "gfx/event_pictures/DWWerewolf_Rest_Read_Female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Death1"
+		texturefile = "gfx/event_pictures/DWWerewolf_Death1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Hunt_RedSisterhood1"
+		texturefile = "gfx/event_pictures/DWWerewolf_Hunt_RedSisterhood1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Death2"
+		texturefile = "gfx/event_pictures/DWWerewolf_Death2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_RedSisterhood_Sex1"
+		texturefile = "gfx/event_pictures/DWWerewolf_RedSisterhood_Sex1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Rest_MoonDust"
+		texturefile = "gfx/event_pictures/DWWerewolf_Rest_MoonDust.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Hunt_Deer2"
+		texturefile = "gfx/event_pictures/DWWerewolf_Hunt_Deer2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Hunt_Boar1"
+		texturefile = "gfx/event_pictures/DWWerewolf_Hunt_Boar1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Hunt_Boar2"
+		texturefile = "gfx/event_pictures/DWWerewolf_Hunt_Boar2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Rest_Play"
+		texturefile = "gfx/event_pictures/DWWerewolf_Rest_Play.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "DWWerewolf_Hunt_KillHuman1"
+		texturefile = "gfx/event_pictures/DWWerewolf_Hunt_KillHuman1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "werewolf_bitch_start"
+		texturefile = "gfx/event_pictures/werewolf_bitch_start.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "werewolf_omega_male_start"
+		texturefile = "gfx/event_pictures/werewolf_omega_male_start.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_bite_start"
+		texturefile = "gfx/event_pictures/vampire_bite_start.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "dw_night_vladimir_throne"
+		texturefile = "gfx/event_pictures/dw_night_vladimir_throne.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "bloodrayne_bloody_drink_1"
+		texturefile = "gfx/event_pictures/bloodrayne_bloody_drink_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "bloodrayne_attacks_1"
+		texturefile = "gfx/event_pictures/bloodrayne_attacks_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "bloodrayne_attacks_2"
+		texturefile = "gfx/event_pictures/bloodrayne_attacks_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "bloodrayne_defeated_1"
+		texturefile = "gfx/event_pictures/bloodrayne_defeated_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "bloodrayne_defeated_2"
+		texturefile = "gfx/event_pictures/bloodrayne_defeated_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "bloodrayne_slayer_1"
+		texturefile = "gfx/event_pictures/bloodrayne_slayer_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "bloodrayne_wounded_1"
+		texturefile = "gfx/event_pictures/bloodrayne_wounded_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "bloodrayne_appears_1"
+		texturefile = "gfx/event_pictures/bloodrayne_appears_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "bloodrayne_attacks_werewolf_1"
+		texturefile = "gfx/event_pictures/bloodrayne_attacks_werewolf_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_bite_male_1"
+		texturefile = "gfx/event_pictures/vampire_bite_male_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_bite_female_1"
+		texturefile = "gfx/event_pictures/vampire_bite_female_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_attack_nos_1"
+		texturefile = "gfx/event_pictures/vampire_attack_nos_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_feeds_nos_1"
+		texturefile = "gfx/event_pictures/vampire_feeds_nos_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_feeds_nos_2"
+		texturefile = "gfx/event_pictures/vampire_feeds_nos_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_female_1"
+		texturefile = "gfx/event_pictures/vampire_female_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_male_1"
+		texturefile = "gfx/event_pictures/vampire_male_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_injured_nos_1"
+		texturefile = "gfx/event_pictures/vampire_injured_nos_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_dead_1"
+		texturefile = "gfx/event_pictures/vampire_dead_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "fleeing_woman_1"
+		texturefile = "gfx/event_pictures/fleeing_woman_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "fleeing_man_1"
+		texturefile = "gfx/event_pictures/fleeing_man_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_male_hypnosis_1"
+		texturefile = "gfx/event_pictures/vampire_male_hypnosis_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_female_hypnosis_1"
+		texturefile = "gfx/event_pictures/vampire_female_hypnosis_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_female_2"
+		texturefile = "gfx/event_pictures/vampire_female_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_male_2"
+		texturefile = "gfx/event_pictures/vampire_male_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_noble_nosferatu_1"
+		texturefile = "gfx/event_pictures/vampire_noble_nosferatu_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "noble_feast"
+		texturefile = "gfx/event_pictures/noble_feast.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_bite_female_nos_1"
+		texturefile = "gfx/event_pictures/vampire_bite_female_nos_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_sex_female_bj_1"
+		texturefile = "gfx/event_pictures/vampire_sex_female_bj_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_sex_female_lez_1"
+		texturefile = "gfx/event_pictures/vampire_sex_female_lez_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_sex_male_cun_1"
+		texturefile = "gfx/event_pictures/vampire_sex_male_cun_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_sex_male_gay_1"
+		texturefile = "gfx/event_pictures/vampire_sex_male_gay_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_drink_female_1"
+		texturefile = "gfx/event_pictures/vampire_drink_female_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_drink_male_1"
+		texturefile = "gfx/event_pictures/vampire_drink_male_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_bite_male_2"
+		texturefile = "gfx/event_pictures/vampire_bite_male_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_bite_female_2"
+		texturefile = "gfx/event_pictures/vampire_bite_female_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_thrall_1"
+		texturefile = "gfx/event_pictures/vampire_thrall_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_thrall_2"
+		texturefile = "gfx/event_pictures/vampire_thrall_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampirella_1"
+		texturefile = "gfx/event_pictures/vampirella_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_hunt_commoner_1"
+		texturefile = "gfx/event_pictures/vampire_hunt_commoner_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_male_book_1"
+		texturefile = "gfx/event_pictures/vampire_male_book_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_female_book_1"
+		texturefile = "gfx/event_pictures/vampire_female_book_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_nosferatu_1"
+		texturefile = "gfx/event_pictures/vampire_nosferatu_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_death_sunlight_1"
+		texturefile = "gfx/event_pictures/vampire_death_sunlight_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "vampire_female_3"
+		texturefile = "gfx/event_pictures/vampire_female_3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

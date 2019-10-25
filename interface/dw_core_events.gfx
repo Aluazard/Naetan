@@ -1,0 +1,121 @@
+spriteTypes = {
+	spriteType = {
+		name = "visit_male_female_1"
+		texturefile = "gfx/event_pictures/visit_male_female_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "visit_female_female_1"
+		texturefile = "gfx/event_pictures/visit_female_female_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "visit_male_male_1"
+		texturefile = "gfx/event_pictures/visit_male_male_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "king_generic"
+		texturefile = "gfx/event_pictures/king_generic.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "queen_generic"
+		texturefile = "gfx/event_pictures/queen_generic.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "mother_crying"
+		texturefile = "gfx/event_pictures/mother_crying.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "visit_futa_futa_1"
+		texturefile = "gfx/event_pictures/visit_futa_futa_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "visit_futa_female_1"
+		texturefile = "gfx/event_pictures/visit_futa_female_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "visit_futa_male_1"
+		texturefile = "gfx/event_pictures/visit_futa_male_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "visit_futa_female_2"
+		texturefile = "gfx/event_pictures/visit_futa_female_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "start_1"
+		texturefile = "gfx/event_pictures/start_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "start_2"
+		texturefile = "gfx/event_pictures/start_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "start_3"
+		texturefile = "gfx/event_pictures/start_3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "start_4"
+		texturefile = "gfx/event_pictures/start_4.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "start_5"
+		texturefile = "gfx/event_pictures/start_5.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "start_6"
+		texturefile = "gfx/event_pictures/start_6.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "a_placeholder"
+		texturefile = "gfx/event_pictures/a_placeholder.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

@@ -1,0 +1,1162 @@
+######
+## DWCourt.300 - Bordello Improvement Quest
+######
+
+namespace = DWCourt
+
+# .300 Bordello Improvement Quest Start
+narrative_event = {
+	id = DWCourt.300
+	desc = DWCourt300
+	picture = brothel_madam
+	title = dw_bordello_buildup
+	only_rulers = yes
+	is_triggered_only = yes # By 5 year on-action
+	trigger = { #The ruler must be an adult, present, capable, and have a Bordello
+		prisoner = no
+		in_command = no
+		is_adult = yes
+		NOT = { trait = incapable }
+		NOT = { trait = in_hiding }
+		NOT = { has_character_flag = dw_bordello_buildup_quest }
+		has_valid_brothel_for_renovation = yes
+	}
+	option = {
+		name = DWCourt300A #Let's do this!
+		set_character_flag = dw_bordello_buildup_quest
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					ai_honor = 10 #If the ai is honorable, then it won't due the event as it promotes cheating and dishonest behavior
+					ai_zeal = 10 #If the ai is zealous, then it won't dirty itself with such an event.
+					ai_rationality = 25 #If the ai is rational, then it doesn't like the risk associated in getting personally involved with such an establishment.
+				}
+			}
+		}
+		narrative_event = { id = DWCourt.305 days = 14 } # The plan
+	}
+	option = {
+		name = DWCourt300B #Not interested
+		set_character_flag = dw_bordello_buildup_quest
+	}
+}
+# .305 The plan
+narrative_event = {
+	id = DWCourt.305
+	picture = brothel
+	desc = DWCourt305
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .300
+	trigger = {
+		has_character_flag = dw_bordello_buildup_quest # This is to ensure that something didn't happen, such as a ruler dying and their offspring getting the event unintentionally
+	}
+	option = {
+		name = DWCourt305A # More Whore Variety
+		narrative_event = { id = DWCourt.310 days = 1 }
+	}
+	option = {
+		name = DWCourt305B # Food / Drink
+		narrative_event = { id = DWCourt.340 days = 1 }
+	}
+	option = {
+		name = DWCourt305C # Mystery (Glory holes, Masks)
+		narrative_event = { id = DWCourt.350 days = 1 }
+	}
+	option = {
+		name = DWCourt305D # Entertainment
+		narrative_event = { id = DWCourt.370 days = 1 }
+	}
+}
+# .306 Revisiting the plan
+narrative_event = {
+	id = DWCourt.306
+	picture = brothel
+	title = dw_bordello_buildup
+	is_triggered_only = yes # 
+	trigger = {
+		has_character_flag = dw_bordello_buildup_quest # This is to ensure that something didn't happen, such as a ruler dying and their offspring getting the event unintentionally
+	}
+	desc = { # Second stage of the plan
+		trigger = {
+			has_character_modifier = dw_brothel_improvement_1
+		}
+		text = DWCourt306.0
+	}
+	desc = { # Third stage of the plan
+		trigger = {
+			has_character_modifier = dw_brothel_improvement_2
+		}
+		text = DWCourt306.1
+	}
+	desc = { # Final stage of the plan
+		trigger = {
+			has_character_modifier = dw_brothel_improvement_3
+		}
+		text = DWCourt306.2
+	}
+	option = {
+		trigger = {
+			NOT = { has_character_flag = dw_bordello_whore }
+		}
+		name = DWCourt305A # More Whore Variety
+		narrative_event = { id = DWCourt.310 days = 1 }
+	}
+	option = {
+		trigger = {
+			NOT = { has_character_flag = dw_bordello_food }
+		}
+		name = DWCourt305B # Food / Drink
+		narrative_event = { id = DWCourt.340 days = 1 }
+	}
+	option = {
+		trigger = {
+			NOT = { has_character_flag = dw_bordello_mystery }
+		}
+		name = DWCourt305C # Mystery (Glory holes, Masks)
+		narrative_event = { id = DWCourt.350 days = 1 }
+	}
+	option = {
+		trigger = {
+			NOT = { has_character_flag = dw_bordello_entertainment }
+		}
+		name = DWCourt305D # Entertainment
+		narrative_event = { id = DWCourt.370 days = 1 }
+	}
+}
+# .310 More Whore Variety
+narrative_event = {
+	id = DWCourt.310
+	picture = brothel_prep
+	title = dw_bordello_buildup	
+	is_triggered_only = yes # .305 or .306
+	desc = {
+		trigger = {
+			NOR = {
+				trait = cheap_whore
+				trait = experienced_whore
+				trait = exclusive_whore
+				trait = retired_whore
+			}
+		}
+		text = DWCourt310.0
+	}
+	desc = {
+		trigger = {
+			OR = {
+				trait = cheap_whore
+				trait = experienced_whore
+				trait = exclusive_whore
+				trait = retired_whore
+			}
+		}
+		text = DWCourt310.1
+	}
+	option = { # Female whore options
+		name = "DWCourt310A"
+		narrative_event = { id = DWCourt.320 days = 7 }
+		ai_chance = { # We don't want the ai potentially selecting limited NPC's or setting global variables
+			factor = 0
+		}
+	}
+	option = { # Male whore options
+		name = "DWCourt310B"
+		narrative_event = { id = DWCourt.330 days = 7 }
+		ai_chance = { # We don't want the ai potentially selecting limited NPC's or setting global variables
+			factor = 0
+		}
+	}
+	option = { # Whore myself
+		trigger = {
+			NOR = {
+				trait = cheap_whore
+				trait = experienced_whore
+				trait = exclusive_whore
+				trait = retired_whore
+			}
+		}
+		name = "DWCourt310C" #Whore myself
+		add_trait = exclusive_whore
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				NOR = { #Only lustful or hedonist ai would consider whoring themselves.
+					trait = lustful
+					trait = hedonist
+				}
+			}
+		}
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_whore
+			progress_brothel_improvement = yes
+		}
+	}
+	option = { # Just hire some random whore
+		name = "DWCourt310D"
+		custom_tooltip = { text = dw_random_whore_notice }
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_whore
+			character_event = { id = DWCourt.311 }
+			progress_brothel_improvement = yes
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+# .311 Random whore (hidden event, whore is generated and added to the player's court with no special fanfare)
+character_event = {
+	id = DWCourt.311
+	hide_window = yes
+	is_triggered_only = yes # .310
+	immediate = {
+		random_list = {
+			90 = { # Female whore
+				create_character = {
+					random_traits = no
+					dynasty = NONE
+					female = yes
+					age = 18
+					culture = ROOT
+					religion = ROOT
+					trait = fair
+					trait = gregarious
+					trait = patient
+					trait = lustful
+					trait = content
+					trait = underhanded_rogue
+					trait = experienced_whore
+					trait = big_tits
+				}
+				new_character = {
+					set_character_flag = dw_boobs_checked
+					if = {  # For Christianity mod compatibility, to prevent a second set of tits getting assigned later
+						limit = {
+							has_global_flag = christ_enabled
+						}
+						set_character_flag = nada_checked
+					}
+				}
+			}
+			10 = { # Male whore
+				create_character = {
+					random_traits = no
+					dynasty = NONE
+					female = no
+					age = 18
+					culture = ROOT
+					religion = ROOT
+					trait = robust
+					trait = gregarious
+					trait = proud
+					trait = lustful
+					trait = content
+					trait = underhanded_rogue
+					trait = experienced_whore
+					trait = big_dick
+				}
+				new_character = {
+					set_character_flag = dw_junk_checked
+				}
+			}
+		}
+	}
+}
+# .320 Exotic Female Whore Decision
+narrative_event = {
+	id = DWCourt.320
+	picture = brothel_prep
+	desc = DWCourt320
+	title = dw_bordello_buildup	
+	is_triggered_only = yes # .310
+	option = { # An Ebony Princess
+		trigger = {
+			NOR = {
+				culture = manden
+				culture = ethiopian
+				culture = somali
+			}
+			ai = no # We don't want the ai stealing the creation option
+			NOT = { has_global_flag = dw_created_tiana }
+			wealth = 50
+		}
+		name = "DWCourt320A"
+		narrative_event = { id = DWCourt.321 days = 1 }
+	}
+	option = { # An Egyptian Beauty
+		trigger = {
+			NOR = {
+				culture = egyptian_arabic
+				culture = levantine_arabic
+				culture = andalusian_arabic
+			}
+			NOT = { has_global_flag = dw_created_pharah }
+			ai = no # We don't want the ai stealing the creation option
+			wealth = 25
+		}
+		name = "DWCourt320B"
+		narrative_event = { id = DWCourt.322 days = 1 }
+	}
+	option = { # A succubus
+		trigger = {
+			has_heaven_hell_content = yes
+			NOT = { has_global_flag = dw_created_morrigan }
+			ai = no # We don't want the ai stealing the creation option
+			piety = 50
+		}
+		name = DWCourt320C
+		narrative_event = { id = DWCourt.323 days = 1 }
+	}
+	option = { # Choose one at random
+		name = "DWCourt320F"
+		custom_tooltip = { text = dw_random_whore_notice }
+		hidden_tooltip = {
+			character_event = { id = DWCourt.329 }
+			progress_brothel_improvement = yes
+			narrative_event = { id = DWCourt.306 days = 14 }
+			set_character_flag = dw_bordello_whore
+		}
+	}
+}
+# .321 Exotic Female Whore - Ebony Princess (Tiana)
+narrative_event = {
+	id = DWCourt.321
+	picture = brothel_tiana_intro
+	desc = DWCourt321
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .320
+	immediate = {
+		create_character = {
+		  random_traits = no
+		  name = "Tiana"
+		  religion = ROOT
+		  culture = ROOT
+		  race = manden
+		  dna = bhcdcaidaab
+		  female = yes
+		  age = 16
+		  attributes = {
+			martial = 2
+			diplomacy = 4
+			stewardship = 7
+			intrigue = 4
+			learning = 5
+		  }
+		  health = 5
+		  fertility = 0.50
+		  trait = fortune_builder # She has a very sound head on her shoulders regarding how to be profitable
+		  trait = fair # She is easy on the eyes
+		  trait = diligent # When presented with a goal, she works constantly towards it
+		  trait = patient # Knows that not everything comes quickly and some things need to be worked towards before achieving them.
+		  trait = gregarious # Good at making others feel at ease
+		  trait = cynical # She's been hurt in the past by being trusting, and isn't afraid to question things.
+		  trait = big_tits # Images seem to portray her largely has having regular to breasts, so we're going with the larger option in this case
+		  trait = portrait21 # Custom portrait for Tiana
+		  trait = virgin # She arrives pure
+		  trait = cheap_whore # She would be brand new to the world of being a whore
+		}
+		new_character = {
+			set_character_flag = dw_boobs_checked
+			set_character_flag = dw_npc_tiana
+			set_global_flag = dw_created_tiana
+			if = {  # For Christianity mod compatibility, to prevent a second set of tits getting assigned later
+				limit = {
+					has_global_flag = christ_enabled
+				}
+				set_character_flag = nada_checked
+			}
+			save_event_target_as = dw_new_whore
+		}
+	}
+	option = { # Welcome to my court
+		name = DWCourt321A
+		wealth = -50
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_whore
+			progress_brothel_improvement = yes
+		}
+	}
+	option = { # Welcome to my court, and let me consider some more.
+		name = DWCourt321B
+		wealth = -50
+		hidden_tooltip = {
+			narrative_event = { id = DWCourt.320 days = 1 }
+		}
+	}
+	option = { # No thank you
+		name = DWCourt321C
+		event_target:dw_new_whore = {
+			banish = yes
+		}
+		narrative_event = { id = DWCourt.320 days = 1 }
+	}
+}
+# .322 Exotic Female Whore - Egyptian Princess (Pharah)
+narrative_event = {
+	id = DWCourt.322
+	picture = brothel_pharah_intro
+	desc = DWCourt322
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .320
+	immediate = {
+		create_character = {
+		  random_traits = no
+		  name = "Pharah"
+		  religion = ROOT
+		  culture = ROOT
+		  race = egyptian_arabic
+		  dna = aeefihleaah
+		  female = yes
+		  age = 18
+		  attributes = {
+			martial = 4
+			diplomacy = 5
+			stewardship = 4
+			intrigue = 5
+			learning = 3
+		  }
+		  health = 5
+		  fertility = 0.50
+		  trait = flamboyant_schemer # Loves to play games
+		  trait = fair # She is easy on the eyes
+		  trait = hedonist # Enjoys all that life offers
+		  trait = greedy # Known to seek personal gain frequently
+		  trait = gregarious # Good at conversation and making people feel comfortable
+		  trait = cynical # Sceptical of most religions, as she believes that she is a descendant of gods herself
+		  trait = big_tits # She's a nice robust rack
+		  trait = portrait22 # Custom portrait for Pharah
+		  trait = experienced_whore # Already experienced in meeting demands and obtaining wealth through pleasure
+		}
+		new_character = {
+			set_character_flag = dw_boobs_checked
+			set_character_flag = dw_npc_pharah
+			set_global_flag = dw_created_pharah
+			if = {  # For Christianity mod compatibility, to prevent a second set of tits getting assigned later
+				limit = {
+					has_global_flag = christ_enabled
+				}
+				set_character_flag = nada_checked
+			}
+			save_event_target_as = dw_new_whore
+		}
+	}
+	option = { # Welcome to my court
+		name = DWCourt321A
+		wealth = -25
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_whore
+			progress_brothel_improvement = yes
+		}
+	}
+	option = { # Welcome to my court, and let me consider some more.
+		name = DWCourt321B
+		wealth = -25
+		hidden_tooltip = {
+			narrative_event = { id = DWCourt.320 days = 1 }
+		}
+	}
+	option = { # No thank you
+		name = DWCourt321C
+		event_target:dw_new_whore = {
+			banish = yes
+		}
+		narrative_event = { id = DWCourt.320 days = 1 }
+	}
+}
+# .323 Exotic Female Whore - Demonic Beauty (Morrigan)
+narrative_event = {
+	id = DWCourt.323
+	picture = brothel_morrigan_intro
+	desc = DWCourt323
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .320
+	immediate = {
+		create_character = {
+		  random_traits = no
+		  name = "Morrigan"
+		  religion = ROOT
+		  culture = ROOT
+		  race = scottish
+		  dna = aeefihleaah
+		  female = yes
+		  age = 19
+		  attributes = {
+			martial = 6
+			diplomacy = 3
+			stewardship = 2
+			intrigue = 6
+			learning = 2
+		  }
+		  health = 6
+		  fertility = 0.50
+		  trait = tough_soldier # Not afraid to fight, and good at it
+		  trait = fair # She is easy on the eyes
+		  trait = bombshell # A beauty among beauties
+		  trait = hedonist # Enjoys all that life offers
+		  trait = lustful # She enjoys physical pleasure
+		  trait = proud # She can be a bit conceited at times
+		  trait = gregarious # Very approachable 
+		  trait = cynical # Sceptical of most religions, as she believes that she is a descendant of gods herself
+		  trait = big_tits # She's a nice robust rack
+		  trait = portrait41 # Custom portrait for Morrigan
+		  trait = lilith # She's a succubus
+		  trait = experienced_whore # Already experienced in meeting demands and obtaining wealth through pleasure
+		}
+		new_character = {
+			set_character_flag = dw_boobs_checked
+			set_character_flag = dw_npc_morrigan
+			set_global_flag = dw_created_morrigan
+			add_character_modifier = { name = dw_lilith_stage_3 duration = -1 }
+			if = {  # For Christianity mod compatibility, to prevent a second set of tits getting assigned later
+				limit = {
+					has_global_flag = christ_enabled
+				}
+				set_character_flag = nada_checked
+			}
+			save_event_target_as = dw_new_whore
+		}
+	}
+	option = { # Welcome to my court
+		name = DWCourt321A
+		piety = -50
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_whore
+			progress_brothel_improvement = yes
+		}
+	}
+	option = { # Welcome to my court, and let me consider some more.
+		name = DWCourt321B
+		piety = -50
+		hidden_tooltip = {
+			narrative_event = { id = DWCourt.320 days = 1 }
+		}
+	}
+	option = { # No thank you
+		name = DWCourt321C
+		event_target:dw_new_whore = {
+			banish = yes
+		}
+		narrative_event = { id = DWCourt.320 days = 1 }
+	}
+}
+# .329 Random female exclusive whore (hidden event, whore is generated and added to the player's court with no special fanfare)
+character_event = {
+	id = DWCourt.329
+	hide_window = yes
+	is_triggered_only = yes # .320
+	immediate = {
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = yes
+			age = 20
+			culture = ROOT
+			religion = ROOT
+			trait = fair
+			trait = gregarious
+			trait = patient
+			trait = lustful
+			trait = content
+			trait = cynical
+			trait = underhanded_rogue
+			trait = exclusive_whore
+			trait = big_tits
+		}
+		new_character = {
+			set_character_flag = dw_boobs_checked
+			if = {  # For Christianity mod compatibility, to prevent a second set of tits getting assigned later
+				limit = {
+					has_global_flag = christ_enabled
+				}
+				set_character_flag = nada_checked
+			}
+		}
+	}
+}
+# .330 Exotic Male Whore Decision
+narrative_event = {
+	id = DWCourt.330
+	picture = brothel_relax_males
+	desc = DWCourt330
+	title = dw_bordello_buildup	
+	is_triggered_only = yes # .310
+	option = { # An Ebony Prince (Tchalla)
+		trigger = {
+			NOR = {
+				culture = manden
+				culture = ethiopian
+				culture = somali
+			}
+			NOT = { has_global_flag = dw_created_tchalla }
+			wealth = 25
+			ai = no
+		}
+		name = "DWCourt330A"
+		narrative_event = { id = DWCourt.331 days = 1 }
+	}
+	option = { # An Elven Trap (Link)
+		trigger = {
+			has_gender_bender_content = yes
+			has_fae_content = yes
+			NOT = { has_global_flag = dw_created_link }
+			ai = no
+		}
+		name = "DWCourt330B"
+		narrative_event = { id = DWCourt.332 days = 1 }
+	}
+	option = { # Choose one at random
+		name = "DWCourt330F"
+		custom_tooltip = { text = dw_random_whore_notice }
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_whore
+			character_event = { id = DWCourt.339 }
+			progress_brothel_improvement = yes
+		}
+	}
+}
+# .331 Exotic Male Whore - Ebony Prince (Tchalla)
+narrative_event = {
+	id = DWCourt.331
+	picture = brothel_tchalla_intro
+	desc = DWCourt331
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .330
+	immediate = {
+		create_character = {
+		  random_traits = no
+		  name = "Tchalla"
+		  religion = ROOT
+		  culture = ROOT
+		  race = manden
+		  dna = aeffhambabb
+		  female = no
+		  age = 18
+		  attributes = {
+			martial = 6
+			diplomacy = 5
+			stewardship = 5
+		  }
+		  health = 6
+		  fertility = 0.50
+		  trait = skilled_tactician # He has shown remarkable training for leading troops and in personal combat
+		  trait = fair # He is viewed favorably by many women, and even a few men.
+		  trait = quick # Tchalla is very smart, quick to figure things out and come up with courses of action
+		  trait = robust # Tchalla is strong and healthy, very fit from an active lifestyle
+		  trait = just # Seeks the fair solution
+		  trait = brave # Backs down from very little
+		  trait = proud # Proud of who he is and of his heritage
+		  trait = huge_dick # Mainly because so many images are very generous in this area
+		  trait = portrait23 # Custom portrait for Tchalla
+		  trait = cheap_whore # He would be brand new to the world of being a whore
+		}
+		new_character = {
+			set_character_flag = dw_junk_checked
+			set_character_flag = dw_npc_tchalla
+			set_global_flag = dw_created_tchalla
+			save_event_target_as = dw_new_whore
+		}
+	}
+	option = { # Welcome to my court
+		name = DWCourt331A
+		wealth = -25
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_whore
+			progress_brothel_improvement = yes
+		}
+	}
+	option = { # Welcome to my court, and let me consider some more.
+		name = DWCourt331B
+		wealth = -25
+		hidden_tooltip = {
+			narrative_event = { id = DWCourt.330 days = 1 }
+		}
+	}
+	option = { # No thank you
+		name = DWCourt331C
+		event_target:dw_new_whore = {
+			banish = yes
+		}
+		narrative_event = { id = DWCourt.330 days = 1 }
+	}
+}
+# .332 Exotic Male Whore - Elf Trap (Link)
+narrative_event = {
+	id = DWCourt.332
+	picture = brothel_link_intro
+	desc = DWCourt332
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .330
+	immediate = {
+		create_character = {
+		  random_traits = no
+		  name = "Link"
+		  religion = ROOT
+		  culture = ROOT
+		  race = norse
+		  dna = beeifabaacb
+		  female = no
+		  age = 18
+		  attributes = {
+			martial = 5
+		  }
+		  health = 5
+		  fertility = 0.50
+		  trait = misguided_warrior # Trained in martial pursuits, he often found himself in precarious positions
+		  trait = fair # He is easy enough on the eyes that given the right attire, even a man can misjudge his gender
+		  trait = kind # Link has a soft spot for people in need and often seeks to help them out
+		  trait = trusting # Link has been duped and spurned into action when others take advantage of his trusting nature
+		  trait = content # While Link likes to help others, he is content with his own plot in life
+		  trait = greedy # A very strong desire to gather gems, especially those known as Rupees
+		  trait = trap # Recent events have awoken the feminine side of Link
+		  trait = small_dick # Mainly because so many images are lacking in this area
+		  trait = elf # Obvious reasons
+		  trait = portrait24 # Custom portrait for Link
+		  trait = experienced_whore # He is experienced at selling his services
+		}
+		new_character = {
+			set_character_flag = dw_junk_checked
+			set_character_flag = dw_npc_link
+			set_global_flag = dw_created_link
+			save_event_target_as = dw_new_whore
+		}
+	}
+	option = { # Welcome to my court
+		name = DWCourt331A
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_whore
+			progress_brothel_improvement = yes
+		}
+	}
+	option = { # Welcome to my court, and let me consider some more.
+		name = DWCourt331B
+		hidden_tooltip = {
+			narrative_event = { id = DWCourt.330 days = 1 }
+		}
+	}
+	option = { # No thank you
+		name = DWCourt331C
+		event_target:dw_new_whore = {
+			banish = yes
+		}
+		narrative_event = { id = DWCourt.330 days = 1 }
+	}
+}
+# .339 Random male exclusive whore (hidden event, whore is generated and added to the player's court with no special fanfare)
+character_event = {
+	id = DWCourt.339
+	hide_window = yes
+	is_triggered_only = yes # .320
+	immediate = {
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 20
+			culture = ROOT
+			religion = ROOT
+			trait = fair
+			trait = greedy
+			trait = patient
+			trait = lustful
+			trait = content
+			trait = craven
+			trait = underhanded_rogue
+			trait = exclusive_whore
+			trait = big_dick
+		}
+		new_character = {
+			set_character_flag = dw_junk_checked
+		}
+	}
+}
+# .340 Food and Drink Options
+narrative_event = {
+	id = DWCourt.340
+	desc = "DWCourt340"
+	picture = brothel
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .305/.306
+	
+	option = { # Nestorian Monk that makes wine
+		trigger = {
+			diplomacy = 10
+		}
+		name = "DWCourt340A"
+		tooltip_info = diplomacy
+		narrative_event = { id = DWCourt.341 days = 10 }
+	}
+	option = { # Invest in the establishment
+		name = "DWCourt340B"
+		wealth = -10
+		add_character_modifier = { name = dw_brothel_foodndrink duration = 540 }
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_food
+			progress_brothel_improvement = yes
+		}
+	}
+	option = { # Just use what is already there
+		name = "DWCourt340C"
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_food
+			progress_brothel_improvement = yes
+		}
+	}
+}
+# .341 Food and Drink Options - Monk Wine investment
+narrative_event = {
+	id = DWCourt.341
+	desc = "DWCourt341"
+	picture = brothel_monk_wine
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .340
+	immediate = {
+		create_character = {
+		  random_traits = no
+		  religion = nestorian
+		  culture = ROOT
+		  female = no
+		  age = 38
+		  attributes = {
+			diplomacy = 4
+			learning = 7
+		  }
+		  health = 6
+		  trait = detached_priest # Anything more would call into question why he'd work at a Bordello
+		  trait = drunkard # He enjoys a good drink
+		  trait = monk # Obviously
+		  trait = chaste # He may enjoy drink, but he doesn't think with his lower head
+		  trait = patient # Making good wine takes time
+		  trait = humble # Not a braggart in the least
+		  trait = erudite # Enjoys a book with his wine
+		}
+		new_character = {
+			add_cock = yes
+			save_event_target_as = dw_new_monk
+		}
+	}
+	option = { # Welcome aboard
+		name = "DWCourt341A"
+		add_character_modifier = { name = dw_brothel_monk_wine duration = 720 }
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_food
+			progress_brothel_improvement = yes
+		}
+	}
+	option = { # I'm going to pass and keep it simple.
+		name = "DWCourt341B"
+		event_target:dw_new_monk = {
+			banish = yes
+		}
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_food
+			progress_brothel_improvement = yes			
+		}
+	}
+}
+# .350 Mysterious Encounters
+narrative_event = {
+	id = DWCourt.350
+	desc = "DWCourt350"
+	picture = brothel
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .305/.306
+	option = { # Costumes
+		trigger = {
+			NOT = { has_character_flag = dw_bordello_masks } # this one is only a character flag because I'm not going to create special brothel mask events
+		}
+		name = "DWCourt350A"
+		wealth = -10
+		narrative_event = { id = DWCourt.351 days = 14 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = { # Glory Hole
+		trigger = {
+			NOT = { has_global_flag = dw_bordello_gloryhole }
+		}
+		name = "DWCourt350B"
+		narrative_event = { id = DWCourt.352 days = 5 }
+		ai_chance = { # We don't want the ai potentially selecting limited NPC's or setting global variables
+			factor = 0
+		}
+	}
+	option = { # Room of mystery
+		trigger = {
+			NOT = { has_global_flag = dw_bordello_mystery_room }
+		}
+		name = "DWCourt350C"
+		narrative_event = { id = DWCourt.355 days = 7 }
+		ai_chance = { # We don't want the ai potentially selecting limited NPC's or setting global variables
+			factor = 0
+		}
+	}
+}
+# .351 Mysterious - Costumes and Masks
+narrative_event = {
+	id = DWCourt.351
+	desc = "DWCourt351"
+	picture = brothel_masks
+	title = dw_bordello_buildup
+	immediate = {
+		set_character_flag = dw_bordello_masks
+	}
+	is_triggered_only = yes # .350
+	option = { # Let me revisit the other options
+		trigger = {
+			NOT = { # If both of the other flags exist - then we don't give the option to revisit
+				has_global_flag = dw_bordello_gloryhole
+				has_global_flag = dw_bordello_mystery_room
+			}
+		}
+		name = "DWCourt351A"
+		narrative_event = { id = DWCourt.350 days = 1 }
+		ai_chance = { # We don't want the ai potentially selecting limited NPC's or setting global variables
+			factor = 0
+		}
+	}
+	option = { # This is enough, let's proceed
+		name = "DWCourt351B"
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_mystery
+			progress_brothel_improvement = yes			
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+# .352 Mysterious - Glory Hole
+narrative_event = {
+	id = DWCourt.352
+	desc = "DWCourt352"
+	picture = brothel_gloryhole
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .350
+	immediate = {
+		set_global_flag = dw_bordello_gloryhole
+	}
+	option = { # Let me revisit the other options
+		trigger = {
+			NOT = { # If both of the other flags exist - then we don't give the option to revisit
+				has_character_flag = dw_bordello_masks
+				has_global_flag = dw_bordello_mystery_room
+			}
+		}
+		name = "DWCourt351A"
+		narrative_event = { id = DWCourt.350 days = 1 }
+	}
+	option = { # This is enough, let's proceed
+		name = "DWCourt351B"
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_mystery
+			progress_brothel_improvement = yes			
+		}
+	}
+}
+# .355 Mysterious - Room of Mystery
+narrative_event = {
+	id = DWCourt.355
+	desc = "DWCourt355"
+	picture = brothel_mysteryroom
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .350
+	immediate = {
+		set_global_flag = dw_bordello_mystery_room
+	}
+	option = { # Let me revisit the other options
+		trigger = {
+			NOT = { # If both of the other flags exist - then we don't give the option to revisit
+				has_character_flag = dw_bordello_masks
+				has_global_flag = dw_bordello_gloryhole
+			}
+		}
+		name = "DWCourt351A"
+		narrative_event = { id = DWCourt.350 days = 1 }
+	}
+	option = { # This is enough, let's proceed
+		name = "DWCourt351B"
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_mystery
+			progress_brothel_improvement = yes			
+		}
+	}
+}
+# .370 Entertainment
+narrative_event = {
+	id = DWCourt.370
+	desc = DWCourt370
+	picture = brothel
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .305/.306
+	option = { # We hire a professional singer = creates Jessica NPC
+		trigger = {
+			NOT = { has_global_flag = dw_jessica_created }
+			ai = no # we don't want the ai creating Jessica
+			wealth = 10
+		}
+		name = "DWCourt370A"
+		wealth = -10
+		narrative_event = { id = DWCourt.371 days = 14 }
+		ai_chance = { # We don't want the ai potentially selecting limited NPC's or setting global variables
+			factor = 0
+		}
+	}
+	option = { # Recruit some local singing talent that'll work for tips - doesn't create an NPC
+		trigger = {
+			NOR = { 
+				has_character_flag = dw_bordello_bard
+				has_character_flag = dw_bordello_hired_jessica
+			}
+		}
+		name = "DWCourt370B"
+		narrative_event = { id = DWCourt.372 days = 7 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = { # Pole Dancers!
+		trigger = {
+			NOT = { has_global_flag = dw_bordello_poledancer }
+		}
+		name = "DWCourt370C"
+		narrative_event = { id = DWCourt.373 days = 10 }
+		ai_chance = { # We don't want the ai potentially selecting limited NPC's or setting global variables
+			factor = 0
+		}
+	}
+}
+# .371 Hire a professional (Jessica)
+narrative_event = {
+	id = DWCourt.371
+	desc = "DWCourt371"
+	picture = brothel_jessica_intro
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .370
+	immediate = {
+		create_character = {
+		  random_traits = no
+			name = Jessica
+			age = 20
+			female = yes
+			dna = ahfcgajdfea
+			culture = ROOT
+			religion = ROOT
+			race = irish
+			trait = fair
+			trait = temperate
+			trait = proud
+			trait = gregarious
+			trait = cynical
+			trait = greedy
+			trait = charismatic_negotiator
+			trait = bombshell
+			trait = huge_tits
+			trait = portrait26 #Jessica's image
+		}
+		new_character = {
+			set_global_flag = dw_jessica_created
+			set_character_flag = dw_npc_jessica
+			set_character_flag = dw_boobs_checked
+			if = {  # For Christianity mod compatibility, to prevent a second set of tits getting assigned later
+				limit = {
+					has_global_flag = christ_enabled
+				}
+				set_character_flag = nada_checked
+			}
+		}
+	}
+	option = { # Welcome aboard
+		name = "DWCourt371A"
+		add_character_modifier = { name = dw_brothel_jessica_star duration = 720 }
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_entertainment
+			progress_brothel_improvement = yes
+		}
+	}
+	option = { # Welcome aboard and let me revisit my options
+		trigger = {
+			NOT = { # If we already hired a poledancer, we hide this option
+				has_global_flag = dw_bordello_poledancer
+			}
+		}
+		name = "DWCourt371B"
+		add_character_modifier = { name = dw_brothel_jessica_star duration = 720 }
+		set_character_flag = dw_bordello_hired_jessica
+		narrative_event = { id = DWCourt.370 days = 1 }
+	}
+}
+# .372 Hire a local musician 
+narrative_event = {
+	id = DWCourt.372
+	desc = DWCourt372
+	picture = brothel_bard
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .370
+	option = { # Welcome aboard
+		name = "DWCourt372A"
+		hidden_tooltip = {
+			set_character_flag = dw_bordello_entertainment
+			progress_brothel_improvement = yes
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = { # Welcome aboard and let me revisit my options
+		trigger = {
+			NOT = { # If we already hired a poledancer, we hide this option
+				has_global_flag = dw_bordello_poledancer
+			}
+		}
+		name = "DWCourt372B"
+		set_character_flag = dw_bordello_bard
+		narrative_event = { id = DWCourt.370 days = 1 }
+		ai_chance = { # We don't want the ai potentially selecting limited NPC's or setting global variables
+			factor = 0
+		}
+	}
+}
+# .373 Entertainment - Pole dancers
+narrative_event = {
+	id = DWCourt.373
+	desc = DWCourt373
+	picture = brothel_pole_dancer
+	title = dw_bordello_buildup
+	is_triggered_only = yes # .370
+	option = { # Welcome aboard
+		name = "DWCourt373A"
+		hidden_tooltip = {
+			set_global_flag = dw_bordello_poledancer
+			set_character_flag = dw_bordello_entertainment
+			progress_brothel_improvement = yes
+		}
+	}
+	option = { # Welcome aboard and let me revisit my options
+		trigger = {
+			NOT = { # If we already hired a poledancer, we hide this option
+				has_character_flag = dw_bordello_bard
+			}
+		}
+		name = "DWCourt373B"
+		set_global_flag = dw_bordello_poledancer
+		narrative_event = { id = DWCourt.370 days = 1 }
+	}
+}
+# .399 Plan is complete
+narrative_event = {
+	id = DWCourt.399
+	picture = brothel_upgrade
+	desc = DWCourt399
+	title = dw_bordello_buildup
+	is_triggered_only = yes # 
+	trigger = {
+		has_character_modifier = dw_brothel_improvement_4 # We should only be reaching here if we've completed the final stage
+	}
+	option = {
+		name = DWCourt399A # It was fun.
+		clear_brothel_improvement_flags = yes
+	}
+}

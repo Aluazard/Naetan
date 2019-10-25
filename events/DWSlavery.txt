@@ -1,0 +1,1059 @@
+#Dark World Slavery events
+# We add "has_character_flag = asked_for_better_prison" to our slaves to keep them from asking for better lodgings
+# Selecting a new slave, choosing their training, learning of training completion: 1 - 99 
+# Slave Training: Common Labor 100 - 199
+# Slave Training: Warrior 200 - 299
+# Slave Training: Skilled 300 - 399
+# Slave Training: Pleasure 400 - 499
+# Slave Training: Branding 700 - 799
+# Selling of Slaves: 800 - 899
+# Release and Keeping of Slaves: 900 - 999
+# Slave Revolt: 1000 - 1099
+# Slave Broken: 1100 - 1199
+namespace = DWSlavery
+
+# .1 Target notified they're a prisoner (target - hidden)
+character_event = {
+	id = DWSlavery.1
+	is_triggered_only = yes # Triggered by targeted decision
+	hide_window = yes # Nothing to see here
+	immediate = {
+		save_event_target_as = dw_slave_target
+		if = { # Female routing
+			limit = {
+				is_female = yes
+			}
+			set_character_flag = asked_for_better_prison # Prevents them from asking for better conditions
+			host = { narrative_event = { id = DWSlavery.3 }} # Host is the person who has the prisoner
+			break = yes
+		}
+		if = { # Male routing
+			limit = {
+				is_female = no
+			}
+			set_character_flag = asked_for_better_prison  # Prevents them from asking for better conditions
+			host = { narrative_event = { id = DWSlavery.5 }} # Host is the person who has the prisoner
+			break = yes
+		}
+	}
+}
+# .3 Slaver determines the training for the female slave (host)
+narrative_event = {
+	id = DWSlavery.3
+	desc = "DWSlavery3"
+	picture = slavery_female_cell1
+	title = dw_slave_training_target
+	is_triggered_only = yes # Triggered by .1
+	option = { #Pleasure Slave Training
+		trigger = {
+			event_target:dw_slave_target = { is_adult = yes } # Only adults can be pleasure slaves
+			NOT = {
+				event_target:dw_slave_target = { has_character_modifier = dw_slave_pleasure_complete } # We ensure they didn't already complete the pleasure training
+			}
+		}
+		name = "DWSlavery3A"
+		event_target:dw_slave_target = {
+			add_character_modifier = { name = dw_slave_pleasure_1 duration = -1 } # Stage 1 flag, indefinite duration - as we'll be changing it manually
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.400 } 
+		}
+	}
+	option = { # Warrior Slave Training
+		trigger = {
+			NOT = {
+				event_target:dw_slave_target = { has_character_modifier = dw_slave_warrior_complete } # Check to ensure warrior training isn't already done
+			}
+		}
+		name = "DWSlavery3B"
+		event_target:dw_slave_target = {
+			add_character_modifier = { name = dw_slave_warrior_1 duration = -1 } # Stage 1 flag, indefinite duration - as we'll be changing it manually
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.200 }
+		}
+	}
+	option = { # Skilled Slave Labor Training
+		trigger = {
+			NOT = {
+				event_target:dw_slave_target = { has_character_modifier = dw_slave_skilled_complete } # Check to ensure our skilled labor training isn't already done
+			}
+		}
+		name = "DWSlavery3C"
+		event_target:dw_slave_target = {
+			add_character_modifier = { name = dw_slave_skilled_1 duration = -1 } # Stage 1 flag, indefinite duration - as we'll be changing it manually
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.300 }
+		}
+	}
+	option = { # Common Slave Labor Training
+		trigger = {
+			NOT = {
+				event_target:dw_slave_target = { has_character_modifier = dw_slave_common_complete } # Ensure we didn't already finish our common labor training
+			}
+		}
+		name = "DWSlavery3D"
+		event_target:dw_slave_target = {
+			add_character_modifier = { name = dw_slave_common_1 duration = -1 } # Stage 1 flag, indefinite duration - as we'll be changing it manually
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.100 }
+		}
+	}
+}
+# .5 Slaver determines the training for the male slave (slaver)
+narrative_event = {
+	id = DWSlavery.5
+	desc = "DWSlavery3" # Uses the same text as .3
+	picture = slavery_male_cell1
+	title = dw_slave_training_target
+	is_triggered_only = yes # Triggered by .1
+	option = { #Pleasure Slave Training
+		trigger = {
+			event_target:dw_slave_target = { is_adult = yes } # Only adults can be pleasure slaves
+			NOT = {
+				event_target:dw_slave_target = { has_character_modifier = dw_slave_pleasure_complete } # We ensure they didn't already complete the pleasure training
+			}
+		}
+		name = "DWSlavery3A" # Uses the same text as .3
+		event_target:dw_slave_target = {
+			add_character_modifier = { name = dw_slave_pleasure_1 duration = -1 } # Stage 1 flag, indefinite duration - as we'll be changing it manually
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.400 } 
+		}
+	}
+	option = { # Warrior Slave Training
+		trigger = {
+			NOT = {
+				event_target:dw_slave_target = { has_character_modifier = dw_slave_warrior_complete } # Check to ensure warrior training isn't already done
+			}
+		}
+		name = "DWSlavery3B" # Uses the same text as .3
+		event_target:dw_slave_target = {
+			add_character_modifier = { name = dw_slave_warrior_1 duration = -1 } # Stage 1 flag, indefinite duration - as we'll be changing it manually
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.200 }
+		}
+	}
+	option = { # Skilled Slave Labor Training
+		trigger = {
+			NOT = {
+				event_target:dw_slave_target = { has_character_modifier = dw_slave_skilled_complete } # Check to ensure our skilled labor training isn't already done
+			}
+		}
+		name = "DWSlavery3C" # Uses the same text as .3
+		event_target:dw_slave_target = {
+			add_character_modifier = { name = dw_slave_skilled_1 duration = -1 } # Stage 1 flag, indefinite duration - as we'll be changing it manually
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.300 }
+		}
+	}
+	option = { # Common Slave Labor Training
+		trigger = {
+			NOT = {
+				event_target:dw_slave_target = { has_character_modifier = dw_slave_common_complete } # Ensure we didn't already finish our common labor training
+			}
+		}
+		name = "DWSlavery3D" # Uses the same text as .3
+		event_target:dw_slave_target = {
+			add_character_modifier = { name = dw_slave_common_1 duration = -1 } # Stage 1 flag, indefinite duration - as we'll be changing it manually
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.100 }
+		}
+	}
+}
+# .10 Target is approached for more training (target - hidden)
+character_event = {
+	id = DWSlavery.10
+	is_triggered_only = yes # Triggered by targeted decision or .90/.91
+	hide_window = yes # Nothing to see here
+	immediate = {
+		if = {
+			limit = {
+				NOT = { learning = 4 } # If the slave doesn't have a learning of at least 4, then they don't have the capacity to learn a second
+				calc_true_if = {
+					amount = 1
+					has_character_modifier = dw_slave_pleasure_complete
+					has_character_modifier = dw_slave_warrior_complete
+					has_character_modifier = dw_slave_skilled_complete
+					has_character_modifier = dw_slave_common_complete
+				}
+			}
+			host = { narrative_event = { id = DWSlavery.11 }}
+			break = yes
+		}
+		if = {
+			limit = {
+				NOT = { learning = 8 } # If the slave is already trained in two areas and doesn't have a learning of 8, they can't learn a third
+				calc_true_if = {
+					amount = 2
+					has_character_modifier = dw_slave_pleasure_complete
+					has_character_modifier = dw_slave_warrior_complete
+					has_character_modifier = dw_slave_skilled_complete
+					has_character_modifier = dw_slave_common_complete
+				}
+			}
+			host = { narrative_event = { id = DWSlavery.11 }}
+			break = yes
+		}
+		if = {
+			limit = { # If the slave is already trained in three areas and doesn't have a learning of 10 OR they're a child, they can't learn a forth
+				NOR = { 
+					learning = 10 
+					is_adult = yes
+				}
+				calc_true_if = {
+					amount = 3
+					has_character_modifier = dw_slave_pleasure_complete
+					has_character_modifier = dw_slave_warrior_complete
+					has_character_modifier = dw_slave_skilled_complete
+					has_character_modifier = dw_slave_common_complete
+				}
+			}
+			host = { narrative_event = { id = DWSlavery.11 }}
+			break = yes
+		}
+		if = {
+			limit = {
+				calc_true_if = { #If they know all of them, then there is no further training options available.
+					amount = 4
+					has_character_modifier = dw_slave_pleasure_complete
+					has_character_modifier = dw_slave_warrior_complete
+					has_character_modifier = dw_slave_skilled_complete
+					has_character_modifier = dw_slave_common_complete
+				}
+			}
+			host = { narrative_event = { id = DWSlavery.11 }}
+			break = yes
+		}
+		if = { # More training possible - Female event
+			limit = {
+				is_female = yes
+			}
+			host = { narrative_event = { id = DWSlavery.13 }}
+			break = yes
+		}
+		if = { # More training possible - Male event
+			limit = {
+				is_female = no
+			}
+			host = { narrative_event = { id = DWSlavery.15 }}
+			break = yes
+		}
+	}
+}
+# .11 Slaver learns that the slave has reached their capacity for training (slaver)
+narrative_event = {
+	id = DWSlavery.11
+	desc = "DWSlavery11"
+	picture = slavery_evaluation
+	title = dw_slave_learning_limitation
+	is_triggered_only = yes # Triggered by .10
+	option = {
+		name = "DWSlavery11A" #Well hell. Guess it's time to brand them.
+		FROM = { character_event = { id = DWSlavery.700 }}
+	}
+}
+# .13 Slaver determines the training for the female slave (slaver)
+narrative_event = {
+	id = DWSlavery.13
+	desc = "DWSlavery13"
+	picture = slavery_female_cell1
+	title = dw_slave_training_target
+	is_triggered_only = yes # Triggered by .10
+	option = {
+		trigger = {
+			FROM = { is_adult = yes }
+			NOT = {
+				FROM = { has_character_modifier = dw_slave_pleasure_complete }
+			}
+		}
+		name = "DWSlavery13A" # Pleasure Slave Training
+		FROM = {
+			add_character_modifier = { name = dw_slave_pleasure_1 duration = -1 }
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.400 }
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				FROM = { has_character_modifier = dw_slave_warrior_complete }
+			}
+		}
+		name = "DWSlavery13B" # Warrior Slave Training
+		FROM = {
+			add_character_modifier = { name = dw_slave_warrior_1 duration = -1 }
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.200 }
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				FROM = { has_character_modifier = dw_slave_skilled_complete }
+			}
+		}
+		name = "DWSlavery13C" # Skilled Labor Slave Training
+		FROM = {
+			add_character_modifier = { name = dw_slave_skilled_1 duration = -1 }
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.300 }
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				FROM = { has_character_modifier = dw_slave_common_complete }
+			}
+		}
+		name = "DWSlavery13D" # Common Labor Slave Training
+		FROM = {
+			add_character_modifier = { name = dw_slave_common_1 duration = -1 }
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.100 }
+		}
+	}
+}
+# .15 Slaver determines the training for the male slave (slaver)
+narrative_event = {
+	id = DWSlavery.15
+	desc = "DWSlavery13" # Uses same text as .13
+	picture = slavery_male_cell1
+	title = dw_slave_training_target
+	is_triggered_only = yes # Triggered by .10
+	option = {
+		trigger = {
+			FROM = { is_adult = yes }
+			NOT = {
+				FROM = { has_character_modifier = dw_slave_pleasure_complete }
+			}
+		}
+		name = "DWSlavery13A" # Pleasure Slave Training
+		FROM = {
+			add_character_modifier = { name = dw_slave_pleasure_1 duration = -1 }
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.400 }
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				FROM = { has_character_modifier = dw_slave_warrior_complete }
+			}
+		}
+		name = "DWSlavery13B" # Warrior Slave Training
+		FROM = {
+			add_character_modifier = { name = dw_slave_warrior_1 duration = -1 }
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.200 }
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				FROM = { has_character_modifier = dw_slave_skilled_complete }
+			}
+		}
+		name = "DWSlavery13C" # Skilled Labor Slave Training
+		FROM = {
+			add_character_modifier = { name = dw_slave_skilled_1 duration = -1 }
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.300 }
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				FROM = { has_character_modifier = dw_slave_common_complete }
+			}
+		}
+		name = "DWSlavery13D" # Common Labor Slave Training
+		FROM = {
+			add_character_modifier = { name = dw_slave_common_1 duration = -1 }
+			set_character_flag = dw_slave_training_in_progress
+			character_event = { id = DWSlavery.100 }
+		}
+	}
+}
+#.90 Slaver learns a female slave has completed their training (slaver)
+narrative_event = {
+	id = DWSlavery.90
+	desc = "DWSlavery90"
+	picture = slavery_female_cell1
+	title = dw_slave_training_complete
+	is_triggered_only = yes # Triggered by .110 /.210 /.310 /.410
+	option = { # Let's see if we can train them further
+		name = "DWSlavery90A"
+		FROM = { character_event = { id = DWSlavery.10 days = 7 }}
+	}
+	option = { # Let's proceed with branding
+		name = "DWSlavery90B"
+		FROM = { character_event = { id = DWSlavery.700 }}
+	}
+	option = { # Let's just not do anything for the moment
+		name = "DWSlavery90C"
+	}
+}
+#.91 Slaver learns a male slave has completed their training (slaver)
+narrative_event = {
+	id = DWSlavery.91
+	desc = "DWSlavery90" # Using language from .90, only the picture is difference
+	picture = slavery_male_cell1
+	title = dw_slave_training_complete
+	is_triggered_only = yes # Triggered by .110 /.210 /.310 /.410
+	option = { # Let's see if we can train them further
+		name = "DWSlavery90A"
+		FROM = { character_event = { id = DWSlavery.10 }}
+	}
+	option = { # Let's proceed with branding
+		name = "DWSlavery90B"
+		FROM = { character_event = { id = DWSlavery.700 }}
+	}
+	option = { # Let's just not do anything for the moment
+		name = "DWSlavery90C"
+	}
+}
+
+### Slave Training: Common Labor 100 - 199 ################
+# .100 Slave goes through their training check (slave - hidden)
+character_event = {
+	id = DWSlavery.100
+	is_triggered_only = yes # Triggered by .3 /.5 /.13 /.15
+	hide_window = yes # Nothing to see here
+	immediate = {
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_common_1
+			}
+			character_event = { id = DWSlavery.110 days = 60 } # Go forward to event to check for advancement after two months
+			break = yes
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_common_2
+			}
+			character_event = { id = DWSlavery.110 days = 60 } # Go forward to event to check for advancement after two months
+			break = yes
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_common_3
+			}
+			character_event = { id = DWSlavery.110 days = 60 } # Go forward to event to check for advancement after two months
+			break = yes
+		}
+	}
+}
+# .110 Slave evaluation check to see if the advance (slave - hidden)
+character_event = {
+	id = DWSlavery.110
+	is_triggered_only = yes # Triggered by .100
+	hide_window = yes # Nothing to see here
+	immediate = {
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_common_3
+			}
+			random_list = {
+				80 = {  # Successfully finished training
+					remove_character_modifier = dw_slave_common_3
+					add_character_modifier = { name = dw_slave_common_complete duration = -1 }
+					clr_character_flag = dw_slave_training_in_progress
+					if = {
+						limit = {
+							is_female = yes # Female specific
+						}
+						host = { narrative_event = { id = DWSlavery.90 }} # We notify the slaver that the training cycle has completed.
+					}
+					if = {
+						limit = {
+							is_female = no # Male specific
+						}
+						host = { narrative_event = { id = DWSlavery.91 }} # We notify the slaver that the training cycle has completed.
+					}
+				}
+				20 = {  # Failed to advance in training
+					character_event = { id = DWSlavery.100 } # We cycle the slave through training again
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_common_2
+			}
+			random_list = {
+				85 = {  # Successfully finished training
+					remove_character_modifier = dw_slave_common_2
+					add_character_modifier = { name = dw_slave_common_3 duration = -1 }
+					character_event = { id = DWSlavery.100 } # We cycle the slave through training again
+				}
+				15 = {  # Failed to advance in training
+					character_event = { id = DWSlavery.100 } # We cycle the slave through training again
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_common_1
+			}
+			random_list = {
+				90 = {  # Successfully finished training
+					remove_character_modifier = dw_slave_common_1
+					add_character_modifier = { name = dw_slave_common_2 duration = -1 }
+					character_event = { id = DWSlavery.100 } # We cycle the slave through training again
+				}
+				10 = {  # Failed to advance in training
+					character_event = { id = DWSlavery.100 } # We cycle the slave through training again
+				}
+			}
+		}
+	}
+}
+
+### Slave Training: Soldier 200 - 299
+# .200 Slave goes through their training check (slave - hidden)
+character_event = {
+	id = DWSlavery.200
+	is_triggered_only = yes # Triggered by .3 /.5 /.13 /.15
+	hide_window = yes # Nothing to see here
+	immediate = {
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_warrior_1
+			}
+			character_event = { id = DWSlavery.210 days = 60 } # Go forward to event to check for advancement after two months
+			break = yes
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_warrior_2
+			}
+			character_event = { id = DWSlavery.210 days = 60 } # Go forward to event to check for advancement after two months
+			break = yes
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_warrior_3
+			}
+			character_event = { id = DWSlavery.210 days = 60 } # Go forward to event to check for advancement after two months
+			break = yes
+		}
+	}
+}
+# .210 Slave evaluation check to see if the advance (slave - hidden)
+character_event = {
+	id = DWSlavery.210
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_warrior_3
+			}
+			random_list = {
+				70 = {  # Successfully finished training
+					remove_character_modifier = dw_slave_warrior_3
+					add_character_modifier = { name = dw_slave_warrior_complete duration = -1 }
+					clr_character_flag = dw_slave_training_in_progress
+					if = {
+						limit = {
+							is_female = yes # Female specific
+						}
+						host = { narrative_event = { id = DWSlavery.90 }} # We notify the slaver that the training cycle has completed.
+					}
+					if = {
+						limit = {
+							is_female = no # Male specific
+						}
+						host = { narrative_event = { id = DWSlavery.91 }} # We notify the slaver that the training cycle has completed.
+					}
+				}
+				30 = {  # Failed to advance in training
+					character_event = { id = DWSlavery.200 } # We cycle the slave through training again
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_warrior_2
+			}
+			random_list = {
+				75 = {  # Successfully finished training
+					remove_character_modifier = dw_slave_warrior_2
+					add_character_modifier = { name = dw_slave_warrior_3 duration = -1 }
+					character_event = { id = DWSlavery.200 } # We cycle the slave through training again
+				}
+				25 = {  # Failed to advance in training
+					character_event = { id = DWSlavery.200 } # We cycle the slave through training again
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_warrior_1
+			}
+			random_list = {
+				80 = {  # Successfully finished training
+					remove_character_modifier = dw_slave_warrior_1
+					add_character_modifier = { name = dw_slave_warrior_2 duration = -1 }
+					character_event = { id = DWSlavery.200 } # We cycle the slave through training again
+				}
+				20 = {  # Failed to advance in training
+					character_event = { id = DWSlavery.200 } # We cycle the slave through training again
+				}
+			}
+		}
+	}
+}
+
+### Slave Training: Skilled 300 - 399
+# .300 Slave goes through their training check (slave - hidden)
+character_event = {
+	id = DWSlavery.300
+	is_triggered_only = yes # Triggered by .3 /.5 /.13 /.15
+	hide_window = yes # Nothing to see here
+	immediate = {
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_skilled_1
+			}
+			character_event = { id = DWSlavery.310 days = 60 } # Go forward to event to check for advancement after two months
+			break = yes
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_skilled_2
+			}
+			character_event = { id = DWSlavery.310 days = 60 } # Go forward to event to check for advancement after two months
+			break = yes
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_skilled_3
+			}
+			character_event = { id = DWSlavery.310 days = 60 } # Go forward to event to check for advancement after two months
+			break = yes
+		}
+	}
+}
+# .310 Slave evaluation check to see if the advance (slave - hidden)
+character_event = {
+	id = DWSlavery.310
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_skilled_3
+			}
+			random_list = {
+				70 = {  # Successfully finished training
+					remove_character_modifier = dw_slave_skilled_3
+					add_character_modifier = { name = dw_slave_skilled_complete duration = -1 }
+					clr_character_flag = dw_slave_training_in_progress
+					if = {
+						limit = {
+							is_female = yes # Female specific
+						}
+						host = { narrative_event = { id = DWSlavery.90 }} # We notify the slaver that the training cycle has completed.
+					}
+					if = {
+						limit = {
+							is_female = no # Male specific
+						}
+						host = { narrative_event = { id = DWSlavery.91 }} # We notify the slaver that the training cycle has completed.
+					}
+				}
+				30 = {  # Failed to advance in training
+					character_event = { id = DWSlavery.300 } # We cycle the slave through training again
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_skilled_2
+			}
+			random_list = {
+				75 = {  # Successfully finished training
+					remove_character_modifier = dw_slave_skilled_2
+					add_character_modifier = { name = dw_slave_skilled_3 duration = -1 }
+					character_event = { id = DWSlavery.300 } # We cycle the slave through training again
+				}
+				25 = {  # Failed to advance in training
+					character_event = { id = DWSlavery.300 } # We cycle the slave through training again
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_skilled_1
+			}
+			random_list = {
+				80 = {  # Successfully finished training
+					remove_character_modifier = dw_slave_skilled_1
+					add_character_modifier = { name = dw_slave_skilled_2 duration = -1 }
+					character_event = { id = DWSlavery.300 } # We cycle the slave through training again
+				}
+				20 = {  # Failed to advance in training
+					character_event = { id = DWSlavery.300 } # We cycle the slave through training again
+				}
+			}
+		}
+	}
+}
+
+### Slave Training: Pleasure 400 - 499
+# .400 Slave goes through their training check (slave - hidden)
+character_event = {
+	id = DWSlavery.400
+	is_triggered_only = yes # Triggered by .3 /.5 /.13 /.15
+	hide_window = yes # Nothing to see here
+	immediate = {
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_pleasure_1
+			}
+			character_event = { id = DWSlavery.410 days = 60 } # Go forward to event to check for advancement after two months
+			break = yes
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_pleasure_2
+			}
+			character_event = { id = DWSlavery.410 days = 60 } # Go forward to event to check for advancement after two months
+			break = yes
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_pleasure_3
+			}
+			character_event = { id = DWSlavery.410 days = 60 } # Go forward to event to check for advancement after two months
+			break = yes
+		}
+	}
+}
+# .410 Slave evaluation check to see if the advance (slave - hidden)
+character_event = {
+	id = DWSlavery.410
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_pleasure_3
+			}
+			random_list = {
+				80 = {  # Successfully finished training
+					remove_character_modifier = dw_slave_pleasure_3
+					add_character_modifier = { name = dw_slave_pleasure_complete duration = -1 }
+					clr_character_flag = dw_slave_training_in_progress
+					if = {
+						limit = {
+							is_female = yes # Female specific
+						}
+						host = { narrative_event = { id = DWSlavery.90 }} # We notify the slaver that the training cycle has completed.
+					}
+					if = {
+						limit = {
+							is_female = no # Male specific
+						}
+						host = { narrative_event = { id = DWSlavery.91 }} # We notify the slaver that the training cycle has completed.
+					}
+				}
+				20 = {  # Failed to advance in training
+					character_event = { id = DWSlavery.400 } # We cycle the slave through training again
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_pleasure_2
+			}
+			random_list = {
+				80 = {  # Successfully finished training
+					remove_character_modifier = dw_slave_pleasure_2
+					add_character_modifier = { name = dw_slave_pleasure_3 duration = -1 }
+					character_event = { id = DWSlavery.400 } # We cycle the slave through training again
+				}
+				20 = {  # Failed to advance in training
+					character_event = { id = DWSlavery.400 } # We cycle the slave through training again
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_character_modifier = dw_slave_pleasure_1
+			}
+			random_list = {
+				80 = {  # Successfully finished training
+					remove_character_modifier = dw_slave_pleasure_1
+					add_character_modifier = { name = dw_slave_pleasure_2 duration = -1 }
+					character_event = { id = DWSlavery.400 } # We cycle the slave through training again
+				}
+				20 = {  # Failed to advance in training
+					character_event = { id = DWSlavery.400 } # We cycle the slave through training again
+				}
+			}
+		}
+	}
+}
+
+# Slave Training: Branding 700 - 799
+#.700 Prisoner bounce for branding (Prisoner - hidden)
+character_event = {
+	id = DWSlavery.700
+	is_triggered_only = yes # Triggered via targeted decision
+	hide_window = yes # Nothing to see here
+	immediate = {
+		save_event_target_as = dw_slave_target
+		host = { narrative_event = { id = DWSlavery.701 }}
+	}
+}
+#.701 Slaver decides to brand or not (host)
+narrative_event = {
+	id = DWSlavery.701
+	desc = "DWSlavery701"
+	picture = slavery_branding
+	title = dw_slave_branding_target
+	is_triggered_only = yes # Triggered from .700
+	option = {
+		name = "DWSlavery701A" #Yes, time for a little branding
+		FROM = { 
+			add_trait = branded_slave 
+			abdicate = yes #If the person is landed, it should pass onto their heirs.
+		}
+	}
+	option = {
+		name = "DWSlavery701B" #Nah, not yet
+	}
+}
+### Selling of Slaves: 800 - 899
+# .800 Slave set as event_target (slave - hidden)
+character_event = {
+	id = DWSlavery.800
+	is_triggered_only = yes # Triggered by targeted decision
+	hide_window = yes # Nothing to see here
+	immediate = {
+		save_event_target_as = dw_slave_target
+		host = { narrative_event = { id = DWSlavery.801 }}
+	}
+}
+# .801 Slaver (player or host) decides to sell or not
+narrative_event = {
+	id = DWSlavery.801
+	desc = "DWSlavery801"
+	picture = slavery_female_sale1
+	title = dw_slave_sale_target
+	is_triggered_only = yes # Triggered by .800
+	immediate = {
+		random_independent_ruler = {
+			limit = {
+				is_within_diplo_range = ROOT
+				NOT = { character = ROOT } # No selling to ourselves, hopefully anyway
+			}
+			save_event_target_as = dw_slave_buyer
+		}		
+	}
+	option = {
+		name = "DWSlavery801A" #Yes, Sold!
+		calculate_slave_sale_value = yes
+		event_target:dw_slave_target = {			
+			move_character = event_target:dw_slave_buyer
+			remove_slave_prisoner_modifiers_for_sale = yes
+		}
+	}
+	option = {
+		name = "DWSlavery801B" #Nah, not yet
+	}
+}
+### Release and keeping of Slaves: 900 - 999
+#.900 Prisoner learns they're being kept (Prisoner - hidden)
+character_event = {
+	id = DWSlavery.900
+	is_triggered_only = yes # Triggered by targeted decision
+	hide_window = yes # Nothing to see here
+	immediate = {
+		save_event_target_as = dw_slave_target
+		host = { narrative_event = { id = DWSlavery.901 }}
+	}
+}
+#.901 Slaver decides to keep or not (Slaver)
+narrative_event = {
+	id = DWSlavery.901
+	desc = "DWSlavery901"
+	picture = slavery_female_sale1
+	title = dw_slave_keep_decision_target
+	is_triggered_only = yes # Triggered by .900
+	option = {
+		name = "DWSlavery901A" #Yes, Kept!
+		event_target:dw_slave_target = { 
+			prisoner = no # Prisoner no more
+			move_character = ROOT # Adds them to the host court instead of letting them return to their previous liege
+			hidden_tooltip = { # We clean-up flags and modifiers that may have been set during imprisonment and slave training
+				clr_character_flag = asked_for_better_prison
+				remove_character_modifier = dw_slave_training
+				remove_character_modifier = house_arrest
+				remove_character_modifier = the_oubliette
+				remove_character_modifier = the_dungeon
+			}
+			opinion = {
+				modifier = dw_opinion_slave_master
+				who = ROOT
+			}
+		}
+		if = {
+			limit = {
+				event_target:dw_slave_target = {
+					OR = {
+						has_character_modifier = dw_slave_warrior_complete
+						has_character_modifier = dw_slave_pleasure_complete
+					}
+				}
+			}
+			narrative_event = { id = DWSlavery.903 days = 1 } #Slave Profession Options
+		}
+	}
+	option = {
+		name = "DWSlavery901B" #Nah, not yet
+	}
+}
+#.903 Slaver decides Profession Options
+narrative_event = {
+	id = DWSlavery.903
+	desc = "DWSlavery903"
+	picture = slavery_female_sale1
+	title = dw_slave_profession_decision_target
+	is_triggered_only = yes # Triggered by .901, or as a loop back from a decision being reconsidered
+	option = { # Slave Warrior - Bodyguard
+		trigger = {
+			event_target:dw_slave_target = { has_character_modifier = dw_slave_warrior_complete }
+		}
+		name = "DWSlavery903A"
+		narrative_event = { id = DWSlavery.910 }
+	}
+	option = { # Slave Warrior - Gladiator
+		trigger = {
+			event_target:dw_slave_target = { has_character_modifier = dw_slave_warrior_complete }
+		}
+		name = "DWSlavery903B"
+		narrative_event = { id = DWSlavery.912 }
+	}
+	option = { # Pleasure Slave - Whore
+		trigger = {
+			event_target:dw_slave_target = { has_character_modifier = dw_slave_pleasure_complete }
+		}
+		name = "DWSlavery903C"
+		narrative_event = { id = DWSlavery.914 }
+	}
+	option = { # Leaving them as they are.
+		name = "DWSlavery903D"
+	}
+}
+#.910 Slaver makes a bodyguard decision (host)
+narrative_event = {
+	id = DWSlavery.910
+	desc = "DWSlavery910"
+	picture = slavery_bodyguard
+	title = dw_slave_profession_decision_target
+	is_triggered_only = yes # Triggered by .903
+	option = {
+		name = "DWSlavery910A" # Yes, make a bodyguard
+		event_target:dw_slave_target = { 
+			add_character_modifier = { name = dw_slave_bodyguard duration = -1 }
+		}
+	}
+	option = {
+		name = "DWSlavery910B" # Leave them as a generic slave
+	}
+	option = {
+		name = "DWSlavery910C" # Let me consider more options
+		narrative_event = { id = DWSlavery.903 }
+	}
+}
+#.912 Slaver makes a gladiator decision (host)
+narrative_event = {
+	id = DWSlavery.912
+	desc = "DWSlavery912"
+	picture = slavery_gladiator
+	title = dw_slave_profession_decision_target
+	is_triggered_only = yes # Triggered by .903
+	option = {
+		name = "DWSlavery912A" # Yes, make a gladiator
+		event_target:dw_slave_target = { 
+			add_trait = gladiator
+		}
+	}
+	option = {
+		name = "DWSlavery912B" # Leave them as a generic slave
+	}
+	option = {
+		name = "DWSlavery910C" # Let me consider more options (reusing the language from .910)
+		narrative_event = { id = DWSlavery.903 }
+	}
+}
+#.914 Slaver makes a whore decision (host)
+narrative_event = {
+	id = DWSlavery.914
+	desc = "DWSlavery914"
+	picture = brothel
+	title = dw_slave_profession_decision_target
+	is_triggered_only = yes # Triggered by .903
+	option = {
+		name = "DWSlavery914A" # Yes, make a whore
+		if = { # If the slave was a whore before we made them a slave, then they may have gotten better
+			limit = {
+				event_target:dw_slave_target = { # We're assuming a retired whore was at least experienced before retiring, so the pleasure training would make them Exclusive
+					OR = {
+						trait = experienced_whore
+						trait = retired_whore
+					}
+				}
+			}
+			event_target:dw_slave_target = {
+				remove_trait = experienced_whore
+				remove_trait = retired_whore
+				add_trait = exclusive_whore
+			}
+		}
+		if = { # If the slave was a whore before we made them a slave, then they may have gotten better
+			limit = {
+				event_target:dw_slave_target = { 
+					trait = cheap_whore
+				}
+			}
+			event_target:dw_slave_target = {
+				remove_trait = cheap_whore
+				add_trait = experienced_whore
+			}
+		}
+		if = { # If the slave has no whore traits already, we make them a cheap whore
+			limit = {
+				event_target:dw_slave_target = {
+					NOR = {
+						trait = exclusive_whore
+						trait = experienced_whore
+						trait = cheap_whore
+					}
+				}
+			}
+			event_target:dw_slave_target = {
+				add_trait = cheap_whore
+			}
+		}
+	}
+	option = {
+		name = "DWSlavery914B" # Leave them as a generic slave
+	}
+	option = {
+		name = "DWSlavery910C" # Let me consider more options (reusing the language from .910)
+		narrative_event = { id = DWSlavery.903 }
+	}
+}
+
+### Slave Revolt: 1000 - 1099
+#TODO
+
+### Slave Broken: 1100 - 1199
+#TODO

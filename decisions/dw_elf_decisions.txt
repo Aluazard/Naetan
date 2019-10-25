@@ -1,0 +1,22 @@
+### This file contains both normal and targeted decisions related to the Elf portion of the Dark World Reborn mod
+decisions = {
+	# Fading Twilight Campaign Style Selection
+	dw_elf_campaign = {
+		potential = {
+			ai = no # Only the player should ever see this
+			has_elf_start = yes
+			has_fae_content = yes
+			has_dw_campaign_started = no
+		}
+		allow = {
+			always = yes # It should always be displayed if it is relevant
+		}
+		effect = {
+			set_global_flag = dw_campaign_started
+			narrative_event = { id = DWElf.10 }
+		}
+		ai_will_do = {
+			factor = 0 # Zero chance the ai uses this
+		}
+	}
+}

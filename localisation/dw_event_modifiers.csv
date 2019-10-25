@@ -1,0 +1,158 @@
+#CODE;ENGLISH;;;;;;;;;;;;;x
+### Related to Shopping
+dw_miniskirt;Miniskirt;;;;;;;;;;;;;x
+dw_revealing_dress;Revealing Dress;;;;;;;;;;;;;x
+dw_lingerie;Lingerie;;;;;;;;;;;;;x
+dw_chainbikini;Chain Bikini;;;;;;;;;;;;;x
+dw_griffonarmor;Griffon Armor;;;;;;;;;;;;;x
+dw_ladywarrior;Lady Warrior;;;;;;;;;;;;;x
+dw_tankarmor;Tank Armor;;;;;;;;;;;;;x
+dw_golden_doublet;Golden Doublet;;;;;;;;;;;;;x
+dw_pet_guard_dog;Guard Dog;;;;;;;;;;;;;x
+dw_death_note;Reaper's Mark;;;;;;;;;;;;;x
+dw_binding_mark;Binding Mark;;;;;;;;;;;;;x
+dw_fairy_play_cooldown;Fairy Play Cool Down;;;;;;;;;;;;;x
+dw_fairy_vine_garden;Fairy Vine Garden;;;;;;;;;;;;;x
+dw_fairy_flower_garden;Fairy Flower Garden;;;;;;;;;;;;;x
+dw_fairy_nectar_intoxication;Fairy Nectar Intoxication;;;;;;;;;;;;;x
+dw_comfortable_footwear;Comfortable Footwear;;;;;;;;;;;;;x
+dw_lucky_charm;Lucky Charm;;;;;;;;;;;;;x
+dw_aphrodites_curse;Aphrodite's Curse;;;;;;;;;;;;;x
+dw_silver_tongue_potion;Silver Tongue;;;;;;;;;;;;;x
+dw_werewolf_blood_potion;Werewolf Blood Potion;;;;;;;;;;;;;x
+### Lilith Related
+dw_holding_lilith_blood_ritual;Holding Blood Moon Ritual;;;;;;;;;;;;;x
+dw_held_lilith_blood_moon;Held Blood Moon Ritual;;;;;;;;;;;;;x
+dw_lilith_peasant_sacrifice;Blood Moon Peasant Sacrifice;;;;;;;;;;;;;x
+dw_lilith_stage_1;Succubus Evolution: Seductress;;;;;;;;;;;;;x
+dw_lilith_stage_2;Succubus Evolution: Leech;;;;;;;;;;;;;x
+dw_lilith_stage_3;Succubus Evolution: Monster;;;;;;;;;;;;;x
+dw_lilith_stage_4;Succubus Evolution: Corrupter;;;;;;;;;;;;;x
+dw_lilith_stage_5;Succubus Evolution: Demoness;;;;;;;;;;;;;x
+dw_incubus_stage_1;Incubus Evolution: Seducer;;;;;;;;;;;;;x
+dw_incubus_stage_2;Incubus Evolution: Leech;;;;;;;;;;;;;x
+dw_incubus_stage_3;Incubus Evolution: Monster;;;;;;;;;;;;;x
+dw_incubus_stage_4;Incubus Evolution: Illusionist;;;;;;;;;;;;;x
+dw_incubus_stage_5;Incubus Evolution: Nightmare;;;;;;;;;;;;;x
+dw_lovers_embrace_cooldown;Lover's Embrace Cool Down;;;;;;;;;;;;;x
+### Spells Related
+dw_spell_frog_target;Spell: Turn into a Frog;;;;;;;;;;;;;x
+### Economic Action related
+dw_trendsetter;Trend Setter;;;;;;;;;;;;;x
+dw_trend_opportunist;Opportunistic Trend Setter;;;;;;;;;;;;;x
+dw_trend_opportunist_major;Major Trend Setter;;;;;;;;;;;;;x
+dw_trend_opportunist_mogul;Master Trend Setter;;;;;;;;;;;;;x
+dw_maximum_fortune;Fortune Blessing: Maximum;;;;;;;;;;;;;x
+dw_moderate_fortune;Fortune Blessing: Good;;;;;;;;;;;;;x
+dw_minor_fortune;Fortune Blessing: Minor;;;;;;;;;;;;;x
+### Related the Brothel
+dw_brothel_improvement_1;Bordello Improvement 1;;;;;;;;;;;;;x
+dw_brothel_improvement_2;Bordello Improvement 2;;;;;;;;;;;;;x
+dw_brothel_improvement_3;Bordello Improvement 3;;;;;;;;;;;;;x
+dw_brothel_improvement_4;Bordello Improvement Complete;;;;;;;;;;;;;x
+dw_brothel_royal_whore;Royal Whore;;;;;;;;;;;;;x
+dw_brothel_futa_whore;Futa Whore;;;;;;;;;;;;;x
+dw_brothel_monk_wine;Monk Wine Investment;;;;;;;;;;;;;x
+dw_brothel_foodndrink;Food and Drink Investment;;;;;;;;;;;;;x
+dw_brothel_jessica_star;Brothel Singing Star;;;;;;;;;;;;;x
+dw_brothel_jessica_bar;Brothel Singing Star and Bar;;;;;;;;;;;;;x
+dw_brothel_hypocrite_whore;Hypocrite Whore;;;;;;;;;;;;;x
+dw_brothel_mystery_room_survivor;Mystery Room Survivor;;;;;;;;;;;;;x
+### Slave Related
+dw_slave_training;Slave in Training;;;;;;;;;;;;;x
+dw_slave_motivated;Motivated Slave;;;;;;;;;;;;;x
+dw_slave_skilled_1;Skilled Slave Stage 1;;;;;;;;;;;;;x
+dw_slave_skilled_2;Skilled Slave Stage 2;;;;;;;;;;;;;x
+dw_slave_skilled_3;Skilled Slave Stage 3;;;;;;;;;;;;;x
+dw_slave_skilled_complete;Skilled Labor Trained Slave;;;;;;;;;;;;;x
+dw_slave_common_1;Common Labor Slave Stage 1;;;;;;;;;;;;;x
+dw_slave_common_2;Common Labor Slave Stage 2;;;;;;;;;;;;;x
+dw_slave_common_3;Common Labor Slave Stage 3;;;;;;;;;;;;;x
+dw_slave_common_complete;Common Labor Trained Slave;;;;;;;;;;;;;x
+dw_slave_warrior_1;Warrior Slave Stage 1;;;;;;;;;;;;;x
+dw_slave_warrior_2;Warrior Slave Stage 2;;;;;;;;;;;;;x
+dw_slave_warrior_3;Warrior Slave Stage 3;;;;;;;;;;;;;x
+dw_slave_warrior_complete;Warrior Trained Slave;;;;;;;;;;;;;x
+dw_slave_pleasure_1;Pleasure Slave Stage 1;;;;;;;;;;;;;x
+dw_slave_pleasure_2;Pleasure Slave Stage 2;;;;;;;;;;;;;x
+dw_slave_pleasure_3;Pleasure Slave Stage 3;;;;;;;;;;;;;x
+dw_slave_pleasure_complete;Pleasure Trained Slave;;;;;;;;;;;;;x
+dw_slave_broken;Broken Slave;;;;;;;;;;;;;x
+dw_slave_bodyguard;Slave Bodyguard;;;;;;;;;;;;;x
+### Sex Related
+dw_good_sex;After Good Sex High;;;;;;;;;;;;;x
+dw_rape_trauma;Rape Trauma;;;;;;;;;;;;;x
+dw_tentacle_pregnancy;Tentacle Pregnancy;;;;;;;;;;;;;x
+dw_still_wanting_more;Unsatisfied Sexually;;;;;;;;;;;;;x
+dw_willing_incest;Known Incestuous Relationship;;;;;;;;;;;;;x
+### Werewolf related
+dw_werewolf_bitch;Werewolf Bitch;;;;;;;;;;;;;x
+dw_werewolf_aphrodisiac;Werewolf Aphrodisiac;;;;;;;;;;;;;x
+dw_omega_male;Omega Male;;;;;;;;;;;;;x
+dw_alpha_bitch;Alpha Bitch;;;;;;;;;;;;;x
+dw_werewolf_hunt_cooldown;Werewolf Hunt Cool Down;;;;;;;;;;;;;x
+dw_werewolf_successful_hunt_great;Greatly Successful Hunt;;;;;;;;;;;;;x
+dw_werewolf_successful_hunt;Successful Hunt;;;;;;;;;;;;;x
+dw_werewolf_young_bad_hunt;Bad Hunt, Minor Injury;;;;;;;;;;;;;x
+dw_werewolf_young_fun_hunt;Fun Hunt;;;;;;;;;;;;;x
+dw_werewolf_corruption_stage1;Beast Within: Stage 1;;;;;;;;;;;;;x
+dw_werewolf_corruption_stage2;Beast Within: Stage 2;;;;;;;;;;;;;x
+dw_werewolf_corruption_stage3;Beast Within: Stage 3;;;;;;;;;;;;;x
+dw_werewolf_corruption_stage4;Beast Within: Stage 4;;;;;;;;;;;;;x
+dw_werewolf_corruption_stage5;Beast Within: Stage 5;;;;;;;;;;;;;x
+dw_werewolf_corruption_complete;Feral Werewolf;;;;;;;;;;;;;x
+dw_werewolf_beast_whispers;The Beast Whispers;;;;;;;;;;;;;x
+### Vampire related
+dw_vampire_thrall;Vampire Thrall;;;;;;;;;;;;;x
+dw_vampire_cattle;Vampire Cattle;;;;;;;;;;;;;x
+dw_outed_vampire;Outed Vampire;;;;;;;;;;;;;x
+dw_outed_dhampir;Outed Dhampir;;;;;;;;;;;;;x
+dw_vampire_hunt_cooldown;Hunt Cooldown;;;;;;;;;;;;;x
+### Monster related
+dw_is_a_monster;Is a Monster;;;;;;;;;;;;;x
+### Notable Deeds
+dw_tentacle_survivor;Tentacle Survivor;;;;;;;;;;;;;x
+dw_generous_tipper;Generous Tipper;;;;;;;;;;;;;x
+dw_morale_booster;Morale Booster;;;;;;;;;;;;;x
+dw_writing_arcane_theory;Writing Arcane Theory Tome;;;;;;;;;;;;;x
+### Status Related
+dw_corruption_1;Morale Corruption 1 (of 3);;;;;;;;;;;;;x
+dw_corruption_2;Morale Corruption 2 (of 3);;;;;;;;;;;;;x
+dw_corruption_3;Morale Corruption 3 (of 3);;;;;;;;;;;;;x
+dw_affection_1;Romantic Interest 1 (of 3);;;;;;;;;;;;;x
+dw_affection_2;Romantic Interest 2 (of 3);;;;;;;;;;;;;x
+dw_affection_3;Romantic Interest 3 (of 3);;;;;;;;;;;;;x
+dw_intellectually_stimulated;Intellectually Stimulated;;;;;;;;;;;;;x
+dw_excellent_meal;Excellent Meal;;;;;;;;;;;;;x
+dw_one_of_the_people;One of the People;;;;;;;;;;;;;x
+dw_entertaining_story_telling;Entertaining Stories;;;;;;;;;;;;;x
+dw_entertaining_arena_show;Entertaining Arena Match;;;;;;;;;;;;;x
+dw_disturbing_arena_show;Horrifying Arena Match;;;;;;;;;;;;;x
+dw_arousing_arena_show;Arousing Arena Match;;;;;;;;;;;;;x
+dw_attended_great_show;Attended Great Show;;;;;;;;;;;;;x
+dw_attended_epic_show;Attended Epic Show;;;;;;;;;;;;;x
+dw_has_rumor_material;Has Rumor Material;;;;;;;;;;;;;x
+dw_easter_egg_buff;Easter Egg Found;;;;;;;;;;;;;x
+### Combat related
+dw_wound_1;Combat Damage;;;;;;;;;;;;;x
+dw_wound_2;Combat Damage;;;;;;;;;;;;;x
+dw_wound_3;Combat Damage;;;;;;;;;;;;;x
+dw_wound_4;Combat Damage;;;;;;;;;;;;;x
+dw_wound_5;Combat Damage;;;;;;;;;;;;;x
+dw_wound_6;Combat Damage;;;;;;;;;;;;;x
+dw_wound_7;Combat Damage;;;;;;;;;;;;;x
+dw_wound_8;Combat Damage;;;;;;;;;;;;;x
+dw_wound_9;Combat Damage;;;;;;;;;;;;;x
+dw_wound_10;Combat Damage;;;;;;;;;;;;;x
+dw_wound_11;Combat Damage;;;;;;;;;;;;;x
+dw_wound_12;Combat Damage;;;;;;;;;;;;;x
+dw_wound_13;Combat Damage;;;;;;;;;;;;;x
+dw_wound_14;Combat Damage;;;;;;;;;;;;;x
+dw_wound_15;Combat Damage;;;;;;;;;;;;;x
+dw_wound_16;Combat Damage;;;;;;;;;;;;;x
+dw_wound_17;Combat Damage;;;;;;;;;;;;;x
+dw_wound_18;Combat Damage;;;;;;;;;;;;;x
+dw_wound_19;Combat Damage;;;;;;;;;;;;;x
+dw_wound_20;Combat Damage;;;;;;;;;;;;;x
+### Offmap related
+dw_offmap_slow_your_roll;Slow your roll;;;;;;;;;;;;;x

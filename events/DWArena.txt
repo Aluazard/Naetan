@@ -1,0 +1,508 @@
+######
+## DWCourt.7000 - Arena related events
+######
+namespace = DWCourt
+
+## Arena Visit
+# .7000 Visit the Arena
+narrative_event = {	
+	id = DWCourt.7000
+	desc = "DWCourt7000"
+	picture = arena
+	title = dw_arena_visit
+	is_triggered_only = yes # Triggered via visit arena decision
+	option = { # Just enjoy the day's festivities
+		name = DWCourt7000A
+		# Random event
+		character_event = { id = DWCourt.7003 }
+	}
+	option = { # I'm in the betting mood today.
+		trigger = {
+			wealth = 10
+		}
+		name = DWCourt7000B
+		# Random bid event
+		character_event = { id = DWCourt.7005 }
+	}
+	option = { # My stable
+		trigger = {
+			ai = no # We don't want the ai messing around with their own stable at the moment
+		}
+		name = DWCourt7000C
+		# Arena Stable management
+		character_event = { id = DWCourt.7007 }
+	}
+	option = { # I've seen enough
+		name = DWCourt7000D
+		# Nothing happens, closes the event.
+	}
+}
+
+# .7003 - Normal Arena Visit - Random event selection
+character_event = {
+	id = DWCourt.7003
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # .7000
+	immediate = {
+		random_list = {
+			25 = {
+				# Bloody gladiatorial match
+				narrative_event = { id = DWCourt.7010 }
+			}
+		}
+	}
+}
+
+# .7005 - Gambling Arena Visit - Random event selection
+character_event = {
+	id = DWCourt.7005
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # .7000
+	immediate = {
+		random_list = {
+			25 = {
+				# Sibling Duel Wager
+				narrative_event = { id = DWCourt.7020 }
+			}
+		}
+	}
+}
+
+# .7007 - Arena Stable Management
+character_event = {
+	id = DWCourt.7007
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # .7000
+	immediate = {
+		# Right now this will just be a redirect. It's here in case I want to put event triggers before the default management event
+		narrative_event = { id = DWCourt.7100 }
+	}
+}
+
+# .7010 - Normal Arena Visit - Bloody Gladiatorial Match
+narrative_event = {
+	id = DWCourt.7010
+	desc = DWCourt7010
+	picture = arena_stuck
+	title = dw_arena_visit
+	is_triggered_only = yes # .7003
+	option = {
+		trigger = {
+			NOR = {
+				trait = kind # Someone who is kind hearted would not find joy in such brutality
+				trait = craven # Someone who is craven finds the display extremely unsettling, as they can relate to the fear being felt by the victim
+				trait = cruel # Someone who is Cruel gets a greater rise from such a display
+				trait = wroth # Same as Cruel
+				trait = impaler # Same as Cruel
+			}
+		}
+		name = DWCourt7010A # What an entertaining match.
+		add_character_modifier = { name = dw_entertaining_arena_show duration = 90}
+	}
+	option = {
+		trigger = {
+			OR = {
+				trait = kind # Someone who is kind hearted would not find joy in such brutality
+				trait = craven # Someone who is craven finds the display extremely unsettling, as they can relate to the fear being felt by the victim
+			}
+		}
+		name = DWCourt7010B # What a disturbing match
+		add_character_modifier = { name = dw_disturbing_arena_show duration = 90}
+	}
+	option = {
+		trigger = {
+			OR = {
+				trait = cruel # Someone who is Cruel gets a greater rise from such a display
+				trait = wroth # Same as Cruel
+				trait = impaler # Same as Cruel
+			}
+		}
+		name = DWCourt7010C # What an arousing match.
+		add_character_modifier = { name = dw_arousing_arena_show duration = 90}
+	}
+}
+
+# .7020 - Gambling Arena Visit - Sibling Duel Wager
+narrative_event = {
+	id = DWCourt.7020
+	desc = DWCourt7020
+	picture = arena_bookie
+	title = dw_arena_visit
+	is_triggered_only = yes # .7005
+	option = {
+		name = DWCourt7020A # Bet on the brother
+		save_event_target_as = dw_wager_brother
+		wealth = -10
+		random_list = {
+			50 = {
+				# Brother wins
+				narrative_event = { id = DWCourt.7023 }
+			}
+			50 = {
+				# Sister Wins
+				narrative_event = { id = DWCourt.7025 }
+			}
+		}
+	}
+	option = {
+		name = DWCourt7020B # Bet on the sister
+		save_event_target_as = dw_wager_sister
+		wealth = -10
+		random_list = {
+			50 = {
+				# Brother wins
+				narrative_event = { id = DWCourt.7023 }
+			}
+			50 = {
+				# Sister Wins
+				narrative_event = { id = DWCourt.7025 }
+			}
+		}
+	}
+	option = {
+		name = DWCourt7020C # Opt not to bet
+		save_event_target_as = dw_no_wager
+		random_list = {
+			50 = {
+				# Brother wins
+				narrative_event = { id = DWCourt.7023 }
+			}
+			50 = {
+				# Sister Wins
+				narrative_event = { id = DWCourt.7025 }
+			}
+		}
+	}
+}
+# .7023 - Gambling Arena Visit - Brother wins
+narrative_event = {
+	id = DWCourt.7023
+	desc = DWCourt7023
+	picture = arena_gambling_duel1
+	title = dw_arena_visit
+	is_triggered_only = yes # .7020
+	option = {
+		trigger = {
+			event_target:dw_wager_brother = {
+				character = ROOT
+			}
+		}
+		name = DWCourt7023A # I'm the victor		
+		wealth = +19
+	}
+	option = {
+		trigger = {
+			event_target:dw_wager_sister = {
+				character = ROOT
+			}
+		}
+		name = DWCourt7023B # I'm the loser
+	}
+	option = {
+		trigger = {
+			event_target:dw_no_wager = {
+				character = ROOT
+			}
+		}
+		name = DWCourt7023C # I didn't wager
+	}
+}
+# .7025 - Gambling Arena Visit - Sister wins
+narrative_event = {
+	id = DWCourt.7025
+	desc = DWCourt7025
+	picture = arena_gambling_duel1
+	title = dw_arena_visit
+	is_triggered_only = yes # .7020
+	option = {
+		trigger = {
+			event_target:dw_wager_brother = {
+				character = ROOT
+			}
+		}
+		name = DWCourt7025A # I'm the loser
+	}
+	option = {
+		trigger = {
+			event_target:dw_wager_sister = {
+				character = ROOT
+			}
+		}
+		name = DWCourt7025B # I'm the winner
+		wealth = +19
+	}
+	option = {
+		trigger = {
+			event_target:dw_no_wager = {
+				character = ROOT
+			}
+		}
+		name = DWCourt7025C # I didn't wager
+	}
+}
+# .7100 - Arena Stable Management
+narrative_event = {
+	id = DWCourt.7100
+	desc = DWCourt7100
+	picture = arena_stable
+	title = dw_arena_stable
+	is_triggered_only = yes # .7007
+	option = {
+		trigger = {
+			NOT = {
+				any_courtier ={
+					count = 4
+					trait = gladiator
+				}
+			}
+		}
+		name = DWCourt7100A # Recruit
+		random_list = {
+			50 = {
+				# Platypoa
+				narrative_event = { id = DWCourt.7101 days = 3}
+				modifier = {
+					factor = 0
+					any_courtier = {
+						has_character_flag = dw_npc_platypoa # Only one Platypoa in a kingdom
+					}
+				}
+				modifier = {
+					factor = 0
+					NOT = {
+						has_global_flag = dw_werewolfvsvampire_active # We're only going to introduce another Werebeast if Creatures of Night is active
+					}
+				}
+			}
+			50 = {
+				# Conan
+				narrative_event = { id = DWCourt.7104 days = 3}
+				modifier = {
+					factor = 0
+					has_global_flag = dw_npc_conan_created # Only one Conan per game
+				}
+			}
+			50 = {
+				# Generic Male
+				narrative_event = { id = DWCourt.7102 days = 3}
+			}
+			25 = {
+				# Generic Female
+				narrative_event = { id = DWCourt.7103 days = 3}
+			}
+		}
+	}
+	option = {
+		name = DWCourt7100B # Arrange Match
+	}
+	option = {
+		name = DWCourt7100C # Participate Myself
+	}
+	option = {
+		name = DWCourt7100D # Nevermind
+	}
+}
+# .7101 Player gets Platypoa
+narrative_event = {
+	id = DWCourt.7101
+	desc = "DWCourt7101"
+	picture = arena_platypoa
+	title = dw_arena_stable
+	is_triggered_only = yes # triggered by .7100
+	immediate = {
+		create_character = {
+			random_traits = no
+			dynasty = none
+			name = Platypoa
+			female = no
+			age = 16
+			religion = ROOT
+			culture = ROOT
+			trait = portrait495 # custom image
+			trait = tough_soldier
+			trait = strong
+			trait = proud
+			trait = wroth
+			trait = diligent
+			trait = brave
+			trait = trusting
+			trait = gladiator
+			attributes = {
+				diplomacy = 5
+				intrigue = 3
+				stewardship = 3
+				martial = 9
+				learning = 5
+			}
+		}
+		new_character = {
+			character_event = { id = DWCore.10 } # Will randomly assign a cock size
+			set_character_flag = dw_npc_platypoa
+			save_event_target_as = dw_gladiator_recruit
+		}
+	}
+	option = { # Keep him
+		name = "DWCourt7101A"
+	}
+	option = { # Get rid of him
+		name = "DWCourt7101B"
+		event_target:dw_gladiator_recruit = {
+			banish = yes
+		}
+	}
+}
+# .7102 Player gets a random male gladiator
+narrative_event = {
+	id = DWCourt.7102
+	desc = "DWCourt7102"
+	picture = arena_male_recruit
+	title = dw_arena_stable
+	is_triggered_only = yes # triggered by .7100
+	immediate = {
+		create_character = {
+			random_traits = yes
+			dynasty = none
+			female = no
+			age = 16
+			religion = ROOT
+			culture = ROOT
+			trait = misguided_warrior
+			trait = gladiator
+			attributes = {
+				martial = 8
+				intrigue = 4
+			}
+		}
+		new_character = {
+			character_event = { id = DWCore.10 } # Will randomly assign a cock size
+			save_event_target_as = dw_gladiator_recruit
+		}
+	}
+	option = { # Keep him
+		name = "DWCourt7102A"
+	}
+	option = { # Get rid of him
+		name = "DWCourt7102B"
+		event_target:dw_gladiator_recruit = {
+			banish = yes
+		}
+	}
+}
+# .7103 Player gets a random female gladiator
+narrative_event = {
+	id = DWCourt.7103
+	desc = "DWCourt7103"
+	picture = arena_female_recruit
+	title = dw_arena_stable
+	is_triggered_only = yes # triggered by .7100
+	immediate = {
+		create_character = {
+			random_traits = yes
+			dynasty = none
+			female = yes
+			age = 16
+			religion = ROOT
+			culture = ROOT
+			trait = misguided_warrior
+			trait = gladiator
+			attributes = {
+				martial = 7
+				intrigue = 6
+			}
+		}
+		new_character = {
+			character_event = { id = DWCore.20 } # Will randomly assign a breast size
+			save_event_target_as = dw_gladiator_recruit
+		}
+	}
+	option = { # Keep her
+		name = "DWCourt7103A"
+	}
+	option = { # Get rid of her
+		name = "DWCourt7103B"
+		event_target:dw_gladiator_recruit = {
+			banish = yes
+		}
+	}
+}
+# .7104 Player learns of Conan
+narrative_event = {
+	id = DWCourt.7104
+	desc = DWCourt7104
+	picture = arena_bookie
+	title = dw_arena_stable
+	is_triggered_only = yes # triggered by .7100
+	option = { # Take me to see him
+		name = "DWCourt7104A"
+		narrative_event = { id = DWCourt.7105 }
+	}
+	option = { # I'm not interested
+		name = "DWCourt7104B"
+	}
+}
+# .7105 Player decides about taking Conan
+narrative_event = {
+	id = DWCourt.7105
+	desc = DWCourt7105
+	picture = arena_conan_bound
+	title = dw_arena_stable
+	is_triggered_only = yes # triggered by .7104
+	immediate = {
+		create_character = {
+			random_traits = no
+			dynasty = none
+			name = Conan
+			female = no
+			age = 26
+			health = 6.0
+			religion = pagan
+			culture = ROOT
+			race = norse
+			has_nickname = nick_dw_barbarian
+			trait = portrait19 # Conan custom image
+			trait = brilliant_strategist
+			trait = strong
+			trait = scarred
+			trait = robust
+			trait = duelist
+			trait = brave
+			trait = lustful
+			trait = proud
+			trait = diligent
+			trait = ravager
+			trait = gladiator
+			trait = huge_dick
+			attributes = {
+				diplomacy = 2
+				intrigue = 5
+				stewardship = 2
+				martial = 10
+				learning = 3
+			}
+		}
+		new_character = {
+			set_character_flag = dw_junk_checked
+			set_character_flag = dw_npc_conan
+			save_event_target_as = dw_gladiator_recruit
+			set_global_flag = dw_npc_conan_created # Only one Conan per game
+		}
+	}
+	option = { # I shall pay his debt - at a discount
+		trigger = {
+			stewardship = 10
+		}
+		name = "DWCourt7105A"
+		tooltip_info = stewardship
+		wealth = -10
+	}
+	option = { # I shall pay his full debt
+		name = "DWCourt7105B"
+		wealth = -25
+	}
+	option = { # Get rid of him
+		name = "DWCourt7105C"
+		event_target:dw_gladiator_recruit = {
+			banish = yes
+		}
+	}
+}

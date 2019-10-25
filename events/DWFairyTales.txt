@@ -1,0 +1,2682 @@
+### DWFairyTales is a Dark World spin on various, well, fairy tales.
+## Not to self - search for TODO to see where I've potential place holder gaps
+##DWFairyTales.1 - 99 Creation of characters for court
+##DWFairyTales.100 -  Beauty and the Beast
+##DWFairyTales.1000 - Snow White
+##DWFairyTales.2000 - Alice in Wonderland
+##DWFairyTales.3000 - Aladdin
+
+namespace = DWFairyTales
+### Characters created for court
+# Located in DWNPCs.txt for centralized NPC access
+
+# .90 Schedules the random event for NPC's that should be spawned into the world
+character_event = {
+	id = DWFairyTales.90
+	ai = no # This will run on the player at start-up, and should only run once, since it's set for start-up
+	hide_window = yes # Nothing to be seen here
+	is_triggered_only = yes # Triggered by startup on_action event
+	trigger = {
+		NOT = { has_global_flag = dw_princesses_seeded }
+	}
+	immediate = {
+		set_global_flag = dw_princesses_seeded
+		# Seeding of Grimhilt - Sleeping Beauty's evil step mother
+		# Seeding of Aurora (Sleeping Beauty) until the Sleeping Beauty events handle her generation
+		random_independent_ruler = {
+			limit = {
+				ai = yes
+				is_within_diplo_range = ROOT
+			}
+			character_event = { id = DWFairyTales.3 days = 30 }
+			character_event = { id = DWFairyTales.4 days = 30 }
+		}
+		# Seeding of Cinderella until the Cinderella events handle her generation
+		random_independent_ruler = {
+			limit = {
+				ai = yes
+			}
+			character_event = { id = DWFairyTales.5 days = 45 }
+		}
+		# Seeding of Rapunzel until the Rapunzel events handle her generation
+		random_independent_ruler = {
+			limit = {
+				ai = yes
+			}
+			character_event = { id = DWFairyTales.6 days = 50 }
+		}
+		# Seeding of Anna and Elsa until the Snow Queen events handle generation
+		random_independent_ruler = {
+			limit = {
+				ai = yes
+			}
+			character_event = { id = DWFairyTales.7 days = 55 }
+			character_event = { id = DWFairyTales.8 days = 55 }
+		}
+		# Seeding of Ariel until the Little Mermaid events handle her generation
+		random_independent_ruler = {
+			limit = {
+				ai = yes
+				OR = {
+					is_seafarer = yes
+					is_merchant_republic = yes
+				}
+			}
+			character_event = { id = DWFairyTales.9 days = 30 }
+		}
+		# Seeding of Aurora and Maleficent until the Sleeping Beauty events handle generation
+		random_independent_ruler = {
+			limit = {
+				ai = yes
+				has_fae_content = yes # We ensure that Fairy based content is desired
+			}
+			character_event = { id = DWFairyTales.11 days = 40 }
+			character_event = { id = DWFairyTales.12 days = 40 }
+		}
+	}
+}
+# .99 Assigns an NPC as a lover if valid
+character_event = {
+	id = DWFairyTales.99
+	hide_window = yes # Nothing to be seen here
+	is_triggered_only = yes # Triggered by valid events that are all less (.1 - .98) than this one
+	immediate = {
+		add_lover = event_target:dw_fairy_lover
+		event_target:dw_fairy_lover = {
+			add_lover = ROOT
+		}
+	}
+}
+
+### Beauty and the Beast
+# .100 Player stops by a village and meets Beauty
+narrative_event = {
+	id = DWFairyTales.100
+	desc = "DWFairyTales100"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	
+	ai = no #We're going to make this a player only event since it ultimately has the chance of introducing Belle or Gaston into a court
+	
+	is_triggered_only = yes # Triggered by bi_yearly random on_action
+	
+	trigger = {
+		NOT = { has_global_flag = dw_beauty_beast_triggered } # We don't want this happening more than once a play session
+	}
+	
+	option = { #Unlocks being able to visit the town in the future.
+		name = "DWFairyTales100A"
+		set_global_flag = dw_beauty_beast_triggered
+	}
+}
+# .110 Visiting Beauty's Village - Routing Check (hidden)
+character_event = {
+	id = DWFairyTales.110
+	hide_window = yes # Nothing to see here.
+	is_triggered_only = yes # Triggered from the Beauty Village visit decision
+	immediate = {
+		if = { # Player is preparing to hunt the beast + Gaston not in court
+			limit = {
+				NOT = {
+					has_global_flag = dw_gaston_in_court
+				}
+				has_character_flag = dw_hunt_the_beast_1
+			}
+			narrative_event = { id = DWFairyTales.380 days = 1 }
+			break = yes # We break out of the immediate block
+		}
+		if = { # Player plans to ambush the Beast when it comes for Beauty
+			limit = {
+				has_character_flag = dw_beauty_beast_ambush
+			}
+			narrative_event = { id = DWFairyTales.430 days = 1 }
+			break = yes # We break out of the immediate block
+		}
+		if = { # Player plans to hunt the Beast with Gaston
+			limit = {
+				has_character_flag = dw_beauty_beast_gaston_ambush
+			}
+			narrative_event = { id = DWFairyTales.440 days = 1 }
+			break = yes # We break out of the immediate block
+		}
+		if = { # Player plans to capture the Beast by having Belle seduce it
+			limit = {
+				has_character_flag = dw_seduce_the_beast
+			}
+			narrative_event = { id = DWFairyTales.500 days = 1 }
+			break = yes # We break out of the immediate block
+		}
+		#Normal Village Visit
+		narrative_event = { id = DWFairyTales.111 }
+	}
+}
+# .111 Normal Visiting Beauty's Village (player)
+narrative_event = {
+	id = DWFairyTales.111
+	desc = "DWFairyTales111"
+	picture = village
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .110
+	option = { # Visit Beast and Belle
+		trigger = {
+			has_global_flag = dw_beast_with_belle
+		}
+		name = "DWFairyTales111E"
+		character_event = { id = DWFairyTales.510 }
+	}
+	option = { # Cobbler
+		name = "DWFairyTales111A"
+		character_event = { id = DWFairyTales.120 }
+	}
+	option = { # Bakery
+		trigger = {
+			NOT = { has_global_flag = dw_beast_with_belle }
+		}
+		name = "DWFairyTales111B"
+		character_event = { id = DWFairyTales.280 }
+	}
+	option = { # Lodge
+		name = "DWFairyTales111C"
+		character_event = { id = DWFairyTales.290 }
+	}
+	option = { # Hunting
+		name = "DWFairyTales111D"
+		character_event = { id = DWFairyTales.350 }
+	}
+}
+# .119 Character flag clean-up to allow the player to revisit the village (hidden)
+character_event = {
+	id = DWFairyTales.119
+	is_triggered_only = yes # Triggered from the village visit decision
+	hide_window = yes # We hide the window as this is behind the scenes flag clean-up
+	immediate = {
+		clr_character_flag = dw_beautys_village_recovery
+	}
+}
+# .120 Visiting the Cobbler (we first check for any special visit needs - hidden)
+character_event = {
+	id = DWFairyTales.120
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Is triggered from .110
+	immediate = {
+		if = { # Corruption 3 means we've caught Belle and her father playing around, so he's nervous in seeing the player again
+			limit = {
+				has_character_flag = dw_beauty_corruption_3
+			}
+			narrative_event = { id = DWFairyTales.123 }
+			break = yes # takes us out of the immediate block
+		}
+		if = { # We're building on our corruption from 2 to 3, and player intends to Share Belle
+			limit = {
+				has_character_flag = dw_beauty_corruption_2
+				has_character_flag = dw_belle_share
+			}
+			narrative_event = { id = DWFairyTales.480 }
+			break = yes # takes us out of the immediate block
+		}
+		if = { # The Beast was handled, corrupt line, Belle is available to take
+			limit = {
+				OR = {
+					has_global_flag = dw_beast_slain
+					has_global_flag = dw_beast_tamed
+				}
+				OR = {
+					has_character_flag = dw_beauty_corruption_2
+					has_character_flag = dw_beauty_corruption_3
+				}
+				NOR = { 
+					has_global_flag = dw_belle_in_court
+					has_global_flag = dw_beast_with_belle
+				}
+			}
+			narrative_event = { id = DWFairyTales.124 }
+			break = yes  # We break out of the immediate block
+		}
+		if = { # The Beast is no longer a threat
+			limit = {
+				OR = {
+					has_global_flag = dw_beast_slain
+					has_global_flag = dw_beast_tamed
+				}
+				NOT = { has_global_flag = dw_beast_cobbler_thanks }
+			}
+			narrative_event = { id = DWFairyTales.122 } # Thanks from the cobbler
+			break = yes  # We break out of the immediate block
+		}
+		#Normal Cobbler visit
+		narrative_event = { id = DWFairyTales.121 }
+	}
+}
+# .121 Normal Cobbler visit
+narrative_event = {
+	id = DWFairyTales.121
+	desc = "DWFairyTales121"
+	picture = cobbler
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .120
+	
+	option = { # Buy some shoes if I've the cash
+		trigger = {
+			wealth = 1
+		}
+		name = "DWFairyTales121A"
+		wealth = -1
+		add_character_modifier = { name = dw_comfortable_footwear duration = 180 }
+	}
+	option = { # Is Beauty around?
+		trigger = {  # We don't show this if Beauty has already joined our court or has shacked up with the Beast
+			NOR = { 
+				has_global_flag = dw_belle_in_court
+				has_global_flag = dw_beast_with_belle
+			}
+		}
+		name = "DWFairyTales121B"
+		character_event = { id = DWFairyTales.130 } # We check to see where she is.
+	}
+	option = { # Just looking around today
+		name = "DWFairyTales121C"
+	}
+}
+# .122 Cobbler Gives thanks for defeat of the Beast 
+narrative_event = {
+	id = DWFairyTales.122
+	desc = "DWFairyTales122"
+	picture = cobbler
+	title = dw_beauty_beast	
+	is_triggered_only = yes # Triggered from .120	
+	option = { # Is Beauty around?
+		trigger = {  # We don't show this if Beauty has already joined our court or has shacked up with the Beast
+			NOR = { 
+				has_global_flag = dw_belle_in_court
+				has_global_flag = dw_beast_with_belle
+			}
+		}
+		name = "DWFairyTales122A"
+		character_event = { id = DWFairyTales.130 } # We check to see where she is.
+		add_character_modifier = { name = dw_comfortable_footwear duration = 180 }
+		set_global_flag = dw_beast_cobbler_thanks # This should have this only run once
+	}
+	option = { # Thank you for the footwear, that's all for today
+		name = "DWFairyTales122B"
+		add_character_modifier = { name = dw_comfortable_footwear duration = 180 }
+		set_global_flag = dw_beast_cobbler_thanks # This should have this only run once
+	}
+}
+# .123 Corrupt 3 Cobbler visit
+narrative_event = {
+	id = DWFairyTales.123
+	desc = "DWFairyTales123"
+	picture = cobbler
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .120
+	
+	option = { # Buy some shoes if I've the cash
+		trigger = {
+			wealth = 1
+		}
+		name = "DWFairyTales121A" # We're sticking to the original dialog option here
+		wealth = -1
+		add_character_modifier = { name = dw_comfortable_footwear duration = 180 }
+	}
+	option = { # Is the little slut around?
+		trigger = {
+			NOT = { has_global_flag = dw_belle_in_court } # We don't show this if Beauty has already joined our court
+		}
+		name = "DWFairyTales123B" 
+		character_event = { id = DWFairyTales.130 } # We check to see where she is.
+	}
+	option = { # Just looking around today
+		name = "DWFairyTales121C"
+	}
+}
+# .124 Beast taken care of, Corrupt Path, Belle Still Available Cobbler visit
+narrative_event = {
+	id = DWFairyTales.124
+	desc = "DWFairyTales124"
+	picture = cobbler
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .120
+	
+	option = { # I'm here to claim Belle
+		name = "DWFairyTales124A" 
+		character_event = { id = DWFairyTales.2 } # No need to be fancy, we just give Belle to the player
+	}
+	option = { # I'm here to just visit Belle
+		name = "DWFairyTales124B" 
+		character_event = { id = DWFairyTales.520 } # Who's she fucking now?
+	}
+	option = { # Buy some shoes if I've the cash
+		trigger = {
+			wealth = 1
+		}
+		name = "DWFairyTales121A" # We're sticking to the original dialog option here
+		wealth = -1
+		add_character_modifier = { name = dw_comfortable_footwear duration = 180 }
+	}
+	option = { # Just looking around today
+		name = "DWFairyTales121C" # We're sticking to the original dialog option here
+	}
+}
+# .130 Checking in on Beauty in the Cobbler shop (hidden event that determines routing based on modifiers)
+character_event = {
+	id = DWFairyTales.130
+	is_triggered_only = yes # Triggered from .120
+	hide_window = yes # Nothing to see here
+	immediate = {
+		if = { # If we're at affection 3, then we're looking at Belle being able to join the court.
+			limit = {
+				has_character_flag = dw_beauty_affection_3
+			}
+			narrative_event = { id = DWFairyTales.450 }
+			break = yes # takes us out of the immediate block
+		}
+		if = { # We're building on our affection from 2 to 3
+			limit = {
+				has_character_flag = dw_beauty_affection_2
+			}
+			narrative_event = { id = DWFairyTales.420 }
+			break = yes # takes us out of the immediate block
+		}
+		if = { # We're building on our affection from 1 to 2
+			limit = {
+				has_character_flag = dw_beauty_affection_1
+			}
+			narrative_event = { id = DWFairyTales.360 }
+			break = yes # takes us out of the immediate block
+		}
+		if = { # We're building on our corruption from 1 to 2
+			limit = {
+				has_character_flag = dw_beauty_corruption_1
+			}
+			narrative_event = { id = DWFairyTales.460 }
+			break = yes # takes us out of the immediate block
+		}
+		if = { # We're building on our corruption from 2 to 3, and player intends to Keep Belle for themself
+			limit = {
+				has_character_flag = dw_beauty_corruption_2
+				has_character_flag = dw_belle_keep
+			}
+			narrative_event = { id = DWFairyTales.470 }
+			break = yes # takes us out of the immediate block
+		}
+		if = { # Corruption 3 visit
+			limit = {
+				has_character_flag = dw_beauty_corruption_3
+			}
+			narrative_event = { id = DWFairyTales.490 }
+			break = yes # takes us out of the immediate block
+		}
+		if = { # We've not yet started to shape beauty
+			limit = { 
+				NOR = {
+					has_character_flag = dw_beauty_corruption_1
+					has_character_flag = dw_beauty_corruption_2
+					has_character_flag = dw_beauty_affection_1
+					has_character_flag = dw_beauty_affection_2
+					has_character_flag = dw_beauty_affection_3
+					has_character_flag = dw_beauty_hunted_by_gaston_1
+					has_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+					has_character_flag = dw_beauty_gaston_homosexual_1
+					has_character_flag = dw_beauty_gaston_straightsex_1
+					has_character_flag = dw_beauty_brokenheart
+					has_character_flag = dw_beauty_justfriends
+				}
+			}
+			narrative_event = { id = DWFairyTales.140 }
+			break = yes # takes us out of the immediate block
+		}
+		# if we get down here, then things have already happened, so Beauty won't be in.
+		narrative_event = { id = DWFairyTales.149 }
+	}
+}
+# .140 Checking in on Beauty in the Cobbler shop - initial encounter
+narrative_event = {
+	id = DWFairyTales.140
+	desc = "DWFairyTales140"
+	picture = beautybeast_belle1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .130
+	
+	option = { # Brought Belle a romantic book
+		trigger = {
+			diplomacy = 7
+		}
+		tooltip_info = diplomacy
+		name = "DWFairyTales140A"
+		narrative_event = { id = DWFairyTales.150 }
+	}
+	option = { # Brought Belle an erotic book
+		trigger = {
+			intrigue = 7
+		}
+		tooltip_info = intrigue
+		name = "DWFairyTales140B"
+		narrative_event = { id = DWFairyTales.160 }
+	}
+	option = { # Join me for a hunt?
+		trigger = {
+			martial = 7
+		}
+		tooltip_info = martial
+		name = "DWFairyTales140C"
+		narrative_event = { id = DWFairyTales.170 }
+	}
+	option = { # Let's grab a drink at the lodge
+		name = "DWFairyTales140D"
+		character_event = { id = DWFairyTales.200 }
+	}
+}
+# .149 Checking in on Beauty in the Cobbler shop - no more encounters with Beauty
+narrative_event = {
+	id = DWFairyTales.149
+	desc = "DWFairyTales149"
+	picture = cobbler
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .130
+	
+	option = { # Okay, take care.
+		name = "DWFairyTales149A"
+	}
+}
+# .150 Beauty receives the romantic book from the player
+narrative_event = {
+	id = DWFairyTales.150
+	desc = "DWFairyTales150"
+	picture = beautybeast_belle1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .140
+	
+	option = { #Until next time
+		name = "DWFairyTales150A"
+		set_character_flag = dw_beauty_affection_1
+	}
+}
+# .160 Beauty receives the erotic book from the player
+narrative_event = {
+	id = DWFairyTales.160
+	desc = "DWFairyTales160"
+	picture = beautybeast_belle1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .140
+	
+	option = { #Until next time
+		name = "DWFairyTales160A"
+		set_character_flag = dw_beauty_corruption_1
+	}
+}
+# .170 Beauty invited to go hunting from the player
+narrative_event = {
+	id = DWFairyTales.170
+	desc = "DWFairyTales170"
+	picture = beautybeast_belle1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .140
+	
+	option = { #Introduced to Gaston
+		name = "DWFairyTales170A"
+		narrative_event = { id = DWFairyTales.180 }
+	}
+	option = { #Until next time
+		name = "DWFairyTales170B"
+	}
+}
+# .180 Beauty introduces the player to Gaston for a hunting companion (part 1)
+narrative_event = {
+	id = DWFairyTales.180
+	desc = "DWFairyTales180"
+	picture = beautybeast_gaston1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .170
+	
+	option = { 
+		name = "DWFairyTales180A"
+		narrative_event = { id = DWFairyTales.185 }
+	}
+}
+# .185 Beauty introduces the player to Gaston for a hunting companion (part 2)
+narrative_event = {
+	id = DWFairyTales.185
+	desc = "DWFairyTales185"
+	picture = beautybeast_gaston1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .180
+	
+	option = { # I'm interested
+		trigger = {
+			NOR = { # If this arrangement has already been proposed via .320, we don't want to rehash it.
+				has_character_flag = dw_beauty_hunted_by_gaston_1
+				has_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+			}
+		}
+		name = "DWFairyTales185A"
+		set_character_flag = dw_beauty_hunted_by_gaston_1
+	}
+	option = { # I'm not interested
+		trigger = {
+			NOR = { # If this arrangement has already been proposed via .320, we don't want to rehash it.
+				has_character_flag = dw_beauty_hunted_by_gaston_1
+				has_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+			}
+		}
+		name = "DWFairyTales185B"
+		set_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+	}
+	option = { # What about you and I instead (homosexual advance)?
+		trigger = {
+			is_female = no
+			trait = homosexual
+			is_adult = yes
+		}
+		tooltip_info = homosexual
+		name = "DWFairyTales185C"
+		set_character_flag = dw_beauty_gaston_homosexual_1
+		narrative_event = { id = DWFairyTales.190 }
+	}
+	option = { # What about you and I instead (straight advance)?
+		trigger = {
+			is_female = yes
+			is_adult = yes
+		}
+		name = "DWFairyTales185C"
+		set_character_flag = dw_beauty_gaston_straightsex_1
+		if = {
+			limit = {
+				trait = futa
+			}
+			narrative_event = { id = DWFairyTales.199 }
+			break = yes # We exit the Option block
+		}
+		narrative_event = { id = DWFairyTales.195 }
+	}
+	option = {
+		trigger = {
+			OR = { # If this arrangement has already been agreed on, we want to display this simple end event option, so we don't force sex on the player
+				has_character_flag = dw_beauty_hunted_by_gaston_1
+				has_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+			}
+		}
+		name = "DWFairyTales185D"		
+	}
+}
+# .190 Gaston and the player get busy (homosexual context)
+narrative_event = {
+	id = DWFairyTales.190
+	desc = "DWFairyTales190"
+	picture = beautybeast_gaston_gunshow
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .185
+	
+	option = { # You should come join my court.
+		name = "DWFairyTales190A"
+		add_character_modifier = { name = dw_good_sex duration = 90 }		
+		hidden_tooltip = {
+			character_event = { id = DWFairyTales.1 } # Creates Gaston
+		}
+	}
+	option = { # No invitation to court
+		name = "DWFairyTales190B"		
+		add_character_modifier = { name = dw_good_sex duration = 90 }
+	}
+}
+# .195 Gaston and the player get busy (straight content)
+narrative_event = {
+	id = DWFairyTales.195
+	desc = "DWFairyTales195"
+	picture = beautybeast_gaston_gunshow
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .185
+	
+	option = { # You should come join my court.
+		name = "DWFairyTales195A"
+		add_character_modifier = { name = dw_good_sex duration = 90 }		
+		hidden_tooltip = {
+			character_event = { id = DWFairyTales.1 } # Creates Gaston
+		}
+	}
+	option = { # No invitation to court
+		name = "DWFairyTales195B"		
+		add_character_modifier = { name = dw_good_sex duration = 90 }
+		hidden_tooltip = { character_event = { id = DWCore.9010 }} # Chance that female gets knocked up by Gaston
+	}
+}
+# .199 Gaston and the player get busy (futa content)
+narrative_event = {
+	id = DWFairyTales.199
+	desc = "DWFairyTales199"
+	picture = beautybeast_gaston_gunshow
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .185
+	
+	option = { # You should come join my court.
+		name = "DWFairyTales199A"
+		add_character_modifier = { name = dw_good_sex duration = 90 }		
+		hidden_tooltip = {
+			character_event = { id = DWFairyTales.1 } # Creates Gaston
+		}
+	}
+	option = { # No invitation to court
+		name = "DWFairyTales199B"		
+		add_character_modifier = { name = dw_good_sex duration = 90 }
+		hidden_tooltip = { character_event = { id = DWCore.9010 }} # Chance that female gets knocked up by Gaston
+	}
+}
+# .200 The player and Beauty head over to the lodge for a drink (check for special events - hidden)
+character_event = {
+	id = DWFairyTales.200
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered from .140
+	immediate = {
+		# Right now there is no special lodge events, but there are plans for there to be
+		narrative_event = { id = DWFairyTales.201 }
+	}
+}
+# .201 Our standard Lodge event for the player and beauty coming here for a drink
+narrative_event = {
+	id = DWFairyTales.201
+	desc = "DWFairyTales201"
+	picture = lodge
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .200
+	
+	#option = { # Get Beauty Drunk
+	#	trigger = {
+	#		OR = {
+	#			has_focus = focus_carousing
+	#			trait = socializer
+	#		}
+	#	}
+	#	name = "DWFairyTales201A"
+	#	# TODO
+	#}
+	option = { # Seduce Beauty
+		trigger = {
+			OR = {
+				has_focus = focus_seduction
+				trait = seducer
+				trait = seductress
+			}
+		}
+		name = "DWFairyTales201A"
+		narrative_event = { id = DWFairyTales.240 }
+	}
+	option = { # Discuss Scholarly pursuits
+		trigger = {
+			OR = {
+				has_focus = focus_scholarship
+				trait = scholar
+			}
+		}
+		name = "DWFairyTales201C"
+		narrative_event = { id = DWFairyTales.230 }
+	}
+	option = { # Have a drink with Beauty
+		name = "DWFairyTales201D"
+		narrative_event = { id = DWFairyTales.210 }
+	}
+}
+# .210 Enjoying a drink and conversation with Beauty
+narrative_event = {
+	id = DWFairyTales.210
+	desc = "DWFairyTales210"
+	picture = lodge
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .201
+
+	option = { # Tell me what bothers you Belle - Belle shares the curse of the Beast
+		trigger = {
+			intrigue = 8
+		}
+		name = "DWFairyTales210A"
+		tooltip_info = intrigue
+		if = {
+			limit = {
+				trait = stressed
+			}
+			remove_trait = stressed
+		}
+		narrative_event = { id = DWFairyTales.220 }
+	}
+	option = { # Until next time then Belle
+		name = "DWFairyTales210B"
+		if = {
+			limit = {
+				trait = stressed
+			}
+			remove_trait = stressed
+		}
+		set_character_flag = dw_beauty_lodge_drink_1
+	}
+}
+# .220 Belle shares her fate and the curse of the Beast (part 1)
+narrative_event = {
+	id = DWFairyTales.220
+	desc = "DWFairyTales220"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .210 / .260
+	
+	option = { # I shall find a way to help you
+		name = "DWFairyTales220A"
+		narrative_event = { id = DWFairyTales.221 }
+	}
+}
+# .221 Belle shares her fate and the curse of the Beast (part 2)
+narrative_event = {
+	id = DWFairyTales.221
+	desc = "DWFairyTales221"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .220
+	
+	option = { # Until next time
+		name = "DWFairyTales221A"
+		set_character_flag = dw_beauty_beast_curse_1
+	}
+}
+# .230 Player and Belle discuss Scholarly pursuits
+narrative_event = {
+	id = DWFairyTales.230
+	desc = "DWFairyTales230"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .201
+	
+	option = { # What a wealth of new ideas
+		name = "DWFairyTales230A"
+		add_character_modifier = { name = dw_intellectually_stimulated duration = 120 }
+		set_character_flag = dw_beauty_scholarly_chat_1
+	}
+}
+# .240 Player uses their skills in seduction on Belle
+narrative_event = {
+	id = DWFairyTales.240
+	desc = "DWFairyTales240"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .201
+	
+	option = { # Leave her wanting more
+		name = "DWFairyTales240A"
+		set_character_flag = dw_belle_seduction_1
+	}
+	option = { # Male seduces her
+		trigger = {
+			is_female = no
+		}
+		name = "DWFairyTales240B"
+		set_character_flag = dw_belle_seduction_3
+		narrative_event = { id = DWFairyTales.250 }
+	}
+	option = { # Female seduces her
+		trigger = {
+			is_female = yes
+		}
+		name = "DWFairyTales240C"
+		set_character_flag = dw_belle_seduction_3
+		narrative_event = { id = DWFairyTales.270 }
+	}
+}
+# .250 Male player seduces Beauty
+narrative_event = {
+	id = DWFairyTales.250
+	desc = "DWFairyTales250"
+	picture = beautybeast_belle_seduction1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .240
+
+	option = { # Return with me
+		name = "DWFairyTales250A"
+		add_character_modifier = { name = dw_good_sex duration = 90 }
+		narrative_event = { id = DWFairyTales.260 }
+	}
+	option = { # Thanks!
+		name = "DWFairyTales250A"
+		add_character_modifier = { name = dw_good_sex duration = 90 }
+	}
+}
+# .260 Beauty turns down the offer to return to the players court after an evening of love making
+narrative_event = {
+	id = DWFairyTales.260
+	desc = "DWFairyTales260"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .250 / .270
+	
+	option = { # I cannot, as I'm cursed
+		name = "DWFairyTales260A"
+		narrative_event = { id = DWFairyTales.220 }
+	}
+}
+# .270 Female player seduces Beauty
+narrative_event = {
+	id = DWFairyTales.270
+	desc = "DWFairyTales270"
+	picture = beautybeast_belle_seduction1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .240
+	
+	option = { # Return with me
+		name = "DWFairyTales270A"
+		add_character_modifier = { name = dw_good_sex duration = 90 }
+		narrative_event = { id = DWFairyTales.260 }
+	}
+	option = { # Thanks!
+		name = "DWFairyTales270A"
+		add_character_modifier = { name = dw_good_sex duration = 90 }
+	}
+}
+# .280 Visiting the Bakery (we first check for any special visit needs - hidden)
+character_event = {
+	id = DWFairyTales.280
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Is triggered from .110
+	immediate = {
+		if = { # The Beast is no longer a threat
+			limit = {
+				OR = {
+					has_global_flag = dw_beast_slain
+					has_global_flag = dw_beast_tamed
+				}
+				NOT = { has_global_flag = dw_beast_baker_thanks }
+			}
+			narrative_event = { id = DWFairyTales.282 } # Thanks from the baker
+			break = yes  # We break out of the immediate block
+		}
+		#Normal Bakery Visit
+		narrative_event = { id = DWFairyTales.281 }
+	}
+}
+# .281 Default Player visits the bakery
+narrative_event = {
+	id = DWFairyTales.281
+	desc = "DWFairyTales281"
+	picture = bakery
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .280
+	
+	option = { # Yum, warm buns
+		name = "DWFairyTales281A"
+		add_character_modifier = { name = dw_excellent_meal duration = 60 }
+	}
+}
+# .282 Player visits the bakery - Thanks for the Beast no longer being a threat
+narrative_event = {
+	id = DWFairyTales.282
+	desc = "DWFairyTales282"
+	picture = bakery
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered by .280
+	option = { # Yum, warm buns
+		name = "DWFairyTales282A"
+		add_character_modifier = { name = dw_excellent_meal duration = 90 }
+		set_global_flag = dw_beast_baker_thanks
+	}
+}
+# .290 Visiting the Lodge alone (differs from the Lodge check where Belle and the player are going together - hidden)
+character_event = {
+	id = DWFairyTales.290
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Is triggered from .110
+	immediate = {
+		if = { # The Beast is no longer a threat
+			limit = {
+				OR = {
+					has_global_flag = dw_beast_slain
+					has_global_flag = dw_beast_tamed
+				}
+				NOT = { has_global_flag = dw_beast_lodge_thanks }
+			}
+			narrative_event = { id = DWFairyTales.292 } # Thanks from the Lodge
+			break = yes  # We break out of the immediate block
+		}
+		#Normal Lodge Visit
+		narrative_event = { id = DWFairyTales.291 }
+	}
+}
+# .291 Normal Lodge Visit (player)
+narrative_event = {
+	id = DWFairyTales.291
+	desc = "DWFairyTales291"
+	picture = lodge
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .290
+	
+	option = { # Enjoy the atmosphere for the evening
+		name = "DWFairyTales291A"
+		if = {
+			limit = {
+				trait = stressed
+			}
+			remove_trait = stressed
+		}
+		add_character_modifier = { name = dw_one_of_the_people duration = 180 }
+	}
+	option = { # Hook up with the Bar Maid
+		trigger = {
+			is_adult = yes
+			wealth = 2
+		}
+		name = "DWFairyTales291B"
+		wealth = -2
+		narrative_event = { id = DWFairyTales.300 }
+	}
+	option = { # Chill with Gaston
+		name = "DWFairyTales291C"
+		narrative_event = { id = DWFairyTales.310 }
+	}
+}
+# .292 Thanks for defeating Beast at Lodge (player)
+narrative_event = {
+	id = DWFairyTales.292
+	desc = "DWFairyTales292"
+	picture = lodge
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered by .290
+	option = { # Enjoy the atmosphere for the evening
+		name = "DWFairyTales292A"
+		if = {
+			limit = {
+				trait = stressed
+			}
+			remove_trait = stressed
+		}
+		add_character_modifier = { name = dw_one_of_the_people duration = 180 }
+		set_global_flag = dw_beast_lodge_thanks
+	}
+}
+# .300 Player hooks-up with the bar maid
+narrative_event = {
+	id = DWFairyTales.300
+	desc = "DWFairyTales300"
+	picture = lodge_barmaid_service1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .291
+	
+	option = { # Service with a smile
+		name = "DWFairyTales300A"
+		add_character_modifier = { name = dw_good_sex duration = 90 }
+		set_character_flag = dw_babette_service_1
+	}
+}
+# .310 Player chills with Gaston's crew
+narrative_event = {
+	id = DWFairyTales.310
+	desc = "DWFairyTales310"
+	picture = beautybeast_gaston1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .291
+	
+	option = { # Compare hunting tales
+		trigger = {
+			OR = {
+				trait = hunter
+				has_focus = focus_hunting
+			}
+		}
+		name = "DWFairyTales310A"
+		set_character_flag = dw_gastons_crew_1
+		narrative_event = { id = DWFairyTales.320 }
+	}
+	option = { # Share battle tales
+		trigger = {
+			martial = 10
+		}
+		tooltip_info = martial
+		name = "DWFairyTales310B"
+		set_character_flag = dw_gastons_crew_1
+		narrative_event = { id = DWFairyTales.340 }
+	}
+	option = { # Listen to Gaston's tales
+		name = "DWFairyTales310C"
+		set_character_flag = dw_gastons_crew_1
+	}
+}
+# .320 Player shares some hunting tales with Gaston's crew
+narrative_event = {
+	id = DWFairyTales.320
+	desc = "DWFairyTales320"
+	picture = beautybeast_gaston1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .310
+	
+	option = { # Agree to 'hunting' Belle with Gaston
+		trigger = {
+			is_adult = yes
+			NOR = { # If this arrangement has already been proposed via .185, we don't want to rehash it.
+				has_character_flag = dw_beauty_hunted_by_gaston_1
+				has_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+			}
+		}
+		name = "DWFairyTales320A"
+		set_character_flag = dw_beauty_hunted_by_gaston_1
+	}
+	option = { # Don't agree to 'hunt' Belle
+		trigger = {
+			NOR = { # If this arrangement has already been proposed via .185, we don't want to rehash it.
+				has_character_flag = dw_beauty_hunted_by_gaston_1
+				has_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+			}
+		}
+		name = "DWFairyTales320B"
+		set_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+	}
+	option = { # Join Gaston and the Bimbettes
+		trigger = {
+			is_adult = yes
+		}
+		name = "DWFairyTales320C"
+		narrative_event = { id = DWFairyTales.330 }
+	}
+	option = { # Wish them all a good night
+		name = "DWFairyTales320D"
+	}
+}
+# .330 Player joins Gaston in bedding the triplets (part 1)
+narrative_event = {
+	id = DWFairyTales.330
+	desc = "DWFairyTales330"
+	picture = beautybeast_gaston_triplets1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .320
+	
+	option = { # My turn
+		name = "DWFairyTales330A"
+		if = { # If we've a dick, we go to one event
+			limit = {
+				OR = {
+					is_female = no
+					trait = futa
+				}
+			}
+			narrative_event = { id = DWFairyTales.333 }
+			break = yes # We leave the option block
+		}
+		# If we reach this, we should only have a pussy
+		narrative_event = { id = DWFairyTales.336 }
+	}
+}
+# .333 Player joins Gaston in bedding the triplets (part 2 - has cock)
+narrative_event = {
+	id = DWFairyTales.333
+	desc = "DWFairyTales333"
+	picture = beautybeast_triplets2
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .330
+	
+	option = { # My turn
+		name = "DWFairyTales333A"
+		add_character_modifier = { name = dw_good_sex duration = 90 }
+		set_character_flag = dw_bimbette_service_1
+	}
+}
+# .336 Player joins Gaston in bedding the triplets (part 2 - has pussy)
+narrative_event = {
+	id = DWFairyTales.336
+	desc = "DWFairyTales336"
+	picture = beautybeast_triplets3
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .330
+	
+	option = { # My turn
+		name = "DWFairyTales336A"
+		add_character_modifier = { name = dw_good_sex duration = 90 }
+		set_character_flag = dw_bimbette_service_1
+	}
+}
+# .340 Player shares some battle tales with Gaston's crew
+narrative_event = {
+	id = DWFairyTales.340
+	desc = "DWFairyTales340"
+	picture = beautybeast_gaston1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered by .310
+	
+	option = { # Join Gaston and the Bimbettes
+		name = "DWFairyTales340A"
+		narrative_event = { id = DWFairyTales.330 }
+	}
+	option = { # Wish them all a good night
+		name = "DWFairyTales340B"
+	}
+}
+# .350 Going Hunting (we first check for any special visit needs - hidden)
+character_event = {
+	id = DWFairyTales.350
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Is triggered from .110
+	immediate = {
+		if = { # The Beast is no longer a threat
+			limit = {
+				OR = {
+					has_global_flag = dw_beast_slain
+					has_global_flag = dw_beast_tamed
+				}
+			}
+			random_list = {
+				50 = { narrative_event = { id = DWFairyTales.410 }} # Cobbler banging in the forest
+				50 = { narrative_event = { id = DWFairyTales.353 }} # Simple hunt with retainers and nabbing a rabbit
+			}
+			break = yes  # We break out of the immediate block
+		}
+		if = { # Check to see if the player became a coward against the Beast
+			limit = {
+				has_character_flag = dw_beast_hunt_coward
+			}
+			narrative_event = { id = DWFairyTales.400 }
+			break = yes # We break out of the immediate block
+		}
+		if = { # If the player is a hunter, then they'll notice the tracks of an unknown beast.
+			limit = {
+				OR = {
+					has_focus = focus_hunting
+					trait = hunter
+				}
+			}
+			narrative_event = { id = DWFairyTales.351 }
+			break = yes # we break out of the immediate block
+		}
+		# This triggers if we've a normal person who's hunting for pleasure
+		narrative_event = { id = DWFairyTales.353 }
+	}
+}
+# .351 The player, as a hunter notices some abnormal tracks and catches a glimpse of a large figure in the distance
+narrative_event = {
+	id = DWFairyTales.351
+	desc = "DWFairyTales351"
+	picture = forest1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .350
+	
+	option = { # What manner of beast is this?
+		name = "DWFairyTales351A"
+		set_character_flag = dw_beast_hunt_1
+		narrative_event = { id = DWFairyTales.370 days = 30 }
+	}
+}
+# .353 The player, hunts down some game - killing a rabbit
+narrative_event = {
+	id = DWFairyTales.353
+	desc = "DWFairyTales353"
+	picture = forest1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .350
+	
+	option = { # A lucky charm
+		name = "DWFairyTales353A"
+		add_character_modifier = {
+			name = dw_lucky_charm
+			duration = 90
+		}
+	}
+}
+# .360 The player meets Belle again and has a chance to build her affection (part 1)
+narrative_event = {
+	id = DWFairyTales.360
+	desc = "DWFairyTales360"
+	picture = beautybeast_belle1
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .130
+	
+	option = { # Sure, I'll walk with you
+		trigger = {
+			is_married = yes # Belle confronts the player already being married
+		}
+		name = "DWFairyTales360A"
+		narrative_event = { id = DWFairyTales.361 }
+	}
+	option = { # Sure, I'll walk with you
+		trigger = {
+			is_married = no # Belle confronts the player about their differences in station
+		}
+		name = "DWFairyTales360A"
+		narrative_event = { id = DWFairyTales.365 }
+	}
+}
+# .361 The player meets Belle again and has a chance to build her affection (part 2 - married)
+narrative_event = {
+	id = DWFairyTales.361
+	desc = "DWFairyTales361"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .360
+	
+	option = { # My marriage is one of political convenience, not love (Affection increases)
+		name = "DWFairyTales361A"
+		clr_character_flag = dw_beauty_affection_1
+		set_character_flag = dw_beauty_affection_2
+		narrative_event = { id = DWFairyTales.367 }
+	}
+	option = { # My heart is big enough for both of you (Belle's heartbroken)
+		name = "DWFairyTales361B"
+		clr_character_flag = dw_beauty_affection_1
+		set_character_flag = dw_beauty_brokenheart
+		narrative_event = { id = DWFairyTales.368 }
+	}
+	option = { # I'm just looking for a friend Belle (Belle may become a friend later)
+		name = "DWFairyTales361C"
+		clr_character_flag = dw_beauty_affection_1
+		set_character_flag = dw_beauty_justfriends
+		narrative_event = { id = DWFairyTales.369 }
+	}
+}
+# .365 The player meets Belle again and has a chance to build her affection (part 2 - not married)
+narrative_event = {
+	id = DWFairyTales.365
+	desc = "DWFairyTales365"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .360
+	
+	option = { # I won't let my feelings be restricted by station (Affection increases)
+		name = "DWFairyTales365A"
+		clr_character_flag = dw_beauty_affection_1
+		set_character_flag = dw_beauty_affection_2
+		narrative_event = { id = DWFairyTales.367 }
+	}
+	option = { # Most commoners would feel blessed to receive my affection (Belle's heartbroken)
+		name = "DWFairyTales365B"
+		clr_character_flag = dw_beauty_affection_1
+		set_character_flag = dw_beauty_brokenheart
+		narrative_event = { id = DWFairyTales.368 }
+	}
+	option = { # I'm just looking for a friend Belle (Belle may become a friend later)
+		name = "DWFairyTales365C"
+		clr_character_flag = dw_beauty_affection_1
+		set_character_flag = dw_beauty_justfriends
+		narrative_event = { id = DWFairyTales.369 }
+	}
+}
+# .367 The player meets Belle again and has a chance to build her affection (part 3 - Affection increased)
+narrative_event = {
+	id = DWFairyTales.367
+	desc = "DWFairyTales367"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .361 / .365
+	
+	option = {
+		name = "DWFairyTales367A"
+	}
+}
+# .368 The player meets Belle again and has a chance to build her affection (part 3 - Belle's heartbroken)
+narrative_event = {
+	id = DWFairyTales.368
+	desc = "DWFairyTales368"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .361 / .365
+	
+	option = {
+		name = "DWFairyTales368A"
+	}
+}
+# .369 The player meets Belle again and has a chance to build her affection (part 3 - Belle's a Friend)
+narrative_event = {
+	id = DWFairyTales.369
+	desc = "DWFairyTales369"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	
+	is_triggered_only = yes # Triggered from .361 / .365
+	
+	option = {
+		name = "DWFairyTales369A"
+	}
+}
+# .370 Player learns more about the story of the Beast
+narrative_event = {
+	id = DWFairyTales.370
+	desc = "DWFairyTales370"
+	picture = forest1
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .351
+	immediate = {
+		# We grab the spy master so we can use them in localization
+		random_courtier = {
+			limit = {
+				has_job_title = job_spymaster
+			}
+			save_event_target_as = dw_my_spymaster
+		}
+	}
+	option = { # Hunting Party
+		name = "DWFairyTales370A"
+		set_character_flag = dw_hunt_the_beast_1
+	}
+	option = { # Verify Curse with Belle
+		trigger = {
+			NOT ={
+				has_character_flag = dw_beauty_beast_curse_1 # We check to see if Belle already mentioned the curse
+			}
+		}
+		name = "DWFairyTales370B"
+		set_character_flag = dw_beauty_beast_curse_0
+		#TODO Add an event in the Visit Belle area where she can be asked about the curse
+	}
+	option = { # Curses, bah
+		name = "DWFairyTales370C"
+	}
+	option = { # The curse is real!
+		trigger = {
+			has_character_flag = dw_beauty_beast_curse_1 # We check to see if Belle already mentioned the curse
+		}
+		name = "DWFairyTales370D"
+		clr_character_flag = dw_beauty_beast_curse_1
+		set_character_flag = dw_beauty_beast_curse_2
+		#TODO Add an event where player discusses how to deal with the curse with Belle
+	}
+}
+# .380 Hunting the Beast - no Gaston in court
+narrative_event = {
+	id = DWFairyTales.380
+	desc = "DWFairyTales380"
+	picture = forest1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .350
+	immediate = {
+		clr_character_flag = dw_hunt_the_beast_1 # We clear this to keep it from looping
+	}
+	option = { # Press On
+		name = "DWFairyTales380A"
+		narrative_event = { id = DWFairyTales.381 }
+	}
+	option = { # End pursuit
+		name = "DWFairyTales380B"
+	}
+}
+# .381 Hunting the Beast - no Gaston in court - Part 2
+narrative_event = {
+	id = DWFairyTales.381
+	desc = "DWFairyTales381"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .380
+	option = { # Hunters Fire
+		name = "DWFairyTales381A"
+		narrative_event = { id = DWFairyTales.382 }
+	}
+	option = { # Duel with Beast
+		trigger = {
+			martial = 15
+		}
+		name = "DWFairyTales381B"
+		tooltip_info = martial #Highlights the box to show it's a special selection
+		narrative_event = { id = DWFairyTales.385 }
+	}
+	option = { # Run for your lives!
+		trigger = {
+			NOT = { trait = brave } # If the character is brave, they won't turn and run
+		}
+		name = "DWFairyTales381C"
+		narrative_event = { id = DWFairyTales.387 }
+	}
+}
+# .382 Hunting the Beast - no Gaston in court - Hunters Fire! Part 3
+narrative_event = {
+	id = DWFairyTales.382
+	desc = "DWFairyTales382"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .381
+	option = { # Finish Him
+		name = "DWFairyTales382A"
+		narrative_event = { id = DWFairyTales.383 }
+	}
+	option = { # Spare Him
+		name = "DWFairyTales382B"
+		narrative_event = { id = DWFairyTales.384 }
+	}
+}
+# .383 Hunting the Beast - no Gaston in court - Hunters Fire! - Beast Killed
+narrative_event = {
+	id = DWFairyTales.383
+	desc = "DWFairyTales383"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .382
+	option = { # Nickname potential
+		trigger = {
+			has_nickname = no
+		}
+		name = "DWFairyTales383A"
+		give_nickname = nick_the_brave
+		add_trait = wounded
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+	option = { # It is done
+		name = "DWFairyTales383B"
+		add_trait = wounded
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+}
+# .384 Hunting the Beast - no Gaston in court - Hunters Fire! - Beast Spared
+narrative_event = {
+	id = DWFairyTales.384
+	desc = "DWFairyTales384"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .382
+	option = { # Spare Him
+		name = "DWFairyTales384A"
+		set_global_flag = dw_beast_tamed
+	}
+	option = { # Finish Him
+		name = "DWFairyTales384B"
+		set_global_flag = dw_beast_slain
+		piety = 100 # Higher piety gain is due to resisting the temptation offered by the Beast
+	}
+}
+# .385 Hunting the Beast - no Gaston in court - Duel with Beast - Beast Killed
+narrative_event = {
+	id = DWFairyTales.385
+	desc = "DWFairyTales385"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .381
+	option = { # Nickname potential - Curse Breaker
+		trigger = {
+			has_nickname = no
+		}
+		name = "DWFairyTales385A"
+		give_nickname = nick_dw_cursebreaker
+		add_trait = wounded
+		prestige = 50
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+	option = { # Nickname potential - Beast Slayer
+		trigger = {
+			has_nickname = no
+		}
+		name = "DWFairyTales385B"
+		give_nickname = nick_dw_beastslayer
+		add_trait = wounded
+		prestige = 50
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+	option = { # It is done
+		name = "DWFairyTales385C"
+		add_trait = wounded
+		prestige = 50
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+}
+# .387 Hunting the Beast - no Gaston in court - Flee from the Beast
+narrative_event = {
+	id = DWFairyTales.387
+	desc = "DWFairyTales387"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .381
+	option = { # Leave my men behind
+		name = "DWFairyTales387A"
+		prestige = -100
+		clr_character_flag = dw_hunt_the_beast_1
+		set_character_flag = dw_beast_hunt_coward
+		if = {
+			limit = {
+				NOT = { trait = craven }
+			}
+			add_trait = craven
+		}
+	}
+	option = { # Try to save my men
+		name = "DWFairyTales387B"
+		narrative_event = { id = DWFairyTales.388 }
+	}
+}
+# .388 Hunting the Beast - no Gaston in court - Fleeing - Limit loses
+narrative_event = {
+	id = DWFairyTales.388
+	desc = "DWFairyTales388"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .382
+	option = { # Live another Day
+		name = "DWFairyTales388A"
+		add_trait = wounded
+	}
+}
+# .390 The Beast Attacks - Routing (hidden)
+character_event = {
+	id = DWFairyTales.390
+	hide_window = yes #Nothing to see here.
+	is_triggered_only = yes #From targeted decision
+	immediate = {
+		FROM = {
+			save_event_target_as = dw_beast_target
+		}
+		random_list = {
+			90 = { # Target is slain
+				narrative_event = { id = DWFairyTales.391 }
+			}
+			5 = { # Target is maimed
+				modifier = { # Commanders are a little more difficult
+					factor = 3
+					event_target:dw_beast_target = {
+						has_minor_title = title_commander 
+					}
+				}
+				modifier = { # Council member individuals are slightly more difficult
+					factor = 2
+					event_target:dw_beast_target = {
+						has_job_title = yes 
+					}
+				}
+				modifier = { # A ruler is even more difficult
+					factor = 6
+					event_target:dw_beast_target = {
+						is_ruler = yes
+					}
+				}
+				narrative_event = { id = DWFairyTales.393 }
+			}
+			5 = { # The Beast is Slain
+				modifier = { # Commanders are a little more difficult
+					factor = 2
+					event_target:dw_beast_target = {
+						has_minor_title = title_commander 
+					}
+				}
+				modifier = { # Council member  individuals are slightly more difficult
+					factor = 1.5
+					event_target:dw_beast_target = {
+						has_job_title = yes 
+					}
+				}
+				modifier = { # A ruler is even more difficult
+					factor = 5
+					event_target:dw_beast_target = {
+						is_ruler = yes
+					}
+				}
+				narrative_event = { id = DWFairyTales.395 }
+			}
+		}
+	}
+}
+# .391 The Beast Attacks - Target Slain
+narrative_event = {
+	id = DWFairyTales.391
+	desc = "DWFairyTales391"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_attacks
+	is_triggered_only = yes # triggered by .390
+	option = { # It is done
+		name = "DWFairyTales391A"
+		event_target:dw_beast_target = {
+			death = {
+				death_reason = death_murder_unknown
+			}
+		}
+	}
+}
+# .393 The Beast Attacks - Target Maimed
+narrative_event = {
+	id = DWFairyTales.393
+	desc = "DWFairyTales393"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_attacks
+	is_triggered_only = yes # triggered by .390
+	option = { # It is done
+		name = "DWFairyTales393A"
+		event_target:dw_beast_target = {
+			add_trait = maimed
+		}
+	}
+}
+# .395 The Beast Attacks - Beast Killed
+narrative_event = {
+	id = DWFairyTales.395
+	desc = "DWFairyTales395"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_attacks
+	is_triggered_only = yes # triggered by .390
+	option = { # It is done
+		name = "DWFairyTales395A"
+		event_target:dw_beast_target = {
+			add_trait = wounded
+			prestige = 50
+		}
+		clr_global_flag = dw_beast_tamed
+		set_global_flag = dw_beast_slain
+	}
+}
+# .399 The Beast Attacks - Character Cooldown Flag removed (hidden)
+character_event = {
+	id = DWFairyTales.399
+	hide_window = yes #Nothing to see here.
+	is_triggered_only = yes #From targeted decision
+	immediate = {
+		clr_character_flag = dw_beast_decade_recovery
+	}
+}
+# .400 Go Hunting - Changes mind due to cowardice
+narrative_event = {
+	id = DWFairyTales.400
+	desc = "DWFairyTales400"
+	picture = forest1
+	title = dw_beauty_beast
+	is_triggered_only = yes # triggered by .390
+	option = { # I... I just cannot bring myself to press on.
+		name = "DWFairyTales400A"
+	}
+}
+# .410 Go Hunting - Find Cobbler and Barmaid - Part 1
+narrative_event = {
+	id = DWFairyTales.410
+	desc = "DWFairyTales410"
+	picture = beautybeast_cobbler_barmaid_1
+	title = dw_beauty_beast
+	is_triggered_only = yes # triggered by .350
+	option = { # I should give them privacy
+		name = "DWFairyTales410A"
+		piety = 10
+	}
+	option = { # It wouldn't hurt to watch
+		name = "DWFairyTales410B"
+		narrative_event = { id = DWFairyTales.411 }
+	}
+}
+# .411 Go Hunting - Find Cobbler and Barmaid - Part 2
+narrative_event = {
+	id = DWFairyTales.411
+	desc = "DWFairyTales411"
+	picture = beautybeast_cobbler_barmaid_2
+	title = dw_beauty_beast
+	is_triggered_only = yes # triggered by .410
+	option = { # Well done old man
+		name = "DWFairyTales411A"
+	}
+}
+# .420 The player meets Belle again and has a chance to build her affection to level 3 (part 1)
+narrative_event = {
+	id = DWFairyTales.420
+	desc = "DWFairyTales420"
+	picture = beautybeast_belle1
+	title = dw_beauty_beast	
+	is_triggered_only = yes # Triggered from .130
+	option = { # Sure, I'll walk with you - Aware of the curse
+		trigger = {
+			OR = {
+				has_character_flag = dw_beauty_beast_curse_1
+				has_character_flag = dw_beauty_beast_curse_2
+			}
+		}
+		name = "DWFairyTales420A"
+		narrative_event = { id = DWFairyTales.421 }
+	}
+	option = { # Sure, I'll walk with you - Not aware of the curse
+		trigger = {
+			NOR = {
+				has_character_flag = dw_beauty_beast_curse_1
+				has_character_flag = dw_beauty_beast_curse_2
+			}
+		}
+		name = "DWFairyTales420A"
+		narrative_event = { id = DWFairyTales.425 }
+	}
+	option = { # I'll walk with you - Beast threat is no more
+		trigger = {
+			OR = {
+				has_global_flag = dw_beast_slain
+				has_global_flag = dw_beast_tamed
+			}
+		}
+		name = "DWFairyTales420A"
+		narrative_event = { id = DWFairyTales.429 }
+	}
+}
+# .421 The player meets Belle again and has a chance to build her affection to level 3 (part 2) - Knows of the curse
+narrative_event = {
+	id = DWFairyTales.421
+	desc = "DWFairyTales421"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .420
+	immediate = { #All of our actions improve the player in Belle's eyes so we're going to do this once in the immediate block instead of repeating it in all the options
+		clr_character_flag = dw_beauty_affection_2
+		set_character_flag = dw_beauty_affection_3
+	}
+	option = { # I'll see what more I can learn of this curse in court
+		trigger = {
+			has_character_flag = dw_beauty_beast_curse_1
+		}
+		name = "DWFairyTales421A"
+		narrative_event = { id = DWFairyTales.422 days = 30 }
+	}
+	option = { # I'll see what more I can learn of this curse from Gaston
+		trigger = {
+			has_character_flag = dw_beauty_beast_curse_1
+			OR = { # One of these would indicate that the character has met Gaston
+				has_character_flag = dw_beauty_hunted_by_gaston_1
+				has_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+				has_global_flag = dw_gaston_in_court
+			}
+		}
+		name = "DWFairyTales421B"
+		narrative_event = { id = DWFairyTales.423 days = 1}
+	}
+	option = { # I'll gather a hunting party to finish the Beast
+		trigger = {
+			has_character_flag = dw_beauty_beast_curse_2
+		}
+		name = "DWFairyTales421C"
+		set_character_flag = dw_hunt_the_beast_1
+	}
+	option = { # I shall follow you and ambush the Beast
+		trigger = {
+			has_character_flag = dw_beauty_beast_curse_2
+		}
+		name = "DWFairyTales421D"
+		set_character_flag = dw_beauty_beast_ambush
+	}
+	option = { # Gaston and I shall deal with the Beast
+		trigger = {
+			has_character_flag = dw_beauty_beast_curse_2
+			has_global_flag = dw_gaston_in_court
+		}
+		name = "DWFairyTales421E"
+		set_character_flag = dw_beauty_beast_gaston_ambush
+	}
+}
+# .422 Player learns more about the story of the Beast from their court
+narrative_event = {
+	id = DWFairyTales.422
+	desc = "DWFairyTales422"
+	picture = village
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .421
+	immediate = {
+		# We grab the spy master so we can use them in localization
+		random_courtier = {
+			limit = {
+				has_job_title = job_spymaster
+			}
+			save_event_target_as = dw_my_spymaster
+		}
+	}
+	option = { # Hunting Party
+		name = "DWFairyTales422A"
+		set_character_flag = dw_hunt_the_beast_1
+		clr_character_flag = dw_beauty_beast_curse_1
+		set_character_flag = dw_beauty_beast_curse_2
+	}
+	option = { # I shall follow you and ambush the Beast
+		name = "DWFairyTales422B"
+		set_character_flag = dw_beauty_beast_ambush
+		clr_character_flag = dw_beauty_beast_curse_1
+		set_character_flag = dw_beauty_beast_curse_2
+	}
+	option = { # Gaston and I shall deal with the Beast
+		trigger = {
+			has_global_flag = dw_gaston_in_court
+		}
+		name = "DWFairyTales422C"
+		set_character_flag = dw_beauty_beast_gaston_ambush
+		clr_character_flag = dw_beauty_beast_curse_1
+		set_character_flag = dw_beauty_beast_curse_2
+	}
+}
+# .423 Player learns more about the Beast from Gaston
+narrative_event = {
+	id = DWFairyTales.423
+	desc = "DWFairyTales423"
+	picture = beautybeast_gaston1
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .421
+	option = { # Gaston and I shall deal with the Beast
+		trigger = {
+			has_global_flag = dw_gaston_in_court
+		}
+		name = "DWFairyTales423A"
+		set_character_flag = dw_beauty_beast_gaston_ambush
+		clr_character_flag = dw_beauty_beast_curse_1
+		set_character_flag = dw_beauty_beast_curse_2
+	}
+	option = { # Join my court Gaston, and let us hunt!
+		trigger = {
+			NOT = { has_global_flag = dw_gaston_in_court }
+		}
+		name = "DWFairyTales423B"
+		character_event = { id = DWFairyTales.1 } # Adds Gaston to the player's court
+		set_character_flag = dw_beauty_beast_gaston_ambush
+		clr_character_flag = dw_beauty_beast_curse_1
+		set_character_flag = dw_beauty_beast_curse_2
+	}
+	option = { # I shall follow Belle and ambush the Beast
+		name = "DWFairyTales423C"
+		set_character_flag = dw_beauty_beast_ambush
+		clr_character_flag = dw_beauty_beast_curse_1
+		set_character_flag = dw_beauty_beast_curse_2
+	}
+}
+# .425 The player meets Belle again and has a chance to build her affection to level 3 (part 2) - Doesn't know of the curse
+narrative_event = {
+	id = DWFairyTales.425
+	desc = "DWFairyTales425"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .420
+	immediate = { #All of our actions improve the player in Belle's eyes so we're going to do this once in the immediate block instead of repeating it in all the options
+		clr_character_flag = dw_beauty_affection_2
+		set_character_flag = dw_beauty_affection_3
+	}
+	option = { # I'll see what more I can learn of this curse in court
+		name = "DWFairyTales425A"
+		narrative_event = { id = DWFairyTales.422 days = 30 }
+	}
+	option = { # I'll see what more I can learn of this curse from Gaston
+		trigger = {
+			OR = { # One of these would indicate that the character has met Gaston
+				has_character_flag = dw_beauty_hunted_by_gaston_1
+				has_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+				has_global_flag = dw_gaston_in_court
+			}
+		}
+		name = "DWFairyTales425B"
+		narrative_event = { id = DWFairyTales.423 days = 1}
+	}
+	option = { # I'll gather a hunting party to finish the Beast
+		name = "DWFairyTales425C"
+		set_character_flag = dw_hunt_the_beast_1
+	}
+	option = { # I shall follow you and ambush the Beast
+		name = "DWFairyTales425D"
+		set_character_flag = dw_beauty_beast_ambush
+	}
+}
+# .429 The player meets Belle again and has a chance to build her affection to level 3 (part 2) - Beast already defeated
+narrative_event = {
+	id = DWFairyTales.429
+	desc = "DWFairyTales429"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .420
+	immediate = { #All of our actions improve the player in Belle's eyes so we're going to do this once in the immediate block instead of repeating it in all the options
+		clr_character_flag = dw_beauty_affection_2
+		set_character_flag = dw_beauty_affection_3
+	}
+	option = { # Join me in my court my love
+		name = "DWFairyTales429A"
+		character_event = { id = DWFairyTales.2 } # Belle joins the player's court
+		set_character_flag = dw_beauty_belle_lover
+	}
+	option = { # Next time I return for you, it shall be to invite you to my court
+		name = "DWFairyTales429B"
+	}
+}
+# .430 Player attempts to ambush the Beast when it comes for Belle - Part 1
+narrative_event = {
+	id = DWFairyTales.430
+	desc = "DWFairyTales430"
+	picture = village
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .110
+	immediate = {
+		clr_character_flag = dw_beauty_beast_ambush
+	}
+	option = { # I've found them!
+		name = "DWFairyTales430A"
+		narrative_event = { id = DWFairyTales.431 }
+	}
+}
+# .431 Player attempts to ambush the Beast when it comes for Belle - Part 2
+narrative_event = {
+	id = DWFairyTales.431
+	desc = "DWFairyTales431"
+	picture = beautybeast_belle_beast_taken1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .430
+	option = { # I strike!
+		name = "DWFairyTales431A"
+		narrative_event = { id = DWFairyTales.432 }
+		set_character_flag = dw_beauty_deflowered
+	}
+}
+# .432 Player attempts to ambush the Beast when it comes for Belle - Part 3
+narrative_event = {
+	id = DWFairyTales.432
+	desc = "DWFairyTales432"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .431
+	option = { #Nickname potential
+		trigger = {
+			has_nickname = no
+		}
+		name = "DWFairyTales432A"
+		give_nickname = nick_dw_beastslayer
+		prestige = 50
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+	option = { #Nickname potential
+		trigger = {
+			has_nickname = no
+		}
+		name = "DWFairyTales432B"
+		give_nickname = nick_dw_cursebreaker
+		prestige = 50
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+	option = { #I am victorious
+		name = "DWFairyTales432C"
+		prestige = 50
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+}
+# .440 Player and Gaston set out to bring down the Beast - Part 1
+narrative_event = {
+	id = DWFairyTales.440
+	desc = "DWFairyTales440"
+	picture = forest1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .110
+	immediate = {
+		clr_character_flag = dw_beauty_beast_gaston_ambush
+	}
+	option = { #I take the lead
+		name = "DWFairyTales440A"
+		narrative_event = { id = DWFairyTales.441 }
+	}
+	option = { #I'll back-up Gaston
+		name = "DWFairyTales440B"
+		narrative_event = { id = DWFairyTales.445 }
+	}
+}
+# .441 Player and Gaston set out to bring down the Beast - Part 2 - Player leads
+narrative_event = {
+	id = DWFairyTales.441
+	desc = "DWFairyTales441"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .440
+	option = { #I engage the beast
+		trigger = {
+			martial = 10
+		}
+		name = "DWFairyTales441A"
+		tooltip_info = martial # To show that this is available due to a special value
+		narrative_event = { id = DWFairyTales.442 }
+	}
+	option = { #I try not to die
+		name = "DWFairyTales441B"
+		narrative_event = { id = DWFairyTales.443 }
+	}
+	option = { #I try to fall back behind Gaston
+		name = "DWFairyTales441C"
+		narrative_event = { id = DWFairyTales.444 }
+	}
+}
+# .442 Player and Gaston set out to bring down the Beast - Part 2 - Player fights and slays Beast
+narrative_event = {
+	id = DWFairyTales.442
+	desc = "DWFairyTales442"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .441
+	option = { #Nickname potential
+		trigger = {
+			has_nickname = no
+		}
+		name = "DWFairyTales442A"
+		give_nickname = nick_dw_beastslayer
+		add_trait = wounded
+		prestige = 50
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+	option = { #Nickname potential
+		trigger = {
+			has_nickname = no
+		}
+		name = "DWFairyTales442B"
+		give_nickname = nick_dw_cursebreaker
+		add_trait = wounded
+		prestige = 50
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+	option = { #I am victorious
+		name = "DWFairyTales442C"
+		add_trait = wounded
+		prestige = 50
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+}
+# .443 Player and Gaston set out to bring down the Beast - Part 2 - Player Tries not to die
+narrative_event = {
+	id = DWFairyTales.443
+	desc = "DWFairyTales443"
+	picture = beautybeast_gaston_shot
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .441
+	option = { #I somehow survived
+		name = "DWFairyTales443A"
+		add_trait = wounded
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+}
+# .444 Player and Gaston set out to bring down the Beast - Part 2 - Player Tries to hide behind Gaston
+narrative_event = {
+	id = DWFairyTales.444
+	desc = "DWFairyTales444"
+	picture = beautybeast_gaston_shot
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .441
+	immediate = {
+		random_courtier = {
+			limit = {
+				has_character_flag = dw_npc_gaston # We select Gaston
+			}
+			save_event_target_as = dw_et_gaston # and set him as an event target so we can slap him with the maimed trait
+		}
+	}
+	option = { #Gaston and I are wrecked, yet we survived
+		name = "DWFairyTales444A"
+		add_trait = maimed
+		event_target:dw_et_gaston = {
+			add_trait = maimed
+		}
+		set_global_flag = dw_beast_slain
+	}
+}
+# .445 Player and Gaston set out to bring down the Beast - Part 2 - Gaston leads
+narrative_event = {
+	id = DWFairyTales.445
+	desc = "DWFairyTales445"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .440
+	option = { #I aim for its eyes
+		trigger = {
+			martial = 15
+		}
+		name = "DWFairyTales445A"
+		tooltip_info = martial # To show that this is available due to a special value
+		narrative_event = { id = DWFairyTales.446 }
+	}
+	option = { #I do my best to support Gaston
+		name = "DWFairyTales445B"
+		narrative_event = { id = DWFairyTales.447 }
+	}
+	option = { #I flee and leave Gaston
+		name = "DWFairyTales445C"
+		narrative_event = { id = DWFairyTales.448 }
+	}
+}
+# .446 Player and Gaston set out to bring down the Beast - Part 2 - Player aims for the Beast's eyes
+narrative_event = {
+	id = DWFairyTales.446
+	desc = "DWFairyTales446"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .445
+	option = { #Nickname potential
+		trigger = {
+			has_nickname = no
+		}
+		name = "DWFairyTales446A"
+		give_nickname = nick_dw_beastslayer
+		prestige = 50
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+	option = { #Nickname potential
+		trigger = {
+			has_nickname = no
+		}
+		name = "DWFairyTales446B"
+		give_nickname = nick_dw_cursebreaker
+		prestige = 50
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+	option = { #I am victorious
+		name = "DWFairyTales446C"
+		prestige = 50
+		piety = 25
+		set_global_flag = dw_beast_slain
+	}
+}
+# .447 Player and Gaston set out to bring down the Beast - Part 2 - Player Tries to support Gaston
+narrative_event = {
+	id = DWFairyTales.447
+	desc = "DWFairyTales447"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .445
+	immediate = {
+		random_courtier = {
+			limit = {
+				has_character_flag = dw_npc_gaston # We select Gaston
+			}
+			save_event_target_as = dw_et_gaston # and set him as an event target so we can slap him with the wounded trait
+		}
+	}
+	option = { #Gaston is wounded, yet we survive
+		name = "DWFairyTales447A"
+		event_target:dw_et_gaston = {
+			add_trait = wounded
+		}
+		set_global_flag = dw_beast_slain
+	}
+}
+# .448 Player and Gaston set out to bring down the Beast - Part 2 - Player Flees and leaves Gaston behind
+narrative_event = {
+	id = DWFairyTales.448
+	desc = "DWFairyTales448"
+	picture = beautybeast_beast1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .445
+	immediate = {
+		random_courtier = {
+			limit = {
+				has_character_flag = dw_npc_gaston # We select Gaston
+			}
+			save_event_target_as = dw_et_gaston # and set him as an event target so we can use him
+		}
+	}
+	option = { #The screams and howls disappear in the distance
+		name = "DWFairyTales448A"
+		hidden_tooltip = {
+			event_target:dw_et_gaston = {
+				add_trait = maimed
+			}
+		}
+		narrative_event = { id = DWFairyTales.449 }
+		set_global_flag = dw_beast_slain
+	}
+}
+# .449 Player and Gaston set out to bring down the Beast - Part 3 - Gaston kills the player
+narrative_event = {
+	id = DWFairyTales.449
+	desc = "DWFairyTales449"
+	picture = beautybeast_gaston_shot
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .448
+	option = { #No one kills rulers like Gaston can
+		name = "DWFairyTales449A"
+		death = {
+			death_reason = death_murder_unknown # Because no one will know it was Gaston, although in honesty it's because it wasn't letting me use the event_target as a valid who
+		}
+	}
+}
+# .450 The player meets Belle again - Affection is 3 (max)
+narrative_event = {
+	id = DWFairyTales.450
+	desc = "DWFairyTales450"
+	picture = beautybeast_belle3
+	title = dw_beauty_beast	
+	is_triggered_only = yes # Triggered from .130
+	option = { # Beast is still alive
+		trigger = {
+			NOR = {
+				has_global_flag = dw_beast_slain
+				has_global_flag = dw_beast_tamed
+			}
+		}
+		name = "DWFairyTales450A"
+		narrative_event = { id = DWFairyTales.451 }
+	}
+	option = { # Beast is dead
+		trigger = {
+			OR = {
+				has_global_flag = dw_beast_slain
+				has_global_flag = dw_beast_tamed
+			}
+		}
+		name = "DWFairyTales450B"
+		narrative_event = { id = DWFairyTales.455 }
+	}
+}
+# .451 The player meets Belle again - Affection 3 (part 2) - To battle the Beast
+narrative_event = {
+	id = DWFairyTales.451
+	desc = "DWFairyTales451"
+	picture = beautybeast_belle3
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .450
+	option = { # I'll gather a hunting party to finish the Beast
+		name = "DWFairyTales421C" # We're going to reuse these labels
+		set_character_flag = dw_hunt_the_beast_1
+	}
+	option = { # I shall follow you and ambush the Beast
+		name = "DWFairyTales421D" # We're going to reuse these labels
+		set_character_flag = dw_beauty_beast_ambush
+	}
+	option = { # Gaston and I shall deal with the Beast
+		trigger = {
+			has_global_flag = dw_gaston_in_court
+		}
+		name = "DWFairyTales421E" # We're going to reuse these labels
+		set_character_flag = dw_beauty_beast_gaston_ambush
+	}
+}
+# .455 The player meets Belle again - Affection 3 (part 2) - Belle says goodbye to villagers before heading to court
+narrative_event = {
+	id = DWFairyTales.455
+	desc = "DWFairyTales455"
+	picture = beautybeast_belle3
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .450
+	option = { # Join me in my court my love
+		name = "DWFairyTales455A"
+		character_event = { id = DWFairyTales.2 } # Belle joins the player's court
+		set_character_flag = dw_beauty_belle_lover
+	}
+}
+# .460 The player meets Belle again and has a chance to further corrupt her (part 1)
+narrative_event = {
+	id = DWFairyTales.460
+	desc = "DWFairyTales460"
+	picture = beautybeast_belle_corruption1
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .130
+	option = { # Walk with me
+		trigger = {
+			NOT = { has_character_flag = dw_beauty_beast_curse_1 } # If Belle is taken out for drinks at the Lodge, the player may learn of her curse before hand
+		}
+		name = "DWFairyTales460A"
+		narrative_event = { id = DWFairyTales.461 }
+	}
+	option = { # Walk with me
+		trigger = {
+			has_character_flag = dw_beauty_beast_curse_1 # If Belle is taken out for drinks at the Lodge, the player may learn of her curse before hand
+		}
+		name = "DWFairyTales460A"
+		narrative_event = { id = DWFairyTales.463 }
+	}
+}
+# .461 The player meets Belle again and has a chance to further corrupt her (part 2) - doesn't know of curse
+narrative_event = {
+	id = DWFairyTales.461
+	desc = "DWFairyTales461"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .460
+	immediate = {
+		clr_character_flag = dw_beauty_corruption_1 # We advance our corruption storyline
+		set_character_flag = dw_beauty_corruption_2
+	}
+	option = { # Enjoy what you can, while you can
+		name = "DWFairyTales461A"
+		set_character_flag = dw_belle_share
+		set_character_flag = dw_beauty_beast_curse_1
+		narrative_event = { id = DWFairyTales.465 }
+	}
+	option = { # Only I shall have you Belle
+		name = "DWFairyTales461B"
+		set_character_flag = dw_belle_keep
+		set_character_flag = dw_beauty_beast_curse_1
+		narrative_event = { id = DWFairyTales.467 }
+	}
+}
+# .463 The player meets Belle again and has a chance to further corrupt her (part 2) - already knows of curse
+narrative_event = {
+	id = DWFairyTales.463
+	desc = "DWFairyTales463"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .460
+	immediate = {
+		clr_character_flag = dw_beauty_corruption_1 # We advance our corruption storyline
+		set_character_flag = dw_beauty_corruption_2
+	}
+	option = { # Enjoy what you can, while you can
+		name = "DWFairyTales461A" # Uses same language as 461A
+		set_character_flag = dw_belle_share
+		narrative_event = { id = DWFairyTales.465 }
+	}
+	option = { # Only I shall have you Belle
+		name = "DWFairyTales461B" # Uses same language as 461B
+		set_character_flag = dw_belle_keep
+		narrative_event = { id = DWFairyTales.467 }
+	}
+}
+# .465 The player meets Belle again and has a chance to further corrupt her (part 3) - Belle to be shared
+narrative_event = {
+	id = DWFairyTales.465
+	desc = "DWFairyTales465"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .461/.463
+	option = { # I look forward to seeing you next time.
+		name = "DWFairyTales465A"
+	}
+}
+# .467 The player meets Belle again and has a chance to further corrupt her (part 3) - Belle to be kept
+narrative_event = {
+	id = DWFairyTales.467
+	desc = "DWFairyTales467"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .461/.463
+	option = { # I look forward to seeing you next time.
+		name = "DWFairyTales467A"
+	}
+}
+# .470 The player meets Belle again, corrupt 2, Belle to be kept - player shares plans on how to keep Belle (part 1)
+narrative_event = {
+	id = DWFairyTales.470
+	desc = "DWFairyTales470"
+	picture = beautybeast_belle_corruption2
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .130
+	option = { # Take Belle Away
+		name = "DWFairyTales470A"
+		narrative_event = { id = DWFairyTales.471 }
+	}
+	option = { # Enlist the aid of Gaston
+		trigger = {
+			OR = { # One of these would indicate that the character has met Gaston
+				has_character_flag = dw_beauty_hunted_by_gaston_1
+				has_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+				has_global_flag = dw_gaston_in_court
+			}
+		}
+		name = "DWFairyTales470B"
+		narrative_event = { id = DWFairyTales.423 days = 1}
+	}
+	option = { # Hunt the Beast myself
+		set_character_flag = dw_hunt_the_beast_1
+		name = "DWFairyTales470C"
+	}
+	option = { # Ambush the Beast
+		name = "DWFairyTales470D"
+		set_character_flag = dw_beauty_beast_ambush
+	}
+}
+# .471 The player meets Belle again, corrupt 2, Belle to be kept - player shares plans on how to keep Belle (part 2)
+narrative_event = {
+	id = DWFairyTales.471
+	desc = "DWFairyTales471"
+	picture = beautybeast_belle2
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .470
+	option = { # Sticks to the plan
+		name = "DWFairyTales471A"
+		narrative_event = { id = DWFairyTales.473 days = 1 }
+	}
+	option = { # Enlist the aid of Gaston
+		trigger = {
+			OR = { # One of these would indicate that the character has met Gaston
+				has_character_flag = dw_beauty_hunted_by_gaston_1
+				has_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+				has_global_flag = dw_gaston_in_court
+			}
+		}
+		name = "DWFairyTales470B"
+		narrative_event = { id = DWFairyTales.423 days = 1}
+	}
+	option = { # Hunt the Beast myself
+		set_character_flag = dw_hunt_the_beast_1
+		name = "DWFairyTales470C" # Keep the same option text
+	}
+	option = { # Ambush the Beast
+		name = "DWFairyTales470D" # Keep the same option text
+		set_character_flag = dw_beauty_beast_ambush
+	}
+}
+# .473 The player meets Belle again, corrupt 2, Belle to be kept - player shares plans on how to keep Belle (part 3)
+narrative_event = {
+	id = DWFairyTales.473
+	desc = "DWFairyTales473"
+	picture = beautybeast_belle_corruption3
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .471
+	option = { # You are mine Belle
+		name = "DWFairyTales473A"
+		character_event = { id = DWFairyTales.2 }
+		set_global_flag = dw_beauty_beast_village_doomed
+		set_character_flag = dw_took_belle
+	}
+}
+# .480 The player meets Belle again, corrupt 2, Belle to be shared (part 1)
+narrative_event = {
+	id = DWFairyTales.480
+	desc = "DWFairyTales480"
+	picture = beautybeast_belle_corruption4
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .120
+	immediate = {
+		clr_character_flag = dw_beauty_corruption_2 # We advance our corruption storyline
+		set_character_flag = dw_beauty_corruption_3
+		set_character_flag = dw_beauty_deflowered
+	}
+	option = { # Allow me to join you
+		trigger = {
+			OR = { # We've a dick to use
+				is_female = no
+				trait = futa
+			}
+		}
+		name = "DWFairyTales480A"
+		narrative_event = { id = DWFairyTales.481 }
+	}
+	option = { # Allow me to join you
+		trigger = { # We've no dick to use
+			is_female = yes
+			NOT = { trait = futa }
+		}
+		name = "DWFairyTales480A"
+		narrative_event = { id = DWFairyTales.483 }
+	}
+}
+# .481 The player meets Belle again, corrupt 2, Belle to be shared (part 2) - player with dick satisfies Belle
+narrative_event = {
+	id = DWFairyTales.481
+	desc = "DWFairyTales481"
+	picture = beautybeast_belle_corruption5
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .480
+	option = { # You're quite the good fuck Belle
+		name = "DWFairyTales481A"
+		add_character_modifier = { name = dw_good_sex duration = 30 }
+	}
+}
+# .483 The player meets Belle again, corrupt 2, Belle to be shared (part 2) - female player satisfies Belle
+narrative_event = {
+	id = DWFairyTales.483
+	desc = "DWFairyTales483"
+	picture = beautybeast_belle_corruption6
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .480
+	option = { # You're quite the good fuck Belle
+		name = "DWFairyTales483A"
+		add_character_modifier = { name = dw_good_sex duration = 30 }
+	}
+}
+# .490 The player meets Belle again, corrupt 3 - player shares plans on how to keep Belle
+narrative_event = {
+	id = DWFairyTales.490
+	desc = "DWFairyTales490"
+	picture = beautybeast_belle_corruption7
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .130
+	option = { # Take Belle Away
+		name = "DWFairyTales490A"
+		narrative_event = { id = DWFairyTales.471 }
+	}
+	option = { # Have Belle seduce the Beast
+		set_character_flag = dw_seduce_the_beast
+		name = "DWFairyTales490B"
+	}
+	option = { # Enlist the aid of Gaston
+		trigger = {
+			OR = { # One of these would indicate that the character has met Gaston
+				has_character_flag = dw_beauty_hunted_by_gaston_1
+				has_character_flag = dw_beauty_gaston_nobeauty_hunt_1
+				has_global_flag = dw_gaston_in_court
+			}
+		}
+		name = "DWFairyTales490C"
+		narrative_event = { id = DWFairyTales.423 days = 1}
+	}
+	option = { # Ambush the Beast to kill it
+		name = "DWFairyTales490D"
+		set_character_flag = dw_beauty_beast_ambush
+	}
+}
+# .500 Seducing the Beast - Part 1
+narrative_event = {
+	id = DWFairyTales.500
+	desc = "DWFairyTales500"
+	picture = forest1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .110
+	immediate = {
+		clr_character_flag = dw_seduce_the_beast # We clear this to keep it from looping
+	}
+	option = { # We wait
+		name = "DWFairyTales500A"
+		narrative_event = { id = DWFairyTales.501 }
+	}
+}
+# .501 Seducing the Beast - Part 2
+narrative_event = {
+	id = DWFairyTales.501
+	desc = "DWFairyTales501"
+	picture = beautybeast_belle_beast_seduce1
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .500
+	option = { # 
+		name = "DWFairyTales501A"
+		narrative_event = { id = DWFairyTales.502 }
+	}
+}
+# .502 Seducing the Beast - Part 3
+narrative_event = {
+	id = DWFairyTales.502
+	desc = "DWFairyTales502"
+	picture = beautybeast_belle_beast_seduce2
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .501
+	option = { # Surround Him
+		name = "DWFairyTales502A"
+		narrative_event = { id = DWFairyTales.503 }
+	}
+}
+# .503 Seducing the Beast - Part 4
+narrative_event = {
+	id = DWFairyTales.503
+	desc = "DWFairyTales503"
+	picture = beautybeast_belle_beast_seduce3
+	title = dw_beauty_beast_hunt
+	is_triggered_only = yes # Triggered from .502
+	option = { # Spare Him, Belle joining my court
+		name = "DWFairyTales503A"
+		set_global_flag = dw_beast_tamed
+		set_character_flag = dw_beast_visit_beauty
+		character_event = { id = DWFairyTales.2 }
+	}
+	option = { # Spare Him, let him have Belle
+		name = "DWFairyTales503B"
+		set_global_flag = dw_beast_tamed
+		set_global_flag = dw_beast_with_belle
+	}
+	option = { # Finish Him
+		name = "DWFairyTales503C"
+		set_global_flag = dw_beast_slain
+		piety = 50 # Piety gain for ending the reign of the Beast
+	}
+}
+# .510 Visit Belle and the Beast (hidden for routing
+character_event = {
+	id = DWFairyTales.510
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered from .111
+	immediate = { 
+		random_list = {
+			25 = { # Generic placeholder event #TODO
+				narrative_event = { id = DWFairyTales.511 }
+			}
+		}
+	}
+}
+# .511 Visit Belle and the Beast
+narrative_event = {
+	id = DWFairyTales.511
+	desc = "DWFairyTales511"
+	picture = beautybeast_belle_beast_seduce3
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .510
+	option = { # Nothing to do or see here at the moment
+		name = "DWFairyTales511A"
+	}
+}
+# .520 Visit Belle after having dealt with the Beast and Belle still available (hidden for routing)
+character_event = {
+	id = DWFairyTales.520
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered from .124
+	immediate = { 
+		random_list = {
+			25 = { # Generic placeholder event #TODO
+				narrative_event = { id = DWFairyTales.521 }
+			}
+		}
+	}
+}
+# .521 Visit Belle - Catch her trying on her mother's dress
+narrative_event = {
+	id = DWFairyTales.521
+	desc = "DWFairyTales521"
+	picture = beautybeast_belle_undress1
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .520
+	option = { # Yes, join me in my court Belle
+		name = "DWFairyTales521A"
+		character_event = { id = DWFairyTales.2 }
+	}
+	option = { # Not yet, I'm just here to visit
+		name = "DWFairyTales521B"
+	}
+}

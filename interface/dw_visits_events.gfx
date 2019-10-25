@@ -1,0 +1,37 @@
+spriteTypes = {
+	spriteType = {
+		name = "visit_futa_woman_handjob1"
+		texturefile = "gfx/event_pictures/visit_futa_woman_handjob1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "visit_futa_woman_handjob2"
+		texturefile = "gfx/event_pictures/visit_futa_woman_handjob2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_gaston_visit_male1"
+		texturefile = "gfx/event_pictures/beautybeast_gaston_visit_male1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_gaston_visit_female1"
+		texturefile = "gfx/event_pictures/beautybeast_gaston_visit_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "visit_male_female_ride_1"
+		texturefile = "gfx/event_pictures/visit_male_female_ride_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

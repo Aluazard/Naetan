@@ -1,0 +1,245 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+
+# inherit = yes  # Heirs inherit this opinion
+
+# Opinion modifiers can give a reason to do the following actions without penalties
+# prison_reason
+# banish_reason
+# execute_reason
+# revoke_reason
+# divorce_reason
+
+# enemy = yes # This will make the characters enemies of eachother ( effectively at war )
+# crime = yes # Counts as my foe (rivals do too) for the is_foe trigger
+
+##Example:
+##opinion = {
+##	modifier = dw_invited_to_court
+##	who = ROOT
+##	months = 6
+##}
+
+## Entertainment related
+dw_opinion_good_brawl = {
+	opinion = 15
+}
+
+dw_opinion_mildly_entertained = {
+	opinion = 5
+	months = 3
+}
+
+dw_opinion_appreciated_artwork = {
+	opinion = 10
+	months = 6
+}
+
+dw_opinion_patron_artwork = {
+	opinion = 15
+	months = 6
+}
+
+## Sex Related
+dw_opinion_good_head = {
+	opinion = 15
+	months = 3
+}
+dw_opinion_good_fuck = {
+	opinion = 15
+	months = 6
+}
+dw_opinion_sexual_disgust= {
+	opinion = -15
+	months = 12
+}
+dw_opinion_bad_dog_raper_owner = {
+	opinion = -50
+	months = 12
+}
+dw_opinion_good_dog_owner = {
+	opinion = 10
+	months = 12
+}
+dw_opinion_good_dog_slut = {
+	opinion = 10
+	months = 12
+}
+dw_opinion_dynasty_assault = { # For when a female ruler forbids a customer to cum inside them, and the customer does so anyway.
+	opinion = -50
+	prison_reason = yes
+	months = 12
+}
+dw_opinion_good_cock_tease = { # For acts that arouse with no promise of release - sort of like paying for a lap dance, you don't expect to cum, just to be really erotically entertained by the act
+	opinion = 20
+	months = 6
+}
+
+## How someone was treated
+dw_opinion_got_their_way = {
+	opinion = 20
+	months = 12
+}
+dw_opinion_got_scolded = {
+	opinion = -10
+	months = 6
+}
+dw_opinion_got_praised = {
+	opinion = 10
+	months = 6
+}
+dw_opinion_has_initiative = {
+	opinion = 20
+	months = 12
+}
+dw_opinion_created_headache = {
+	opinion = -10
+	months = 6
+}
+dw_opinion_intimidated = { # The person intimidated 'likes' the target more in hopes of not drawing their wrath
+	opinion = 25
+	months = 12
+}
+dw_opinion_asshole = { # Someone is a grade A dick. Such as when a woman asks for them to pull out, but instead they bury it to the hilt and fills her womb with their seed.
+	opinion = -25
+	months = 12
+}
+dw_slept_with_wife = {
+	opinion = -50
+	months = 60
+}
+dw_not_slept_with_wife = {
+	opinion = 25
+	months = 60
+}
+dw_rejected_forced_love = { # Meant to be used when someone is angry that someone tried to force love upon them
+	opinion = -25
+	months = 24
+}
+dw_bribe_refused = {
+	opinion = -10
+	months = 12
+}
+dw_tried_to_bribe_me = {
+	opinion = -25
+	months = 12
+}
+dw_accepted_my_bribe = {
+	opinion = 5
+	months = 6
+}
+dw_took_bribe = {
+	opinion = 5
+	months = 6
+}
+dw_respected_request = {
+	opinion = 10
+	months = 6
+}
+dw_invited_to_court = {
+	opinion = 10
+	months = 6
+}
+## Slave related
+dw_opinion_slave_master = {
+	opinion = 25
+	months = 120
+}
+
+## Werewolf related
+dw_opinion_my_bitch = {
+	opinion = 5 # The werewolf is only partially more inclined to think highly of one of their bitches compared to normal women
+	months = 60 # 5 years
+}
+
+dw_opinion_ima_bitch = {
+	opinion = 25 # A woman who is dominated by a werewolf becomes breeding stock for all werewolves, yet the one who dominated her holds a special place in her psyche
+	months = 60 # 5 years
+}
+
+dw_fenris_loyalist = {
+	opinion = 25 # A Fenris Loyalist is for those werewolves that Fenris produces for his court, giving him a sound support group to further his goals.
+	months = 600 # 50 years
+}
+
+## Vampire related
+dw_opinion_sire = {
+	opinion = 50
+	months = 600 # 50 years
+}
+dw_opinion_vampire_master = { # for things like Thralls
+	opinion = 100
+	months = 600 # 50 years
+}
+dw_opinion_bitten_by_vampire = { # for non-thralls that are bitten, a temporary bond is created, which makes them view the vampire more favorably.
+	opinion = 15
+	months = 1 # Just a single month. It's a short term opinion bump.
+}
+dw_exposed_identity = { # Can be used by someone with a hidden trait - like a vampire or werewolf, to modify their opinion of the one who outed them.
+	opinion = -100
+	months = 1200 # 100 years
+}
+
+## Succubus related
+dw_opinion_immortalized = {
+	opinion = 25
+	months = 1200
+}
+dw_opinion_refused_blood_moon = { # Those who don't attend are viewed negatively by those who do.
+	opinion = -10
+	months = 11
+}
+dw_opinion_blood_moon_heretic_liege = { # A courtier or vassal who refuses to pay tribute, rationalizes that it's due to the liege being a heretic
+	opinion = -10
+	months = 11
+}
+dw_spared_life = { # For when a prisoner is spared from sacrifice
+	opinion = 15
+	months = 11
+}
+dw_held_blood_moon_celebration = { # People like to be invited to things and tend to appreciate the host including them
+	opinion = 5
+	months = 3
+}
+dw_blood_moon_drinking_buddy = { # Obtained during Blood Moon Drunkard event
+	opinion = 15
+	months = 11
+}
+dw_blood_moon_impressed = { # Guest at the Blood Moon can become impressed by someone who shares a similar trait or action
+	opinion = 10
+	months = 11
+}
+dw_blood_moon_disappointed = { # Guest at the Blood Moon can become disappointed by someone who does an embarrassing act
+	opinion = -10
+	months = 11
+}
+dw_blood_moon_humorous = { # Guest was caught in a humorous (positive) situation during the Blood Moon
+	opinion = 5
+	months = 11
+}
+dw_blood_moon_ridicule = { # Guest was caught in a humorous (negative) situation during the Blood Moon
+	opinion = -5
+	months = 11
+}
+dw_opinion_incubus_intimidation = {
+	opinion = 25
+	months = 6
+}
+
+## Tentacle Kin related
+dw_opinion_mind_wipe_master = {
+	opinion = 500
+	months = 1200
+	prison_reason = yes # The impacted person viewing the tentacle-kin with such idolatry is the dead give away of such a heinous act
+	execute_reason = yes
+	banish_reason = yes
+}
+dw_opinion_mind_manipulator = {
+	opinion = 100
+	months = 24
+	decay = yes
+	prison_reason = yes # The impacted person viewing the tentacle-kin with such admiration is the dead give away of such a heinous act
+	execute_reason = yes
+	banish_reason = yes
+}

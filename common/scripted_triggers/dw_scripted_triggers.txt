@@ -1,0 +1,1350 @@
+## VANILLA SCRIPTED TRIGGERS THAT ARE MEANT TO BE OVERRIDDEN - POTENTIAL MOD CONFLICT
+has_fertile_trait_trigger = {
+	OR = {
+		trait = underhanded_rogue
+		trait = charismatic_negotiator
+		trait = grey_eminence
+		trait = thrifty_clerk
+		trait = fortune_builder
+		trait = midas_touched
+		trait = strong
+		trait = hedonist
+		trait = lustful
+		trait = dancing_plague
+		trait = big_tits
+		trait = huge_tits
+		trait = enormous_tits
+		trait = gigantic_tits
+		trait = big_dick
+		trait = huge_dick
+		trait = enormous_dick
+		trait = incubus
+		trait = werewolf
+		trait = orc
+		trait = neko
+	}
+}
+has_infertile_trait_trigger = {
+	OR = {
+		trait = homosexual
+		trait = eunuch
+		trait = scholarly_theologian
+		trait = mastermind_theologian
+		trait = stressed
+		trait = depressed
+		trait = ill
+		trait = pneumonic
+		trait = leper
+		trait = syphilitic
+		trait = has_aztec_disease
+		trait = infirm
+		trait = incapable
+		trait = inbred
+		trait = weak
+		trait = celibate
+		trait = chaste
+		trait = mangled
+		trait = severely_injured
+		trait = dysentery
+		trait = food_poisoning
+		trait = cancer
+		trait = tiny_tits
+		trait = small_tits
+		trait = tiny_dick
+		trait = small_dick
+		trait = futa
+		trait = trap
+		trait = victim
+		trait = vampire
+		trait = vampire_ancient
+		trait = werewolf_ancient
+		trait = angel
+		trait = elf
+		trait = fairy
+		trait = platypi
+	}
+}
+is_virgin_trigger = {
+	OR = {
+		NOT = { is_adult = yes  }
+		trait = celibate
+		trait = chaste
+		trait = shy
+		is_ascetic_trigger = yes # Things like monks, nuns, etc
+		trait = virgin
+	}
+}
+
+## DARK WORLD SPECIFIC - SHOULDN'T CAUSE MOD CONFLICT
+# Dark World Content Checks
+has_dw_campaign_started = { # Simple check to see if a person has set-up their preferences. Some events will still execute if the campaign preferences haven't been set
+	has_global_flag = dw_campaign_started
+}
+has_used_bonus = {
+	has_global_flag = dw_bonus_used
+}
+has_lilith_start = {
+	has_game_rule = { name = dw_major_campaign value = dw_lilith_campaign }
+}
+has_werewolf_bitch_start = {
+	has_game_rule = { name = dw_major_campaign value = dw_werewolf_bitch_campaign }
+}
+has_neko_start = {
+	has_game_rule = { name = dw_major_campaign value = dw_neko_campaign }
+}
+has_vampire_start = {
+	has_game_rule = { name = dw_major_campaign value = dw_vampire_campaign }
+}
+has_orc_start = {
+	has_game_rule = { name = dw_major_campaign value = dw_orc_campaign }
+}
+has_elf_start = {
+	has_game_rule = { name = dw_major_campaign value = dw_elf_campaign }
+}
+has_kitsune_start = {
+	has_game_rule = { name = dw_major_campaign value = dw_kitsune_campaign }
+}
+has_angel_start = {
+	has_game_rule = { name = dw_major_campaign value = dw_angel_campaign }
+}
+has_tentacle_start = {
+	has_game_rule = { name = dw_major_campaign value = dw_tentacle_campaign }
+}
+has_heaven_hell_content = {
+	has_game_rule = { name = dw_heaven_hell_content value = dw_yes_lilith }
+}
+has_classic_monsters_content = {
+	has_game_rule = { name = dw_classic_monsters_content value = dw_yes_classic }
+}
+has_fae_content = {
+	has_game_rule = { name = dw_fae_content value = dw_yes_fae }
+}
+has_far_east_content = {
+	has_game_rule = { name = dw_far_east_content value = dw_yes_far_east }
+}
+has_seeds_chaos_content = {
+	has_game_rule = { name = dw_seeds_chaos_content value = dw_yes_seeds_chaos }
+}
+has_gender_bender_content = {
+	has_game_rule = { name = dw_gender_bender_content value = dw_yes_futa }
+}
+has_bestiality_content = {
+	has_game_rule = { name = dw_bestiality_content value = dw_yes_bestiality }
+}
+
+# Court checks
+has_female_spymaster = {
+	job_spymaster = {
+		is_female = yes
+	}
+}
+
+# Character Type checks
+has_cock = {
+	OR = {
+		AND = { # Guy grouping
+			is_female = no # It's a guy
+			NOT = { trait = eunuch } # Lost their equipment
+			NOT = { trait = frog } # No to say a frog can't have a go at it, just that it won't be making any babies with characters
+		}
+		# Female exception that is allowed to have a cock
+		trait = futa # It's a chick with a dick
+	}
+}
+is_potential_slut = { # someone who could be convinced to fuck for the sake of fucking
+	OR = {
+		trait = lustful
+		trait = hedonist
+		trait = drunkard
+		trait = lunatic
+		trait = possessed
+		AND = {
+			trait = imbecile
+			NOT = { trait = ugly }
+		}
+		AND = {
+			trait = slow
+			NOT = { trait = ugly }
+		}
+	}
+	NOR = {
+		trait = celibate
+		trait = chaste
+	}
+}
+is_physically_undesirable = {
+	OR = {
+		trait = disfigured
+		trait = mangled
+		trait = one_eyed
+		trait = one_legged
+		trait = one_handed
+		trait = clubfooted
+		trait = dwarf
+		trait = harelip
+		trait = hunchback
+		trait = ugly
+		trait = inbred
+	}
+}
+is_genetically_positive_aligned = {
+	# The genetic make-up of individuals with these traits have a natural connection to positive/purified energy
+	OR = {
+		trait = angel
+		trait = kitsune
+	}
+}
+is_genetically_negative_aligned = {
+	# The genetic make-up of individuals with these traits have a natural connection to negative/corrupt energy
+	OR = {
+		trait = lilith
+		trait = incubus
+		trait = tentacle
+	}
+}
+is_a_dw_purebreed = {
+	OR = {
+		trait = lilith
+		trait = incubus
+		trait = vampire
+		trait = vampire_ancient
+		trait = werewolf
+		trait =	werewolf_ancient
+		trait = angel
+		trait = elf
+		trait = orc
+		trait = tentacle
+		trait = kitsune
+		trait = neko
+		trait = fairy
+		trait = platypi
+		trait = genie
+	}
+}
+is_a_species_with_potential_custom_portrait = {
+	OR = {
+		trait = lilith
+		trait = incubus
+		trait = vampire
+		trait = vampire_ancient
+		trait = werewolf
+		trait =	werewolf_ancient
+		trait = angel
+		trait = elf
+		trait = orc
+		trait = tentacle
+		trait = kitsune
+		trait = neko
+		trait = fairy
+		trait = platypi
+		trait = genie
+	}
+}
+has_custom_portrait = {
+	OR = {
+		trait = portrait1
+		trait = portrait2
+		trait = portrait3
+		trait = portrait4
+		trait = portrait5
+		trait = portrait6
+		trait = portrait7
+		trait = portrait8
+		trait = portrait9
+		trait = portrait10
+		trait = portrait11
+		trait = portrait12
+		trait = portrait13
+		trait = portrait14
+		trait = portrait15
+		trait = portrait16
+		trait = portrait17
+		trait = portrait18
+		trait = portrait19
+		trait = portrait20
+		trait = portrait21
+		trait = portrait22
+		trait = portrait23
+		trait = portrait24
+		trait = portrait25
+		trait = portrait26
+		trait = portrait27
+		trait = portrait28
+		trait = portrait29
+		trait = portrait30
+		trait = portrait31
+		trait = portrait32
+		trait = portrait33
+		trait = portrait34
+		trait = portrait35
+		trait = portrait36
+		trait = portrait37
+		trait = portrait38
+		trait = portrait39
+		trait = portrait40
+		trait = portrait41
+		trait = portrait42
+		trait = portrait43
+		trait = portrait44
+		trait = portrait45
+		trait = portrait46
+		trait = portrait47
+		trait = portrait48
+		trait = portrait49
+		trait = portrait50
+		trait = portrait51
+		trait = portrait52
+		trait = portrait53
+		trait = portrait54
+		trait = portrait55
+		trait = portrait56
+		trait = portrait57
+		trait = portrait58
+		trait = portrait59
+		trait = portrait60
+		trait = portrait61
+		trait = portrait62
+		trait = portrait63
+		trait = portrait64
+		trait = portrait65
+		trait = portrait66
+		trait = portrait67
+		trait = portrait68
+		trait = portrait69
+		trait = portrait70
+		trait = portrait71
+		trait = portrait72
+		trait = portrait73
+		trait = portrait74
+		trait = portrait75
+		trait = portrait76
+		trait = portrait77
+		trait = portrait78
+		trait = portrait79
+		trait = portrait80
+		trait = portrait81
+		trait = portrait82
+		trait = portrait83
+		trait = portrait84
+		trait = portrait85
+		trait = portrait86
+		trait = portrait87
+		trait = portrait88
+		trait = portrait89
+		trait = portrait90
+		trait = portrait91
+		trait = portrait92
+		trait = portrait93
+		trait = portrait94
+		trait = portrait95
+		trait = portrait96
+		trait = portrait97
+		trait = portrait98
+		trait = portrait99
+		trait = portrait100
+		trait = portrait101
+		trait = portrait102
+		trait = portrait103
+		trait = portrait104
+		trait = portrait105
+		trait = portrait106
+		trait = portrait107
+		trait = portrait108
+		trait = portrait109
+		trait = portrait110
+		trait = portrait111
+		trait = portrait112
+		trait = portrait113
+		trait = portrait114
+		trait = portrait115
+		trait = portrait116
+		trait = portrait117
+		trait = portrait118
+		trait = portrait119
+		trait = portrait120
+		trait = portrait121
+		trait = portrait122
+		trait = portrait123
+		trait = portrait124
+		trait = portrait125
+		trait = portrait126
+		trait = portrait127
+		trait = portrait128
+		trait = portrait129
+		trait = portrait130
+		trait = portrait131
+		trait = portrait132
+		trait = portrait133
+		trait = portrait134
+		trait = portrait135
+		trait = portrait136
+		trait = portrait137
+		trait = portrait138
+		trait = portrait139
+		trait = portrait140
+		trait = portrait141
+		trait = portrait142
+		trait = portrait143
+		trait = portrait144
+		trait = portrait145
+		trait = portrait146
+		trait = portrait147
+		trait = portrait148
+		trait = portrait149
+		trait = portrait150
+		trait = portrait151
+		trait = portrait152
+		trait = portrait153
+		trait = portrait154
+		trait = portrait155
+		trait = portrait156
+		trait = portrait157
+		trait = portrait158
+		trait = portrait159
+		trait = portrait160
+		trait = portrait161
+		trait = portrait162
+		trait = portrait163
+		trait = portrait164
+		trait = portrait165
+		trait = portrait166
+		trait = portrait167
+		trait = portrait168
+		trait = portrait169
+		trait = portrait170
+		trait = portrait171
+		trait = portrait172
+		trait = portrait173
+		trait = portrait174
+		trait = portrait175
+		trait = portrait176
+		trait = portrait177
+		trait = portrait178
+		trait = portrait179
+		trait = portrait180
+		trait = portrait181
+		trait = portrait182
+		trait = portrait183
+		trait = portrait184
+		trait = portrait185
+		trait = portrait186
+		trait = portrait187
+		trait = portrait188
+		trait = portrait189
+		trait = portrait190
+		trait = portrait191
+		trait = portrait192
+		trait = portrait193
+		trait = portrait194
+		trait = portrait195
+		trait = portrait196
+		trait = portrait197
+		trait = portrait198
+		trait = portrait199
+		trait = portrait200
+		trait = portrait201
+		trait = portrait202
+		trait = portrait203
+		trait = portrait204
+		trait = portrait205
+		trait = portrait206
+		trait = portrait207
+		trait = portrait208
+		trait = portrait209
+		trait = portrait210
+		trait = portrait211
+		trait = portrait212
+		trait = portrait213
+		trait = portrait214
+		trait = portrait215
+		trait = portrait216
+		trait = portrait217
+		trait = portrait218
+		trait = portrait219
+		trait = portrait220
+		trait = portrait221
+		trait = portrait222
+		trait = portrait223
+		trait = portrait224
+		trait = portrait225
+		trait = portrait226
+		trait = portrait227
+		trait = portrait228
+		trait = portrait229
+		trait = portrait230
+		trait = portrait231
+		trait = portrait232
+		trait = portrait233
+		trait = portrait234
+		trait = portrait235
+		trait = portrait236
+		trait = portrait237
+		trait = portrait238
+		trait = portrait239
+		trait = portrait240
+		trait = portrait241
+		trait = portrait242
+		trait = portrait243
+		trait = portrait244
+		trait = portrait245
+		trait = portrait246
+		trait = portrait247
+		trait = portrait248
+		trait = portrait249
+		trait = portrait250
+		trait = portrait251
+		trait = portrait252
+		trait = portrait253
+		trait = portrait254
+		trait = portrait255
+		trait = portrait256
+		trait = portrait257
+		trait = portrait258
+		trait = portrait259
+		trait = portrait260
+		trait = portrait261
+		trait = portrait262
+		trait = portrait263
+		trait = portrait264
+		trait = portrait265
+		trait = portrait266
+		trait = portrait267
+		trait = portrait268
+		trait = portrait269
+		trait = portrait270
+		trait = portrait271
+		trait = portrait272
+		trait = portrait273
+		trait = portrait274
+		trait = portrait275
+		trait = portrait276
+		trait = portrait277
+		trait = portrait278
+		trait = portrait279
+		trait = portrait280
+		trait = portrait281
+		trait = portrait282
+		trait = portrait283
+		trait = portrait284
+		trait = portrait285
+		trait = portrait286
+		trait = portrait287
+		trait = portrait288
+		trait = portrait289
+		trait = portrait290
+		trait = portrait291
+		trait = portrait292
+		trait = portrait293
+		trait = portrait294
+		trait = portrait295
+		trait = portrait296
+		trait = portrait297
+		trait = portrait298
+		trait = portrait299
+		trait = portrait300
+		trait = portrait301
+		trait = portrait302
+		trait = portrait303
+		trait = portrait304
+		trait = portrait305
+		trait = portrait306
+		trait = portrait307
+		trait = portrait308
+		trait = portrait309
+		trait = portrait310
+		trait = portrait311
+		trait = portrait312
+		trait = portrait313
+		trait = portrait314
+		trait = portrait315
+		trait = portrait316
+		trait = portrait317
+		trait = portrait318
+		trait = portrait319
+		trait = portrait320
+		trait = portrait321
+		trait = portrait322
+		trait = portrait323
+		trait = portrait324
+		trait = portrait325
+		trait = portrait326
+		trait = portrait327
+		trait = portrait328
+		trait = portrait329
+		trait = portrait330
+		trait = portrait331
+		trait = portrait332
+		trait = portrait333
+		trait = portrait334
+		trait = portrait335
+		trait = portrait336
+		trait = portrait337
+		trait = portrait338
+		trait = portrait339
+		trait = portrait340
+		trait = portrait341
+		trait = portrait342
+		trait = portrait343
+		trait = portrait344
+		trait = portrait345
+		trait = portrait346
+		trait = portrait347
+		trait = portrait348
+		trait = portrait349
+		trait = portrait350
+		trait = portrait351
+		trait = portrait352
+		trait = portrait353
+		trait = portrait354
+		trait = portrait355
+		trait = portrait356
+		trait = portrait357
+		trait = portrait358
+		trait = portrait359
+		trait = portrait360
+		trait = portrait361
+		trait = portrait362
+		trait = portrait363
+		trait = portrait364
+		trait = portrait365
+		trait = portrait366
+		trait = portrait367
+		trait = portrait368
+		trait = portrait369
+		trait = portrait370
+		trait = portrait371
+		trait = portrait372
+		trait = portrait373
+		trait = portrait374
+		trait = portrait375
+		trait = portrait376
+		trait = portrait377
+		trait = portrait378
+		trait = portrait379
+		trait = portrait380
+		trait = portrait381
+		trait = portrait382
+		trait = portrait383
+		trait = portrait384
+		trait = portrait385
+		trait = portrait386
+		trait = portrait387
+		trait = portrait388
+		trait = portrait389
+		trait = portrait390
+		trait = portrait391
+		trait = portrait392
+		trait = portrait393
+		trait = portrait394
+		trait = portrait395
+		trait = portrait396
+		trait = portrait397
+		trait = portrait398
+		trait = portrait399
+		trait = portrait400
+		trait = portrait401
+		trait = portrait402
+		trait = portrait403
+		trait = portrait404
+		trait = portrait405
+		trait = portrait406
+		trait = portrait407
+		trait = portrait408
+		trait = portrait409
+		trait = portrait410
+		trait = portrait411
+		trait = portrait412
+		trait = portrait413
+		trait = portrait414
+		trait = portrait415
+		trait = portrait416
+		trait = portrait417
+		trait = portrait418
+		trait = portrait419
+		trait = portrait420
+		trait = portrait421
+		trait = portrait422
+		trait = portrait423
+		trait = portrait424
+		trait = portrait425
+		trait = portrait426
+		trait = portrait427
+		trait = portrait428
+		trait = portrait429
+		trait = portrait430
+		trait = portrait431
+		trait = portrait432
+		trait = portrait433
+		trait = portrait434
+		trait = portrait435
+		trait = portrait436
+		trait = portrait437
+		trait = portrait438
+		trait = portrait439
+		trait = portrait440
+		trait = portrait441
+		trait = portrait442
+		trait = portrait443
+		trait = portrait444
+		trait = portrait445
+		trait = portrait446
+		trait = portrait447
+		trait = portrait448
+		trait = portrait449
+		trait = portrait450
+		trait = portrait451
+		trait = portrait452
+		trait = portrait453
+		trait = portrait454
+		trait = portrait455
+		trait = portrait456
+		trait = portrait457
+		trait = portrait458
+		trait = portrait459
+		trait = portrait460
+		trait = portrait461
+		trait = portrait462
+		trait = portrait463
+		trait = portrait464
+		trait = portrait465
+		trait = portrait466
+		trait = portrait467
+		trait = portrait468
+		trait = portrait469
+		trait = portrait470
+		trait = portrait471
+		trait = portrait472
+		trait = portrait473
+		trait = portrait474
+		trait = portrait475
+		trait = portrait476
+		trait = portrait477
+		trait = portrait478
+		trait = portrait479
+		trait = portrait480
+		trait = portrait481
+		trait = portrait482
+		trait = portrait483
+		trait = portrait484
+		trait = portrait485
+		trait = portrait486
+		trait = portrait487
+		trait = portrait488
+		trait = portrait489
+		trait = portrait490
+		trait = portrait491
+		trait = portrait492
+		trait = portrait493
+		trait = portrait494
+		trait = portrait495
+		trait = portrait496
+		trait = portrait497
+		trait = portrait498
+		trait = portrait499
+		trait = portrait500
+		trait = portrait501
+		trait = portrait502
+		trait = portrait503
+		trait = portrait504
+		trait = portrait505
+		trait = portrait506
+		trait = portrait507
+		trait = portrait508
+		trait = portrait509
+		trait = portrait510
+		trait = portrait511
+		trait = portrait512
+		trait = portrait513
+		trait = portrait514
+		trait = portrait515
+		trait = portrait516
+		trait = portrait517
+		trait = portrait518
+		trait = portrait519
+		trait = portrait520
+		trait = portrait521
+		trait = portrait522
+		trait = portrait523
+		trait = portrait524
+		trait = portrait525
+		trait = portrait526
+		trait = portrait527
+		trait = portrait528
+		trait = portrait529
+		trait = portrait530
+		trait = portrait531
+		trait = portrait532
+		trait = portrait533
+		trait = portrait534
+		trait = portrait535
+		trait = portrait536
+		trait = portrait537
+		trait = portrait538
+		trait = portrait539
+		trait = portrait540
+		trait = portrait541
+		trait = portrait542
+		trait = portrait543
+		trait = portrait544
+		trait = portrait545
+		trait = portrait546
+		trait = portrait547
+		trait = portrait548
+		trait = portrait549
+		trait = portrait550
+		trait = portrait551
+		trait = portrait552
+		trait = portrait553
+		trait = portrait554
+		trait = portrait555
+		trait = portrait556
+		trait = portrait557
+		trait = portrait558
+		trait = portrait559
+		trait = portrait560
+		trait = portrait561
+		trait = portrait562
+		trait = portrait563
+		trait = portrait564
+		trait = portrait565
+		trait = portrait566
+		trait = portrait567
+		trait = portrait568
+		trait = portrait569
+		trait = portrait570
+		trait = portrait571
+		trait = portrait572
+		trait = portrait573
+		trait = portrait574
+		trait = portrait575
+		trait = portrait576
+		trait = portrait577
+		trait = portrait578
+		trait = portrait579
+		trait = portrait580
+		trait = portrait581
+		trait = portrait582
+		trait = portrait583
+		trait = portrait584
+		trait = portrait585
+		trait = portrait586
+		trait = portrait587
+		trait = portrait588
+		trait = portrait589
+		trait = portrait590
+		trait = portrait591
+		trait = portrait592
+		trait = portrait593
+		trait = portrait594
+		trait = portrait595
+		trait = portrait596
+		trait = portrait597
+		trait = portrait598
+		trait = portrait599
+		trait = portrait600
+		trait = portrait601
+		trait = portrait602
+		trait = portrait603
+		trait = portrait604
+		trait = portrait605
+		trait = portrait606
+		trait = portrait607
+		trait = portrait608
+		trait = portrait609
+		trait = portrait610
+		trait = portrait611
+		trait = portrait612
+		trait = portrait613
+		trait = portrait614
+		trait = portrait615
+		trait = portrait616
+		trait = portrait617
+		trait = portrait618
+		trait = portrait619
+		trait = portrait620
+		trait = portrait621
+		trait = portrait622
+		trait = portrait623
+		trait = portrait624
+		trait = portrait625
+		trait = portrait626
+		trait = portrait627
+		trait = portrait628
+		trait = portrait629
+		trait = portrait630
+		trait = portrait631
+		trait = portrait632
+		trait = portrait633
+		trait = portrait634
+		trait = portrait635
+		trait = portrait636
+		trait = portrait637
+		trait = portrait638
+		trait = portrait639
+		trait = portrait640
+		trait = portrait641
+		trait = portrait642
+		trait = portrait643
+		trait = portrait644
+		trait = portrait645
+		trait = portrait646
+		trait = portrait647
+		trait = portrait648
+		trait = portrait649
+		trait = portrait650
+	}
+}
+has_weak_mind = {
+	OR = {
+		AND = { # We're assuming a learning below 5 is shows a lack of intelligence, while an intrigue of less than 8 combines it with a lack of wits - giving us a weak minded person
+			learning < 5
+			intrigue < 8
+		}
+		trait = lunatic
+		trait = imbecile
+		trait = slow
+		trait = inbred
+	}
+}
+has_strong_mind = {
+	OR = {
+		AND = { # We're assuming a learning above 10 is superior intelligence, while an intrigue above 13 has an iron will - giving us a person with a strong mind that can resist domination
+			learning > 10
+			intrigue > 13
+		}
+		trait = possessed # Someone who is possessed, already has a host that helps resist intrusion or domination from another
+		trait = mystic # Trained to resist and recognize attempts at domination
+	}
+}
+### Location / Building Related
+has_valid_arena = { # A valid Arena is available
+	any_realm_province = {
+		any_province_holding = {
+			OR = {
+				has_building = dw_arena_1 # castle
+				has_building = dw_coliseum_1 # city
+				has_building = dw_warrior_circle_1 # tribal
+				has_building = no_wrestling_1 # nomad wrestling pit
+			}
+		}
+	}
+}
+has_valid_alchemist = { # A valid Alchemist is available
+	any_realm_province = {
+		any_province_holding = {
+			OR = {
+				has_building = dw_alchemist_den_1 # Castle
+				has_building = dw_alchemist_shop_1 # City
+				has_building = dw_mystic_hut # Tribal
+				has_building = dw_herbalist_wagon # Nomad
+			}
+		}
+	}
+}
+has_valid_brothel = { # A valid Brothel is available
+	any_realm_province = {
+		any_province_holding = {
+			OR = {
+				has_building = dw_brothel_1 # Castle
+				has_building = dw_redlight_district_1 # City
+				has_building = dw_morale_wagon_1 # Nomad
+				has_building = dw_whore_pen_1 # Tribal
+			}
+		}
+	}
+}
+has_valid_stable = {
+	capital_scope = {
+		OR = {
+			has_building = ca_stable_1 # Castle
+			has_building = fp_stable_1 # Merchant Republic
+			has_building = ca_culture_group_altaic_1 # Culture based Castle
+			has_building = ca_culture_group_iberian_1
+			has_building = ca_culture_hungarian_1
+			has_building = ca_culture_group_byzantine_1
+			has_building = ca_culture_group_south_slavic_1
+			has_building = ca_culture_moors_1
+			has_building = ca_steppe_stable_1 # Steppe based Castle
+			has_building = ca_desert_stable_1
+			has_building = no_horse_breeder_1 # Nomad
+			has_building = tb_steppe_stable_1 # Tribal
+			has_building = tb_desert_stable_1
+		}
+	}
+}
+has_valid_brothel_for_renovation = { # A valid Brothel that is within the ruler's castle that they can improve upon in their capital for the on_event quest chain
+	capital_scope = { # This should allow our ruler to scope out and visit it in another location within their realm, as any_realm_province only resolves to locations directly managed
+		has_building = dw_brothel_1 # Castle
+	}
+}
+has_valid_slavery_location = {
+	any_realm_province = {
+		any_province_holding = {
+			OR = {
+				has_building = dw_slave_dungeon_1 # Castle
+				has_building = dw_slave_wagon_1 # Nomad
+				has_building = dw_slave_pen_1 # Tribal
+				has_building = fp_cellar_3 # Merchant Republic
+				has_building = dw_slave_market_1 # City
+				has_building = dw_slave_port_1 # Tradepost
+			}
+		}
+	}
+}
+has_valid_temple_to_lilith = {
+	capital_scope = {
+		OR = {
+			has_building = dw_chapel_lilith # Castle
+			has_building = dw_lilith_shrine_outdoors_feudal
+			has_building = dw_lilith_shrine_wagon # Nomad
+			has_building = dw_lilith_shrine_outdoors
+			has_building = dw_lilith_shrine # Tribal
+			has_building = dw_lilith_shrine_outdoors_tribal
+			has_building = dw_lilith_temple # Merchant Republic
+			has_building = dw_lilith_shrine_outdoors_merchant
+		}
+	}
+}
+has_valid_emporium = {
+	any_realm_province = {
+		any_province_holding = {
+			OR = {
+				has_building = dw_exotic_emporium_1 # City
+				has_building = dw_exotic_warehouse_1 # Tradepost (hopefully scopes for Merchant Republics)
+				has_building = dw_exotic_collector # Nomad
+				has_building = dw_exotic_bazaar # tribal
+			}
+		}
+	}
+}
+### Prisoner related
+check_for_valid_prisoner_sacrifice = {
+	any_courtier = {
+		prisoner = yes # Needs to be a prisoner
+		host = { character = ROOT } # Needs to be the prisoner of ROOT (the person having the event)
+		NOT = { has_character_modifier = dw_slave_training } # Avoids grabbing a slave in training
+		NOT = { has_character_flag = dw_spared_sacrifice } # We don't choose someone we already spared
+		is_alive = yes # In hopes of avoiding reselecting someone who was recently sacrificed - since some folks reported that happened
+	}	
+}
+
+# Slave related
+is_slave = {
+	OR = {
+		trait = branded_slave
+		has_character_modifier = dw_slave_training
+	}
+}
+is_disobedient_slave = {
+	# It is possible to have conflicting traits - such as being content, yet stubborn - in those instances, they cancel each other out and we assume your average slave compliance
+	NOR = { 
+		trait = naive_appeaser
+		trait = timid
+		trait = slow
+		trait = imbecile
+		trait = dull
+		trait = patient
+		trait = humble
+		trait = slothful
+		trait = content
+		trait = craven
+		trait = shy
+		trait = trusting
+	}
+	OR = {
+		trait = stubborn
+		trait = proud
+		trait = ambitious
+		trait = deceitful
+		trait = wroth
+		trait = brave
+		trait = schemer
+		trait = shrewd
+		trait = elusive_shadow
+		trait = intricate_webweaver
+		trait = peasant_leader
+		trait = heresiarch
+		trait = lunatic
+		trait = willful
+		trait = haughty
+	}
+}
+is_obedient_slave = {
+	NOR = {
+		trait = stubborn
+		trait = proud
+		trait = ambitious
+		trait = deceitful
+		trait = wroth
+		trait = brave
+		trait = schemer
+		trait = shrewd
+		trait = elusive_shadow
+		trait = intricate_webweaver
+		trait = peasant_leader
+		trait = heresiarch
+		trait = lunatic
+		trait = willful
+		trait = haughty
+	}
+	OR = {
+		trait = naive_appeaser
+		trait = timid
+		trait = slow
+		trait = imbecile
+		trait = dull
+		trait = patient
+		trait = humble
+		trait = slothful
+		trait = content
+		trait = craven
+		trait = shy
+		trait = trusting
+	}
+}
+slave_sale_health_check = {
+	## Slaves are typically inspected prior to being sold. They need to be free of certain afflictions in order to clear a sale
+	NOR = {
+		# Some symptoms aren't easy to verify during an inspection - like diarrhea or something like fatigue which can be common with slaves
+		trait = incapable
+		trait = infirm
+		trait = maimed
+		trait = has_aztec_disease
+		trait = has_typhus
+		trait = has_tuberculosis
+		trait = dancing_plague
+		trait = dysentery
+		trait = flu
+		trait = gout
+		trait = syphilitic
+		trait = has_typhoid_fever
+		trait = ill
+		trait = leper
+		trait = has_measles
+		trait = pneumonic
+		trait = rabies
+		trait = scurvy
+		trait = has_small_pox
+		trait = has_bubonic_plague
+		trait = abdominal_pain
+		trait = chest_pain
+		trait = cough
+		trait = cramps
+		trait = fever
+		trait = rash
+		trait = vomiting
+	}
+}
+# Children of Lilith
+is_col = { # Child of Lilith
+	OR = {
+		trait = lilith
+		trait = incubus
+	}
+}
+is_col1 = { # Is specifically CoL stage 1
+	OR = {
+		has_character_modifier = dw_lilith_stage_1
+		has_character_modifier = dw_incubus_stage_1
+	}
+}
+is_at_least_col1 = { # Child of Lilith stage 1 +
+	OR = {
+		trait = lilith
+		trait = incubus
+	}
+	OR = {
+		has_character_modifier = dw_lilith_stage_1
+		has_character_modifier = dw_lilith_stage_2
+		has_character_modifier = dw_lilith_stage_3
+		has_character_modifier = dw_lilith_stage_4
+		has_character_modifier = dw_lilith_stage_5
+		has_character_modifier = dw_incubus_stage_1
+		has_character_modifier = dw_incubus_stage_2
+		has_character_modifier = dw_incubus_stage_3
+		has_character_modifier = dw_incubus_stage_4
+		has_character_modifier = dw_incubus_stage_5
+	}
+}
+is_col2 = { # Is specifically CoL stage 2
+	OR = {
+		has_character_modifier = dw_lilith_stage_2
+		has_character_modifier = dw_incubus_stage_2
+	}
+}
+is_at_least_col2 = { # Child of Lilith Stage 2 +
+	OR = {
+		trait = lilith
+		trait = incubus
+	}
+	OR = {
+		has_character_modifier = dw_lilith_stage_2
+		has_character_modifier = dw_lilith_stage_3
+		has_character_modifier = dw_lilith_stage_4
+		has_character_modifier = dw_lilith_stage_5
+		has_character_modifier = dw_incubus_stage_2
+		has_character_modifier = dw_incubus_stage_3
+		has_character_modifier = dw_incubus_stage_4
+		has_character_modifier = dw_incubus_stage_5
+	}
+}
+is_col3 = { # Is specifically CoL stage 3
+	OR = {
+		has_character_modifier = dw_lilith_stage_3
+		has_character_modifier = dw_incubus_stage_3
+	}
+}
+is_at_least_col3 = { # Child of Lilith Stage 3 +
+	OR = {
+		trait = lilith
+		trait = incubus
+	}
+	OR = {
+		has_character_modifier = dw_lilith_stage_3
+		has_character_modifier = dw_lilith_stage_4
+		has_character_modifier = dw_lilith_stage_5
+		has_character_modifier = dw_incubus_stage_3
+		has_character_modifier = dw_incubus_stage_4
+		has_character_modifier = dw_incubus_stage_5
+	}
+}
+is_col4 = { # Is specifically CoL stage 4
+	OR = {
+		has_character_modifier = dw_lilith_stage_4
+		has_character_modifier = dw_incubus_stage_4
+	}
+}
+is_at_least_col4 = { # Child of Lilith Stage 4 +
+	OR = {
+		trait = lilith
+		trait = incubus
+	}
+	OR = {
+		has_character_modifier = dw_lilith_stage_4
+		has_character_modifier = dw_lilith_stage_5
+		has_character_modifier = dw_incubus_stage_4
+		has_character_modifier = dw_incubus_stage_5
+	}
+}
+is_at_least_col4_cock = { # Child of Lilith Stage 4+ and has a cock
+	OR = {
+		AND = {
+			trait = lilith
+			trait = futa
+		}
+		trait = incubus
+	}
+	OR = {
+		has_character_modifier = dw_lilith_stage_4
+		has_character_modifier = dw_lilith_stage_5
+		has_character_modifier = dw_incubus_stage_4
+		has_character_modifier = dw_incubus_stage_5
+	}
+}
+is_col5 = { # Child of Lilith Stage 5
+	OR = {
+		trait = lilith
+		trait = incubus
+	}
+	OR = {
+		has_character_modifier = dw_lilith_stage_5
+		has_character_modifier = dw_incubus_stage_5
+	}
+}
+is_at_least_incubus4 = { # Incubus Stage 4+
+	trait = incubus
+	OR = {
+		has_character_modifier = dw_incubus_stage_4
+		has_character_modifier = dw_incubus_stage_5
+	}
+}
+is_incubus5 = { # Incubus Stage 5
+	trait = incubus
+	has_character_modifier = dw_incubus_stage_5
+}
+is_at_least_succubus3 = { # Succubus Stage 3+
+	trait = lilith
+	OR = {
+		has_character_modifier = dw_lilith_stage_3
+		has_character_modifier = dw_lilith_stage_4
+		has_character_modifier = dw_lilith_stage_5
+	}
+}
+is_at_least_succubus4 = { # Succubus Stage 4+
+	trait = lilith
+	OR = {
+		has_character_modifier = dw_lilith_stage_4
+		has_character_modifier = dw_lilith_stage_5
+	}
+}
+
+### Vampire related triggers
+
+## Society related triggers
+is_dark_power_society = { # For those that deal with dark powers
+	OR = {
+		society_member_of = dw_the_chosen_of_lilith
+		society_member_of = dw_the_wizards
+	}
+}
+has_chosen_of_lilith_prerequisites = {
+	# Adults only
+	is_adult = yes
+	# the default high intrigue score requirement, or a decent intrigue skill combined with training or traits seen as being open to Lilith's views
+	OR = {
+		intrigue = 10
+		AND = {
+			intrigue = 8
+			OR = {
+				trait = intricate_webweaver
+				trait = elusive_shadow
+				has_lifestyle_intrigue_trigger = yes
+				has_vice_trigger = yes
+				has_impious_trait_trigger = yes
+				trait = lilith
+				trait = incubus
+				trait = ambitious
+				trait = lunatic
+				trait = possessed
+			}
+		}
+	}
+	# and they shouldn't be extremely religious or opposed to Hedonistic type lifestyles
+	NOT = { ai_zeal = 50 }
+	NOT = { trait = celibate }
+}
+has_arcane_college_prerequisites = {
+	# Adults only
+	is_adult = yes
+	# the default high learning score requirement, or a decent learning skill combined with training or traits seen as being open to seeking knowledge/the occult/power
+	OR = {
+		learning = 10
+		AND = {
+			learning = 8
+			OR = {
+				trait = mystic
+				trait = lunatic
+				is_learned_trigger = yes
+				trait = mage
+				trait = architect
+				trait = theologian
+				trait = ambitious
+			}
+		}
+	}
+	# and they shouldn't be extremely religious or irrational
+	NOT = { ai_zeal = 50 }
+	NOT = { ai_rationality = 0 }
+}
+## Offmap related triggers
+# Likes/Dislikes triggers
+likes_angels = { 
+	trait = angel
+}
+likes_fae = {
+	OR = {
+		trait = elf
+		trait = fairy
+		trait = orc
+	}
+}

@@ -1,0 +1,171 @@
+### Society related images
+spriteTypes = {
+	spriteType = {
+		name = "wizard_book_female1"
+		texturefile = "gfx/event_pictures/wizard_book_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_book_male1"
+		texturefile = "gfx/event_pictures/wizard_book_male1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_female1"
+		texturefile = "gfx/event_pictures/wizard_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_male1"
+		texturefile = "gfx/event_pictures/wizard_male1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_meditate_female1"
+		texturefile = "gfx/event_pictures/wizard_meditate_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_meditate_male1"
+		texturefile = "gfx/event_pictures/wizard_meditate_male1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_insane_female1"
+		texturefile = "gfx/event_pictures/wizard_insane_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_insane_male1"
+		texturefile = "gfx/event_pictures/wizard_insane_male1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_power_male1"
+		texturefile = "gfx/event_pictures/wizard_power_male1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_power_female1"
+		texturefile = "gfx/event_pictures/wizard_power_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "lilith_society_approach1"
+		texturefile = "gfx/event_pictures/lilith_society_approach1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "lilith_society_approach2"
+		texturefile = "gfx/event_pictures/lilith_society_approach2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "lilith_society_approach3"
+		texturefile = "gfx/event_pictures/lilith_society_approach3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "lilith_society_approach4"
+		texturefile = "gfx/event_pictures/lilith_society_approach4.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "lilith_society_approach5"
+		texturefile = "gfx/event_pictures/lilith_society_approach5.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "lilith_society_approach6"
+		texturefile = "gfx/event_pictures/lilith_society_approach6.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "lilith_society_animal_sacrifice1"
+		texturefile = "gfx/event_pictures/lilith_society_animal_sacrifice1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "lilith_society_sacrifice_1"
+		texturefile = "gfx/event_pictures/lilith_society_sacrifice_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "lilith_society_lilith_temple1"
+		texturefile = "gfx/event_pictures/lilith_society_lilith_temple1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_society_approach1"
+		texturefile = "gfx/event_pictures/wizard_society_approach1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_society_approach2"
+		texturefile = "gfx/event_pictures/wizard_society_approach2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_society_approach3"
+		texturefile = "gfx/event_pictures/wizard_society_approach3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_society_redpill"
+		texturefile = "gfx/event_pictures/wizard_society_redpill.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wizard_society_bluepill"
+		texturefile = "gfx/event_pictures/wizard_society_bluepill.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

@@ -1,0 +1,248 @@
+### Dark World Chosen of Lilith Society Decisions
+
+targeted_decisions = {
+	#Action: Sacrifice prisoner
+	dw_prisoner_lilith_sacrifice = {
+		only_playable = yes
+		filter = court
+		ai_target_filter = court
+		ai_check_interval = 6
+		from_potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			society_member_of = dw_the_chosen_of_lilith
+		}
+		potential = {
+			host = { character = FROM }
+			prisoner = yes
+		}
+		allow = {
+			NOT = { diplomatic_immunity = yes }
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0.01
+				NOR = {
+					trait = dwarf
+					is_priest = yes 
+					is_ascetic_trigger = yes
+					is_virgin_trigger = yes
+					is_landed = yes
+				}
+			}
+		}
+		effect = {
+			death = {
+				death_reason = death_missing
+			}
+			hidden_effect = { narrative_event = { id = DWSOC.7506 } }
+			FROM = {
+				show_scope_change = no
+				increase_visibility_minor_effect = yes
+			}
+			#Sacrificed character
+			hidden_effect = { FROM = { narrative_event = { id = DWSOC.7500 } } }
+			#Check quests to resolve, add extra currency and play special sound effect
+			if = { #Virgin
+				limit = {
+					is_virgin_trigger = yes
+					FROM = { has_quest = quest_the_devil_worshipers_sacrifice_virgin }
+				}
+				FROM = { 
+					show_scope_change = no
+					clr_quest = quest_the_devil_worshipers_sacrifice_virgin 
+					add_society_currency_minor_effect = yes
+					add_lilith_offmap_trivial_effect = yes
+				}
+				break = yes
+			}
+			if = { #Priestly
+				limit = {
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+					}
+					FROM = { has_quest = quest_the_devil_worshipers_sacrifice_holy_person }
+				}
+				FROM = { 
+					show_scope_change = no
+					clr_quest = quest_the_devil_worshipers_sacrifice_holy_person
+					add_society_currency_minor_effect = yes
+					add_lilith_offmap_trivial_effect = yes
+				}
+				break = yes
+			}
+			if = { #Dwarf
+				limit = {
+					trait = dwarf
+					FROM = { has_quest = quest_the_devil_worshipers_sacrifice_dwarf }
+				}
+				FROM = { 
+					show_scope_change = no
+					clr_quest = quest_the_devil_worshipers_sacrifice_dwarf
+					add_society_currency_minor_effect = yes
+					add_lilith_offmap_trivial_effect = yes
+				}
+				break = yes
+			}
+			if = { #Ruler
+				limit = {
+					is_landed = yes
+					FROM = { has_quest = quest_the_devil_worshipers_sacrifice_ruler }
+				}
+				FROM = { 
+					show_scope_change = no
+					clr_quest = quest_the_devil_worshipers_sacrifice_ruler
+					add_society_currency_minor_effect = yes
+					add_lilith_offmap_trivial_effect = yes
+				}
+				break = yes
+			}
+			#No quest so add default
+			FROM = {
+				show_scope_change = no
+				add_society_currency_trivial_effect = yes
+				add_lilith_offmap_trivial_effect = yes
+			}
+		}
+	}
+	# Action: Recruit member
+	dw_chosen_recruit = {
+		is_in_society = yes
+		filter = all
+		ai_target_filter = realm
+		ai_check_interval = 12
+		from_potential = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_character_modifier = recruitment_timer }
+			society_member_of = dw_the_chosen_of_lilith
+			society_rank = {
+				society = dw_the_chosen_of_lilith
+				rank >= 2
+			}
+		}
+		potential = {
+			is_within_diplo_range = FROM
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			is_in_society = no
+			#AI cannot invite other AIs when society is full
+			NOT = {
+				is_society_rank_full = {
+					society = dw_the_chosen_of_lilith 		
+					rank = 1 								
+				}
+			}
+			#Blocks so AI recruits sensible people (who might say no)
+			OR = {
+				FROM = { ai = no }
+				is_friend = FROM
+				is_lover = FROM
+				is_close_relative = FROM
+				trait = trusting
+				has_impious_trait_trigger = yes
+				has_vice_trigger = yes
+				trait = lilith
+				trait = incubus
+				trait = possessed
+				trait = lunatic
+				interested_in_society = dw_the_chosen_of_lilith
+			}
+		}
+		allow = {
+			is_inaccessible_trigger = no
+			custom_tooltip = {
+				text = dw_chosen_recruit_block_tooltip
+				OR = {
+					NOT = { has_character_flag = dw_chosen_attempted_recruitment }
+					interested_in_society = dw_the_chosen_of_lilith
+				}
+				NOT = { has_character_flag = being_recruited_by_the_chosen }
+			}
+			has_chosen_of_lilith_prerequisites = yes
+			FROM = {
+				is_inaccessible_trigger = no
+				custom_tooltip = {
+					text = recruit_delay_timer_tooltip
+					NOT = { has_character_modifier = recruitment_delay_timer }
+				}
+			}
+		}
+		effect = {
+			set_character_flag = dw_chosen_attempted_recruitment
+			set_character_flag = being_recruited_by_the_chosen
+			hidden_effect = {
+				narrative_event = { id = DWSOC.7001 days = 1 } # recruitment chain
+				FROM = {
+					if = {
+						limit = { ai = yes }
+						add_character_modifier = {
+							name = recruitment_timer
+							days = 730
+							hidden = yes
+						}
+					}
+					add_character_modifier = {
+						name = recruitment_delay_timer
+						days = 120
+						hidden = yes
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 10 # recruit interested parties
+				interested_in_society = dw_the_chosen_of_lilith
+			}
+			modifier = {
+				factor = 0 # don't recruit characters interested in something else
+				NOT = { interested_in_society = dw_the_chosen_of_lilith }
+				is_interested_in_any_society = yes
+			}
+		}
+	}
+}
+
+title_decisions = {
+
+}
+
+society_decisions = {
+	#Power Rank 1: Perform an Animal Ritual Sacrifice on a high moon
+
+	#Power Rank 3: Invite one of the Chosen of Lilith to court
+	dw_the_chosen_of_lilith_invite_society_member_to_court = {
+		only_playable = yes
+		
+		potential = {
+			society_rank >= 3
+			society_member_of = dw_the_chosen_of_lilith
+			NOT = { has_character_flag = disciple_arriving }
+		}
+		allow = {
+			has_society_currency_minor_trigger = yes
+			is_inaccessible_trigger = no
+		}
+		effect = {
+			increase_visibility_effect = yes
+			set_character_flag = disciple_arriving
+			detract_society_currency_minor_effect = yes
+			custom_tooltip = {
+				text = dw_the_chosen_of_lilith_invite_society_member_to_court_tooltip
+				character_event = { id = DWSOC.7822 days = 7 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

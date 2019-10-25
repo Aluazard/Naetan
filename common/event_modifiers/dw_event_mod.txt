@@ -1,0 +1,917 @@
+# ICONS:
+#
+# Good 			<=> 		Bad
+#
+#  1 - Martial 				- 19
+#  2 - Learning 			- 20
+#  3 - Diplomacy 			- 21
+#  4 - Stewardship 			- 22
+#  5 - Intrigue 			- 23
+#  6 - Money 				- 24
+#  7 - Prestige 			- 25
+#  8 - Piety 				- 26
+#  9 - Titles 				- 27
+# 10 - Council 				- 28 
+# 11 - Laws 				- 29
+# 12 - Tech 				- 30 
+# 13 - Military 			- 31
+# 14 - Plots 				- 32
+# 15 - Messages 			- 33
+# 16 - Diplomatic actions 	- 34
+# 17 - Church 				- 35
+# 18 - Characters 			- 36
+# 37 - Prison 				- 38
+# 39 - Love 				- 40
+# 41 - Death 				- 42
+# 43 - Indian religion 		- 44
+# 45 - Dog					- 65
+# 46 - Cat					- 66
+# 47 - Owl					- 67
+# 48 - Pagan religion       - 49
+# 50 - Staff of Asclepius   - 51
+# 52 - Mystic               - 53
+# 54 - Bonesaw              - 55
+# 56 - Horseshoe            - 57
+# 58 - Parrot				- 68
+# 59 - Ham					- 60
+# 61 - Anchor				- 62
+# 63 - Jewish religion		- 64
+# 69 - Bed					- 70
+# 71 - Wolf					- 72
+# 73 - Raven				- 74
+# 75 - Demon horns			- 76
+# 77 - Trident				- 78
+# 79 - Stars				- 80
+# 81 - Eye					- 82
+# 83 - Test-tubes			- 84
+# 85 - Science flask		- 86
+# 87 - Flower				- 88
+# 89 - Rats		 			- 90
+# 91 - Otter				- 92
+# 93 - Hedgehog				- 94
+
+# game\gfx\interface\modifier_icons.dds
+
+#Variables:
+#  is_visible: trigger, root is viewer, from is holder. Decides if the viewer can see this trait on holder, default is yes
+
+
+#Character modifiers
+
+###Things that can be bought
+dw_miniskirt = {
+	icon = 18
+	sex_appeal_opinion = 10
+	general_opinion = 5
+	church_opinion = -5
+	diplomacy = 1
+}
+
+dw_revealing_dress = {
+	icon = 18
+	sex_appeal_opinion = 10
+	general_opinion = 5
+	church_opinion = -5
+	diplomacy = 2
+	stewardship = 1
+}
+
+dw_lingerie = {
+	icon = 18
+	sex_appeal_opinion = 20
+	general_opinion = 5
+	church_opinion = -10
+	fertility = 0.2
+}
+
+dw_chainbikini = {
+	icon = 1
+	sex_appeal_opinion = 5
+	martial = 1
+	combat_rating = 1
+}
+
+dw_griffonarmor = {
+	icon = 1
+	monthly_character_prestige = 0.10
+	land_morale = 0.1
+	martial = 2
+	combat_rating = 2
+}
+
+dw_ladywarrior = {
+	icon = 1
+	monthly_character_prestige = 0.10
+	monthly_character_piety = 0.10
+	land_morale = 0.1
+	martial = 1
+	combat_rating = 1
+}
+
+dw_tankarmor = {
+	icon = 1
+	monthly_character_prestige = 0.10
+	land_morale = 0.1
+	martial = 5
+	combat_rating = -1
+}
+
+dw_golden_doublet = {
+	icon = 18
+	general_opinion = 5
+	diplomacy = 1
+	stewardship = 3
+	local_tax_modifier = 0.5 # 50% increase
+}
+
+dw_pet_guard_dog = {
+	health = 1
+	intrigue = 1
+	icon = 18
+}
+
+dw_death_note = {
+	icon = 14
+	monthly_character_piety = -0.25
+}
+
+dw_binding_mark = {
+	icon = 14
+}
+
+dw_fairy_play_cooldown = {
+	icon = 33
+}
+
+dw_fairy_vine_garden = {
+	icon = 4
+	intrigue = 1
+	monthly_character_prestige = 0.33
+}
+
+dw_fairy_flower_garden = {
+	icon = 4
+	stewardship = 1
+	monthly_character_prestige = 0.33
+}
+
+dw_fairy_nectar_intoxication = {
+	icon = 3
+	diplomacy = 1 # The nectar has a very lucid effect, making it easier to chat people up.
+	general_opinion = 5
+}
+
+dw_comfortable_footwear = {
+	icon = 18
+	health = 0.25 # The new footwear reduces strain on the body and gives your step some extra pep.
+	city_tax_modifier = 0.1 # Word travels about your new footwear, leading to a +10% temporary increase in shoe sales in cities	
+}
+
+dw_lucky_charm = { # It may not have any true magical benefit, however, the confidence a lucky charm entails has an effect on how one is seen by others
+	icon = 18
+	general_opinion = 5
+	health = 0.01
+}
+
+### Shopping related
+dw_aphrodites_curse = { # Driven by lust instead of love, one of the strongest in procreation magic
+	icon = 40 # 'Bad' Love icon as it's lust, not love that drives the person
+	monthly_character_piety = -1.0 # So consumed by lust that regular does something inappropriate, such as open wanton flirting with another's spouse, or even kin
+	sex_appeal_opinion = 10 # The curse is strong enough though to impact others, making those who are sexually compatible interested in the person
+	fertility = 0.25 # An impressive 25% increase in fertility as the curse strongly seeks insemination.
+	diplomacy = -2 # Unfortunately, the person is very likely to make in appropriate comments, and should be wary of diplomatic situations.
+}
+dw_silver_tongue_potion = { # Boosts diplomacy
+	icon = 3
+	diplomacy = 2
+}
+dw_werewolf_blood_potion = { # used in a targetted decision.
+	icon = 18
+}
+
+###Lilith related
+dw_holding_lilith_blood_ritual = {
+	icon = 8 # Piety based event since we're giving thanks to Lilith
+	monthly_character_prestige = 0.25
+}
+
+dw_held_lilith_blood_moon = {
+	icon = 8 # Piety based event since we're giving thanks to Lilith
+	monthly_character_prestige = 0.25
+}
+
+dw_lilith_peasant_sacrifice = {
+	icon = 22 # A negative stewardship image as it's generally bad to rile the locals
+	global_revolt_risk = 0.05
+}
+
+dw_lilith_stage_1 = { # Succubus Evolution: Seductress
+	# Note: This may seem really lopsided if the Succubus is also a Seduction focus - yet that's the intent. If a normal human with the seduction focus is as good a seducer as a succubus who isn't trying, then one who is trying, should bury the competition
+	icon = 39 # Love icon
+	intrigue = 2 # A master at playing the game of innuendo
+	fertility = 0.2 # Lilith blesses her child to better procreate
+	general_opinion = 5 # People in general find you more pleasant
+	sex_appeal_opinion = 10 # While those who are sexually attracted, REALLY like you
+}
+
+dw_lilith_stage_2 = { # Succubus Evolution: Leech
+	# As stage 1 save where indicated
+	icon = 39
+	intrigue = 3 # Their skills at seduction grow stronger, as does hiding their tracks
+	fertility = 0.2
+	general_opinion = 5
+	sex_appeal_opinion = 10	
+	# I'm listing the specific religion opinion modifiers, as the general church_opinion negative hit would also imply Lilith's church isn't happy with her own children
+	christian_opinion = -3 # Those of faith start to notice that something isn't quite right
+	muslim_opinion = -3 # Those of faith start to notice that something isn't quite right
+}
+
+dw_lilith_stage_3 = { # Succubus Evolution: Monster
+	# As stage 2 save where indicated
+	icon = 39
+	intrigue = 3
+	fertility = 0.2
+	health = 0.5 # The ability to take on their supernatural form increases their overall health due to the hardier body
+	combat_rating = 1 # Improved reflexes and increases strength are present in both human and supernatural forms
+	general_opinion = 5
+	sex_appeal_opinion = 10
+	christian_opinion = -5 # While those of faith notice something more abnormal
+	muslim_opinion = -5 # While those of faith notice something more abnormal
+}
+
+dw_lilith_stage_4 = { # Succubus Evolution: Corrupter
+	# As stage 3 save where indicated
+	icon = 39
+	intrigue = 4 # Their manipulation skills become even more profound, and their plots have plots
+	fertility = 0.2
+	health = 0.5
+	combat_rating = 1
+	general_opinion = 5
+	sex_appeal_opinion = 10
+	christian_opinion = -8 # While those of faith notice something more abnormal
+	muslim_opinion = -8 # While those of faith notice something more abnormal
+}
+
+dw_lilith_stage_5 = { # Succubus Evolution: Demoness
+	# As stage 4 save where indicated
+	icon = 39
+	intrigue = 4
+	fertility = 0.25 # A little extra bump from Lilith to help procreation of her preferred child
+	health = 1.0 # The vitality of Lilith herself is said to embolden her child
+	combat_rating = 2 # The ability to call upon supernatural surges in speed and strength make them more dangerous when cornered
+	general_opinion = 5
+	sex_appeal_opinion = 10
+	christian_opinion = -10 # While those of faith notice something more abnormal
+	muslim_opinion = -10 # While those of faith notice something more abnormal
+}
+
+dw_incubus_stage_1 = { # Incubus Evolution: Seducer
+	icon = 39 # Love icon
+	intrigue = 1 # A master at playing the game of innuendo
+	fertility = 0.2 # Lilith blesses her child to better procreate
+	general_opinion = 5 # People in general find you more pleasant
+	sex_appeal_opinion = 10 # While those who are sexually attracted, REALLY like you
+}
+
+dw_incubus_stage_2 = { # Incubus Evolution: Leech
+	# As stage 1 save where indicated
+	icon = 39
+	intrigue = 2 # Their skills at seduction grow stronger, as does hiding their tracks
+	fertility = 0.2
+	general_opinion = 5
+	sex_appeal_opinion = 10	
+	# I'm listing the specific religion opinion modifiers, as the general church_opinion negative hit would also imply Lilith's church isn't happy with her own children
+	christian_opinion = -3 # Those of faith start to notice that something isn't quite right
+	muslim_opinion = -3 # Those of faith start to notice that something isn't quite right
+}
+
+dw_incubus_stage_3 = { # Incubus Evolution: Monster
+	# As stage 2 save where indicated
+	icon = 39
+	intrigue = 2
+	fertility = 0.2
+	health = 0.5 # The ability to take on their supernatural form increases their overall health due to the hardier body
+	combat_rating = 1 # Improved reflexes and increases strength are present in both human and supernatural forms
+	general_opinion = 5
+	sex_appeal_opinion = 10
+	christian_opinion = -5 # While those of faith notice something more abnormal
+	muslim_opinion = -5 # While those of faith notice something more abnormal
+}
+
+dw_incubus_stage_4 = { # Incubus Evolution: Illusionist
+	# As stage 3 save where indicated
+	icon = 39
+	intrigue = 3 # Their manipulation skills become even more profound, and their plots have plots
+	fertility = 0.2
+	health = 0.5
+	combat_rating = 1
+	general_opinion = 5
+	sex_appeal_opinion = 10
+	christian_opinion = -8 # While those of faith notice something more abnormal
+	muslim_opinion = -8 # While those of faith notice something more abnormal
+}
+
+dw_incubus_stage_5 = { # Incubus Evolution: Nightmare
+	# As stage 4 save where indicated
+	icon = 39
+	intrigue = 3
+	learning = 2 # The ability to walk the dream scape shows many new and interesting thoughts
+	fertility = 0.25 # A little extra bump from Lilith to help procreation of her special child
+	health = 0.5
+	combat_rating = 1
+	general_opinion = 5
+	sex_appeal_opinion = 10
+	christian_opinion = -10 # While those of faith notice something more abnormal
+	muslim_opinion = -10 # While those of faith notice something more abnormal
+}
+
+dw_lovers_embrace_cooldown = {
+	icon = 40
+}
+
+###End lilith related
+
+###Spells related
+
+dw_spell_frog_target = { # Modifier for the ruler who can target someone to be turned into a frog
+	icon = 26 # Negative piety, as it's a heavy piety cost to warp someone
+}
+
+###End Spells Related
+
+###Economic Action related
+dw_trendsetter = {
+	icon = 4
+	general_opinion = 5
+	monthly_character_prestige = 0.25
+	diplomacy = 1
+}
+
+dw_trend_opportunist = {
+	icon = 6
+	monthly_character_wealth = 5
+}
+
+dw_trend_opportunist_major =  {
+	icon = 6
+	monthly_character_wealth = 5
+	local_tax_modifier = 0.5 # +50%
+}
+
+dw_trend_opportunist_mogul = {
+	icon = 6
+	monthly_character_wealth = 10
+}
+
+dw_maximum_fortune = {
+	icon = 6
+	monthly_character_wealth = 8 # Over a year would equal 96 gp
+}
+
+dw_moderate_fortune = {
+	icon = 6
+	monthly_character_wealth = 7 # Over a year would equal 84 gp
+}
+
+dw_minor_fortune = {
+	icon = 6
+	monthly_character_wealth = 6 # Over a year would equal 72 gp
+}
+###End Economic related
+
+### Related the Brothel
+
+dw_brothel_improvement_1 = {
+	icon = 6
+	monthly_character_wealth = 1
+}
+dw_brothel_improvement_2 = {
+	icon = 6
+	monthly_character_wealth = 2
+}
+dw_brothel_improvement_3 = {
+	icon = 6
+	monthly_character_wealth = 3
+}
+dw_brothel_improvement_4 = {
+	icon = 6
+	monthly_character_wealth = 4
+}
+#dw_brothel_royal_whore = {
+#	icon = 6
+#	monthly_character_wealth = 6
+#}
+#dw_brothel_futa_whore = {
+#	icon = 6
+#	monthly_character_wealth = 5
+#}
+dw_brothel_monk_wine = {
+	icon = 17
+	monthly_character_wealth = 0.5
+}
+dw_brothel_foodndrink = {
+	icon = 4
+	monthly_character_wealth = 0.5
+}
+dw_brothel_jessica_star = {
+	icon = 6	
+	monthly_character_wealth = 1.5
+}
+#dw_brothel_jessica_bar = {
+#	icon = 6
+#	local_tax_modifier = 0.1 #Having a star draws people and helps all of the business slightly, making up for the lost sales the tavern/bars take in lost drink revenue
+#	monthly_character_wealth = 2.5
+#}
+dw_brothel_hypocrite_whore = { # While a whore is a person who has rights, the general public tends to view them as deserving what they get. So if a ruler works as a whore and punishes someone, it has a minor backlash as they're viewed as being a hypocrite
+	icon = 36 # A negative character icon
+	general_opinion = -5 # People think poorly of a hypocrite
+	diplomacy = -1 # Being viewed as a hypocrite can cloud negotiations
+	monthly_character_prestige = -0.5 # Being a hypocrite can erode one's prestige
+} 
+dw_brothel_mystery_room_survivor = {
+	icon = 5 # Intrigue icon since it was a mystery :)
+	intrigue = 1 # The mystery of the experience leaves people guessing
+	monthly_character_prestige = 0.5 # Those who brave the mystery room obtain the respect of others who learn of the feat
+}
+
+###End Brothel related
+
+###Sex Related
+dw_good_sex = {
+	icon = 39
+	health = 0.1 # You feel revitalized after some good sex.
+	general_opinion = 5 # You've the after good sex glow, and you generally get along better with others since you're satisfied.
+}
+dw_rape_trauma = {
+	icon = 40
+	health = -0.5
+	general_opinion = -5
+	sex_appeal_opinion = -25
+	diplomacy = -1
+	intrigue = -2
+	martial = -1
+	learning = -2
+	combat_rating = -1
+	monthly_character_prestige = -1
+}
+dw_tentacle_pregnancy = { #The beast inside feeds on the mind of its host.
+	icon = 40
+	health = -0.5
+	learning = -5
+}
+dw_still_wanting_more = { # Just didn't get the itch properly scratched
+	icon = 40
+	diplomacy = -1 # A little quick to anger from frustration
+	intrigue = -1 # Frustration is hard to conceal not only itself, but other motives
+	martial = 1 # Much more willing to lash out
+	combat_rating = 1
+	learning = -1 # Too distracted to properly focus intellectually
+}
+dw_willing_incest = { # Made a conscious decision to partake in incest, known to the public, and not a part of a religion that believes in Divine Blood
+	icon = 35
+	general_opinion = -10
+}
+### End Sex related
+
+###Slave Related
+dw_slave_training = {
+	icon = 37
+	monthly_character_prestige = -0.5
+}
+
+dw_slave_motivated = {
+	icon = 37
+	health = 0.1
+}
+
+dw_slave_skilled_1 = {
+	icon = 20
+	# No initial bonus
+}
+
+dw_slave_skilled_2 = {
+	icon = 20
+	learning = 1 # They're adapting to new methods, new insights
+}
+
+dw_slave_skilled_3 = {
+	icon = 20
+	learning = 1 # They're adapting to new methods, new insights
+}
+
+dw_slave_skilled_complete = {
+	icon = 2
+	learning = 2 # They're adapting to new methods, new insights
+}
+
+dw_slave_common_1 = {
+	icon = 36
+	# No initial bonus
+}
+
+dw_slave_common_2 = {
+	icon = 36
+	health = 0.10 #Constantly working has led to a more sturdy body
+}
+
+dw_slave_common_3 = {
+	icon = 36
+	health = 0.20 #Constantly working has led to a more sturdy body
+}
+
+dw_slave_common_complete = {
+	icon = 18
+	health = 0.30 #Constantly working has led to a more sturdy body
+}
+
+dw_slave_warrior_1 = {
+	icon = 19
+	#no initial bonus
+}
+
+dw_slave_warrior_2 = {
+	icon = 19
+	health = 0.10 #Constantly working has led to a more sturdy body
+}
+
+dw_slave_warrior_3 = {
+	icon = 19
+	health = 0.20 #Constantly working has led to a more sturdy body
+}
+
+dw_slave_warrior_complete = {
+	icon = 1
+	health = 0.20 #Constantly working has led to a more sturdy body
+	combat_rating = 1 #Clearly more combat capable than they were previously
+}
+
+dw_slave_pleasure_1 = {
+	icon = 40
+	#no initial bonus
+}
+
+dw_slave_pleasure_2 = {
+	icon = 40
+	intrigue = 1 #Learning how to read and use their body to the pleasure of a target person or audience
+}
+
+dw_slave_pleasure_3 = {
+	icon = 40
+	intrigue = 1 #Learning how to read and use their body to the pleasure of a target person or audience
+}
+
+dw_slave_pleasure_complete = {
+	icon = 39
+	intrigue = 2 #Learning how to read and use their body to the pleasure of a target person or audience
+}
+
+dw_slave_broken = {
+	icon = 36
+	health = -2
+	diplomacy = -5
+	martial = -5
+	stewardship = -5
+	intrigue = -5
+	learning = -5
+	combat_rating = -5
+}
+
+dw_slave_bodyguard = {
+	icon = 1
+	health = 0.5
+	combat_rating = 1
+}
+
+### End Slave related
+
+###Werewolf related
+dw_werewolf_bitch = {
+	icon = 27 #a title to other werewolves
+	learning = -1
+	monthly_character_piety = -0.10
+	fertility = 0.5
+}
+
+dw_werewolf_aphrodisiac = {
+	icon = 6
+	monthly_character_wealth = 5
+}
+
+dw_omega_male = {
+	icon = 27 #a title to other werewolves
+	learning = -1
+	martial = -2
+	combat_rating = -1
+	fertility = -0.5
+}
+
+dw_alpha_bitch = {
+	icon = 9 #a title to other werewolves
+	monthly_character_prestige = 0.25 # An alpha bitch knows her role and her mere presence calls for respect
+	combat_rating = 1 # Self confidence in combat give them a slight edge
+	general_opinion = 5 # People can't help but look up to the alpha bitch
+}
+
+dw_werewolf_hunt_cooldown = {
+	icon = 33 # Bad icon because no one likes having to wait
+}
+
+dw_werewolf_successful_hunt_great = {
+	icon = 1 # A hunt typically involves martial skills
+	monthly_character_prestige = 0.50 # Those of importance can almost sense the hunt was successful and fulfilling
+	martial = 1 # The hunt has increased confidence in battle
+}
+
+dw_werewolf_successful_hunt = {
+	icon = 1 # A hunt typically involves martial skills
+	monthly_character_prestige = 0.25 # Those of importance can almost sense the hunt was successful and fulfilling
+}
+
+dw_werewolf_young_bad_hunt = {
+	icon = 33
+	health = -0.50 # Came away with a minor injury that should heal over time
+}
+
+dw_werewolf_young_fun_hunt = {
+	icon = 15
+	health = 0.50 # Had a blast, feeling revitalized and ready to take on the world
+}
+
+dw_werewolf_corruption_stage1 = {
+	icon = 20
+	learning = -1 # The rage within is clouding judgement, making it difficult to focus
+	diplomacy = -1 # The rage within causes occasional outbursts
+}
+
+dw_werewolf_corruption_stage2 = {
+	icon = 20
+	learning = -2 # The rage within is clouding judgement, making it difficult to focus
+	diplomacy = -2 # The rage within causes occasional outbursts
+	intrigue = 1 # Finding it difficult to trust people, you begin scheming and looking for plots, and while they're not always there, sometimes they may just be...
+}
+
+dw_werewolf_corruption_stage3 = {
+	icon = 20
+	learning = -2 # The rage within is clouding judgement, making it difficult to focus
+	diplomacy = -2 # The rage within causes occasional outbursts
+	intrigue = 1 # Finding it difficult to trust people, you begin scheming and looking for plots, and while they're not always there, sometimes they may just be...
+	health = -0.50 # You've begun to claw and scratch yourself constantly, leaving small wounds and scabs on you
+	combat_rating = 1 # A lack of self restraint makes you more dangerous to face in single combat
+	general_opinion = -10 # Your odd behavior has people avoiding you
+}
+
+dw_werewolf_corruption_stage4 = {
+	icon = 20
+	learning = -3 # The rage within is clouding judgement, making it difficult to focus
+	diplomacy = -3 # The rage within causes regular outbursts
+	intrigue = 1 # Finding it difficult to trust people, you begin scheming and looking for plots, and while they're not always there, sometimes they may just be...
+	health = -0.50 # You've begun to claw and scratch yourself constantly, leaving small wounds and scabs on you
+	combat_rating = 1 # A lack of self restraint makes you more dangerous to face in single combat
+	general_opinion = -15 # Your odd behavior has people avoiding you
+}
+
+dw_werewolf_corruption_stage5 = {
+	icon = 20
+	learning = -4 # The rage within is clouding judgement, making it difficult to focus
+	diplomacy = -3 # The rage within causes regular outbursts
+	intrigue = 2 # Finding it difficult to trust people, you begin scheming and looking for plots, and while they're not always there, sometimes they may just be...
+	health = -0.75 # You've begun to claw and scratch yourself constantly, leaving small wounds and scabs on you
+	combat_rating = 2 # You fight with an unnatural frenzy, difficult to track and counter
+	general_opinion = -25 # Your odd behavior has people avoiding you
+}
+
+dw_werewolf_corruption_complete = {
+	icon = 20
+	learning = -10 # All that exists within you is rage
+	diplomacy = -10 # The rage within causes frequent outbursts and you take instead of negotiate
+	intrigue = 3 # You're always on the prowl and on guard
+	health = -0.75 # You've begun to claw and scratch yourself constantly, leaving small wounds and scabs on you
+	combat_rating = 2 # You fight with an unnatural frenzy, difficult to track and counter
+	general_opinion = -100 # You've lost it. No one feels comfortable by you, or trusts you. Not family, friends, your own kind. You see them all as enemies and they view you the same way.
+}
+
+dw_werewolf_beast_whispers = {
+	icon = 36 # Bad character icon
+	# This modifier is only an indication (and visual representation) of a werewolf who is hearing the whispers of the beast within. When they hunt, this modifier should disappear until the call for the hunt returns.
+}
+
+## End Werewolf related
+
+### Vampire related
+dw_vampire_thrall = {
+	icon = 35
+	intrigue = 1 # Given instruction on how and when to be sneaky while serving their master
+	combat_rating = 1 # Disregards their own safety, throwing themselves into combat as their life is little next to their master
+	fertility = -0.10 # The bonding experience saps some of the life creating ability from the thrall
+}
+dw_vampire_cattle = {
+	icon = 22
+	health = -1 # Being fed on leaves the cattle always feeling weak
+	learning = -2 # Their mind is often clouded, making it difficult to be creative or think logically
+	fertility = 0.10 # While their health suffers, the body tries its best to be fertile for procreation before the end arrives
+}
+dw_outed_vampire = {
+	icon = 42
+	general_opinion = -50 # You're viewed by most as an enemy, while those who may be sympathetic view your being outed as a sign of weakness.
+}
+dw_outed_dhampir = {
+	icon = 42
+	general_opinion = -10 # While society generally realizes that you're the unfortunate result of an unholy union, people are wary of the vampire bloodline within you.
+}
+dw_vampire_hunt_cooldown = {
+	icon = 74 # Bad icon because no one likes having to wait
+}
+
+### End Vampire related
+
+### Monster related
+
+dw_is_a_monster = { # Being a vampire/werewolf/tentaclekin/etc. is one thing. Being one with people dying or disappearing under odd circumstances, and the masses begin to gather for protection, which risks revolt
+	major = yes
+	icon = 82
+	global_revolt_risk = 0.02 # 2% increase
+}
+
+### End Monster related
+
+### Notable Deeds
+dw_tentacle_survivor = {
+	icon = 1
+	combat_rating = 1
+	monthly_character_prestige = 1
+	general_opinion = 10
+}
+dw_generous_tipper = {
+	icon = 6 # Positive money icon
+	general_opinion = 3
+}
+dw_morale_booster = {
+	icon = 13 # Positive military icon
+	land_morale = 0.1
+	land_organisation = 0.1
+}
+dw_writing_arcane_theory = {
+	icon = 52 # Mystic icon works well for our arcane tome
+	monthly_character_prestige = 0.5
+}
+
+### End Notable Deeds
+
+### Status Modifiers
+dw_corruption_1 = { # First stage of corruption
+	icon = 36
+	monthly_character_piety = -0.1
+}
+dw_corruption_2 = { # Second stage of corruption
+	icon = 36
+	monthly_character_piety = -0.2
+}
+dw_corruption_3 = { # Third and final stage of corruption
+	icon = 36
+	monthly_character_piety = -0.3
+}
+dw_affection_1 = { # First stage of romantic affection
+	icon = 39
+}
+dw_affection_2 = { # Second stage of romantic affection
+	icon = 39
+}
+dw_affection_3 = { # Third and final stage of romantic affection
+	icon = 39
+}
+dw_intellectually_stimulated = {
+	icon = 2 # Positive Learning icon
+	learning = 1 # New ideas abound!
+	tech_growth_modifier_culture = 1 # Doubles the output of cultural technology for the length of the modifier
+}
+dw_excellent_meal = {
+	icon = 4 # Stewardship roughly involves feeding people... Work with me here.
+	health = 0.25
+}
+dw_one_of_the_people = {
+	icon = 3 # Being widely accepted as one of the people is a masterful diplomatic move
+	diplomacy = 1
+	global_revolt_risk = -0.03 # Lowers the revolt risk by 3%
+}
+dw_entertaining_arena_show = {
+	icon = 7 # Positive prestige icon, as the Arena is about glory, and even those in the stands are viewed favourably when they can brag about attending an event
+	monthly_character_prestige = 0.4
+}
+dw_disturbing_arena_show = {
+	icon = 26 # Negative piety as what was witnessed seems to have sapped them spiritually
+	monthly_character_piety = -0.4
+}
+dw_arousing_arena_show = {
+	icon = 39 # Positive love symbol as they're really feeling it, or at least a strong sense of lust
+	fertility = 0.25
+}
+dw_attended_great_show = {
+	icon = 18 # There is entertainment, and then there is entertainment that people will be talking about for some time. People wish they saw those performances live.
+	monthly_character_prestige = 0.5
+}
+dw_attended_epic_show = {
+	icon = 18 # Then there are shows that are so impressive, that even peers must acknowledge just how great they are. Truly defining affairs that may even inspire poems or stories.
+	monthly_character_prestige = 1.0
+}
+dw_has_rumor_material = {
+	icon = 5 # Sometimes a person may obtain information that isn't damning against someone, but it still has enough juicy bits that people enjoy talking about it.
+	intrigue = 1
+}
+dw_easter_egg_buff = {
+	icon = 15 # Player found an easter egg event - which are rare seasonal inspired events and as such get a nice bonus for a period.
+	martial = 1
+	learning = 1
+	diplomacy = 1
+	stewardship = 1
+	intrigue = 1
+	monthly_character_prestige = 0.5
+	monthly_character_piety = 0.5
+	monthly_character_wealth = 2
+}
+### End Status Modifiers
+### Combat Modifiers
+dw_wound_1 = {
+	icon = 19
+	health = -1.0
+}
+dw_wound_2 = {
+	icon = 19
+	health = -2.0
+}
+dw_wound_3 = {
+	icon = 19
+	health = -3.0
+}
+dw_wound_4 = {
+	icon = 19
+	health = -4.0
+}
+dw_wound_5 = {
+	icon = 19
+	health = -5.0
+}
+dw_wound_6 = {
+	icon = 19
+	health = -6.0
+}
+dw_wound_7 = {
+	icon = 19
+	health = -7.0
+}
+dw_wound_8 = {
+	icon = 19
+	health = -8.0
+}
+dw_wound_9 = {
+	icon = 19
+	health = -9.0
+}
+dw_wound_10 = {
+	icon = 19
+	health = -10.0
+}
+dw_wound_11 = {
+	icon = 19
+	health = -11.0
+}
+dw_wound_12 = {
+	icon = 19
+	health = -12.0
+}
+dw_wound_13 = {
+	icon = 19
+	health = -13.0
+}
+dw_wound_14 = {
+	icon = 19
+	health = -14.0
+}
+dw_wound_15 = {
+	icon = 19
+	health = -15.0
+}
+dw_wound_16 = {
+	icon = 19
+	health = -16.0
+}
+dw_wound_17 = {
+	icon = 19
+	health = -17.0
+}
+dw_wound_18 = {
+	icon = 19
+	health = -18.0
+}
+dw_wound_19 = {
+	icon = 19
+	health = -19.0
+}
+dw_wound_20 = {
+	icon = 19
+	health = -20.0
+}
+### End Combat Modifiers
+### Offmap Modifier
+dw_offmap_slow_your_roll = {
+	icon = 33 # Negative message image - to signify one has to be patient
+}

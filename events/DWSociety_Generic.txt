@@ -1,0 +1,798 @@
+### Dark World Generic Society events (meaning it can happen to multiple Dark World - and potentially vanilla societies)
+## Joining a Dark World Society .90 - 
+## Soul Corruption .7000 - 
+
+namespace = DWSOC
+
+###JOINING###
+
+## Interest has been made - now it's only about awaiting a response
+character_event = {
+	id = DWSOC.90
+	hide_window = yes
+	is_triggered_only = yes # From on_character_ask_to_join_society
+	immediate = {
+		if = {
+			limit = {
+				society_member_of = dw_the_wizards
+			}
+			random_society_member = {
+				limit = {
+					is_society_grandmaster = yes
+					society_member_of = dw_the_wizards
+				}
+				save_event_target_as = grand_enchanter
+			}
+		}
+		else = {
+			random_society_member = {
+				limit = {
+					is_society_grandmaster = yes
+					society_member_of = dw_the_chosen_of_lilith
+				}
+				save_event_target_as = grand_enchanter
+			}
+		}
+		letter_event = { id = DWSOC.91 days = 5 random = 10 }
+	}
+}
+
+## A mysterious letter
+letter_event = {
+    id = DWSOC.91
+    desc = DWSOC91
+	portrait = event_target:grand_enchanter
+    is_triggered_only = yes # from .90
+	trigger = {
+		# Should only fire for those with interest in one of the Dark World Societies
+		OR = {
+			interested_in_society = dw_the_wizards
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+	}
+	option = { # I shall go to the meeting
+		name = DWSOC91A
+		narrative_event = { id = DWSOC.100 days = 7 }
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0 # If they're paranoid, then there is no way they're going to this, as they view it as a trap
+				trait = paranoid
+			}
+		}
+	}
+	option = { # I don't trust it.
+		name = DWSOC91B
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+## The first test
+narrative_event = {
+    id = DWSOC.100
+	picture = a_placeholder
+	title = dw_society_inquiry_title
+    is_triggered_only = yes 
+    desc = { # The Chosen of Lilith
+    	trigger = {
+   			interested_in_society = dw_the_chosen_of_lilith
+    	}
+    	text = DWSOC100.0
+    	picture = lilith_society_approach1
+    }
+    desc = { # Wizards College
+    	trigger = {
+   			interested_in_society = dw_the_wizards
+    	}
+    	text = DWSOC100.1
+    	picture = wizard_society_approach2
+    }
+	trigger = {
+		# Should only fire for those with interest in one of the Dark World Societies
+		OR = {
+			interested_in_society = dw_the_wizards
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+	}
+	option = { # I still wish to join
+		name = DWSOC100A
+		narrative_event = { id = DWSOC.101 days = 1 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.5
+				trait = trusting
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					trait = bad_priest_christian
+					trait = bad_priest_muslim
+					trait = bad_priest_norse
+					trait = bad_priest_tengri
+					trait = bad_priest_zoroastrian
+					trait = bad_priest_aztec
+				}
+			}
+			modifier = {
+				factor = 1.5
+				trait = hedonist
+				interested_in_society = dw_the_chosen_of_lilith
+			}
+			modifier = {
+				factor = 1.5
+				trait = lustful
+				interested_in_society = dw_the_chosen_of_lilith
+			}
+			modifier = {
+				factor = 1.5
+				trait = cynical
+			}
+		}
+	}
+	option = { # I've made a mistake.
+		name = DWSOC100B
+		if = {
+			limit = {
+				interested_in_society = dw_the_chosen_of_lilith
+			}
+			set_character_flag = disapproves_of_satanism
+		}
+		if = {
+			limit = {
+				interested_in_society = dw_the_wizards
+			}
+			set_character_flag = disapproves_of_the_wizards
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				has_pious_trait_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				has_crusade_trait_trigger = yes
+			}
+		}
+	}
+}
+
+# Passed the first test, another shall follow
+narrative_event = {
+    id = DWSOC.101
+	picture = a_placeholder
+	title = dw_society_inquiry_title
+    is_triggered_only = yes 
+    desc = { # The Chosen of Lilith
+    	trigger = {
+   			interested_in_society = dw_the_chosen_of_lilith
+    	}
+    	text = DWSOC101.0
+    	picture = lilith_society_approach1
+    }
+    desc = { # Wizards College
+    	trigger = {
+   			interested_in_society = dw_the_wizards
+    	}
+    	text = DWSOC101.1
+    	picture = wizard_society_approach1
+    }
+	trigger = {
+		# Should only fire for those with interest in one of the Dark World Societies
+		OR = {
+			interested_in_society = dw_the_wizards
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+	}
+	option = { # I shall look forward to the contact
+		name = DWSOC101A
+		narrative_event = { id = DWSOC.102 days = 5 random = 10 }
+	}
+}
+
+# Second test
+narrative_event = {
+    id = DWSOC.102
+	picture = a_placeholder
+	title = dw_society_inquiry_title
+    is_triggered_only = yes 
+    desc = { # The Chosen of Lilith
+    	trigger = {
+   			interested_in_society = dw_the_chosen_of_lilith
+    	}
+    	text = DWSOC102.0
+    	picture = lilith_society_approach2
+    }
+    desc = { # Wizards College
+    	trigger = {
+   			interested_in_society = dw_the_wizards
+    	}
+    	text = DWSOC102.1
+    	picture = wizard_society_approach3
+    }
+	trigger = {
+		# Should only fire for those with interest in one of the Dark World Societies
+		OR = {
+			interested_in_society = dw_the_wizards
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+	}
+    option = { # I'm still in this
+		trigger = {
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+        name = DWSOC102A
+		hidden_effect = {
+			character_event = { id = DWSOC.103 }
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				trait = craven
+			}
+		}
+    }
+	option = { # I've made a mistake.
+		trigger = {
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+		name = DWSOC102B
+		set_character_flag = disapproves_of_satanism
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_pious_trait_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				has_crusade_trait_trigger = yes
+			}
+		}
+	}
+	option = { # Wizards College No Pill
+		trigger = {
+			interested_in_society = dw_the_wizards
+			learning = 15
+		}
+		name = DWSOC102C
+		#TODO Toolbar color code for the high learning
+		narrative_event = { id = DWSOC.110 }
+	}
+	option = { # Wizards College Red Pill
+		trigger = {
+			interested_in_society = dw_the_wizards
+		}
+		name = DWSOC102D
+		narrative_event = { id = DWSOC.111 }
+	}
+	option = { # Wizards College Blue Pill
+		trigger = {
+			interested_in_society = dw_the_wizards
+		}
+		name = DWSOC102E
+		set_character_flag = disapproves_of_the_wizards
+		narrative_event = { id = DWSOC.112 days = 1}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_pious_trait_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				has_crusade_trait_trigger = yes
+			}
+		}
+	}
+}
+
+## Chosen of Lilith routing
+character_event = {
+	id = DWSOC.103
+	hide_window = yes
+	is_triggered_only = yes # from 102
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					trait = lilith
+					trait = incubus
+				}
+			}
+			narrative_event = { id = DWSOC.104 days = 1 }
+			break = yes # This should end the immediate block
+		}
+		if = {
+			limit = {
+				is_female = yes
+			}
+			narrative_event = { id = DWSOC.105 days = 1 }
+			break = yes # This should end the immediate block
+		}
+		if = {
+			limit = {
+				NOT = { is_female = yes }
+			}
+			narrative_event = { id = DWSOC.107 days = 1 }
+			break = yes # This should end the immediate block
+		}
+	}
+}
+
+## Incubus or Succubus Granted automatic entry
+narrative_event = {
+    id = DWSOC.104
+	picture = a_placeholder
+	title = dw_society_inquiry_title
+    is_triggered_only = yes 
+    desc = { # Succubus
+    	trigger = {
+   			trait = lilith
+    	}
+    	text = DWSOC104.0
+    	picture = lilith_society_approach2
+    }
+    desc = { # Incubus
+    	trigger = {
+   			trait = incubus
+    	}
+    	text = DWSOC104.1
+    	picture = lilith_society_approach2
+    }
+	trigger = {
+		# Should only fire for those with interest in one of the Dark World Societies
+		OR = {
+			interested_in_society = dw_the_wizards
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+	}
+	immediate = { set_character_flag = society_join_block }
+
+    option = { # I'm happy just joining.
+        name = DWSOC104A
+		if = {
+			limit = {
+				interested_in_society = dw_the_chosen_of_lilith
+			}
+			join_society = dw_the_chosen_of_lilith
+		}
+		clr_character_flag = society_join_block
+    }
+	option = { # Fuck it, let's go with what you had planned
+		name = DWSOC104B
+		if = {
+			limit = {
+				trait = lilith
+			}
+			narrative_event = { id = DWSOC.105 }
+		}
+		else = {
+			narrative_event = { id = DWSOC.107 }
+		}
+	}
+}
+
+## Female faces gang bang for entry
+narrative_event = {
+    id = DWSOC.105
+	picture = a_placeholder
+	title = dw_society_inquiry_title
+    is_triggered_only = yes 
+    desc = { # Succubus - from 104
+    	trigger = {
+   			trait = lilith
+    	}
+    	text = DWSOC105.0
+    	picture = lilith_society_approach3
+    }
+    desc = { # Not a Succubus
+    	trigger = {
+   			NOT = { trait = lilith }
+    	}
+    	text = DWSOC105.1
+    	picture = lilith_society_approach3
+    }
+	trigger = {
+		# Should only fire for those with interest in one of the Dark World Societies
+		OR = {
+			interested_in_society = dw_the_wizards
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+	}
+
+    option = { # I prepare to give myself to the men
+        name = DWSOC105A
+		narrative_event = { id = DWSOC.106 }
+    }
+	# TODO Add an option to try and flee, which can lead to rape, escape, or potentially death
+}
+
+## Female completes gang bang for entry
+narrative_event = {
+    id = DWSOC.106
+	picture = a_placeholder
+	title = dw_society_inquiry_title
+    is_triggered_only = yes 
+    desc = { # Succubus - from 104
+    	trigger = {
+   			trait = lilith
+    	}
+    	text = DWSOC106.0
+    	picture = lilith_society_approach4
+    }
+    desc = { # Not a Succubus
+    	trigger = {
+   			NOT = { trait = lilith }
+    	}
+    	text = DWSOC106.1
+    	picture = lilith_society_approach4
+    }
+	trigger = {
+		# Should only fire for those with interest in one of the Dark World Societies
+		OR = {
+			interested_in_society = dw_the_wizards
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+	}
+	immediate = { set_character_flag = society_join_block }
+
+    option = {
+        name = DWSOC106A
+		if = {
+			limit = {
+				interested_in_society = dw_the_chosen_of_lilith
+			}
+			join_society = dw_the_chosen_of_lilith
+		}
+		clr_character_flag = society_join_block
+    }
+}
+
+## Male faces submission for entry
+narrative_event = {
+    id = DWSOC.107
+	picture = a_placeholder
+	title = dw_society_inquiry_title
+    is_triggered_only = yes 
+    desc = { # Incubus - from 104
+    	trigger = {
+   			trait = incubus
+    	}
+    	text = DWSOC107.0
+    	picture = lilith_society_approach5
+    }
+    desc = { # Not an Incubus
+    	trigger = {
+   			NOT = { trait = incubus }
+    	}
+    	text = DWSOC107.1
+    	picture = lilith_society_approach5
+    }
+	trigger = {
+		# Should only fire for those with interest in one of the Dark World Societies
+		OR = {
+			interested_in_society = dw_the_wizards
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+	}
+
+    option = { # I prepare to give myself to the men
+        name = DWSOC107A
+		narrative_event = { id = DWSOC.108 }
+    }
+	# TODO Add an option to try and flee, which can lead to rape, escape, or potentially death
+}
+
+## Male completes submissive role for entry
+narrative_event = {
+    id = DWSOC.108
+	picture = a_placeholder
+	title = dw_society_inquiry_title
+    is_triggered_only = yes 
+    desc = { # Incubus
+    	trigger = {
+   			trait = incubus
+    	}
+    	text = DWSOC108.0
+    	picture = lilith_society_approach6
+    }
+    desc = { # Not an Incubus
+    	trigger = {
+   			NOT = { trait = incubus }
+    	}
+    	text = DWSOC108.1
+    	picture = lilith_society_approach6
+    }
+	trigger = {
+		# Should only fire for those with interest in one of the Dark World Societies
+		OR = {
+			interested_in_society = dw_the_wizards
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+	}
+	immediate = { set_character_flag = society_join_block }
+
+    option = {
+        name = DWSOC108A
+		if = {
+			limit = {
+				interested_in_society = dw_the_chosen_of_lilith
+			}
+			join_society = dw_the_chosen_of_lilith
+		}
+		clr_character_flag = society_join_block
+    }
+}
+
+
+## Wizards College No Pill
+narrative_event = {
+    id = DWSOC.110
+	desc = DWSOC110
+	picture = wizard_society_approach3
+	title = dw_society_inquiry_title
+    is_triggered_only = yes 
+	trigger = {
+		# Should only fire for those with interest in one of the Dark World Societies
+		OR = {
+			interested_in_society = dw_the_wizards
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+	}
+	immediate = { set_character_flag = society_join_block }
+    option = {
+        name = DWSOC110A
+		join_society = dw_the_wizards
+		clr_character_flag = society_join_block
+    }
+}
+
+## Wizards College Red Pill
+narrative_event = {
+    id = DWSOC.111
+	desc = DWSOC111
+	picture = wizard_society_redpill
+	title = dw_society_inquiry_title
+    is_triggered_only = yes 
+	trigger = {
+		# Should only fire for those with interest in one of the Dark World Societies
+		OR = {
+			interested_in_society = dw_the_wizards
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+		# Should only fire for those still alive - a special check as they may die from the red pill effect.
+		is_alive = yes
+	}
+	immediate = { 
+		set_character_flag = society_join_block
+		# TODO Red Pill Effect
+	}
+    option = {
+        name = DWSOC111A
+		join_society = dw_the_wizards
+		clr_character_flag = society_join_block
+    }
+    option = { # dies
+        name = DWSOC111B
+    }	
+}
+
+## Wizards College Blue Pill
+narrative_event = {
+    id = DWSOC.112
+	desc = DWSOC112
+	picture = wizard_society_bluepill
+	title = dw_society_inquiry_title
+    is_triggered_only = yes 
+	trigger = {
+		# Should only fire for those with interest in one of the Dark World Societies
+		OR = {
+			interested_in_society = dw_the_wizards
+			interested_in_society = dw_the_chosen_of_lilith
+		}
+	}
+    option = {
+        name = DWSOC112A
+    }
+}
+
+
+### Dark World Society Corruption chances (includes Chosen of Lilith, Wizards Tower societies)
+character_event = {
+	id = DWSOC.7000
+	hide_window = yes
+	is_triggered_only = yes # triggered in on_society_bi_yearly_pulse
+	trigger = {
+		OR = {
+			society_member_of = dw_the_chosen_of_lilith # Price of dealing with one outside of God's grace
+			society_member_of = dw_the_wizards # Price of dealing with the arcane
+		}
+		days_in_society > 1095 # need to have been in the society for over 3 years
+	}
+	immediate = {
+		check_for_dw_soul_corruption_effect = yes
+	}
+}
+
+#Negative Soul Corruption event
+narrative_event = {
+	id = DWSOC.7050
+	picture = a_placeholder
+	title = dw_soul_corruption_title
+	desc = { # female
+		trigger = {
+			is_female = yes
+		}
+		text = DWSOC7050
+		picture = wizard_insane_female1
+	}
+	desc = { # male
+		trigger = {
+			NOT = { is_female = yes }
+		}
+		text = DWSOC7050
+		picture = wizard_insane_male1
+	}
+	hide_from = yes
+	is_triggered_only = yes
+	option = {
+		name = DWSOC7050A
+		trigger_switch = {
+			on_trigger = has_character_flag
+			corruption_remove_kind = { 
+				remove_trait = kind
+				clr_character_flag = corruption_remove_kind 
+			}
+			corruption_add_cruel = { 
+				add_trait = cruel
+				clr_character_flag = corruption_add_cruel 
+			}
+			corruption_remove_just = { 
+				remove_trait = just
+				clr_character_flag = corruption_remove_just
+			}
+			corruption_add_arbitrary = { 
+				add_trait = arbitrary
+				clr_character_flag = corruption_add_arbitrary
+			}
+			corruption_remove_honest = { 
+				remove_trait = honest
+				clr_character_flag = corruption_remove_honest
+			}
+			corruption_add_deceitful = { 
+				add_trait = deceitful
+				clr_character_flag = corruption_add_deceitful
+			}
+			corruption_add_possessed = { 
+				add_trait = possessed
+				clr_character_flag = corruption_add_possessed
+			}
+			corruption_add_lunatic = { 
+				add_trait = lunatic
+				clr_character_flag = corruption_add_lunatic
+			}
+			corruption_add_hunchback = { 
+				add_trait = hunchback
+				clr_character_flag = corruption_add_hunchback
+			}
+			corruption_add_ugly = { 
+				add_trait = ugly
+				clr_character_flag = corruption_add_ugly
+			}
+			corruption_add_weak = { 
+				add_trait = weak
+				clr_character_flag = corruption_add_weak
+			}
+			corruption_add_stressed = { 
+				add_trait = stressed
+				clr_character_flag = corruption_add_stressed
+			}
+			corruption_add_stutter = { 
+				add_trait = stutter
+				clr_character_flag = corruption_add_stutter
+			}
+		}
+	}	
+}
+
+#Beneficial Soul Corruption event
+narrative_event = {
+	id = DWSOC.7100
+	picture = a_placeholder
+	title = dw_soul_corruption_title
+	desc = { # female
+		trigger = {
+			is_female = yes
+		}
+		text = DWSOC7100
+		picture = wizard_power_female1
+	}
+	desc = { # male
+		trigger = {
+			NOT = { is_female = yes }
+		}
+		text = DWSOC7100
+		picture = wizard_power_male1
+	}
+	hide_from = yes
+	is_triggered_only = yes
+	option = {
+		name = DWSOC7100A
+		trigger_switch = {
+			on_trigger = has_character_flag
+			# Minors
+			dw_remove_feeble = { 
+				remove_trait = feeble
+				clr_character_flag = dw_remove_feeble 
+			}
+			dw_add_robust = { 
+				add_trait = robust
+				clr_character_flag = dw_add_robust 
+			}
+			dw_remove_dull = { 
+				remove_trait = dull
+				clr_character_flag = dw_remove_dull
+			}
+			dw_add_shrewd = { 
+				add_trait = shrewd
+				clr_character_flag = dw_add_shrewd
+			}
+			dw_remove_shy = { 
+				remove_trait = shy
+				clr_character_flag = dw_remove_shy
+			}
+			dw_add_gregarious = { 
+				add_trait = gregarious
+				clr_character_flag = dw_add_gregarious
+			}
+			# Majors
+			dw_remove_ugly = { 
+				remove_trait = ugly
+				clr_character_flag = dw_remove_ugly 
+			}
+			dw_add_fair = { 
+				add_trait = fair
+				clr_character_flag = dw_add_fair 
+			}
+			dw_add_bombshell = { 
+				add_trait = bombshell
+				clr_character_flag = dw_add_bombshell 
+			}
+			dw_remove_weak = { 
+				remove_trait = weak
+				clr_character_flag = dw_remove_weak 
+			}
+			dw_add_strong = { 
+				add_trait = strong
+				clr_character_flag = dw_add_strong 
+			}
+			dw_remove_imbecile = { 
+				remove_trait = imbecile
+				clr_character_flag = dw_remove_imbecile 
+			}
+			dw_remove_slow = { 
+				remove_trait = slow
+				clr_character_flag = dw_remove_slow 
+			}
+			dw_add_quick = { 
+				add_trait = quick
+				clr_character_flag = dw_add_quick 
+			}
+			dw_lose_quick_add_genius = { 
+				remove_trait = quick
+				add_trait = genius
+				clr_character_flag = dw_lose_quick_add_genius 
+			}
+		}
+	}	
+}
+

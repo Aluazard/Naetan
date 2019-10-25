@@ -1,0 +1,56 @@
+#CODE;ENGLISH;;;;;;;;;;;;;x
+#Rules
+DW_RULE_MAJOR_CAMPAIGN;Dark World Campaign;;;;;;;;;;;;;x
+DW_RULE_NO_CAMPAIGN;None;;;;;;;;;;;;;x
+DW_RULE_NO_CAMPAIGN_DESC;You are not starting with any of the special Dark World campaign options.;;;;;;;;;;;;;x
+DW_RULE_LILITH_CAMPAIGN;Child of Lilith;;;;;;;;;;;;;x
+DW_RULE_LILITH_CAMPAIGN_DESC;You've always been troubled by dark dreams. Now, as you've ascended to your place on the throne, your dream becomes more.;;;;;;;;;;;;;x
+DW_RULE_FUTA_CONTENT;Dark World Gender Bender Content;;;;;;;;;;;;;x
+DW_RULE_NO_SPECIAL;No;;;;;;;;;;;;;x
+DW_RULE_NO_SPECIAL_DESC;You have chosen to NOT include this content in your game.;;;;;;;;;;;;;x
+DW_RULE_YES_FUTA;Yes;;;;;;;;;;;;;x
+DW_RULE_YES_FUTA_DESC;You have chosen to include content such as Futanari and Traps in your game.;;;;;;;;;;;;;x
+DW_RULE_HEAVEN_HELL_CONTENT;Dark World Heaven and Hell Content;;;;;;;;;;;;;x
+DW_RULE_YES_LILITH;Yes;;;;;;;;;;;;;x
+DW_RULE_YES_LILITH_DESC;You have chosen to include adult content that has Succubi, Incubi, and Angels.;;;;;;;;;;;;;x
+DW_RULE_CLASSIC_MONSTER_CONTENT;Dark World Classic Monster Content;;;;;;;;;;;;;x
+DW_RULE_YES_CLASSIC;Yes;;;;;;;;;;;;;x
+DW_RULE_YES_CLASSIC_DESC;You have chosen to include adult content that has Werebeasts and Vampires.;;;;;;;;;;;;;x
+DW_RULE_FAE_CONTENT;Dark World Fae Content;;;;;;;;;;;;;x
+DW_RULE_YES_FAE;Yes;;;;;;;;;;;;;x
+DW_RULE_YES_FAE_DESC;You have chosen to include adult content that has Elves, Orcs, and Fairies.;;;;;;;;;;;;;x
+DW_RULE_FAR_EAST_CONTENT;Dark World Far East Content;;;;;;;;;;;;;x
+DW_RULE_YES_FAR_EAST;Yes;;;;;;;;;;;;;x
+DW_RULE_YES_FAR_EAST_DESC;You have chosen to include adult content that has Neko and Kitsune.;;;;;;;;;;;;;x
+DW_BONUS_TRAIT;Dark World Bonus Trait Start;;;;;;;;;;;;;x
+DW_RULE_NO_BONUS;No;;;;;;;;;;;;;x
+DW_RULE_NO_BONUS_DESC;Do not start with any bonus traits. NOTE: Campaign starts give certain traits, so be careful not to select the same traits.;;;;;;;;;;;;;x
+DW_RULE_YES_BONUS_FUTA;Gender Bender;;;;;;;;;;;;;x
+DW_RULE_YES_BONUS_FUTA_DESC;This will enable you to start the game with an Intrigue Decision which will allow you to be a Futa or Trap.;;;;;;;;;;;;;x
+DW_RULE_FENRIS_PACK_CAMPAIGN;Rise of the Pack;;;;;;;;;;;;;x
+DW_RULE_FENRIS_PACK_CAMPAIGN_DESC;Fenris, the Ancient Werewolf, has decided it is time for a new age. One which you will help lead.;;;;;;;;;;;;;x
+DW_RULE_WEREWOLF_BITCH_START;Werewolf Toy;;;;;;;;;;;;;x
+DW_RULE_WEREWOLF_BITCH_START_DESC;A werewolf joined your court and has established dominance over you. (Werewolf Bitch or Omega Male);;;;;;;;;;;;;x
+DW_RULE_NEKO_START;Curiosity and the Cat;;;;;;;;;;;;;x 
+DW_RULE_NEKO_START_DESC;The Neko bloodline, from your great grandmother, awakens within you.;;;;;;;;;;;;;x
+DW_RULE_VAMPIRE_START;Bitten and Awoken;;;;;;;;;;;;;x
+DW_RULE_VAMPIRE_START_DESC;You were fed upon and awoke a vampire without a master.;;;;;;;;;;;;;x
+DW_RULE_CHAOS_CONTENT;Seeds of Chaos Content;;;;;;;;;;;;;x
+DW_RULE_YES_SEEDS_CHAOS;Yes;;;;;;;;;;;;;x
+DW_RULE_YES_SEEDS_CHAOS_DESC;You have chosen to include adult content that has tentacles and Tentacle-kin.;;;;;;;;;;;;;x
+DW_RULE_ORC_START;For the Horde!;;;;;;;;;;;;;x
+DW_RULE_ORC_START_DESC;You're an Orc who crossed the veil and find yourself in a land of humans, who are ripe for conquering.;;;;;;;;;;;;;x
+DW_RULE_ELF_START;Fading Twilight;;;;;;;;;;;;;x
+DW_RULE_ELF_START_DESC;The era of elves is considered to be long over, yet no one said you had to go without a fight.;;;;;;;;;;;;;x
+DW_RULE_KITSUNE_START;Fox and the Hound;;;;;;;;;;;;;x
+DW_RULE_KITSUNE_START_DESC;You're a rare Kitsune, who's lineage was almost destroyed by an unknown beast.;;;;;;;;;;;;;x
+DW_RULE_ANGEL_START;Divine Inspiration;;;;;;;;;;;;;x
+DW_RULE_ANGEL_START_DESC;A voice from God speaks to you. You are his will, his instrument in salvation.;;;;;;;;;;;;;x
+DW_RULE_TENTACLE_START;Champion of Chaos;;;;;;;;;;;;;x
+DW_RULE_TENTACLE_START_DESC;Your mother was raped by a tentacle beast, and you're the resulting spawn.;;;;;;;;;;;;;x
+DW_RULE_BESTIALITY_CONTENT;Bestiality Content;;;;;;;;;;;;;x
+DW_RULE_YES_BESTIALITY;Yes;;;;;;;;;;;;;x
+DW_RULE_YES_BESTIALITY_DESC;You have chosen to include content that involves sex with animals.;;;;;;;;;;;;;x
+## Rule Group
+RULE_GROUP_DW;Dark World;;;;;;;;;;;;;x
+#### Rough text length for using narrative events ###############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################

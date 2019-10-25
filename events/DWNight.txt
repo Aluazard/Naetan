@@ -1,0 +1,3229 @@
+### This file contains events specific to the Dark World Children of Night mod
+## .1000-.1999 - Fenris (Werewolf Ancient - Major NPC)
+## .2000-.2999 - Vladimir (Vampire Ancient - Major NPC)
+## .3000 - Vampire Campaign
+## .4000 - Vampire Random Events / Powers
+## .5000 - Monster Hunters
+##  .5500 - Blood Rayne Monster Hunter
+
+namespace = DWNight
+
+# .10 Rise of the Pack Campaign Start
+narrative_event = {
+	id = DWNight.10
+	desc = DWNight10
+	picture = dw_night_fenris_profile
+	title = dw_rise_pack_title
+	is_triggered_only = yes # by decision
+	trigger = {
+		has_classic_monsters_content = yes # Double-checking to ensure that someone has the proper content turned on.
+	}
+	option = { # I'm ready to get started
+		name = DWNight10A
+		add_trait = werewolf
+		random_list = {
+			## Male Werewolf images
+			25 = {
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait106
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait107 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait108
+				add_trait = scarred
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait109 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait110
+				add_trait = scarred
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait111 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait112 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait113 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait114 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait115 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait117 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait118 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait120 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait122 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait123 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = yes # If player is a female, this won't be selected
+				}
+				add_trait = portrait124 
+			}
+			## Female Werewolf images
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = no # If player is a male, this won't be selected
+				}
+				add_trait = portrait105 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = no # If player is a male, this won't be selected
+				}
+				add_trait = portrait116 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = no # If player is a male, this won't be selected
+				}
+				add_trait = portrait119 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = no # If player is a male, this won't be selected
+				}
+				add_trait = portrait121 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = no # If player is a male, this won't be selected
+				}
+				add_trait = portrait125
+				add_trait = fair
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = no # If player is a male, this won't be selected
+				}
+				add_trait = portrait126
+				add_trait = fair
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = no # If player is a male, this won't be selected
+				}
+				add_trait = portrait127 
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = no # If player is a male, this won't be selected
+				}
+				add_trait = portrait128
+				add_trait = fair
+			}
+			25 = { 
+				modifier = {
+					factor = 0
+					is_female = no # If player is a male, this won't be selected
+				}
+				add_trait = portrait129
+				add_trait = lustful
+			}
+		}
+	}
+}
+# .20 Dominated by a Werewolf start (hidden routing event)
+character_event = {
+	id = DWNight.20
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by Decision
+	trigger = {
+		has_classic_monsters_content = yes
+	}
+	immediate = {
+		if = { # Male event
+			limit = {
+				is_female = no
+			}
+			narrative_event = { id = DWNight.21 }
+			break = yes # Takes us out of the immediate block
+		}
+		# Female event
+		narrative_event = { id = DWNight.25 }
+	}
+}
+# .21 Male Dominated start (Omega Male)
+narrative_event = {
+	id = DWNight.21
+	desc = DWNight21
+	picture = werewolf_omega_male_start
+	title = dw_dominated_start_title
+	is_triggered_only = yes # Triggered from .20
+	immediate = { # We create the werewolf that has arrived in court
+		create_character = {
+			random_traits = yes
+			dynasty = none
+			female = no
+			age = 30
+			religion = pagan
+			health = 4.0
+			trait = brave
+			trait = big_dick
+			trait = werewolf
+			attributes = {
+				martial = 7
+			}
+		}
+		new_character = {
+			set_character_flag = dw_junk_checked
+			random_list = {
+				## Male Werewolf images
+				25 = {
+					add_trait = portrait106
+				}
+				25 = { 
+					add_trait = portrait107 
+				}
+				25 = { 
+					add_trait = portrait108
+					add_trait = scarred
+				}
+				25 = { 
+					add_trait = portrait109 
+				}
+				25 = { 
+					add_trait = portrait110
+					add_trait = scarred
+				}
+				25 = { 
+					add_trait = portrait111 
+				}
+				25 = { 
+					add_trait = portrait112 
+				}
+				25 = { 
+					add_trait = portrait113 
+				}
+				25 = { 
+					add_trait = portrait114 
+				}
+				25 = { 
+					add_trait = portrait115 
+				}
+				25 = { 
+					add_trait = portrait117 
+				}
+				25 = { 
+					add_trait = portrait118 
+				}
+				25 = { 
+					add_trait = portrait120 
+				}
+				25 = { 
+					add_trait = portrait122 
+				}
+				25 = { 
+					add_trait = portrait123 
+				}
+				25 = { 
+					add_trait = portrait124 
+				}
+			}
+		}
+	}
+	option = { # I'm lesser than they
+		name = DWNight21A
+		add_character_modifier = { name = dw_omega_male duration = -1 }
+	}
+	option = { # Doh! I misunderstood what this was
+		name = DWNight21B
+	}
+}
+# .25 Female Dominated start (Werewolf Bitch)
+narrative_event = {
+	id = DWNight.25
+	desc = DWNight25
+	picture = werewolf_bitch_start
+	title = dw_dominated_start_title
+	is_triggered_only = yes # Triggered from .20
+	immediate = { # We create the werewolf that has arrived in court
+		create_character = {
+			random_traits = yes
+			dynasty = none
+			female = no
+			age = 30
+			religion = pagan
+			health = 4.0
+			trait = brave
+			trait = big_dick
+			trait = werewolf
+			attributes = {
+				martial = 7
+			}
+		}
+		new_character = {
+			set_character_flag = dw_junk_checked
+			random_list = {
+				## Male Werewolf images
+				25 = {
+					add_trait = portrait106
+				}
+				25 = { 
+					add_trait = portrait107 
+				}
+				25 = { 
+					add_trait = portrait108
+					add_trait = scarred
+				}
+				25 = { 
+					add_trait = portrait109 
+				}
+				25 = { 
+					add_trait = portrait110
+					add_trait = scarred
+				}
+				25 = { 
+					add_trait = portrait111 
+				}
+				25 = { 
+					add_trait = portrait112 
+				}
+				25 = { 
+					add_trait = portrait113 
+				}
+				25 = { 
+					add_trait = portrait114 
+				}
+				25 = { 
+					add_trait = portrait115 
+				}
+				25 = { 
+					add_trait = portrait117 
+				}
+				25 = { 
+					add_trait = portrait118 
+				}
+				25 = { 
+					add_trait = portrait120 
+				}
+				25 = { 
+					add_trait = portrait122 
+				}
+				25 = { 
+					add_trait = portrait123 
+				}
+				25 = { 
+					add_trait = portrait124 
+				}
+			}
+		}
+	}
+	option = { # I'm lesser than they
+		name = DWNight25A
+		add_character_modifier = { name = dw_werewolf_bitch duration = -1 }
+	}
+	option = { # Doh! I misunderstood what this was
+		name = DWNight25B
+	}
+}
+# .30 Vampire Campaign Start
+narrative_event = {
+	id = DWNight.30
+	picture = a_placeholder
+	desc = {
+		trigger = {
+			is_female = yes
+		}
+		text = DWNight30
+		picture = vampire_bite_female_1
+	}
+	desc = {
+		trigger = {
+			is_female = no
+		}
+		text = DWNight30
+		picture = vampire_bite_male_1
+	}
+	title = dw_vampire_start_title
+	is_triggered_only = yes # by decision
+	trigger = {
+		has_classic_monsters_content = yes # Double-checking to ensure that someone has the proper content turned on.
+	}
+	option = { # I'm ready to get started
+		name = DWNight30A
+		add_trait = vampire
+		hidden_effect = { narrative_event = { id = DWNight.3000 days = 14 } }
+	}
+}
+
+### .1000 - Fenris
+# .1000 in DWNPCs.txt
+# .1001 Fenris's rise to power event considerations (hidden)
+character_event = {
+	id = DWNight.1001
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered from .1000
+	immediate = {
+		if = { # If his liege is old or weak, Fenris springs into action quickly, taking control after only a year
+			limit = {
+				liege = {
+					OR = {
+						age = 60
+						trait = weak
+						trait = slow
+						trait = craven
+					}
+				}
+			}
+			character_event = { id = DWNight.1003 days = 365 }
+			break = yes # We exit out of the immediate block
+		}
+		if = { # If his liege is like to have his guard down, Fenris springs into action ahead of normal plans, taking control after only five years
+			limit = {
+				liege = {
+					OR = {
+						trait = trusting
+						trait = content
+						trait = slothful
+					}
+				}
+			}
+			character_event = { id = DWNight.1003 days = 1825 }
+			break = yes # We exit out of the immediate block
+		}
+		# If we reach here, Fenris is in a court where he uses his normal 10 year plan to grab power
+		character_event = { id = DWNight.1003 days = 3650 }
+	}
+}
+# .1003 Fenris looks to make his grab for power (hidden)
+character_event = {
+	id = DWNight.1003
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by .1001
+	immediate = {
+		if = { # If his liege has somehow changed to be the player, he'll leave the lands first.
+			limit = {
+				liege = { ai = no } 
+			}
+			banish = yes
+			character_event = { id = DWNight.1003 days = 1 } # We come back to check through here again.
+			break = yes #We break out of the immediate block
+		}
+		if = { # If his liege is somehow Vladimir, he'll leave his lands as well.
+			limit = {
+				liege = { has_character_flag = dw_npc_vladimir }
+			}
+			banish = yes
+			character_event = { id = DWNight.1003 days = 1 } # We come back to check through here again.
+			break = yes #We break out of the immediate block
+		}
+		if = { # If he's a prisoner in the player's prison, he attempts an escape
+			limit = {
+				prisoner = yes
+				host = { ai = no } # Fenris's host is the player - meaning its the player who imprisoned him
+			}
+			any_playable_ruler = {
+				limit = {
+					ai = no # This should send the notification to only the player
+				}
+				narrative_event = { id = DWNight.1007 days = 3 } # Prison break attempt
+			}			
+			break = yes # We break out of the immediate block
+		}
+		if = { # If he's a prisoner in an npc prison, he makes his escape
+			limit = {
+				prisoner = yes
+			}
+			prisoner = no # Fenris is a prisoner no more
+			# The follow clr and removes clean-up prison related flags and modifiers so as to not conflict with any future imprisonments.
+			clr_character_flag = asked_for_better_prison
+			remove_character_modifier = house_arrest
+			remove_character_modifier = the_oubliette
+			remove_character_modifier = the_dungeon
+			character_event = { id = DWNight.1003 days = 1 } # We come back to check through here again.
+			break = yes # We break out of the immediate block
+		}
+		# If we reached here, Fenris should be primed to finally take his place as a ruler
+		character_event = { id = DWNight.1005 }
+	}
+}
+# .1005 Fenris takes control (hidden)
+character_event = {
+	id = DWNight.1005
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered from .1003
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					liege = {
+						character = ROOT # We're checking to ensure that Fenris isn't his own liege, as if so, he may off himself
+					}
+				}
+			}
+			liege = { # It's a bloody grab of power that leaves the liege's line hereditary line broken and the liege dead.
+				abdicate_to = ROOT
+				death = {
+					death_reason = death_execution
+					killer = ROOT
+				}
+			}
+		}
+		any_playable_ruler = {
+			limit = {
+				ai = no # This should send the notification to only the player
+			}
+			narrative_event = { id = DWNight.1009 days = 7 } # News reaches the player after a week has passed
+		}
+	}
+}
+# .1006 Player learns that Fenris failed to escape (player)
+narrative_event = {
+	id = DWNight.1006
+	desc = "DWNight1006"
+	picture = dw_night_fenris_profile
+	title = dw_fenris_prison_break
+	is_triggered_only = yes # triggered by .1007
+	option = { # This is bad
+		name = "DWNight1006A"
+	}
+}
+# .1007 Fenris attempts to escape the player's prison (player)
+narrative_event = {
+	id = DWNight.1007
+	desc = "DWNight1007"
+	picture = dw_night_fenris_escapes
+	title = dw_fenris_prison_break
+	is_triggered_only = yes # triggered by .1003
+	immediate = {
+		# If we've a commander, we set them up as an event target
+		if = {
+			limit = {
+				any_realm_character = {
+					has_minor_title = title_commander
+				}
+			}
+			save_event_target_as = dw_commander
+		}
+	}
+	option = { # Let Fenris escape
+		name = "DWNight1007A"
+		FROM = {
+			FROM = { character_event = { id = DWNight.1003 days = 3 }} # We cycle back through the coup check
+			prisoner = no # Fenris is a prisoner no more
+			# The follow clr and removes clean-up prison related flags and modifiers so as to not conflict with any future imprisonments.
+			clr_character_flag = asked_for_better_prison
+			remove_character_modifier = house_arrest
+			remove_character_modifier = the_oubliette
+			remove_character_modifier = the_dungeon
+		}
+	}
+	option = { # Call for the guards
+		name = "DWNight1007B"
+		random_list = {
+			10 = { # Fenris is caught
+				narrative_event = { id = DWNight.1006 } # Player learns Fenris's escape failed
+			}
+			90 = { # Fenris escapes
+				narrative_event = { id = DWNight.1008 } # Player learns Fenris escaped
+				FROM = {
+					FROM = { character_event = { id = DWNight.1003 days = 3 }} # We cycle back through the coup check
+					prisoner = no # Fenris is a prisoner no more
+					# The follow clr and removes clean-up prison related flags and modifiers so as to not conflict with any future imprisonments.
+					clr_character_flag = asked_for_better_prison
+					remove_character_modifier = house_arrest
+					remove_character_modifier = the_oubliette
+					remove_character_modifier = the_dungeon
+				}
+			}
+		}
+	}
+	option = { # Call for a commander
+		trigger = {
+			any_realm_character = {
+				has_minor_title = title_commander
+			}
+		}
+		name = "DWNight1007C"
+		random_list = {
+			5 = { # Fenris slain while attempting to escape
+				FROM = {
+					death = {
+						death_reason = death_battle
+						killer = event_target:dw_commander
+					}
+				}
+			}
+			35 = { # Fenris remains a prisoner
+				narrative_event = { id = DWNight.1006 } # Player learns Fenris's escape failed
+				FROM = { character_event = { id = DWNight.1003 days = 90 }} # We cycle back through the coup check to see if Fenris is still a prisoner over time.
+			}
+			45 = { # Fenris escapes
+				narrative_event = { id = DWNight.1008 } # Player learns Fenris escaped successfully
+				FROM = {
+					FROM = { character_event = { id = DWNight.1003 days = 3 }} # We cycle back through the coup check
+					prisoner = no # Fenris is a prisoner no more
+					# The follow clr and removes clean-up prison related flags and modifiers so as to not conflict with any future imprisonments.
+					clr_character_flag = asked_for_better_prison
+					remove_character_modifier = house_arrest
+					remove_character_modifier = the_oubliette
+					remove_character_modifier = the_dungeon
+				}
+			}
+			15 = { # Fenris escapes AND the commander is killed
+				narrative_event = { id = DWNight.1008 } # Player learns Fenris escaped successfully
+				event_target:dw_commander = {
+					death = {
+						death_reason = death_battle
+						killer = FROM
+					}
+				}
+				FROM = {
+					FROM = { character_event = { id = DWNight.1003 days = 3 }} # We cycle back through the coup check
+					prisoner = no # Fenris is a prisoner no more
+					# The follow clr and removes clean-up prison related flags and modifiers so as to not conflict with any future imprisonments.
+					clr_character_flag = asked_for_better_prison
+					remove_character_modifier = house_arrest
+					remove_character_modifier = the_oubliette
+					remove_character_modifier = the_dungeon
+				}
+			}
+		}
+	}
+}
+# .1008 Player learns that Fenris escaped (player)
+narrative_event = {
+	id = DWNight.1008
+	desc = "DWNight1008"
+	picture = dw_night_fenris_escapes
+	title = dw_fenris_prison_break
+	is_triggered_only = yes # triggered by .1007
+	option = { # This is bad
+		name = "DWNight1008A"
+	}
+}
+# .1009 Player learns that Fenris is in power (player)
+narrative_event = {
+	id = DWNight.1009
+	desc = "DWNight1009"
+	picture = dw_night_fenris_profile
+	title = dw_fenris_rises
+	is_triggered_only = yes # triggered by .1005
+	option = { # Interesting news
+		name = "DWNight1009A"
+	}
+}
+# .1010 Fenris hunts (Fenris)
+character_event = {
+	id = DWNight.1010
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # triggered by targeted decision
+	trigger = {
+		NOT = { FROM = { has_character_flag = dw_npc_fenris }} # We're just double-checking that Fenris isn't somehow set as FROM, for he's also ROOT, and we don't need him killing himself
+	}
+	immediate = {
+		if = { # If it is an adult female, that isn't an alpha bitch, Fenris will dominate her
+			limit = {
+				FROM = {
+					is_female = yes
+					is_adult = yes
+					NOT = { has_character_modifier = dw_alpha_bitch }
+					NOT = { trait = vampire } # Fenris won't dominate a female vampire - choosing instead to kill her.
+				}				
+			}
+			FROM = {
+				add_character_modifier = { name = dw_werewolf_bitch duration = -1 } # Fenris makes her a bitch to be bred
+				character_event = { id = DWCore.9000 } # Check to see if she gets knocked up
+				opinion = {
+					modifier = dw_opinion_ima_bitch # She recognizes Fenris as her dominator
+					who = ROOT
+				}
+			}
+			opinion = {
+				modifier = dw_opinion_my_bitch # He recognizes her has his cattle
+				who = FROM
+			}
+			break = yes # We exit out of the immediate block
+		}
+		# Anyone else is killed. Alpha bitch, child, etc. To Fenris if you're not a supporter or a breeder, you're better off dead.
+		FROM = {
+			death = {
+				death_reason = death_murder
+				killer = ROOT
+			}
+		}
+	}
+}
+# .1020  Fenris recruits a werewolf for his court
+character_event = {
+	id = DWNight.1020
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by decision
+	immediate = {
+		location = {
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				female = no
+				age = 20
+				religion = ROOT
+				culture = ROOT
+				health = 4.5
+				trait = brave
+				trait = big_dick
+				trait = werewolf
+				attributes = {
+					martial = 6
+				}
+			}
+			new_character = {
+				set_character_flag = dw_junk_checked
+				add_random_werewolf_portrait = yes # Assigns a random picture
+				add_character_modifier = { name = dw_werewolf_beast_whispers duration = -1 } # takes care of starting the battle with the beast within
+				opinion = {
+					modifier = dw_fenris_loyalist
+					who = ROOT
+				}
+			}
+		}
+	}
+}
+# .1100 Female Adult Ruler visited by Fenris (hidden - routing)
+character_event = {
+	id = DWNight.1100
+	hide_window = yes # Nothing to see here
+	only_rulers = yes # Pre-trigger
+	only_women = yes # Pre-trigger
+	max_age = 50 # Pre-trigger
+	is_triggered_only = yes # Triggered by 5 year random on_action check
+	trigger = {
+		has_classic_monsters_content = yes
+		is_adult = yes # Fenris doesn't need to be messing with kids for this event chain
+		any_character = { # Any character has the potential to be very CPU heavy. Hopefully that won't be the case, since we're able to target a specific character.
+			has_character_flag = dw_npc_fenris #Unique to Fenris
+			prisoner = no # Fenris shouldn't be in prison
+			in_command = no # Fenris shouldn't be away leading an army
+			NOT = { trait = in_hiding } # Fenris shouldn't be in hiding
+		}
+	}
+	immediate = {
+		# We grab Fenris as the event_target
+		random_character = {
+			limit = {
+				has_character_flag = dw_npc_fenris #Unique to Fenris
+			}
+			save_event_target_as = dw_fenris_womanizer
+		}
+		# We're going to process and handle the player differently than the ai, so we're handling that routing first
+		if = {
+			limit = {
+				ai = no # Let's us know if we've the player				
+			}
+			#TO DO - I want to add a lot more, what if they're a werewolf, what if they're a vampire, what if they're an alpha, etc.			
+		}
+		# This is just so I can package this and get it out to correct the error that is with this in the change log.
+		narrative_event = { id = DWNight.1110 }
+	}
+}
+# .1110 Female taken by Fenris (female)
+narrative_event = {
+	id = DWNight.1110
+	desc = "DWNight1110"
+	picture = dw_night_fenris_fuckfemale1
+	title = dw_fenris_dominates
+	is_triggered_only = yes # triggered by .1100
+	option = { # I'm a bitch and may be pregnant
+		name = "DWNight1110A"
+		if = {
+			limit = {
+				NOT = { has_character_modifier = dw_werewolf_bitch }
+			}
+			add_character_modifier = { modifier = dw_werewolf_bitch duration = -1 }
+			opinion = {
+				modifier = dw_opinion_ima_bitch
+				who = event_target:dw_fenris_womanizer
+			}
+			event_target:dw_fenris_womanizer = {
+				opinion = {
+					modifier = dw_opinion_my_bitch
+					who = ROOT
+				}
+			}
+		}
+		event_target:dw_fenris_womanizer = {
+			character_event = { id = DWCore.9005 }
+		}
+	}
+}
+
+### .2000 - Vladimir
+
+# .2000 in DWNPCs.txt
+# .2001 Vladimir's rise to power event considerations (hidden)
+character_event = {
+	id = DWNight.2001
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered from .2000
+	immediate = {
+		if = { # If his liege is old or weak, Vladimir springs into action quickly, taking control after only a year
+			limit = {
+				liege = {
+					OR = {
+						age = 60
+						trait = weak
+						trait = slow
+						trait = craven
+					}
+				}
+			}
+			character_event = { id = DWNight.2003 days = 365 }
+			break = yes # We exit out of the immediate block
+		}
+		if = { # If his liege is like to have his guard down, Vladimir springs into action ahead of normal plans, taking control after only five years
+			limit = {
+				liege = {
+					OR = {
+						trait = trusting
+						trait = content
+						trait = slothful
+					}
+				}
+			}
+			character_event = { id = DWNight.2003 days = 1825 }
+			break = yes # We exit out of the immediate block
+		}
+		# If we reach here, Vladimir is in a court where he uses his normal 10 year plan to grab power
+		character_event = { id = DWNight.2003 days = 3650 }
+	}
+}
+# .2003 Vladimir looks to make his grab for power (hidden)
+character_event = {
+	id = DWNight.2003
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by .2001
+	immediate = {
+		if = { # If his liege has somehow changed to be the player, he'll leave the lands first.
+			limit = {
+				liege = { ai = no } 
+			}
+			banish = yes
+			character_event = { id = DWNight.2003 days = 1 } # We come back to check through here again.
+			break = yes #We break out of the immediate block
+		}
+		if = { # If his liege has somehow manage to become Fenris, then we'll skip out and come back around again.
+			limit = {
+				liege = { has_character_flag = dw_npc_fenris } 
+			}
+			banish = yes
+			character_event = { id = DWNight.2003 days = 1 } # We come back to check through here again.
+			break = yes #We break out of the immediate block
+		}
+		if = { # If he's a prisoner in the player's prison, he attempts an escape
+			limit = {
+				prisoner = yes
+				host = { ai = no } # Vladimir's host is the player - meaning its the player who imprisoned him
+			}
+			any_playable_ruler = {
+				limit = {
+					ai = no # This should send the notification to only the player
+				}
+				narrative_event = { id = DWNight.2007 days = 3 } # Prison break attempt
+			}			
+			break = yes # We break out of the immediate block
+		}
+		if = { # If he's a prisoner in an npc prison, he makes his escape
+			limit = {
+				prisoner = yes
+			}
+			prisoner = no # Vladimir is a prisoner no more
+			# The follow clr and removes clean-up prison related flags and modifiers so as to not conflict with any future imprisonments.
+			clr_character_flag = asked_for_better_prison
+			remove_character_modifier = house_arrest
+			remove_character_modifier = the_oubliette
+			remove_character_modifier = the_dungeon
+			character_event = { id = DWNight.2003 days = 1 } # We come back to check through here again.
+			break = yes # We break out of the immediate block
+		}
+		# If we reached here, Vladimir should be primed to finally take his place as a ruler
+		character_event = { id = DWNight.2005 }
+	}
+}
+# .2005 Vladimir takes control (hidden)
+character_event = {
+	id = DWNight.2005
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered from .2003
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					liege = {
+						character = ROOT # We're checking to ensure that Vladimir isn't his own liege, as if so, he may off himself
+					}
+				}
+			}
+			liege = { # It's a bloody grab of power that leaves the liege's line hereditary line broken and the liege dead.
+				abdicate_to = ROOT
+				death = {
+					death_reason = death_execution
+					killer = ROOT
+				}
+			}
+		}
+		any_playable_ruler = {
+			limit = {
+				ai = no # This should send the notification to only the player
+			}
+			narrative_event = { id = DWNight.2009 days = 7 } # News reaches the player after a week has passed
+		}
+	}
+}
+# .2007 Vladimir escapes the player's prison (player)
+narrative_event = {
+	id = DWNight.2007
+	desc = "DWNight2007"
+	picture = dw_night_vladimir_bats
+	title = dw_vladimir_prison_break
+	is_triggered_only = yes # triggered by .2003
+	option = { # Bats?
+		name = "DWNight2007A"
+		FROM = {
+			FROM = { character_event = { id = DWNight.1003 days = 3 }} # We cycle back through the coup check
+			prisoner = no # Vladimir is a prisoner no more
+			# The follow clr and removes clean-up prison related flags and modifiers so as to not conflict with any future imprisonments.
+			clr_character_flag = asked_for_better_prison
+			remove_character_modifier = house_arrest
+			remove_character_modifier = the_oubliette
+			remove_character_modifier = the_dungeon
+		}
+	}
+}
+# .2009 Player learns that Vladimir is in power (player)
+narrative_event = {
+	id = DWNight.2009
+	desc = "DWNight2009"
+	picture = dw_night_vladimir_throne
+	title = dw_vladimir_rises
+	is_triggered_only = yes # triggered by .2005
+	option = { # Interesting news
+		name = "DWNight2009A"
+	}
+}
+# .2010 Vladimir hunts (Vladimir)
+character_event = {
+	id = DWNight.2010
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # triggered by targeted decision
+	trigger = {
+		NOT = { FROM = { has_character_flag = dw_npc_vladimir }} # We're just double-checking that Vladimir isn't somehow set as FROM, for he's also ROOT, and we don't need him killing himself
+	}
+	immediate = {
+		if = { # If it is as adult female, that isn't a werewolf - or already a vampire, Vladimir will turn her
+			limit = {
+				FROM = {
+					is_female = yes
+					is_adult = yes
+					NOR = {
+						trait = vampire
+						trait = werewolf
+					}
+				}				
+			}
+			FROM = {
+				add_trait = vampire # Vladimir turns her into a vampire
+				opinion = {
+					modifier = dw_opinion_sire # She recognizes Vladimir as her sire
+					who = ROOT
+				}
+				add_lover = ROOT # Vladimir - harem collector
+			}
+			break = yes # We exit out of the immediate block
+		}
+		if = { # If it is an adult male, then Vladimir is selective, choosing to convert those who display desired skill of a certain level - as they may be useful to him later
+			limit = {
+				FROM = {
+					is_female = no
+					NOR = {
+						trait = vampire
+						trait = werewolf
+					}
+					OR = {
+						martial = 10
+						intrigue = 10
+						stewardship = 10
+						diplomacy = 10
+						learning = 10
+					}
+				}
+			}
+			FROM = {
+				add_trait = vampire # Vladimir turns him into a vampire
+				opinion = {
+					modifier = dw_opinion_sire # He recognizes Vladimir as his sire
+					who = ROOT
+				}
+			}
+			break = yes # We exit out of the immediate block
+		}
+		# Anyone else is killed.
+		FROM = {
+			death = {
+				death_reason = death_murder
+				killer = ROOT
+			}
+		}
+	}
+}
+
+### .3000 Vampire Campaign
+
+# .3000 - The rumors about vampires don't appear to be accurate.
+narrative_event = {
+	id = DWNight.3000
+	picture = noble_feast
+	desc = DWNight3000
+	title = dw_feast_title
+	is_triggered_only = yes # .30
+	option = { # This is promising
+		name = DWNight3000A
+		hidden_effect = { narrative_event = { id = DWNight.3010 days = 1 } }
+	}
+}
+
+# .3010 - The Nosferatu Vampire Noble - introduction
+narrative_event = {
+	id = DWNight.3010
+	picture = vampire_noble_nosferatu_1
+	desc = DWNight3010
+	title = dw_the_visitor_title
+	is_triggered_only = yes # .3000
+	immediate = {
+		character_event = { id = DWNPC.02 }
+		any_courtier = {
+			limit = { has_character_flag = dw_npc_nosferatu_noble }
+			save_event_target_as = dw_noble_vampire
+		}
+	}
+	option = { # Welcome to my court
+		name = DWNight3010A
+		hidden_effect = { 
+			narrative_event = { id = DWNight.3020 days = 30} 
+			event_target:dw_noble_vampire = {
+				opinion = {
+					modifier = dw_invited_to_court
+					who = ROOT
+				}
+			}
+		}
+	}
+	option = { # I have no need for you
+		name = DWNight3010B
+		hidden_effect = {
+			event_target:dw_noble_vampire = {
+				banish = yes
+			}
+		}
+	}
+}
+
+# .3020 - The Nosferatu Vampire Noble - using a thrall
+narrative_event = {
+	id = DWNight.3020
+	picture = vampire_bite_female_nos_1
+	desc = DWNight3020
+	title = dw_thrall_feeding_title
+	is_triggered_only = yes # .3010
+	trigger = {
+		event_target:dw_noble_vampire = { is_alive = yes }
+	}
+	option = { # Have a bite
+		name = DWNight3020A
+		health = 0.5
+		hidden_effect = {
+			event_target:dw_noble_vampire = {
+				health = 0.5
+			}
+			narrative_event = { id = DWNight.3030 days = 90 } 
+		}
+	}
+	option = { # Pass on feeding
+		name = DWNight3020B
+	}
+}
+
+# .3030 - The Nosferatu Vampire Noble - the book of Diablerie
+narrative_event = {
+	id = DWNight.3030
+	picture = vampire_nosferatu_1
+	desc = DWNight3030
+	title = dw_thrall_feeding_title
+	is_triggered_only = yes # .3020
+	trigger = {
+		event_target:dw_noble_vampire = { is_alive = yes }
+	}
+	option = { # I'd be interested in becoming an Ancient
+		name = DWNight3030A
+		hidden_effect = {
+			set_character_flag = dw_seeks_vampire_evolution
+		}
+	}
+	option = { # I don't seek more power
+		name = DWNight3030B
+	}
+}
+
+
+### .4000 Vampires
+# .4000 10 year on-action - Random Male Vampire hunts the player
+narrative_event = {
+	id = DWNight.4000
+	picture = a_placeholder
+	title = dw_hunted_by_vampire_title
+	is_triggered_only = yes # Triggered by on_action
+	desc = { # Bloodrayne is in the player's court
+		trigger = {
+			any_realm_character ={
+				has_character_flag = dw_npc_bloodrayne
+			}
+		}
+		text = DWNight4000.0
+		picture = bloodrayne_bloody_drink_1
+	}
+	desc = { # No special situations present
+		trigger = {
+			NOT = {
+				any_realm_character ={
+					has_character_flag = dw_npc_bloodrayne
+				}
+			}
+		}
+		text = DWNight4000.1
+		picture = vampire_attack_nos_1
+	}
+	ai = no # This is a player only event. No desire to potentially purge large chunks of the map every ten years.
+	trigger = {
+		NOR = { # Vampires - at least in this event - aren't hunting others of their kind.
+			trait = vampire
+			trait = vampire_ancient
+			trait = dhampir
+		}
+		has_classic_monsters_content = yes
+	}
+	option = { # Bloodrayne specific
+		trigger = {
+			any_realm_character ={
+				has_character_flag = dw_npc_bloodrayne
+			}
+		}
+		name = DWNight4000A
+		hidden_effect = { # Rayne consumed some vampire blood and gains strength from it.
+			random_realm_character = {
+				limit = { has_character_flag = dw_npc_bloodrayne }
+				health = 0.5
+			}
+		}
+	}
+	option = { # No special - fight
+		trigger = {
+			NOT = {
+				any_realm_character ={
+					has_character_flag = dw_npc_bloodrayne
+				}
+			}
+		}
+		name = DWNight4000B
+		hidden_effect = {
+			character_event = { id = DWNPC.01 }
+			ROOT = { save_event_target_as = first_fighter }
+			random_realm_character = {
+				limit = { has_character_flag = dw_npc_combat_vampire }
+				save_event_target_as = second_fighter
+			}
+			process_combat_round = yes
+			narrative_event = { id = DWNight.4001 }
+		}
+	}
+	option = { # No special - flight
+		trigger = {
+			NOT = {
+				any_realm_character ={
+					has_character_flag = dw_npc_bloodrayne
+				}
+			}
+		}
+		name = DWNight4000C
+		hidden_effect = { 
+			random_list = {
+				30 = { # Unable to flee
+					narrative_event = { id = DWNight.4004 }
+				}
+				70 = { # Successfully flees
+					narrative_event = { id = DWNight.4003 }
+				}
+			}
+		}
+	}
+	option = { # No special - submit
+		trigger = {
+			NOT = {
+				any_realm_character ={
+					has_character_flag = dw_npc_bloodrayne
+				}
+			}
+		}
+		name = DWNight4000D
+		hidden_effect = { 
+			random_list = {
+				10 = {
+					set_character_flag = dw_vampire_turns
+					modifier = {
+						factor = 0
+						OR = {
+							trait = werewolf # werewolves are never an option to turn in this choice
+							trait = werewolf_ancient
+						}
+					}
+					modifier = {
+						factor = 9
+						is_female = yes # a female is 9 times more likely to be spared, which should make the change 50-50
+					}
+				}
+				90 = {
+					set_character_flag = dw_vampire_kills
+				}
+			}
+			narrative_event = { id = DWNight.4005 }
+		}
+	}
+}
+# .4001 Fight Vampire
+narrative_event = {
+	id = DWNight.4001
+	picture = a_placeholder
+	title = dw_hunted_by_vampire_title
+	is_triggered_only = yes # .4000
+	desc = { # Both are dead
+		trigger = { 
+			event_target:first_fighter = { health <= first_combat_damage }
+			event_target:second_fighter = { health <= second_combat_damage }
+		}
+		text = DWNight4001.0
+		picture = vampire_dead_1
+	}	
+	desc = { # Player is dead
+		trigger = { 
+			event_target:first_fighter = { health <= first_combat_damage }
+		}
+		text = DWNight4001.1
+		picture = vampire_feeds_nos_2
+	}	
+	desc = { # Vampire is dead
+		trigger = { 
+			event_target:second_fighter = { health <= second_combat_damage }
+		}
+		text = DWNight4001.2
+		picture = vampire_dead_1
+	}	
+	desc = { # The struggle continues - first wounds second - standard
+		trigger = { 
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+			event_target:first_fighter = { has_character_flag = dw_first_wounds_second_standard }
+		}
+		text = DWNight4001.3
+		picture = vampire_injured_nos_1
+	}	
+	desc = { # The struggle continues - second wounds first - standard
+		trigger = { 
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+			event_target:first_fighter = { has_character_flag = dw_second_wounds_first_standard }
+		}
+		text = DWNight4001.4
+		picture = vampire_feeds_nos_2
+	}	
+	desc = { # The struggle continues - both wounded - standard
+		trigger = { 
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+			event_target:first_fighter = { has_character_flag = dw_dual_wounds_standard }
+		}
+		text = DWNight4001.5
+		picture = vampire_injured_nos_1
+	}	
+	desc = { # The struggle continues
+		trigger = { 
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+			NOR = {
+				event_target:first_fighter = { has_character_flag = dw_first_wounds_second_standard }
+				event_target:first_fighter = { has_character_flag = dw_second_wounds_first_standard }
+				event_target:first_fighter = { has_character_flag = dw_dual_wounds_standard }
+			}
+		}
+		text = DWNight4001.9
+		picture = vampire_injured_nos_1
+	}	
+	option = { # Fight on
+		trigger = {
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+		}
+		name = DWNight4001A
+		hidden_effect = { 
+			process_combat_round = yes
+			# clear_combat_round_end_flags = yes
+			narrative_event = { id = DWNight.4001}
+		}
+	}
+	option = { # Player killed
+		trigger = {
+			event_target:first_fighter = { health <= first_combat_damage }
+			NOT = { event_target:second_fighter = { health <= second_combat_damage } }
+		}
+		name = DWNight4001B
+		death = { death_reason = death_murder killer = event_target:second_fighter }
+		event_target:second_fighter = { banish = yes } # the vampire moves on after its kill
+		hidden_effect = { clear_combat_end_flags = yes }
+	}
+	option = { # Vampire killed
+		trigger = {
+			event_target:second_fighter = { health <= second_combat_damage }
+			NOT = { event_target:first_fighter = { health <= first_combat_damage } }
+		}
+		name = DWNight4001C
+		event_target:second_fighter = { death = { death_reason = death_duel killer = ROOT } }
+		hidden_effect = { clear_combat_end_flags = yes }
+	}
+	option = { # Both dead
+		trigger = {
+			event_target:first_fighter = { health <= first_combat_damage }
+			event_target:second_fighter = { health <= second_combat_damage }
+		}
+		name = DWNight4001A
+		death = { death_reason = death_murder killer = event_target:second_fighter }
+		event_target:second_fighter = { death = { death_reason = death_duel killer = ROOT } }
+		hidden_effect = { clear_combat_end_flags = yes }
+	}
+}
+# .4003 Flee from Vampire
+narrative_event = { # Gets away
+	id = DWNight.4003
+	picture = a_placeholder
+	title = dw_hunted_by_vampire_title
+	is_triggered_only = yes # .4000
+	desc = {
+		trigger = { is_female = yes }
+		text = DWNight4003.0
+		picture = fleeing_woman_1
+	}
+	desc = {
+		trigger = { is_female = no }
+		text = DWNight4003.0
+		picture = fleeing_man_1
+	}
+	immediate = {
+		character_event = { id = DWNPC.01 }
+		random_realm_character = {
+			limit = { has_character_flag = dw_npc_combat_vampire }
+			save_event_target_as = second_fighter
+		}
+	}
+	option = { # I 've gotten away
+		name = DWNight4003A
+		hidden_effect = { # The vampire moves on
+			event_target:second_fighter = {
+				banish = yes
+				clr_character_flag = dw_npc_combat_vampire
+			}
+		}
+	}
+}
+# .4004 Fleeing failed - fight or submit
+narrative_event = {
+	id = DWNight.4004
+	picture = vampire_attack_nos_1
+	title = dw_hunted_by_vampire_title
+	is_triggered_only = yes # Triggered by on_action
+	desc = DWNight4004.0
+	option = { # fight
+		name = DWNight4004A
+		hidden_effect = {
+			character_event = { id = DWNPC.01 }
+			ROOT = { save_event_target_as = first_fighter }
+			random_realm_character = {
+				limit = { has_character_flag = dw_npc_combat_vampire }
+				save_event_target_as = second_fighter
+			}
+			process_combat_round = yes
+			narrative_event = { id = DWNight.4001 }
+		}
+	}
+	option = { # submit
+		name = DWNight4000B
+		hidden_effect = { 
+			random_list = {
+				10 = {
+					set_character_flag = dw_vampire_turns
+					modifier = {
+						factor = 0
+						OR = {
+							trait = werewolf # werewolves are never an option to turn in this choice
+							trait = werewolf_ancient
+						}
+					}
+					modifier = {
+						factor = 9
+						is_female = yes # a female is 9 times more likely to be spared, which should make the change 50-50
+					}
+				}
+				90 = {
+					set_character_flag = dw_vampire_kills
+				}
+			}
+			narrative_event = { id = DWNight.4005 }
+		}
+	}
+}
+# .4005 Submit to Vampire
+narrative_event = {
+	id = DWNight.4005
+	picture = a_placeholder
+	title = dw_hunted_by_vampire_title
+	is_triggered_only = yes # .4000
+	desc = { # Chicks
+		trigger = {
+			is_female = yes
+		}
+		text = DWNight4005.0
+		picture = vampire_feeds_nos_1
+	}
+	desc = { # Dudes
+		trigger = {
+			is_female = no
+		}
+		text = DWNight4005.0
+		picture = vampire_feeds_nos_2
+	}
+	option = { # Gets turned
+		trigger = {
+			has_character_flag = dw_vampire_turns
+		}
+		name = DWNight4005A
+		hidden_effect = { narrative_event = { id = DWNight.4006 days = 1 } }
+	}
+	option = { # Gets killed
+		trigger = {
+			has_character_flag = dw_vampire_kills
+		}
+		name = DWNight4005A # same text as the above option - which is intentional
+		death = { death_reason = death_murder_unknown }
+	}
+}
+# .4006 Awakens as a vampire
+narrative_event = {
+	id = DWNight.4006
+	picture = a_placeholder
+	title = dw_hunted_by_vampire_title
+	is_triggered_only = yes # .4005
+	desc = { # Chicks
+		trigger = {
+			is_female = yes
+		}
+		text = DWNight4006.0
+		picture = vampire_female_1
+	}
+	desc = { # Dudes
+		trigger = {
+			is_female = no
+		}
+		text = DWNight4006.0
+		picture = vampire_male_1
+	}
+	option = { # Awakens a vampire
+		name = DWNight4006A
+		add_trait = vampire
+	}
+}
+
+### Vampiric Seduction - the weakening of another's will, usually in order to make them a willing thrall, or a willing subject to be turned in the future
+# .4100 - The player is the target of the seduction by a vampire
+narrative_event = {
+	id = DWNight.4100
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # via targeted_decision
+	desc = { # Vampire female
+		trigger = { event_target:dw_vampire_seducer = { is_female = yes } }
+		text = DWNight4100.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male
+		trigger = { event_target:dw_vampire_seducer = { is_female = no } }
+		text = DWNight4100.1
+		picture = vampire_male_2
+	}
+	immediate = { 
+		# We set the attacking vampire as an event target
+		FROMFROM = { # FROM is the player that was targeted in the decision, FROMFROM is the vampire that did the targeting, so it's what we're saving to use
+			save_event_target_as = dw_vampire_seducer
+		}
+	}
+	option = { # Sure, I've got time
+		name = DWNight4100A
+		hidden_effect = { narrative_event = { id = DWNight.4105 } }
+	}
+	option = { # Sorry, now isn't a good time
+		name = DWNight4100B
+		hidden_effect = {
+			if = {
+				limit = {
+					event_target:dw_vampire_seducer = { health >= 2.1 } # Do they have enough health to use a power?
+				}
+				event_target:dw_vampire_seducer = { health = -1 }
+				if = {
+					limit = { has_strong_mind = yes } # Are they too strong to hypnotise?
+					narrative_event = { id = DWNight.4103 }
+				}
+				else = {
+					narrative_event = { id = DWNight.4102 }
+				}
+			}
+		}
+	}
+	option = { # Sorry Not Gay
+		trigger = {
+			OR = {
+				AND = {
+					event_target:dw_vampire_seducer = { is_female = yes }
+					is_female = yes
+				}
+				AND = {
+					event_target:dw_vampire_seducer = { is_female = no }
+					is_female = no
+				}
+			}
+			NOT = { trait = homosexual }
+		}
+		name = DWNight4100C
+		hidden_effect = {
+			if = {
+				limit = {
+					event_target:dw_vampire_seducer = { health >= 2.1 } # Do they have enough health to use a power?
+				}
+				event_target:dw_vampire_seducer = { health = -1 }
+				if = {
+					limit = { has_strong_mind = yes } # Are they too strong to hypnotise?
+					narrative_event = { id = DWNight.4103 }
+				}
+				else = {
+					narrative_event = { id = DWNight.4101 }
+				}
+			}
+		}
+	}
+}
+# .4101 - Not a homosexual response - vampire hypnotism event
+narrative_event = {
+	id = DWNight.4101
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # .4100
+	desc = { # Vampire female
+		trigger = { event_target:dw_vampire_seducer = { is_female = yes } }
+		text = DWNight4101.0
+		picture = vampire_female_hypnosis_1
+	}
+	desc = { # Vampire male
+		trigger = { event_target:dw_vampire_seducer = { is_female = no } }
+		text = DWNight4101.0
+		picture = vampire_male_hypnosis_1
+	}
+	option = { # Am I getting sick?
+		name = DWNight4101A
+		hidden_effect = {
+			random_list = { # The player is changed somehow from the hypotism
+				25 = { change_intrigue = -1 } # weakened the will
+				25 = { change_learning = -1 } # dulled the mind
+				25 = { health = -0.5 } # had a snack
+				25 = { add_trait = homosexual } # adjusted their mentality towards the same sex
+			}
+		}
+	}
+}
+# .4102 - Not interested - vampire hypnotism event
+narrative_event = {
+	id = DWNight.4102
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # .4100
+	desc = { # Vampire female
+		trigger = { event_target:dw_vampire_seducer = { is_female = yes } }
+		text = DWNight4102.0
+		picture = vampire_female_hypnosis_1
+	}
+	desc = { # Vampire male
+		trigger = { event_target:dw_vampire_seducer = { is_female = no } }
+		text = DWNight4102.0
+		picture = vampire_male_hypnosis_1
+	}
+	option = { # Am I getting sick?
+		name = DWNight4102A
+		hidden_effect = {
+			random_list = { # The player is changed somehow from the hypotism
+				33 = { change_intrigue = -1 } # weakened the will
+				33 = { change_learning = -1 } # dulled the mind
+				33 = { health = -0.5 } # had a snack
+			}
+		}
+	}
+}
+# .4103 - The player is too strong to hypnotise
+narrative_event = {
+	id = DWNight.4103
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # .4100
+	desc = { # Vampire female
+		trigger = { event_target:dw_vampire_seducer = { is_female = yes } }
+		text = DWNight4103.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male
+		trigger = { event_target:dw_vampire_seducer = { is_female = no } }
+		text = DWNight4103.0
+		picture = vampire_male_1
+	}
+	option = { # There is something dangerous about them.
+		name = DWNight4103A
+		hidden_effect = {
+			add_rival = event_target:dw_vampire_seducer
+		}
+	}
+}
+# .4105 - The player agrees to spend some time with the vampire
+narrative_event = {
+	id = DWNight.4105
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # .4100
+	desc = { # Vampire female
+		trigger = { event_target:dw_vampire_seducer = { is_female = yes } }
+		text = DWNight4105.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male
+		trigger = { event_target:dw_vampire_seducer = { is_female = no } }
+		text = DWNight4105.0
+		picture = vampire_male_1
+	}
+	option = { # I enjoyed our time
+		name = DWNight4105A
+		hidden_effect = {
+			random_list = { # The player may be changed from such exposure to the vampire's charm
+				25 = { change_intrigue = -1 } # weakened the will
+				25 = { change_learning = -1 } # dulled the mind
+				50 = { } # no effect
+			}
+		}
+	}
+	option = { # Lean in for a kiss
+		name = DWNight4105B
+		hidden_effect = { narrative_event = { id = DWNight.4106 } }
+	}
+}
+# .4106 - The player sleeps with the vampire
+narrative_event = {
+	id = DWNight.4106
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # .4105
+	desc = { # Vampire female - with someone without a cock
+		trigger = { 
+			event_target:dw_vampire_seducer = { is_female = yes }
+			has_cock = no
+		}
+		text = DWNight4106.0
+		picture = vampire_sex_female_lez_1
+	}
+	desc = { # Vampire female with someone who has a cock
+		trigger = { 
+			event_target:dw_vampire_seducer = { is_female = yes }
+			has_cock = yes
+		}
+		text = DWNight4106.1
+		picture = vampire_sex_female_bj_1
+	}
+	desc = { # Vampire male - with someone without a cock
+		trigger = { 
+			event_target:dw_vampire_seducer = { is_female = no }
+			has_cock = no
+		}
+		text = DWNight4106.2
+		picture = vampire_sex_male_cun_1
+	}
+	desc = { # Vampire male - with someone with a cock
+		trigger = { 
+			event_target:dw_vampire_seducer = { is_female = no }
+			has_cock = yes
+		}
+		text = DWNight4106.3
+		picture = vampire_sex_male_gay_1
+	}
+	option = { # Best talk ever
+		name = DWNight4106A
+		hidden_effect = {
+			random_list = { # The player may be changed from such exposure to the vampire's charm
+				30 = { change_intrigue = -1 } # weakened the will
+				30 = { change_learning = -1 } # dulled the mind
+				20 = { health = -0.5 } # the vampire had a taste
+				20 = { } # No effect
+			}
+		}
+	}
+	option = { # Please be my lover
+		name = DWNight4106B
+		hidden_effect = {
+			random_list = { # The player may be changed from such exposure to the vampire's charm
+				30 = { change_intrigue = -1 } # weakened the will
+				30 = { change_learning = -1 } # dulled the mind
+				20 = { health = -0.5 } # the vampire had a taste
+				20 = { } # No effect
+			}
+			add_lover = event_target:dw_vampire_seducer
+		}
+	}
+}
+# .4150 - The player is NOT the target of the seduction, events are only for the Vampire then
+narrative_event = {
+	id = DWNight.4150
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # via targeted_decision
+	desc = {
+		trigger = { is_female = yes }
+		text = DWNight4150.0
+		picture = vampire_female_2 # female image
+	}
+	desc = {
+		trigger = { is_female = no }
+		text = DWNight4150.0
+		picture = vampire_male_2 # male image
+	}
+	immediate = { 
+		# We set the seduction target
+		FROM = { # FROM is the person that was targeted in the seduction decision
+			save_event_target_as = dw_vampire_seduction_target
+		}
+	}
+	option = { # Employ hypnotism
+		trigger = {
+			base_health > 2.0
+		}
+		name = DWNight4150A
+		custom_tooltip = { text = dw_blood_cost_tooltip }
+		hidden_effect = {
+			health = -1
+			if = { # Is our target too strong of mind to hypnotise?
+				limit = { event_target:dw_vampire_seduction_target = { has_strong_mind = yes } }
+				narrative_event = { id = DWNight.4153 }
+			}
+			else = { # Nope, we can hypnotise them
+				narrative_event = { id = DWNight.4160 }
+			}
+		}
+	}
+	option = { # Employ intrigue - I've something very important to share with you.
+		trigger = {
+			intrigue = 15 
+		}
+		name = DWNight4150B
+		tooltip_info = intrigue
+		hidden_effect = {
+			if = { # Is our target paranoid, a rival or too strong of mind to be lured away?
+				limit = { 
+					event_target:dw_vampire_seduction_target = { 
+						OR = {
+							has_strong_mind = yes
+							trait = paranoid
+							is_rival = ROOT
+						}
+					}					
+				}
+				narrative_event = { id = DWNight.4155 }
+			}
+			else = { # We're able to lure them away
+				narrative_event = { id = DWNight.4170 }
+			}
+		}
+	}
+	option = { # Try to Sweet talk
+		name = DWNight4150C
+		hidden_effect = {
+			if = { # Is our target paranoid, a rival or too strong of mind to be lured away?
+				limit = { 
+					event_target:dw_vampire_seduction_target = { 
+						OR = {
+							has_strong_mind = yes
+							trait = paranoid
+							is_rival = ROOT
+						}
+					}					
+				}
+				random_list = {
+					25 = { # Rebuked and seen as a threat/dangerous
+						narrative_event = { id = DWNight.4155 }
+					}
+					75 = { # Just not in the mood to talk tonight
+						narrative_event = { id = DWNight.4157 }
+					}
+				}
+			}
+			else = {
+				random_list = {
+					40 = { # Not interested to talk tonight
+						trigger = {
+							event_target:dw_vampire_seduction_target = { 
+								NOT = { trait = drunkard } # Can't be a drunkard, as they wouldn't pass up an offer for a drink
+							}
+						}
+						narrative_event = { id = DWNight.4157 }
+					}
+					60 = { # Sure, let's have a chat
+						narrative_event = { id = DWNight.4180 }
+					}
+				}
+			}
+		}
+	}	
+	option = { # You know what? Nevermind
+		name = DWNight4150D
+		custom_tooltip = { text = dw_abort_action_tooltip }
+	}	
+}
+
+# .4153 - The target is too strong to hypnotise
+narrative_event = {
+	id = DWNight.4153
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # .4150
+	desc = { # Vampire female
+		trigger = { is_female = yes }
+		text = DWNight4153.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male
+		trigger = { is_female = no }
+		text = DWNight4153.0
+		picture = vampire_male_2
+	}
+	option = { # They now see me as dangerous
+		name = DWNight4153A
+		hidden_effect = {
+			add_rival = event_target:dw_vampire_seduction_target
+		}
+	}
+}
+# .4155 - The target doesn't fall for the intrigue attempt
+narrative_event = {
+	id = DWNight.4155
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # .4150
+	desc = { # Vampire female
+		trigger = { is_female = yes }
+		text = DWNight4155.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male
+		trigger = { is_female = no }
+		text = DWNight4155.0
+		picture = vampire_male_2
+	}
+	option = { # They now see me as dangerous
+		name = DWNight4155A
+		hidden_effect = {
+			add_rival = event_target:dw_vampire_seduction_target
+		}
+	}
+}
+# .4157 - The target just isn't in the mood to talk
+narrative_event = {
+	id = DWNight.4157
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # .4150
+	desc = { # Vampire female
+		trigger = { is_female = yes }
+		text = DWNight4157.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male
+		trigger = { is_female = no }
+		text = DWNight4157.0
+		picture = vampire_male_2
+	}
+	option = { # Maybe next time
+		name = DWNight4157A
+	}
+}
+# .4160 - The target is hypnotised
+narrative_event = {
+	id = DWNight.4160
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # .4150
+	desc = { # Vampire female
+		trigger = { is_female = yes }
+		text = DWNight4160.0
+		picture = vampire_female_hypnosis_1
+	}
+	desc = { # Vampire male
+		trigger = { is_female = no }
+		text = DWNight4160.0
+		picture = vampire_male_hypnosis_1
+	}
+	option = { # Reduce their intrigue
+		name = DWNight4160A
+		event_target:dw_vampire_seduction_target = {
+			change_intrigue = -1
+		}
+	}
+	option = { # Reduce their learning
+		name = DWNight4160B
+		event_target:dw_vampire_seduction_target = {
+			change_learning = -1
+		}
+	}
+	option = { # Have a bite
+		name = DWNight4160C
+		event_target:dw_vampire_seduction_target = {
+			health = -0.5
+			opinion = {
+				modifier = dw_opinion_bitten_by_vampire
+				who = ROOT
+			}
+		}
+		health = 0.5
+	}
+}
+# .4170 - Intrigue Lure
+narrative_event = {
+	id = DWNight.4170
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # .4150
+	desc = { # Vampire female
+		trigger = { is_female = yes }
+		text = DWNight4170.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male
+		trigger = { is_female = no }
+		text = DWNight4170.0
+		picture = vampire_male_2
+	}
+	option = { # Subtle messages to try and erode one's mental facilities
+		name = DWNight4170A
+		custom_tooltip = { text = dw_80_percent_tooltip }
+		hidden_effect = {
+			random_list = { # The player may be changed from such exposure to the vampire's charm
+				40 = { event_target:dw_vampire_seduction_target = { change_intrigue = -1 } } # weakened the will
+				40 = { event_target:dw_vampire_seduction_target = { change_learning = -1 } } # dulled the mind
+				20 = { } # No effect
+			}
+		}
+	}
+}
+# .4180 - Normal chat over a drink
+narrative_event = {
+	id = DWNight.4180
+	picture = a_placeholder
+	title = dw_vampire_seduction_title
+	is_triggered_only = yes # .4150
+	desc = { # Vampire female
+		trigger = { is_female = yes }
+		text = DWNight4180.0
+		picture = vampire_drink_female_1
+	}
+	desc = { # Vampire male
+		trigger = { is_female = no }
+		text = DWNight4180.0
+		picture = vampire_drink_male_1
+	}
+	option = { # Subtle messages to try and erode one's mental facilities
+		name = DWNight4180A
+		custom_tooltip = { text = dw_50_percent_tooltip }
+		hidden_effect = {
+			random_list = { # The player may be changed from such exposure to the vampire's charm
+				25 = { event_target:dw_vampire_seduction_target = { change_intrigue = -1 } } # weakened the will
+				25 = { event_target:dw_vampire_seduction_target = { change_learning = -1 } } # dulled the mind
+				50 = { } # No effect
+			}
+		}
+	}
+}
+# .4200 - Vampire feeds on a willing player (player viewpoint)
+narrative_event = {
+	id = DWNight.4200
+	picture = a_placeholder
+	title = dw_vampire_feeding_title
+	is_triggered_only = yes # targeted decision
+	desc = { # Player female, vampire male
+		trigger = { 
+			is_female = yes
+			event_target:dw_vampire_feeder = { is_female = no }
+		}
+		text = DWNight4200.0
+		picture = vampire_bite_female_1
+	}
+	desc = { # Player female, vampire female
+		trigger = { 
+			is_female = yes
+			event_target:dw_vampire_feeder = { is_female = yes }
+		}
+		text = DWNight4200.0
+		picture = vampire_bite_female_1
+	}
+	desc = { # Player male, vampire male
+		trigger = { 
+			is_female = no
+			event_target:dw_vampire_feeder = { is_female = no }
+		}
+		text = DWNight4200.0
+		picture = vampire_bite_male_1
+	}
+	desc = { # Player male, vampire female
+		trigger = { 
+			is_female = no
+			event_target:dw_vampire_feeder = { is_female = yes }
+		}
+		text = DWNight4200.0
+		picture = vampire_bite_male_2
+	}
+	immediate = {
+		# We set the vampire as an event target - FROM is the player, FROMFROM is the vampire that started the targeted decision
+		FROMFROM = {
+			save_event_target_as = dw_vampire_feeder
+		}
+	}
+	option = { # I sleep deeply tonight
+		name = DWNight4200A
+		health = -0.5
+		hidden_effect = {
+			event_target:dw_vampire_feeder = { health = 0.5 }
+		}
+	}
+}
+# .4210 - Vampire feeds on a willing subject (vampire viewpoint)
+narrative_event = {
+	id = DWNight.4210
+	picture = a_placeholder
+	title = dw_vampire_feeding_title
+	is_triggered_only = yes # targeted decision
+	desc = { # target female, vampire male
+		trigger = { 
+			is_female = no
+			event_target:dw_vampire_target = { is_female = yes }
+		}
+		text = DWNight4210.0
+		picture = vampire_bite_female_1
+	}
+	desc = { # target female, vampire female
+		trigger = { 
+			is_female = yes
+			event_target:dw_vampire_target = { is_female = yes }
+		}
+		text = DWNight4210.0
+		picture = vampire_bite_female_2
+	}
+	desc = { # target male, vampire male
+		trigger = { 
+			is_female = no
+			event_target:dw_vampire_target = { is_female = no }
+		}
+		text = DWNight4210.0
+		picture = vampire_bite_male_1
+	}
+	desc = { # target male, vampire female
+		trigger = { 
+			is_female = yes
+			event_target:dw_vampire_target = { is_female = no }
+		}
+		text = DWNight4210.0
+		picture = vampire_bite_male_2
+	}
+	immediate = {
+		# We set the vampire as an event target - FROM is the target
+		FROM = {
+			save_event_target_as = dw_vampire_target
+		}
+	}
+	option = { # A tasty treat
+		name = DWNight4210A
+		health = 0.5
+		hidden_effect = {
+			event_target:dw_vampire_target = { health = -0.5 }
+		}
+	}
+}
+# .4300 - Vampire makes a thrall (player viewpoint)
+narrative_event = {
+	id = DWNight.4300
+	picture = a_placeholder
+	title = dw_vampire_thrall_title
+	is_triggered_only = yes # targeted decision
+	desc = { # vampire male
+		trigger = { 
+			event_target:dw_vampire_master = { is_female = no }
+		}
+		text = DWNight4300.0
+		picture = vampire_thrall_1
+	}
+	desc = { # vampire female
+		trigger = { 
+			event_target:dw_vampire_master = { is_female = yes }
+		}
+		text = DWNight4300.0
+		picture = vampire_thrall_2
+	}
+	immediate = {
+		# We set the vampire as an event target - FROM is the player, FROMFROM is the vampire that started the targeted decision
+		FROMFROM = {
+			save_event_target_as = dw_vampire_master
+		}
+	}
+	option = { # I serve my master
+		name = DWNight4300A
+		hidden_effect = {
+			add_character_modifier = { name = dw_vampire_thrall duration = -1 }
+			opinion = {
+				modifier = dw_opinion_vampire_master
+				who = event_target:dw_vampire_master
+			}
+		}
+	}
+}
+# .4310 - Vampire makes a thrall (vampire viewpoint)
+narrative_event = {
+	id = DWNight.4310
+	picture = a_placeholder
+	title = dw_vampire_thrall_title
+	is_triggered_only = yes # targeted decision
+	desc = { # vampire male
+		trigger = { 
+			is_female = no
+		}
+		text = DWNight4310.0
+		picture = vampire_thrall_1
+	}
+	desc = { # vampire female
+		trigger = { 
+			is_female = yes
+		}
+		text = DWNight4310.0
+		picture = vampire_thrall_2
+	}
+	immediate = {
+		# We set the event target - FROM is the target
+		FROM = {
+			save_event_target_as = dw_vampire_target
+		}
+	}
+	option = { # I've a new pet
+		name = DWNight4310A
+		hidden_effect = {
+			event_target:dw_vampire_target = {
+				add_character_modifier = { name = dw_vampire_thrall duration = -1 }
+				opinion = {
+					modifier = dw_opinion_vampire_master
+					who = ROOT
+				}
+			}
+		}
+	}
+}
+# .4400 - Vampire creates a new vampire (new vampire is the player - player perspective)
+character_event = {
+	id = DWNight.4400
+	hide_window = yes # nothing to see here
+	is_triggered_only = yes # by targeted decision
+	immediate = {
+		# We set an event target
+		FROMFROM = { # FROM is the player that was targeted in the decision, FROMFROM is the vampire that did the targeting, so it's what we're saving to use
+			save_event_target_as = dw_vampire
+		}
+		if = {
+			limit = { has_character_modifier = dw_vampire_thrall } # If they're a thrall, they've no choice other than to become a vampire.
+			narrative_event = { id = DWNight.4401 }
+		}
+		else = {
+			narrative_event = { id = DWNight.4403 } # Not being a thrall - they'll have a choice.
+		}
+	}
+}
+# .4401 - Player is a thrall, becomes a vampire
+narrative_event = {
+	id = DWNight.4401
+	picture = a_placeholder
+	title = dw_the_vampire_title
+	is_triggered_only = yes # .4400
+	desc = { # Player female, vampire male
+		trigger = { 
+			is_female = yes
+			event_target:dw_vampire = { is_female = no }
+		}
+		text = DWNight4401.0
+		picture = vampire_bite_female_1
+	}
+	desc = { # Player female, vampire female
+		trigger = { 
+			is_female = yes
+			event_target:dw_vampire = { is_female = yes }
+		}
+		text = DWNight4401.0
+		picture = vampire_bite_female_1
+	}
+	desc = { # Player male, vampire male
+		trigger = { 
+			is_female = no
+			event_target:dw_vampire = { is_female = no }
+		}
+		text = DWNight4401.0
+		picture = vampire_bite_male_1
+	}
+	desc = { # Player male, vampire female
+		trigger = { 
+			is_female = no
+			event_target:dw_vampire = { is_female = yes }
+		}
+		text = DWNight4401.0
+		picture = vampire_bite_male_2
+	}
+	option = { # I am reborn
+		name = DWNight4401A
+		hidden_effect = { 
+			becomes_vampire = yes
+			remove_opinion = { modifier = dw_opinion_vampire_master who = event_target:dw_vampire }
+			opinion = {	modifier = dw_opinion_sire	who = event_target:dw_vampire }
+		}
+	}
+}
+
+# .4403 - Player is not a thrall, has a choice about becoming a vampire
+narrative_event = {
+	id = DWNight.4403
+	picture = a_placeholder
+	title = dw_the_vampire_title
+	is_triggered_only = yes # .4400
+	desc = { # Vampire female
+		trigger = { event_target:dw_vampire = { is_female = yes } }
+		text = DWNight4403.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male
+		trigger = { event_target:dw_vampire = { is_female = no } }
+		text = DWNight4403.0
+		picture = vampire_male_2
+	}
+	option = { # Yes, embrace me.
+		name = DWNight4403A
+		hidden_effect = { 
+			becomes_vampire = yes
+			remove_opinion = { modifier = dw_opinion_vampire_master who = event_target:dw_vampire }
+			opinion = {	modifier = dw_opinion_sire	who = event_target:dw_vampire }
+		}
+	}
+	option = { # No thank you
+		name = DWNight4403B
+	}
+	option = { # Vile Creature! Begone!
+		name = DWNight4403C
+		hidden_effect = {
+			add_rival = event_target:dw_vampire
+			event_target:dw_vampire = {
+				add_character_modifier = { name = dw_outed_vampire duration = -1 }
+				opinion = { modifier = dw_exposed_identity who = ROOT }
+			}
+		}
+	}
+}
+# .4410 - Vampire creates a new vampire (target is NOT player, perspective is from vampire's view)
+character_event = {
+	id = DWNight.4410
+	hide_window = yes # nothing to see here
+	is_triggered_only = yes # by targeted decision
+	immediate = {
+		# We set an event target
+		FROM = { # FROM is the character that was targeted in the decision, FROMFROM is the vampire that did the targeting
+			save_event_target_as = dw_vampire_target
+		}
+		if = {
+			limit = { event_target:dw_vampire_target = { has_character_modifier = dw_vampire_thrall }} # If they're a thrall, they've no choice other than to become a vampire.
+			narrative_event = { id = DWNight.4411 }
+		}
+		else = {
+			narrative_event = { id = DWNight.4413 } # Not being a thrall - there is a chance for denial.
+		}
+	}
+}
+# .4411 - thrall becomes a vampire
+narrative_event = {
+	id = DWNight.4411
+	picture = a_placeholder
+	title = dw_the_vampire_title
+	is_triggered_only = yes # .4410
+	desc = { # target female, vampire male
+		trigger = { 
+			is_female = no
+			event_target:dw_vampire_target = { is_female = yes }
+		}
+		text = DWNight4411.0
+		picture = vampire_bite_female_1
+	}
+	desc = { # target female, vampire female
+		trigger = { 
+			is_female = yes
+			event_target:dw_vampire_target = { is_female = yes }
+		}
+		text = DWNight4411.0
+		picture = vampire_bite_female_1
+	}
+	desc = { # target male, vampire male
+		trigger = { 
+			is_female = no
+			event_target:dw_vampire_target = { is_female = no }
+		}
+		text = DWNight4411.0
+		picture = vampire_bite_male_1
+	}
+	desc = { # target male, vampire female
+		trigger = { 
+			is_female = yes
+			event_target:dw_vampire_target = { is_female = no }
+		}
+		text = DWNight4411.0
+		picture = vampire_bite_male_2
+	}
+	option = { # I am pleased with this
+		name = DWNight4411A
+		hidden_effect = {
+			event_target:dw_vampire_target = {
+				becomes_vampire = yes
+				remove_opinion = { modifier = dw_opinion_vampire_master who = ROOT }
+				opinion = {	modifier = dw_opinion_sire	who = ROOT }
+			}
+		}
+	}
+}
+# .4413 - target is not a thrall, has a choice about becoming a vampire
+narrative_event = {
+	id = DWNight.4413
+	picture = a_placeholder
+	title = dw_the_vampire_title
+	is_triggered_only = yes # .4410
+	desc = { # Vampire female
+		trigger = { is_female = yes }
+		text = DWNight4413.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male
+		trigger = { is_female = no }
+		text = DWNight4413.0
+		picture = vampire_male_2
+	}
+	option = { # What shall be their decision!
+		name = DWNight4413A
+		hidden_effect = { 
+			random_list = {
+				40 = { # Yes
+					narrative_event = { id = DWNight.4415 }
+					modifier = {
+						factor = 2 # Twice as likely to accept
+						OR = {
+							event_target:dw_vampire_target = { is_lover = ROOT } # A lover seeks to evolve with their relationship
+							event_target:dw_vampire_target = { trait = ambitious } # An ambitious target sees the potential power to be gained
+						}
+					}
+					modifier = {
+						factor = 0 # Not going to happen
+						event_target:dw_vampire_target = { trait = monster_hunter } # Goes against their personal code
+					}
+				}
+				40 = { # Not right now
+					narrative_event = { id = DWNight.4417 }
+					modifier = {
+						factor = 2 # Twice as likely to delay
+						event_target:dw_vampire_target = { trait = content } # Happy with the way things are
+					}
+				}
+				20 = { # Begone vile creature
+					narrative_event = { id = DWNight.4419 }
+					modifier = {
+						factor = 0
+						OR = {
+							event_target:dw_vampire_target = { trait = craven } # A coward wouldn't risk the vampires wrath
+							event_target:dw_vampire_target = { is_lover = ROOT } # A lover won't flip this drastically, largely because they already knew or suspected
+						}
+					}
+				}
+			}
+		}
+	}
+}
+# .4415 - target accepts becoming a vampire
+narrative_event = {
+	id = DWNight.4415
+	picture = a_placeholder
+	title = dw_the_vampire_title
+	is_triggered_only = yes # .4413
+	desc = { # target female, vampire male
+		trigger = { 
+			is_female = no
+			event_target:dw_vampire_target = { is_female = yes }
+		}
+		text = DWNight4415.0
+		picture = vampire_bite_female_1
+	}
+	desc = { # target female, vampire female
+		trigger = { 
+			is_female = yes
+			event_target:dw_vampire_target = { is_female = yes }
+		}
+		text = DWNight4415.0
+		picture = vampire_bite_female_1
+	}
+	desc = { # target male, vampire male
+		trigger = { 
+			is_female = no
+			event_target:dw_vampire_target = { is_female = no }
+		}
+		text = DWNight4415.0
+		picture = vampire_bite_male_1
+	}
+	desc = { # target male, vampire female
+		trigger = { 
+			is_female = yes
+			event_target:dw_vampire_target = { is_female = no }
+		}
+		text = DWNight4415.0
+		picture = vampire_bite_male_2
+	}
+	option = { # I am pleased with this
+		name = DWNight4415A
+		hidden_effect = {
+			event_target:dw_vampire_target = {
+				becomes_vampire = yes
+				remove_opinion = { modifier = dw_opinion_vampire_master who = ROOT }
+				opinion = {	modifier = dw_opinion_sire	who = ROOT }
+			}
+		}
+	}
+}
+# .4417 - target turns down vampire offer, at least for now
+narrative_event = {
+	id = DWNight.4417
+	picture = a_placeholder
+	title = dw_the_vampire_title
+	is_triggered_only = yes # .4413
+	desc = { # Vampire female
+		trigger = { is_female = yes }
+		text = DWNight4417.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male
+		trigger = { is_female = no }
+		text = DWNight4417.0
+		picture = vampire_male_2
+	}
+	option = { # No for now
+		name = DWNight4417A
+	}
+}
+# .4419 - target turns down vampire offer, becomes a rival
+narrative_event = {
+	id = DWNight.4419
+	picture = a_placeholder
+	title = dw_the_vampire_title
+	is_triggered_only = yes # .4413
+	desc = { # Vampire female
+		trigger = { is_female = yes }
+		text = DWNight4419.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male
+		trigger = { is_female = no }
+		text = DWNight4419.0
+		picture = vampire_male_2
+	}
+	option = { # I've a new enemy
+		name = DWNight4419A
+		hidden_effect = {
+			add_rival = event_target:dw_vampire_target
+			add_character_modifier = { name = dw_outed_vampire duration = -1 }
+			opinion = { modifier = dw_exposed_identity who = event_target:dw_vampire_target }
+		}
+	}
+}
+# .4500 - Vampire goes hunting event
+narrative_event = {
+	id = DWNight.4500
+	is_triggered_only = yes # from decision
+	picture = a_placeholder
+	title = dw_vampire_hunt_title
+	desc = { # Vampire female
+		trigger = { is_female = yes }
+		text = DWNight4500.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male
+		trigger = { is_female = no }
+		text = DWNight4500.0
+		picture = vampire_male_2
+	}
+	immediate = {
+		# We set some event targets for the hunt chain.
+		if = { # Vampire have a rival to make an event target?
+			limit = { num_of_rivals = 1 }
+			random_rival = {
+				save_event_target_as = dw_hunt_rival
+			}
+		}
+		if = {
+			limit = {
+				any_host_courtier = {
+					NOR = { 
+					is_lover = ROOT
+					has_character_modifier = dw_vampire_thrall
+					}
+				}
+			}
+			random_host_courtier = { # that isn't our lover or a thrall - or the player (because I don't want to have to create a whole bunch of extra events, and there is already an on_action event that may have a player attacked by a vampire
+				limit = {
+					NOR = { 
+						is_lover = ROOT
+						has_character_modifier = dw_vampire_thrall
+						ai = yes
+					}
+				}
+				save_event_target_as = dw_hunt_courtier
+			}
+		}
+	}
+	option = { # Tonight I shall hunt
+		name = DWNight4500A
+		hidden_effect = {
+			random_vampire_hunt_event = yes
+		}
+	}
+	option = { # On second thought, I'll pass on hunting
+		name = DWNight4500D
+		hidden_effect = {
+			character_event = { id = DWNight.4599 }
+		}
+	}
+}
+# .4510 - Hunt rival
+# .4520 - Hunt court member
+# .4530 - Hunting a commoner, the sleeping maiden
+narrative_event = {
+	id = DWNight.4530
+	is_triggered_only = yes # .4500
+	picture = vampire_hunt_commoner_1
+	title = dw_vampire_hunt_title
+	desc = DWNight4530.0
+	option = { # Consume her
+		name = DWNight4530A
+		health = 2.0 # 4 times greater than normal feeding, as this drains the target, killing them.
+		hidden_effect = {
+			check_for_antimonster_rebellion = yes
+		}
+	}
+	option = { # Leave her be
+		name = DWNight4530B
+		hidden_effect = {
+			character_event = { id = DWNight.4599 }
+		}
+	}
+}
+# .4599 - Removes flags associated with the hunting event
+character_event = {
+	id = DWNight.4599
+	is_triggered_only = yes
+	hide_window = yes # nothing to see here
+	immediate = {
+		clr_character_flag = dw_30_day_hunt_cooldown
+	}
+}
+# .4600 - Vampire Diablerie Study
+narrative_event = {
+	id = DWNight.4600
+	is_triggered_only = yes # from decision
+	picture = a_placeholder
+	title = dw_diablerie_study_title
+	desc = { # Vampire female - 1st time
+		trigger = { 
+			is_female = yes
+			is_variable_equal = { which = diablerie_study value = 1}
+		}
+		text = DWNight4600.0
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male - 1st time
+		trigger = { 
+			is_female = no 
+			is_variable_equal = { which = diablerie_study value = 1}
+		}
+		text = DWNight4600.0
+		picture = vampire_male_book_1
+	}
+	desc = { # Vampire female - 2nd time
+		trigger = { 
+			is_female = yes
+			is_variable_equal = { which = diablerie_study value = 2}
+		}
+		text = DWNight4600.1
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male - 2nd time
+		trigger = { 
+			is_female = no 
+			is_variable_equal = { which = diablerie_study value = 2}
+		}
+		text = DWNight4600.1
+		picture = vampire_male_book_1
+	}
+	desc = { # Vampire female - Final Stage
+		trigger = { 
+			is_female = yes
+			check_variable = { which = diablerie_study value = 3}
+		}
+		text = DWNight4600.4
+		picture = vampire_female_2
+	}
+	desc = { # Vampire male - Final Stage
+		trigger = { 
+			is_female = no 
+			check_variable = { which = diablerie_study value = 3}
+		}
+		text = DWNight4600.4
+		picture = vampire_male_book_1
+	}
+	immediate = {
+		if = {
+			limit = {
+				NOT = { check_variable = { which = diablerie_study value = 1} } # If it's not equal to at least 1, then that means we need to set the variable
+			}
+			set_variable = { which = diablerie_study value = 1 }
+		}
+		else = {
+			change_variable = { which = diablerie_study value = 1 }
+		}
+	}
+	option = { # I shall push myself
+		trigger = {
+			is_variable_equal = { which = diablerie_study value = 1}
+		}
+		name = DWNight4600A
+		# High chance of stress, 90 day cooldown
+		hidden_effect = {
+			random = {
+				chance = 80
+				add_trait = stressed
+			}
+			character_event = { id = DWNight.4699 days = 90 } # To remove the flag we set in the decision
+		}
+		custom_tooltip = { text = dw_high_stress_chance }
+	}
+	option = { # Take my time
+		trigger = {
+			is_variable_equal = { which = diablerie_study value = 1}
+		}
+		name = DWNight4600B
+		# Low chance of stress, 180 day cooldown
+		hidden_effect = {
+			random = {
+				chance = 20
+				add_trait = stressed
+			}
+			set_character_flag = dw_180_day_study_cooldown
+			clr_character_flag = dw_90_day_study_cooldown # We're replacing the one we set in the decision with the 180 day version.
+			character_event = { id = DWNight.4699 days = 180 }
+		}
+		custom_tooltip = { text = dw_low_stress_chance }
+	}
+	option = { # I shall begin the fasting
+		trigger = {
+			is_variable_equal = { which = diablerie_study value = 2}
+		}
+		name = DWNight4600C
+		change_intrigue = 1 # From knowledge gained during prior study
+		# Fasting is for 180 days - no option for speeding it up.
+		hidden_effect = {
+			add_trait = stressed # Caused by the strains of fasting
+			set_character_flag = dw_fasting_flag
+			set_character_flag = dw_180_day_study_cooldown
+			clr_character_flag = dw_90_day_study_cooldown # We're replacing the one we set in the decision with the 180 day version.
+			character_event = { id = DWNight.4699 days = 180 }
+		}
+		custom_tooltip = { text = dw_high_stress_chance }
+	}
+	option = { # I shall not pursue this knowledge
+		trigger = {
+			is_variable_equal = { which = diablerie_study value = 2}
+		}
+		name = DWNight4600D
+		hidden_effect = {
+			set_character_flag = dw_abandoned_diablerie_study # No more Diablerie study decision
+		}
+	}
+}
+# .4699 - Removes flags associated with the Diablerie Study decision
+character_event = {
+	id = DWNight.4699
+	is_triggered_only = yes
+	hide_window = yes # nothing to see here
+	immediate = {
+		clr_character_flag = dw_90_day_study_cooldown
+		clr_character_flag = dw_180_day_study_cooldown
+	}
+}
+# .4800 - Vampirella, Daughter of Lilith
+narrative_event = {
+	id = DWNight.4800
+	picture = vampirella_1
+	title = dw_vampirella_title
+	is_triggered_only = yes # via on_action
+	desc = { # Player is vampire/dhampir
+		trigger = { 
+			OR = {
+				trait = vampire
+				trait = vampire_ancient
+				trait = dhampir
+			}
+		}
+		text = DWNight4800.0
+	}	
+	desc = { # Player is a child of Lilith
+		trigger = { 
+			OR = {
+				trait = lilith
+				trait = incubus
+			}
+		}
+		text = DWNight4800.1
+	}	
+	desc = { # Player isn't any of the above
+		trigger = { 
+			NOR = {
+				trait = vampire
+				trait = vampire_ancient
+				trait = dhampir
+				trait = lilith
+				trait = incubus
+			}
+		}
+		text = DWNight4800.2
+	}	
+	ai = no # We only want the player getting this
+	trigger = {
+		has_classic_monsters_content = yes
+		has_heaven_hell_content = yes
+		NOT = { has_global_flag = dw_vampirella_created }
+	}
+	option = { # Please stay
+		name = DWNight4800A
+		character_event = { id = DWNPC.03 }
+	}
+	option = { # Please move on
+		name = DWNight4800B
+		custom_tooltip = { text = dw_may_repeat_in_the_future }
+	}
+}
+# .4999 - Vampires lose a point of health, signifying the bodily cost required to maintain their existence, and giving reason to feed.
+character_event = {
+	id = DWNight.4999
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by Decision
+	trigger = {
+		trait = vampire # Ancient Vampires have grown beyond the self destruction experienced by normal vampires, so they're not included
+	}
+	immediate = {
+		health = -1.0
+	}
+}
+### .5000 - Monster Hunters
+#.5000 Red Riding Sister (Blondelle) created in DWNPCs.txt - part of a Werewolf hunt chain as an NPC rival that flees after being defeated and spared via an event chain
+#.5001 Bloodrayne created in DWNPCs.txt
+
+### .5500 Bloodrayne 
+# .5500 Introducing Bloodrayne
+narrative_event = {
+	id = DWNight.5500
+	picture = a_placeholder
+	title = dw_bloodrayne_hunter_title
+	is_triggered_only = yes # Triggered by on_action
+	desc = { # Player is a vampire
+		trigger = { 
+			OR = {
+				trait = vampire
+				trait = vampire_ancient
+			}
+		}
+		text = DWNight5500.0
+		picture = bloodrayne_attacks_1
+	}	
+	desc = { # Player is a werewolf
+		trigger = { 
+			OR = {
+				trait = werewolf
+				trait = werewolf_ancient
+			}
+		}
+		text = DWNight5500.1
+		picture = bloodrayne_appears_1
+	}	
+	desc = { # Player is a dhampir
+		trigger = { 
+			trait = dhampir
+		}
+		text = DWNight5500.2
+		picture = bloodrayne_appears_1
+	}	
+	desc = { # Player isn't any of the above
+		trigger = { 
+			NOR = {
+				trait = vampire
+				trait = vampire_ancient
+				trait = werewolf
+				trait = werewolf_ancient
+				trait = dhampir
+			}
+		}
+		text = DWNight5500.3
+		picture = bloodrayne_appears_1
+	}	
+	ai = no # The ai shouldn't get this event so we set this pre-trigger
+	trigger = {
+		has_classic_monsters_content = yes
+		NOT = { has_global_flag = dw_npc_bloodrayne_created }
+	}
+	immediate = {
+		character_event = { id = DWNight.5001 } # Creates Bloodrayne
+		ROOT = { save_event_target_as = first_fighter }
+		random_realm_character = {
+			limit = { has_character_flag = dw_npc_bloodrayne }
+			save_event_target_as = second_fighter
+		}
+	}
+	option = { # Ambushed!
+		trigger = {
+			OR = {
+				trait = vampire
+				trait = vampire_ancient
+			}
+		}
+		name = DWNight5500A
+		hidden_effect = { 
+			process_combat_round = yes
+			narrative_event = { id = DWNight.5501 }
+		}
+	}
+	option = { # Don't fight
+		trigger = { 
+			OR = {
+				trait = werewolf
+				trait = werewolf_ancient
+			}
+		}
+		name = DWNight5500B
+		hidden_effect = { narrative_event = { id = DWNight.5503 } }
+	}
+	option = { # Fight!
+		trigger = { 
+			OR = {
+				trait = werewolf
+				trait = werewolf_ancient
+			}
+		}
+		name = DWNight5500C
+		hidden_effect = { 
+			process_combat_round = yes
+			narrative_event = { id = DWNight.5502 }
+		}
+	}
+	option = { # I'm no thrall
+		trigger = { 
+			NOR = {
+				trait = vampire
+				trait = vampire_ancient
+				trait = werewolf
+				trait = werewolf_ancient
+				trait = dhampir
+			}
+		}
+		name = DWNight5500D
+		hidden_effect = { narrative_event = { id = DWNight.5503 } }
+	}
+	option = { # Dhampir next step
+		trigger = { 
+			trait = dhampir
+		}
+		name = DWNight5500E
+		hidden_effect = { narrative_event = { id = DWNight.5503 } }
+	}
+}
+# .5501 Player and Bloodrayne combat - vampires
+narrative_event = {
+	id = DWNight.5501
+	picture = a_placeholder
+	title = dw_bloodrayne_hunter_title
+	is_triggered_only = yes # .5500
+	desc = { # Both are dead
+		trigger = { 
+			event_target:first_fighter = { health <= first_combat_damage }
+			event_target:second_fighter = { health <= second_combat_damage }
+		}
+		text = DWNight5501.0
+		picture = bloodrayne_slayer_1
+	}	
+	desc = { # Player is dead
+		trigger = { 
+			event_target:first_fighter = { health <= first_combat_damage }
+		}
+		text = DWNight5501.1
+		picture = bloodrayne_slayer_1
+	}	
+	desc = { # Rayne is dead - killed by a male
+		trigger = { 
+			event_target:second_fighter = { health <= second_combat_damage }
+			is_female = no
+		}
+		text = DWNight5501.2
+		picture = bloodrayne_defeated_1
+	}	
+	desc = { # Rayne is dead - killed by a female
+		trigger = { 
+			event_target:second_fighter = { health <= second_combat_damage }
+			is_female = yes
+		}
+		text = DWNight5501.2
+		picture = bloodrayne_defeated_2
+	}	
+	desc = { # The struggle continues - first wounds second - standard
+		trigger = { 
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+			event_target:first_fighter = { has_character_flag = dw_first_wounds_second_standard }
+		}
+		text = DWNight5501.3
+		picture = bloodrayne_wounded_1
+	}	
+	desc = { # The struggle continues - second wounds first - standard
+		trigger = { 
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+			event_target:first_fighter = { has_character_flag = dw_second_wounds_first_standard }
+		}
+		text = DWNight5501.4
+		picture = bloodrayne_attacks_1
+	}	
+	desc = { # The struggle continues - both wounded - standard
+		trigger = { 
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+			event_target:first_fighter = { has_character_flag = dw_dual_wounds_standard }
+		}
+		text = DWNight5501.5
+		picture = bloodrayne_attacks_2
+	}	
+	desc = { # The struggle continues
+		trigger = { 
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+			NOR = {
+				event_target:first_fighter = { has_character_flag = dw_first_wounds_second_standard }
+				event_target:first_fighter = { has_character_flag = dw_second_wounds_first_standard }
+				event_target:first_fighter = { has_character_flag = dw_dual_wounds_standard }
+			}
+		}
+		text = DWNight5501.9
+		picture = bloodrayne_attacks_1
+	}	
+	option = { # Fight on
+		trigger = {
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+		}
+		name = DWNight5501A
+		hidden_effect = { 
+			process_combat_round = yes
+			# clear_combat_round_end_flags = yes
+			narrative_event = { id = DWNight.5501}
+		}
+	}
+	option = { # Player killed
+		trigger = {
+			event_target:first_fighter = { health <= first_combat_damage }
+			NOT = { event_target:second_fighter = { health <= second_combat_damage } }
+		}
+		name = DWNight5501B
+		death = { death_reason = death_murder killer = event_target:second_fighter }
+		hidden_effect = { clear_combat_end_flags = yes }
+	}
+	option = { # Bloodrayne killed
+		trigger = {
+			event_target:second_fighter = { health <= second_combat_damage }
+			NOT = { event_target:first_fighter = { health <= first_combat_damage } }
+		}
+		name = DWNight5501C
+		event_target:second_fighter = { death = { death_reason = death_duel killer = ROOT } }
+		hidden_effect = { clear_combat_end_flags = yes }
+	}
+	option = { # Both dead
+		trigger = {
+			event_target:first_fighter = { health <= first_combat_damage }
+			event_target:second_fighter = { health <= second_combat_damage }
+		}
+		name = DWNight5501A
+		death = { death_reason = death_murder killer = event_target:second_fighter }
+		event_target:second_fighter = { death = { death_reason = death_duel killer = ROOT } }
+		hidden_effect = { clear_combat_end_flags = yes }
+	}
+}
+# .5502 Player and Bloodrayne combat - werewolf
+narrative_event = {
+	id = DWNight.5502
+	picture = a_placeholder
+	title = dw_bloodrayne_hunter_title
+	is_triggered_only = yes # .5500
+	desc = { # Both are dead
+		trigger = { 
+			event_target:first_fighter = { health <= first_combat_damage }
+			event_target:second_fighter = { health <= second_combat_damage }
+		}
+		text = DWNight5502.0
+		picture = bloodrayne_slayer_1
+	}	
+	desc = { # Player is dead
+		trigger = { 
+			event_target:first_fighter = { health <= first_combat_damage }
+		}
+		text = DWNight5502.1
+		picture = bloodrayne_slayer_1
+	}	
+	desc = { # Rayne is dead - killed by a male
+		trigger = { 
+			event_target:second_fighter = { health <= second_combat_damage }
+			is_female = no
+		}
+		text = DWNight5502.2
+		picture = bloodrayne_defeated_1
+	}	
+	desc = { # Rayne is dead - killed by a female
+		trigger = { 
+			event_target:second_fighter = { health <= second_combat_damage }
+			is_female = yes
+		}
+		text = DWNight5502.2
+		picture = bloodrayne_defeated_2
+	}	
+	desc = { # The struggle continues - first wounds second - standard
+		trigger = { 
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+			event_target:first_fighter = { has_character_flag = dw_first_wounds_second_standard }
+		}
+		text = DWNight5502.3
+		picture = bloodrayne_wounded_1
+	}	
+	desc = { # The struggle continues - second wounds first - standard
+		trigger = { 
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+			event_target:first_fighter = { has_character_flag = dw_second_wounds_first_standard }
+		}
+		text = DWNight5502.4
+		picture = bloodrayne_attacks_1
+	}	
+	desc = { # The struggle continues - both wounded - standard
+		trigger = { 
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+			event_target:first_fighter = { has_character_flag = dw_dual_wounds_standard }
+		}
+		text = DWNight5502.5
+		picture = bloodrayne_attacks_werewolf_1
+	}	
+	desc = { # The struggle continues
+		trigger = { 
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+			NOR = {
+				event_target:first_fighter = { has_character_flag = dw_first_wounds_second_standard }
+				event_target:first_fighter = { has_character_flag = dw_second_wounds_first_standard }
+				event_target:first_fighter = { has_character_flag = dw_dual_wounds_standard }
+			}
+		}
+		text = DWNight5502.9
+		picture = bloodrayne_attacks_1
+	}	
+	option = { # Fight on
+		trigger = {
+			event_target:first_fighter = { health > first_combat_damage }
+			event_target:second_fighter = { health > second_combat_damage }
+		}
+		name = DWNight5502A
+		hidden_effect = { 
+			process_combat_round = yes
+			narrative_event = { id = DWNight.5502}
+		}
+	}
+	option = { # Player killed
+		trigger = {
+			event_target:first_fighter = { health <= first_combat_damage }
+			NOT = { event_target:second_fighter = { health <= second_combat_damage } }
+		}
+		name = DWNight5502B
+		death = { death_reason = death_murder killer = event_target:second_fighter }
+		hidden_effect = { clear_combat_end_flags = yes }
+	}
+	option = { # Bloodrayne killed
+		trigger = {
+			event_target:second_fighter = { health <= second_combat_damage }
+			NOT = { event_target:first_fighter = { health <= first_combat_damage } }
+		}
+		name = DWNight5502C
+		event_target:second_fighter = { death = { death_reason = death_duel killer = ROOT } }
+		hidden_effect = { clear_combat_end_flags = yes }
+	}
+	option = { # Both dead
+		trigger = {
+			event_target:first_fighter = { health <= first_combat_damage }
+			event_target:second_fighter = { health <= second_combat_damage }
+		}
+		name = DWNight5502D
+		death = { death_reason = death_murder killer = event_target:second_fighter }
+		event_target:second_fighter = { death = { death_reason = death_duel killer = ROOT } }
+		hidden_effect = { clear_combat_end_flags = yes }
+	}
+}
+# .5503 Non-violent interaction with Bloodrayne
+narrative_event = {
+	id = DWNight.5503
+	picture = a_placeholder
+	title = dw_bloodrayne_hunter_title
+	is_triggered_only = yes # .5500
+	desc = { # Player is a werewolf
+		trigger = { 
+			OR = {
+				trait = werewolf
+				trait = werewolf_ancient
+			}
+		}
+		text = DWNight5503.0
+		picture = bloodrayne_appears_1
+	}	
+	desc = { # Player is a dhampir
+		trigger = { 
+			trait = dhampir
+		}
+		text = DWNight5503.1
+		picture = bloodrayne_appears_1
+	}	
+	desc = { # Player isn't any of the above
+		trigger = { 
+			NOR = {
+				trait = werewolf
+				trait = werewolf_ancient
+				trait = dhampir
+			}
+		}
+		text = DWNight5503.2
+		picture = bloodrayne_appears_1
+	}	
+	option = { # Recruit Rayne
+		name = DWNight5503A
+	}
+	option = { # Don't recruit Rayne
+		name = DWNight5503B
+		event_target:second_fighter = { banish = yes }
+	}
+}

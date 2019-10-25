@@ -1,0 +1,138 @@
+#CODE;ENGLISH;;;;;;;;;;;;;x
+# Tooltips related to Decisions
+dw_visit_recovery;30-day Visit Recovery;;;;;;;;;;;;;x
+dw_30_day_cooldown;30 day cooldown;;;;;;;;;;;;;x
+dw_90_day_cooldown;90 day cooldown;;;;;;;;;;;;;x
+dw_180_day_cooldown;180 day cooldown;;;;;;;;;;;;;x
+dw_fasting_tooltip;Not Fasting;;;;;;;;;;;;;x
+# Decisions
+dw_motivate_chancellor_claim;Motivate Chancellor;;;;;;;;;;;;;x
+dw_motivate_chancellor_claim_desc;Your Chancellor is presently working to fabricate a claim in your name. Selecting this will call them to you, so that you may attempt to push for success in their work.;;;;;;;;;;;;;x
+dw_resign_title;Resign as ruler;;;;;;;;;;;;;x
+dw_resign_title_desc;Abdicate your position to your current heir.;;;;;;;;;;;;;x
+dw_hire_jester;Hire a Court Jester;;;;;;;;;;;;;x
+dw_hire_jester_desc;You place a want add for a Court Jester, who shall respond?;;;;;;;;;;;;;x
+dw_go_shopping;Go Shopping;;;;;;;;;;;;;x
+dw_go_shopping_desc;You have one or more locations in your realm where you can go shopping.;;;;;;;;;;;;;x
+dw_visit_wizard_tower;Visit the Wizard Tower;;;;;;;;;;;;;x
+dw_visit_wizard_tower_desc;Will the arcane arts raise you to new levels, or result in your downfall?;;;;;;;;;;;;;x
+dw_keep_slave;Keep Slave;;;;;;;;;;;;;x
+dw_keep_slave_desc;Keeping a slave removes them from your prison and adds them to your court proper. They're still a branded slave, and as such you can later sell them if you so choose.;;;;;;;;;;;;;x
+dw_sell_slave;Sell Slave;;;;;;;;;;;;;x
+dw_sell_slave_desc;Once a slave has been branded, you're now able to sell them. The value of a sold slave is determined by the training that they completed, as well as some other potential desirable traits.;;;;;;;;;;;;;x
+dw_brand_slave;Brand Slave;;;;;;;;;;;;;x
+dw_brand_slave_desc;Branding a slave indicates that they've been successfully trained in at least one category, and are now eligible for additional decisions, such as adding them to your own court or selling them.;;;;;;;;;;;;;x
+dw_select_slave_training;Select Slave Training;;;;;;;;;;;;;x
+dw_select_slave_training_desc;Opens an event where you may select the desired training category for the slave.;;;;;;;;;;;;;x
+dw_enslave_prisoner;Enslave Prisoner;;;;;;;;;;;;;x
+dw_enslave_prisoner_desc;Your prisoners are at your mercy. Enslaving them is an option that is available to you.;;;;;;;;;;;;;x
+dw_visit_brothel;Visit a Brothel;;;;;;;;;;;;;x
+dw_visit_brothel_desc;Obtain the services of a woman or man who provides 'morale boosting' services.;;;;;;;;;;;;;x
+dw_work_whore;Work in a Brothel;;;;;;;;;;;;;x
+dw_work_whore_desc;Make some money and potentially have fun while doing it. Win-win.;;;;;;;;;;;;;x
+dw_collect_slave_whore_payment;Collect whore earnings;;;;;;;;;;;;;x
+dw_collect_slave_whore_payment_desc;Your slave works as a whore, and as such has the opportunity to make money. Since a slave has no need for personal possessions, as they're your property, you can collect what money they've earned.;;;;;;;;;;;;;x
+dw_visit_mage_sorcey;Consult with Sorcey;;;;;;;;;;;;;x
+dw_visit_mage_sorcey_desc;Some mages can provide useful services to their liege when consulted with. \n  Many services require the mage to gather energies to perform a task. The energy available is pulled from the liege's resources, either piety, prestige, or wealth, and some may result in negative values.;;;;;;;;;;;;;x
+dw_spell_frog;Turn into a Frog;;;;;;;;;;;;;x
+dw_spell_frog_desc;Turning someone into a frog is considered a curse. They are considered incapable and a regent is appointed to handle their affairs if applicable. They also cannot marry and cannot inherit, as no one wants to have anything to do with such a cursed individual.;;;;;;;;;;;;;x
+dw_target_stop_whoring;Stop Whoring;;;;;;;;;;;;;x
+dw_target_stop_whoring_desc;As a ruler you can attempt to talk someone into giving up their whoring ways. It isn't guaranteed to work, as some folks simply become part of that lifestyle. Especially if they've certain traits.;;;;;;;;;;;;;x
+dw_visit_stable;Visit the Stables;;;;;;;;;;;;;x
+dw_visit_stable_desc;Donkey shows weren't invented by Mexico.;;;;;;;;;;;;;x
+dw_spend_time_with_hermione;Spend time with Hermione;;;;;;;;;;;;;x
+dw_spend_time_with_hermione_desc;The opportunity to spend intimate time with Hermione seems like a rarity sometimes. I welcome opportunities like this to steal away together.;;;;;;;;;;;;;x
+dw_visit_arena;Visit the Arena;;;;;;;;;;;;;x
+dw_visit_arena_desc;Visit the arena where you can witness impressive matches of skill, where fortunes are made and lost, and where champions rise and losers may perish.;;;;;;;;;;;;;x
+dw_hermione_purity_spell;Hermione's Purity Spell;;;;;;;;;;;;;x
+dw_hermione_purity_spell_desc;Hermione has learned how to remove lustful or hedonistic traits from people. If they don't already have those traits, they'll become chaste. If they're already chaste, they'll become celibate.;;;;;;;;;;;;;x
+dw_hermione_love_potion;Hermione's Love Potion;;;;;;;;;;;;;x
+dw_hermione_love_potion_desc;You attempt to have your target drink the love potion. And while many seek love potions, few wish to be on the receiving end of them, so there is a chance the attempt fails. The greater the difference in Intrigue, the better the chance for success.;;;;;;;;;;;;;x
+dw_spend_time_with;Spend time with...;;;;;;;;;;;;;x
+dw_spend_time_with_desc;Spend time with your lover, spouse, or concubine. Why wait for the vanilla game to decide when you'll be getting together? Seize your love life today!;;;;;;;;;;;;;x
+dw_correct_dynasty;Correct Dynasty;;;;;;;;;;;;;x
+dw_correct_dynasty_desc;There are times where for no apparent reason CK2 will not make a child of your bloodline, especially as a female ruler, even if you've made arrangements for your children to be of your bloodline. This will pull them back into your bloodline, not as bastards, but legitimate heirs.;;;;;;;;;;;;;x
+dw_campaign_style_selection;Campaign Style Selection;;;;;;;;;;;;;x
+dw_campaign_style_selection_desc;Choose to start with a special trait or character modifier due to one of the mods you have installed.;;;;;;;;;;;;;x
+dw_immortal_ascension;Immortal Ascension;;;;;;;;;;;;;x
+dw_immortal_ascension_desc;The character allows the immortal power within them to ascend and leave their body behind. Leaving their body mortal once more.;;;;;;;;;;;;;x
+dw_child_of_lilith_campaign;The Dark Dream;;;;;;;;;;;;;x
+dw_child_of_lilith_campaign_desc;Your dream seems more real this time, more... familiar.;;;;;;;;;;;;;x
+dw_bonus_trait_decision_futa;Gender Bender Bonus Trait;;;;;;;;;;;;;x
+dw_bonus_trait_decision_futa_desc;Provides your starting ruler with either the Futanari or Trap trait, depending on their gender.;;;;;;;;;;;;;x
+dw_neko_campaign;Bloodline Awakens;;;;;;;;;;;;;x
+dw_neko_campaign_desc;My great grandmother came from the Far East. Her bloodline seems to have resurfaced within me.;;;;;;;;;;;;;x
+dw_vampire_start;Bitten and Awoken;;;;;;;;;;;;;x
+dw_vampire_start_desc;I was bitten by a creature, drained of my life, and awoke as a vampire.;;;;;;;;;;;;;x
+dw_orc_campaign;For the Horde!;;;;;;;;;;;;;x
+dw_orc_campaign_desc;I've found an ideal world where I can make my mark, for the clan and for glory!;;;;;;;;;;;;;x
+dw_elf_campaign;Fading Twilight;;;;;;;;;;;;;x
+dw_elf_campaign_desc;Most view us as little more than things of legend. Are we doomed to fade away?;;;;;;;;;;;;;x
+dw_kitsune_campaign;Fox and the Hound;;;;;;;;;;;;;x
+dw_kitsune_campaign_desc;Kitsune are strong spirits, strong enough to be hunted by those who lust for power.;;;;;;;;;;;;;x
+dw_angel_campaign;Divine Inspiration;;;;;;;;;;;;;x
+dw_angel_campaign_desc;The almighty has spoken to me. I shall rule with his divine blessing.;;;;;;;;;;;;;x
+dw_tentacle_campaign;Champion of Chaos;;;;;;;;;;;;;x
+dw_tentacle_campaign_desc;Some say I should not exist, for I am the spawn of an unholy union. I say I am much more than that.;;;;;;;;;;;;;x
+dw_lilith_immortality;Ritual of Immortality;;;;;;;;;;;;;x
+dw_lilith_immortality_desc;Through the wisdom and power that Mother Lilith has bestowed upon me, I have the ability to fool and manipulate even the being known as Death. In doing so, my target now will not be sought by Death through natural causes, less the person willingly moves on themselves.;;;;;;;;;;;;;x
+dw_kidnap;Kidnap;;;;;;;;;;;;;x
+dw_kidnap_desc;You've identified a potential target to be whisked away and brought back to your dungeons. A dangerous task that will require an investment of funds and the realization that it could not only fail, yet cost you the live of your Spymaster who would be handling the task.;;;;;;;;;;;;;x
+dw_tentacle_mindfuck;Mind Fuck;;;;;;;;;;;;;x
+dw_tentacle_mindfuck_desc;A crude term for a crude ability. This is an assault most vile. Widely considered to be worse than either rape or murder. Your target will resist if they're able, so it's best to plan accordingly.;;;;;;;;;;;;;x
+dw_apply_random_trap_image;Apply Random Trap Portrait;;;;;;;;;;;;;x
+dw_apply_random_trap_image_desc;I've been asked to provide the means for a trap, to obtain a less 'manly' portrait. Since tampering with portrait dna isn't an option, I offer this solution, which will assign a random custom portrait. If you don't like what you get, remove it and then try again.;;;;;;;;;;;;;x
+dw_remove_custom_portrait;Remove custom portrait;;;;;;;;;;;;;x
+dw_remove_custom_portrait_desc;This targeted decision allows you to remove the custom portrait trait. This will remove the custom static image and instead revert back to the default CK2 portrait system.;;;;;;;;;;;;;x
+dw_the_wizards_mage_trait_choice;Determine Mage Trait Pursuit;;;;;;;;;;;;;x
+dw_the_wizards_mage_trait_choice_desc;At the Wizard rank in the society, an individual can decide to pursue the path of becoming a true mage, or they can opt out and simply pursue the higher learning aspects of the society.;;;;;;;;;;;;;x
+dw_the_chosen_of_lilith_invite_society_member_to_court;Invite Chosen of Lilith;;;;;;;;;;;;;x
+dw_the_chosen_of_lilith_invite_society_member_to_court_desc;Place a call to one of the Chosen of Lilith to join your court.;;;;;;;;;;;;;x
+dw_the_chosen_of_lilith_invite_society_member_to_court_power_desc;An intrigue decision where you can invite a fellow society member to your court.;;;;;;;;;;;;;x
+dw_the_wizards_build_laboratory;Build Arcane Laboratory;;;;;;;;;;;;;x
+dw_the_wizards_build_laboratory_desc;Every member of the Wizards College can benefit in their studies with the help of a laboratory to help them study the arcane.;;;;;;;;;;;;;x
+dw_prisoner_lilith_sacrifice;Sacrifice to Lilith;;;;;;;;;;;;;x
+dw_prisoner_lilith_sacrifice_desc;Sacrifice the prisoner to Mother Lilith.;;;;;;;;;;;;;x
+dw_prisoner_lilith_sacrifice_power_desc;Right-click on the portrait of one of your prisoners, to sacrifice them to Lilith.;;;;;;;;;;;;;x
+dw_chosen_recruit;Recruit into the Chosen;;;;;;;;;;;;;x
+dw_chosen_recruit_desc;Begins the recruitment process to determine if the person is both a good fit, and if they're interested in joining.;;;;;;;;;;;;;x
+dw_chosen_recruit_power_desc;Right click on the portrait of a prospective member to begin the recruitment evaluation process.;;;;;;;;;;;;;x
+dw_arcane_college_recruit;Recruit into the Arcane College;;;;;;;;;;;;;x
+dw_arcane_college_recruit_desc;Begins the recruitment process to determine if the person is both a good fit, and if they're interested in joining.;;;;;;;;;;;;;x
+dw_arcane_college_recruit_power_desc;Right click on the portrait of a prospective member to begin the recruitment evaluation process.;;;;;;;;;;;;;x
+dw_visit_beautys_village;Visit Beauty's Village;;;;;;;;;;;;;x
+dw_visit_beautys_village_desc;The beautiful daughter of a cobbler shared some points of interest should I wish to travel and visit again.;;;;;;;;;;;;;x
+dw_visit_gaston;Spend time with Gaston;;;;;;;;;;;;;x
+dw_visit_gaston_desc;This is a customized 'Spend time with' decision that has special events for the player and Gaston.;;;;;;;;;;;;;x
+dw_beast_assassinate;The Beast Attacks;;;;;;;;;;;;;x
+dw_beast_assassinate_desc;For sparing the life of the Beast, and keeping his curse alive, he can leave his lands once a decade to strike out at a target. This is not a guaranteed success, and the Beast may be slain. The risk level varies on the station of the individual.;;;;;;;;;;;;;x
+dw_visit_belle;Spend time with Belle;;;;;;;;;;;;;x
+dw_visit_belle_desc;This is a customized 'Spend time with' decision that has special events for the player and Belle.;;;;;;;;;;;;;x
+dw_rub_aladdins_lamp;Rub Aladdin's Lamp;;;;;;;;;;;;;x
+dw_rub_aladdins_lamp_desc;Legend says the lamp holds a Genie. As long as it hasn't been set free, I should be able to summon it with a little rubbing.;;;;;;;;;;;;;x
+dw_vampire_create_thrall;Create Vampire Thrall;;;;;;;;;;;;;x
+dw_vampire_create_thrall_desc;Turn one who is of simple mind and weak will, to be your willing servant.;;;;;;;;;;;;;x
+dw_vampire_feeds;Feed on Willing;;;;;;;;;;;;;x
+dw_vampire_feeds_desc;Feed on thralls or your lovers for a health boost. Does not kill the target.;;;;;;;;;;;;;x
+dw_vampire_seduction;Vampire Seduction;;;;;;;;;;;;;x
+dw_vampire_seduction_desc;A Vampire attempts to weaken the mind or will of the target. Preparing them to potentially be exploited further.;;;;;;;;;;;;;x
+dw_werewolf_blood_potion_td;Werewolf Blood Potion;;;;;;;;;;;;;x
+dw_werewolf_blood_potion_td_desc; The target werekin will consume the potion and become a full blooded werewolf.\n Only useful on werekin.;;;;;;;;;;;;;x
+dw_vampire_sires;Make a Vampire;;;;;;;;;;;;;x
+dw_vampire_sires_desc;While generally solitary creatures, a vampire sometimes desires company, often choosing a favored thrall or a loved one to become a vampire as well.;;;;;;;;;;;;;x
+dw_vampire_hunts;Vampiric Hunt;;;;;;;;;;;;;x
+dw_vampire_hunts_desc;Choosing to not use a safe feeding source - or simply not having one - you decide to strike out into the night in search of prey.;;;;;;;;;;;;;x
+dw_diablerie_study;Study Diablerie;;;;;;;;;;;;;x
+dw_diablerie_study_desc;I shall dive into the secrets of Diablerie, where knowledge and power await.;;;;;;;;;;;;;x
+dw_fenris_hunt;Fenris Hunts;;;;;;;;;;;;;x
+dw_fenris_hunt_desc;The player should never see this decision, as it is intended to be Fenris specific. Fenris hunts once every other year.;;;;;;;;;;;;;x
+dw_fenris_pack_brother;Call Pack Brother;;;;;;;;;;;;;x
+dw_fenris_pack_brother_desc;Fenris only event to bolster his court with his kind.;;;;;;;;;;;;;x
+dw_werewolf_goes_hunting;Go Hunting;;;;;;;;;;;;;x
+dw_werewolf_goes_hunting_desc;It is vital for werewolves to participate in the hunt as they fight the hunger within.;;;;;;;;;;;;;x
+dw_vladimir_hunt;Vladimir Hunts;;;;;;;;;;;;;x
+dw_vladimir_hunt_desc;The player should never see this decision, as it is intended to be Vladimir specific. Vladimir hunts once a year.;;;;;;;;;;;;;x
+dw_rise_of_pack_campaign;Meet with Fenris;;;;;;;;;;;;;x
+dw_rise_of_pack_campaign_desc;This is the campaign start, where you meet with Fenris and show your true self to the world (obtain the werewolf trait).;;;;;;;;;;;;;x
+dw_werewolf_bitch_start;Werewolf in Court;;;;;;;;;;;;;x
+dw_werewolf_bitch_start_desc;A new courtier has arrived, and there is something very alluring about them.;;;;;;;;;;;;;x

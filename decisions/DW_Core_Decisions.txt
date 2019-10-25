@@ -1,0 +1,190 @@
+### Decisions intended to be used with any Dark World Mod
+decisions = {
+	# Bonus Trait Decision - Futa / Trap
+	dw_bonus_trait_decision_futa = {
+		potential = {
+			ai = no # Only the player should ever see this
+			has_game_rule = { name = dw_bonus_trait value = dw_yes_bonus_futa }
+			has_used_bonus = no
+		}
+		allow = {
+			always = yes # It should always be displayed if it is relevant
+		}
+		effect = {
+			set_global_flag = dw_bonus_used
+			character_event = { id = DWFuta.10 }
+		}
+		ai_will_do = {
+			factor = 0 # Zero chance the ai uses this
+		}
+	}
+}
+targetted_decisions = {
+	## Allows a player to visit their lover, spouse, or consort
+	dw_spend_time_with = {
+		filter = all # For those lovers who are outside of our realm 
+		ai_target_filter = self # Doesn't really apply as the ai should not be using this
+		from_potential = { # From is the person targeting the person to evoke the decision
+			ai = no # Player only
+			prisoner = no # Hard to visit while in a jail cell
+			NOT = { trait = in_hiding } # If you're laying low, you don't go visiting your lover
+		}
+		potential = { # This is where we check the target to ensure they're valid
+			OR = { # Should be a lover, spouse, or concubine
+				is_lover = FROM
+				any_spouse = {
+					character = FROM
+				}
+				any_consort = {
+					character = FROM
+				}
+			}
+		}
+		allow = {
+			prisoner = no # The target shouldn't be in prison
+			NOT = { trait = in_hiding } # The target shouldn't be in hiding
+			in_command = no # The target shouldn't be off leading troops somewhere
+			custom_tooltip = { # The target shouldn't have been visited within the past month
+				text = dw_visit_recovery
+				NOT = { has_character_flag = dw_visit_recovery }
+			}
+		}
+		effect = {
+			# Our initial check event for further routing
+			FROM = { character_event = { id = DWVisits.1 }}
+			# Only one visit per month, just to keep things reasonable, sets on the target
+			set_character_flag = dw_visit_recovery
+			character_event = { id = DWVisits.9999 days = 30}
+		}
+		ai_will_do = {
+			factor = 0 # ai shouldn't be doing this
+		}
+	}
+	#Correct Dynasty is intended to fix those odd occurrences where for no apparent reason your child was set outside of your dynasty. (usually happens when you play as a female ruler, even if you've arranged where children are supposed to be of your dynasty)
+	dw_correct_dynasty = {
+		filter = close_relatives
+		ai_target_filter = none # ai shouldn't be doing this.
+		ai = no # Only the player should be executing this.
+		from_potential = {
+			# No special requirement
+		}
+		potential = {
+			is_child_of = FROM # We only want the player pulling their own children into their dynasty.
+		}
+		allow = {
+			NOT = { dynasty = FROM } # We only need to change a child if they're not of our dynasty.
+		}
+		effect = {
+			dynasty = FROM # This should move the targeted child over to the player's dynasty
+			if = {
+				limit = {
+					trait = bastard # Sometimes pulling a child back in makes them a bastard who still can't inherit. This checks and removes the bastard trait if that happens.
+				}
+				remove_trait = bastard
+			}
+			FROM = { recalc_succession = yes } # This should force a recheck of the succession laws, in case the dynasty addition shakes things up.
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##Player chooses to shed the immortality and ascend
+	dw_immortal_ascension = {
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+		from_potential = {
+			trait = immortal
+		}
+		
+		potential = {
+			trait = immortal
+		}
+
+		allow = {
+			character = FROM # This should ensure that the target is both ROOT and FROM - meaning they're targeting themselves
+			host = { ai = yes } # If hosted by the player (ai=no) - the person cannot choose to remove their immortality.
+		}
+		effect = {
+			remove_trait = immortal
+		}
+		ai_will_do = {
+			factor = 0.01 # 1% chance that an immortal ai voluntarily calls it quits
+			modifier = {
+				factor = 100.0 # 100% as 100 * .01 = 1, which is 100% chance for a decision to be used
+				trait = incapable # If an ai is only a mind inside it's shell, they'll finally move on.
+			}
+			modifier = {
+				factor = 5.0 # 5% chance that they finally decide that they've gone on long enough after seeing .
+				age = 80
+			}
+			modifier = {
+				factor = 0 # 0% that it should happen
+				OR = {
+					trait = werewolf_ancient
+					trait = vampire_ancient
+					has_character_flag = dw_immortal_ascension_override # This is for compatibility with Noxbestia's Darkest Perversions mod
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { age = 60 } # Let's ensure they live at least a few generations before considering throwing off their immortality
+				NOT = { trait = incapable } # And they shouldn't be incapable. If someone becomes incapable who is younger than 60, this will not apply, and the 100% one will.
+			}
+		}
+	}
+	## Apply a random trap image
+	dw_apply_random_trap_image = {
+		filter = court_including_me # Just in case a player wants to alter those inside their court
+		ai_target_filter = self # We only want the ai to target themselves, if they're ever allowed to do it.
+		ai = no # player only allowed right now
+		from_potential = {
+			# No specific requirements to use
+		}
+		potential = {
+			# The target must be a trap
+			trait = trap
+			# And they should not already have a portrait
+			NOT = { has_custom_portrait = yes }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			random_list = {
+				10 = { add_trait = portrait53 }
+				10 = { add_trait = portrait54 }
+				10 = { add_trait = portrait55 }
+				10 = { add_trait = portrait56 }
+				10 = { add_trait = portrait57 }
+				10 = { add_trait = portrait58 }
+				10 = { add_trait = portrait59 }
+			}
+		}
+		ai_will_do = {
+			factor = 100 # When the ai is allowed to do so, it will
+		}
+	}
+	## Remove a custom portrait
+	dw_remove_custom_portrait = {
+		filter = court_including_me # Just in case a player wants to alter those outside their court
+		ai_target_filter = self # self alteration only
+		ai = no # player only allowed right now
+		from_potential = {
+			# We have no specific requirements
+		}
+		potential = {
+			# They should already have a portrait
+			has_custom_portrait = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			remove_custom_portrait = yes
+		}
+		ai_will_do = {
+			factor = 0 # we don't want the ai removing portraits
+		}
+	}
+}

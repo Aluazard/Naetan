@@ -1,0 +1,58 @@
+spriteTypes = {
+	spriteType = {
+		name = "sex_pullout_stomach_1"
+		texturefile = "gfx/event_pictures/sex_pullout_stomach_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "sex_mf_missionary_1"
+		texturefile = "gfx/event_pictures/sex_mf_missionary_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "sex_mf_doggy_1"
+		texturefile = "gfx/event_pictures/sex_mf_doggy_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "sex_mf_anal_creampie_1"
+		texturefile = "gfx/event_pictures/sex_mf_anal_creampie_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "sex_mf_anal_1"
+		texturefile = "gfx/event_pictures/sex_mf_anal_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "sex_mfuta_bj_1"
+		texturefile = "gfx/event_pictures/sex_mfuta_bj_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "sex_trapfuta_doggy_1"
+		texturefile = "gfx/event_pictures/sex_trapfuta_doggy_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "sex_ffuta_cowgirl_1"
+		texturefile = "gfx/event_pictures/sex_ffuta_cowgirl_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

@@ -1,0 +1,282 @@
+spriteTypes = {
+	spriteType = {
+		name = "beautybeast_belle1"
+		texturefile = "gfx/event_pictures/beautybeast_belle1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle2"
+		texturefile = "gfx/event_pictures/beautybeast_belle2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "cobbler"
+		texturefile = "gfx/event_pictures/cobbler.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "bakery"
+		texturefile = "gfx/event_pictures/bakery.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "village"
+		texturefile = "gfx/event_pictures/village.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "lodge"
+		texturefile = "gfx/event_pictures/lodge.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_gaston1"
+		texturefile = "gfx/event_pictures/beautybeast_gaston1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_gaston_gunshow"
+		texturefile = "gfx/event_pictures/beautybeast_gaston_gunshow.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_seduction1"
+		texturefile = "gfx/event_pictures/beautybeast_belle_seduction1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "lodge_barmaid_service1"
+		texturefile = "gfx/event_pictures/lodge_barmaid_service1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_triplets1"
+		texturefile = "gfx/event_pictures/beautybeast_triplets1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_triplets2"
+		texturefile = "gfx/event_pictures/beautybeast_triplets2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_triplets3"
+		texturefile = "gfx/event_pictures/beautybeast_triplets3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_gaston_triplets1"
+		texturefile = "gfx/event_pictures/beautybeast_gaston_triplets1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "forest1"
+		texturefile = "gfx/event_pictures/forest1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_beast1"
+		texturefile = "gfx/event_pictures/beautybeast_beast1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_visit_female1"
+		texturefile = "gfx/event_pictures/beautybeast_belle_visit_female1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_visit_male1"
+		texturefile = "gfx/event_pictures/beautybeast_belle_visit_male1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_visit_cock1"
+		texturefile = "gfx/event_pictures/beautybeast_belle_visit_cock1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_cobbler_barmaid_1"
+		texturefile = "gfx/event_pictures/beautybeast_cobbler_barmaid_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_cobbler_barmaid_2"
+		texturefile = "gfx/event_pictures/beautybeast_cobbler_barmaid_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_gaston_shot"
+		texturefile = "gfx/event_pictures/beautybeast_gaston_shot.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_beast_taken1"
+		texturefile = "gfx/event_pictures/beautybeast_belle_beast_taken1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle3"
+		texturefile = "gfx/event_pictures/beautybeast_belle3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_corruption1"
+		texturefile = "gfx/event_pictures/beautybeast_belle_corruption1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_corruption2"
+		texturefile = "gfx/event_pictures/beautybeast_belle_corruption2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_corruption3"
+		texturefile = "gfx/event_pictures/beautybeast_belle_corruption3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_corruption4"
+		texturefile = "gfx/event_pictures/beautybeast_belle_corruption4.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_corruption5"
+		texturefile = "gfx/event_pictures/beautybeast_belle_corruption5.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_corruption6"
+		texturefile = "gfx/event_pictures/beautybeast_belle_corruption6.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_corruption7"
+		texturefile = "gfx/event_pictures/beautybeast_belle_corruption7.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_beast_seduce1"
+		texturefile = "gfx/event_pictures/beautybeast_belle_beast_seduce1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_beast_seduce2"
+		texturefile = "gfx/event_pictures/beautybeast_belle_beast_seduce2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_beast_seduce3"
+		texturefile = "gfx/event_pictures/beautybeast_belle_beast_seduce3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "beautybeast_belle_undress1"
+		texturefile = "gfx/event_pictures/beautybeast_belle_undress1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wonderland_queen_lounging"
+		texturefile = "gfx/event_pictures/wonderland_queen_lounging.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wonderland_rabbit_hole"
+		texturefile = "gfx/event_pictures/wonderland_rabbit_hole.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wonderland_alice_hole"
+		texturefile = "gfx/event_pictures/wonderland_alice_hole.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wonderland_queen_portrait"
+		texturefile = "gfx/event_pictures/wonderland_queen_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "wonderland_alice_falls"
+		texturefile = "gfx/event_pictures/wonderland_alice_falls.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

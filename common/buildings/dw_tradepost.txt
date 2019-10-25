@@ -1,0 +1,98 @@
+ # Triggers are in Province scope. The From Scope contains the settlement holder (character)
+ # start trigger is in title scope.
+
+trade_post = {
+
+	dw_slave_port_1 = {
+		potential = {
+			port = yes
+			FROM = {
+				is_patrician = yes
+			}
+		}
+		desc = dw_slave_port_desc
+		trigger = { TECH_TRADE_PRACTICES = 0 }
+		gold_cost = 100
+		build_time = 182
+		ai_creation_factor = 50
+		
+		tradevalue = 5
+		tax_income = 0.5
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	dw_slave_port_2 = {
+		potential = {
+			port = yes
+			FROM = {
+				is_patrician = yes
+			}
+		}
+		desc = dw_slave_port_desc
+		trigger = { TECH_TRADE_PRACTICES = 0 }
+		gold_cost = 150
+		build_time = 274
+		upgrades_from = dw_slave_port_1
+		ai_creation_factor = 40
+		
+		tradevalue = 10
+		tax_income = 0.75
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	dw_slave_port_3 = {
+		potential = {
+			port = yes
+			FROM = {
+				is_patrician = yes
+			}
+		}
+		desc = dw_slave_port_desc
+		trigger = { TECH_TRADE_PRACTICES = 0 }
+		gold_cost = 200
+		build_time = 365
+		upgrades_from = dw_slave_port_2
+		ai_creation_factor = 30
+		
+		tradevalue = 15
+		tax_income = 1.0
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}	
+	dw_exotic_warehouse_1 = {
+		desc = dw_exotic_warehouse_desc
+		add_number_to_name = yes
+		trigger = { TECH_TRADE_PRACTICES = 1 }
+		gold_cost = 200
+		build_time = 365
+		ai_creation_factor = 40
+		extra_tech_building_start = 10
+		tax_income = 0.5		
+	}
+	dw_exotic_warehouse_2 = {
+		desc = dw_exotic_warehouse_desc
+		add_number_to_name = yes
+		trigger = { TECH_TRADE_PRACTICES = 1 }
+		upgrades_from = dw_exotic_warehouse_1
+		gold_cost = 250
+		build_time = 365
+		ai_creation_factor = 30
+		extra_tech_building_start = 10
+		tax_income = 0.5
+		culture_techpoints = 0.02 # due to more people becoming more exposed to the history and ideas of different cultures
+	}
+	dw_exotic_warehouse_3 = {
+		desc = dw_exotic_warehouse_desc
+		add_number_to_name = yes
+		trigger = { TECH_TRADE_PRACTICES = 1 }
+		upgrades_from = dw_exotic_warehouse_2
+		gold_cost = 300
+		build_time = 520
+		ai_creation_factor = 40
+		extra_tech_building_start = 10
+		tax_income = 0.75
+		culture_techpoints = 0.03 # due to more people becoming more exposed to the history and ideas of different cultures
+	}
+}

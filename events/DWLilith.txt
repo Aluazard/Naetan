@@ -1,0 +1,2967 @@
+### This file contains events specific to the Dark World Children of Lilith mod
+## Succubus evolutionary stages
+## Lilith trait = allure aspect
+## Stage 1 dw_lilith_stage_1;Succubus Evolution: Seductress (Special seduction events) (Spell: Pox Purge (0), Self Beautiful)
+## Stage 2 dw_lilith_stage_2;Succubus Evolution: Leech (Life absorption) (Spell: Life Leech)
+## Stage 3 dw_lilith_stage_3;Succubus Evolution: Monster (Take the physical traits of a Succubus) (Spell: Alter Appearance)
+## Stage 4 dw_lilith_stage_4;Succubus Evolution: Corrupter (Spell: Corruption, Self Shape Cock (if futa))
+## Stage 5 dw_lilith_stage_5;Succubus Evolution: Demoness (Spell: Major Damage Recovery)
+## Incubus evolutionary stages
+## Incubus trait = allure aspect
+## Stage 1 dw_incubus_stage_1; Incubus Evolution: Seducer  (Special seduction events) (Spell: Pox Purge (0), Self Beautiful)
+## Stage 2 dw_incubus_stage_2; Incubus Evolution: Leech (Life absorption) (Spell: Life Leech)
+## Stage 3 dw_incubus_stage_3; Incubus Evolution: Monster (Take the physical traits of an Incubus) (Spell: Alter Appearance)
+## Stage 4 dw_incubus_stage_4; Incubus Evolution: Illusionist (Influence what others see) (Spell: Intimidation, Self Shape Cock)
+## Stage 5 dw_incubus_stage_5; Incubus Evolution: Nightmare (Enter the dream scape and influence people's dreams) (Spell: Death Dream, Major Damage Recovery)
+
+## .1 Sets the global flag so other mods know the Dark World Children of Lilith mod is active
+## .5 Lilith created and set as the offmap_ruler
+## .10 Is the Dream initiation and introduction to Lilith
+## .100 Spells
+## .1000 Lilith Blood Moon Celebration
+## .5000 Kiss of Seduction Events - found in DWLilithSeduction.txt
+namespace = DWLilith
+
+# .10 The dream (hidden routing event)
+character_event = {
+	id = DWLilith.10
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by decision
+	ai = no
+	trigger = {
+		has_heaven_hell_content = yes
+		has_lilith_start = yes
+	}
+	immediate = {
+		if = { # Male event
+			limit = {
+				is_female = no
+			}
+			narrative_event = { id = DWLilith.11 }
+			break = yes # Takes us out of the immediate block
+		}
+		# Female event
+		narrative_event = { id = DWLilith.15 }
+	}
+}
+# .11 Male Dream (part 1)
+narrative_event = {
+	id = DWLilith.11
+	desc = "DWLilith11"
+	picture = lilith_male_dream
+	title = dw_lilith_dream_title
+	
+	is_triggered_only = yes # Triggered from .10
+	
+	option = { # Who are you?
+		name = "DWLilith11A"
+		narrative_event = { id = DWLilith.12 }
+	}
+	option = { # I'm out of here
+		name = "DWLilith11B"
+		custom_tooltip = { text = "dw_refused_liliths_embrace" }
+		piety = 100 # Spurning the temptation of Lilith nets a worthy piety increase
+	}
+}
+# .12 Male Dream (part 2)
+narrative_event = {
+	id = DWLilith.12
+	desc = "DWLilith12"
+	picture = lilith_avatar1
+	title = dw_lilith_dream_title
+	
+	is_triggered_only = yes # Triggered from .11
+	
+	option = { # Accepts Lilith
+		name = "DWLilith12A"
+		add_trait = incubus
+	}
+	option = { # I'm out of here
+		name = "DWLilith12B"
+		custom_tooltip = { text = "dw_refused_liliths_embrace" }
+		piety = 100 # Spurning the temptation of Lilith nets a worthy piety increase
+	}
+}
+# .15 Female Dream
+narrative_event = {
+	id = DWLilith.15
+	desc = "DWLilith15"
+	picture = lilith_female_dream
+	title = dw_lilith_dream_title
+	
+	is_triggered_only = yes # Triggered from .10
+	
+	option = { # Who are you?
+		name = "DWLilith15A"
+		narrative_event = { id = DWLilith.16 }
+	}
+	option = { # I'm out of here
+		name = "DWLilith15B"
+		custom_tooltip = { text = "dw_refused_liliths_embrace" }
+		piety = 100 # Spurning the temptation of Lilith nets a worthy piety increase
+	}
+}
+# .16 Female Dream
+narrative_event = {
+	id = DWLilith.16
+	desc = "DWLilith16"
+	picture = lilith_avatar1
+	title = dw_lilith_dream_title
+	
+	is_triggered_only = yes # Triggered from .15
+	
+	option = { # Who are you?
+		name = "DWLilith16A"
+		add_trait = lilith
+	}
+	option = { # I'm out of here
+		name = "DWLilith16B"
+		custom_tooltip = { text = "dw_refused_liliths_embrace" }
+		piety = 100 # Spurning the temptation of Lilith nets a worthy piety increase
+	}
+}
+## .100 Lover's Pox purge spell
+# .100 Lover's Pox event routing (hidden)
+character_event = {
+	id = DWLilith.100
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by decision
+	immediate = {
+		if = { # Incubus cleaning event
+			limit = {
+				trait = incubus
+			}
+			narrative_event = { id = DWLilith.101 }
+			break = yes # Takes us out of the immediate block
+		}
+		# Succubus cleaning event
+		narrative_event = { id = DWLilith.105 }
+	}
+}
+# .101 Lover's Pox Purge (male)
+narrative_event = {
+	id = DWLilith.101
+	desc = "DWLilith101"
+	picture = lilith_male_magic_basic
+	title = dw_pox_purge_title
+	
+	is_triggered_only = yes # Triggered by .100
+	
+	option = { # I am cleansed
+		name = "DWLilith101A"		
+		remove_character_modifier = minor_disease_herpes
+		remove_trait = lovers_pox
+		piety = -10 # Piety cost for the cleansing
+	}
+}
+# .105 Lover's Pox Purge (female)
+narrative_event = {
+	id = DWLilith.105
+	desc = "DWLilith105"
+	picture = lilith_female_magic_basic
+	title = dw_pox_purge_title
+	
+	is_triggered_only = yes # Triggered by .100
+	
+	option = { # I am cleansed
+		name = "DWLilith105A"
+		remove_character_modifier = minor_disease_herpes
+		remove_trait = lovers_pox
+		piety = -10 # Piety cost for the cleansing
+	}
+}
+## Beautify Self Spell
+# .110 Beauty spell on self (hidden)
+character_event = {
+	id = DWLilith.110
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by decision
+	immediate = {
+		if = { # Incubus beautify self event
+			limit = {
+				trait = incubus
+			}
+			narrative_event = { id = DWLilith.111 }
+			break = yes # Takes us out of the immediate block
+		}
+		# Succubus beautify self event
+		narrative_event = { id = DWLilith.115 }
+	}
+}
+# .111 Beauty spell on self (male)
+narrative_event = {
+	id = DWLilith.111
+	desc = "DWLilith111"
+	picture = lilith_male_magic_basic
+	title = dw_beautify_self_title
+	
+	is_triggered_only = yes # Triggered by .100
+	
+	option = { # I am better looking than I was
+		name = "DWLilith111A"
+		piety = -50
+		if = {
+			limit = {
+				trait = ugly
+			}
+			remove_trait = ugly
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = clubfooted
+			}
+			remove_trait = clubfooted
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = harelip
+			}
+			remove_trait = harelip
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = hunchback
+			}
+			remove_trait = hunchback
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = lisp
+			}
+			remove_trait = lisp
+			break = yes
+		}
+		add_trait = fair # If we reach here, it means we checked out fine on everything above.
+	}
+}
+# .115 Beauty spell on self (female)
+narrative_event = {
+	id = DWLilith.115
+	desc = "DWLilith115"
+	picture = lilith_female_beauty_spell
+	title = dw_beautify_self_title
+	
+	is_triggered_only = yes
+	
+	option = { # I am better looking than I was
+		name = "DWLilith115A"
+		piety = -50
+		if = {
+			limit = {
+				trait = ugly
+			}
+			remove_trait = ugly
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = clubfooted
+			}
+			remove_trait = clubfooted
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = harelip
+			}
+			remove_trait = harelip
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = hunchback
+			}
+			remove_trait = hunchback
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = lisp
+			}
+			remove_trait = lisp
+			break = yes
+		}
+		if = {
+			limit = {
+				NOT = { trait = fair }
+			}
+			add_trait = fair
+			break = yes
+		}
+		add_trait = bombshell # If we reach here, it means we checked out fine on everything above.
+	}
+}
+# .120 Heal major spell on self
+narrative_event = {
+	id = DWLilith.120
+	picture = a_placeholder
+	title = dw_heal_major_self_title
+	is_triggered_only = yes # by targetted_decision
+	desc = { # succubus
+		trigger = { 
+			trait = lilith
+		}
+		text = DWLilith120.0
+		picture = succubus_spell_heal_self1
+	}	
+	desc = { # incubus
+		trigger = { 
+			trait = incubus
+		}
+		text = DWLilith120.0
+		picture = incubus_spell_heal_self1
+	}	
+	option = { # I am healed
+		name = "DWLilith120A"
+		piety = -100
+		custom_tooltip = {
+			text = dw_lilith_major_heal
+		}
+		hidden_tooltip = {
+			remove_trait = leper
+			remove_trait = has_bubonic_plague
+			remove_trait = has_small_pox
+			remove_trait = has_aztec_disease
+			remove_trait = rabies
+			remove_trait = cancer
+			remove_trait = dancing_plague
+			remove_trait = infirm
+			remove_trait = incapable
+			remove_trait = one_eyed
+			remove_trait = one_handed
+			remove_trait = one_legged
+			clr_character_flag = developing_illness
+			clr_character_flag = got_flu
+			clr_character_flag = manifest_flu
+		}
+	}
+}
+# .130 Incubus Dream of Death (incubus)
+narrative_event = {
+	id = DWLilith.130
+	desc = DWLilith130
+	picture = incubus_spell_death_dream
+	title = dw_incubus_death_dream_title
+	is_triggered_only = yes # triggered by targetted_decision
+	option = {
+		name = DWLilith130A
+		piety = -500 # Cost of the spell
+		random_list = {
+			30 = { # target is stressed
+				FROM = { add_trait = stressed }
+			}
+			30 = { # target is depressed
+				FROM = { add_trait = depressed }
+			}
+			20 = { # target falls ill
+				FROM = { add_trait = ill }
+			}
+			20 = { # target goes crazy
+				FROM = { add_trait = lunatic }
+			}
+			20 = { # target believes they're possessed
+				FROM = { add_trait = possessed }
+			}
+			10 = { # target develops a stutter
+				modifier = {
+					factor = 2 # For those who are masters of intrigue, the horrors are that much more terrifying.
+					intrigue = 15
+				}
+				FROM = { add_trait = stutter }
+			}
+			10 = { # target becomes slow
+				modifier = {
+					factor = 2 # For those who are masters of intrigue, the horrors are that much more terrifying.
+					intrigue = 15
+				}
+				FROM = { add_trait = slow }
+			}
+			5 = { # target becomes an imbecile
+				modifier = {
+					factor = 2 # For those who are masters of intrigue, the horrors are that much more terrifying.
+					intrigue = 15
+				}
+				FROM = { add_trait = imbecile }
+			}
+			5 = { # target dies, believed to be natural causes
+				modifier = {
+					factor = 2 # For those who are masters of intrigue, the horrors are that much more terrifying.
+					intrigue = 15
+				}
+				FROM = {
+					death = {
+						death_reason = death_natural
+					}
+				}
+			}
+		}
+	}
+	option = { # If the ai selected the player
+		trigger = {
+			ai = yes
+			FROM = { ai = no }
+		}
+		name = DWLilithDoh
+		ai_chance = {
+			factor = 1000
+		}
+	}
+}
+# .140 Life Leech
+narrative_event = { 
+	id = DWLilith.140
+	picture = a_placeholder
+	title = dw_life_leech_title
+	is_triggered_only = yes # triggered by targetted_decision
+	desc = {
+		trigger = {
+			trait = lilith
+		}
+		text = DWLilith140.0
+		picture = succubus_spell_leech
+	}
+	desc = {
+		trigger = {
+			trait = incubus
+		}
+		text = DWLilith140.1
+		picture = incubus_spell_leech
+	}
+	immediate = {
+		add_character_modifier = { name = dw_lovers_embrace_cooldown duration = -1 }
+		character_event = { id = DWLilith.149 days = 30} # Removes the cool down modifier
+	}
+	option = { # Victim is a major piety gain due to their close blood relationship or emotional attachment
+		trigger = {
+			OR = {
+				FROM = { family_of_root_trigger = yes } # Checks for things from spouses, siblings, kids, cousins, etc.
+				FROM = { is_lover = ROOT }
+				FROM = { is_friend = ROOT }
+				FROM = { is_virgin_trigger = yes }
+			}
+		}
+		name = DWLilith140A
+		health = 0.1 # The succubus obtains a fraction of the health they absorb
+		grant_col_staged_piety_reward_major = yes		
+		# From here down is the various bodily impact on the person who is leached of their essence
+		custom_tooltip = { text = dw_life_leech_notice }
+		hidden_tooltip = {
+			random_list = { # The person drained will be struck with an affliction as their body is weakened as it exposed to the dark art
+				60 = { FROM = { give_ill_effect = yes } }
+				30 = { FROM = { give_pneumonic_effect = yes } }
+				10 = { FROM = { give_has_tuberculosis_effect = yes } }
+			}
+			FROM = { health = -0.5 } # The partner will always permanently lose part of their life force (health), making it likely that post-drain illness will kill them at some point
+		}
+	}
+	option = { # Victim is a moderate piety gain due to their being a 'standard' victim or offering
+		trigger = {
+			NOR = {
+				FROM = { family_of_root_trigger = yes } # Checks for things from spouses, siblings, kids, cousins, etc.
+				FROM = { is_lover = ROOT }
+				FROM = { is_friend = ROOT }
+				FROM = { is_virgin_trigger = yes }
+				FROM = { prisoner = yes }
+				FROM = { trait = infirm }
+				FROM = { trait = incapable }
+				FROM = { is_slave = yes }
+			}
+		}
+		name = DWLilith140B
+		health = 0.1 # The succubus obtains a fraction of the health they absorb
+		grant_col_staged_piety_reward_moderate = yes		
+		# From here down is the various bodily impact on the person who is leached of their essence
+		custom_tooltip = { text = dw_life_leech_notice }
+		hidden_tooltip = {
+			random_list = { # The person drained will be struck with an affliction as their body is weakened as it exposed to the dark art
+				60 = { FROM = { give_ill_effect = yes } }
+				30 = { FROM = { give_pneumonic_effect = yes } }
+				10 = { FROM = { give_has_tuberculosis_effect = yes } }
+			}
+			FROM = { health = -0.5 } # The partner will always permanently lose part of their life force (health), making it likely that post-drain illness will kill them at some point
+		}
+	}
+	option = { # Victim is a minor piety gain due to their being an easy victim or offering
+		trigger = {
+			NOR = {
+				FROM = { family_of_root_trigger = yes } # Checks for things from spouses, siblings, kids, cousins, etc.
+				FROM = { is_lover = ROOT }
+				FROM = { is_friend = ROOT }
+				FROM = { is_virgin_trigger = yes }
+			}
+			OR = {
+				FROM = { prisoner = yes }
+				FROM = { trait = infirm }
+				FROM = { trait = incapable }
+				FROM = { is_slave = yes }
+			}
+		}
+		name = DWLilith140C
+		health = 0.1 # The succubus obtains a fraction of the health they absorb
+		grant_col_staged_piety_reward_minor = yes		
+		# From here down is the various bodily impact on the person who is leached of their essence
+		custom_tooltip = { text = dw_life_leech_notice }
+		hidden_tooltip = {
+			random_list = { # The person drained will be struck with an affliction as their body is weakened as it exposed to the dark art
+				60 = { FROM = { give_ill_effect = yes } }
+				30 = { FROM = { give_pneumonic_effect = yes } }
+				10 = { FROM = { give_has_tuberculosis_effect = yes } }
+			}
+			FROM = { health = -0.5 } # The partner will always permanently lose part of their life force (health), making it likely that post-drain illness will kill them at some point
+		}
+	}
+}
+# .149 Life Leech - Lover's Embrace cool down removal
+character_event = {
+	id = DWLilith.149
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # triggered by .140
+	immediate = {
+		remove_character_modifier = dw_lovers_embrace_cooldown
+	}
+}
+# .150 Alter Appearance (Incubus)
+narrative_event = {
+	id = DWLilith.150
+	desc = DWLilith150
+	picture = incubus_spell_alter_appearance
+	title = dw_alter_appearance_title
+	is_triggered_only = yes # Triggered by targetted decision
+	option = { # potrait9
+		name = DWLilith150A
+		piety = -10 # Cost of energy for the alteration
+		add_trait = portrait9
+	}
+	option = { # potrait10
+		name = DWLilith150B
+		piety = -10 # Cost of energy for the alteration
+		add_trait = portrait10
+	}
+	option = { # potrait11
+		name = DWLilith150C
+		piety = -10 # Cost of energy for the alteration
+		add_trait = portrait11
+	}
+	option = { # Changed my mind
+		trigger = {
+			NOR = {
+				trait = portrait9
+				trait = portrait10
+				trait = portrait11
+			}
+		}
+		name = DWLilith150D
+	}
+	option = { # Remove the custom image
+		trigger = {
+			OR = {
+				trait = portrait9
+				trait = portrait10
+				trait = portrait11
+			}
+		}
+		name = DWLilith150E
+		if = {
+			limit = {
+				trait = portrait9
+			}
+			remove_trait = portrait9
+		}
+		if = {
+			limit = {
+				trait = portrait10
+			}
+			remove_trait = portrait10
+		}
+		if = {
+			limit = {
+				trait = portrait11
+			}
+			remove_trait = portrait11
+		}
+	}
+}
+# .155 Alter Appearance (Succubus A)
+narrative_event = {
+	id = DWLilith.155
+	desc = DWLilith155
+	picture = succubus_spell_alter_appearance1
+	title = dw_alter_appearance_title
+	is_triggered_only = yes # Triggered by targetted decision
+	option = { # potrait12
+		name = DWLilith155A
+		piety = -10 # Cost of energy for the alteration
+		add_trait = portrait12
+	}
+	option = { # potrait13
+		name = DWLilith155B
+		piety = -10 # Cost of energy for the alteration
+		add_trait = portrait13
+	}
+	option = { # potrait14
+		name = DWLilith155C
+		piety = -10 # Cost of energy for the alteration
+		add_trait = portrait14
+	}
+	option = { # Next Page
+		name = DWLilith155D
+		narrative_event = { id = DWLilith.156 }
+	}
+}
+# .156 Alter Appearance (Succubus B)
+narrative_event = {
+	id = DWLilith.156
+	desc = DWLilith156
+	picture = succubus_spell_alter_appearance2
+	title = dw_alter_appearance_title
+	is_triggered_only = yes # Triggered by targetted decision
+	option = { # potrait15
+		name = DWLilith156A
+		piety = -10 # Cost of energy for the alteration
+		add_trait = portrait15
+	}
+	option = { # potrait16
+		name = DWLilith156B
+		piety = -10 # Cost of energy for the alteration
+		add_trait = portrait16
+	}
+	option = { # potrait20
+		name = DWLilith156C
+		piety = -10 # Cost of energy for the alteration
+		add_trait = portrait20
+	}
+	option = { # Changed my mind
+		trigger = {
+			NOR = {
+				trait = portrait12
+				trait = portrait13
+				trait = portrait14
+				trait = portrait15
+				trait = portrait16
+				trait = portrait20
+			}
+		}
+		name = DWLilith156D
+	}
+	option = { # Remove the custom image
+		trigger = {
+			OR = {
+				trait = portrait12
+				trait = portrait13
+				trait = portrait14
+				trait = portrait15
+				trait = portrait16
+				trait = portrait20
+			}
+		}
+		name = DWLilith156E
+		if = {
+			limit = {
+				trait = portrait12
+			}
+			remove_trait = portrait12
+		}
+		if = {
+			limit = {
+				trait = portrait13
+			}
+			remove_trait = portrait13
+		}
+		if = {
+			limit = {
+				trait = portrait14
+			}
+			remove_trait = portrait14
+		}
+		if = {
+			limit = {
+				trait = portrait15
+			}
+			remove_trait = portrait15
+		}
+		if = {
+			limit = {
+				trait = portrait16
+			}
+			remove_trait = portrait16
+		}
+		if = {
+			limit = {
+				trait = portrait20
+			}
+			remove_trait = portrait20
+		}
+	}
+}
+# .160 Incubus Intimidation Illusion
+narrative_event = {
+	id = DWLilith.160
+	desc = DWLilith160
+	picture = incubus_spell_intimidation
+	title = dw_incubus_intimidation_illusion_title
+	is_triggered_only = yes # Triggered by targetted_decision
+	option = { # Intimidate opinion
+		name = DWLilith160A
+		piety = -50
+		FROM = {
+			opinion = {
+				modifier = dw_opinion_incubus_intimidation
+				who = ROOT
+			}
+		}
+	}
+	option = { # Break their resolve
+		trigger = {
+			FROM = { NOT = { trait = craven }} # If the target is already a coward, there is no reason to display this option
+		}
+		name = DWLilith160B
+		piety = -50
+		if = { # If they're not brave, we render them a coward
+			limit = {
+				FROM = { NOT = { trait = brave }}
+			}
+			FROM = { add_trait = craven }
+		}
+		if = { # If they're brave, we break it down
+			limit = {
+				FROM = { trait = brave }
+			}
+			FROM = { remove_trait = brave }
+		}
+	}
+	option = { # If the ai selected the player
+		trigger = {
+			ai = yes
+			FROM = { ai = no }
+		}
+		name = DWLilithDoh
+		ai_chance = {
+			factor = 1000
+		}
+	}
+}
+# .170 Self Shape Cock Spell (incubus image) Page 1
+narrative_event = {
+	id = DWLilith.170
+	picture = a_placeholder
+	title = dw_alter_cock_size_title
+	desc = {
+		trigger = {
+			trait = incubus
+		}
+		text = DWLilith170.0
+		picture = incubus_spell_craft_cock
+	}
+	desc = {
+		trigger = {
+			trait = lilith
+		}
+		text = DWLilith170.1
+		picture = succubus_spell_shape_cock
+	}
+	is_triggered_only = yes # Triggered by targetted_decision
+	immediate = {
+		# We remove the previous cock trait as there is no option to back out. They'll need to take one, although they can take their original size if they desire.
+		if = {
+			limit = {
+				trait = tiny_dick
+			}
+			remove_trait = tiny_dick
+		}
+		if = {
+			limit = {
+				trait = small_dick
+			}
+			remove_trait = small_dick
+		}
+		if = {
+			limit = {
+				trait = regular_dick
+			}
+			remove_trait = regular_dick
+		}
+		if = {
+			limit = {
+				trait = big_dick
+			}
+			remove_trait = big_dick
+		}
+		if = {
+			limit = {
+				trait = huge_dick
+			}
+			remove_trait = huge_dick
+		}
+		if = {
+			limit = {
+				trait = enormous_dick
+			}
+			remove_trait = enormous_dick
+		}
+	}
+	option = { # tiny
+		name = DWLilith170A
+		add_trait = tiny_dick
+	}
+	option = { # small
+		name = DWLilith170B
+		add_trait = small_dick
+	}
+	option = { # average
+		name = DWLilith170C
+		add_trait = regular_dick
+	}
+	option = { # Next Page
+		name = DWLilith170D
+		narrative_event = { id = DWLilith.171 }
+	}
+}
+# .171 Self Shape Cock Spell (incubus image) Page 2
+narrative_event = {
+	id = DWLilith.171
+	picture = a_placeholder
+	title = dw_alter_cock_size_title
+	desc = {
+		trigger = {
+			trait = incubus
+		}
+		text = DWLilith170.0 # Since we're just offering different cock size options, we're keeping the original text
+		picture = incubus_spell_craft_cock
+	}
+	desc = {
+		trigger = {
+			trait = lilith
+		}
+		text = DWLilith170.1 # Since we're just offering different cock size options, we're keeping the original text
+		picture = succubus_spell_shape_cock
+	}
+	is_triggered_only = yes # Triggered by targetted_decision
+	option = { # large
+		name = DWLilith171A
+		add_trait = big_dick
+	}
+	option = { # huge
+		name = DWLilith171B
+		add_trait = huge_dick
+	}
+	option = { # horse
+		name = DWLilith171C
+		add_trait = enormous_dick
+	}
+	option = { # Previous Page
+		name = DWLilith171D
+		narrative_event = { id = DWLilith.170 }
+	}
+}
+# .180 Succubus Corruption
+narrative_event = {
+	id = DWLilith.180
+	desc = DWLilith180
+	picture = succubus_corruption
+	title = dw_succubus_corruption_spell_title
+	is_triggered_only = yes # Triggered by targetted_decision
+	option = { # Should get that cough checked out
+		name = DWLilith180A
+		piety = -50
+		FROM = {
+			give_pneumonic_effect = yes
+		}
+	}
+	option = { # Oh, looks like you've some unsightly blemishes
+		name = DWLilith180B
+		piety = -50
+		FROM = {
+			give_syphilitic_effect = yes
+		}
+	}
+	option = { # Here, I think your finger fell off
+		trigger = {
+			piety = 150
+		}
+		name = DWLilith180C
+		piety = -150
+		FROM = {
+			add_trait = leper
+		}
+	}
+	option = { # I am the plague bearer
+		trigger = {
+			piety = 250
+		}
+		name = DWLilith180D
+		piety = -250
+		FROM = {
+			give_has_bubonic_plague_effect = yes
+		}
+	}
+	option = { # If the ai selected the player
+		trigger = {
+			ai = yes
+			FROM = { ai = no }
+		}
+		name = DWLilithDoh
+		ai_chance = {
+			factor = 1000
+		}
+	}
+}
+# .190 Immortality
+narrative_event = {
+	id = DWLilith.190
+	picture = a_placeholder
+	is_triggered_only = yes # Triggered by a targetted_decision
+	title = dw_lilith_immortality_spell
+	desc = {
+		trigger = {
+			trait = lilith
+		}
+		text = DWLilith190
+		picture = lilith_immortality_succubus
+	}
+	desc = {
+		trigger = {
+			trait = incubus
+		}
+		text = DWLilith190
+		picture = lilith_immortality_incubus
+	}
+	immediate = {
+		FROM = { # The person that was targeted by the spell targetted_decision
+			save_event_target_as = dw_spell_target
+		}
+	}
+	option = { # It is done
+		name = DWLilith190A
+		piety = -250
+		event_target:dw_spell_target = {
+			add_trait = immortal
+			opinion = {
+				modifier = dw_opinion_immortalized
+				who = ROOT
+			}		}
+	}
+	option = { # I changed my mind
+		name = DWLilith190B
+	}
+}
+# .200 Heal minor spell on self
+narrative_event = {
+	id = DWLilith.200
+	picture = a_placeholder
+	title = dw_heal_minor_self_title
+	is_triggered_only = yes # by targetted_decision
+	desc = { # succubus
+		trigger = { 
+			trait = lilith
+		}
+		text = DWLilith200.0
+		picture = succubus_spell_heal_self1
+	}	
+	desc = { # incubus
+		trigger = { 
+			trait = incubus
+		}
+		text = DWLilith200.0
+		picture = incubus_spell_heal_self1
+	}	
+	option = { # I am healed
+		name = "DWLilith200A"
+		piety = -50
+		custom_tooltip = {
+			text = dw_lilith_minor_heal
+		}
+		hidden_tooltip = {
+			remove_trait = wounded
+			remove_trait = ill
+			remove_trait = flu
+			remove_trait = dysentery
+			remove_trait = gout
+			remove_trait = cough
+			remove_trait = fever
+			remove_trait = diarrhea
+			remove_trait = vomiting
+			remove_trait = chest_pain
+			remove_trait = cramps
+			remove_trait = rash
+			remove_trait = headache
+			remove_trait = abdominal_pain
+			remove_trait = fatigue
+			remove_trait = malaise
+			remove_trait = infection
+			clr_character_flag = developing_illness
+			clr_character_flag = got_flu
+			clr_character_flag = manifest_flu
+		}
+	}
+}
+# .210 Heal moderate spell on self
+narrative_event = {
+	id = DWLilith.210
+	picture = a_placeholder
+	title = dw_heal_moderate_self_title
+	is_triggered_only = yes # by targetted_decision
+	desc = { # succubus
+		trigger = { 
+			trait = lilith
+		}
+		text = DWLilith210.0
+		picture = succubus_spell_heal_self1
+	}	
+	desc = { # incubus
+		trigger = { 
+			trait = incubus
+		}
+		text = DWLilith210.0
+		picture = incubus_spell_heal_self1
+	}	
+	option = { # I am healed
+		name = "DWLilith210A"
+		piety = -75
+		custom_tooltip = {
+			text = dw_lilith_moderate_heal
+		}
+		hidden_tooltip = {
+			remove_trait = maimed
+			remove_trait = pneumonic
+			remove_trait = syphilitic
+			remove_trait = has_tuberculosis
+			remove_trait = has_typhoid_fever
+			remove_trait = has_typhus
+			remove_trait = has_measles
+			remove_trait = food_poisoning
+			remove_trait = scurvy
+			remove_trait = disfigured
+			remove_trait = mangled
+			remove_trait = severely_injured
+			remove_trait = clubfooted
+			remove_trait = harelip
+			remove_trait = hunchback
+			remove_trait = lisp
+			clr_character_flag = developing_illness
+			clr_character_flag = got_flu
+			clr_character_flag = manifest_flu
+		}
+	}
+}
+# .220 Futa Morph spell on self (Succubus only)
+narrative_event = {
+	id = DWLilith.220
+	picture = a_placeholder
+	title = dw_heal_moderate_self_title
+	is_triggered_only = yes # by targetted_decision
+	desc = { # not a futa
+		trigger = { 
+			NOT = { trait = futa }
+		}
+		text = DWLilith220.0
+		picture = succubus_spell_shape_cock
+	}	
+	desc = { # already a futa
+		trigger = { 
+			trait = futa
+		}
+		text = DWLilith220.1
+		picture = succubus_spell_shape_cock
+	}	
+	option = { # I'm a Futa
+		trigger = {
+			NOT = { trait = futa }
+		}
+		name = "DWLilith220A"
+		piety = -50
+		add_trait = futa
+		add_cock = yes # adds a random cock size trait based on parental size, or random if there isn't one
+	}
+	option = { # I'm no longer a futa
+		trigger = {
+			trait = futa
+		}
+		name = "DWLilith220B"
+		piety = -50
+		remove_trait = futa # Removes futa trait
+		remove_cock = yes # Removes cock size trait
+	}
+	option = { # Nevermind
+		name = "DWLilith220C"
+	}
+}
+## .1000 Lilith Blood Moon Celebration
+# .1000 Lilith Blood Moon begins (routing - hidden)
+character_event = {
+	id = DWLilith.1000
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by decision
+	immediate = {
+		if = { # Incubus specific event
+			limit = {
+				trait = incubus
+			}
+			narrative_event = { id = DWLilith.1001 }
+			break = yes # Takes us out of the immediate block
+		}
+		# Succubus specific event
+		narrative_event = { id = DWLilith.1005 }
+	}
+}
+# .1001 Lilith Blood Moon Begins - Incubus event
+narrative_event = {
+	id = DWLilith.1001
+	desc = "DWLilith1005" # Same descriptive text as the succubus event. We're just using different flavor images.
+	picture = lilith_blood_moon_generic
+	title = dw_lilith_blood_moon_title
+	
+	is_triggered_only = yes # Triggered by .1000
+	
+	option = { # Let us begin
+		name = "DWLilith1005A"
+		wealth = -25
+		any_courtier = { # Our courtier's who will be in attendance
+			limit = {
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+				is_adult = yes
+				NOR = {
+					trait = chaste
+					trait = celibate
+				}
+			}
+			character_event = { id = DWLilith.1010 } # Handles folks coming out of hiding and clearing and former celebration flags
+		}		
+		any_courtier = { # Our available courtier's who will NOT be in attendance and need to pay tribute
+			limit = {
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+				is_adult = yes
+				OR = {
+					trait = chaste
+					trait = celibate
+				}
+			}
+			character_event = { id = DWLilith.1015 } # Handles the check to see if they've the money to pay, and subsequent events
+		}		
+		any_vassal = { # Vassals who are attending
+			limit = {
+				is_adult = yes
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+				NOR = {
+					trait = chaste
+					trait = celibate
+				}
+			}
+			character_event = { id = DWLilith.1010 } # Handles folks coming out of hiding and clearing and former celebration flags
+		}
+		any_vassal = { # Vassals who are NOT attending and need to pay tribute
+			limit = {
+				is_adult = yes
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+				OR = {
+					trait = chaste
+					trait = celibate
+				}
+			}
+			character_event = { id = DWLilith.1015 } # Handles the check to see if they've the money to pay, and subsequent events
+		}
+		hidden_tooltip = {
+			narrative_event = { id = DWLilith.1030 days = 5 } # Starts the Blood Moon Celebration
+		}
+	}
+}# .1005 Lilith Blood Moon Begins - Succubus event
+narrative_event = {
+	id = DWLilith.1005
+	desc = "DWLilith1005"
+	picture = lilith_blood_moon_celebration_female
+	title = dw_lilith_blood_moon_title
+	
+	is_triggered_only = yes # Triggered by .1000
+	
+	option = { # Let us begin
+		name = "DWLilith1005A"
+		wealth = -25
+		any_courtier = { # Our courtier's who will be in attendance
+			limit = {
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+				is_adult = yes
+				NOR = {
+					trait = chaste
+					trait = celibate
+				}
+			}
+			character_event = { id = DWLilith.1010 } # Handles folks coming out of hiding and clearing and former celebration flags
+		}		
+		any_courtier = { # Our available courtier's who will NOT be in attendance and need to pay tribute
+			limit = {
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+				is_adult = yes
+				OR = {
+					trait = chaste
+					trait = celibate
+				}
+			}
+			character_event = { id = DWLilith.1015 } # Handles the check to see if they've the money to pay, and subsequent events
+		}		
+		any_vassal = { # Vassals who are attending
+			limit = {
+				is_adult = yes
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+				NOR = {
+					trait = chaste
+					trait = celibate
+				}
+			}
+			character_event = { id = DWLilith.1010 } # Handles folks coming out of hiding and setting the end of celebration flag clearing
+		}
+		any_vassal = { # Vassals who are NOT attending and need to pay tribute
+			limit = {
+				is_adult = yes
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+				OR = {
+					trait = chaste
+					trait = celibate
+				}
+			}
+			character_event = { id = DWLilith.1015 } # Handles the check to see if they've the money to pay, and subsequent events
+		}
+		hidden_tooltip = {
+			narrative_event = { id = DWLilith.1030 days = 5 } # Starts the Blood Moon Celebration
+		}
+	}
+}
+# .1010 Vassals and Courtiers Summoned and attending Blood Moon event (handles people coming out of hiding and character flags)
+character_event = {
+	id = DWLilith.1010
+	desc = "DWLilith1010"
+	picture = lilith_blood_moon_generic
+
+	is_triggered_only = yes # Triggered by .1001/.1005
+
+	option = { # I'm looking forward to the event
+		name = "DWLilith1010A"
+		set_character_flag = dw_attending_blood_moon
+		if = {
+			limit = { trait = in_hiding	}
+			remove_trait = in_hiding
+			add_character_modifier = {
+				name = went_out_of_hiding_timer
+				duration = 180
+				hidden = yes
+			}
+			hidden_tooltip = { character_event = { id = CM.6400 } } # Notify plotters and family
+		}
+		hidden_tooltip = { character_event = { id = DWLilith.1099 days = 45 } } # Clears Blood Moon flags at the end of the event
+	}
+}
+# .1015 Vassals and Courtiers who aren't attending determine if they pay tribute to be excluded from Blood Moon Celebration
+character_event = {
+	id = DWLilith.1015
+	desc = "DWLilith1015"
+	picture = lilith_blood_moon_generic
+	
+	is_triggered_only = yes # Triggered by .1001/.1005
+	
+	option = { # Pay if they can
+		name = "DWLilith1015A"
+		trigger = {
+			wealth = 5
+		}
+		FROM = {
+			narrative_event = {	id = DWLilith.1020 } # Tribute payment event for the liege
+		}
+		wealth = -5 # Personal wealth, the reason why the payment is higher is due to a gathering of coin from others (taxes for vassals, businesses or family for courtiers)
+		prestige = -10 # A hit on prestige for not attending and also due to the person collecting money from others to cover tribute
+		ai_chance = { # If the ai has this option, this is the one we want them to choose automatically, unless they're greedy or zealous
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					ai_greed = -25
+					ai_zeal = 30
+				}
+			}
+		}
+	}
+	option = { # Don't pay
+		name = "DWLilith1015B"
+		FROM = {
+			narrative_event = { id = DWLilith.1025 } # Tribute payment isn't coming
+		}
+		tooltip = {
+			FROM = {
+				opinion = {
+					modifier = dw_opinion_refused_blood_moon
+					who = ROOT
+				}
+				any_vassal = {
+					limit = { has_character_flag = dw_attending_blood_moon }
+					opinion = {
+						modifier = dw_opinion_refused_blood_moon
+						who = ROOT
+					}
+				}
+				any_courtier = {
+					limit = { has_character_flag = dw_attending_blood_moon }
+					opinion = {
+						modifier = dw_opinion_refused_blood_moon
+						who = ROOT
+					}
+				}
+			}
+		}
+		opinion = {
+			modifier = dw_opinion_blood_moon_heretic_liege
+			who = FROM			
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+# .1020 Liege holding the Blood Moon celebration receives the tribute payment for the absence
+narrative_event = {
+	id = DWLilith.1020
+	desc = "DWLilith1020"
+	picture = lilith_blood_moon_tribute
+	title = dw_blood_moon_tribute_payment
+	
+	is_triggered_only = yes # Triggered by .1015
+	
+	option = { # Tribute accepted
+		name = "DWLilith1020A"
+		wealth = 10
+	}
+}
+# .1025 Liege holding the Blood Moon celebration receives word that someone is not attending and they're also not paying tribute
+narrative_event = {
+	id = DWLilith.1025
+	desc = "DWLilith1025"
+	picture = lilith_blood_moon_tribute
+	title = dw_blood_moon_tribute_no_payment
+	
+	is_triggered_only = yes # Triggered by .1015
+	
+	option = { # Tribute accepted
+		name = "DWLilith1025A"
+		custom_tooltip = {
+			text = dw_blood_moon_no_show_fallout
+		}
+	}
+}
+# .1030 Blood Moon Celebration begins
+narrative_event = {
+	id = DWLilith.1030
+	desc = "DWLilith1030"
+	picture = lilith_blood_moon_prison_cell
+	title = dw_lilith_blood_moon_title	
+	is_triggered_only = yes # .1001 / .1005 / .1041
+	immediate = {
+		if = {
+			limit = {
+				check_for_valid_prisoner_sacrifice = yes # A scripted_trigger to check for a valid sacrifice target
+			}
+			select_prisoner_for_sacrifice = yes # A scripted_effect to set the event target
+		}
+	}
+	option = { # Let's sacrifice some prisoners
+		trigger = { # We only show this if we've prisoners that qualify for sacrifice
+			check_for_valid_prisoner_sacrifice = yes
+		}
+		name = DWLilith1030A
+		event_target:dw_sacrifice = { 
+			character_event = { id = DWLilith.1039 } # Target gets the "Oh Shit I've been selected message."			
+		}
+		narrative_event = { id = DWLilith.1040 } # Sacrifice Event
+	}
+	option = { # Lets kill us some peasants
+		name = DWLilith1030B
+		narrative_event = { id = DWLilith.1049 }
+	}
+	option = { # We already killed someone, that's enough for now.
+		trigger = {
+			has_character_flag = dw_blood_moon_sacrifice_success
+		}
+		name = DWLilith1030C
+		character_event = { id = DWLilith.1050 }
+	}
+}
+# .1039 Simple message for the target of a sacrifice. Ideally to never be seen by a player unless they're very unlucky (Sacrifice / Event Target)
+character_event = {
+	id = DWLilith.1039
+	desc = "DWLilith1039"
+	picture = lilith_blood_moon_prison_cell
+	is_triggered_only = yes # Triggered from .1031
+	option = { # I am DOOMED!
+		name = "DWLilith1039A"
+	}
+}
+# .1040 Sacrifice decision event
+narrative_event = {
+	id = DWLilith.1040
+	desc = DWLilith1041
+	picture = lilith_blood_moon_prison_cell
+	title = dw_lilith_blood_moon_title
+	
+	is_triggered_only = yes # Triggered by .1040
+	
+	option = { # Sacrifice them
+		name = DWLilith1041A
+		piety = 50
+		set_character_flag = dw_blood_moon_sacrifice_success
+		event_target:dw_sacrifice = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		clear_prisoner_for_sacrifice = yes # We clear the event_target so that it can be reused
+		if = { # Do we have more folks we can sacrifice?
+			limit = {
+				check_for_valid_prisoner_sacrifice = yes # A scripted_trigger to check for a valid sacrifice target
+			}
+			narrative_event = { id = DWLilith.1030 days = 1 } # Then let's swing back through and select someone else!
+			break = yes # This takes us out of the option block
+		}
+		# If we hit here, we have no one left to sacrifice and it's time to get on with the blood bath and celebration.
+		character_event = { id = DWLilith.1050 }
+	}
+	option = { # Spare them
+		name = DWLilith1041B
+		piety = -25 # Lilith is disappointed in being teased
+		event_target:dw_sacrifice = { 
+			set_character_flag = dw_spared_sacrifice
+			character_event = { id = DWLilith.1099 days = 45 } # Flag clean-up
+			opinion = {
+				modifier = dw_spared_life
+				who = ROOT
+			}
+		}
+		clear_prisoner_for_sacrifice = yes # We clear the event_target so that it can be reused
+		narrative_event = { id = DWLilith.1030 days = 1 } # Then let's swing back through and select someone else!
+	}
+}
+# .1049 Sacrificing some local commoners instead of prisoners
+narrative_event = {
+	id = DWLilith.1049
+	desc = "DWLilith1049"
+	picture = lilith_blood_moon_prison_cell
+	title = dw_lilith_blood_moon_title
+	
+	is_triggered_only = yes # Triggered by .1030 / .1031
+	
+	option = { # Onto the blood bath and celebration
+		name = "DWLilith1049A"
+		piety = 25
+		character_event = { id = DWLilith.1050 }
+		add_character_modifier = { name = dw_lilith_peasant_sacrifice duration = 340 }
+	}
+}
+# .1050 Bathing in the blood of the sacrifices and the start of the celebration (hidden for female / male routing options)
+character_event = {
+	id = DWLilith.1050
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by .1041
+	immediate = {
+		if = { # Incubus event
+			limit = {
+				trait = incubus
+			}
+			narrative_event = { id = DWLilith.1051 }
+			break = yes # takes us out of the immediate block
+		}
+		# If we hit this, we're a succubus
+		narrative_event = { id = DWLilith.1055 }
+	}
+}
+# .1051 Incubus blood bath and celebration announcement
+narrative_event = {
+	id = DWLilith.1051
+	desc = "DWLilith1051"
+	picture = lilith_blood_moon_generic
+	title = dw_lilith_blood_moon_title
+	is_triggered_only = yes # Triggered by .1050
+	option = { # Food and festivity time!
+		name = "DWLilith1051A"
+		character_event = { id = DWLilith.1060 }
+	}
+}
+# .1055 Succubus blood bath and celebration announcement
+narrative_event = {
+	id = DWLilith.1055
+	desc = "DWLilith1055"
+	picture = lilith_blood_moon_generic
+	title = dw_lilith_blood_moon_title
+	is_triggered_only = yes # Triggered by .1050
+	option = { # Food and festivity time!
+		name = "DWLilith1055A"
+		character_event = { id = DWLilith.1060 }
+	}
+}
+# .1060 Let's start the celebration (hidden for female / male routing options)
+character_event = {
+	id = DWLilith.1060
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by .1051 / .1055
+	immediate = {
+		any_courtier = {
+			limit = {
+				has_character_flag = dw_attending_blood_moon
+			}
+			opinion = {
+				modifier = dw_held_blood_moon_celebration
+				who = ROOT
+			}
+		}
+		any_vassal = {
+			limit = {
+				has_character_flag = dw_attending_blood_moon
+			}
+			opinion = {
+				modifier = dw_held_blood_moon_celebration
+				who = ROOT
+			}
+		}
+		# TODO Chick and dude random events and routing
+		# Random list 5 days out
+		random_list = {
+			20 = {
+				character_event = { id = DWLilith.1070 days = 5} # Drunkard
+			}
+			20 = {
+				character_event = { id = DWLilith.1080 days = 5} # Gluttony
+			}
+			20 = {
+				character_event = { id = DWLilith.1140 days = 5} # Spanking (male)
+			}
+			20 = {
+				narrative_event = { id = DWLilith.1150 days = 5} # Ass Ale
+			}
+			20 = {
+				character_event = { id = DWLilith.1160 days = 5} # Lesbian Wine tasting
+			}
+			20 = {
+				narrative_event = { id = DWLilith.1170 days = 5} # Intimate Art
+			}
+		}
+		# Random list 10 days out
+		random_list = {
+			20 = {
+				character_event = { id = DWLilith.1070 days = 10} # Drunkard
+			}
+			20 = {
+				character_event = { id = DWLilith.1080 days = 10} # Gluttony
+			}
+			20 = {
+				character_event = { id = DWLilith.1140 days = 10} # Spanking (male)
+			}
+			20 = {
+				narrative_event = { id = DWLilith.1150 days = 10} # Ass Ale
+			}
+			20 = {
+				character_event = { id = DWLilith.1160 days = 10} # Lesbian Wine tasting
+			}
+			20 = {
+				narrative_event = { id = DWLilith.1170 days = 10} # Intimate Art
+			}
+		}
+		# Random list 15 days out
+		random_list = {
+			20 = {
+				character_event = { id = DWLilith.1070 days = 15} # Drunkard
+			}
+			20 = {
+				character_event = { id = DWLilith.1080 days = 15} # Gluttony
+			}
+			20 = {
+				character_event = { id = DWLilith.1140 days = 15} # Spanking (male)
+			}
+			20 = {
+				narrative_event = { id = DWLilith.1150 days = 15} # Ass Ale
+			}
+			20 = {
+				character_event = { id = DWLilith.1160 days = 15} # Lesbian Wine tasting
+			}
+			20 = {
+				narrative_event = { id = DWLilith.1170 days = 15} # Intimate Art
+			}
+		}
+		# Random list 20 days out
+		random_list = {
+			20 = {
+				character_event = { id = DWLilith.1070 days = 20} # Drunkard
+			}
+			20 = {
+				character_event = { id = DWLilith.1080 days = 20} # Gluttony
+			}
+			20 = {
+				character_event = { id = DWLilith.1140 days = 20} # Spanking (male)
+			}
+			20 = {
+				narrative_event = { id = DWLilith.1150 days = 20} # Ass Ale
+			}
+			20 = {
+				character_event = { id = DWLilith.1160 days = 20} # Lesbian Wine tasting
+			}
+			20 = {
+				narrative_event = { id = DWLilith.1170 days = 20} # Intimate Art
+			}
+		}
+		# Blood Moon completed 25 days out
+		character_event = { id = DWLilith.1090 days = 25} 
+	}
+}
+# .1070 Drunkard event (hidden - routing)
+character_event = {
+	id = DWLilith.1070
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by .1060
+	trigger = {
+		NOT = { has_character_flag = dw_blood_moon_drunkard } # If we already processed this once, we want to avoid a repeat of the event
+	}
+	immediate = {
+		if = { # We first check if our host is the drunk
+			limit = {
+				trait = drunkard
+			}
+			random_courtier = { # We find a drinking buddy
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+				}
+				save_event_target_as = dw_drinking_buddy
+			}
+			narrative_event = { id = DWLilith.1071 }
+			break = yes # Takes us out of the immediate block
+		}
+		if = { # If the host isn't, then we check the vassals for a drunkard
+			limit = {
+				any_vassal = {
+					trait = drunkard
+					has_character_flag = dw_attending_blood_moon
+				}
+			}
+			random_vassal = {
+				limit = {
+					trait = drunkard
+					has_character_flag = dw_attending_blood_moon
+				}
+				save_event_target_as = dw_drunkard
+			}
+			random_courtier = { # We find a drinking buddy
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+				}
+				save_event_target_as = dw_drinking_buddy
+			}
+			narrative_event = { id = DWLilith.1073 }
+			break = yes # Takes us out of the immediate block
+		}
+		if = { # If a vassal isn't then we check for a courtier who may be a drunkard
+			limit = {
+				any_courtier = {
+					trait = drunkard
+					has_character_flag = dw_attending_blood_moon
+				}
+			}
+			random_courtier = {
+				limit = {
+					trait = drunkard
+					has_character_flag = dw_attending_blood_moon
+				}
+				save_event_target_as = dw_drunkard
+			}
+			random_courtier = { # We find a drinking buddy (Note - we never call a vassal to be the drinking buddy, as since the decision doesn't require a vassal, we may not have a valid event target if we tried
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+				}
+				save_event_target_as = dw_drinking_buddy
+			}
+			narrative_event = { id = DWLilith.1073 }
+			break = yes # Takes us out of the immediate block
+		}
+		if = { # If we get here, then we've no drunkard and instead have someone who can't handle their alcohol and embarrasses themselves
+			limit = {
+				any_courtier = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { trait = temperate }
+				}
+			}
+			random_courtier = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { trait = temperate }
+				}
+				save_event_target_as = dw_drunkard_bad
+			}
+			narrative_event = { id = DWLilith.1075 }
+			break = yes # Takes us out of the immediate block
+		}
+	}
+}
+# .1071 Drunkard event (host is a drunkard)
+narrative_event = {
+	id = DWLilith.1071
+	desc = "DWLilith1071"
+	picture = lilith_blood_moon_drinking
+	title = dw_blood_moon_drunkard
+	is_triggered_only = yes # Triggered by .1070
+	option = { # My drinking buddy
+		name = "DWLilith1071A"
+		set_character_flag = dw_blood_moon_drunkard # Prevents this from running a second time
+		opinion = {
+			modifier = dw_blood_moon_drinking_buddy
+			who = event_target:dw_drinking_buddy
+		}
+		event_target:dw_drinking_buddy = {
+			opinion = {
+				modifier = dw_blood_moon_drinking_buddy
+				who = ROOT
+			}
+		}
+		tooltip = {
+			any_vassal = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_drinking_buddy = { character = yes }}
+					trait = drunkard
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = ROOT
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_drinking_buddy
+				}
+			}
+			any_courtier = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_drinking_buddy = { character = yes }}
+					trait = drunkard
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = ROOT
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_drinking_buddy
+				}
+			}
+		}
+	}
+}
+# .1073 Drunkard event (guest is a drunkard)
+narrative_event = {
+	id = DWLilith.1073
+	desc = "DWLilith1073"
+	picture = lilith_blood_moon_drinking
+	title = dw_blood_moon_drunkard
+	is_triggered_only = yes # Triggered by .1070
+	option = { # The drinking buddies
+		name = "DWLilith1073A"
+		set_character_flag = dw_blood_moon_drunkard # Prevents this from running a second time
+		event_target:dw_drunkard = {
+			opinion = {
+				modifier = dw_blood_moon_drinking_buddy
+				who = event_target:dw_drinking_buddy
+			}
+		}
+		event_target:dw_drinking_buddy = {
+			opinion = {
+				modifier = dw_blood_moon_drinking_buddy
+				who = event_target:dw_drunkard
+			}
+		}
+		tooltip = {
+			opinion = {
+				modifier = dw_blood_moon_impressed
+				who = event_target:dw_drunkard
+			}
+			opinion = {
+				modifier = dw_blood_moon_impressed
+				who = event_target:dw_drinking_buddy
+			}
+			any_vassal = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_drunkard = { character = yes }}
+					trait = drunkard
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_drunkard
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_drinking_buddy
+				}
+			}
+			any_courtier = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_drinking_buddy = { character = yes }}
+					NOT = { event_target:dw_drunkard = { character = yes }}
+					trait = drunkard
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_drunkard
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_drinking_buddy
+				}
+			}
+		}
+	}
+}
+# .1075 Drunkard event (no drunkards, guest drinks too much, vomits and may become one)
+narrative_event = {
+	id = DWLilith.1075
+	desc = "DWLilith1075"
+	picture = lilith_blood_moon_vomit
+	title = dw_blood_moon_drunkard
+	is_triggered_only = yes # Triggered by .1070
+	option = { # The drinking buddies
+		name = "DWLilith1075A"
+		set_character_flag = dw_blood_moon_drunkard # Prevents this from running a second time
+		event_target:dw_drunkard_bad = {
+			random = {
+				chance = 50 # 50% chance
+				add_trait = drunkard
+			}
+		}
+		tooltip = {
+			opinion = {
+				modifier = dw_blood_moon_disappointed
+				who = event_target:dw_drunkard_bad
+			}
+			any_vassal = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_drunkard_bad = { character = yes }}
+				}
+				opinion = {
+					modifier = dw_blood_moon_disappointed
+					who = event_target:dw_drunkard_bad
+				}
+			}
+			any_courtier = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_drunkard_bad = { character = yes }}
+				}
+				opinion = {
+					modifier = dw_blood_moon_disappointed
+					who = event_target:dw_drunkard_bad
+				}
+			}
+		}
+	}
+}
+# .1080 Gluttony event (hidden - routing)
+character_event = {
+	id = DWLilith.1080
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by .1060
+	trigger = {
+		NOT = { has_character_flag = dw_blood_moon_gluttony } # If we already processed this once, we want to avoid a repeat of the event
+	}
+	immediate = {
+		if = { # We first check if our host is gluttonous
+			limit = {
+				trait = gluttonous
+			}
+			narrative_event = { id = DWLilith.1081 }
+			break = yes # Takes us out of the immediate block
+		}
+		if = { # If the host isn't, then we check the vassals for gluttony
+			limit = {
+				any_vassal = {
+					trait = gluttonous
+					has_character_flag = dw_attending_blood_moon
+				}
+			}
+			random_vassal = {
+				limit = {
+					trait = gluttonous
+					has_character_flag = dw_attending_blood_moon
+				}
+				save_event_target_as = dw_gluttonous
+			}
+			narrative_event = { id = DWLilith.1083 }
+			break = yes # Takes us out of the immediate block
+		}
+		if = { # If the host isn't, then we check a courtier for gluttony
+			limit = {
+				any_courtier = {
+					trait = gluttonous
+					has_character_flag = dw_attending_blood_moon
+				}
+			}
+			random_courtier = {
+				limit = {
+					trait = gluttonous
+					has_character_flag = dw_attending_blood_moon
+				}
+				save_event_target_as = dw_gluttonous
+			}
+			narrative_event = { id = DWLilith.1083 }
+			break = yes # Takes us out of the immediate block
+		}
+		if = { # If we get here, then we've no one with gluttony, so we have a bad event with potential gluttony trait added
+			limit = {
+				any_courtier = {
+					has_character_flag = dw_attending_blood_moon
+				}
+			}
+			random_courtier = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { trait = temperate }
+					NOT = { trait = temperate }
+				}
+				save_event_target_as = dw_gluttonous_bad
+			}
+			narrative_event = { id = DWLilith.1085 }
+			break = yes # Takes us out of the immediate block
+		}
+	}
+}
+# .1081 Gluttony event (host is gluttonous)
+narrative_event = {
+	id = DWLilith.1081
+	desc = "DWLilith1081"
+	picture = lilith_blood_moon_gluttony
+	title = dw_blood_moon_gluttony
+	is_triggered_only = yes # Triggered by .1080
+	option = {
+		name = "DWLilith1081A"
+		set_character_flag = dw_blood_moon_gluttony # Prevents this from running a second time
+		tooltip = {
+			any_vassal = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					trait = gluttonous
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = ROOT
+				}
+			}
+			any_courtier = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					trait = gluttonous
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = ROOT
+				}
+			}
+		}
+	}
+}
+# .1083 Gluttony event (guest is gluttonous)
+narrative_event = {
+	id = DWLilith.1083
+	desc = "DWLilith1083"
+	picture = lilith_blood_moon_gluttony
+	title = dw_blood_moon_gluttony
+	is_triggered_only = yes # Triggered by .1080
+	option = {
+		name = "DWLilith1083A"
+		set_character_flag = dw_blood_moon_gluttony # Prevents this from running a second time
+		tooltip = {
+			opinion = {
+				modifier = dw_blood_moon_impressed
+				who = event_target:dw_gluttonous
+			}
+			any_vassal = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_gluttonous = { character = yes }}
+					trait = gluttonous
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_gluttonous
+				}
+			}
+			any_courtier = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_gluttonous = { character = yes }}
+					trait = gluttonous
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_gluttonous
+				}
+			}
+		}
+	}
+}
+# .1085 Gluttony event (no one is gluttonous, guest eats too much, vomits and may become gluttonous)
+narrative_event = {
+	id = DWLilith.1085
+	desc = "DWLilith1085"
+	picture = lilith_blood_moon_vomit
+	title = dw_blood_moon_gluttony
+	is_triggered_only = yes # Triggered by .1080
+	option = {
+		name = "DWLilith1085A"
+		set_character_flag = dw_blood_moon_gluttony # Prevents this from running a second time
+		event_target:dw_gluttonous_bad = {
+			random = {
+				chance = 50 # 50% chance
+				add_trait = gluttonous
+			}
+		}
+		tooltip = {
+			opinion = {
+				modifier = dw_blood_moon_disappointed
+				who = event_target:dw_gluttonous_bad
+			}
+			any_vassal = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_gluttonous_bad = { character = yes }}
+				}
+				opinion = {
+					modifier = dw_blood_moon_disappointed
+					who = event_target:dw_gluttonous_bad
+				}
+			}
+			any_courtier = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_gluttonous_bad = { character = yes }}
+				}
+				opinion = {
+					modifier = dw_blood_moon_disappointed
+					who = event_target:dw_gluttonous_bad
+				}
+			}
+		}
+	}
+}
+# .1090 Blood Moon Celebration Completed (hidden - used for routing)
+character_event = {
+	id = DWLilith.1090
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by .1060
+	immediate = {
+		# TODO Routing based on incubus vs succubus
+		narrative_event = { id = DWLilith.1091 } # Generic ending, to be replaced or altered one the TODO is ever done.
+	}
+}
+# .1091 Generic Blood Moon conclusion
+narrative_event = {
+	id = DWLilith.1091
+	desc = "DWLilith1091"
+	picture = lilith_blood_moon_generic
+	title = dw_lilith_blood_moon_title
+	
+	is_triggered_only = yes # Triggered by .1090
+	
+	option = { # w00t I survived! 
+		name = "DWLilith1091A"
+		character_event = { id = DWLilith.1100 days = 5 } # Potential level increase
+		add_character_modifier = {
+			name = dw_held_lilith_blood_moon
+			duration = 300
+		}
+		remove_character_modifier = dw_holding_lilith_blood_ritual
+		hidden_tooltip = { character_event = { id = DWLilith.1099 }}  # Clears Blood Moon flags 
+	}
+}
+### Blood Moon Flag management
+# .1099 Clears character flags related to the Blood Moon Celebration (hidden)
+character_event = {
+	id = DWLilith.1099
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by .1010/.1091
+	
+	immediate = {
+		clear_blood_moon_flags = yes
+	}
+}
+# .1100 Potential level increase from Blood Moon Celebration (routing - hidden)
+character_event = {
+	id = DWLilith.1100
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered from .1091
+	immediate = {
+		if = { # Already as strong as they're going to get
+			limit = {
+				has_character_modifier = dw_incubus_stage_5
+			}
+			narrative_event = { id = DWLilith.1110 }
+		}
+		if = { # Already as strong as they're going to get
+			limit = {
+				has_character_modifier = dw_lilith_stage_5
+			}
+			narrative_event = { id = DWLilith.1120 }
+		}
+		if = { # Incubus 4 evolves to 5
+			limit = {
+				has_character_modifier = dw_incubus_stage_4
+			}
+			narrative_event = { id = DWLilith.1111 }
+		}
+		if = { # Succubus 4 evolves to 5
+			limit = {
+				has_character_modifier = dw_lilith_stage_4
+			}
+			narrative_event = { id = DWLilith.1121 }
+		}
+		if = { # Incubus 3 evolves to 4
+			limit = {
+				has_character_modifier = dw_incubus_stage_3
+			}
+			narrative_event = { id = DWLilith.1112 }
+		}
+		if = { # Succubus 3 evolves to 4
+			limit = {
+				has_character_modifier = dw_lilith_stage_3
+			}
+			narrative_event = { id = DWLilith.1122 }
+		}
+		if = { # Incubus 2 evolves to 3
+			limit = {
+				has_character_modifier = dw_incubus_stage_2
+			}
+			narrative_event = { id = DWLilith.1113 }
+		}
+		if = { # Succubus 2 evolves to 3
+			limit = {
+				has_character_modifier = dw_lilith_stage_2
+			}
+			narrative_event = { id = DWLilith.1123 }
+		}
+		if = { # Incubus 1 evolves to 2
+			limit = {
+				has_character_modifier = dw_incubus_stage_1
+			}
+			narrative_event = { id = DWLilith.1114 }
+		}
+		if = { # Succubus 1 evolves to 2
+			limit = {
+				has_character_modifier = dw_lilith_stage_1
+			}
+			narrative_event = { id = DWLilith.1124 }
+		}
+		if = { # Incubus 0 evolves to 1
+			limit = {
+				trait = incubus
+				NOR = {
+					has_character_modifier = dw_incubus_stage_1
+					has_character_modifier = dw_incubus_stage_2
+					has_character_modifier = dw_incubus_stage_3
+					has_character_modifier = dw_incubus_stage_4
+					has_character_modifier = dw_incubus_stage_5
+				}
+			}
+			narrative_event = { id = DWLilith.1115 }
+		}
+		if = { # Succubus 0 evolves to 1
+			limit = {
+				trait = lilith
+				NOR = {
+					has_character_modifier = dw_lilith_stage_1
+					has_character_modifier = dw_lilith_stage_2
+					has_character_modifier = dw_lilith_stage_3
+					has_character_modifier = dw_lilith_stage_4
+					has_character_modifier = dw_lilith_stage_5
+				}
+			}
+			narrative_event = { id = DWLilith.1125 }
+		}
+	}
+}
+# .1110 Incubus can go no further, but they're blessed by Lilith all the same
+narrative_event = {
+	id = DWLilith.1110
+	desc = "DWLilith1110"
+	picture = lilith_avatar1
+	title = dw_incubus_nightmare
+	is_triggered_only = yes # Triggered by .1100
+	option = { # I am thankful she was pleased
+		name = "DWLilith1110A"
+		piety = 50
+		if = { # If they're not immortal, we extend the offer of immortality to them
+			limit = {
+				NOT = { trait = immortal }
+			}
+			narrative_event = { id = DWLilith.1130 days = 5}
+		}
+	}
+}
+# .1111 Incubus evolved from 4 to 5
+narrative_event = {
+	id = DWLilith.1111
+	desc = "DWLilith1111"
+	picture = lilith_avatar1
+	title = dw_incubus_nightmare
+	is_triggered_only = yes # Triggered by .1100
+	option = { # I am thankful she was pleased
+		name = "DWLilith1111A"
+		remove_character_modifier = dw_incubus_stage_4
+		add_character_modifier = { name = dw_incubus_stage_5 duration = -1 }
+		if = { # If they're not immortal, we extend the offer of immortality to them
+			limit = {
+				NOT = { trait = immortal }
+			}
+			narrative_event = { id = DWLilith.1130 days = 5}
+		}
+	}
+}
+# .1112 Incubus evolved from 3 to 4
+narrative_event = {
+	id = DWLilith.1112
+	desc = "DWLilith1112"
+	picture = lilith_avatar1
+	title = dw_incubus_illusionist
+	is_triggered_only = yes # Triggered by .1100
+	option = { # I am thankful she was pleased
+		name = "DWLilith1112A"
+		remove_character_modifier = dw_incubus_stage_3
+		add_character_modifier = { name = dw_incubus_stage_4 duration = -1 }
+	}
+}
+# .1113 Incubus evolved from 2 to 3
+narrative_event = {
+	id = DWLilith.1113
+	desc = "DWLilith1113"
+	picture = lilith_avatar1
+	title = dw_incubus_monster
+	is_triggered_only = yes # Triggered by .1100
+	option = { # I am thankful she was pleased
+		name = "DWLilith1113A"
+		remove_character_modifier = dw_incubus_stage_2
+		add_character_modifier = { name = dw_incubus_stage_3 duration = -1 }
+	}
+}
+# .1114 Incubus evolved from 1 to 2
+narrative_event = {
+	id = DWLilith.1114
+	desc = "DWLilith1114"
+	picture = lilith_avatar1
+	title = dw_incubus_leech
+	is_triggered_only = yes # Triggered by .1100
+	option = { # I am thankful she was pleased
+		name = "DWLilith1114A"
+		remove_character_modifier = dw_incubus_stage_1
+		add_character_modifier = { name = dw_incubus_stage_2 duration = -1 }
+	}
+}
+# .1115 Incubus evolved from 0 to 1
+narrative_event = {
+	id = DWLilith.1115
+	desc = "DWLilith1115"
+	picture = incubus_seducer_dream
+	title = dw_incubus_seducer
+	is_triggered_only = yes # Triggered by .1100
+	option = { # I am thankful she was pleased
+		name = "DWLilith1115A"
+		add_character_modifier = { name = dw_incubus_stage_1 duration = -1 }
+	}
+}
+# .1120 Succubus can go no further, but they're blessed by Lilith all the same
+narrative_event = {
+	id = DWLilith.1120
+	desc = "DWLilith1120"
+	picture = lilith_avatar1
+	title = dw_succubus_demoness
+	is_triggered_only = yes # Triggered by .1100
+	option = { # I am thankful she was pleased
+		name = "DWLilith1120A"
+		piety = 50
+		if = { # If they're not immortal, we extend the offer of immortality to them
+			limit = {
+				NOT = { trait = immortal }
+			}
+			narrative_event = { id = DWLilith.1135 days = 5}
+		}
+	}
+}
+# .1121 Succubus evolved from 4 to 5
+narrative_event = {
+	id = DWLilith.1121
+	desc = "DWLilith1121"
+	picture = lilith_avatar1
+	title = dw_succubus_demoness
+	is_triggered_only = yes # Triggered by .1100
+	option = { # I am thankful she was pleased
+		name = "DWLilith1121A"
+		remove_character_modifier = dw_lilith_stage_4
+		add_character_modifier = { name = dw_lilith_stage_5 duration = -1 }
+		if = { # If they're not immortal, we extend the offer of immortality to them
+			limit = {
+				NOT = { trait = immortal }
+			}
+			narrative_event = { id = DWLilith.1135 days = 5}
+		}
+	}
+}
+# .1122 Succubus evolved from 3 to 4
+narrative_event = {
+	id = DWLilith.1122
+	picture = a_placeholder
+	title = dw_succubus_corrupter
+	desc = {
+		trigger = {
+			NOT = { has_character_flag = dw_did_once }
+		}
+		text = DWLilith1122.0
+		picture = succubus_corruption_dream1
+	}
+	desc = {
+		trigger = {
+			has_character_flag = dw_did_once
+		}
+		text = DWLilith1122.1
+		picture = succubus_corruption_dream2
+	}
+	is_triggered_only = yes # Triggered by .1100
+	option = { # Have I done wrong?
+		trigger = {
+			NOT = { has_character_flag = dw_did_once }
+		}
+		name = DWLilith1122A
+		set_character_flag = dw_did_once
+		narrative_event = { id = DWLilith.1122 }
+	}
+	option = { # I am thankful she was pleased
+		trigger = {
+			has_character_flag = dw_did_once
+		}
+		name = DWLilith1122B
+		remove_character_modifier = dw_lilith_stage_3
+		add_character_modifier = { name = dw_lilith_stage_4 duration = -1 }
+		clr_character_flag = dw_did_once
+	}
+}
+# .1123 Succubus evolved from 2 to 3
+narrative_event = {
+	id = DWLilith.1123
+	desc = "DWLilith1123"
+	picture = lilith_avatar1
+	title = dw_succubus_monster
+	is_triggered_only = yes # Triggered by .1100
+	option = { # I am thankful she was pleased
+		name = "DWLilith1123A"
+		remove_character_modifier = dw_lilith_stage_2
+		add_character_modifier = { name = dw_lilith_stage_3 duration = -1 }
+	}
+}
+# .1124 Succubus evolved from 1 to 2
+narrative_event = {
+	id = DWLilith.1124
+	desc = "DWLilith1124"
+	picture = lilith_avatar1
+	title = dw_succubus_leech
+	is_triggered_only = yes # Triggered by .1100
+	option = { # I am thankful she was pleased
+		name = "DWLilith1124A"
+		remove_character_modifier = dw_lilith_stage_1
+		add_character_modifier = { name = dw_lilith_stage_2 duration = -1 }
+	}
+}
+# .1125 Succubus evolved from 0 to 1
+narrative_event = {
+	id = DWLilith.1125
+	desc = "DWLilith1125"
+	picture = lilith_avatar1
+	title = dw_succubus_seductress
+	is_triggered_only = yes # Triggered by .1100
+	option = { # I am thankful she was pleased
+		name = "DWLilith1125A"
+		add_character_modifier = { name = dw_lilith_stage_1 duration = -1 }
+	}
+}
+# .1130 Lilith offers the Incubus Nightmare the opportunity to become immortal
+narrative_event = { 
+	id = DWLilith.1130
+	desc = "DWLilith1130"
+	picture = lilith_avatar1
+	title = dw_lilith_immortal_gift
+	is_triggered_only = yes # Triggered by .1110 / .1111
+	option = { # Yes to immortality
+		name = "DWLilith1130A"
+		add_trait = immortal
+	}
+	option = { # No to immortality
+		name = "DWLilith1130B"
+	}
+}
+# .1135 Lilith offers the Succubus Demoness the opportunity to become immortal
+narrative_event = { 
+	id = DWLilith.1135
+	desc = "DWLilith1135"
+	picture = lilith_avatar1
+	title = dw_lilith_immortal_gift
+	is_triggered_only = yes # Triggered by .1120 / .1121
+	option = { # Yes to immortality
+		name = "DWLilith1135A"
+		add_trait = immortal
+	}
+	option = { # No to immortality
+		name = "DWLilith1135B"
+	}
+}
+# .1140 Spanking event (hidden - routing)
+character_event = {
+	id = DWLilith.1140
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by .1060
+	trigger = {
+		NOT = { has_character_flag = dw_blood_moon_spanked } # If we already processed this once, we want to avoid a repeat of the event
+	}
+	immediate = {
+		if = { # If we have a male vassal, we choose one
+			limit = {
+				any_vassal = {
+					NOT = { trait = proud }
+					is_female = no
+					has_character_flag = dw_attending_blood_moon
+				}
+			}
+			random_vassal = {
+				limit = {
+					NOT = { trait = proud }
+					is_female = no
+					has_character_flag = dw_attending_blood_moon
+				}
+				save_event_target_as = dw_spanked
+			}
+			narrative_event = { id = DWLilith.1141 }
+			break = yes # Takes us out of the immediate block
+		}
+		if = { # If a vassal isn't an option then we check for a courtier
+			limit = {
+				any_courtier = {
+					NOT = { trait = proud }
+					is_female = no
+					has_character_flag = dw_attending_blood_moon
+				}
+			}
+			random_courtier = {
+				limit = {
+					NOT = { trait = proud }
+					is_female = no
+					has_character_flag = dw_attending_blood_moon
+				}
+				save_event_target_as = dw_spanked
+			}
+			narrative_event = { id = DWLilith.1141 }
+			break = yes # Takes us out of the immediate block
+		}
+	}
+}
+# .1141 Spanking event (male guest is spanked)
+narrative_event = {
+	id = DWLilith.1141
+	desc = "DWLilith1141"
+	picture = lilith_blood_moon_spanking_male
+	title = dw_blood_moon_spanking
+	is_triggered_only = yes # Triggered by .1140
+	option = {
+		name = "DWLilith1141A"
+		set_character_flag = dw_blood_moon_spanked # Prevents this from running a second time
+		event_target:dw_spanked = {
+			random = {
+				chance = 50 # 50% chance
+				add_trait = lustful
+			}
+		}
+		tooltip = {
+			# Not hedonist or lustful means it's a funny sight, but not in a good way for the man being spanked
+			if = {
+				limit = {
+					NOR = {
+						trait = hedonist
+						trait = lustful
+					}
+				}
+				opinion = {
+					modifier = dw_blood_moon_ridicule
+					who = event_target:dw_spanked
+				}
+			}
+			any_vassal = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_spanked = { character = yes }}
+					NOR = {
+						trait = hedonist
+						trait = lustful
+					}
+				}
+				opinion = {
+					modifier = dw_blood_moon_ridicule
+					who = event_target:dw_spanked
+				}
+			}
+			any_courtier = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_spanked = { character = yes }}
+					NOR = {
+						trait = hedonist
+						trait = lustful
+					}
+				}
+				opinion = {
+					modifier = dw_blood_moon_ridicule
+					who = event_target:dw_spanked
+				}
+			}
+			# If a hedonist or lustful means it's a funny sight in a good way for the man being spanked
+			if = {
+				limit = {
+					OR = {
+						trait = hedonist
+						trait = lustful
+					}
+				}
+				opinion = {
+					modifier = dw_blood_moon_humorous
+					who = event_target:dw_spanked
+				}
+			}
+			any_vassal = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_spanked = { character = yes }}
+					OR = {
+						trait = hedonist
+						trait = lustful
+					}
+				}
+				opinion = {
+					modifier = dw_blood_moon_humorous
+					who = event_target:dw_spanked
+				}
+			}
+			any_courtier = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_spanked = { character = yes }}
+					OR = {
+						trait = hedonist
+						trait = lustful
+					}
+				}
+				opinion = {
+					modifier = dw_blood_moon_humorous
+					who = event_target:dw_spanked
+				}
+			}
+		}
+	}
+}
+# .1150 Ass Ale event
+narrative_event = {
+	id = DWLilith.1150
+	desc = DWLilith1150
+	picture = lilith_blood_moon_ass_ale
+	title = dw_blood_moon_ass_ale
+	is_triggered_only = yes # Triggered by .1060
+	trigger = {
+		NOT = { has_character_flag = dw_blood_moon_ass_ale } # If we already processed this once, we want to avoid a repeat of the event
+	}
+	option = { # What a great investment
+		name = "DWLilith1150A"
+		set_character_flag = dw_blood_moon_ass_ale # Prevents this from running a second time
+		wealth = 15
+	}
+	option = { # I'd like to sample one of those cuties
+		trigger = {
+			OR = {
+				trait = lustful
+				has_focus = focus_seduction
+			}
+		}
+		name = "DWLilith1150B"
+		set_character_flag = dw_blood_moon_ass_ale # Prevents this from running a second time
+		wealth = 15
+		narrative_event = { id = DWLilith.1151 }
+	}
+}
+# .1151 Ass Ale event (host makes some unexpected cash)
+narrative_event = {
+	id = DWLilith.1151
+	picture = a_placeholder
+	title = dw_blood_moon_ass_ale
+	is_triggered_only = yes # Triggered by .1150
+	desc = {
+		trigger = {
+			trait = lilith
+		}
+		text = DWLilith1151s
+		picture = lilith_blood_moon_ass_ale_female1
+	}
+	desc = {
+		trigger = {
+			trait = incubus
+		}
+		text = DWLilith1151i
+		picture = lilith_blood_moon_ass_ale_male1
+	}
+	option = { # Now that was satisfying
+		name = "DWLilith1151A"
+		if = {
+			limit = {
+				trait = stressed
+			}
+			random = {
+				chance = 50 # 50% to remove the Stressed trait
+				remove_trait = stressed
+			}
+		}
+		add_character_modifier = {
+			name = dw_good_sex
+			duration = 60 # duration is in days
+		}
+	}
+}
+# .1160 Lesbian Wine Tasting event (hidden - routing)
+character_event = {
+	id = DWLilith.1160
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Triggered by .1060
+	trigger = {
+		NOT = { has_character_flag = dw_blood_moon_lesbian_wine } # If we already processed this once, we want to avoid a repeat of the event
+		# We check to see if we've enough adult women folk in our court if things fall that far in the chain
+		any_courtier = {
+			count = 2
+			is_female = yes
+			has_character_flag = dw_attending_blood_moon
+			NOT = { age = 50 }
+			NOT = { trait = futa }
+		}
+	}
+	immediate = {
+		if = { # We first check if our host is a participant
+			limit = {
+				OR = {
+					trait = homosexual
+					trait = lustful
+					trait = hedonist
+				}
+				NOT = { trait = futa }
+				is_female = yes
+			}
+			random_courtier = { # We find another woman
+				limit = {
+					is_female = yes
+					has_character_flag = dw_attending_blood_moon
+					NOT = { age = 45 }
+					NOT = { trait = futa }
+				}
+				save_event_target_as = dw_lesbian_drinker
+			}
+			narrative_event = { id = DWLilith.1161 }
+			break = yes # Takes us out of the immediate block
+		}
+		if = { # If the host isn't, then we check for a female vassal
+			limit = {
+				any_vassal = {
+					is_female = yes
+					has_character_flag = dw_attending_blood_moon
+					NOT = { age = 50 }
+					NOT = { trait = futa }
+				}
+			}
+			random_vassal = {
+				limit = {
+					is_female = yes
+					has_character_flag = dw_attending_blood_moon
+					NOT = { age = 50 }
+					NOT = { trait = futa }
+				}
+				save_event_target_as = dw_lesbian_wine
+			}
+			random_courtier = { # We find another woman
+				limit = {
+					is_female = yes
+					has_character_flag = dw_attending_blood_moon
+					NOT = { age = 50 }
+					NOT = { trait = futa }
+				}
+				save_event_target_as = dw_lesbian_drinker
+			}
+			narrative_event = { id = DWLilith.1163 }
+			break = yes # Takes us out of the immediate block
+		}
+		if = { # If a vassal isn't then we check for a courtier
+			limit = {
+				any_courtier = {
+					is_female = yes
+					has_character_flag = dw_attending_blood_moon
+					NOT = { age = 50 }
+					NOT = { trait = futa }
+				}
+			}
+			random_courtier = {
+				limit = {
+					is_female = yes
+					has_character_flag = dw_attending_blood_moon
+					NOT = { age = 50 }
+					NOT = { trait = futa }
+				}
+				save_event_target_as = dw_lesbian_wine
+				set_character_flag = dw_lesbian_wine
+			}
+			random_courtier = { # We find another woman
+				limit = {
+					is_female = yes
+					has_character_flag = dw_attending_blood_moon
+					NOT = { has_character_flag = dw_lesbian_wine }
+					NOT = { age = 50 }
+					NOT = { trait = futa }
+				}
+				save_event_target_as = dw_lesbian_drinker
+			}
+			narrative_event = { id = DWLilith.1163 }
+			break = yes # Takes us out of the immediate block
+		}
+	}
+}
+# .1161 Lesbian Wine Drinking event (host)
+narrative_event = {
+	id = DWLilith.1161
+	desc = "DWLilith1161"
+	picture = lilith_blood_moon_lesbian_wine
+	title = dw_blood_moon_lesbian_wine
+	is_triggered_only = yes # Triggered by .1160
+	option = {
+		name = "DWLilith1161A"
+		set_character_flag = dw_blood_moon_lesbian_wine # Prevents this from running a second time
+		add_character_modifier = {
+			name = dw_good_sex
+			duration = 60 # duration is in days
+		}
+		event_target:dw_lesbian_drinker = {
+			add_character_modifier = {
+				name = dw_good_sex
+				duration = 60 # duration is in days
+			}
+			random = {
+				chance = 25 # 25% chance
+				add_trait = homosexual
+				add_lover = ROOT
+			}
+		}
+		tooltip = {
+			# Certain guests impressed by the wine drinker's skill
+			any_vassal = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_lesbian_drinker = { character = yes }}
+					OR = {
+						trait = hedonist
+						trait = lustful
+						trait = homosexual
+						trait = gluttonous
+					}
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = ROOT
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_lesbian_drinker
+				}
+			}
+			any_courtier = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_lesbian_drinker = { character = yes }}
+					OR = {
+						trait = hedonist
+						trait = lustful
+						trait = homosexual
+						trait = gluttonous
+					}
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_lesbian_drinker
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = ROOT
+				}
+			}
+		}
+	}
+}
+# .1163 Lesbian Wine Drinking event (host)
+narrative_event = {
+	id = DWLilith.1163
+	desc = "DWLilith1163"
+	picture = lilith_blood_moon_lesbian_wine
+	title = dw_blood_moon_lesbian_wine
+	is_triggered_only = yes # Triggered by .1160
+	option = {
+		name = "DWLilith1163A"
+		set_character_flag = dw_blood_moon_lesbian_wine # Prevents this from running a second time
+		event_target:dw_lesbian_drinker = {
+			add_character_modifier = {
+				name = dw_good_sex
+				duration = 60 # duration is in days
+			}
+			random = {
+				chance = 50 # 50% chance
+				add_trait = homosexual
+				add_lover = event_target:dw_lesbian_wine
+			}
+		}
+		event_target:dw_lesbian_wine = {
+			add_character_modifier = {
+				name = dw_good_sex
+				duration = 60 # duration is in days
+			}
+			random = {
+				chance = 50 # 50% chance
+				add_trait = homosexual
+				add_lover = event_target:dw_lesbian_drinker
+			}
+		}
+		tooltip = {
+			# Certain guests and the host are impressed by the lesbians
+			if = {
+				limit = {
+					OR = {
+						trait = hedonist
+						trait = lustful
+						trait = homosexual
+						trait = gluttonous
+					}
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_lesbian_drinker
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_lesbian_wine
+				}
+			}
+			any_vassal = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_lesbian_drinker = { character = yes }}
+					OR = {
+						trait = hedonist
+						trait = lustful
+						trait = homosexual
+						trait = gluttonous
+					}
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_lesbian_drinker
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_lesbian_wine
+				}
+			}
+			any_courtier = {
+				limit = {
+					has_character_flag = dw_attending_blood_moon
+					NOT = { character = ROOT }
+					NOT = { event_target:dw_lesbian_drinker = { character = yes }}
+					OR = {
+						trait = hedonist
+						trait = lustful
+						trait = homosexual
+						trait = gluttonous
+					}
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_lesbian_drinker
+				}
+				opinion = {
+					modifier = dw_blood_moon_impressed
+					who = event_target:dw_lesbian_wine
+				}
+			}
+		}
+	}
+}
+# .1170 Intimate Dinner Art
+narrative_event = {
+	id = DWLilith.1170
+	desc = DWLilith1170
+	picture = lilith_blood_moon_intimate_art
+	title = dw_blood_moon_intimate_art
+	is_triggered_only = yes # Triggered by .1060
+	trigger = {
+		NOT = { has_character_flag = dw_blood_moon_intimate_art } # If we already processed this once, we want to avoid a repeat of the event
+	}
+	immediate = {
+		random_courtier = {
+			limit = {
+				has_character_flag = dw_attending_blood_moon
+			}
+			save_event_target_as = dw_blood_moon_art_aficionado
+		}
+	}
+	option = { # A display well appreciated
+		name = "DWLilith1170A"
+		set_character_flag = dw_blood_moon_intimate_art # Prevents this from running a second time
+		opinion = {
+			modifier = dw_opinion_appreciated_artwork
+			who = event_target:dw_blood_moon_art_aficionado
+		}
+		event_target:dw_blood_moon_art_aficionado = {
+			opinion = {
+				modifier = dw_opinion_patron_artwork
+				who = ROOT
+			}
+		}
+	}
+}
