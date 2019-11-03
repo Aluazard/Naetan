@@ -28,6 +28,7 @@
 tribal = {
 	dw_lilith_shrine = {
 		potential = {
+			has_game_started = yes
 			FROM = {
 				OR = {
 					trait = lilith
@@ -51,6 +52,7 @@ tribal = {
 	}
 	dw_lilith_shrine_outdoors_tribal = {
 		potential = {
+			has_game_started = yes
 			FROM = { # This is unique to the Chosen of Lilith Society.
 				has_character_flag = dw_build_chapel_lilith
 			}
@@ -68,6 +70,9 @@ tribal = {
 	}
 	dw_slave_pen_1 = {
 		desc = dw_slave_pen_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_CITY_CONSTRUCTION = 0 } # No special technology needs for a basic shrine
 		gold_cost = 25
@@ -81,6 +86,9 @@ tribal = {
 	}
 	dw_slave_pen_2 = {
 		desc = dw_slave_pen_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_CITY_CONSTRUCTION = 0 } # No special technology needs for a basic shrine
 		prerequisites = { tb_market_town_1 } # Larger slave pen needs a market town around it to support the business
@@ -99,6 +107,9 @@ tribal = {
 	}
 	dw_slave_pen_3 = {
 		desc = dw_slave_pen_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_CITY_CONSTRUCTION = 0 } # No special technology needs for a basic shrine
 		prerequisites = { tb_market_town_1 } # Larger slave pen needs a market town around it to support the business
@@ -117,6 +128,9 @@ tribal = {
 	}
 	dw_warrior_circle_1 = {
 		desc = dw_warrior_circle_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
 		#prerequisites = { tb_training_grounds_1 }
@@ -133,6 +147,9 @@ tribal = {
 	}
 	dw_warrior_circle_2 = {
 		desc = dw_warrior_circle_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
 		prerequisites = { tb_training_grounds_1 }
@@ -149,6 +166,9 @@ tribal = {
 	}
 	dw_warrior_circle_3 = {
 		desc = dw_warrior_circle_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
 		prerequisites = { tb_training_grounds_1 }
@@ -166,6 +186,9 @@ tribal = {
 	}
 	dw_mystic_hut = {
 		desc = dw_mystic_hut_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = no
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
 		gold_cost = 50
@@ -181,6 +204,9 @@ tribal = {
 	}
 	dw_exotic_bazaar = {
 		desc = dw_exotic_bazaar_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = no
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
 		prerequisites = { tb_market_town_1 }
@@ -196,6 +222,9 @@ tribal = {
 	}
 	dw_whore_pen_1 = {
 		desc = dw_whore_pen_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_CITY_CONSTRUCTION = 0 } # No special technology needs for a basic shrine
 		gold_cost = 25
@@ -210,6 +239,9 @@ tribal = {
 	}
 	dw_whore_pen_2 = {
 		desc = dw_whore_pen_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_CITY_CONSTRUCTION = 0 } # No special technology needs for a basic shrine
 		prerequisites = { tb_market_town_1 } # Larger whore pen needs a market town around it to support the business
@@ -229,6 +261,9 @@ tribal = {
 	}
 	dw_whore_pen_3 = {
 		desc = dw_whore_pen_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_CITY_CONSTRUCTION = 0 } # No special technology needs for a basic shrine
 		prerequisites = { tb_market_town_1 } # Larger whore pen needs a market town around it to support the business

@@ -1,19 +1,45 @@
 namespace = n_population
 
-province_event = { #Assign
+character_event = { #Assign
 	id = n_population.01
 	is_triggered_only = yes
 	hide_window = yes
-	
 	trigger = {
-		NOT = { has_province_flag = has_population_modifier }
+		any_realm_province = {
+			NOT = { has_province_flag = has_population_modifier }
+		}
 	}
 	
 	immediate = {
-		root = {
-			add_province_modifier = { name = nua_population_1 duration = -1 }
+		any_realm_province = {
+			THIS = {
+				if = {
+					limit = {
+						OR = {
+							culture = crytan
+							culture = kalleon
+							culture = belfast
+							culture = alanis
+							culture = tocharian
+							culture = nuan
+						}
+					}
+					add_province_modifier = { name = nua_population_1 duration = -1 }
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = leshanka
+							culture = kvanka
+							culture = ulkhu
+							culture = phroko
+						}
+					}
+					add_province_modifier = { name = leshnik_population_1 duration = -1 }
+				}
+				set_province_flag = has_population_modifier
+			}
 		}
-		set_province_flag = has_population_modifier
 	}
 }
 
@@ -23,8 +49,83 @@ character_event = { #Assign
 	hide_window = yes
 	
 	immediate = {
-		root = {
-			
+		49 = {
+			add_province_modifier = { name = nua_population_8 duration = -1 }
+			remove_province_modifier = nua_population_1
+			remove_province_modifier = nua_population_2
+			remove_province_modifier = nua_population_3
+			remove_province_modifier = nua_population_4
+			remove_province_modifier = nua_population_5
+			remove_province_modifier = nua_population_6
+			remove_province_modifier = nua_population_7
+			remove_province_modifier = nua_population_9
+			remove_province_modifier = nua_population_10
+			set_province_flag = has_population_modifier
+		}
+		93 = {
+			add_province_modifier = { name = nua_population_5 duration = -1 }
+			remove_province_modifier = nua_population_1
+			remove_province_modifier = nua_population_2
+			remove_province_modifier = nua_population_3
+			remove_province_modifier = nua_population_4
+			remove_province_modifier = nua_population_8
+			remove_province_modifier = nua_population_6
+			remove_province_modifier = nua_population_7
+			remove_province_modifier = nua_population_9
+			remove_province_modifier = nua_population_10
+			set_province_flag = has_population_modifier
+		}
+		386 = {
+			add_province_modifier = { name = nua_population_10 duration = -1 }
+			remove_province_modifier = nua_population_1
+			remove_province_modifier = nua_population_2
+			remove_province_modifier = nua_population_3
+			remove_province_modifier = nua_population_4
+			remove_province_modifier = nua_population_5
+			remove_province_modifier = nua_population_6
+			remove_province_modifier = nua_population_7
+			remove_province_modifier = nua_population_9
+			remove_province_modifier = nua_population_8
+			set_province_flag = has_population_modifier
+		}
+		94 = {
+			add_province_modifier = { name = nua_population_7 duration = -1 }
+			remove_province_modifier = nua_population_1
+			remove_province_modifier = nua_population_2
+			remove_province_modifier = nua_population_3
+			remove_province_modifier = nua_population_4
+			remove_province_modifier = nua_population_5
+			remove_province_modifier = nua_population_6
+			remove_province_modifier = nua_population_8
+			remove_province_modifier = nua_population_9
+			remove_province_modifier = nua_population_10
+			set_province_flag = has_population_modifier
+		}
+		186 = {
+			add_province_modifier = { name = nua_population_7 duration = -1 }
+			remove_province_modifier = nua_population_1
+			remove_province_modifier = nua_population_2
+			remove_province_modifier = nua_population_3
+			remove_province_modifier = nua_population_4
+			remove_province_modifier = nua_population_5
+			remove_province_modifier = nua_population_6
+			remove_province_modifier = nua_population_8
+			remove_province_modifier = nua_population_9
+			remove_province_modifier = nua_population_10
+			set_province_flag = has_population_modifier
+		}
+		8 = {
+			add_province_modifier = { name = leshnik_population_10 duration = -1 }
+			remove_province_modifier = leshnik_population_1
+			remove_province_modifier = leshnik_population_2
+			remove_province_modifier = leshnik_population_3
+			remove_province_modifier = leshnik_population_4
+			remove_province_modifier = leshnik_population_5
+			remove_province_modifier = leshnik_population_6
+			remove_province_modifier = leshnik_population_7
+			remove_province_modifier = leshnik_population_9
+			remove_province_modifier = leshnik_population_8
+			set_province_flag = has_population_modifier
 		}
 	}
 }

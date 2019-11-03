@@ -3,9 +3,6 @@ on_startup = {
 	events = {
 		DWCore.1 # Sets the global value of Dark_World_Reborn_Present for mods that want to verify Dark World Reborn is present
 		DWCore.30 #Virgin trait assignment
-		DWFairyTales.90 # Handles the random seeding of some NPC's
-		DWLilith.5 # Creates Mother Lilith and places her over the offmap power
-		DWMana.5 # Creates the Wellspring and places it over the offmap power
 	}
 }
 
@@ -19,8 +16,6 @@ on_chronicle_start = {
 on_yearly_pulse = {
 	events = {
 		DWCore.39 #Virgin trait assignment revisited to see if anyone needs to lose it
-		DWNight.1000 #Fenris appears in a random realm that isn't the player's (hopefully)
-		DWWerewolf.1 # Check to see if the beast forces those who hear its whispers to act.
 		DWWhoring.1009 # Old whores retire
 		DWNight.4999 # Vampire's lose a point of health due to the cost of the power required to continue to fuel their existence.
 	}
@@ -41,8 +36,6 @@ on_bi_yearly_pulse = {
 #character
 on_five_year_pulse = {
 	random_events = {
-		50 = DWNight.1100 # Female Ruler may be visited by Fenris
-		100 = DWCourt.300 # Bordello Improvement Event Chain
 		100 = DWCourt.3100 # Marshall has a morale building idea
 		100 = DWFuta.100 #Futa merchant event
 	}
@@ -50,11 +43,6 @@ on_five_year_pulse = {
 
 # character
 on_decade_pulse = {
-	random_events = {
-		100 = DWNight.4000 # Player hunted by a vampire
-		100 = DWNight.4800 # Introducing Vampirella, Daughter of Lilith
-		100 = DWNight.5500 # Introducing Bloodrayne
-	}
 }
 
 # character

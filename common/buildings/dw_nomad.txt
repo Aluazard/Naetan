@@ -8,6 +8,9 @@ nomad = {
 	#Slave Wagon
 	dw_slave_wagon_1 = {
 		desc = dw_slave_wagon_desc
+		potential = {
+			has_game_started = yes
+		}
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 0 } }
 		prerequisites = { no_cattle_pens_1 }
 		gold_cost = 20
@@ -20,6 +23,9 @@ nomad = {
 	}
 	dw_slave_wagon_2 = {
 		desc = dw_slave_wagon_desc
+		potential = {
+			has_game_started = yes
+		}
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 0 } }
 		prerequisites = { no_cattle_pens_2 }
 		upgrades_from = dw_slave_wagon_1
@@ -33,6 +39,9 @@ nomad = {
 	}
 	dw_slave_wagon_3 = {
 		desc = dw_slave_wagon_desc
+		potential = {
+			has_game_started = yes
+		}
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 1 } }
 		prerequisites = { no_cattle_pens_3 }
 		upgrades_from = dw_slave_wagon_2
@@ -49,6 +58,9 @@ nomad = {
 	}
 	dw_slave_wagon_4 = {
 		desc = dw_slave_wagon_desc
+		potential = {
+			has_game_started = yes
+		}
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 2 } }
 		prerequisites = { no_cattle_pens_4 }
 		upgrades_from = dw_slave_wagon_3
@@ -65,6 +77,9 @@ nomad = {
 	}
 	dw_slave_wagon_5 = {
 		desc = dw_slave_wagon_desc
+		potential = {
+			has_game_started = yes
+		}
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 2 } }
 		prerequisites = { no_cattle_pens_5 }
 		upgrades_from = dw_slave_wagon_4
@@ -82,6 +97,9 @@ nomad = {
 	# Herbalist Wagon
 	dw_herbalist_wagon = {
 		desc = dw_herbalist_wagon_desc
+		potential = {
+			has_game_started = yes
+		}
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 0 } }
 		prerequisites = { no_cattle_pens_1 }
 		gold_cost = 50
@@ -97,6 +115,9 @@ nomad = {
 	# Morale Wagon
 	dw_morale_wagon_1 = {
 		desc = dw_morale_wagon_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { no_cattle_pens_1 }
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 0 } }
@@ -109,6 +130,9 @@ nomad = {
 	}
 	dw_morale_wagon_2 = {
 		desc = dw_morale_wagon_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { no_cattle_pens_1 }
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 0 } }
@@ -122,6 +146,9 @@ nomad = {
 	}
 	dw_morale_wagon_3 = {
 		desc = dw_morale_wagon_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { no_cattle_pens_1 }
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 0 } }
@@ -138,6 +165,9 @@ nomad = {
 	}
 	dw_morale_wagon_4 = {
 		desc = dw_morale_wagon_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { no_cattle_pens_1 }
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 0 } }
@@ -154,6 +184,9 @@ nomad = {
 	}
 	dw_morale_wagon_5 = {
 		desc = dw_morale_wagon_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { no_cattle_pens_1 }
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 0 } }
@@ -171,6 +204,7 @@ nomad = {
 	## Mobile Shine to Lilith
 	dw_lilith_shrine_wagon = {
 		potential = {
+			has_game_started = yes
 			FROM = {
 				OR = {
 					trait = lilith
@@ -193,6 +227,7 @@ nomad = {
 	}
 	dw_lilith_shrine_outdoors = {
 		potential = {
+			has_game_started = yes
 			FROM = { # This is unique to the Chosen of Lilith Society.
 				has_character_flag = dw_build_chapel_lilith
 			}
@@ -212,6 +247,9 @@ nomad = {
 	## Exotic Curio Collector
 	dw_exotic_collector = {
 		desc = dw_exotic_collector_desc
+		potential = {
+			has_game_started = yes
+		}
 		trigger = { 
 			FROM = { TECH_CITY_CONSTRUCTION = 0 }
 			location = { 

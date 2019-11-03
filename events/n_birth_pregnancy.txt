@@ -1,0 +1,163 @@
+namespace = n_birth_pregnancy
+
+character_event = {
+	id = n_birth_pregnancy.001
+	title = n_interracial_marriage1
+	desc = EVTDESCBP001
+
+	trigger = {
+		NOT = { has_character_flag = has_interspecies_spouse }
+		OR = {
+			FROM = {
+				OR = {
+					trait = leshnik
+					trait = leshnik_1
+					trait = leshnik_2
+					trait = leshnik_3
+					trait = leshnik_4
+					trait = leshnik_5
+				}
+				AND = {
+					new_character = {
+							OR = {
+								trait = nua
+								trait = nua_1
+								trait = nua_2
+								trait = nua_3
+								trait = nua_4
+								trait = nua_5
+							}
+					}
+				}
+			}
+			new_character = {
+				OR = {
+					trait = leshnik
+					trait = leshnik_1
+					trait = leshnik_2
+					trait = leshnik_3
+					trait = leshnik_4
+					trait = leshnik_5
+				}
+				AND = {
+					FROM = {
+							OR = {
+								trait = nua
+								trait = nua_1
+								trait = nua_2
+								trait = nua_3
+								trait = nua_4
+								trait = nua_5
+							}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBP001A"
+		spouse = {
+			remove_spouse = spouse
+		}
+		ai_chance = { factor = 95 }
+	}
+	option = {
+		name = "EVTOPTBP001B"
+		trigger = {
+			OR = {
+				trait = nua
+				trait = nua_1
+				trait = nua_2
+				trait = nua_3
+				trait = nua_4
+				trait = nua_5
+			}
+		}
+		add_character_modifier = { 
+			name = n_interracial_marriage 
+			duration = -1
+		}
+		ai_chance = { factor = 5 }
+		set_character_flag = has_interspecies_spouse
+	}
+	option = {
+		name = "EVTOPTBP001C"
+		trigger = {
+			OR = {
+				trait = leshnik
+				trait = leshnik_1
+				trait = leshnik_2
+				trait = leshnik_3
+				trait = leshnik_4
+				trait = leshnik_5
+			}
+		}
+		ai_chance = { factor = 5 }
+		set_character_flag = has_interspecies_spouse
+	}
+}
+
+character_event = {
+	id = n_birth_pregnancy.002
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				father_even_if_dead = {
+					OR = {
+						trait = nua
+						trait = nua_1
+						trait = nua_2
+						trait = nua_3
+						trait = nua_4
+						trait = nua_5
+					}
+				}
+				mother_even_if_dead = {
+					NOT = {
+						OR = {
+							trait = leshnik
+							trait = leshnik_1
+							trait = leshnik_2
+							trait = leshnik_3
+							trait = leshnik_4
+							trait = leshnik_5
+						}
+					}
+				}
+			}
+			AND = {
+				mother_even_if_dead = {
+					OR = {
+						trait = nua
+						trait = nua_1
+						trait = nua_2
+						trait = nua_3
+						trait = nua_4
+						trait = nua_5
+					}
+				}
+				father_even_if_dead = {
+					NOT = {
+						OR = {
+							trait = leshnik
+							trait = leshnik_1
+							trait = leshnik_2
+							trait = leshnik_3
+							trait = leshnik_4
+							trait = leshnik_5
+						}
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}

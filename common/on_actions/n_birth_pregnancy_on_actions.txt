@@ -1,0 +1,11 @@
+on_marriage = {
+	events = {
+		n_birth_pregnancy.001
+	}
+}
+
+on_post_birth = {
+	events = {
+		n_birth_pregnancy.002
+	}
+}

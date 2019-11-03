@@ -1,9 +1,164 @@
 # Population Modifiers for levy and morale
-
+# Nua Pop
 nua_population_1 = {
+	local_tax_modifier = 0
 	land_morale = -0.25
 	land_organisation = -0.25
 	levy_size = 0.25
 	levy_reinforce_rate = 0.25
+	icon = 69
+}
+nua_population_2 = {
+	local_tax_modifier = 0.10
+	land_morale = -0.25
+	land_organisation = -0.25
+	levy_size = 0.30
+	levy_reinforce_rate = 0.30
+	icon = 69
+}
+nua_population_3 = {
+	local_tax_modifier = 0.20
+	land_morale = -0.25
+	land_organisation = -0.25
+	levy_size = 0.40
+	levy_reinforce_rate = 0.40
+	icon = 69
+}
+nua_population_4 = {
+	local_tax_modifier = 0.30
+	land_morale = -0.25
+	land_organisation = -0.25
+	levy_size = 0.45
+	levy_reinforce_rate = 0.45
+	icon = 69
+}
+nua_population_5 = {
+	local_tax_modifier = 0.40
+	land_morale = -0.25
+	land_organisation = -0.25
+	levy_size = 0.50
+	levy_reinforce_rate = 0.50
+	icon = 69
+}
+nua_population_6 = {
+	local_tax_modifier = 0.50
+	land_morale = -0.25
+	land_organisation = -0.25
+	levy_size = 0.55
+	levy_reinforce_rate = 0.55
+	icon = 69
+}
+nua_population_7 = {
+	local_tax_modifier = 0.60
+	land_morale = -0.25
+	land_organisation = -0.25
+	levy_size = 0.60
+	levy_reinforce_rate = 0.60
+	icon = 69
+}
+nua_population_8 = {
+	local_tax_modifier = 0.70
+	land_morale = -0.25
+	land_organisation = -0.25
+	levy_size = 0.70
+	levy_reinforce_rate = 0.70
+	icon = 69
+}
+nua_population_9 = {
+	local_tax_modifier = 0.80
+	land_morale = -0.25
+	land_organisation = -0.25
+	levy_size = 0.80
+	levy_reinforce_rate = 0.80
+	icon = 69
+}
+nua_population_10 = {
+	local_tax_modifier = 1
+	land_morale = -0.25
+	land_organisation = -0.25
+	levy_size = 1
+	levy_reinforce_rate = 1
+	icon = 69
+}
+
+# Leshnik Pop
+leshnik_population_1 = {
+	local_tax_modifier = 0
+	land_morale = 0.50
+	land_organisation = 0.50
+	levy_size = -0.25
+	levy_reinforce_rate = -0.25
+	icon = 69
+}
+leshnik_population_2 = {
+	local_tax_modifier = 0.10
+	land_morale = 0.50
+	land_organisation = 0.50
+	levy_size = -0.15
+	levy_reinforce_rate = -0.15
+	icon = 69
+}
+leshnik_population_3 = {
+	local_tax_modifier = 0.20
+	land_morale = 0.50
+	land_organisation = 0.50
+	levy_size = -0.10
+	levy_reinforce_rate = -0.10
+	icon = 69
+}
+leshnik_population_4 = {
+	local_tax_modifier = 0.30
+	land_morale = 0.50
+	land_organisation = 0.50
+	levy_size = -0.05
+	levy_reinforce_rate = -0.05
+	icon = 69
+}
+leshnik_population_5 = {
+	local_tax_modifier = 0.40
+	land_morale = 0.50
+	land_organisation = 0.50
+	levy_size = 0
+	levy_reinforce_rate = 0
+	icon = 69
+}
+leshnik_population_6 = {
+	local_tax_modifier = 0.50
+	land_morale = 0.50
+	land_organisation = 0.50
+	levy_size = 0.05
+	levy_reinforce_rate = 0.05
+	icon = 69
+}
+leshnik_population_7 = {
+	local_tax_modifier = 0.60
+	land_morale = 0.50
+	land_organisation = 0.50
+	levy_size = 0.10
+	levy_reinforce_rate = 0.10
+	icon = 69
+}
+leshnik_population_8 = {
+	local_tax_modifier = 0.70
+	land_morale = 0.50
+	land_organisation = 0.50
+	levy_size = 0.15
+	levy_reinforce_rate = 0.15
+	icon = 69
+}
+leshnik_population_9 = {
+	local_tax_modifier = 0.80
+	land_morale = 0.50
+	land_organisation = 0.50
+	levy_size = 0.20
+	levy_reinforce_rate = 0.20
+	icon = 69
+}
+leshnik_population_10 = {
+	local_tax_modifier = 1
+	land_morale = 0.50
+	land_organisation = 0.50
+	levy_size = 0.35
+	levy_reinforce_rate = 0.35
 	icon = 69
 }

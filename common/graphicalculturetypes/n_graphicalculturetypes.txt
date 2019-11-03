@@ -1,6 +1,6 @@
-nuagfx = {
-	skin_tone = 0
-}
+# nuagfx = {
+# 	skin_tone = 0
+# }
 
 leshnikgfx = {
 	skin_tone = 0

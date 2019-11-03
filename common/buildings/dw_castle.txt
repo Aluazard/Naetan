@@ -30,6 +30,9 @@
 castle = {
 	dw_slave_dungeon_1 = {
 		desc = dw_slave_dungeon_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		gold_cost = 200
@@ -40,6 +43,9 @@ castle = {
 	}
 	dw_slave_dungeon_2 = {
 		desc = dw_slave_dungeon_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = dw_slave_dungeon_1
@@ -51,6 +57,9 @@ castle = {
 	}
 	dw_slave_dungeon_3 = {
 		desc = dw_slave_dungeon_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = dw_slave_dungeon_2
@@ -62,6 +71,9 @@ castle = {
 	}
 	dw_brothel_1 = { #Inspired by / converted from nadamod
 		desc = dw_brothel_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		#prerequisites = { ca_town_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -75,6 +87,9 @@ castle = {
 	}
 	dw_brothel_2 = {
 		desc = dw_brothel_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { ca_town_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -88,6 +103,9 @@ castle = {
 	}
 	dw_brothel_3 = {
 		desc = dw_brothel_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { ca_town_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -101,6 +119,9 @@ castle = {
 	}
 	dw_arena_1 = {
 		desc = dw_arena_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 }
 		gold_cost = 200
@@ -113,6 +134,9 @@ castle = {
 	}
 	dw_arena_2 = {
 		desc = dw_arena_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 }
 		upgrades_from = dw_arena_1
@@ -125,6 +149,9 @@ castle = {
 	}
 	dw_arena_3 = {
 		desc = dw_arena_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 }
 		upgrades_from = dw_arena_2
@@ -137,6 +164,9 @@ castle = {
 	}
 	dw_alchemist_den_1 = {
 		desc = dw_alchemist_shop_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = no
 		prerequisites = { ca_town_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -148,6 +178,9 @@ castle = {
 	}
 	dw_alchemist_den_2 = {
 		desc = dw_alchemist_shop_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = no
 		prerequisites = { ca_town_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -160,6 +193,9 @@ castle = {
 	}
 	dw_alchemist_den_3 = {
 		desc = dw_alchemist_shop_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = no
 		prerequisites = { ca_town_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -172,6 +208,9 @@ castle = {
 	}
 	dw_wizard_tower_1 = {
 		desc = dw_wizard_tower_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		gold_cost = 300
@@ -182,6 +221,9 @@ castle = {
 	}
 	dw_wizard_tower_2 = {
 		desc = dw_wizard_tower_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = dw_wizard_tower_1
@@ -194,6 +236,9 @@ castle = {
 	}
 	dw_wizard_tower_3 = {
 		desc = dw_wizard_tower_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = dw_wizard_tower_2
@@ -206,6 +251,7 @@ castle = {
 	}
 	dw_chapel_lilith = {
 		potential = {
+			has_game_started = yes
 			has_heaven_hell_content = yes
 			FROM = {
 				OR = {
@@ -225,6 +271,7 @@ castle = {
 	}
 	dw_lilith_shrine_outdoors_feudal = {
 		potential = {
+			has_game_started = yes
 			FROM = { # This is unique to the Chosen of Lilith Society.
 				has_character_flag = dw_build_chapel_lilith
 			}

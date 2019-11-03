@@ -1,0 +1,4 @@
+n_interracial_marriage = {
+	icon = 40
+	general_opinion = -20
+}

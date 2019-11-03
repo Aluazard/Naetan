@@ -4,6 +4,7 @@
 family_palace = {
 	dw_lilith_temple = {
 		potential = {
+			has_game_started = yes
 			FROM = {
 				OR = {
 					trait = lilith

@@ -5,6 +5,7 @@ trade_post = {
 
 	dw_slave_port_1 = {
 		potential = {
+			has_game_started = yes
 			port = yes
 			FROM = {
 				is_patrician = yes
@@ -24,6 +25,7 @@ trade_post = {
 	
 	dw_slave_port_2 = {
 		potential = {
+			has_game_started = yes
 			port = yes
 			FROM = {
 				is_patrician = yes
@@ -44,6 +46,7 @@ trade_post = {
 	
 	dw_slave_port_3 = {
 		potential = {
+			has_game_started = yes
 			port = yes
 			FROM = {
 				is_patrician = yes
@@ -63,6 +66,9 @@ trade_post = {
 	}	
 	dw_exotic_warehouse_1 = {
 		desc = dw_exotic_warehouse_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_TRADE_PRACTICES = 1 }
 		gold_cost = 200
@@ -73,6 +79,9 @@ trade_post = {
 	}
 	dw_exotic_warehouse_2 = {
 		desc = dw_exotic_warehouse_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_TRADE_PRACTICES = 1 }
 		upgrades_from = dw_exotic_warehouse_1
@@ -85,6 +94,9 @@ trade_post = {
 	}
 	dw_exotic_warehouse_3 = {
 		desc = dw_exotic_warehouse_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_TRADE_PRACTICES = 1 }
 		upgrades_from = dw_exotic_warehouse_2

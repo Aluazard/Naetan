@@ -30,6 +30,9 @@
 city = {
 	dw_assassins_guild_1 = {
 		desc = dw_assassins_guild_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes		
 		trigger = { TECH_CITY_CONSTRUCTION = 1 }
 		gold_cost = 400
@@ -40,6 +43,9 @@ city = {
 	}
 	dw_assassins_guild_2 = {
 		desc = dw_assassins_guild_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes		
 		trigger = { TECH_CITY_CONSTRUCTION = 2 }
 		upgrades_from = dw_assassins_guild_1
@@ -52,6 +58,9 @@ city = {
 	}
 	dw_assassins_guild_3 = {
 		desc = dw_assassins_guild_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes		
 		trigger = { TECH_CITY_CONSTRUCTION = 2 }
 		upgrades_from = dw_assassins_guild_2
@@ -64,6 +73,9 @@ city = {
 	}
 	dw_slave_market_1 = {
 		desc = dw_slave_market_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes		
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -75,6 +87,9 @@ city = {
 	}
 	dw_slave_market_2 = {
 		desc = dw_slave_market_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes		
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -87,6 +102,9 @@ city = {
 	}
 	dw_slave_market_3 = {
 		desc = dw_slave_market_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes		
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -99,6 +117,9 @@ city = {
 	}
 	dw_redlight_district_1 = {
 		desc = dw_redlight_district_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -111,6 +132,9 @@ city = {
 	}
 	dw_redlight_district_2 = {
 		desc = dw_redlight_district_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -124,6 +148,9 @@ city = {
 	}
 	dw_redlight_district_3 = {
 		desc = dw_redlight_district_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -137,6 +164,9 @@ city = {
 	}
 	dw_coliseum_1 = {
 		desc = dw_coliseum_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
 		gold_cost = 400
@@ -148,6 +178,9 @@ city = {
 	}
 	dw_coliseum_2 = {
 		desc = dw_coliseum_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
 		upgrades_from = dw_coliseum_1
@@ -160,6 +193,9 @@ city = {
 	}
 	dw_coliseum_3 = {
 		desc = dw_coliseum_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
 		upgrades_from = dw_coliseum_2
@@ -173,6 +209,9 @@ city = {
 	}
 	dw_exotic_emporium_1 = {
 		desc = dw_exotic_emporium_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 1 }
@@ -184,6 +223,9 @@ city = {
 	}
 	dw_exotic_emporium_2 = {
 		desc = dw_exotic_emporium_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 1 }
@@ -197,6 +239,9 @@ city = {
 	}
 	dw_exotic_emporium_3 = {
 		desc = dw_exotic_emporium_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 1 }
@@ -210,6 +255,9 @@ city = {
 	}
 	dw_alchemist_shop_1 = {
 		desc = dw_alchemist_shop_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = no
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 1 }
@@ -221,6 +269,9 @@ city = {
 	}
 	dw_alchemist_shop_2 = {
 		desc = dw_alchemist_shop_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = no
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 1 }
@@ -234,6 +285,9 @@ city = {
 	}
 	dw_alchemist_shop_3 = {
 		desc = dw_alchemist_shop_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = no
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 1 }
@@ -247,6 +301,9 @@ city = {
 	}
 	dw_craftsmen_guild_1 = {
 		desc = dw_craftsmen_guild_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 1 }
@@ -258,6 +315,9 @@ city = {
 	}
 	dw_craftsmen_guild_2 = {
 		desc = dw_craftsmen_guild_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 1 }
@@ -271,6 +331,9 @@ city = {
 	}
 	dw_craftsmen_guild_3 = {
 		desc = dw_craftsmen_guild_desc
+		potential = {
+			has_game_started = yes
+		}
 		add_number_to_name = yes
 		prerequisites = { ct_marketplace_1 }
 		trigger = { TECH_CITY_CONSTRUCTION = 1 }

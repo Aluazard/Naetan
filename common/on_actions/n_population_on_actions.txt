@@ -1,5 +1,6 @@
 on_startup = {
 	events = {
+		n_population.02
 		n_population.01
 	}
 }
@@ -7,6 +8,7 @@ on_startup = {
 # Fires for the player when the game starts
 on_chronicle_start = {
 	events = {
+		n_population.02
 		n_population.01
 	}
 }
