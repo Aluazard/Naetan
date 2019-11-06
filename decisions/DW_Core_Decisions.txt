@@ -1,29 +1,9 @@
 ### Decisions intended to be used with any Dark World Mod
-decisions = {
-	# Bonus Trait Decision - Futa / Trap
-	dw_bonus_trait_decision_futa = {
-		potential = {
-			ai = no # Only the player should ever see this
-			has_game_rule = { name = dw_bonus_trait value = dw_yes_bonus_futa }
-			has_used_bonus = no
-		}
-		allow = {
-			always = yes # It should always be displayed if it is relevant
-		}
-		effect = {
-			set_global_flag = dw_bonus_used
-			character_event = { id = DWFuta.10 }
-		}
-		ai_will_do = {
-			factor = 0 # Zero chance the ai uses this
-		}
-	}
-}
 targetted_decisions = {
 	## Allows a player to visit their lover, spouse, or consort
 	dw_spend_time_with = {
-		filter = all # For those lovers who are outside of our realm 
-		ai_target_filter = self # Doesn't really apply as the ai should not be using this
+		filter = all # For those lovers who are outside of our realm
+		ai_target_filter = none # Doesn't really apply as the ai should not be using this
 		from_potential = { # From is the person targeting the person to evoke the decision
 			ai = no # Player only
 			prisoner = no # Hard to visit while in a jail cell
@@ -51,10 +31,10 @@ targetted_decisions = {
 		}
 		effect = {
 			# Our initial check event for further routing
-			FROM = { character_event = { id = DWVisits.1 }}
+			FROM = { character_event = { id = dw_visits.01 }}
 			# Only one visit per month, just to keep things reasonable, sets on the target
 			set_character_flag = dw_visit_recovery
-			character_event = { id = DWVisits.9999 days = 30}
+			character_event = { id = dw_visits.9999 days = 30}
 		}
 		ai_will_do = {
 			factor = 0 # ai shouldn't be doing this
@@ -96,7 +76,7 @@ targetted_decisions = {
 		from_potential = {
 			trait = immortal
 		}
-		
+
 		potential = {
 			trait = immortal
 		}
@@ -131,60 +111,6 @@ targetted_decisions = {
 				NOT = { age = 60 } # Let's ensure they live at least a few generations before considering throwing off their immortality
 				NOT = { trait = incapable } # And they shouldn't be incapable. If someone becomes incapable who is younger than 60, this will not apply, and the 100% one will.
 			}
-		}
-	}
-	## Apply a random trap image
-	dw_apply_random_trap_image = {
-		filter = court_including_me # Just in case a player wants to alter those inside their court
-		ai_target_filter = self # We only want the ai to target themselves, if they're ever allowed to do it.
-		ai = no # player only allowed right now
-		from_potential = {
-			# No specific requirements to use
-		}
-		potential = {
-			# The target must be a trap
-			trait = trap
-			# And they should not already have a portrait
-			NOT = { has_custom_portrait = yes }
-		}
-		allow = {
-			always = yes
-		}
-		effect = {
-			random_list = {
-				10 = { add_trait = portrait53 }
-				10 = { add_trait = portrait54 }
-				10 = { add_trait = portrait55 }
-				10 = { add_trait = portrait56 }
-				10 = { add_trait = portrait57 }
-				10 = { add_trait = portrait58 }
-				10 = { add_trait = portrait59 }
-			}
-		}
-		ai_will_do = {
-			factor = 100 # When the ai is allowed to do so, it will
-		}
-	}
-	## Remove a custom portrait
-	dw_remove_custom_portrait = {
-		filter = court_including_me # Just in case a player wants to alter those outside their court
-		ai_target_filter = self # self alteration only
-		ai = no # player only allowed right now
-		from_potential = {
-			# We have no specific requirements
-		}
-		potential = {
-			# They should already have a portrait
-			has_custom_portrait = yes
-		}
-		allow = {
-			always = yes
-		}
-		effect = {
-			remove_custom_portrait = yes
-		}
-		ai_will_do = {
-			factor = 0 # we don't want the ai removing portraits
 		}
 	}
 }

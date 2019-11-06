@@ -59,7 +59,7 @@ narrative_event = {
 	option = { # Give my chick a dick!
 		name = DWFuta15A
 		add_trait = futa
-		hidden_effect = { character_event = { id = DWCore.10 } } # to get a cock trait
+		hidden_effect = { character_event = { id = DWBody.10 } } # to get a cock trait
 	}
 	option = { # Changed my mind
 		name = DWFuta15B
@@ -166,9 +166,9 @@ narrative_event = {
 	desc = "DWFuta111"
 	picture = dwarfmale_female1
 	title = dw_caravan_madame
-	
+
 	is_triggered_only = yes # Triggered by .110
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -177,20 +177,18 @@ narrative_event = {
 			remove_trait = virgin
 		}
 	}
-	
+
 	option = { # Will buy off the contract and add them to my court
 		trigger = {
 			wealth = 10
 		}
 		name = "DWFuta111A"
 		wealth = -10
-		add_character_modifier = { name = dw_good_sex duration = 30 }
 		hidden_tooltip = { character_event = { id = DWFuta.118 }} # Creates a male dwarf and adds him to the player's court, plus a chance for pregnancy
 	}
 	option = { # Not buying off the contract
 		name = "DWFuta111B"
-		add_character_modifier = { name = dw_good_sex duration = 30 }
-		hidden_tooltip = { character_event = { id = DWCore.9010 }} # Chance ruler becomes pregnant from unknown man
+		hidden_tooltip = { character_event = { id = dw_visits.9020 }} # Chance ruler becomes pregnant from unknown man
 	}
 }
 # .113 Character has an opportunity to sleep with a dwarf (Male ruler fucks female)
@@ -199,9 +197,9 @@ narrative_event = {
 	desc = "DWFuta113"
 	picture = dwarffemale_male1
 	title = dw_caravan_madame
-	
+
 	is_triggered_only = yes # Triggered by .110
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -210,19 +208,17 @@ narrative_event = {
 			remove_trait = virgin
 		}
 	}
-	
+
 	option = { # Will buy off the contract and add them to my court
 		trigger = {
 			wealth = 10
 		}
 		name = "DWFuta113A"
 		wealth = -10
-		add_character_modifier = { name = dw_good_sex duration = 30 }
 		hidden_tooltip = { character_event = { id = DWFuta.119 }} # Creates a female dwarf, adds her to the player's court, plus a chance for pregnancy
 	}
 	option = { # Not buying off the contract
 		name = "DWFuta113B"
-		add_character_modifier = { name = dw_good_sex duration = 30 }
 	}
 }
 # .118 We create a male dwarf for the player's court and check for pregnancy
@@ -240,13 +236,13 @@ character_event = {
 			culture = random
 			health = 5.5
 			trait = dwarf
-			trait = big_dick
+			trait = dw_big_dick
 			trait = lustful
 		}
 		new_character = {
 			set_character_flag = dw_junk_checked
 			add_lover = ROOT
-			character_event = { id = DWCore.9005 } # Pregnancy check
+			character_event = { id = dw_visits.9010 } # Pregnancy check
 		}
 	}
 }
@@ -265,7 +261,7 @@ character_event = {
 			culture = random
 			health = 5.5
 			trait = dwarf
-			trait = big_tits
+			trait = dw_big_tits
 			trait = lustful
 		}
 		new_character = {
@@ -277,7 +273,7 @@ character_event = {
 				set_character_flag = nada_checked
 			}
 			add_lover = ROOT
-			character_event = { id = DWCore.9000 } # Pregnancy check
+			character_event = { id = dw_visits.9000 } # Pregnancy check
 		}
 	}
 }
@@ -290,7 +286,7 @@ narrative_event = {
 	is_triggered_only = yes # Triggered by .105
 	immediate = {
 		set_character_flag = dw_trap_fuck # Sets a flag to limit the trap event
-	}	
+	}
 	option = { # Male or futa
 		name = "DWFuta120A"
 		narrative_event = { id = DWFuta.121 }
@@ -305,9 +301,9 @@ narrative_event = {
 	desc = "DWFuta121"
 	picture = trap_pegging1
 	title = dw_caravan_madame
-	
+
 	is_triggered_only = yes # Triggered by .120
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -316,19 +312,17 @@ narrative_event = {
 			remove_trait = virgin
 		}
 	}
-	
+
 	option = { # Will buy off the contract and add them to my court
 		trigger = {
 			wealth = 10
 		}
 		name = "DWFuta121A"
 		wealth = -10
-		add_character_modifier = { name = dw_good_sex duration = 30 }
 		hidden_tooltip = { character_event = { id = DWFuta.129 }} # Creates a trap and adds him to the player's court
 	}
 	option = { # Not buying off the contract
 		name = "DWFuta121B"
-		add_character_modifier = { name = dw_good_sex duration = 30 }
 	}
 }
 # .129 We create a trap for the player's court
@@ -347,7 +341,7 @@ character_event = {
 			health = 4.0
 			trait = trap
 			trait = fair
-			trait = small_dick
+			trait = dw_small_dick
 			trait = lustful
 		}
 		new_character = {
@@ -399,9 +393,9 @@ narrative_event = {
 	desc = "DWFuta131"
 	picture = futa_pegsfemale1
 	title = dw_caravan_madame
-	
+
 	is_triggered_only = yes # Triggered by .130
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -410,20 +404,18 @@ narrative_event = {
 			remove_trait = virgin
 		}
 	}
-	
+
 	option = { # Will buy off the contract and add them to my court
 		trigger = {
 			wealth = 10
 		}
 		name = "DWFuta131A"
 		wealth = -10
-		add_character_modifier = { name = dw_good_sex duration = 30 }
 		hidden_tooltip = { character_event = { id = DWFuta.139 }} # Creates a futa and adds her to the player's court, plus a chance for pregnancy
 	}
 	option = { # Not buying off the contract
 		name = "DWFuta131B"
-		add_character_modifier = { name = dw_good_sex duration = 30 }
-		hidden_tooltip = { character_event = { id = DWCore.9010 }} # Chance ruler becomes pregnant from unknown futa
+		hidden_tooltip = { character_event = { id = dw_visits.9020 }} # Chance ruler becomes pregnant from unknown futa
 	}
 }
 # .133 Character has an opportunity to sleep with a dominate futa (Male ruler sucks the futa)
@@ -432,9 +424,9 @@ narrative_event = {
 	desc = "DWFuta133"
 	picture = futa_suckedbymale1
 	title = dw_caravan_madame
-	
+
 	is_triggered_only = yes # Triggered by .130
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -443,19 +435,17 @@ narrative_event = {
 			remove_trait = virgin
 		}
 	}
-	
+
 	option = { # Will buy off the contract and add them to my court
 		trigger = {
 			wealth = 10
 		}
 		name = "DWFuta133A"
 		wealth = -10
-		add_character_modifier = { name = dw_good_sex duration = 30 }
 		hidden_tooltip = { character_event = { id = DWFuta.139 }} # Creates a futa, adds her to the player's court
 	}
 	option = { # Not buying off the contract
 		name = "DWFuta133B"
-		add_character_modifier = { name = dw_good_sex duration = 30 }
 	}
 }
 # .135 Character has an opportunity to sleep with a dominate futa (futa ruler fucked by futa)
@@ -464,9 +454,9 @@ narrative_event = {
 	desc = "DWFuta135"
 	picture = futa_pegsfuta1
 	title = dw_caravan_madame
-	
+
 	is_triggered_only = yes # Triggered by .130
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -475,20 +465,18 @@ narrative_event = {
 			remove_trait = virgin
 		}
 	}
-	
+
 	option = { # Will buy off the contract and add them to my court
 		trigger = {
 			wealth = 10
 		}
 		name = "DWFuta135A"
 		wealth = -10
-		add_character_modifier = { name = dw_good_sex duration = 30 }
 		hidden_tooltip = { character_event = { id = DWFuta.139 }} # Creates a futa and adds her to the player's court, plus a chance for pregnancy
 	}
 	option = { # Not buying off the contract
 		name = "DWFuta135B"
-		add_character_modifier = { name = dw_good_sex duration = 30 }
-		hidden_tooltip = { character_event = { id = DWCore.9010 }} # Chance ruler becomes pregnant from unknown futa
+		hidden_tooltip = { character_event = { id = dw_visits.9020 }} # Chance ruler becomes pregnant from unknown futa
 	}
 }
 # .139 We create a futa for the player's court and check for pregnancy if it's a female ruler - as they were on the receiving end
@@ -506,8 +494,8 @@ character_event = {
 			culture = random
 			health = 4.5
 			trait = futa
-			trait = regular_tits
-			trait = big_dick
+			trait = dw_regular_tits
+			trait = dw_big_dick
 			trait = lustful
 		}
 		new_character = {
@@ -525,7 +513,7 @@ character_event = {
 				limit = {
 					ROOT = { is_female = yes }
 				}
-				character_event = { id = DWCore.9005 } # Pregnancy check
+				character_event = { id = dw_visits.9010 } # Pregnancy check
 			}
 		}
 	}
@@ -562,9 +550,9 @@ narrative_event = {
 	desc = "DWFuta150"
 	picture = merchant
 	title = dw_exotic_merchant
-	
+
 	is_triggered_only = yes #Triggered by .140
-	
+
 	option = { # Willing to accept the gifts of a loyal courtier
 		name = "DWFuta150A"
 		character_event = { id = DWFuta.210 } # handles the random selection of the gift futa
@@ -580,9 +568,9 @@ narrative_event = {
 	desc = "DWFuta160"
 	picture = futa_diplomacyfocus
 	title = dw_futa_focus_diplomacy
-	
+
 	is_triggered_only = yes # Triggered from .210
-	
+
 	option = {
 		name = "DWFuta160A"
 		create_character = {
@@ -596,8 +584,8 @@ narrative_event = {
 			trait = futa
 			trait = quick
 			trait = grey_eminence
-			trait = big_dick
-			trait = regular_tits
+			trait = dw_big_dick
+			trait = dw_regular_tits
 			attributes = {
 				diplomacy = 10
 			}
@@ -628,9 +616,9 @@ narrative_event = {
 	desc = "DWFuta170"
 	picture = futa_intriguefocus
 	title = dw_futa_focus_intrigue
-	
+
 	is_triggered_only = yes # Triggered from .210
-	
+
 	option = {
 		name = "DWFuta170A"
 		create_character = {
@@ -644,8 +632,8 @@ narrative_event = {
 			trait = futa
 			trait = quick
 			trait = elusive_shadow
-			trait = big_dick
-			trait = big_tits
+			trait = dw_big_dick
+			trait = dw_big_tits
 			attributes = {
 				intrigue = 10
 			}
@@ -676,9 +664,9 @@ narrative_event = {
 	desc = "DWFuta180"
 	picture = futa_stewardshipfocus
 	title = dw_futa_focus_stewardship
-	
+
 	is_triggered_only = yes # Triggered from .210
-	
+
 	option = {
 		name = "DWFuta180A"
 		create_character = {
@@ -692,8 +680,8 @@ narrative_event = {
 			trait = futa
 			trait = quick
 			trait = midas_touched
-			trait = big_dick
-			trait = huge_tits
+			trait = dw_big_dick
+			trait = dw_huge_tits
 			attributes = {
 				stewardship = 10
 			}
@@ -724,9 +712,9 @@ narrative_event = {
 	desc = "DWFuta190"
 	picture = futa_martialfocus
 	title = dw_futa_focus_martial
-	
+
 	is_triggered_only = yes # Triggered from .210
-	
+
 	option = {
 		name = "DWFuta190A"
 		create_character = {
@@ -740,8 +728,8 @@ narrative_event = {
 			trait = futa
 			trait = strong
 			trait = brilliant_strategist
-			trait = huge_dick
-			trait = enormous_tits
+			trait = dw_huge_dick
+			trait = dw_enormous_tits
 			attributes = {
 				martial = 10
 			}
@@ -772,9 +760,9 @@ narrative_event = {
 	desc = "DWFuta200"
 	picture = futa_learningfocus
 	title = dw_futa_focus_learning
-	
+
 	is_triggered_only = yes # Triggered from .210
-	
+
 	option = {
 		name = "DWFuta200A"
 		create_character = {
@@ -788,8 +776,8 @@ narrative_event = {
 			trait = futa
 			trait = quick
 			trait = mastermind_theologian
-			trait = big_dick
-			trait = big_tits
+			trait = dw_big_dick
+			trait = dw_big_tits
 			attributes = {
 				learning = 10
 			}
@@ -849,7 +837,7 @@ character_event = {
 				}
 				narrative_event = { id = DWFuta.190 }
 			}
-			20 = { # Learning Futa	
+			20 = { # Learning Futa
 				modifier = {
 					factor = 0.5 # random chance drops by 50%
 					has_character_flag = dw_obtained_futa_learning
@@ -872,9 +860,9 @@ narrative_event = {
 	desc = "DWFuta220"
 	picture = futa_mey_normal
 	title = dw_futa_special_mey
-	
+
 	is_triggered_only = yes # Triggered from .210
-	
+
 	option = {
 		name = "DWFuta220A"
 		create_character = {
@@ -890,8 +878,8 @@ narrative_event = {
 			trait = fair
 			trait = genius
 			trait = underhanded_rogue
-			trait = huge_dick
-			trait = big_tits
+			trait = dw_huge_dick
+			trait = dw_big_tits
 			trait = hedonist
 			trait = lustful
 			trait = brave
@@ -931,4 +919,3 @@ narrative_event = {
 		}
 	}
 }
-

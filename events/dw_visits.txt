@@ -1,0 +1,1298 @@
+###
+# This file handles 'Spend Time With...' events and potentially other rendezvous in the future
+# .01 Routing determination
+# .1000 Futa player events (generic)
+# .2000 Female player events (generic)
+# .3000 trap male player events (generic)
+# .4000 Male player events (generic)
+# .5000 Masculine female player events (generic)
+# .8000 Specific NPC visit events
+# .9000 Sex act maintenance - flag clean-up, pregnancy checks, etc.
+###
+
+### Image intent shown as player visit_target. For example FM would be a female player with a male visit_target
+## F - female, Fu - futa, M - Male, Mfem - trap male
+
+namespace = dw_visits
+
+# .01 Routing determination
+character_event = {
+	id = dw_visits.01
+	hide_window = yes
+	is_triggered_only = yes # targetted_decision
+	immediate = {
+		# FROM = target, ROOT = player
+		FROM = { save_event_target_as = dw_visit_target }
+
+		# Player is a woman
+		if = {
+			limit = { is_female = yes }
+			random_list = {
+				# Weight settings:
+				# 5 for rare/special events
+				# 10 for normal events
+				# 50 for those of a special body type (futa or trap)
+				# 200 for NPCs
+				50 = { # FuF or FuFu Handjob - Futa Player receives a hand job
+					trigger = {
+						trait = futa
+						event_target:dw_visit_target = { is_female = yes }
+					}
+					narrative_event = { id = dw_visits.1000 }
+				}
+				50 = { # FuF or FuFu - Futa Player receives a blow job
+					trigger = {
+						trait = futa
+						event_target:dw_visit_target = { is_female = yes }
+					}
+					narrative_event = { id = dw_visits.1010 }
+				}
+				50 = { # FuF Come on stomach - Futa Player cums on females stomach
+					trigger = {
+						trait = futa
+						event_target:dw_visit_target = { is_female = yes }
+					}
+					narrative_event = { id = dw_visits.1020 }
+				}
+                50 = { # FuFu
+                    trigger = {
+                        trait = futa
+                        event_target:dw_visit_target = { trait = futa }
+                    }
+                    narrative_event = { id = dw_visits.1030 }
+                }
+                50 = { # FuF
+                    trigger = {
+                        trait = futa
+                        event_target:dw_visit_target = { is_female = yes }
+                    }
+                    narrative_event = { id = dw_visits.1040 }
+                }
+                50 = { # FuF
+                    trigger = {
+                        trait = futa
+                        event_target:dw_visit_target = { is_female = yes }
+                    }
+                    narrative_event = { id = dw_visits.1050 }
+                }
+                50 = { # FuM
+                    trigger = {
+                        trait = futa
+                        event_target:dw_visit_target = { is_female = no }
+                    }
+                    narrative_event = { id = dw_visits.1060 }
+                }
+                100 = { # FuTrap
+                    trigger = {
+                        trait = futa
+                        event_target:dw_visit_target = { trait = trap }
+                    }
+                    narrative_event = { id = DWSex.950 }
+                }
+                50 = { # FuF - cowgirl
+                    trigger = {
+                        trait = futa
+                        event_target:dw_visit_target = {
+                            is_female = yes
+                            NOT = { trait = futa }
+                        }
+                    }
+                    narrative_event = { id = DWSex.660 }
+                }
+                50 = { # FuM - BJ
+                    trigger = {
+                        trait = futa
+                        event_target:dw_visit_target = { is_female = no }
+                    }
+                    narrative_event = { id = DWSex.530 }
+                }
+				5 = {
+					trigger = {
+						OR = {
+							event_target:dw_visit_target = { is_female = yes }
+							event_target:dw_visit_target = { trait = trap }
+						}
+					}
+					# FF, FuF, FFu, FuFu, FMfem - Snuggle
+					modifier = { # 5 times more likely to be called if ruler is stressed
+						factor = 5
+						trait = stressed
+					}
+					narrative_event = { id = dw_visits.2000 }
+				}
+				10 = {
+					# FF - Oil play chain
+					narrative_event = { id = dw_visits.2010 }
+				}
+				10 = { # FFu Blowjob - Female players blows a futa
+					trigger = { event_target:dw_visit_target = { trait = futa } }
+					narrative_event = { id = dw_visits.2020 }
+				}
+				10 = { # FM - Chain events - fingering, eating, fucking, blowing
+					# Not really intended for Fu, but right now it's the only potential for a Fu to be impregnated by a man
+					trigger = { event_target:dw_visit_target = { is_female = no } }
+					narrative_event = { id = dw_visits.2030 }
+				}
+				50 = { # FMfem, FuMfem - hand job
+					trigger = { event_target:dw_visit_target = { trait = trap } }
+					narrative_event = { id = dw_visits.2040 }
+				}
+				50 = { # FF, FFu FMfem - Player gets eaten out - lover is black
+					trigger = {
+						OR = {
+							event_target:dw_visit_target = { is_female = yes }
+							event_target:dw_visit_target = { trait = trap }
+						}
+						event_target:dw_visit_target = { dw_is_probably_black = yes }
+					}
+					narrative_event = { id = dw_visits.2050 }
+				}
+				10 = { # FF, FuF, MfemF - Player eats out lover - Player is black
+					trigger = {
+						event_target:dw_visit_target = {
+							is_female = yes
+							NOT = { trait = futa }
+						}
+						dw_is_probably_black = yes
+					}
+					narrative_event = { id = dw_visits.2055 }
+				}
+                10 = { # FF
+                    trigger = {
+                        event_target:dw_visit_target = {
+                            is_female = yes
+                            NOT = { trait = futa }
+                        }
+                    }
+                    narrative_event = { id = dw_visits.2060 }
+                }
+                10 = { # FM
+                    trigger = { event_target:dw_visit_target = { is_female = no } }
+                    narrative_event = { id = dw_visits.2070 }
+                }
+                10 = { # FFu
+                    trigger = { event_target:dw_visit_target = { trait = futa }}
+                    narrative_event = { id = dw_visits.2080 }
+                }
+                10 = { # FFu
+                    trigger = { event_target:dw_visit_target = { trait = futa }}
+                    narrative_event = { id = dw_visits.2090 }
+                }
+                10 = {  # FFu
+                    trigger = {
+                        NOT = { trait = futa }
+                        event_target:dw_visit_target = { trait = futa }
+                    }
+                    narrative_event = { id = DWSex.460 }
+                }
+				200 = { # MTwoSix, MfemTwoSix, FuTwoSix - Blowjob
+					trigger = {
+						event_target:dw_visit_target = { has_character_flag = dw_npc_twosix }
+						trait = futa
+					}
+					narrative_event = { id = dw_visits.8000 }
+				}
+                200 = { # FuHermione
+                    trigger = {
+                        trait = futa
+                        event_target:dw_visit_target = { has_character_flag = dw_npc_hermione }
+                    }
+                    narrative_event = { id = dw_visits.8010 }
+                }
+                200 = { # FuMey
+                    trigger = {
+                        trait = futa
+                        event_target:dw_visit_target = { has_character_flag = dw_npc_mey }
+                    }
+                    narrative_event = { id = dw_visits.8030 }
+                }
+                200 = { # FMey
+                    trigger = {
+                        NOT = { trait = futa }
+                        event_target:dw_visit_target = { has_character_flag = dw_npc_mey }
+                    }
+                    narrative_event = { id = dw_visits.8040 }
+                }
+                200 = { # FGaston = rough sex
+                    trigger = {
+                        NOT = { trait = futa }
+                        event_target:dw_visit_target = { has_character_flag = dw_npc_gaston }
+                    }
+                    narrative_event = { id = dw_visits.8060 }
+                }
+                200 = { # MBelle, FuBelle - BJ
+                    trigger = {
+                        event_target:dw_visit_target = { has_character_flag = dw_npc_belle }
+                    }
+                    narrative_event = { id = dw_visits.8070 }
+                }
+                200 = { # MBelle
+                    trigger = {
+                        event_target:dw_visit_target = { has_character_flag = dw_npc_belle }
+                    }
+                    narrative_event = { id = dw_visits.8090 }
+                }
+				# TODO StrapOn Chain (female_female_06, female_female_08, female_female_09, female_female_10, female_female_11)
+				# has_artifact_flag = sex_toy
+			}
+		}
+		# Player is a man
+		else = {
+			random_list = {
+                200 = { # TrapFu
+                    trigger = {
+                        trait = trap
+                        event_target:dw_visit_target = { trait = futa }
+                    }
+                    narrative_event = { id = DWSex.850 }
+                }
+				5 = {
+					# MfemMfem - Snuggle
+					trigger = {
+						trait = trap
+						event_target:dw_visit_target = { trait = trap }
+					}
+					modifier = { # 5 times more likely to be called if ruler is stressed
+						factor = 5
+						trait = stressed
+					}
+					narrative_event = { id = dw_visits.2000 } # reusing a female/female event
+				}
+				50 = { # MfemF - Player eats out lover - Player is black
+					trigger = {
+						event_target:dw_visit_target = {
+							is_female = yes
+							NOT = { trait = futa }
+						}
+						dw_is_probably_black = yes
+						trait = trap
+					}
+					narrative_event = { id = dw_visits.2055 }
+				}
+				10 = { # MfemF, MfemFu, MfemMfem - hand job
+					trigger = {
+						trait = trap
+						OR = {
+							event_target:dw_visit_target = { trait = trap }
+							event_target:dw_visit_target = { is_female = yes }
+						}
+					}
+					narrative_event = { id = dw_visits.3000 }
+				}
+				10 = { # MF - Chain - fingering, eating, fucking, blowing
+					trigger = { event_target:dw_visit_target = { is_female = yes } }
+					narrative_event = { id = dw_visits.4000 }
+				}
+                10 = { # MM
+					trigger = {
+						event_target:dw_visit_target = { is_female = no }
+					}
+					narrative_event = { id = dw_visits.4010 }
+				}
+                10 = { # MF, MFu
+                    trigger = {
+                        event_target:dw_visit_target = { is_female = yes }
+                    }
+                    narrative_event = { id = dw_visits.4020 }
+                }
+                10 = { # MFu
+                    trigger = {
+                        event_target:dw_visit_target = { trait = futa }
+                    }
+                    narrative_event = { id = dw_visits.4030 }
+                }
+                10 = { # MFu - BJ
+                    trigger = {
+                        event_target:dw_visit_target = { trait = futa }
+                    }
+                    narrative_event = { id = DWSex.330 }
+                }
+				200 = { # MTwoSix, MfemTwoSix, FuTwoSix - Blowjob
+					trigger = {
+						event_target:dw_visit_target = { has_character_flag = dw_npc_twosix }
+					}
+					narrative_event = { id = dw_visits.8000 }
+				}
+                200 = { # MMey
+                    trigger = {
+                        event_target:dw_visit_target = { has_character_flag = dw_npc_mey }
+                    }
+                    narrative_event = { id = dw_visits.8020 }
+                }
+                200 = { # MGaston
+                    trigger = {
+                        event_target:dw_visit_target = { has_character_flag = dw_npc_gaston }
+                    }
+                    narrative_event = { id = dw_visits.8050 }
+                }
+                200 = { # FuBelle, MBelle - BJ
+                    trigger = {
+                        trait = futa
+                        event_target:dw_visit_target = { has_character_flag = dw_npc_belle }
+                    }
+                    narrative_event = { id = dw_visits.8070 }
+                }
+                200 = { # FBelle = eaten out
+                    trigger = {
+                        NOT = { trait = futa }
+                        event_target:dw_visit_target = { has_character_flag = dw_npc_belle }
+                    }
+                    narrative_event = { id = dw_visits.8080 }
+                }
+			}
+		}
+	}
+}
+
+## .1000 Futa Player Events
+# FuF Handjob
+narrative_event = {
+	id = dw_visits.1000
+	picture = oops
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	desc = { # First time through
+		trigger = {
+			NOT = { has_character_flag = dw_saw_lover }
+		}
+		text = dw_visits1000.0
+		picture = futa_female_01
+	}
+	desc = { # Second time through
+		trigger = {
+			has_character_flag = dw_saw_lover
+		}
+		text = dw_visits1000.1
+		picture = futa_female_02
+	}
+	option = { # On to the second half
+		trigger = {
+			NOT = { has_character_flag = dw_saw_lover }
+		}
+		name = dw_visits1000A
+		set_character_flag = dw_saw_lover
+		narrative_event = { id = dw_visits.1000 }
+	}
+	option = { # Money Shot
+		trigger = {
+			has_character_flag = dw_saw_lover
+		}
+		name = dw_visits1000B
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		clr_character_flag = dw_saw_lover
+	}
+}
+# FuF Blowjob
+narrative_event = {
+	id = dw_visits.1010
+	picture = futa_female_03
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	desc = dw_visits1010
+	option = {
+		name = dw_visits1010a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FuF Futa player cums on female's stomach
+narrative_event = {
+	id = dw_visits.1020
+	picture = futa_female_04
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	desc = dw_visits1020
+	option = { # That was great
+		name = dw_visits1020a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+	option = { # Let me stick it back in (preg chance)
+		name = dw_visits1020b
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		event_target:dw_visit_target = { character_event = { id = dw_visits.9000 } }
+	}
+}
+# FuFu
+narrative_event = {
+	id = dw_visits.1030
+	desc = dw_visits1030
+	picture = visit_futa_futa_1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes # Triggered from .100
+	option = { # Good times as always
+		name = dw_visits1030a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FuF
+narrative_event = {
+	id = dw_visits.1040
+	desc = dw_visits1040
+	picture = visit_futa_female_1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Good times as always
+		name = dw_visits1040a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+    option = { # Let me stick it back in (preg chance)
+		name = dw_visits1040b
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		event_target:dw_visit_target = { character_event = { id = dw_visits.9000 } }
+	}
+}
+# FuF
+narrative_event = {
+	id = dw_visits.1050
+	desc = dw_visits1050
+	picture = visit_futa_female_2
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Good times as always
+		name = dw_visits1050a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FuM
+narrative_event = {
+	id = dw_visits.1060
+	desc = dw_visits1060
+	picture = visit_futa_male_1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Good times as always
+		name = dw_visits1060a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9010 }}} # Pregnancy check for player
+	}
+}
+
+
+## .2000 Female Player Events
+# FF Snuggle
+narrative_event = {
+	id = dw_visits.2000
+	desc = dw_visits2000
+	picture = female_female_12
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # My worries have melted away
+		trigger = { trait = stressed }
+		name = dw_visits2000a
+		remove_trait = stressed
+		opinion = { modifier = dw_great_snuggle who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_great_snuggle who = ROOT }}
+	}
+	option = { # How relaxing
+		name = dw_visits2000b
+		opinion = { modifier = dw_great_snuggle who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_great_snuggle who = ROOT }}
+	}
+}
+# FF Oil play chain start
+narrative_event = {
+	id = dw_visits.2010
+	desc = dw_visits2010
+	picture = female_female_06
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Oil massage
+		name = dw_visits2010a
+		narrative_event = { id = dw_visits.2011 }
+	}
+	option = { # Get eaten
+		name = dw_visits2010b
+		narrative_event = { id = dw_visits.2015}
+	}
+	option = { # Finish with a drink
+		name = dw_visits2010c
+		narrative_event = { id = dw_visits.2016}
+	}
+}
+# FF Oil play chain massage
+narrative_event = {
+	id = dw_visits.2011
+	desc = dw_visits2011
+	picture = female_female_01
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Foot fuck
+		name = dw_visits2011a
+		narrative_event = { id = dw_visits.2012 }
+	}
+	option = { # Get eaten
+		name = dw_visits2010b
+		narrative_event = { id = dw_visits.2015}
+	}
+	option = { # Finish with a drink
+		name = dw_visits2010c
+		narrative_event = { id = dw_visits.2016}
+	}
+}
+# FF Oil play chain foot fuck part 1
+narrative_event = {
+	id = dw_visits.2012
+	desc = dw_visits2012
+	picture = female_female_03
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Here it comes
+		name = dw_visits2012a
+		narrative_event = { id = dw_visits.2013 }
+	}
+	option = { # Get eaten
+		name = dw_visits2010b
+		narrative_event = { id = dw_visits.2015}
+	}
+	option = { # Finish with a drink
+		name = dw_visits2010c
+		narrative_event = { id = dw_visits.2016}
+	}
+}
+# FF Oil play chain foot fuck part 2
+narrative_event = {
+	id = dw_visits.2013
+	desc = dw_visits2013
+	picture = female_female_04
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Come for me
+		name = dw_visits2013a
+		narrative_event = { id = dw_visits.2014 }
+	}
+	option = { # Get eaten
+		name = dw_visits2010b
+		narrative_event = { id = dw_visits.2015}
+	}
+	option = { # Finish with a drink
+		name = dw_visits2010c
+		narrative_event = { id = dw_visits.2016}
+	}
+}
+# FF Oil play chain foot fuck part 3
+narrative_event = {
+	id = dw_visits.2014
+	desc = dw_visits2014
+	picture = female_female_05
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # You were excellent
+		name = dw_visits2014a
+		opinion = { modifier = dw_kinky_good who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_knee_buckling_orgasm who = ROOT }}
+	}
+	option = { # Get eaten
+		name = dw_visits2010b
+		narrative_event = { id = dw_visits.2015}
+		opinion = { modifier = dw_kinky_good who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_knee_buckling_orgasm who = ROOT }}
+	}
+	option = { # Finish with a drink
+		name = dw_visits2010c
+		narrative_event = { id = dw_visits.2016}
+		opinion = { modifier = dw_kinky_good who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_knee_buckling_orgasm who = ROOT }}
+	}
+}
+# FF Oil play chain get eaten
+narrative_event = {
+	id = dw_visits.2015
+	desc = dw_visits2015
+	picture = female_female_07
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # You were excellent
+		name = dw_visits2015a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+	}
+	option = { # Finish with a drink
+		name = dw_visits2010c
+		narrative_event = { id = dw_visits.2016}
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+	}
+}
+# FF Oil play chain Finish with a drink
+narrative_event = {
+	id = dw_visits.2016
+	desc = dw_visits2016
+	picture = female_female_02
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Great company
+		name = dw_visits2016a
+		opinion = { modifier = dw_good_company who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_company who = ROOT }}
+	}
+}
+# FFu Blowjob
+narrative_event = {
+	id = dw_visits.2020
+	picture = futa_female_03
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	desc = dw_visits2020
+	option = {
+		name = dw_visits2020a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FM Variety Chain start
+narrative_event = {
+	id = dw_visits.2030
+	desc = dw_visits2030
+	picture = female_male_01
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # That's all I needed (end)
+		name = dw_visits2030a
+		# Male got no satisfaction so no bonus opinion from them.
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+	}
+	option = { # Eat me
+		name = dw_visits2030b
+		narrative_event = { id = dw_visits.2031}
+	}
+	option = { # Fuck me
+		name = dw_visits2030c
+		narrative_event = { id = dw_visits.2032}
+	}
+}
+# FM Variety Chain Eat me
+narrative_event = {
+	id = dw_visits.2031
+	desc = dw_visits2031
+	picture = female_male_02
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # That's all I needed (end)
+		name = dw_visits2030a
+		# Male got no satisfaction so no opinion for them.
+		opinion = { modifier = dw_knee_buckling_orgasm who = event_target:dw_visit_target }
+	}
+	option = { # Fuck me
+		name = dw_visits2030c
+		narrative_event = { id = dw_visits.2032}
+		opinion = { modifier = dw_knee_buckling_orgasm who = event_target:dw_visit_target }
+	}
+	option = { # Let me blow you
+		name = dw_visits2031a
+		narrative_event = { id = dw_visits.2034}
+		opinion = { modifier = dw_knee_buckling_orgasm who = event_target:dw_visit_target }
+	}
+}
+# FM Variety Chain Fuck me
+narrative_event = {
+	id = dw_visits.2032
+	desc = dw_visits2032
+	picture = female_male_03
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Pull out and finish (end)
+		name = dw_visits2032a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+	option = { # Let me get on top.
+		name = dw_visits2032b
+		narrative_event = { id = dw_visits.2033}
+	}
+	option = { # Let me blow you
+		name = dw_visits2031a
+		narrative_event = { id = dw_visits.2034}
+	}
+}
+# FM Variety Chain On top
+narrative_event = {
+	id = dw_visits.2033
+	desc = dw_visits2033
+	picture = female_male_04
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Cum inside me (end)
+		name = dw_visits2033a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		custom_tooltip = { text = dw_potential_pregnancy_tooltip }
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9010 }}}
+	}
+	option = { # Let me blow you
+		name = dw_visits2031a
+		narrative_event = { id = dw_visits.2034}
+	}
+}
+# FM Variety Chain Blow job
+narrative_event = {
+	id = dw_visits.2034
+	desc = dw_visits2034
+	picture = female_male_05
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Swallow (end)
+		name = dw_visits2034a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		event_target:dw_visit_target = { opinion = { modifier = dw_kinky_good who = ROOT }}
+	}
+	option = { # Spit (end)
+		name = dw_visits2034b
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FFem Hand job
+narrative_event = {
+	id = dw_visits.2040
+	desc = dw_visits2040
+	picture = female_trap_01
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Blows load
+		name = dw_visits2040a
+		opinion = { modifier = dw_good_sissy who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FF, FFu FMfem - Player gets eaten out - lover is black
+narrative_event = {
+	id = dw_visits.2050
+	desc = dw_visits2050
+	picture = female_female_14
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Oh yes
+		name = dw_visits2050a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FF, FuF MfemF - Player eats out their lover - Player is black
+narrative_event = {
+	id = dw_visits.2055
+	desc = dw_visits2055
+	picture = female_female_14
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Oh yes
+		name = dw_visits2055a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FF
+narrative_event = {
+	id = dw_visits.2060
+	desc = dw_visits2060
+	picture = visit_female_female_1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Good times as always
+		name = dw_visits2060a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FM
+narrative_event = {
+	id = dw_visits.2070
+	desc = dw_visits2070
+	picture = visit_male_female_1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes # Triggered from .100
+	option = { # My lover cums inside of me
+		name = dw_visits2070a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9010 }}} # Pregnancy check for player
+	}
+	option = { # My lover pulls out
+		name = dw_visits2070b
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FFu
+narrative_event = {
+	id = dw_visits.2080
+	desc = dw_visits2080
+	picture = visit_futa_female_1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # cums inside
+		name = dw_visits2080a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9010 }}} # Pregnancy check for player
+	}
+	option = { # pulls out
+		name = dw_visits2080b
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FFu
+narrative_event = {
+	id = dw_visits.2090
+	desc = dw_visits2090
+	picture = visit_futa_female_2
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Good times as always
+		name = dw_visits2090a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+
+## .3000 trap male player
+# FemF Hand job
+narrative_event = {
+	id = dw_visits.3000
+	desc = dw_visits3000
+	picture = female_trap_01
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Blows load
+		name = dw_visits3000a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sissy who = ROOT }}
+	}
+}
+
+
+## .4000 Male player
+# MF Variety Chain start
+narrative_event = {
+	id = dw_visits.4000
+	desc = dw_visits4000
+	picture = female_male_01
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # That's all I needed (end)
+		name = dw_visits4000a
+		# Male got no satisfaction so no opinion from them.
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+	option = { # Eat her
+		name = dw_visits4000b
+		narrative_event = { id = dw_visits.4001}
+	}
+	option = { # Fuck her
+		name = dw_visits4000c
+		narrative_event = { id = dw_visits.4002}
+	}
+}
+# MF Variety Chain Eating her out
+narrative_event = {
+	id = dw_visits.4001
+	desc = dw_visits4001
+	picture = female_male_02
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # That's all I needed (end)
+		name = dw_visits4000a
+		# Male got no satisfaction so no opinion for them.
+		event_target:dw_visit_target = { opinion = { modifier = dw_knee_buckling_orgasm who = ROOT }}
+	}
+	option = { # Fuck her
+		name = dw_visits4000c
+		narrative_event = { id = dw_visits.4002}
+		event_target:dw_visit_target = { opinion = { modifier = dw_knee_buckling_orgasm who = ROOT }}
+	}
+	option = { # Blow me
+		name = dw_visits4001a
+		narrative_event = { id = dw_visits.4004}
+		event_target:dw_visit_target = { opinion = { modifier = dw_knee_buckling_orgasm who = ROOT }}
+	}
+}
+# MF Variety Chain Fuck her
+narrative_event = {
+	id = dw_visits.4002
+	desc = dw_visits4002
+	picture = female_male_03
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Pull out and finish (end)
+		name = dw_visits4002a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+	option = { # Get on top
+		name = dw_visits4002b
+		narrative_event = { id = dw_visits.4003}
+	}
+	option = { # Blow me
+		name = dw_visits4001a
+		narrative_event = { id = dw_visits.4004}
+	}
+}
+# MF Variety Chain Shes On top
+narrative_event = {
+	id = dw_visits.4003
+	desc = dw_visits4003
+	picture = female_male_04
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Cum inside me (end)
+		name = dw_visits4003a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		custom_tooltip = { text = dw_potential_pregnancy_tooltip }
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9000 }}}
+	}
+	option = { # Blow me
+		name = dw_visits4001a
+		narrative_event = { id = dw_visits.4004}
+	}
+}
+# MF Variety Chain Blow job
+narrative_event = {
+	id = dw_visits.4004
+	desc = dw_visits4004
+	picture = female_male_05
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Swallow (end)
+		name = dw_visits4004a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		opinion = { modifier = dw_kinky_good who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+	option = { # Spit (end)
+		name = dw_visits4004b
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# MM
+narrative_event = {
+	id = dw_visits.4010
+	desc = dw_visits4010
+	picture = visit_male_male_1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes # Triggered from .100
+	option = { # Good times as always
+		name = dw_visits4010a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# MF
+narrative_event = {
+	id = dw_visits.4020
+	desc = dw_visits4020
+	picture = visit_male_female_1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # I cum inside my love
+		name = dw_visits4020a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9000 }}} # Pregnancy check for the lover
+	}
+	option = { # I pull out
+		name = dw_visits4020b
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# MFu
+narrative_event = {
+	id = dw_visits.4030
+	desc = dw_visits4030
+	picture = visit_futa_male_1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Good times as always
+		name = dw_visits4030a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9000 }}} # Pregnancy check for lover
+	}
+}
+
+
+## .8000 Specific NPCs
+# MTwoSix, MfemTwoSix, FuTwoSix - Blowjob part 1
+narrative_event = {
+	id = dw_visits.8000
+	desc = dw_visits8000
+	picture = twosix_02
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # I'm going to blow
+		name = dw_visits8000a
+		narrative_event = { id = dw_visits.8005 }
+	}
+}
+# MTwoSix, MfemTwoSix, FuTwoSix - Blowjob part 2
+narrative_event = {
+	id = dw_visits.8005
+	desc = dw_visits8005
+	picture = twosix_03
+	window = "BiggerEventWindow"
+	title = dw_spending_time_with_title
+	is_triggered_only = yes
+	option = { # Oh yes
+		name = dw_visits8005a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		remove_trait = stressed
+	}
+}
+# FuHermione
+narrative_event = {
+	id = dw_visits.8010
+	desc = dw_visits8010
+	picture = wizard_hermione_fucked_futa1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Cum inside of her
+		name = dw_visits8010a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9000 }}} # Pregnancy check for the lover
+	}
+	option = { # Cum outside of her
+		name = dw_visits8010b
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# MMey
+narrative_event = {
+	id = dw_visits.8020
+	desc = dw_visits8020
+	picture = futa_mey_male_fucked1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Good times as always
+		name = dw_visits8020a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9000 }}} # Pregnancy check for Mey
+	}
+}
+# FuMey
+narrative_event = {
+	id = dw_visits.8030
+	desc = dw_visits8030
+	picture = futa_mey_futa_fucks1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes # .1
+	option = { # Good times as always
+		name = dw_visits8030a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9010 }}} # Pregnancy check for player
+	}
+}
+# FMey
+narrative_event = {
+	id = dw_visits.8040
+	desc = dw_visits8040
+	picture = futa_mey_female_fucks1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Good times as always
+		name = dw_visits8040a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9010 }}} # Pregnancy check for player
+	}
+}
+# MGaston
+narrative_event = {
+	id = dw_visits.8050
+	desc = dw_visits8050
+	picture = beautybeast_gaston_visit_male1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Good times as always
+		name = dw_visits8050a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FGaston - rough sex
+narrative_event = {
+	id = dw_visits.8060
+	desc = dw_visits8060
+	picture = beautybeast_gaston_visit_female1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes # .1
+	option = { # Good times as always
+		name = dw_visits8060a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9010 }}} # Pregnancy check
+	}
+}
+# MBelle, FuBelle - BJ
+narrative_event = {
+	id = dw_visits.8070
+	desc = dw_visits8070
+	picture = beautybeast_belle_visit_cock1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Good times as always
+		name = dw_visits8070a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# FBelle - eaten out
+narrative_event = {
+	id = dw_visits.8080
+	desc = dw_visits8080
+	picture = beautybeast_belle_visit_female1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Good times as always
+		name = dw_visits8080a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+	}
+}
+# MBelle
+narrative_event = {
+	id = dw_visits.8090
+	desc = dw_visits8090
+	picture = beautybeast_belle_visit_male1
+	title = dw_spending_time_with_target
+	is_triggered_only = yes
+	option = { # Good times as always
+		name = dw_visits8090a
+		opinion = { modifier = dw_good_sex who = event_target:dw_visit_target  }
+		event_target:dw_visit_target = { opinion = { modifier = dw_good_sex who = ROOT }}
+		hidden_tooltip = { event_target:dw_visit_target = { character_event = { id = dw_visits.9000 }}} # Pregnancy check
+	}
+}
+
+## .9000 Sex Maintenance - Pregnancy, Disease, Birth and other sex related checks, flag clean-up
+##
+# .9000 Female event to see if she's pregnant (ROOT = female, FROM = male or futa)
+character_event = {
+	id = dw_visits.9000
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		ROOT = { save_event_target_as = new_mom }
+		FROM = { save_event_target_as = new_dad }
+		dw_impregnate_check = yes
+	}
+}
+
+# .9010 Male or Futa event to see if they got a female pregnant (ROOT = male or futa, FROM = female)
+character_event = {
+	id = dw_visits.9010
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		ROOT = { save_event_target_as = new_dad }
+		FROM = { save_event_target_as = new_mom }
+		dw_impregnate_check = yes
+	}
+}
+# .9020 Female event to see if they got pregnant from a non-existent person (commoner)(ROOT = female)
+character_event = {
+	id = dw_visits.9020
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		ROOT = { save_event_target_as = new_mom }
+		dw_impregnate_check_solo = yes
+	}
+}
+# .9030 Female event to see if they got pregnant from an animal/beast (ROOT = female)
+# A flag should be set to indicate what may be doing the impregnation.
+# See dw_scripted_effects - dw_clear_animal_pregnancy_flags for those flags supported
+character_event = {
+	id = dw_visits.9030
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_classic_monsters_content = yes # If they turn off therianthropes, it disables having beast kids
+	}
+	immediate = {
+		ROOT = { save_event_target_as = new_mom }
+		dw_impregnate_check_from_beast = yes
+	}
+}
+# .9035 Female recieves an event making them aware of their potential animal pregnancy
+narrative_event = {
+	id = dw_visits.9035
+	desc = dw_visits9035
+	picture = dw_pregnancy_01
+	window = "BiggerEventWindow"
+	title = dw_pregnancy_title
+	is_triggered_only = yes
+	option = { # Keep the child
+		name = dw_visits9035a
+		ai_chance = { factor = 100 } # If we gave the ai a breeder artifact, we want them to use it
+	}
+	option = { # Purge the child
+		name = dw_visits9035b
+		dw_clear_animal_pregnancy_flags = yes
+	}
+}
+# .9040 Birth Event - for mothers with the dw_animal_pregnancy flag
+character_event = {
+	id = dw_visits.9040
+	hide_window = yes
+	is_triggered_only = yes
+	has_global_flag = dw_bestiality_on # Pretrigger
+	trigger = {
+		mother = {
+			has_character_flag = dw_animal_pregnancy
+		}
+	}
+	immediate = {
+		dw_apply_therianthrope_traits = yes
+	}
+}
+
+# .9999 dw_visit_recovery flag removal
+character_event = {
+	id = dw_visits.9999
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Various decisions call this, usually after 30 days
+	immediate = {
+		clr_character_flag = dw_visit_recovery
+	}
+}

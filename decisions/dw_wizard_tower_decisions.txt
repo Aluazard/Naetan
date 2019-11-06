@@ -1,0 +1,72 @@
+decisions = {
+    #Visit Wizard's Tower
+    dw_visit_wizard_tower = {
+		ai_check_interval = 36 # Once every three years
+		potential = {
+			has_valid_wizard_tower = yes
+		}
+		allow = {
+			has_valid_wizard_tower = yes
+            is_adult = yes
+			NOT = { trait = incapable }
+			prisoner = no
+			custom_tooltip = { # We're keeping visits to one a month for game balance
+				text = dw_tower_visit_recovery_tooltip
+				NOT = { has_character_flag = dw_tower_visit_recovery }
+			}
+		}
+		effect = {
+			narrative_event = { id = dw_wizardtower.01 }
+            #narrative_event = { id = DWCourt.5000 }
+			set_character_flag = dw_tower_visit_recovery
+			hidden_tooltip = { character_event = { id = dw_wizardtower.9999 days = 30} } # Clears flags
+			hidden_tooltip = { # This one sets what is in stock for the visit
+				random_list = {
+					20 = { set_character_flag = dw_tower_wares_01 }
+					15 = { set_character_flag = dw_tower_wares_02 }
+		            10 = { set_character_flag = dw_tower_wares_03 }
+		            5 = { set_character_flag = dw_tower_wares_04 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { ai_zeal = 25 } # With a zeal score of 25+, the person would view it as too sinful to attend
+					NOT = { is_adult = yes }
+				}
+			}
+		}
+	}
+}
+targeted_decisions = {
+    #Support visit with Sorcey
+	dw_visit_mage_sorcey = {
+		filter = home_court
+		ai_target_filter = none
+		from_potential = { # From is the person targeting the person to evoke the decision
+			is_ruler = yes # Based on the Wizard's Order doctrine, only rulers can obtain services from their mages
+			prisoner = no # Hard to visit while in a jail cell
+		}
+		potential = { # This is where we check the target to ensure they're valid
+			has_character_flag = dw_npc_sorcey
+			liege = {
+				character = FROM # We ensure that her liege is the only ruler calling upon Sorcey
+			}
+		}
+		allow = {
+			prisoner = no # The target shouldn't be in prison
+			NOT = { trait = in_hiding } # The target shouldn't be in hiding
+			in_command = no # The target shouldn't be off leading troops somewhere
+		}
+		effect = {
+			# Our initial check event for further routing
+			FROM = { narrative_event = { id = dw_wizardtower.5100 }}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

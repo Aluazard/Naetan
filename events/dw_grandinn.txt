@@ -1,0 +1,241 @@
+namespace = dw_grandinn
+
+# Routing event
+character_event = {
+    id = dw_grandinn.01
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        clr_character_flag = dw_quiet_inn
+        clr_character_flag = dw_calm_inn
+        clr_character_flag = dw_lively_inn
+        clr_character_flag = dw_rowdy_inn
+        random_list = {
+            10 = { # It's all quiet
+                set_character_flag = dw_quiet_inn
+                narrative_event = { id = dw_grandinn.100 }
+                modifier = {
+                    factor = 0
+                    has_grand_inn_level_3 = yes # When we hit this upgrade, business is steady enough to never be all quiet
+                }
+            }
+            10 = { # Calm moderate crowd
+                set_character_flag = dw_calm_inn
+                narrative_event = { id = dw_grandinn.110 }
+                modifier = {
+                    factor = 2
+                    has_grand_inn_level_2 = yes
+                }
+            }
+            10 = { # Packed lively crowd
+                set_character_flag = dw_lively_inn
+                narrative_event = { id = dw_grandinn.120 }
+                modifier = {
+                    factor = 2.5
+                    has_grand_inn_level_3 = yes
+                }
+            }
+        }
+    }
+}
+
+# It's a quiet at the inn
+narrative_event = {
+    id = dw_grandinn.100
+    is_triggered_only = yes
+	desc = dw_grandinn100
+	picture = grandinn_01
+	window = "BiggerEventWindow"
+	title = grand_inn_title
+    option = { # Enjoy a quiet drink - player version - no cost
+        trigger = { ai = no }
+        name = dw_grandinn100a
+        random = {
+            chance = 25
+            remove_trait = stressed
+        }
+    }
+    option = { # Enjoy a quiet drink - ai version - cost
+        trigger = { ai = yes }
+        name = dw_grandinn100a
+        wealth = -1
+        random = {
+            chance = 25
+            remove_trait = stressed
+        }
+    }
+}
+# It's a calm moderate crowd at the inn
+narrative_event = {
+    id = dw_grandinn.110
+    is_triggered_only = yes
+	desc = dw_grandinn110
+	picture = grandinn_02
+	window = "BiggerEventWindow"
+	title = grand_inn_title
+    option = { # Enjoy a quiet drink - player version - no cost
+        trigger = { ai = no }
+        name = dw_grandinn100a
+        random = {
+            chance = 25
+            remove_trait = stressed
+        }
+    }
+    option = { # Enjoy a quiet drink - ai version - cost
+        trigger = { ai = yes }
+        name = dw_grandinn100a
+        wealth = -1
+        random = {
+            chance = 25
+            remove_trait = stressed
+        }
+    }
+    option = { # Look around
+        name = dw_grandinn120b
+        dw_look_around_grand_inn = yes
+    }
+}
+# It's a packed lively crowd
+narrative_event = {
+    id = dw_grandinn.120
+    is_triggered_only = yes
+	desc = dw_grandinn120
+	picture = grandinn_03
+	window = "BiggerEventWindow"
+	title = grand_inn_title
+    option = { # drink and meal - player version - no cost
+        trigger = { ai = no }
+        name = dw_grandinn120a
+        random = {
+            chance = 10 # Lower chance due to the more lively nature of the bar
+            remove_trait = stressed
+        }
+    }
+    option = { # drink and meal - ai version - cost
+        trigger = { ai = yes }
+        name = dw_grandinn120a
+        wealth = -1
+        random = {
+            chance = 10
+            remove_trait = stressed
+        }
+    }
+    option = { # Look around
+        name = dw_grandinn120b
+        dw_look_around_grand_inn = yes
+    }
+}
+# Remains of a bar brawl
+narrative_event = {
+    id = dw_grandinn.130
+    is_triggered_only = yes
+	desc = dw_grandinn130
+	picture = grandinn_04
+	window = "BiggerEventWindow"
+	title = grand_inn_title
+    option = { # Take all the repair money
+        trigger = { trait = greedy }
+        name = dw_grandinn130a
+        tooltip_info = greedy
+        wealth = 5
+    }
+    option = { # Take half
+        name = dw_grandinn130b
+        wealth = 2.5
+    }
+    option = { # Keep it all for repairs
+        name = dw_grandinn130c
+        if = {
+            limit = {
+                NOT = { trait = charitable }
+            }
+            random = {
+                chance = 10
+                add_trait = charitable
+            }
+        }
+    }
+}
+# Bard entertains the guests
+narrative_event = {
+    id = dw_grandinn.140
+    is_triggered_only = yes
+	desc = dw_grandinn140
+	picture = grandinn_05
+	window = "BiggerEventWindow"
+	title = grand_inn_title
+    immediate = {
+        random_courtier_or_vassal = {
+            limit = {
+                is_adult = yes # No kids in the bar
+                NOT = { trait = zealous } # This person wouldn't be chilling in a bar
+            }
+            save_event_target_as = dw_bar_patron
+        }
+    }
+    option = { # Tip the bard
+        trigger = { wealth = 5 }
+        name = dw_grandinn140a
+        wealth = -5
+        add_character_modifier = { modifier = generous_host months = 3 }
+        event_target:dw_bar_patron = { opinion = { modifier = dw_supported_performance who = ROOT }}
+    }
+    option = { # Applaud the bard
+        name = dw_grandinn140b
+        event_target:dw_bar_patron = { opinion = { modifier = dw_supported_performance who = ROOT }}
+    }
+    option = { # Boo the bard
+        name = dw_grandinn140c
+        event_target:dw_bar_patron = { opinion = { modifier = dw_ridculed_performance who = ROOT }}
+    }
+}
+# Potential Rogue Recruitment
+narrative_event = {
+    id = dw_grandinn.150
+    is_triggered_only = yes
+	desc = dw_grandinn150
+	picture = rogue_01
+	window = "BiggerEventWindow"
+	title = dw_rogue_title
+    immediate = {
+        dw_create_rogue = yes
+    }
+    option = { # You should join my court
+        trigger = { trait = villain }
+        name = dw_grandinn150a
+        hidden_tooltip = {
+            event_target:dw_rogue_recruit = { add_trait = villain }
+        }
+    }
+    option = { # You should join my court
+        trigger = { NOT = { trait = villain } }
+        name = dw_grandinn150a
+        hidden_tooltip = {
+            event_target:dw_rogue_recruit = { add_trait = hero }
+        }
+    }
+    option = { # Good luck on your journey
+        name = dw_grandinn150b
+        hidden_tooltip = {
+            event_target:dw_rogue_recruit = { banish = yes }
+        }
+    }
+    option = { # I don't ever want to see you again
+        name = dw_grandinn150c
+        hidden_tooltip = {
+            set_global_flag = dw_npc_ignore_rogue
+			clr_global_flag = dw_npc_rogue_alive
+            event_target:dw_rogue_recruit = { death = { death_reason = death_vanished } }
+        }
+    }
+}
+
+# .9999 dw_inn_visit_recovery flag removal
+character_event = {
+	id = dw_grandinn.9999
+	hide_window = yes # Nothing to see here
+	is_triggered_only = yes # Various decisions call this, usually after 30 days
+	immediate = {
+		clr_character_flag = dw_inn_visit_recovery
+	}
+}

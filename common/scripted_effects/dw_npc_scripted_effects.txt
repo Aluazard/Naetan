@@ -1,0 +1,2987 @@
+#### Generic NPC Section ####
+dw_create_lowborn_mage = {
+    create_character = {
+		random_traits = no
+        female = 50 # 50% change of being a female
+		religion = ROOT
+		culture = ROOT
+        dynasty = none
+		attributes = {
+			diplomacy = 3
+			intrigue = 4
+			stewardship = 3
+			martial = 3
+			learning = 7
+		}
+	}
+	new_character = {
+        # save_event_target_as = dw_mage_recruit
+        add_trait = mage
+		random_list = { # Education trait
+            40 = { add_trait = detached_priest }
+            40 = { add_trait = martial_cleric }
+            15 = { add_trait = scholarly_theologian }
+            5 = { add_trait = mastermind_theologian }
+        }
+        random_list = { # Health related
+            75 = { } # Nothing
+            15 = { add_trait = scarred }
+            5 = { add_trait = scarred_mid }
+            3 = { add_trait = lunatic }
+            2 = { add_trait = possessed }
+        }
+        random_list = { # Physique related
+            75 = { } # Nothing
+            5 = { add_trait = is_fat }
+            5 = { add_trait = weak }
+            5 = { add_trait = robust }
+            10 = { add_trait = sturdy }
+        }
+        random_list = { # Birth
+            90 = { } # Nothing
+            10 = { add_trait = bastard }
+        }
+        random_list = { # Genetics
+            75 = { } # Nothing
+            5 = { add_trait = dwarf }
+            5 = { add_trait = hunchback }
+            5 = { add_trait = clubfooted }
+            10 = { add_trait = lefthanded }
+        }
+        random_list = { # Looks
+            80 = { } # Nothing
+            5 = { add_trait = ugly }
+            5 = { add_trait = uncouth }
+            5 = { add_trait = groomed }
+            5 = { add_trait = fair }
+        }
+        random_list = { # Intelligence
+            80 = { } # Nothing
+            5 = { add_trait = genius }
+            5 = { add_trait = quick }
+            10 = { add_trait = shrewd }
+        }
+        random_list = { # Lifestyle
+            80 = { } # Nothing
+            5 = { add_trait = scholar }
+            10 = { add_trait = mystic }
+            5 = { add_trait = theologian }
+        }
+        random_list = { # First Personality addition
+            15 = { add_trait = chaste }
+            10 = { add_trait = lustful }
+            15 = { add_trait = temperate }
+            10 = { add_trait = gluttonous }
+            50 = { add_trait = patient }
+        }
+        random_list = { # Second Personality addition
+            10 = { add_trait = greedy }
+            30 = { add_trait = diligent }
+            15 = { add_trait = kind }
+            15 = { add_trait = envious }
+            15 = { add_trait = proud }
+            15 = { add_trait = humble }
+        }
+        random_list = { # Other
+            20 = { add_trait = ambitious }
+            15 = { add_trait = deceitful }
+            50 = { add_trait = erudite }
+            15 = { add_trait = honest }
+        }
+        random_list = { # Other
+            50 = { add_trait = cynical }
+            20 = { add_trait = paranoid }
+            10 = { add_trait = shy }
+            20 = { add_trait = stubborn }
+        }
+        random_list = { # Leadership
+            90 = { } #Nothing
+            5 = { add_trait = organizer }
+            5 = { add_trait = trickster }
+        }
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            character_event = { id = DWBody.1 }
+        }
+	}
+}
+dw_create_noble_mage = {
+    create_character = {
+		random_traits = no
+        female = 40 # 40% chance of being a female
+		religion = ROOT
+		culture = ROOT
+        dynasty = random
+		attributes = {
+			diplomacy = 4
+			intrigue = 4
+			stewardship = 4
+			martial = 3
+			learning = 7
+		}
+	}
+	new_character = {
+        # save_event_target_as = dw_mage_recruit
+        add_trait = mage
+		random_list = { # Education trait
+            20 = { add_trait = detached_priest }
+            30 = { add_trait = martial_cleric }
+            40 = { add_trait = scholarly_theologian }
+            10 = { add_trait = mastermind_theologian }
+        }
+        random_list = { # Health related
+            75 = { } # Nothing
+            15 = { add_trait = scarred }
+            5 = { add_trait = scarred_mid }
+            3 = { add_trait = lunatic }
+            2 = { add_trait = possessed }
+        }
+        random_list = { # Physique related
+            75 = { } # Nothing
+            5 = { add_trait = is_fat }
+            5 = { add_trait = weak }
+            5 = { add_trait = robust }
+            10 = { add_trait = sturdy }
+        }
+        random_list = { # Birth
+            75 = { } # Nothing
+            25 = { add_trait = bastard }
+        }
+        random_list = { # Genetics
+            75 = { } # Nothing
+            5 = { add_trait = dwarf }
+            5 = { add_trait = hunchback }
+            15 = { add_trait = lefthanded }
+        }
+        random_list = { # Looks
+            75 = { } # Nothing
+            5 = { add_trait = ugly }
+            5 = { add_trait = uncouth }
+            10 = { add_trait = groomed }
+            5 = { add_trait = fair }
+        }
+        random_list = { # Intelligence
+            75 = { } # Nothing
+            5 = { add_trait = genius }
+            10 = { add_trait = quick }
+            10 = { add_trait = shrewd }
+        }
+        random_list = { # Lifestyle
+            65 = { } # Nothing
+            10 = { add_trait = scholar }
+            15 = { add_trait = mystic }
+            10 = { add_trait = theologian }
+        }
+        random_list = { # First Personality addition
+            15 = { add_trait = chaste }
+            10 = { add_trait = lustful }
+            15 = { add_trait = temperate }
+            10 = { add_trait = gluttonous }
+            50 = { add_trait = patient }
+        }
+        random_list = { # Second Personality addition
+            10 = { add_trait = greedy }
+            30 = { add_trait = diligent }
+            15 = { add_trait = kind }
+            15 = { add_trait = envious }
+            15 = { add_trait = proud }
+            15 = { add_trait = humble }
+        }
+        random_list = { # Other
+            25 = { add_trait = ambitious }
+            15 = { add_trait = deceitful }
+            50 = { add_trait = erudite }
+            10 = { add_trait = honest }
+        }
+        random_list = { # Other
+            50 = { add_trait = cynical }
+            20 = { add_trait = paranoid }
+            10 = { add_trait = shy }
+            20 = { add_trait = stubborn }
+        }
+        random_list = { # Leadership
+            80 = { } #Nothing
+            10 = { add_trait = organizer }
+            10 = { add_trait = trickster }
+        }
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            character_event = { id = DWBody.1 }
+        }
+	}
+}
+dw_create_mage_prodigy = {
+    create_character = {
+		random_traits = no
+        female = 50 # 40% chance of being a female
+		religion = ROOT
+		culture = ROOT
+        dynasty = random
+		attributes = {
+			diplomacy = 4
+			intrigue = 5
+			stewardship = 4
+			martial = 3
+			learning = 8
+		}
+	}
+	new_character = {
+        # save_event_target_as = dw_mage_recruit
+        add_trait = mage
+		random_list = { # Education trait
+            20 = { add_trait = midas_touched }
+            40 = { add_trait = scholarly_theologian }
+            40 = { add_trait = mastermind_theologian }
+        }
+        random_list = { # Health related
+            85 = { } # Nothing
+            10 = { add_trait = scarred }
+            3 = { add_trait = lunatic }
+            2 = { add_trait = possessed }
+        }
+        random_list = { # Physique related
+            80 = { } # Nothing
+            5 = { add_trait = weak }
+            5 = { add_trait = robust }
+            10 = { add_trait = sturdy }
+        }
+        random_list = { # Birth
+            95 = { } # Nothing
+            5 = { add_trait = bastard }
+        }
+        random_list = { # Genetics
+            80 = { } # Nothing
+            5 = { add_trait = dwarf }
+            15 = { add_trait = lefthanded }
+        }
+        random_list = { # Looks
+            75 = { } # Nothing
+            5 = { add_trait = ugly }
+            5 = { add_trait = uncouth }
+            10 = { add_trait = groomed }
+            5 = { add_trait = fair }
+        }
+        random_list = { # Intelligence
+            20 = { add_trait = genius }
+            50 = { add_trait = quick }
+            30 = { add_trait = shrewd }
+        }
+        random_list = { # Lifestyle
+            50 = { } # Nothing
+            20 = { add_trait = scholar }
+            20 = { add_trait = mystic }
+            10 = { add_trait = theologian }
+        }
+        random_list = { # First Personality addition
+            10 = { add_trait = chaste }
+            10 = { add_trait = lustful }
+            15 = { add_trait = temperate }
+            5 = { add_trait = gluttonous }
+            60 = { add_trait = patient }
+        }
+        random_list = { # Second Personality addition
+            10 = { add_trait = greedy }
+            50 = { add_trait = diligent }
+            10 = { add_trait = kind }
+            10 = { add_trait = envious }
+            10 = { add_trait = proud }
+            10 = { add_trait = humble }
+        }
+        random_list = { # Other
+            30 = { add_trait = ambitious }
+            10 = { add_trait = deceitful }
+            50 = { add_trait = erudite }
+            10 = { add_trait = honest }
+        }
+        random_list = { # Other
+            60 = { add_trait = cynical }
+            10 = { add_trait = paranoid }
+            10 = { add_trait = shy }
+            20 = { add_trait = stubborn }
+        }
+        random_list = { # Leadership
+            70 = { } #Nothing
+            15 = { add_trait = organizer }
+            15 = { add_trait = trickster }
+        }
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            character_event = { id = DWBody.1 }
+        }
+	}
+}
+dw_create_a_magicuser = {
+    # We've different types of magic users
+    random_list = {
+        50 = { # Random Lowborn mage
+            dw_create_lowborn_mage = yes
+        }
+        30 = { # Random Noble mage
+            dw_create_noble_mage = yes
+        }
+        20 = { # Random mage prodigy
+            dw_create_mage_prodigy = yes
+        }
+    }
+}
+
+dw_create_common_thug_henchman = {
+    create_character = {
+		random_traits = no
+        female = 25 # 25% change of being a female
+		religion = ROOT
+		culture = ROOT
+		attributes = {
+			diplomacy = 4
+			intrigue = 4
+			stewardship = 4
+			martial = 4
+			learning = 4
+		}
+	}
+	new_character = {
+        save_event_target_as = dw_henchman_recruit
+		random_list = { # Education trait
+            50 = { add_trait = misguided_warrior }
+            40 = { add_trait = tough_soldier }
+            10 = { add_trait = skilled_tactician }
+        }
+        random_list = { # Health related
+            65 = { } # Nothing
+            5 = { add_trait = drunkard }
+            20 = { add_trait = scarred }
+            10 = { add_trait = scarred_mid }
+        }
+        random_list = { # Maimed potential
+            90 = { } # Nothing
+            5 = {
+                if = {
+                    limit = { has_dlc = "Reapers"}
+                    add_trait = one_eyed
+                }
+                else = {
+                    add_trait = maimed
+                }
+            }
+            5 = {
+                if = {
+                    limit = { has_dlc = "Reapers"}
+                    add_trait = disfigured
+                }
+                else = {
+                    add_trait = maimed
+                }
+            }
+        }
+        random_list = { # Physique related
+            45 = { } # Nothing
+            5 = { add_trait = strong }
+            30 = { add_trait = robust }
+            20 = { add_trait = sturdy }
+        }
+        random_list = { # Birth
+            90 = { } # Nothing
+            10 = { add_trait = bastard }
+        }
+        random_list = { # Genetics
+            60 = { } # Nothing
+            10 = { add_trait = dwarf }
+            10 = { add_trait = hunchback }
+            10 = { add_trait = giant }
+            10 = { add_trait = lefthanded }
+        }
+        random_list = { # Looks
+            80 = { } # Nothing
+            10 = { add_trait = ugly }
+            5 = { add_trait = uncouth }
+            5 = { add_trait = fair }
+        }
+        random_list = { # Intelligence
+            80 = { } # Nothing
+            5 = { add_trait = slow }
+            5 = { add_trait = dull }
+            5 = { add_trait = quick }
+            5 = { add_trait = shrewd }
+        }
+        random_list = { # Lifestyle
+            75 = { } # Nothing
+            5 = { add_trait = duelist }
+            15 = { add_trait = hunter}
+            5 = { add_trait = impaler }
+        }
+        random_list = { # First Personality addition
+            30 = { add_trait = lustful }
+            15 = { add_trait = temperate }
+            15 = { add_trait = gluttonous }
+            10 = { add_trait = patient }
+            30 = { add_trait = wroth }
+        }
+        random_list = { # Second Personality addition
+            50 = { add_trait = greedy }
+            20 = { add_trait = diligent }
+            30 = { add_trait = proud }
+        }
+        random_list = { # Other
+            20 = { add_trait = arbitrary }
+            20 = { add_trait = brave }
+            50 = { add_trait = cruel }
+            10 = { add_trait = ambitious }
+        }
+        random_list = { # Other
+            40 = { add_trait = deceitful }
+            10 = { add_trait = trusting }
+            10 = { add_trait = gregarious }
+            10 = { add_trait = cynical }
+            10 = { add_trait = stubborn }
+            5 = { add_trait = cannibal_trait }
+            15 = { add_trait = pirate }
+        }
+        random_list = { # Leadership
+            70 = { } #Nothing
+            10 = { add_trait = defensive_leader }
+            10 = { add_trait = flanker }
+            10 = { add_trait = winter_soldier }
+        }
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            character_event = { id = DWBody.1 }
+        }
+	}
+}
+dw_create_brute_henchman = {
+    create_character = {
+		random_traits = no
+        female = 25 # 25% change of being a female
+		religion = ROOT
+		culture = ROOT
+		attributes = {
+			diplomacy = 3
+			intrigue = 3
+			stewardship = 3
+			martial = 7
+			learning = 4
+		}
+	}
+	new_character = {
+        save_event_target_as = dw_henchman_recruit
+		random_list = { # Education trait
+            50 = { add_trait = tough_soldier }
+            30 = { add_trait = skilled_tactician }
+            20 = {
+                add_trait = brilliant_strategist
+                # Brilliant Strategist is supposed to include one free leadership ability
+                random_list = {
+                    25 = { add_trait = cavalry_leader }
+                    25 = { add_trait = heavy_infantry_leader }
+                    25 = { add_trait = light_foot_leader }
+                    25 = { add_trait = war_elephant_leader }
+                }
+            }
+        }
+        random_list = { # Health related
+            40 = { } # Nothing
+            30 = { add_trait = scarred }
+            20 = { add_trait = scarred_mid }
+            10 = { add_trait = scarred_high }
+        }
+        random_list = { # Maimed potential
+            90 = { } # Nothing
+            5 = {
+                if = {
+                    limit = { has_dlc = "Reapers"}
+                    add_trait = one_eyed
+                }
+                else = {
+                    add_trait = maimed
+                }
+            }
+            5 = {
+                if = {
+                    limit = { has_dlc = "Reapers"}
+                    add_trait = disfigured
+                }
+                else = {
+                    add_trait = maimed
+                }
+            }
+        }
+        random_list = { # Physique related
+            10 = { } # Nothing
+            15 = { add_trait = strong }
+            50 = { add_trait = robust }
+            25 = { add_trait = sturdy }
+        }
+        random_list = { # Birth
+            85 = { } # Nothing
+            15 = { add_trait = bastard }
+        }
+        random_list = { # Genetics
+            50 = { } # Nothing
+            30 = { add_trait = giant }
+            20 = { add_trait = lefthanded }
+        }
+        random_list = { # Looks
+            70 = { } # Nothing
+            5 = { add_trait = ugly }
+            20 = { add_trait = uncouth }
+            5 = { add_trait = fair }
+        }
+        random_list = { # Intelligence
+            80 = { } # Nothing
+            5 = { add_trait = dull }
+            5 = { add_trait = quick }
+            10 = { add_trait = shrewd }
+        }
+        random_list = { # Lifestyle
+            60 = { } # Nothing
+            5 = { add_trait = duelist }
+            10 = { add_trait = hunter}
+            25 = { add_trait = impaler }
+        }
+        random_list = { # First Personality addition
+            25 = { add_trait = lustful }
+            15 = { add_trait = temperate }
+            10 = { add_trait = gluttonous }
+            10 = { add_trait = patient }
+            40 = { add_trait = wroth }
+        }
+        random_list = { # Second Personality addition
+            5 = { add_trait = charitable }
+            20 = { add_trait = greedy }
+            25 = { add_trait = diligent }
+            10 = { add_trait = humble }
+            40 = { add_trait = proud }
+        }
+        random_list = { # Common Other
+            10 = { add_trait = arbitrary }
+            40 = { add_trait = brave }
+            40 = { add_trait = cruel }
+            10 = { add_trait = deceitful }
+        }
+        random_list = { # Rare Other
+            10 = { add_trait = ambitious }
+            10 = { add_trait = gregarious }
+            20 = { add_trait = cynical }
+            40 = { add_trait = stubborn }
+            5 = { add_trait = cannibal_trait }
+            10 = { add_trait = pirate }
+            5 = { add_trait = berserker }
+        }
+        random_list = { # Leadership
+            50 = { } #Nothing
+            10 = { add_trait = aggressive_leader }
+            10 = { add_trait = defensive_leader }
+            10 = { add_trait = narrow_flank_leader }
+            10 = { add_trait = unyielding_leader }
+            10 = { add_trait = winter_soldier }
+        }
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            character_event = { id = DWBody.1 }
+        }
+	}
+}
+dw_create_a_henchman = {
+    # We've different types of henchmen, which helps determine traits
+    random_list = {
+        40 = { # Common thug
+            dw_create_common_thug_henchman = yes
+        }
+        20 = { # Brute
+            dw_create_brute_henchman = yes
+        }
+    }
+}
+dw_create_innocent_sidekick = {
+    create_character = {
+		random_traits = no
+        female = 50 # 50% change of being a female
+		religion = ROOT
+		culture = ROOT
+		attributes = {
+			diplomacy = 4
+			intrigue = 4
+			stewardship = 4
+			martial = 4
+			learning = 4
+		}
+	}
+	new_character = {
+        save_event_target_as = dw_henchman_recruit
+		random_list = { # Education trait
+            50 = { add_trait = naive_appeaser }
+            25 = { add_trait = misguided_warrior }
+            25 = { add_trait = amateurish_plotter }
+            }
+        random_list = { # Physique related
+            50 = { } # Nothing
+            10 = { add_trait = is_fat }
+            10 = { add_trait = weak }
+            10 = { add_trait = feeble }
+            10 = { add_trait = robust }
+            10 = { add_trait = sturdy }
+        }
+        random_list = { # Genetics
+            80 = { } # Nothing
+            10 = { add_trait = dwarf }
+            10 = { add_trait = giant }
+        }
+        random_list = { # Looks
+            80 = { } # Nothing
+            5 = { add_trait = ugly }
+            10 = { add_trait = groomed }
+            5 = { add_trait = fair }
+        }
+        random_list = { # Intelligence
+            90 = { } # Nothing
+            5 = { add_trait = dull }
+            5 = { add_trait = shrewd }
+        }
+        random_list = { # Lifestyle
+            75 = { } # Nothing
+            15 = { add_trait = gamer }
+            10 = { add_trait = theologian }
+        }
+        random_list = { # First Personality addition
+            50 = { add_trait = chaste }
+            15 = { add_trait = temperate }
+            10 = { add_trait = gluttonous }
+            25 = { add_trait = patient }
+        }
+        random_list = { # Second Personality addition
+            20 = { add_trait = charitable }
+            15 = { add_trait = humble }
+            5 = { add_trait = proud }
+            60 = { add_trait = kind }
+        }
+        random_list = { # Other
+            20 = { add_trait = brave }
+            5 = { add_trait = craven }
+            75 = { add_trait = trusting }
+        }
+        random_list = { # Other
+            10 = { add_trait = content }
+            10 = { add_trait = gregarious }
+            10 = { add_trait = shy }
+            20 = { add_trait = zealous }
+            10 = { add_trait = erudite }
+            20 = { add_trait = honest }
+            20 = { add_trait = just }
+        }
+        random_list = { # Leadership
+            85 = { } #Nothing
+            10 = { add_trait = defensive_leader }
+            5 = { add_trait = organizer }
+        }
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            character_event = { id = DWBody.1 }
+        }
+	}
+}
+dw_create_rebel_sidekick = {
+    create_character = {
+		random_traits = no
+        female = 40 # 40% change of being a female
+		religion = ROOT
+		culture = ROOT
+		attributes = {
+			diplomacy = 4
+			intrigue = 5
+			stewardship = 3
+			martial = 5
+			learning = 3
+		}
+	}
+	new_character = {
+        save_event_target_as = dw_henchman_recruit
+		random_list = { # Education trait
+            30 = { add_trait = underhanded_rogue }
+            10 = { add_trait = charismatic_negotiator }
+            20 = { add_trait = tough_soldier }
+            10 = { add_trait = skilled_tactician }
+            20 = { add_trait = flamboyant_schemer }
+            10 = { add_trait = intricate_webweaver }
+        }
+        random_list = { # Physique related
+            75 = { } # Nothing
+            15 = { add_trait = robust }
+            10 = { add_trait = sturdy }
+        }
+        random_list = { # Birth
+            85 = { } # Nothing
+            15 = { add_trait = bastard }
+        }
+        random_list = { # Genetics
+            80 = { } # Nothing
+            20 = { add_trait = lefthanded }
+        }
+        random_list = { # Looks
+            50 = { } # Nothing
+            30 = { add_trait = groomed }
+            20 = { add_trait = fair }
+        }
+        random_list = { # Intelligence
+            75 = { } # Nothing
+            5 = { add_trait = quick }
+            20 = { add_trait = shrewd }
+        }
+        random_list = { # Lifestyle
+            70 = { } # Nothing
+            10 = { add_trait = duelist }
+            10 = { add_trait = hunter}
+            10 = { add_trait = schemer }
+        }
+        random_list = { # First Personality addition
+            10 = { add_trait = chaste }
+            20 = { add_trait = lustful }
+            15 = { add_trait = temperate }
+            5 = { add_trait = gluttonous }
+            25 = { add_trait = patient }
+            25 = { add_trait = wroth }
+        }
+        random_list = { # Second Personality addition
+            10 = { add_trait = charitable }
+            20 = { add_trait = greedy }
+            25 = { add_trait = diligent }
+            10 = { add_trait = humble }
+            35 = { add_trait = proud }
+        }
+        random_list = { # Other
+            30 = { add_trait = brave }
+            10 = { add_trait = cruel }
+            10 = { add_trait = deceitful }
+            10 = { add_trait = honest }
+            40 = { add_trait = gregarious }
+        }
+        random_list = { # Other
+            25 = { add_trait = ambitious }
+            20 = { add_trait = cynical }
+            10 = { add_trait = zealous }
+            25 = { add_trait = stubborn }
+            10 = { add_trait = just }
+            10 = { add_trait = paranoid }
+        }
+        random_list = { # Leadership
+            70 = { } #Nothing
+            10 = { add_trait = trickster }
+            10 = { add_trait = inspiring_leader }
+            10 = { add_trait = narrow_flank_leader }
+        }
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            character_event = { id = DWBody.1 }
+        }
+	}
+}
+dw_create_a_sidekick = {
+    # We've different types of sidekick, which helps determine traits
+    random_list = {
+        40 = { # Innocent idealist
+            dw_create_innocent_sidekick = yes
+        }
+        20 = { # Scruffy Looking Rebel
+            dw_create_rebel_sidekick = yes
+        }
+    }
+}
+
+# Generic Female Gladiator
+dw_create_female_gladiator = {
+    create_character = {
+        random_traits = no
+        dynasty = none
+        female = yes
+        age = 16
+        religion = ROOT
+        culture = ROOT
+        attributes = {
+            diplomacy = 3
+            intrigue = 4
+            stewardship = 3
+            martial = 7
+            learning = 3
+        }
+    }
+    new_character = {
+        save_event_target_as = dw_gladiator_recruit
+        add_trait = gladiator
+        # Education
+        random_list = {
+            60 = { add_trait = misguided_warrior }
+            35 = { add_trait = tough_soldier }
+            5 = { add_trait = skilled_tactician }
+        }
+        # Leadership
+        random_list = {
+            20 = { add_trait = light_foot_leader }
+            20 = { add_trait = flat_terrain_leader }
+            20 = { add_trait = rough_terrain_leader }
+            20 = { add_trait = heavy_infantry_leader }
+            20 = { add_trait = defensive_leader }
+        }
+        # Health
+        random_list = {
+            50 = { }
+            25 = { add_trait = scarred }
+            10 = { add_trait = lunatic }
+            10 = { add_trait = scarred_mid }
+            5 = { add_trait = drunkard }
+        }
+        # Physique
+        random_list = {
+            50 = { }
+            25 = { add_trait = robust }
+            15 = { add_trait = sturdy }
+            10 = { add_trait = strong }
+        }
+        # Birth Defect
+        random_list = {
+            75 = { }
+            10 = { add_trait = giant }
+            10 = { add_trait = dwarf }
+            5 = { add_trait = lefthanded }
+        }
+        # Lifestyle
+        random_list = {
+            85 = { }
+            10 = { add_trait = duelist }
+            5 = { add_trait = hunter }
+        }
+        # Personality 1
+        random_list = {
+            10 = { add_trait = chaste }
+            30 = { add_trait = lustful }
+            20 = { add_trait = diligent }
+            20 = { add_trait = greedy }
+            20 = { add_trait = gluttonous }
+        }
+        # Personality 2
+        random_list = {
+            20 = { add_trait = patient }
+            20 = { add_trait = wroth }
+            20 = { add_trait = envious }
+            20 = { add_trait = humble }
+            20 = { add_trait = proud }
+        }
+        # Other Personality
+        random_list = {
+            10 = { add_trait = ambitious}
+            10 = { add_trait = brave }
+            10 = { add_trait = cruel }
+            10 = { add_trait = gregarious }
+            10 = { add_trait = cynical }
+            10 = { add_trait = paranoid }
+            10 = { add_trait = stubborn }
+            10 = { add_trait = zealous }
+            10 = { add_trait = uncouth }
+            10 = { add_trait = groomed }
+        }
+        # Oddity
+        random_list = {
+            90 = { }
+            2 = { add_trait = pirate }
+            2 = { add_trait = adventurer }
+            2 = { add_trait = peasant_leader }
+            2 = { add_trait = homosexual }
+            2 = { add_trait = eunuch }
+        }
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_tits_trait = yes
+        }
+    }
+}
+# Create random female prostitute
+dw_create_female_prostitute = {
+    create_character = {
+        random_traits = no
+        dynasty = none
+        female = yes
+        age = 16
+        religion = ROOT
+        culture = ROOT
+        attributes = {
+            diplomacy = 4
+            intrigue = 5
+            stewardship = 4
+            martial = 2
+            learning = 3
+        }
+    }
+    new_character = {
+        add_trait = prostitute
+        # Education
+        random_list = {
+            25 = { add_trait = naive_appeaser }
+            25 = { add_trait = indulgent_wastrel }
+            25 = { add_trait = amateurish_plotter }
+            15 = { add_trait = underhanded_rogue }
+            10 = { add_trait = flamboyant_schemer }
+        }
+        # Leadership
+        # None
+        # Health
+        random_list = {
+            75 = { }
+            10 = { add_trait = lunatic }
+            15 = { add_trait = drunkard }
+        }
+        # Physique
+        random_list = {
+            20 = { }
+            75 = { add_trait = fair }
+            5 = {
+                add_trait = fair
+                add_trait = enchanting
+            }
+        }
+        # Birth Defect
+        random_list = {
+            80 = { }
+            5 = { add_trait = lisp }
+            10 = { add_trait = slow }
+            5 = { add_trait = stutter }
+        }
+        # Lifestyle
+        random_list = {
+            85 = { }
+            10 = { add_trait = hedonist }
+            5 = { add_trait = socializer }
+        }
+        # Personality 1
+        random_list = {
+            70 = { add_trait = lustful }
+            10 = { add_trait = temperate }
+            10 = { add_trait = gluttonous }
+            10 = { add_trait = humble }
+        }
+        # Personality 2
+        random_list = {
+            60 = { add_trait = greedy }
+            10 = { add_trait = charitable }
+            10 = { add_trait = envious }
+            10 = { add_trait = diligent }
+            10 = { add_trait = slothful }
+        }
+        # Other Personality
+        random_list = {
+            10 = { add_trait = arbitrary}
+            10 = { add_trait = content }
+            10 = { add_trait = cruel }
+            20 = { add_trait = gregarious }
+            20 = { add_trait = cynical }
+            10 = { add_trait = deceitful }
+            10 = { add_trait = stubborn }
+            10 = { add_trait = groomed }
+        }
+        # Oddity
+        random_list = {
+            80 = { }
+            20 = { add_trait = homosexual }
+        }
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_tits_trait = yes
+        }
+    }
+}
+# Create random male prostitute
+dw_create_male_prostitute = {
+    create_character = {
+        random_traits = no
+        dynasty = none
+        female = no
+        age = 16
+        religion = ROOT
+        culture = ROOT
+        attributes = {
+            diplomacy = 4
+            intrigue = 3
+            stewardship = 4
+            martial = 4
+            learning = 3
+        }
+    }
+    new_character = {
+        add_trait = prostitute
+        # Education
+        random_list = {
+            25 = { add_trait = naive_appeaser }
+            25 = { add_trait = indulgent_wastrel }
+            25 = { add_trait = amateurish_plotter }
+            15 = { add_trait = underhanded_rogue }
+            10 = { add_trait = flamboyant_schemer }
+        }
+        # Leadership
+        # None
+        # Health
+        random_list = {
+            75 = { }
+            10 = { add_trait = lunatic }
+            15 = { add_trait = drunkard }
+        }
+        # Physique
+        random_list = {
+            25 = { }
+            75 = { add_trait = fair }
+        }
+        # Birth Defect
+        random_list = {
+            80 = { }
+            5 = { add_trait = lisp }
+            10 = { add_trait = slow }
+            5 = { add_trait = stutter }
+        }
+        # Lifestyle
+        random_list = {
+            85 = { }
+            10 = { add_trait = hedonist }
+            5 = { add_trait = socializer }
+        }
+        # Personality 1
+        random_list = {
+            70 = { add_trait = lustful }
+            10 = { add_trait = temperate }
+            10 = { add_trait = gluttonous }
+            10 = { add_trait = humble }
+        }
+        # Personality 2
+        random_list = {
+            60 = { add_trait = greedy }
+            10 = { add_trait = charitable }
+            10 = { add_trait = envious }
+            10 = { add_trait = diligent }
+            10 = { add_trait = slothful }
+        }
+        # Other Personality
+        random_list = {
+            10 = { add_trait = arbitrary}
+            10 = { add_trait = content }
+            10 = { add_trait = cruel }
+            20 = { add_trait = gregarious }
+            20 = { add_trait = cynical }
+            10 = { add_trait = deceitful }
+            10 = { add_trait = stubborn }
+            10 = { add_trait = groomed }
+        }
+        # Oddity
+        random_list = {
+            80 = { }
+            20 = { add_trait = homosexual }
+        }
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_cock_trait = yes
+        }
+    }
+}
+
+#### Named NPC Section ####
+## template
+## NPC Name
+#dw_create_npcname = {
+#    create_character = {
+#        random_traits = no
+#        dynasty = none/random/or a number from the dynasty file
+#        name =
+#        female = yes/no
+#        age =
+#        health = # lower than 5 can be risky
+#        religion = ROOT/specific
+#        culture = ROOT # Root keeps culture penalities from coming up
+#        race = # impacts vanilla portrait/DNA/offspring portrait - like culture, but minus the penalty
+#        flag = special_npc # For DWT Compatibility
+#        # educational
+#        trait =
+#        # leadership
+#        trait =
+#        # trait = # Second leadership trait should be limited to brilliant_strategist
+#        # special traits - May be none of these, the two below are simply placeholders
+#        trait =
+#        trait =
+#        # personality traits - can me less than or more than 3, the three below are simply placeholders
+#        trait =
+#        trait =
+#        trait =
+#        # custom image
+#        trait =
+#        attributes = {
+#            diplomacy =
+#            intrigue =
+#            stewardship =
+#            martial =
+#            learning =
+#        }
+#    }
+#    new_character = {
+#        give_nickname = # If there is a nickname, the nickname in the create_character block above doesn't work, so we do it here
+#        set_character_flag = dw_npc_npcname
+#        set_character_flag = dw_custom_npc # this is to do a simple check if someone is a custom Dark World NPC or not
+#        save_event_target_as = # Only used if you're doing something to this person in the event, such as potentially banishing or killing them too
+#        set_global_flag = dw_npc_npcname_alive # We use this for triggers/limits on things, like preventing an npc from being recruited twice
+#        set_character_flag = no_sexytimes_allowed # This is a DWF/LF compatibility check
+#        set_character_flag = special_chancellor # Allows the person to hold the rank if society/government norms would normally prevent it
+#        set_character_flag = special_marshal # Allows the person to hold the rank if society/government norms would normally prevent it
+#        set_character_flag = special_spymaster # Allows the person to hold the rank if society/government norms would normally prevent it
+#        set_character_flag = special_spiritual # Allows the person to hold the rank if society/government norms would normally prevent it
+#        set_character_flag = special_treasurer # Allows the person to hold the rank if society/government norms would normally prevent it
+#        if = {
+#            limit = { has_dw_bodytrait_content = yes }
+#            add_trait = # Dick or Tit trait, potentially two if a futa or trap
+#        }
+#    }
+#}
+
+
+# Conan the Barbarian
+dw_create_conan = {
+    create_character = {
+        random_traits = no
+        dynasty = none
+        name = Conan
+        female = no
+        age = 22
+        health = 6.0
+        religion = pagan
+        culture = ROOT
+        race = norse
+        flag = special_npc # For DWT Compatibility
+        # educational
+        trait = brilliant_strategist # While comfortable alone, he's led men and women successfully in combat numerous times
+        # leadership
+        trait = aggressive_leader
+        trait = norse_leader # Additional due to Brilliant Strategist
+        # special traits
+        trait = strong
+        trait = scarred
+        trait = robust
+        trait = duelist
+        trait = ravager
+        trait = gladiator
+        # personality traits
+        trait = brave
+        trait = lustful
+        trait = proud
+        trait = diligent
+        # customer image
+        trait = portrait19 # Conan custom image
+        attributes = {
+            diplomacy = 2
+            intrigue = 6
+            stewardship = 3
+            martial = 11
+            learning = 3
+        }
+    }
+    new_character = {
+        give_nickname = nick_dw_barbarian
+        set_character_flag = dw_npc_conan
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_gladiator_recruit
+        set_character_flag = no_sexytimes_allowed # This is a DWF/LF compatibility check
+        set_global_flag = dw_npc_conan_alive
+        #set_character_flag = special_chancellor # Allows the person to hold the rank if society/government norms would normally prevent it
+        #set_character_flag = special_marshal # Allows the person to hold the rank if society/government norms would normally prevent it
+        #set_character_flag = special_spymaster # Allows the person to hold the rank if society/government norms would normally prevent it
+        #set_character_flag = special_spiritual # Allows the person to hold the rank if society/government norms would normally prevent it
+        #set_character_flag = special_treasurer # Allows the person to hold the rank if society/government norms would normally prevent it
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_huge_dick
+        }
+    }
+}
+
+# Jessica Rabbit
+dw_create_jessica = {
+    create_character = {
+      random_traits = no
+        name = Jessica
+        dynasty = 3100018 # Rabbit
+        age = 18
+        female = yes
+        dna = ahfcgajdfea
+        culture = ROOT
+        religion = ROOT
+        race = irish
+        health = 5.0
+        flag = special_npc # For DWT Compatibility
+        # educational
+        trait = charismatic_negotiator
+        # leadership
+        # trait =
+        # special
+        trait = fair
+        trait = enchanting
+        # personality
+        trait = temperate
+        trait = proud
+        trait = gregarious
+        trait = cynical
+        trait = greedy
+        #custom portrait
+        trait = portrait26 #Jessica's image
+        attributes = {
+            diplomacy = 7
+            intrigue = 8
+            stewardship = 5
+            martial = 2
+            learning = 3
+        }
+    }
+    new_character = {
+        set_global_flag = dw_npc_jessica_alive
+        set_character_flag = dw_npc_jessica
+        set_character_flag = dw_custom_npc
+        set_character_flag = no_sexytimes_allowed # This is a DWF/LF compatibility check
+        set_character_flag = special_chancellor # Allows the person to hold the rank if society/government norms would normally prevent it
+        # set_character_flag = special_marshal # Allows the person to hold the rank if society/government norms would normally prevent it
+        set_character_flag = special_spymaster # Allows the person to hold the rank if society/government norms would normally prevent it
+        # set_character_flag = special_spiritual # Allows the person to hold the rank if society/government norms would normally prevent it
+        # set_character_flag = special_treasurer # Allows the person to hold the rank if society/government norms would normally prevent it
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_huge_tits
+        }
+    }
+}
+
+# Morrigan
+dw_create_morrigan = {
+    create_character = {
+      random_traits = no
+      name = "Morrigan"
+      dynasty = 3100019
+      religion = ROOT
+      culture = ROOT
+      race = scottish
+      dna = aeefihleaah
+      female = yes
+      age = 19
+      health = 6.0
+      flag = special_npc # For DWT Compatibility
+      # education
+      trait = intricate_webweaver
+      # leadership
+      trait = flanker
+      # special
+      trait = fair # She is easy on the eyes
+      trait = enchanting # A beauty among beauties
+      trait = demon_kin # She's a succubus
+      # personality
+      trait = hedonist # Enjoys all that life offers
+      trait = lustful # She enjoys physical pleasure
+      trait = proud # She can be a bit conceited at times
+      trait = gregarious # Very approachable
+      trait = cynical # Sceptical of most religions, as she believes that she is a descendant of gods herself
+      trait = prostitute
+      #custom portrait
+      trait = portrait41 # Custom portrait for Morrigan
+      attributes = {
+          diplomacy = 4
+          intrigue = 6
+          stewardship = 4
+          martial = 6
+          learning = 5
+      }
+    }
+    new_character = {
+        save_event_target_as = dw_morrigan_recruit
+        set_character_flag = dw_boobs_checked
+        set_character_flag = dw_npc_morrigan
+        set_global_flag = dw_npc_morrigan_alive
+        set_character_flag = dw_custom_npc
+        add_character_modifier = { name = dw_lilith_stage_3 duration = -1 }
+        set_character_flag = no_sexytimes_allowed # This is a DWF/LF compatibility check
+        set_character_flag = special_chancellor # Allows the person to hold the rank if society/government norms would normally prevent it
+        set_character_flag = special_marshal # Allows the person to hold the rank if society/government norms would normally prevent it
+        set_character_flag = special_spymaster # Allows the person to hold the rank if society/government norms would normally prevent it
+        set_character_flag = special_spiritual # Allows the person to hold the rank if society/government norms would normally prevent it
+        # set_character_flag = special_treasurer # Allows the person to hold the rank if society/government norms would normally prevent it
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_big_tits
+        }
+    }
+}
+# Create Spiderman
+dw_create_spiderman = {
+    create_character = {
+        random_traits = no
+        name = Peter
+        dynasty = 3100005 # Parker
+        female = no
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = english
+        health = 6.0
+        trait = elusive_shadow # Very competent in stealth and tracking down threats based on clues
+        trait = genius # creates high tech gadgets on a budget, worked alongside other notables like Fantastic and Stark
+        trait = strong # Has the proportional strength of a spider! Which is a lot!
+        trait = agile # Master of hand-eye coordination and reflexes
+        trait = kind # Often makes a point to help those less fortunate than he is
+        trait = brave # Regularly faces threats, even if he's in rough shape or a disadvantage
+        trait = hero # Good boy
+        trait = just # Strives to do what's right, and be fair in his actions
+        trait = erudite # Was a bookworm before becoming Spiderman, remains one still
+        trait = spiderman04_pic
+        attributes = {
+            diplomacy = 5
+            intrigue = 7
+            stewardship = 4
+            martial = 7
+            learning = 8
+        }
+    }
+    new_character = {
+        set_character_flag = dw_npc_spiderman
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_spiderman_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_spiderman_recruit
+        give_nickname = nick_spiderman
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_dick
+        }
+    }
+}
+# Create Venom
+dw_create_venom = {
+    create_character = {
+        random_traits = no
+        name = Edward
+        dynasty = 882 # Brock
+        female = no
+        age = 18
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = danish
+        health = 6.0
+        trait = intricate_webweaver # Very competent in stealth and tracking down threats based on clues
+        trait = strong # Alien toughness
+        trait = agile # While a human body might not want to move like that regularly, the symbiote has no problems forcing it
+        trait = brave # It knows no fear
+        trait = robust # Venom makes even the scrawny into a ripped muscle machine
+        trait = diligent # Venom is extremely teneatious
+        trait = wroth # Known to fly into rages
+        trait = tentacle # alien tentacles at that!
+        trait = villain # Bad boy
+        trait = venom01_pic
+        attributes = {
+            diplomacy = 2
+            intrigue = 8
+            stewardship = 2
+            martial = 9
+            learning = 4
+        }
+    }
+    new_character = {
+        add_character_modifier = { modifier = dw_out_of_the_shadows duration = -1 }
+        set_character_flag = dw_npc_venom
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_venom_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_venom_recruit
+        give_nickname = nick_venom
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_huge_dick
+        }
+    }
+}
+# Create Two-Six
+dw_create_twosix = {
+    create_character = {
+        random_traits = no
+        name = Two-Six
+        dynasty = none # No dynasty
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = english
+        health = 5.5
+        trait = fortune_builder # Comes from a world big on numbers
+        trait = quick # I'll be honest - I'm guessing here.
+        trait = brave # Knows no fear - Latern Corps requirement
+        trait = patient # Has learned patience through difficult events from her past
+        trait = humble # Doesn't seek attention, prefers being low key
+        trait = honest # Doesn't see the need to lie
+        trait = trusting # See no reason to distrust someone without first hand experience
+        trait = tentacle # Space tentacle alien
+        trait = hero # Good girl
+        trait = twosix01_pic
+        attributes = {
+            diplomacy = 5
+            intrigue = 4
+            stewardship = 7
+            martial = 4
+            learning = 5
+        }
+    }
+    new_character = {
+        add_character_modifier = { modifier = dw_out_of_the_shadows duration = -1 }
+        set_character_flag = dw_npc_twosix
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_twosix_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_twosix_recruit
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_tits
+        }
+    }
+}
+# Create Power Girl
+dw_create_powergirl = {
+    create_character = {
+        random_traits = no
+        name = Kara
+        dynasty = 3100006 # Zor-El
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = norse
+        health = 6.0
+        trait = tough_soldier # A reliable combatant, who's struggled in other areas
+        trait = strong # Hard to be Power Girl without being powerful
+        trait = fair # ranked ninth in the top 100 hottest superheroes poll
+        trait = enchanting
+        trait = robust  # She's very muscular, although it's often not noticed, due to... a pair of reasons
+        trait = temperate # Reasons!
+        trait = proud # Very confident in her body and capabilities, very.
+        trait = trusting # Has gotten into some bad spots due to being too trusting
+        trait = mountain_terrain_leader # She leads with her mountains...
+        trait = hero # Good girl
+        trait = powergirl01_pic
+        attributes = {
+            diplomacy = 3
+            intrigue = 4
+            stewardship = 3
+            martial = 11
+            learning = 4
+        }
+    }
+    new_character = {
+        set_character_flag = special_marshal #She can work as a marshall regardless of culture/religion
+        set_character_flag = dw_npc_powergirl
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_powergirl_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_powergirl_recruit
+        give_nickname = nick_powergirl
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_enormous_tits
+        }
+    }
+}
+# Create Harley Quinn
+dw_create_harley = {
+    create_character = {
+        random_traits = no
+        name = Harley
+        dynasty = 3100001 # Quinn
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = norse
+        dna = aghefaecgca
+        health = 5.5
+        trait = flamboyant_schemer # If she didn't have a need to draw attention to herself, she'd be higher
+        trait = fair # Harley is a hottie
+        trait = enchanting
+        trait = quick # She may be crazy, but she's also smart
+        trait = lunatic # She's not all there
+        trait = lustful # Might be a stretch, but she's difinitely flirtatious
+        trait = arbitrary # Harley's actions are as random as her moods
+        trait = cynical # Not the religous type
+        trait = gregarious # Harley loves to talk
+        trait = villain # Bad, bad girl
+        trait = harley01_pic
+        attributes = {
+            diplomacy = 4
+            intrigue = 8
+            stewardship = 3
+            martial = 5
+            learning = 5
+        }
+    }
+    new_character = {
+        set_character_flag = special_spymaster #She can work as a spymaster regardless of culture/religion
+        set_character_flag = dw_npc_harley
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_harley_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_harley_recruit
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_tits
+        }
+    }
+}
+# Create Spider Gwen
+dw_create_spidergwen = {
+    create_character = {
+        random_traits = no
+        name = Gwen
+        dynasty = 3100004 # Stacy
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = english
+        health = 5.5
+        trait = flamboyant_schemer # Figures stuff out, but also prone to being discovered
+        trait = fair # Cute as a button, and limber
+        trait = agile # flexible, fast, that can move through the air with ease
+        trait = shrewd # Not quick, but a solid study in crime fighting
+        trait = robust # Stronger than your average male
+        trait = gregarious # Quick to chat up those she's comfortable with or teamming with.
+        trait = hero # Good girl
+        trait = trusting # She's gotten into trouble more than once for being so trusting
+        trait = spidergwen01_pic
+        attributes = {
+            diplomacy = 4
+            intrigue = 7
+            stewardship = 5
+            martial = 5
+            learning = 4
+        }
+    }
+    new_character = {
+        set_character_flag = special_spymaster #She can work as a spymaster regardless of culture/religion
+        set_character_flag = dw_npc_spidergwen
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_spidergwen_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_spidergwen_recruit
+        give_nickname = nick_spidergwen
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_small_tits
+        }
+    }
+}
+# Create the Vulture
+dw_create_vulture = {
+    create_character = {
+        random_traits = no
+        name = Adrian
+        dynasty = 3100003 # Toomes
+        female = no
+        age = 30
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = english
+        health = 5.5
+        trait = scholarly_theologian # A learned man, although one who is skeptical towards the divine
+        trait = quick # Intelligent, although a bit quirky, and more competent than his wiry frame appears
+        trait = temperate # His frame looks feeble, yet is instead a wiry honed mass of muscle, due to his temperate lifestyle
+        trait = wroth # Can be provoked into violent outbursts
+        trait = proud # The Vulture seeks not only wealth, but recognition
+        trait = greedy # The Vulture is driven by the need to accumulate material wealth
+        trait = villain # Bad Boy
+        trait = cynical # Question the establishment, for they seek to keep you ignorant
+        trait = vulture01_pic
+        attributes = {
+            diplomacy = 3
+            intrigue = 5
+            stewardship = 6
+            martial = 4
+            learning = 7
+        }
+    }
+    new_character = {
+        set_character_flag = dw_npc_vulture
+        set_global_flag = dw_npc_vulture_alive
+        set_character_flag = dw_custom_npc
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        save_event_target_as = dw_vulture_recruit
+        give_nickname = nick_vulture
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_dick
+        }
+    }
+}
+# Create Red Robin
+dw_create_redrobin = {
+    create_character = {
+        random_traits = no
+        name = Tim
+        dynasty = 1045009 # Drake
+        female = no
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = norse
+        health = 5.5
+        trait = skilled_tactician # experienced battlefield tactician with considerable experience as a leader
+        trait = quick # He regularly displays superior intellect and is very adaptive
+        trait = diligent # Tim is an extremely focused individual, who works to see things through.
+        trait = agile # A skilled acrobat
+        trait = proud # Tim is proud of his accomplishments and seeks to be his own man
+        trait = brave # Tim regularly faces off against foes that others would flee from
+        trait = hero # Good boy
+        trait = just # Strives to do what's right, and be fair in his actions
+        trait = inspiring_leader
+        trait = redrobin02_pic
+        attributes = {
+            diplomacy = 4
+            intrigue = 6
+            stewardship = 4
+            martial = 6
+            learning = 5
+        }
+    }
+    new_character = {
+        set_character_flag = dw_npc_redrobin
+        set_global_flag = dw_npc_redrobin_alive
+        set_character_flag = dw_custom_npc
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        save_event_target_as = dw_redrobin_recruit
+        give_nickname = nick_redrobin
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_dick
+        }
+    }
+}
+# Create Black Widow
+dw_create_blackwidow = {
+    create_character = {
+        random_traits = no
+        name = Natasha
+        dynasty = 100397 # Romanov
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = russian
+        health = 5.5
+        trait = fair # Black Widow is definitely easy on the eyes
+        trait = quick # She's extremely adaptive to situations
+        trait = elusive_shadow # She's one of the most capable infiltrators and assassins around
+        trait = agile # flexible, nimble, trained acrobat
+        trait = patient # Understands the importance of taking things slow
+        trait = diligent # Natasha is relentless when she has an objective
+        trait = hero # Good girl
+        trait = cynical # Natasha's past leads her to question everything
+        trait = blackwidow04_pic
+        attributes = {
+            diplomacy = 5
+            intrigue = 8
+            stewardship = 4
+            martial = 6
+            learning = 4
+        }
+    }
+    new_character = {
+        set_character_flag = special_spymaster #She can work as a spymaster regardless of culture/religion
+        set_character_flag = dw_npc_blackwidow
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_blackwidow_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_blackwidow_recruit
+        give_nickname = nick_blackwidow
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_tits
+        }
+    }
+}
+# Create Poison Ivy
+dw_create_poisonivy = {
+    create_character = {
+        random_traits = no
+        name = Pamela
+        dynasty = 3100002 # Isley
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = scottish
+        health = 5.5
+        trait = fair # Poison Ivy is to die for, at least if she has her way
+        trait = enchanting
+        trait = genius # A brillant mind resides in that hot, angry body
+        trait = wroth # Poison Ivy angers easily, and can be deadly when she lashes out.
+        trait = charismatic_negotiator # Poison Ivy may not be a true diplomat, yet her charm is just as beguiling
+        trait = gardener # Her affinity with plant life is nearly without comparison
+        trait = cynical # The action that changed her into Poison Ivy jaded her outlook and now she questions everything
+        trait = villain # Bad, bad girl
+        trait = lustful # Uses her beauty to entice, and is keen on giving out kisses
+        trait = poisonivy01_pic
+        attributes = {
+            diplomacy = 5
+            intrigue = 5
+            stewardship = 4
+            martial = 4
+            learning = 7
+        }
+    }
+    new_character = {
+        set_character_flag = special_chancellor #She can work as a chancellor regardless of culture/religion
+        set_character_flag = dw_npc_poisonivy
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_poisonivy_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_poisonivy_recruit
+        give_nickname = nick_poisonivy
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_tits
+        }
+    }
+}
+# Create Bat Girl
+dw_create_batgirl = {
+    create_character = {
+        random_traits = no
+        name = Barbara
+        dynasty = 3130 # Gordon
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = scottish
+        health = 5.5
+        trait = fair # Batgirl has that girl next door look to her
+        trait = quick # She's no slouch in figuring things out herself
+        trait = flamboyant_schemer # If we were using the Oracle version, it'd be higher
+        trait = temperate # Shows self-restraint regularly
+        trait = kind # Looks out for others regularly
+        trait = gregarious # She can be chatty
+        trait = hero # Good girl
+        trait = just # Is very focused on doing the right thing
+        trait = batgirl02_pic
+        attributes = {
+            diplomacy = 5
+            intrigue = 6
+            stewardship = 4
+            martial = 5
+            learning = 5
+        }
+    }
+    new_character = {
+        set_character_flag = special_spymaster #She can work as a spymaster regardless of culture/religion
+        set_character_flag = dw_npc_batgirl
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_batgirl_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_batgirl_recruit
+        give_nickname = nick_batgirl
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_tits
+        }
+    }
+}
+# Create Astrid
+dw_create_astrid = {
+    create_character = {
+        random_traits = no
+        name = Astrid
+        dynasty = 3100007 # Hofferson
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = norse
+        health = 5.5
+        trait = brilliant_strategist # Her martial and military prowess was impressive even as a youth
+        trait = master_of_flame # Sure, it's a chinese leadership trait, but it's the Way of the Dragon, fitting I believe
+        trait = fair # A fair norse warrior maiden
+        trait = quick # Quick to figure things out, very perceptive
+        trait = robust # Was stronger than your average person
+        trait = diligent # See's things through, regardless of the challenge
+        trait = brave # One of the first to charge in
+        trait = shieldmaiden # According to the hero wiki on her, she was recognized as a shieldmaiden
+        trait = hero # Good girl
+        trait = astrid01_pic
+        attributes = {
+            diplomacy = 4
+            intrigue = 5
+            stewardship = 4
+            martial = 8
+            learning = 4
+        }
+    }
+    new_character = {
+        set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_astrid
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_astrid_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_astrid_recruit
+        # give_nickname = nick_batgirl
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_small_tits
+        }
+    }
+}
+# Create Hiccup
+dw_create_hiccup = {
+    create_character = {
+        random_traits = no
+        name = Hiccup
+        dynasty = 3100008 # Haddock
+        female = no
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = norse
+        health = 5.6
+        trait = grey_eminence # Negotiated peace between dragon and man, nuff' said
+        trait = genius # creates his own false leg, special weapons, and more!
+        trait = feeble # A thin wisp of a man.
+        trait = kind # Is able to get over those who aren't friendly towards him
+        trait = charitable # He gives freely to those around him
+        trait = cynical # Takes lore and traditions with a grain of salt, knowing they're sometimes inaccurate
+        trait = brave # One of the first to charge in
+        trait = one_legged # Lost when he was younger
+        trait = hero # Good boy
+        trait = hiccup01_pic
+        attributes = {
+            diplomacy = 6
+            intrigue = 3
+            stewardship = 5
+            martial = 2
+            learning = 9
+        }
+    }
+    new_character = {
+        set_character_flag = dw_npc_hiccup
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_hiccup_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_hiccup_recruit
+        # give_nickname = nick_batgirl
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_dick
+        }
+    }
+}
+# Create Joker
+dw_create_joker = {
+    create_character = {
+        random_traits = no
+        name = Jack
+        dynasty = 3100009 # Napier
+        female = no
+        age = 20
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = scottish
+        health = 5.8
+        trait = elusive_shadow # He's Batman's primary rival for a reason
+        trait = genius # Master planner, crafter of gadgets. Insane, yet often ahead of most everyone else
+        trait = scarred # That grin will always be with him.
+        trait = lunatic # Clearly of a different mental state than most others
+        trait = temperate # Not prone to excess
+        trait = arbitrary # Crazy and unpredictable
+        trait = ambitious # Takes actions to increase his standing, willing to kill or maim those who'd oppose him
+        trait = cruel # Takes pleasure in the pain caused to others, will injure supposed allies for no clear reason
+        trait = deceitful # Lies easily
+        trait = villain # Bad boy
+        trait = joker01_pic
+        attributes = {
+            diplomacy = 3
+            intrigue = 8
+            stewardship = 2
+            martial = 6
+            learning = 6
+        }
+    }
+    new_character = {
+        set_character_flag = dw_npc_joker
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_joker_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_joker_recruit
+        give_nickname = nick_the_joker
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_big_dick
+        }
+    }
+}
+# Create Helen Parr (Elastigirl)
+dw_create_helenparr = {
+    create_character = {
+        random_traits = no
+        name = Helen
+        dynasty = 3100010 # Parr
+        female = yes
+        age = 28
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = german
+        health = 5.5
+        trait = elusive_shadow # adept at infiltration and investigation, plot discovery
+        trait = quick # superior problem solving, adapability
+        trait = temperate # Not prone to excesses
+        trait = diligent # focused, unrelenting pursuer
+        trait = humble # With the skills to be an A lister, she puts her husband and family first
+        trait = patient # Tolerated and waited for an ideal opportunity multiple times
+        trait = content # Of the heroes in seclusion, she appeared to be the one to best accept her fate
+        trait = gregarious # Good at conversing with others, developing bonds
+        trait = hero # Good girl
+        trait = helenparr01_pic
+        attributes = {
+            diplomacy = 3
+            intrigue = 7
+            stewardship = 5
+            martial = 6
+            learning = 4
+        }
+    }
+    new_character = {
+        set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_helenparr
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_helenparr_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_helenparr_recruit
+        give_nickname = nick_elastigirl
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_small_tits
+        }
+    }
+}
+# Create Bob Parr (Mr. Incredible)
+dw_create_bobparr = {
+    create_character = {
+        random_traits = no
+        name = Bob
+        dynasty = 3100010 # Parr
+        female = no
+        age = 30
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = german
+        health = 6.1
+        trait = skilled_tactician # Skilled combatant and leader, although there are those clearly better
+        trait = aggressive_leader # Charges in rather wrecklessly, relying on his skill and strength
+        trait = strong # His might is clear
+        trait = robust # Actively working out maximize his strength
+        trait = resilience # Able to take a beating and keep on fighting
+        trait = kind # Helps others even when it can put him in trouble
+        trait = proud # Desires recognition
+        trait = ambitious # Strives to be the best, number one among heroes
+        trait = just # Seeks to do right, even if it isn't popular
+        trait = hero # Good boy
+        trait = bobparr01_pic
+        attributes = {
+            diplomacy = 3
+            intrigue = 4
+            stewardship = 4
+            martial = 11
+            learning = 3
+        }
+    }
+    new_character = {
+        set_character_flag = dw_npc_bobparr
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_bobparr_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_bobparr_recruit
+        give_nickname = nick_mrincredible
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_huge_dick
+        }
+    }
+}
+# Create Violet Parr
+dw_create_violetparr = {
+    create_character = {
+        random_traits = no
+        name = Violet
+        dynasty = 3100010 # Parr
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = german
+        health = 5.1
+        trait = intricate_webweaver # Strong at stealth, not so much in manipulation
+        trait = unyielding_leader # In combat, her defense is impressive
+        trait = temperate # Not prone to excess
+        trait = humble # Comfortable not being the center of attention
+        trait = wroth # Prone to angry outbursts when riled
+        trait = cynical # Questions societal norms
+        trait = erudite # A book worm
+        trait = shy # Still finds it difficult to approach others on occasion
+        trait = hero # Good girl
+        trait = violetparr01_pic
+        attributes = {
+            diplomacy = 3
+            intrigue = 8
+            stewardship = 4
+            martial = 6
+            learning = 4
+        }
+    }
+    new_character = {
+        set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_violetparr
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_violetparr_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_violetparr_recruit
+        # give_nickname = nick_elastigirl
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_small_tits
+        }
+    }
+}
+# Create Dash Parr
+dw_create_dashparr = {
+    create_character = {
+        random_traits = no
+        name = Dashiell
+        dynasty = 3100010 # Parr
+        female = no
+        age = 12
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = german
+        health = 6.1
+        trait = quick # Learned to apply his speed to his comprehension ability
+        trait = resilience # Shown to be able to take an abnormal beating and keep going
+        trait = haughty
+        trait = playful
+        trait = willful
+        # trait =
+        # trait =
+        # trait =
+        # trait =
+        trait = hero # Good boy
+        trait = dashparr02_pic
+        attributes = {
+            diplomacy = 3
+            intrigue = 4
+            stewardship = 3
+            martial = 4
+            learning = 3
+        }
+    }
+    new_character = {
+        set_character_flag = dw_npc_dashparr
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_dashparr_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_dashparr_recruit
+        # give_nickname = nick_mrincredible
+        #if = {
+        #    limit = { has_dw_bodytrait_content = yes }
+        #    add_trait = dw_regular_dick
+        #}
+    }
+}
+# Create Syndrome
+dw_create_syndrome = {
+    create_character = {
+        random_traits = no
+        name = Buddy
+        dynasty = 1045038 # Pinesky
+        female = no
+        age = 20
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = volhynian
+        health = 5.1
+        trait = midas_touched # Built a multinational corporate powerhouse
+        trait = trickster # On the battlefield, his actions are often unpredictable
+        trait = genius # Extraordinary inventor
+        trait = diligent # He's committed to his plans, seeing them through with a disturbing relentless fervor
+        trait = gluttonous # Enjoys food, drink, money, revenge perhaps a bit too much, taking them in excess on occasion
+        trait = envious # The prime driver for his revenge
+        trait = ambitious # Strives to be the best, number one among heroes
+        trait = cruel # No one escapes his revenge, be they elderly, women or children
+        trait = gregarious # Runs his mouth - a lot.
+        trait = villain # Bad boy
+        trait = syndrome01_pic
+        attributes = {
+            diplomacy = 3
+            intrigue = 6
+            stewardship = 7
+            martial = 2
+            learning = 7
+        }
+    }
+    new_character = {
+        set_character_flag = dw_npc_syndrome
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_syndrome_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_syndrome_recruit
+        give_nickname = nick_syndrome
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_big_dick
+        }
+    }
+}
+# Create Hela
+dw_create_hela = {
+    create_character = {
+        random_traits = no
+        name = Hela
+        dynasty = 3100011 # Halja
+        female = yes
+        age = 28
+        flag = special_npc # For DWT compatibility
+        religion = norse_pagan # Normally ROOT
+        culture = norse # Normally ROOT
+        race = norse
+        health = 6.5
+        trait = elusive_shadow # Going more comic than movie or true lore
+        trait = quick # Perhaps not a genius, but still stunning intellectually
+        trait = strong # Abnormally so
+        trait = diligent # Takes responsibility seriously, focused and intense
+        trait = patient # Her long life has her naturally patient.
+        trait = envious # Feels she doesn't get what she rightfully deserves
+        trait = ambitious # When the ruler of Hel isn't enough for you, you're ambitious
+        trait = immortal # She can be slain in battle, but will live on otherwise
+        trait = villain # Bad girl
+        trait = hela01_pic
+        attributes = {
+            diplomacy = 4
+            intrigue = 9
+            stewardship = 6
+            martial = 9
+            learning = 4
+        }
+    }
+    new_character = {
+        set_character_flag = special_chancellor # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spiritual # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_treasurer # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_hela
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_hela_alive
+        set_character_flag = dw_custom_npc
+        # save_event_target_as = dw_hela_recruit
+        # give_nickname = nick_elastigirl
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_tits
+        }
+    }
+}
+# Create Livewire
+dw_create_livewire = {
+    create_character = {
+        random_traits = no
+        name = Leslie
+        dynasty = 3100012 # Willis
+        female = yes
+        age = 18
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = french
+        health = 5.5
+        trait = underhanded_rogue # Origin is a failed radio shock jock = mediocre diplomat
+        trait = powered
+        trait = sturdy # Well, she tangles with Superman
+        trait = wroth # Prone to angry outbursts, with her temper leading to her downfall in a number of situations
+        trait = proud # Very proud of who she is.
+        trait = brave # Not intimidated by those who appear stronger
+        trait = cynical # Doesn't believe the party line, looking for or making up truths to counter them
+        trait = gregarious # A known talker - origin has her making a living by it.
+        trait = villain # Bad girl
+        trait = livewire02_pic
+        attributes = {
+            diplomacy = 7
+            intrigue = 5
+            stewardship = 3
+            martial = 7
+            learning = 3
+        }
+    }
+    new_character = {
+        set_character_flag = special_chancellor # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_spiritual # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_treasurer # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_livewire
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_livewire_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_livewire_recruit
+        give_nickname = nick_livewire
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_tits
+        }
+    }
+}
+# Create Carol Danvers - Captain Marvel
+dw_create_captainmarvel = {
+    create_character = {
+        random_traits = no
+        name = Carol
+        dynasty = 3100013 # Danvers
+        female = yes
+        age = 18
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = english
+        health = 6.1
+        trait = tough_soldier # Very capable soldier, no examples of leading or coordinating large groups, so it's not higher
+        trait = experimenter # Leads from the front
+        trait = fair # Pleasing to look at
+        trait = strong # Clear superior strength
+        trait = powered # Holds an internal energy
+        trait = sturdy # can take a beating
+        trait = kind # shown to care of others in need
+        trait = wroth # is known to be hot headed
+        trait = just # seeks to be fair, even if it's not popular
+        trait = hero # Good girl
+        trait = captainmarvel01_pic
+        attributes = {
+            diplomacy = 3
+            intrigue = 5
+            stewardship = 4
+            martial = 8
+            learning = 5
+        }
+    }
+    new_character = {
+        # set_character_flag = special_chancellor # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_spiritual # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_treasurer # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_captainmarvel
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_captainmarvel_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_captainmarvel_recruit
+        give_nickname = nick_captainmarvel
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_tits
+        }
+    }
+}
+# Create Starfire
+dw_create_starfire = {
+    create_character = {
+        random_traits = no
+        name = Kori
+        dynasty = 3100014 # And'r
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = pictish
+        health = 6.1
+        trait = grey_eminence # A princess who seeks to understand other cultures, with a history of diplomatic moves
+        trait = fair # an otherworldly beauty
+        trait = enchanting
+        trait = strong # surprising strength exists within her
+        trait = resilience # healthy and hearty, able to take considerable damage
+        trait = powered # A natural for absorbing and releasing energy
+        trait = patient # has shown the ability to take her time understanding others and can remain calm when others lose their cool
+        trait = lustful # Her culture or upbringing lacks the normal inhibitions to sexual activity
+        trait = gregarious # Willing to converse with just about anyone
+        trait = master_of_flame # Her power aligns with this
+        trait = hero # Good girl
+        trait = starfire01_pic
+        attributes = {
+            diplomacy = 6
+            intrigue = 3
+            stewardship = 4
+            martial = 7
+            learning = 5
+        }
+    }
+    new_character = {
+        set_character_flag = special_chancellor # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spiritual # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_treasurer # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_starfire
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_starfire_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_starfire_recruit
+        give_nickname = nick_starfire
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_big_tits
+        }
+    }
+}
+# Create Raven
+dw_create_raven = {
+    create_character = {
+        random_traits = no
+        name = Rachel
+        dynasty = 3100015 # Roth
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = ashkenazi
+        health = 5.1
+        trait = intricate_webweaver
+        trait = shrewd # Quick to come up with tactics to deal with situations
+        trait = powered # A natural for absorbing and releasing energy
+        trait = temperate # Meditates regulary, avoids excess
+        trait = humble # Doesn't seek attention
+        trait = cynical # Doesn't let preconceived beliefs prevent her from asking questions and seeking answers
+        trait = stubborn # Not easy to sway when she feels she is right
+        trait = erudite # A book worm, always pouring over new tomes
+        trait = demon_kin # Her father is a major demon
+        # trait = hero # Good girl
+        trait = raven01_pic
+        attributes = {
+            diplomacy = 3
+            intrigue = 6
+            stewardship = 3
+            martial = 6
+            learning = 7
+        }
+    }
+    new_character = {
+        # set_character_flag = special_chancellor # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spiritual # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_treasurer # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_raven
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_raven_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_raven_recruit
+        give_nickname = nick_raven
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_small_tits
+        }
+    }
+}
+# Create Scarlet Witch
+dw_create_scarletwitch = {
+    create_character = {
+        random_traits = no
+        name = Wanda
+        dynasty = 3100016 # Maximoff
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = roman
+        health = 5.1
+        trait = elusive_shadow # Her manipulations have led to alternate realities, and other widespread events
+        trait = trickster # In combat, her actions can be very unpredictable
+        trait = shrewd # She has a way of piecing things together
+        trait = diligent # She has a strong track record for seeing things through
+        trait = wroth # She also has a strong track record for flipping out when provoked
+        trait = cynical # She rarely buys into preconceived notions, and commonly questions/pushes boundaries
+        trait = stubborn # Known to be extremely strong willed
+        trait = mage # a powerful spell caster
+        # trait = hero # We're going to set this when she's recruited, as she can be bad or good
+        trait = scarletwitch01_pic
+        attributes = {
+            diplomacy = 3
+            intrigue = 8
+            stewardship = 3
+            martial = 7
+            learning = 4
+        }
+    }
+    new_character = {
+        # set_character_flag = special_chancellor # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_spiritual # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_treasurer # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_scarletwitch
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_scarletwitch_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_scarletwitch_recruit
+        give_nickname = nick_scarletwitch
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_big_tits
+        }
+    }
+}
+# Create Rogue
+dw_create_rogue = {
+    create_character = {
+        random_traits = no
+        name = Anna
+        dynasty = 3100017 # Marie
+        female = yes
+        age = 16
+        flag = special_npc # For DWT compatibility
+        religion = ROOT
+        culture = ROOT
+        race = frankish
+        health = 6.1
+        trait = tough_soldier #
+        trait = fair # Easy on the eyes
+        trait = strong # Stronger than many a man
+        trait = resilience # healthy and hearty, able to take considerable damage
+        trait = robust # A muscular woman
+        trait = diligent # Rogue has shown to be regularly tenacious in seeing things through
+        trait = envious # Rogue struggled as a youth with envy for the relationships that others were able to have
+        trait = brave # Stands up to any threat against her or her loved ones
+        trait = unyielding_leader # She regularly relies in her toughness when leading
+        # trait = hero # Good girl
+        trait = rogue01_pic
+        attributes = {
+            diplomacy = 4
+            intrigue = 4
+            stewardship = 3
+            martial = 10
+            learning = 4
+        }
+    }
+    new_character = {
+        # set_character_flag = special_chancellor # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_spiritual # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_treasurer # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_rogue
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_rogue_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_rogue_recruit
+        give_nickname = nick_rogue
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_big_tits
+        }
+    }
+}
+# Create Hermione
+dw_create_hermione = {
+    create_character = {
+        random_traits = no
+        name = Hermione
+        dynasty = 3100020 # Granger
+        female = yes
+        age = 16
+        religion = ROOT
+        culture = ROOT
+        race = english
+        dna = camgjbmgfaz
+        health = 5.0
+        flag = special_npc # For DWT compatibility
+        # educational
+        trait = charismatic_negotiator
+        # leadership
+        # special
+        trait = fair
+        trait = genius
+        trait = mage
+        # personality
+        trait = diligent
+        trait = stubborn
+        trait = cynical
+        trait = proud
+        # portrait
+        trait = portrait5 # Hermione's photo
+        attributes = {
+            diplomacy = 5
+            intrigue = 4
+            stewardship = 4
+            martial = 4
+            learning = 8
+        }
+    }
+    new_character = {
+        save_event_target_as = dw_target_hermione
+        set_global_flag = dw_npc_hermione_alive
+        set_character_flag = special_chancellor # Allows her to be set as a chancellor even though she's a woman
+        # set_character_flag = special_spymaster # Allows her to be set as a spy master even though she's a woman
+        set_character_flag = special_spiritual # Allows her to be set as a spiritual leader even though she's a woman
+        set_character_flag = dw_npc_hermione
+        set_character_flag = dw_custom_npc
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_regular_tits
+        }
+    }
+}
+# Create Sorcey
+dw_create_sorcey = {
+    create_character = {
+        random_traits = no
+        name = Sorcey
+        dynasty = none
+        female = yes
+        age = 19
+        religion = ROOT
+        culture = ROOT
+        race = swedish
+        dna = dbichbjbebh
+        health = 5.0
+        flag = special_npc # For DWT compatibility
+        # education
+        trait = thrifty_clerk
+        # leadership
+        # special
+        trait = fair
+        trait = shrewd
+        trait = mage
+        # personality
+        trait = charitable
+        trait = humble
+        trait = cynical
+        trait = lustful
+        # portrait
+        trait = portrait6 # Sorcey's photo
+        attributes = {
+            diplomacy = 4
+            intrigue = 4
+            stewardship = 6
+            martial = 2
+            learning = 9
+        }
+    }
+    new_character = {
+        save_event_target_as = dw_target_sorcey
+        set_global_flag = dw_npc_sorcey_alive
+        # set_character_flag = special_chancellor # Allows her to be set as a chancellor even though she's a woman
+        # set_character_flag = special_spymaster # Allows her to be set as a spy master even though she's a woman
+        set_character_flag = special_treasurer # Allows her to be set as a treasurer even though she's a woman
+        set_character_flag = special_spiritual # Allows her to be set as a spiritual leader even though she's a woman
+        set_character_flag = dw_npc_sorcey
+        set_character_flag = dw_custom_npc
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_gigantic_tits
+        }
+    }
+}
+# Create Tchalla
+dw_create_tchalla = {
+    create_character = {
+      random_traits = no
+      name = "Tchalla"
+      dynasty = 3100021
+      religion = ROOT
+      culture = ROOT
+      race = manden
+      dna = aeffhambabb
+      female = no
+      age = 18
+      flag = special_npc # For DWT compatibility
+      health = 6.0
+      attributes = {
+          diplomacy = 4
+          intrigue = 5
+          stewardship = 5
+          martial = 6
+          learning = 5
+      }
+      # Education
+      trait = skilled_tactician # He has shown remarkable training for leading troops and in personal combat
+      # Leadership
+      trait = levy_coordinator # Way of the Tiger - sure, it isn't Panther, but it's a large cat still...
+      # Special
+      trait = hero
+      trait = prostitute
+      trait = fair # He is viewed favorably by many women, and even a few men.
+      trait = quick # Tchalla is very smart, quick to figure things out and come up with courses of action
+      trait = robust # Tchalla is strong and healthy, very fit from an active lifestyle
+      # Personality
+      trait = just # Seeks the fair solution
+      trait = brave # Backs down from very little
+      trait = proud # Proud of who he is and of his heritage
+      trait = kind
+      trait = diligent
+      # Portrait
+      trait = portrait23 # Custom portrait for Tchalla
+    }
+    new_character = {
+        # set_character_flag = special_chancellor # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_spiritual # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_treasurer # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_tchalla
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_tchalla_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_tchalla_recruit
+        give_nickname = nick_blackpanther
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_huge_dick
+        }
+    }
+}
+# Create Link
+dw_create_link = {
+    create_character = {
+      random_traits = no
+      name = "Link"
+      dynasty = 3100022 # Link - yes, Link Link is apparently his official name...
+      religion = ROOT
+      culture = ROOT
+      race = english
+      dna = beeifabaacb
+      female = no
+      age = 18
+      health = 5.1
+      attributes = {
+          diplomacy = 5
+          intrigue = 6
+          stewardship = 3
+          martial = 6
+          learning = 5
+      }
+      # Education
+      trait = misguided_warrior # Trained in martial pursuits, he often found himself in precarious positions
+      # Leadership
+      trait = light_foot_leader
+      # Special
+      trait = prostitute
+      trait = fair # He is viewed favorably by many women, and even a few men.
+      trait = trap # Recent events have awoken the feminine side of Link
+      trait = elf_blood # Obvious reasons
+      # Personality
+      trait = kind # Link has a soft spot for people in need and often seeks to help them out
+      trait = trusting # Link has been duped and spurned into action when others take advantage of his trusting nature
+      trait = content # While Link likes to help others, he is content with his own plot in life
+      trait = greedy # A very strong desire to gather gems, especially those known as Rupees
+      # Portrait
+      trait = portrait24 # Custom portrait for Link
+    }
+    new_character = {
+        # set_character_flag = special_chancellor # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_spiritual # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_treasurer # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_link
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_link_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_link_recruit
+        # give_nickname = nick_blackpanther
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_small_dick
+        }
+    }
+}
+# Create Pharah
+dw_create_pharah = {
+    create_character = {
+      random_traits = no
+      name = "FareehaPharah"
+      dynasty = 3100023 # Amari
+      religion = ROOT
+      culture = ROOT
+      race = egyptian_arabic
+      dna = aeefihleaah
+      female = yes
+      age = 18
+      health = 5.0
+      attributes = {
+        diplomacy = 5
+        intrigue = 5
+        stewardship = 4
+        martial = 4
+        learning = 3
+      }
+      # Education
+      trait = flamboyant_schemer # Loves to play games
+      # Leadership
+      # trait = light_foot_leader
+      # Special
+      trait = prostitute
+      trait = fair # She is easy on the eyes
+      trait = hedonist # Enjoys all that life offers
+      # Personality
+      trait = greedy # Known to seek personal gain frequently
+      trait = gregarious # Good at conversation and making people feel comfortable
+      trait = cynical # Sceptical of most religions, as she believes that she is a descendant of gods herself
+      trait = lustful
+      # Portrait
+      trait = portrait22 # Custom portrait for Pharah
+    }
+    new_character = {
+        # set_character_flag = special_chancellor # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_spiritual # Should allow her to hold the rank, even in a male society
+        # set_character_flag = special_treasurer # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_pharah
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_pharah_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_pharah_recruit
+        give_nickname = nick_pharah
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_big_tits
+        }
+    }
+}
+# Create Tiana
+dw_create_tiana = {
+    create_character = {
+      random_traits = no
+      name = "Tiana"
+      religion = ROOT
+      culture = ROOT
+      race = manden
+      dna = bhcdcaidaab
+      female = yes
+      age = 16
+      health = 5.1
+      attributes = {
+        diplomacy = 4
+        intrigue = 4
+        stewardship = 7
+        martial = 2
+        learning = 5
+      }
+      # Education
+      trait = fortune_builder # She has a very sound head on her shoulders regarding how to be profitable
+      # Leadership
+      # trait = light_foot_leader
+      # Special
+      trait = prostitute
+      trait = fair # She is easy on the eyes
+      # Personality
+      trait = diligent # When presented with a goal, she works constantly towards it
+      trait = patient # Knows that not everything comes quickly and some things need to be worked towards before achieving them.
+      trait = gregarious # Good at making others feel at ease
+      trait = cynical # She's been hurt in the past by being trusting, and isn't afraid to question things.
+      # Portrait
+      trait = portrait21 # Custom portrait for Tiana
+    }
+    new_character = {
+        set_character_flag = special_chancellor # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spiritual # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_treasurer # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_tiana
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_tiana_alive
+        set_character_flag = dw_custom_npc
+        save_event_target_as = dw_tiana_recruit
+        # give_nickname = nick_pharah
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_big_tits
+        }
+    }
+}
+# Create Shantae
+dw_create_shantae = {
+    create_character = {
+      random_traits = no
+      name = "Shantae"
+      religion = ROOT
+      culture = ROOT
+      race = egyptian_arabic
+      dna = akhgbhfbaah
+      female = yes
+      age = 17
+      health = 5.5
+      attributes = {
+        diplomacy = 3
+        intrigue = 4
+        stewardship = 3
+        martial = 5
+        learning = 5
+      }
+      # Education
+      trait = flamboyant_schemer # Likes to keep herself entertained with a little drama
+      # Leadership
+      # trait = light_foot_leader
+      # Special
+      trait = prostitute
+      trait = fair # She is easy on the eyes
+      # Personality
+      trait = lustful # She oozes sex, both literally and figuratively
+      trait = greedy # She likes wealth
+      trait = diligent # She's worked hard to get where she's at in life
+      trait = gregarious # Known to be a bit chatty
+      # Portrait
+      trait = portrait25 # Custom portrait for Shantae
+    }
+    new_character = {
+        set_character_flag = special_chancellor # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_marshal # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spymaster # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_spiritual # Should allow her to hold the rank, even in a male society
+        set_character_flag = special_treasurer # Should allow her to hold the rank, even in a male society
+        set_character_flag = dw_npc_shantae
+        set_character_flag = no_sexytimes_allowed # This is a DWF compatibility check to use HV Visits over DWF Visits for the NPC
+        set_global_flag = dw_npc_shantae_alive
+        set_character_flag = dw_custom_npc
+        # save_event_target_as = dw_shantae_recruit
+        # give_nickname = nick_pharah
+        if = {
+            limit = { has_dw_bodytrait_content = yes }
+            add_trait = dw_big_tits
+        }
+    }
+}
+
+# Clears the global alive flag for NPC's, intented for us on their death
+dw_clear_character_global_alive_flag = {
+    if = {
+        limit = { has_character_flag = dw_npc_harley }
+        clr_global_flag = dw_npc_harley_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_batgirl }
+        clr_global_flag = dw_npc_batgirl_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_poisonivy }
+        clr_global_flag = dw_npc_poisonivy_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_blackwidow }
+        clr_global_flag = dw_npc_blackwidow_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_redrobin }
+        clr_global_flag = dw_npc_redrobin_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_vulture }
+        clr_global_flag = dw_npc_vulture_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_spidergwen }
+        clr_global_flag = dw_npc_spidergwen_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_spiderman }
+        clr_global_flag = dw_npc_spiderman_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_venom }
+        clr_global_flag = dw_npc_venom_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_twosix }
+        clr_global_flag = dw_npc_twosix_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_powergirl }
+        clr_global_flag = dw_npc_powergirl_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_astrid }
+        clr_global_flag = dw_npc_astrid_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_hiccup }
+        clr_global_flag = dw_npc_hiccup_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_joker }
+        clr_global_flag = dw_npc_joker_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_helenparr }
+        clr_global_flag = dw_npc_helenparr_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_bobparr }
+        clr_global_flag = dw_npc_bobparr_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_violetparr }
+        clr_global_flag = dw_npc_violetparr_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_dashparr }
+        clr_global_flag = dw_npc_dashparr_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_syndrome }
+        clr_global_flag = dw_npc_syndrome_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_hela }
+        clr_global_flag = dw_npc_hela_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_livewire }
+        clr_global_flag = dw_npc_livewire_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_captainmarvel }
+        clr_global_flag = dw_npc_captainmarvel_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_starfire }
+        clr_global_flag = dw_npc_starfire_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_raven }
+        clr_global_flag = dw_npc_raven_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_scarletwitch }
+        clr_global_flag = dw_npc_scarletwitch_alive
+    }
+    else_if = {
+        limit = { has_character_flag = dw_npc_rogue }
+        clr_global_flag = dw_npc_rogue_alive
+    }
+}

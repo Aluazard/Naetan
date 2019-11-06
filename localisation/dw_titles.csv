@@ -1,0 +1,66 @@
+#CODE;ENGLISH;;;;;;;;;;;;;x
+dw_painter_title;The Painter;;;;;;;;;;;;;x
+dw_hello_harley_title;Here's Harley!;;;;;;;;;;;;;x
+dw_batgirl_intro_title;I am Batgirl!;;;;;;;;;;;;;x
+dw_generic_henchman_title;Generic Henchman;;;;;;;;;;;;;x
+dw_generic_sidekick_title;Generic Sidekick;;;;;;;;;;;;;x
+dw_poisonivy_intro_title;Poison Ivy;;;;;;;;;;;;;x
+dw_blackwidow_intro_title;Black Widow;;;;;;;;;;;;;x
+dw_redrobin_intro_title;Robin, the Red;;;;;;;;;;;;;x
+dw_vulture_intro_title;The Vulture;;;;;;;;;;;;;x
+dw_spidergwen_intro_title;Spider-Gwen;;;;;;;;;;;;;x
+inspired_title;Inspiration!;;;;;;;;;;;;;x
+rival_title;A New Rival;;;;;;;;;;;;;x
+defeated_title;Defeated!;;;;;;;;;;;;;x
+imprisoned_title;Imprisoned!;;;;;;;;;;;;;x
+prison_breakout_title;Prison Escape;;;;;;;;;;;;;x
+tech_upgrade_title;Tech Upgrade;;;;;;;;;;;;;x
+breakup_title;Breaking Up;;;;;;;;;;;;;x
+proposition_title;A Proposition;;;;;;;;;;;;;x
+mind_control_title;Mind Control;;;;;;;;;;;;;x
+harleys_hyenas_title;Harley's Hyenas;;;;;;;;;;;;;x
+dw_nemesis_notification_title;Nemesis;;;;;;;;;;;;;x
+falling_star_title;Falling Star;;;;;;;;;;;;;x
+agility_title;Agility;;;;;;;;;;;;;x
+twosix_title;Two-Six;;;;;;;;;;;;;x
+powergirl_title;Power Girl;;;;;;;;;;;;;x
+harley_powergirl_title;Harley Hijinks;;;;;;;;;;;;;x
+best_friends_title;Best Buds;;;;;;;;;;;;;x
+symbiote_danger_title;Symbiote Danger;;;;;;;;;;;;;x
+green_w_ivy_title;Green with Ivy;;;;;;;;;;;;;x
+dw_intense_training_title;Intense Training;;;;;;;;;;;;;x
+rival_battle_title;Rival Battle;;;;;;;;;;;;;x
+dw_battle_buddies_title;Battle Buddies;;;;;;;;;;;;;x
+dw_the_collector_title;The Collector;;;;;;;;;;;;;x
+dw_settings_title;Mod Settings;;;;;;;;;;;;;x
+fun_with_harley_title;Fun with Harley;;;;;;;;;;;;;x
+dw_syndrome_title;Syndrome;;;;;;;;;;;;;x
+dw_mrincredible_title;Mr. Incredible;;;;;;;;;;;;;x
+dw_elastigirl_title;Elastigirl;;;;;;;;;;;;;x
+dw_joker_intro_title;The Joker;;;;;;;;;;;;;x
+dw_hela_battleground_title;Hela Calls;;;;;;;;;;;;;x
+dw_wardog_title;War Dogs;;;;;;;;;;;;;x
+dw_pregnancy_title;Pregnant!;;;;;;;;;;;;;x
+dw_starfire_title;Starfire;;;;;;;;;;;;;x
+dw_raven_title;Raven;;;;;;;;;;;;;x
+dw_prison_visit_title;Prison Visit;;;;;;;;;;;;;x
+dw_batgirl_busted_title;Batgirl Busted;;;;;;;;;;;;;x
+dw_playtime_title;Playtime;;;;;;;;;;;;;x
+grand_inn_title;Grand Inn;;;;;;;;;;;;;x
+wizard_tower_title;Wizard Tower;;;;;;;;;;;;;x
+wizard_tower_recruit_title;Recruit a Mage;;;;;;;;;;;;;x
+wizard_training_title;Mage Training;;;;;;;;;;;;;x
+wizard_tower_shopping_title;Tower Goods;;;;;;;;;;;;;x
+scarletwitch_title;Scarlet Witch;;;;;;;;;;;;;x
+denied_title;Denied;;;;;;;;;;;;;x
+dw_quick_heal_title;Quick Heal;;;;;;;;;;;;;x
+dw_midas_touch_title;Midas Touch;;;;;;;;;;;;;x
+dw_lighting_strike_title;Lightning Strike;;;;;;;;;;;;;x
+dw_dinstegrate_title;Disintegrate;;;;;;;;;;;;;x
+dw_summon_familiar_title;Summon Familiar;;;;;;;;;;;;;x
+dw_commune_title;Commune;;;;;;;;;;;;;x
+dw_healing_title;Healing;;;;;;;;;;;;;x
+dw_undead_horde_title;Undead Horde;;;;;;;;;;;;;x
+dw_rogue_title;Rogue;;;;;;;;;;;;;x
+dw_spending_time_with_target;Spending time with [dw_visit_target.GetFullName];;;;;;;;;;;;;x
+dw_spending_time_with_title;Spending time with [dw_visit_target.GetFirstName];;;;;;;;;;;;;x

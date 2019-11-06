@@ -2,7 +2,7 @@
 # CHARACTER NICKNAMES
 # Independent dukes, kings and emperors only
 #
-# 'factor' is the percentage per year of 
+# 'factor' is the percentage per year of
 # gaining the nickname
 #
 #############################################
@@ -13,16 +13,259 @@
 nick_dw_cursebreaker = {}
 nick_dw_beastslayer = {}
 nick_dw_barbarian = {}
+nick_batgirl = {}
+nick_poisonivy = {}
+nick_blackwidow = {}
+nick_redrobin = {}
+nick_vulture = {}
+nick_spidergwen = {}
+nick_spiderman = {}
+nick_venom = {}
+nick_powergirl = {}
+nick_the_joker = {}
+nick_elastigirl = {}
+nick_mrincredible = {}
+nick_syndrome = {}
+nick_livewire = {}
+nick_captainmarvel = {}
+nick_starfire = {}
+nick_raven = {}
+nick_the_rapist = {}
+nick_scarletwitch = {}
+nick_rogue = {}
+nick_blackpanther = {}
+nick_pharah = {}
 
-# GIVEN BY TRAITS
+# Nicknames earned through trait/ability combinations
 #################
-#nick_the_lisp_and_lame = {
-#	allow = {
-#		age = 16
-#		trait = lisp
-#		trait = clubfooted
-#	}
-#	chance = {
-#		factor = 5
-#	}
-#}
+nick_the_bat = {
+	allow = {
+		age = 16
+		trait = hero
+		trait = just
+		intrigue = 10
+	}
+	chance = {
+		factor = 20
+	}
+}
+nick_poison = {
+	allow = {
+		age = 16
+		trait = villain
+		trait = cruel
+		intrigue = 8
+	}
+	chance = {
+		factor = 10
+	}
+}
+nick_thespider = {
+	allow = {
+		age = 16
+		trait = hero
+		trait = agile
+	}
+	chance = {
+		factor = 20
+	}
+}
+nick_thesymbiote = {
+	allow = {
+		age = 16
+		OR = {
+			trait = hero
+			trait = villain
+		}
+		trait = tentacle
+	}
+	chance = {
+		factor = 10
+	}
+}
+nick_theworm = {
+	allow = {
+		age = 16
+		trait = villain
+		trait = tentacle
+	}
+	chance = {
+		factor = 10
+	}
+}
+nick_shevenom = {
+	allow = {
+		age = 16
+		trait = villain
+		trait = tentacle
+		is_female = yes
+	}
+	chance = {
+		factor = 20
+	}
+}
+nick_powerwoman = {
+	allow = {
+		age = 22
+		OR = {
+			trait = hero
+			trait = villain
+		}
+		trait = strong
+		is_female = yes
+	}
+	chance = {
+		factor = 10
+	}
+}
+nick_powerbabe = {
+	allow = {
+		age = 16
+		OR = {
+			trait = hero
+			trait = villain
+		}
+		trait = strong
+		trait = fair
+		is_female = yes
+	}
+	chance = {
+		factor = 10
+	}
+}
+nick_theclown = {
+	allow = {
+		age = 16
+		OR = {
+			trait = hero
+			trait = villain
+		}
+		trait = ugly # So ugly it's funny?
+	}
+	chance = { factor = 10 }
+}
+nick_thejester = {
+	allow = {
+		age = 16
+		OR = {
+			trait = hero
+			trait = villain
+		}
+		OR = { # Because they basically failed their education, making them a joke to most
+			trait = naive_appeaser
+			trait = amateurish_plotter
+			trait = indulgent_wastrel
+			trait = misguided_warrior
+		}
+		trait = proud # educational failure - yet still arrogant enough to be proud
+	}
+	chance = { factor = 10 }
+}
+nick_thecomedian = {
+	allow = {
+		age = 16
+		OR = {
+			trait = hero
+			trait = villain
+		}
+		trait = gregarious # quick to chat
+	}
+	chance = { factor = 10 }
+}
+nick_drunkenmaster = {
+	allow = {
+		age = 16
+		OR = {
+			trait = hero
+			trait = villain
+		}
+		martial = 10
+		trait = drunkard
+	}
+	chance = { factor = 10 }
+}
+nick_incrediblekid = {
+	allow = {
+		age = 16
+		NOT = { age = 30 }
+		trait = hero
+		martial = 10
+		OR = {
+			trait = strong
+			trait = agile
+		}
+	}
+	chance = { factor = 10 }
+}
+nick_msincredible = {
+	allow = {
+		age = 16
+		is_female = yes
+		trait = hero
+		martial = 10
+		OR = {
+			trait = strong
+			trait = agile
+			trait = quick
+			trait = genius
+		}
+	}
+	chance = { factor = 10 }
+}
+nick_thebrain = {
+	allow = {
+		age = 16
+		OR = {
+			trait = hero
+			trait = villain
+		}
+		learning = 10
+		OR = {
+			trait = genius
+			trait = quick
+			trait = shrewd
+		}
+	}
+	chance = { factor = 15 }
+}
+nick_the_fornicator = {
+	allow = {
+		age = 16
+		trait = villain
+		trait = lustful
+		trait = bastard
+	}
+	chance = { factor = 10 }
+}
+nick_thewitch = {
+	allow = {
+		age = 16
+		is_female = yes
+		OR = {
+			trait = hero
+			trait = villain
+		}
+		OR = {
+			learning = 12
+			trait = mage
+			trait = powered
+		}
+	}
+	chance = { factor = 15 }
+}
+nick_thewarlock = {
+	allow = {
+		age = 16
+		is_female = no
+		OR = {
+			trait = hero
+			trait = villain
+		}
+		OR = {
+			learning = 12
+			trait = mage
+			trait = powered
+		}
+	}
+	chance = { factor = 15 }
+}

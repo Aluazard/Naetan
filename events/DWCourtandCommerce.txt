@@ -153,7 +153,7 @@ narrative_event = {
 	option = {
 		name = DWCourt210A
 		wealth = -50
-		cock_grows = yes
+		cock_size_increase = yes
 		hidden_effect = { clear_shopping_character_flags = yes }
 	}
 }
@@ -167,7 +167,7 @@ narrative_event = {
 	option = {
 		name = DWCourt215A
 		wealth = -50
-		cock_grows = yes
+		cock_size_increase = yes
 		hidden_effect = { clear_shopping_character_flags = yes }
 	}
 }
@@ -181,7 +181,7 @@ narrative_event = {
 	option = {
 		name = DWCourt220A
 		wealth = -50
-		tits_grow = yes
+		tits_size_increase = yes
 		hidden_effect = { clear_shopping_character_flags = yes }
 	}
 }
@@ -278,7 +278,6 @@ narrative_event = {
 	is_triggered_only = yes # triggered by .241
 	option = {
 		name = "DWCourt242A" # So thick
-		add_character_modifier = { name = dw_good_sex days = 30 }
 	}
 }
 # .250 Serpent's Purge potion
@@ -849,7 +848,7 @@ narrative_event = {
 	option = { # Cum inside
 		name = DWCourt920A
 		event_target:dw_bride = {
-			character_event = { id = DWCore.9000 }
+			character_event = { id = dw_visits.9000 }
 		}
 	}
 	option = { # Cum outside
@@ -937,7 +936,7 @@ narrative_event = {
 		}
 		new_character = {
 			give_minor_title = title_court_jester
-			character_event = { id = DWCore.10 } # Will randomly assign a cock size
+			character_event = { id = DWBody.10 } # Will randomly assign a cock size
 			random_list = { # The commoner was selected due to a short coming.
 				25 = { add_trait = hunchback }
 				25 = { add_trait = dwarf }
@@ -995,7 +994,7 @@ narrative_event = {
 		}
 		new_character = {
 			give_minor_title = title_court_jester
-			character_event = { id = DWCore.10 } # Will randomly assign a cock size
+			character_event = { id = DWBody.10 } # Will randomly assign a cock size
 			set_character_flag = dw_npc_joker
 			save_event_target_as = dw_jester
 		}
@@ -1049,7 +1048,7 @@ narrative_event = {
 		}
 		new_character = {
 			give_minor_title = title_court_jester
-			character_event = { id = DWCore.10 } # Will randomly assign a cock size
+			character_event = { id = DWBody.10 } # Will randomly assign a cock size
 			save_event_target_as = dw_jester
 		}
 		clr_character_flag = dw_jester_shopping
@@ -1085,7 +1084,6 @@ narrative_event = {
 			health = 5.5
 			trait = fair
 			trait = quick
-			trait = regular_tits
 			trait = lunatic
 			trait = flamboyant_schemer
 			trait = arbitrary
@@ -1106,11 +1104,9 @@ narrative_event = {
 			set_character_flag = dw_boobs_checked
 			set_character_flag = dw_npc_harley
 			save_event_target_as = dw_jester
-			if = {  # For Christianity mod compatibility, to prevent a second set of tits getting assigned later
-				limit = {
-					has_global_flag = christ_enabled
-				}
-				set_character_flag = nada_checked
+			if = {
+				limit = { has_dw_bodytrait_content = yes }
+				add_trait = dw_regular_tits
 			}
 		}
 		clr_character_flag = dw_jester_shopping
@@ -1413,7 +1409,7 @@ narrative_event = {
 		name = "DWCourt3013A"
 		event_target:dw_chancellor = {
 			character_event = { id = DWCourt.3005 days = 14 }
-			character_event = { id = DWCore.9005 } # Pregnancy check
+			character_event = { id = dw_visits.9010 } # Pregnancy check
 		}
 	}
 }
@@ -1428,7 +1424,7 @@ narrative_event = {
 		name = "DWCourt3014A"
 		event_target:dw_chancellor = {
 			character_event = { id = DWCourt.3005 days = 14 }
-			character_event = { id = DWCore.9000 } # Pregnancy check
+			character_event = { id = dw_visits.9000 } # Pregnancy check
 		}
 	}
 }
@@ -1933,882 +1929,5 @@ narrative_event = {
 		event_target:dw_kidnap_target = {
 			imprison = ROOT
 		}
-	}
-}
-
-## Wizards Tower Visit
-# .5000 Visit the Wizards Tower
-narrative_event = {
-	id = DWCourt.5000
-	desc = "DWCourt5000"
-	picture = wizard_default
-	title = dw_wizard_tower_ruler_visit
-	is_triggered_only = yes # Triggered via visit wizard tower decision
-	option = { # I'd like to have a Wizard's Order member in my court
-		trigger = {
-			ai = no # We don't want the ai spawning the mages before the player has a chance to do so.
-		}
-		name = DWCourt5000A
-		narrative_event = { id = DWCourt.5010 }
-	}
-	option = { # I've nothing else to visit about
-		name = DWCourt5000D
-	}
-}
-# .5010 Request to have a Wizard's Order member join my court
-narrative_event = {
-	id = DWCourt.5010
-	desc = "DWCourt5010"
-	picture = wizard_default
-	title = dw_wizard_tower_ruler_visit
-	is_triggered_only = yes # Triggered by .5000
-	option = { # Hermione
-		trigger = {
-			NOT = { has_global_flag = dw_npc_hermione_created }
-		}
-		name = DWCourt5010A
-		narrative_event = { id = DWCourt.5011 }
-	}
-	option = { # Sorcey
-		trigger = {
-			NOT = { has_global_flag = dw_npc_sorcey_created }
-		}
-		name = DWCourt5010B
-		narrative_event = { id = DWCourt.5012 }
-	}
-	#TO DO - Add more recruits
-	option = { # Never mind
-		trigger = {
-			NOT = { # As long as all of the options have not yet been created, we'll give the requester a chance to back out.
-				has_global_flag = dw_npc_hermione_created
-				has_global_flag = dw_npc_sorcey_created
-			}
-		}
-		name = DWCourt5010D
-	}
-	option = { # There is no one left to invite
-		trigger = {
-			has_global_flag = dw_npc_hermione_created
-			has_global_flag = dw_npc_sorcey_created
-		}
-		name = DWCourt5010None
-	}
-}
-# .5011 Hermione joins the court
-narrative_event = {
-	id = DWCourt.5011
-	desc = "DWCourt5011"
-	picture = wizard_hermione
-	title = dw_wizard_tower_ruler_visit
-	is_triggered_only = yes # Triggered by .5010
-	immediate = {
-		create_character = {
-			random_traits = no
-			name = Hermione
-			dynasty = none
-			female = yes
-			age = 16
-			religion = ROOT
-			culture = ROOT
-			race = english
-			dna = camgjbmgfaz
-			health = 5.0
-			trait = fair
-			trait = genius
-			trait = regular_tits
-			trait = mage
-			trait = charismatic_negotiator
-			trait = diligent
-			trait = stubborn
-			trait = cynical
-			trait = proud
-			trait = virgin
-			trait = portrait5 # Hermione's photo
-			attributes = {
-				diplomacy = 3
-				intrigue = 4
-				stewardship = 3
-				martial = 4
-				learning = 6
-			}
-		}
-		new_character = {
-			save_event_target_as = dw_target_hermione
-			set_character_flag = special_chancellor # Allows her to be set as a chancellor even though she's a woman
-			set_character_flag = special_spymaster # Allows her to be set as a spy master even though she's a woman
-			set_character_flag = special_spiritual # Allows her to be set as a spiritual leader even though she's a woman
-			give_minor_title = title_court_wizard
-			set_character_flag = dw_boobs_checked
-			set_character_flag = dw_npc_hermione
-			if = {  # For Christianity mod compatibility, to prevent a second set of tits getting assigned later
-				limit = {
-					has_global_flag = christ_enabled
-				}
-				set_character_flag = nada_checked
-			}
-		}
-		set_global_flag = dw_npc_hermione_created
-	}
-	option = { # Welcome Hermione
-		name = DWCourt5011A
-		hidden_tooltip = {
-			character_event = { id = DWCourt.5250 days = 360 } # We check it a year from now
-		}
-	}
-}
-# .5012 Sorcey joins the court
-narrative_event = {
-	id = DWCourt.5012
-	desc = "DWCourt5012"
-	picture = wizard_sorcey
-	title = dw_wizard_tower_ruler_visit
-	is_triggered_only = yes # Triggered by .5010
-	immediate = {
-		create_character = {
-			random_traits = no
-			name = Sorcey
-			dynasty = none
-			female = yes
-			age = 19
-			religion = ROOT
-			culture = ROOT
-			race = swedish
-			dna = dbichbjbebh
-			health = 5.0
-			trait = fair
-			trait = shrewd
-			trait = gigantic_tits
-			trait = mage
-			trait = thrifty_clerk
-			trait = charitable
-			trait = humble
-			trait = cynical
-			trait = lustful
-			trait = portrait6 # Sorcey's photo
-			attributes = {
-				diplomacy = 3
-				intrigue = 4
-				stewardship = 5
-				martial = 2
-				learning = 6
-			}
-		}
-		new_character = {
-			set_character_flag = special_chancellor # Allows her to be set as a chancellor even though she's a woman
-			set_character_flag = special_spymaster # Allows her to be set as a spy master even though she's a woman
-			set_character_flag = special_treasurer # Allows her to be set as a treasurer even though she's a woman
-			set_character_flag = special_spiritual # Allows her to be set as a spiritual leader even though she's a woman
-			give_minor_title = title_court_wizard
-			set_character_flag = dw_boobs_checked
-			set_character_flag = dw_npc_sorcey
-			if = {  # For Christianity mod compatibility, to prevent a second set of tits getting assigned later
-				limit = {
-					has_global_flag = christ_enabled
-				}
-				set_character_flag = nada_checked
-			}
-		}
-		set_global_flag = dw_npc_sorcey_created
-	}
-	option = { # Welcome Sorcey
-		name = DWCourt5012A
-	}
-}
-# .5100 Consulting with Sorcey
-narrative_event = {
-	id = DWCourt.5100
-	desc = "DWCourt5100"
-	picture = wizard_sorcey
-	title = dw_mage_consult_sorcey
-	is_triggered_only = yes # Triggered by targeted decision
-	option = { # Restorative food
-		name = DWCourt5100A
-		narrative_event = { id = DWCourt.5101 }
-	}
-	option = { # Frog casting
-		trigger = {
-			piety = 1 # This can take them into the negative, but they have to at least be in the positive in order to pull in energy
-		}
-		name = DWCourt5100B
-		narrative_event = { id = DWCourt.5102 }
-	}
-	option = { # Never mind
-		name = DWCourt5100D
-	}
-}
-# .5101 Consulting with Sorcey - Food options
-narrative_event = {
-	id = DWCourt.5101
-	desc = "DWCourt5101"
-	picture = wizard_sorcey_food
-	title = dw_mage_consult_sorcey
-	is_triggered_only = yes # Triggered by .5100
-	option = { # Minor Wound Healing, always available
-		name = DWCourt5101A
-		piety = -5
-		if = {
-			limit = {
-				trait = wounded
-			}
-			remove_trait = wounded
-		}
-		if = {
-			limit = {
-				trait = scarred
-			}
-			remove_trait = scarred
-		}
-	}
-	option = { # Food of fortitude
-		trigger = {
-			piety = 1 # This can take them into the negative, but they have to at least be in the positive in order to pull in energy
-		}
-		name = DWCourt5101B
-		health = +0.1
-		piety = -100
-	}
-	option = { # Honeyed words - increases diplomacy
-		trigger = {
-			piety = 1 # This can take them into the negative, but they have to at least be in the positive in order to pull in energy
-		}
-		name = DWCourt5101C
-		change_diplomacy = 1
-		piety = -250
-	}
-	option = { # Never mind
-		name = DWCourt5101D
-	}
-}
-# .5102 Consulting with Sorcey - Frog Casting
-narrative_event = {
-	id = DWCourt.5102
-	desc = "DWCourt5102"
-	picture = wizard_sorcey_frog
-	title = dw_mage_consult_sorcey
-	is_triggered_only = yes # Triggered by .5100
-	option = { # Let's turn someone into a frog
-		name = DWCourt5102A
-		piety = -1000
-		add_character_modifier = {
-			name = dw_spell_frog_target
-			duration = -1 # Indefinite until cast
-		}
-	}
-	option = { # Never mind
-		name = DWCourt5102B
-	}
-}
-# .5250 Hermione event arc
-character_event = {
-	id = DWCourt.5250
-	is_triggered_only = yes # by .5011
-	hide_window = yes # nothing to see here
-	trigger = {
-		# We want to ensure that Hermione is still alive and in the player's court
-		event_target:dw_target_hermione = {
-			liege = { character = ROOT }
-			is_alive = yes
-		}
-	}
-	immediate = {
-		# Stuff!
-		# Circle event (sets slut or saint flag)
-		# random chance for slut or saint events
-		random_list = {
-			100 = {
-				modifier = { # Not an option if either slut or saint flag exists
-					factor = 0
-					event_target:dw_target_hermione = {
-						OR = {
-							has_character_flag = dw_hermione_slut
-							has_character_flag = dw_hermione_saint
-						}
-					}
-				}
-				narrative_event = { id = DWCourt.5251 }
-			}
-			10 = { # No special event, we just push this event down the road another six months where we check again
-				character_event = { id = DWCourt.5250 days = 180 }
-			}
-			10 = { # Slut Hermione and the Love Potion
-				modifier = { # We don't run this if she's not a slut
-					factor = 0
-					event_target:dw_target_hermione = {
-						NOT = { has_character_flag = dw_hermione_slut }
-					}
-				}
-				narrative_event = { id = DWCourt.5260 }
-			}
-		}
-	}
-}
-# .5251 Hermione Event Arc Start - the failed circle magic
-narrative_event = {
-	id = DWCourt.5251
-	picture = wizard_hermione_event1
-	desc = DWCourt5251
-	title = dw_hermione_event_start
-	is_triggered_only = yes # by .5250
-	option = { # Help Hermione
-		name = DWCourt5251A
-		event_target:dw_target_hermione = {
-			set_character_flag = dw_hermione_saint
-		}
-		narrative_event = { id = DWCourt.5252 days = 1 }
-	}
-	option = { # Don't Help Hermione
-		name = DWCourt5251B
-		event_target:dw_target_hermione = {
-			set_character_flag = dw_hermione_slut
-		}
-		narrative_event = { id = DWCourt.5253 days = 1 }
-	}
-}
-# .5252 Hermione Event Arc Start - Saved Hermione
-narrative_event = {
-	id = DWCourt.5252
-	picture = wizard_hermione_event2
-	desc = {
-		trigger = { # Hermione is not presently the player's lover
-			event_target:dw_target_hermione = {
-				NOT = {
-					is_lover = ROOT
-				}
-			}
-		}
-		text = DWCourt5252.0
-	}
-	desc = {
-		trigger = { # Hermione is the player's lover
-			event_target:dw_target_hermione = {
-				is_lover = ROOT
-			}
-		}
-		text = DWCourt5252.1
-	}
-	title = dw_hermione_event_start
-	is_triggered_only = yes # by .5251
-	option = { # Accept Hermione's offering of love
-		trigger = {
-			event_target:dw_target_hermione = {
-				NOT = {
-					is_lover = ROOT
-				}
-			}
-		}
-		name = DWCourt5252A
-		event_target:dw_target_hermione = {
-			add_lover = ROOT
-		}
-		add_lover = event_target:dw_target_hermione
-		hidden_tooltip = { # We cycle back around for another random event
-			character_event = { id = DWCourt.5250 days = 360 }
-		}
-	}
-	option = { # Reject Hermione's offering of love
-		trigger = {
-			event_target:dw_target_hermione = {
-				NOT = {
-					is_lover = ROOT
-				}
-			}
-		}
-		name = DWCourt5252B
-		hidden_tooltip = { # We cycle back around for another random event
-			character_event = { id = DWCourt.5250 days = 360 }
-		}
-	}
-	option = { # Glad that Hermione, my love, is alright
-		trigger = { # Hermione is the player's lover
-			event_target:dw_target_hermione = {
-				is_lover = ROOT
-			}
-		}
-		name = DWCourt5252C
-		hidden_tooltip = { # We cycle back around for another random event
-			character_event = { id = DWCourt.5250 days = 360 }
-		}
-	}
-}
-# .5253 Hermione Event Arc Start - Hermione Lost
-narrative_event = {
-	id = DWCourt.5253
-	picture = wizard_hermione_masturbate1
-	desc = {
-		trigger = { # Hermione is not presently the player's lover
-			event_target:dw_target_hermione = {
-				NOT = {
-					is_lover = ROOT
-				}
-			}
-		}
-		text = DWCourt5253.0
-	}
-	desc = {
-		trigger = { # Hermione is the player's lover
-			event_target:dw_target_hermione = {
-				is_lover = ROOT
-			}
-		}
-		text = DWCourt5253.1
-	}
-	title = dw_hermione_event_start
-	is_triggered_only = yes # by .5251
-	option = { # Poor thing is broken
-		trigger = { # Hermione is not presently the player's lover
-			event_target:dw_target_hermione = {
-				NOT = {
-					is_lover = ROOT
-				}
-			}
-		}
-		name = DWCourt5253A
-		hidden_tooltip = { # We cycle back around for another random event
-			narrative_event = { id = DWCourt.5254 days = 7 }
-		}
-		event_target:dw_target_hermione = {
-			add_trait = lustful
-		}
-	}
-	option = { # I've broken my love, yet gained a slut
-		trigger = { # Hermione is the player's lover
-			event_target:dw_target_hermione = {
-				is_lover = ROOT
-			}
-		}
-		name = DWCourt5253B
-		hidden_tooltip = { # We cycle back around for another random event
-			narrative_event = { id = DWCourt.5254 days = 7 }
-		}
-		event_target:dw_target_hermione = {
-			add_trait = lustful
-		}
-	}
-}
-# .5254 Hermione Event Arc Start - Hermione Lost 2
-narrative_event = {
-	id = DWCourt.5254
-	picture = wizard_hermione_event3
-	desc = {
-		trigger = { # Hermione is not presently the player's lover
-			event_target:dw_target_hermione = {
-				NOT = {
-					is_lover = ROOT
-				}
-			}
-		}
-		text = DWCourt5254.0
-	}
-	desc = {
-		trigger = { # Hermione is the player's lover
-			event_target:dw_target_hermione = {
-				is_lover = ROOT
-			}
-		}
-		text = DWCourt5254.1
-	}
-	title = dw_hermione_event_start
-	is_triggered_only = yes # by .5251
-	option = { # Scratch that itch
-		name = DWCourt5254A
-		event_target:dw_target_hermione = {
-			add_trait = lunatic
-		}
-		hidden_tooltip = { # We cycle back around for another random event
-			character_event = { id = DWCourt.5250 days = 360 }
-			if = {
-				limit = { # If it's a guy
-					is_female = no
-				}
-				narrative_event = { id = DWCourt.5255 } # Anal pounding
-			}
-			if = {
-				limit = { # Is a futa
-					trait = futa
-				}
-				narrative_event = { id = DWCourt.5256 } # Futa pounding
-			}
-			if = {
-				limit = { # Is a non-futa female
-					is_female = yes
-					NOT = { trait = futa }
-				}
-				narrative_event = { id = DWCourt.5257 } # Lesbian munch
-			}
-		}
-	}
-	option = { # Not tonight
-		name = DWCourt5254B
-		hidden_tooltip = { # We cycle back around for another random event
-			character_event = { id = DWCourt.5250 days = 360 }
-		}
-		event_target:dw_target_hermione = {
-			add_trait = lunatic
-		}
-	}
-}
-# .5255 Hermione Event Arc Start - Hermione Anal pounding
-narrative_event = {
-	id = DWCourt.5255
-	picture = wizard_hermione_anal1
-	desc = DWCourt5255
-	title = dw_hermione_event_start
-	is_triggered_only = yes # by .5254
-	option = { # Fucking crazy bitch
-		name = DWCourt5255A
-		event_target:dw_target_hermione = {
-			add_character_modifier = { name = dw_still_wanting_more days = 30 }
-		}
-		add_character_modifier = { name = dw_good_sex days = 30 }
-	}
-}
-# .5256 Hermione Event Arc Start - Hermione Futa fucked
-narrative_event = {
-	id = DWCourt.5256
-	picture = wizard_hermione_futa1
-	desc = DWCourt5256
-	title = dw_hermione_event_start
-	is_triggered_only = yes # by .5254
-	option = { # Fucking crazy bitch
-		name = DWCourt5256A
-		event_target:dw_target_hermione = {
-			add_character_modifier = { name = dw_still_wanting_more days = 30 }
-		}
-		add_character_modifier = { name = dw_good_sex days = 30 }
-	}
-}
-# .5257 Hermione Event Arc Start - Hermione Lesbian munch
-narrative_event = {
-	id = DWCourt.5257
-	picture = wizard_hermione_lesbian1
-	desc = DWCourt5257
-	title = dw_hermione_event_start
-	is_triggered_only = yes # by .5254
-	option = { # Fucking crazy bitch
-		name = DWCourt5257A
-		add_character_modifier = { name = dw_good_sex days = 30 }
-	}
-}
-# .5260 Hermione Love Potion Event
-narrative_event = {
-	id = DWCourt.5260
-	picture = wizard_hermione_lesbian2
-	desc = DWCourt5260
-	title = dw_hermione_love_potion_title
-	is_triggered_only = yes # by .5250
-	option = { # Thank you Hermione for the potion
-		name = DWCourt5260A
-		hidden_tooltip = { # We cycle back around for another random event
-			character_event = { id = DWCourt.5250 days = 360 }
-		}
-		set_character_flag = dw_has_hermione_love_potion
-	}
-	option = { # You can keep and use it.
-		name = DWCourt5260B
-		hidden_tooltip = { # We cycle back around for another random event
-			character_event = { id = DWCourt.5250 days = 360 }
-			# Create a random female character with Hermione as its lover
-			random_list = {
-				75 = { # Random female
-					character_event = { id = DWCourt.5265 }
-				}
-				50 = { # Ginny joins
-					modifier = {
-						factor = 0
-						has_global_flag = dw_npc_ginny_created
-					}
-					narrative_event = { id = DWCourt.5266 }
-				}
-				50 = { # Luna joins
-					modifier = {
-						factor = 0
-						has_global_flag = dw_npc_luna_created
-					}
-					narrative_event = { id = DWCourt.5267 }
-				}
-			}
-		}
-		custom_tooltip = { text = dw_add_random_npc_notice }
-	}
-}
-# .5261 Hermione Love Potion
-narrative_event = {
-	id = DWCourt.5261
-	picture = spell_love_potion
-	desc = {
-		trigger = { # Total success
-			attribute_diff = {
-				character = event_target:dw_love_potion_target
-				attribute = intrigue
-				value = 10
-			}
-		}
-		text = DWCourt5261.0
-	}
-	desc = {
-		trigger = { # Favorable
-			attribute_diff = {
-				character = event_target:dw_love_potion_target
-				attribute = intrigue
-				value = 5
-			}
-			NOT = {
-				attribute_diff = {
-					character = event_target:dw_love_potion_target
-					attribute = intrigue
-					value = 10
-				}
-			}
-		}
-		text = DWCourt5261.1
-	}
-	desc = {
-		trigger = { # Difficult
-			NOT = {
-				attribute_diff = {
-					character = event_target:dw_love_potion_target
-					attribute = intrigue
-					value = 5
-				}
-			}
-		}
-		text = DWCourt5261.2
-	}
-	title = dw_hermione_event_start
-	is_triggered_only = yes # by targetted decision
-	immediate = {
-		FROM = {
-			save_event_target_as = dw_love_potion_target
-		}
-	}
-	option = { # Total Success
-		trigger = { # Total success
-			attribute_diff = {
-				character = event_target:dw_love_potion_target
-				attribute = intrigue
-				value = 10
-			}
-		}
-		name = DWCourt5261A
-		event_target:dw_love_potion_target = {
-			add_lover = ROOT
-		}
-		add_lover = event_target:dw_love_potion_target
-		hidden_tooltip = {
-			event_target:dw_love_potion_target = {
-				remove_trait = chaste
-				remove_trait = celibate
-				add_trait = lustful
-			}
-		}
-	}
-	option = { # Favorable
-		trigger = { # Favorable
-			attribute_diff = {
-				character = event_target:dw_love_potion_target
-				attribute = intrigue
-				value = 5
-			}
-			NOT = {
-				attribute_diff = {
-					character = event_target:dw_love_potion_target
-					attribute = intrigue
-					value = 10
-				}
-			}
-		}
-		name = DWCourt5261B
-		random_list = {
-			75 = {
-				event_target:dw_love_potion_target = {
-					add_lover = ROOT
-				}
-				add_lover = event_target:dw_love_potion_target
-				hidden_tooltip = {
-					event_target:dw_love_potion_target = {
-						remove_trait = chaste
-						remove_trait = celibate
-						add_trait = lustful
-					}
-				}
-			}
-			25 = {
-				event_target:dw_love_potion_target = {
-					opinion = {
-						modifier = dw_rejected_forced_love
-						who = ROOT
-					}
-				}
-			}
-		}
-	}
-	option = { # Difficult
-		trigger = { # Difficult
-			NOT = {
-				attribute_diff = {
-					character = event_target:dw_love_potion_target
-					attribute = intrigue
-					value = 5
-				}
-			}
-		}
-		name = DWCourt5261C
-		random_list = {
-			50 = {
-				event_target:dw_love_potion_target = {
-					add_lover = ROOT
-				}
-				add_lover = event_target:dw_love_potion_target
-				hidden_tooltip = {
-					event_target:dw_love_potion_target = {
-						remove_trait = chaste
-						remove_trait = celibate
-						add_trait = lustful
-					}
-				}
-			}
-			50 = {
-				event_target:dw_love_potion_target = {
-					opinion = {
-						modifier = dw_rejected_forced_love
-						who = ROOT
-					}
-				}
-			}
-		}
-	}
-}
-# .5265 Hermione Love Potion - Random female joins court as Hermione's lover
-character_event = {
-	id = DWCourt.5265
-	hide_window = yes # nothing to see here
-	is_triggered_only = yes # by .5260
-	immediate = {
-		create_character = {
-			random_traits = yes
-			dynasty = none
-			female = yes
-			age = 18
-			religion = ROOT
-			culture = ROOT
-			trait = lustful
-			attributes = {
-				intrigue = 4
-			}
-		}
-		new_character = {
-			character_event = { id = DWCore.20 } # Will randomly assign a breast size
-			add_lover = event_target:dw_target_hermione
-		}
-	}
-}
-# .5266 Hermione Love Potion - Ginny joins court as Hermione's lover
-narrative_event = {
-	id = DWCourt.5266
-	desc = DWCourt5266
-	title = dw_ginny_joins_title
-	picture = wizard_ginny
-	is_triggered_only = yes # by .5260
-	immediate = {
-		create_character = {
-			random_traits = no
-			name = Ginny
-			dynasty = none
-			female = yes
-			age = 16
-			religion = ROOT
-			culture = ROOT
-			race = irish
-			dna = aghefaecgca
-			health = 5.0
-			trait = fair
-			trait = regular_tits
-			trait = amateurish_plotter
-			trait = kind
-			trait = shy
-			trait = trusting
-			trait = erudite
-			trait = humble
-			trait = mage
-			trait = lustful # From the love potion
-			trait = portrait17 # Ginny's photo
-			attributes = {
-				diplomacy = 5
-				intrigue = 3
-				stewardship = 4
-				martial = 3
-				learning = 6
-			}
-		}
-		new_character = {
-			set_character_flag = dw_boobs_checked
-			set_character_flag = dw_npc_ginny
-			add_lover = event_target:dw_target_hermione
-			if = {  # For Christianity mod compatibility, to prevent a second set of tits getting assigned later
-				limit = {
-					has_global_flag = christ_enabled
-				}
-				set_character_flag = nada_checked
-			}
-		}
-		set_global_flag = dw_npc_ginny_created
-	}
-	option = { # Welcome to my court
-		name = DWCourt5266A
-	}
-}
-# .5267 Hermione Love Potion - Luna joins court as Hermione's lover
-narrative_event = {
-	id = DWCourt.5267
-	picture = wizard_luna
-	desc = DWCourt5267
-	title = dw_luna_joins_title
-	is_triggered_only = yes # by .5260
-	immediate = {
-		create_character = {
-			random_traits = no
-			name = Luna
-			dynasty = none
-			female = yes
-			age = 16
-			religion = ROOT
-			culture = ROOT
-			race = norse
-			dna = aghefaecgca
-			health = 6.0
-			trait = quick
-			trait = small_tits
-			trait = underhanded_rogue
-			trait = patient
-			trait = humble
-			trait = honest
-			trait = erudite
-			trait = lunatic
-			trait = mage
-			trait = lustful # From the love potion
-			trait = portrait18 # Luna's photo
-			attributes = {
-				diplomacy = 5
-				intrigue = 3
-				stewardship = 4
-				martial = 3
-				learning = 6
-			}
-		}
-		new_character = {
-			set_character_flag = dw_boobs_checked
-			set_character_flag = dw_npc_luna
-			add_lover = event_target:dw_target_hermione
-			if = {  # For Christianity mod compatibility, to prevent a second set of tits getting assigned later
-				limit = {
-					has_global_flag = christ_enabled
-				}
-				set_character_flag = nada_checked
-			}
-		}
-		set_global_flag = dw_npc_luna_created
-	}
-	option = { # Welcome to my court
-		name = DWCourt5267A
 	}
 }

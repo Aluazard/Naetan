@@ -1,0 +1,25 @@
+# The character either did something, or had something done to them that resulted in these event_modifiers
+# Differ from buffs as these are typically opinion related, from the result of actions
+
+dw_saved_the_day = {
+	icon = 79
+	general_opinion = 10 # People appreciate deeds that benefit their lives, especially literally
+	monthly_character_prestige = 1.0 # As people talk, the legend grows
+}
+dw_illustrious_leader = { # When you've people under you who do impressive things, it reflects well on their leader
+	icon = 7
+	diplomacy = 1
+	general_opinion = 5
+	monthly_character_prestige = 0.5
+}
+dw_victim_of_attack = { # Used when a symbiote or something else is known to have attacked, and likely infected someone
+	icon = 82
+	# Not applying a combat bonus, as this assumes the person hasn't accepted their fate yet
+	general_opinion = -5 # Not as bad as it could be, as some have more pity than disgust for the victim
+	church_opinion = -10 # Obviously a sinner that brought this upon themselves
+    sex_appeal_opinion = -10 # damaged goods
+}
+dw_socially_embarrassed = {
+	icon = 36
+	general_opinion = -10
+}

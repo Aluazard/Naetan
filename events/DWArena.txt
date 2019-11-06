@@ -5,7 +5,7 @@ namespace = DWCourt
 
 ## Arena Visit
 # .7000 Visit the Arena
-narrative_event = {	
+narrative_event = {
 	id = DWCourt.7000
 	desc = "DWCourt7000"
 	picture = arena
@@ -187,7 +187,7 @@ narrative_event = {
 				character = ROOT
 			}
 		}
-		name = DWCourt7023A # I'm the victor		
+		name = DWCourt7023A # I'm the victor
 		wealth = +19
 	}
 	option = {
@@ -279,7 +279,7 @@ narrative_event = {
 				narrative_event = { id = DWCourt.7104 days = 3}
 				modifier = {
 					factor = 0
-					has_global_flag = dw_npc_conan_created # Only one Conan per game
+					has_global_flag = dw_npc_conan_alive # Only one Conan per game
 				}
 			}
 			50 = {
@@ -336,7 +336,7 @@ narrative_event = {
 			}
 		}
 		new_character = {
-			character_event = { id = DWCore.10 } # Will randomly assign a cock size
+			character_event = { id = DWBody.10 } # Will randomly assign a cock size
 			set_character_flag = dw_npc_platypoa
 			save_event_target_as = dw_gladiator_recruit
 		}
@@ -374,7 +374,7 @@ narrative_event = {
 			}
 		}
 		new_character = {
-			character_event = { id = DWCore.10 } # Will randomly assign a cock size
+			character_event = { id = DWBody.10 } # Will randomly assign a cock size
 			save_event_target_as = dw_gladiator_recruit
 		}
 	}
@@ -396,24 +396,7 @@ narrative_event = {
 	title = dw_arena_stable
 	is_triggered_only = yes # triggered by .7100
 	immediate = {
-		create_character = {
-			random_traits = yes
-			dynasty = none
-			female = yes
-			age = 16
-			religion = ROOT
-			culture = ROOT
-			trait = misguided_warrior
-			trait = gladiator
-			attributes = {
-				martial = 7
-				intrigue = 6
-			}
-		}
-		new_character = {
-			character_event = { id = DWCore.20 } # Will randomly assign a breast size
-			save_event_target_as = dw_gladiator_recruit
-		}
+		dw_create_female_gladiator = yes
 	}
 	option = { # Keep her
 		name = "DWCourt7103A"
@@ -448,44 +431,7 @@ narrative_event = {
 	title = dw_arena_stable
 	is_triggered_only = yes # triggered by .7104
 	immediate = {
-		create_character = {
-			random_traits = no
-			dynasty = none
-			name = Conan
-			female = no
-			age = 26
-			health = 6.0
-			religion = pagan
-			culture = ROOT
-			race = norse
-			has_nickname = nick_dw_barbarian
-			trait = portrait19 # Conan custom image
-			trait = brilliant_strategist
-			trait = strong
-			trait = scarred
-			trait = robust
-			trait = duelist
-			trait = brave
-			trait = lustful
-			trait = proud
-			trait = diligent
-			trait = ravager
-			trait = gladiator
-			trait = huge_dick
-			attributes = {
-				diplomacy = 2
-				intrigue = 5
-				stewardship = 2
-				martial = 10
-				learning = 3
-			}
-		}
-		new_character = {
-			set_character_flag = dw_junk_checked
-			set_character_flag = dw_npc_conan
-			save_event_target_as = dw_gladiator_recruit
-			set_global_flag = dw_npc_conan_created # Only one Conan per game
-		}
+		dw_create_conan = yes
 	}
 	option = { # I shall pay his debt - at a discount
 		trigger = {

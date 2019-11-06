@@ -1,0 +1,18 @@
+# Event_modifiers that are meant to be applied to proviences
+
+
+dw_green_with_ivy = {
+	icon = 87
+	local_tax_modifier = 0.2
+	siege_defence = 0.15
+}
+dw_aura_of_death = {
+	icon = 88
+	local_tax_modifier = -0.1
+	disease_defence = -0.1
+}
+dw_strong_aura_of_death = {
+	icon = 88
+	local_tax_modifier = -0.2
+	disease_defence = -0.2
+}

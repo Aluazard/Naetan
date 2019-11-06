@@ -1,0 +1,1161 @@
+### Dark World Artifacts
+## Vanilla slots
+#slots = {
+#	weapon = 1
+#	ceremonial_weapon = 1
+#	scepter = 1
+#	crown = 1
+#	wrist = 1
+#	neck = 1
+#	torso = 1
+#	ceremonial_torso = 1
+#}
+
+# Event related Artifacts
+dw_aladdins_lamp = {
+	monthly_character_prestige = 5 # Even should the genie be freed, it's an object which is a great piece to admire and converse about - and this is the legendary Aladdin's Lamp we're talking about here
+	child_opinion = 10 # Kids find the idea of a genie in a lamp very, very cool, and view someone who owns one in a very positive light
+	tech_growth_modifier = 0.05 # Impact the genie has from the stories that are shared with its owner
+	quality = 4
+	flags = { plot very_rare dark_world lamp genie }
+	stacking = no
+	picture = "GFX_genie_lamp"
+}
+
+# Armors
+dw_armor_female_wolf_plate = {
+	monthly_character_prestige = 1.0
+	martial = 1
+	combat_rating = 2
+	command_modifier = { morale_offence = 0.1 }
+	quality = 4
+	active = {
+		is_female = yes
+		is_adult = yes
+	}
+	allowed_gift = {
+		is_female = yes
+		is_adult = yes
+	}
+	slot = torso
+	flags = { armor armor_set very_rare dark_world female wolf }
+	stacking = no
+	picture = "GFX_armor_female_wolf_plate"
+}
+
+# Cups / Chalices
+dw_lycurgus_cup = {
+	monthly_character_prestige = 2 # It's a very cool conversation piece and a puzzle at the same time
+	health = 0.2
+	tech_growth_modifier = 0.05 # The cup changes colors due to its crafting method that was ahead of its time, and was lost technology after the fall
+	quality = 5
+	flags = { roman cup rare dark_world }
+	stacking = no
+	picture = "GFX_lycurgus_cup"
+}
+
+dw_derrynaflan_cup = {
+	monthly_character_piety = 0.5
+	monthly_character_prestige = 0.5
+	health = 0.5
+	same_religion_opinion = 10
+	active = { religion_group = christian }
+	allowed_gift = {
+		religion_group = christian
+	}
+	quality = 5
+	flags = { religious christian cup rare dark_world }
+	stacking = no
+	picture = "GFX_derrynaflan_cup"
+}
+
+# Diplomacy based books
+dw_basic_diplomacy_book = {
+	quality = 1
+	diplomacy = 1
+	flags = { dark_world book diplomacy }
+	stacking = no
+	picture = "GFX_book"
+}
+
+# Intrigue based books
+dw_basic_intrigue_book = {
+	quality = 1
+	intrigue = 1
+	flags = { dark_world book intrigue }
+	stacking = no
+	picture = "GFX_book"
+}
+
+# Stewardship based books
+dw_basic_stewardship_book = {
+	quality = 1
+	stewardship = 1
+	flags = { dark_world book stewardship }
+	stacking = no
+	picture = "GFX_book"
+}
+
+# Martial based books
+dw_basic_martial_book = {
+	quality = 1
+	martial = 1
+	flags = { dark_world book martial }
+	stacking = no
+	picture = "GFX_book"
+}
+
+# Learning based books
+dw_basic_learning_book = {
+	quality = 1
+	learning = 1
+	flags = { dark_world book learning }
+	stacking = no
+	picture = "GFX_book"
+}
+# Diablerie - Vampiric Immortality
+dw_diablerie_book = {
+	learning = 1 # The book holds numerous dark secrets/knowledge regarding vampires
+	quality = 5
+	flags = { dark_world book vampire immortality very_rare }
+	active = { trait = vampire }
+	allowed_gift = { trait = vampire }
+	stacking = no
+	picture = "GFX_book_diablerie"
+}
+
+# Arcane College Artifacts
+arcane_theory_ritual_magic_1 = {
+	learning = 1
+	quality = 1
+	flags = { society wizards lore ritual book }
+	active = {
+		OR = {
+			learning = 12
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 16
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_ritual_magic_2
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 20
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_ritual_magic_3
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_ritual_magic_4
+					}
+				}
+			}
+		}
+	}
+
+	allowed_gift = {
+		always = no
+	}
+
+	stacking = no
+	picture = "GFX_book_red"
+}
+
+arcane_theory_ritual_magic_2 = {
+	learning = 1
+	monthly_character_piety = 0.5
+	quality = 2
+	flags = { society wizards lore ritual book }
+	active = {
+		OR = {
+			learning = 16
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 20
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_ritual_magic_3
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_ritual_magic_4
+					}
+				}
+			}
+		}
+	}
+
+	allowed_gift = {
+		always = no
+	}
+
+	stacking = no
+	picture = "GFX_book_red"
+}
+
+arcane_theory_ritual_magic_3 = {
+	learning = 1
+	intrigue = 1
+	monthly_character_piety = 0.5
+	quality = 3
+	flags = { society dw_the_wizards lore theurgy book }
+	active = {
+		OR = {
+			learning = 20
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_ritual_magic_4
+					}
+				}
+			}
+		}
+	}
+
+	allowed_gift = {
+		always = no
+	}
+
+	stacking = no
+	picture = "GFX_book_red"
+}
+
+arcane_theory_ritual_magic_4 = {
+	learning = 1
+	intrigue = 1
+	stewardship = 1
+	monthly_character_piety = 0.5
+	quality = 4
+	flags = { society dw_the_wizards lore theurgy book }
+	active = {
+		OR = {
+			learning = 25
+			society_member_of = dw_the_wizards
+		}
+	}
+
+	allowed_gift = {
+		always = no
+	}
+
+	stacking = no
+	picture = "GFX_book_red_glow"
+}
+
+arcane_theory_formula_magic_1 = {
+	learning = 1
+	quality = 1
+	flags = { society dw_the_wizards lore theurgy book }
+	active = {
+		OR = {
+			learning = 12
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 16
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_formula_magic_2
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 20
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_formula_magic_3
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_formula_magic_4
+					}
+				}
+			}
+		}
+	}
+
+	allowed_gift = {
+		always = no
+	}
+
+	stacking = no
+	picture = "GFX_book_red"
+}
+
+arcane_theory_formula_magic_2 = {
+	learning = 1
+	monthly_character_piety = 0.5
+	quality = 2
+	flags = { society dw_the_wizards lore theurgy book }
+	active = {
+		OR = {
+			learning = 16
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 20
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_formula_magic_3
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_formula_magic_4
+					}
+				}
+			}
+		}
+	}
+
+	allowed_gift = {
+		always = no
+	}
+
+	stacking = no
+	picture = "GFX_book_red"
+}
+
+arcane_theory_formula_magic_3 = {
+	learning = 2
+	monthly_character_piety = 0.5
+	quality = 3
+	flags = { society dw_the_wizards lore theurgy book }
+	active = {
+		OR = {
+			learning = 20
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_formula_magic_4
+					}
+				}
+			}
+		}
+	}
+
+	allowed_gift = {
+		always = no
+	}
+
+	stacking = no
+	picture = "GFX_book_red"
+}
+
+arcane_theory_formula_magic_4 = {
+	learning = 2
+	diplomacy = 1
+	monthly_character_piety = 0.5
+	quality = 4
+	flags = { society dw_the_wizards lore theurgy book }
+	active = {
+		OR = {
+			learning = 25
+			society_member_of = dw_the_wizards
+		}
+	}
+
+	allowed_gift = {
+		always = no
+	}
+
+	stacking = no
+	picture = "GFX_book_red_glow"
+}
+
+arcane_theory_magic_techniques_1 = {
+	learning = 1
+	quality = 1
+	flags = { society dw_the_wizards lore astrology book }
+	active = {
+		OR = {
+			learning = 12
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 16
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_magic_techniques_2
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 20
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_magic_techniques_3
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_magic_techniques_4
+					}
+				}
+			}
+		}
+	}
+
+	allowed_gift = {
+		always = no
+	}
+
+	stacking = no
+	picture = "GFX_book_blue"
+}
+
+arcane_theory_magic_techniques_2 = {
+	learning = 1
+	monthly_character_prestige = 0.5
+	quality = 2
+	flags = { society dw_the_wizards lore astrology book }
+	active = {
+		OR = {
+			learning = 16
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 20
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_magic_techniques_3
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_magic_techniques_4
+					}
+				}
+			}
+		}
+	}
+
+	allowed_gift = {
+		always = no
+	}
+
+	stacking = no
+	picture = "GFX_book_blue"
+}
+
+arcane_theory_magic_techniques_3 = {
+	learning = 1
+	intrigue = 1
+	monthly_character_prestige = 0.5
+	quality = 3
+	flags = { society dw_the_wizards lore astrology book }
+	active = {
+		OR = {
+			learning = 20
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_magic_techniques_4
+					}
+				}
+			}
+		}
+	}
+
+	allowed_gift = {
+		always = no
+	}
+
+	stacking = no
+	picture = "GFX_book_blue"
+}
+
+arcane_theory_magic_techniques_4 = {
+	learning = 1
+	intrigue = 1
+	martial = 1
+	monthly_character_prestige = 0.5
+	quality = 4
+	flags = { society dw_the_wizards lore astrology book }
+	active = {
+		OR = {
+			learning = 25
+			society_member_of = dw_the_wizards
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_blue_glow"
+}
+
+arcane_theory_magic_forms_1 = {
+	learning = 1
+	quality = 1
+	flags = { society dw_the_wizards lore astrology book }
+	active = {
+		OR = {
+			learning = 12
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 16
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_magic_forms_2
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 20
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_magic_forms_3
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_magic_forms_4
+					}
+				}
+			}
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_blue"
+}
+
+arcane_theory_magic_forms_2 = {
+	learning = 1
+	monthly_character_prestige = 0.5
+	quality = 2
+	flags = { society dw_the_wizards lore astrology book }
+	active = {
+		OR = {
+			learning = 16
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 20
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_magic_forms_3
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_magic_forms_4
+					}
+				}
+			}
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_blue"
+}
+
+arcane_theory_magic_forms_3 = {
+	learning = 2
+	monthly_character_prestige = 0.5
+	quality = 3
+	flags = { society dw_the_wizards lore astrology book }
+	active = {
+		OR = {
+			learning = 20
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_magic_forms_4
+					}
+				}
+			}
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_blue"
+}
+
+arcane_theory_magic_forms_4 = {
+	learning = 2
+	diplomacy = 1
+	monthly_character_prestige = 0.5
+	quality = 4
+	flags = { society dw_the_wizards lore astrology book }
+	active = {
+		OR = {
+			learning = 25
+			society_member_of = dw_the_wizards
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_blue_glow"
+}
+
+arcane_theory_arcane_bestiary_1 = {
+	learning = 1
+	quality = 1
+	flags = { society dw_the_wizards lore alchemy book }
+	active = {
+		OR = {
+			learning = 12
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 16
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_arcane_bestiary_2
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 20
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_arcane_bestiary_3
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_arcane_bestiary_4
+					}
+				}
+			}
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_green"
+}
+
+arcane_theory_arcane_bestiary_2 = {
+	learning = 2
+	quality = 2
+	flags = { society dw_the_wizards lore alchemy book }
+	active = {
+		OR = {
+			learning = 16
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 20
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_arcane_bestiary_3
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_arcane_bestiary_4
+					}
+				}
+			}
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_green"
+}
+
+arcane_theory_arcane_bestiary_3 = {
+	learning = 2
+	health = 0.5
+	quality = 3
+	flags = { society dw_the_wizards lore alchemy book }
+	active = {
+		OR = {
+			learning = 20
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_arcane_bestiary_4
+					}
+				}
+			}
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_green"
+}
+
+arcane_theory_arcane_bestiary_4 = {
+	learning = 2
+	health = 1
+	quality = 4
+	flags = { society dw_the_wizards lore alchemy book }
+	active = {
+		OR = {
+			learning = 25
+			society_member_of = dw_the_wizards
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_green_glow"
+}
+
+arcane_theory_realms_power_1 = {
+	learning = 1
+	quality = 1
+	flags = { society dw_the_wizards lore alchemy book }
+	active = {
+		OR = {
+			learning = 12
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 16
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_realms_power_2
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 20
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_realms_power_3
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_realms_power_4
+					}
+				}
+			}
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_green"
+}
+
+arcane_theory_realms_power_2 = {
+	learning = 1
+	stewardship = 1
+	quality = 2
+	flags = { society dw_the_wizards lore alchemy book }
+	active = {
+		OR = {
+			learning = 16
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 20
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_realms_power_3
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_realms_power_4
+					}
+				}
+			}
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_green"
+}
+
+arcane_theory_realms_power_3 = {
+	learning = 1
+	stewardship = 1
+	martial = 1
+	quality = 3
+	flags = { society dw_the_wizards lore alchemy book }
+	active = {
+		OR = {
+			learning = 20
+			society_member_of = dw_the_wizards
+		}
+		custom_tooltip = {
+			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
+			NOT = {
+				AND = {
+					OR = {
+						learning = 25
+						society_member_of = dw_the_wizards
+					}
+					any_artifact = {
+						artifact_type = arcane_theory_realms_power_4
+					}
+				}
+			}
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_green"
+}
+
+arcane_theory_realms_power_4 = {
+	learning = 1
+	stewardship = 2
+	martial = 1
+	quality = 3
+	flags = { society dw_the_wizards lore alchemy book }
+	active = {
+		OR = {
+			learning = 25
+			society_member_of = dw_the_wizards
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	stacking = no
+	picture = "GFX_book_green_glow"
+}
+
+dw_hiccup_dragon_plate = {
+    monthly_character_prestige = 0.5 # It holds an interesting story
+    child_opinion = 10 # Kids thing it's a really awesome story
+    quality = 2
+    flags = { plot unique heroes_villains plate }
+    stacking = no
+    picture = "GFX_hiccup_dragon_plate"
+}
+dw_dildo_01 = {
+    sex_appeal_opinion = 10 # Playing with toys is hot
+    fertility = 0.1 # From the extra stimulation
+    quality = 2
+    flags = { plot rare heroes_villains sex_toy }
+    stacking = no
+    picture = "GFX_dildo_01"
+}
+dw_astrid_doll = {
+    child_opinion = 10 # Kids thing it's cool
+    female_opinion = 5 # Even grown women often have a fondness or appreciation for dolls
+    quality = 2
+    flags = { plot unique heroes_villains doll }
+    stacking = no
+    picture = "GFX_astrid_doll"
+}
+dw_helmet_01 = {
+    monthly_character_prestige = 0.5
+    martial = 1
+    combat_rating = 5
+    quality = 3
+    active = { is_adult = yes }
+    flags = { plot helmet heroes_villains rare }
+    stacking = no
+    slot = crown
+    picture = "GFX_dw_helmet_01"
+}
+dw_breed_collar = {
+    sex_appeal_opinion = 5 # The wearer is clearly freaky
+    church_opinion = -10 # The devout are shocked to see one willing lay with animals
+    quality = 2
+    active = { is_female = yes } # Guy's aren't meant to be bread by beasts, regardless of the magic
+    flags = { plot rare heroes_villains breed necklace }
+    slot = neck
+    stacking = no
+    picture = "GFX_breed_collar"
+}
+dw_venom_blade = {
+    monthly_character_prestige = 0.25
+    martial = 1
+    combat_rating = 15
+    assassinate_chance_modifier = 0.15
+    quality = 4
+    active = { is_adult = yes }
+    flags = { plot rare heroes_villains blade sword poison combat_weapon }
+    slot = weapon
+    stacking = no
+    picture = "GFX_venom_blade"
+}
+dw_dragon_horn = {
+    monthly_character_prestige = 0.15
+	command_modifier = {
+		morale_offence = 0.25
+		morale_defence = 0.25
+	}
+	quality = 4
+    active = { is_adult = yes }
+	flags = { very_rare horn troops_morale heroes_villains }
+	stacking = no
+	picture = "GFX_dragon_horn"
+}
+dw_crimson_claw_banner = {
+    monthly_character_prestige = 0.1
+	command_modifier = {
+		morale_offence = 0.15
+		pursue = 0.15
+	}
+	cruel_opinion = 10
+    tribal_opinion = 10
+	martial = 1
+    active = { is_adult = yes }
+	quality = 4
+	flags = { rare banner troops_morale heroes_villains }
+	stacking = no
+	picture = "GFX_crimson_claw_banner"
+}
+dw_demon_bestiary_scroll= {
+    quality = 4
+    learning = 4
+    intrigue = 1
+    active = { learning = 6 }
+    monthly_character_piety = -0.1
+	christian_church_opinion = -10
+    muslim_church_opinion = -5
+	flags = { learning book scroll very_rare heroes_villains }
+	picture = "GFX_demon_bestiary_scroll"
+	slot = library
+}
+dw_human_health_scroll = {
+    quality = 2
+	learning = 1
+	health = 0.1
+	flags = { learning book scroll health }
+	picture = "GFX_human_health_scroll"
+	slot = library
+}
+dw_historic_trade_practices = {
+    quality = 3
+	active = {
+		learning = 6
+	}
+	tech_growth_modifier_economy = 0.1
+	monthly_character_prestige = 0.1
+    stewardship = 1
+	flags = { book scroll economy heroes_villains }
+	picture = "GFX_historic_trade_practices"
+	slot = library
+}
+ancient_engineering_scroll = {
+    quality = 3
+	active = {
+		learning = 6
+	}
+	stewardship = 1
+	local_build_time_modifier = -0.1
+    flags = { book scroll construction heroes_villains }
+	picture = "GFX_ancient_engineering_scroll"
+	slot = library
+}

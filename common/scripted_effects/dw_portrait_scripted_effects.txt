@@ -1,0 +1,918 @@
+remove_custom_dw_pic = {
+    # Photo strip 1
+    remove_trait = harley01_pic
+    remove_trait = harley02_pic
+    remove_trait = harley03_pic
+    remove_trait = harley04_pic
+    remove_trait = harley05_pic
+    remove_trait = batgirl01_pic
+    remove_trait = batgirl02_pic
+    remove_trait = batgirl03_pic
+    remove_trait = batgirl04_pic
+    remove_trait = poisonivy01_pic
+    remove_trait = dashparr02_pic
+    remove_trait = hela01_pic
+    remove_trait = hela02_pic
+    remove_trait = spidergwen01_pic
+    remove_trait = spidergwen02_pic
+    remove_trait = spidergwen03_pic
+    remove_trait = spidergwen04_pic
+    remove_trait = captainmarvel01_pic
+    remove_trait = captainmarvel02_pic
+    remove_trait = livewire01_pic
+    remove_trait = livewire02_pic
+    remove_trait = blackwidow01_pic
+    remove_trait = blackwidow02_pic
+    remove_trait = blackwidow03_pic
+    remove_trait = blackwidow04_pic
+    remove_trait = powergirl01_pic
+    # Photo Traits strip 2
+    remove_trait = redrobin01_pic
+    remove_trait = redrobin02_pic
+    remove_trait = redrobin03_pic
+    remove_trait = redrobin04_pic
+    remove_trait = vulture01_pic
+    remove_trait = violetparr02_pic
+    remove_trait = bobparr02_pic
+    remove_trait = helenparr02_pic
+    remove_trait = spiderman01_pic
+    remove_trait = spiderman02_pic
+    remove_trait = spiderman03_pic
+    remove_trait = spiderman04_pic
+    remove_trait = venom01_pic
+    remove_trait = twosix01_pic
+    remove_trait = astrid01_pic
+    remove_trait = hiccup01_pic
+    remove_trait = helenparr01_pic
+    remove_trait = violetparr01_pic
+    remove_trait = bobparr01_pic
+    remove_trait = dashparr01_pic
+    remove_trait = syndrome01_pic
+    remove_trait = syndrome02_pic
+    # Third set of pics
+    remove_trait = tentacle01_pic
+    remove_trait = tentacle02_pic
+    remove_trait = tentacle03_pic
+    remove_trait = tentacle04_pic
+    remove_trait = tentacle05_pic
+    remove_trait = tentacle06_pic
+    remove_trait = tentacle07_pic
+    remove_trait = tentacle08_pic
+    remove_trait = tentacle09_pic
+    remove_trait = tentacle10_pic
+    remove_trait = tentacle11_pic
+    remove_trait = tentacle12_pic
+    remove_trait = tentacle13_pic
+    remove_trait = tentacle14_pic
+    remove_trait = tentacle15_pic
+    remove_trait = tentacle16_pic
+    remove_trait = tentacle17_pic
+    remove_trait = tentacle18_pic
+    remove_trait = tentacle19_pic
+    remove_trait = tentacle20_pic
+    remove_trait = tentacle21_pic
+    remove_trait = tentacle22_pic
+    remove_trait = tentacle23_pic
+    remove_trait = tentacle24_pic
+    remove_trait = tentacle25_pic
+    remove_trait = tentacle26_pic
+    # Forth set
+    remove_trait = killerfrost01_pic
+    remove_trait = killerfrost02_pic
+    remove_trait = batman01_pic
+    remove_trait = batman02_pic
+    remove_trait = volcana01_pic
+    remove_trait = starfire01_pic
+    remove_trait = starfire02_pic
+    remove_trait = giganta01_pic
+    remove_trait = giganta02_pic
+    remove_trait = blackfire01_pic
+    remove_trait = blackfire02_pic
+    remove_trait = thanos01_pic
+    remove_trait = beastboy01_pic
+    remove_trait = blackcat01_pic
+    remove_trait = artemiscrock01_pic
+    remove_trait = artemiscrock02_pic
+    remove_trait = jinx01_pic
+    remove_trait = desiree01_pic
+    remove_trait = desiree02_pic
+    remove_trait = mirage01_pic
+    remove_trait = wonderwoman01_pic
+    remove_trait = wonderwoman02_pic
+    remove_trait = wolverine01_pic
+    remove_trait = wolverine02_pic
+    remove_trait = rogue01_pic
+    remove_trait = rogue02_pic
+    # Fifth set
+    remove_trait = platypoa01_pic
+    remove_trait = raven01_pic
+    remove_trait = nightwing01_pic
+    remove_trait = nightwing02_pic
+    remove_trait = missmartian01_pic
+    remove_trait = deathstroke01_pic
+    remove_trait = deathstroke02_pic
+    remove_trait = thor01_pic
+    remove_trait = thor02_pic
+    remove_trait = loki01_pic
+    remove_trait = loki02_pic
+    remove_trait = storm01_pic
+    remove_trait = emmafrost01_pic
+    remove_trait = jeangrey01_pic
+    remove_trait = jeangrey02_pic
+    remove_trait = jubilee01_pic
+    remove_trait = jubilee02_pic
+    remove_trait = shadowcat01_pic
+    remove_trait = charlesxavier01_pic
+    remove_trait = deadpool01_pic
+    remove_trait = domino01_pic
+    remove_trait = supergirl01_pic
+    remove_trait = superman01_pic
+    remove_trait = milesmorales01_pic
+    remove_trait = milesmorales02_pic
+    remove_trait = catwoman01_pic
+    # Sixth set
+    remove_trait = starfire03_pic
+    remove_trait = violetparr03_pic
+    remove_trait = scarletwitch01_pic
+    remove_trait = scarletwitch02_pic
+    # Seventh set
+    remove_trait = hyena01_pic
+    remove_trait = hyena02_pic
+    remove_trait = hyena03_pic
+    remove_trait = hyena04_pic
+    remove_trait = hyena05_pic
+    remove_trait = hyena06_pic
+    remove_trait = hyena07_pic
+    remove_trait = hyena08_pic
+    remove_trait = hyena09_pic
+    remove_trait = hyena10_pic
+    remove_trait = hyena11_pic
+    remove_trait = hyena12_pic
+    remove_trait = hyena13_pic
+    remove_trait = hyena14_pic
+    remove_trait = hyena15_pic
+    remove_trait = hyena16_pic
+    remove_trait = hyena17_pic
+    remove_trait = hyena18_pic
+    remove_trait = hyena19_pic
+    remove_trait = hyena20_pic
+    remove_trait = hyena21_pic
+    remove_trait = hyena22_pic
+    remove_trait = hyena23_pic
+    remove_trait = hyena24_pic
+    remove_trait = hyena25_pic
+    remove_trait = hyena26_pic
+    remove_trait = wolf01_pic
+    remove_trait = wolf02_pic
+    remove_trait = wolf03_pic
+    remove_trait = wolf04_pic
+    remove_trait = wolf05_pic
+    remove_trait = wolf06_pic
+    remove_trait = wolf07_pic
+    remove_trait = wolf08_pic
+    remove_trait = wolf09_pic
+    remove_trait = wolf10_pic
+    remove_trait = wolf11_pic
+    remove_trait = wolf12_pic
+    remove_trait = wolf13_pic
+    remove_trait = wolf14_pic
+    remove_trait = wolf15_pic
+    remove_trait = wolf16_pic
+    remove_trait = wolf17_pic
+    remove_trait = wolf18_pic
+    remove_trait = wolf19_pic
+    remove_trait = wolf20_pic
+    remove_trait = wolf21_pic
+    remove_trait = wolf22_pic
+    remove_trait = wolf23_pic
+    remove_trait = wolf24_pic
+    remove_trait = wolf25_pic
+    remove_trait = wolf26_pic
+    remove_trait = horse01_pic
+    remove_trait = horse02_pic
+    remove_trait = horse03_pic
+    remove_trait = horse04_pic
+    remove_trait = horse05_pic
+    remove_trait = horse06_pic
+    remove_trait = horse07_pic
+    remove_trait = horse08_pic
+    remove_trait = horse09_pic
+    remove_trait = horse10_pic
+    remove_trait = horse11_pic
+    remove_trait = horse12_pic
+    remove_trait = horse13_pic
+    remove_trait = horse14_pic
+    remove_trait = horse15_pic
+    remove_trait = horse16_pic
+    remove_trait = horse17_pic
+    remove_trait = horse18_pic
+    remove_trait = horse19_pic
+    remove_trait = horse20_pic
+    remove_trait = horse21_pic
+    remove_trait = horse22_pic
+    remove_trait = horse23_pic
+    remove_trait = horse24_pic
+    remove_trait = horse25_pic
+    remove_trait = horse26_pic
+    remove_trait = dog01_pic
+    remove_trait = dog02_pic
+    remove_trait = dog03_pic
+    remove_trait = dog04_pic
+    remove_trait = dog05_pic
+    remove_trait = dog06_pic
+    remove_trait = dog07_pic
+    remove_trait = dog08_pic
+    remove_trait = dog09_pic
+    remove_trait = dog10_pic
+    remove_trait = dog11_pic
+    remove_trait = dog12_pic
+    remove_trait = dog13_pic
+    remove_trait = dog14_pic
+    remove_trait = dog15_pic
+    remove_trait = dog16_pic
+    remove_trait = dog17_pic
+    remove_trait = dog18_pic
+    remove_trait = dog19_pic
+    remove_trait = dog20_pic
+    remove_trait = dog21_pic
+    remove_trait = dog22_pic
+    remove_trait = dog23_pic
+    remove_trait = dog24_pic
+    remove_trait = dog25_pic
+    remove_trait = dog26_pic
+    remove_trait = cat01_pic
+    remove_trait = cat02_pic
+    remove_trait = cat03_pic
+    remove_trait = cat04_pic
+    remove_trait = cat05_pic
+    remove_trait = cat06_pic
+    remove_trait = cat07_pic
+    remove_trait = cat08_pic
+    remove_trait = cat09_pic
+    remove_trait = cat10_pic
+    remove_trait = cat11_pic
+    remove_trait = cat12_pic
+    remove_trait = cat13_pic
+    remove_trait = cat14_pic
+    remove_trait = cat15_pic
+    remove_trait = cat16_pic
+    remove_trait = cat17_pic
+    remove_trait = cat18_pic
+    remove_trait = cat19_pic
+    remove_trait = cat20_pic
+    remove_trait = cat21_pic
+    remove_trait = cat22_pic
+    remove_trait = cat23_pic
+    remove_trait = cat24_pic
+    remove_trait = cat25_pic
+    remove_trait = cat26_pic
+    remove_trait = fox01_pic
+    remove_trait = fox02_pic
+    remove_trait = fox03_pic
+    remove_trait = fox04_pic
+    remove_trait = fox05_pic
+    remove_trait = fox06_pic
+    remove_trait = fox07_pic
+    remove_trait = fox08_pic
+    remove_trait = fox09_pic
+    remove_trait = fox10_pic
+    remove_trait = fox11_pic
+    remove_trait = fox12_pic
+    remove_trait = fox13_pic
+    remove_trait = fox14_pic
+    remove_trait = fox15_pic
+    remove_trait = fox16_pic
+    remove_trait = fox17_pic
+    remove_trait = fox18_pic
+    remove_trait = fox19_pic
+    remove_trait = fox20_pic
+    remove_trait = fox21_pic
+    remove_trait = fox22_pic
+    remove_trait = fox23_pic
+    remove_trait = fox24_pic
+    remove_trait = fox25_pic
+    remove_trait = fox26_pic
+    remove_trait = dragon01_pic
+    remove_trait = dragon02_pic
+    remove_trait = dragon03_pic
+    remove_trait = dragon04_pic
+    remove_trait = dragon05_pic
+    remove_trait = dragon06_pic
+    remove_trait = dragon07_pic
+    remove_trait = dragon08_pic
+    remove_trait = dragon09_pic
+    remove_trait = dragon10_pic
+    remove_trait = dragon11_pic
+    remove_trait = dragon12_pic
+    remove_trait = dragon13_pic
+    remove_trait = dragon14_pic
+    remove_trait = dragon15_pic
+    remove_trait = dragon16_pic
+    remove_trait = dragon17_pic
+    remove_trait = dragon18_pic
+    remove_trait = dragon19_pic
+    remove_trait = dragon20_pic
+    remove_trait = dragon21_pic
+    remove_trait = dragon22_pic
+    remove_trait = dragon23_pic
+    remove_trait = dragon24_pic
+    remove_trait = dragon25_pic
+    remove_trait = dragon26_pic
+    remove_trait = demon01_pic
+    remove_trait = demon02_pic
+    remove_trait = demon03_pic
+    remove_trait = demon04_pic
+    remove_trait = demon05_pic
+    remove_trait = demon06_pic
+    remove_trait = demon07_pic
+    remove_trait = demon08_pic
+    remove_trait = demon09_pic
+    remove_trait = demon10_pic
+    remove_trait = demon11_pic
+    remove_trait = demon12_pic
+    remove_trait = demon13_pic
+    remove_trait = demon14_pic
+    remove_trait = demon15_pic
+    remove_trait = demon16_pic
+    remove_trait = demon17_pic
+    remove_trait = demon18_pic
+    remove_trait = demon19_pic
+    remove_trait = demon20_pic
+    remove_trait = demon21_pic
+    remove_trait = demon22_pic
+    remove_trait = demon23_pic
+    remove_trait = demon24_pic
+    remove_trait = demon25_pic
+    remove_trait = demon26_pic
+    remove_trait = angel01_pic
+    remove_trait = angel02_pic
+    remove_trait = angel03_pic
+    remove_trait = angel04_pic
+    remove_trait = angel05_pic
+    remove_trait = angel06_pic
+    remove_trait = angel07_pic
+    remove_trait = angel08_pic
+    remove_trait = angel09_pic
+    remove_trait = angel10_pic
+    remove_trait = angel11_pic
+    remove_trait = angel12_pic
+    remove_trait = angel13_pic
+    remove_trait = angel14_pic
+    remove_trait = angel15_pic
+    remove_trait = angel16_pic
+    remove_trait = angel17_pic
+    remove_trait = angel18_pic
+    remove_trait = angel19_pic
+    remove_trait = angel20_pic
+    remove_trait = angel21_pic
+    remove_trait = angel22_pic
+    remove_trait = angel23_pic
+    remove_trait = angel24_pic
+    remove_trait = angel25_pic
+    remove_trait = angel26_pic
+    remove_trait = orc01_pic
+    remove_trait = orc02_pic
+    remove_trait = orc03_pic
+    remove_trait = orc04_pic
+    remove_trait = orc05_pic
+    remove_trait = orc06_pic
+    remove_trait = orc07_pic
+    remove_trait = orc08_pic
+    remove_trait = orc09_pic
+    remove_trait = orc10_pic
+    remove_trait = orc11_pic
+    remove_trait = orc12_pic
+    remove_trait = orc13_pic
+    remove_trait = orc14_pic
+    remove_trait = orc15_pic
+    remove_trait = orc16_pic
+    remove_trait = orc17_pic
+    remove_trait = orc18_pic
+    remove_trait = orc19_pic
+    remove_trait = orc20_pic
+    remove_trait = orc21_pic
+    remove_trait = orc22_pic
+    remove_trait = orc23_pic
+    remove_trait = orc24_pic
+    remove_trait = orc25_pic
+    remove_trait = orc26_pic
+    remove_trait = elf01_pic
+    remove_trait = elf02_pic
+    remove_trait = elf03_pic
+    remove_trait = elf04_pic
+    remove_trait = elf05_pic
+    remove_trait = elf06_pic
+    remove_trait = elf07_pic
+    remove_trait = elf08_pic
+    remove_trait = elf09_pic
+    remove_trait = elf10_pic
+    remove_trait = elf11_pic
+    remove_trait = elf12_pic
+    remove_trait = elf13_pic
+    remove_trait = elf14_pic
+    remove_trait = elf15_pic
+    remove_trait = elf16_pic
+    remove_trait = elf17_pic
+    remove_trait = elf18_pic
+    remove_trait = elf19_pic
+    remove_trait = elf20_pic
+    remove_trait = elf21_pic
+    remove_trait = elf22_pic
+    remove_trait = elf23_pic
+    remove_trait = elf24_pic
+    remove_trait = elf25_pic
+    remove_trait = elf26_pic
+    remove_trait = fae01_pic
+    remove_trait = fae02_pic
+    remove_trait = fae03_pic
+    remove_trait = fae04_pic
+    remove_trait = fae05_pic
+    remove_trait = fae06_pic
+    remove_trait = fae07_pic
+    remove_trait = fae08_pic
+    remove_trait = fae09_pic
+    remove_trait = fae10_pic
+    remove_trait = fae11_pic
+    remove_trait = fae12_pic
+    remove_trait = fae13_pic
+    remove_trait = fae14_pic
+    remove_trait = fae15_pic
+    remove_trait = fae16_pic
+    remove_trait = fae17_pic
+    remove_trait = fae18_pic
+    remove_trait = fae19_pic
+    remove_trait = fae20_pic
+    remove_trait = fae21_pic
+    remove_trait = fae22_pic
+    remove_trait = fae23_pic
+    remove_trait = fae24_pic
+    remove_trait = fae25_pic
+    remove_trait = fae26_pic
+    remove_trait = nymph01_pic
+    remove_trait = nymph02_pic
+    remove_trait = nymph03_pic
+    remove_trait = nymph04_pic
+    remove_trait = nymph05_pic
+    remove_trait = nymph06_pic
+    remove_trait = nymph07_pic
+    remove_trait = nymph08_pic
+    remove_trait = nymph09_pic
+    remove_trait = nymph10_pic
+    remove_trait = nymph11_pic
+    remove_trait = nymph12_pic
+    remove_trait = nymph13_pic
+    remove_trait = nymph14_pic
+    remove_trait = nymph15_pic
+    remove_trait = nymph16_pic
+    remove_trait = nymph17_pic
+    remove_trait = nymph18_pic
+    remove_trait = nymph19_pic
+    remove_trait = nymph20_pic
+    remove_trait = nymph21_pic
+    remove_trait = nymph22_pic
+    remove_trait = nymph23_pic
+    remove_trait = nymph24_pic
+    remove_trait = nymph25_pic
+    remove_trait = nymph26_pic
+    remove_trait = genie01_pic
+    remove_trait = genie02_pic
+    remove_trait = genie03_pic
+    remove_trait = genie04_pic
+    remove_trait = genie05_pic
+    remove_trait = genie06_pic
+    remove_trait = genie07_pic
+    remove_trait = genie08_pic
+    remove_trait = genie09_pic
+    remove_trait = genie10_pic
+    remove_trait = genie11_pic
+    remove_trait = genie12_pic
+    remove_trait = genie13_pic
+    remove_trait = genie14_pic
+    remove_trait = genie15_pic
+    remove_trait = genie16_pic
+    remove_trait = genie17_pic
+    remove_trait = genie18_pic
+    remove_trait = genie19_pic
+    remove_trait = genie20_pic
+    remove_trait = genie21_pic
+    remove_trait = genie22_pic
+    remove_trait = genie23_pic
+    remove_trait = genie24_pic
+    remove_trait = genie25_pic
+    remove_trait = genie26_pic
+    remove_trait = vampire01_pic
+    remove_trait = vampire02_pic
+    remove_trait = vampire03_pic
+    remove_trait = vampire04_pic
+    remove_trait = vampire05_pic
+    remove_trait = vampire06_pic
+    remove_trait = vampire07_pic
+    remove_trait = vampire08_pic
+    remove_trait = vampire09_pic
+    remove_trait = vampire10_pic
+    remove_trait = vampire11_pic
+    remove_trait = vampire12_pic
+    remove_trait = vampire13_pic
+    remove_trait = vampire14_pic
+    remove_trait = vampire15_pic
+    remove_trait = vampire16_pic
+    remove_trait = vampire17_pic
+    remove_trait = vampire18_pic
+    remove_trait = vampire19_pic
+    remove_trait = vampire20_pic
+    remove_trait = vampire21_pic
+    remove_trait = vampire22_pic
+    remove_trait = vampire23_pic
+    remove_trait = vampire24_pic
+    remove_trait = vampire25_pic
+    remove_trait = vampire26_pic
+}
+assign_random_dw_tentacle_pic = {
+    if = {
+        limit = { is_female = yes }
+        random_list = {
+            10 = { add_trait = tentacle01_pic } # 1 - Comments are for counting
+            10 = { add_trait = tentacle02_pic } # 2
+            10 = { add_trait = tentacle03_pic } # 3
+            10 = { add_trait = tentacle04_pic } # 4
+            10 = { add_trait = tentacle06_pic } # 5
+            10 = { add_trait = tentacle10_pic } # 6
+            10 = { add_trait = tentacle11_pic } # 7
+            10 = { add_trait = tentacle12_pic } # 8
+            10 = { add_trait = tentacle13_pic } # 9
+            10 = { add_trait = tentacle15_pic } # 10
+            10 = { add_trait = tentacle16_pic } # 11
+            10 = { add_trait = tentacle17_pic } # 12
+            10 = { add_trait = tentacle18_pic } # 13
+        }
+    }
+    else = {
+        random_list = {
+            10 = { add_trait = tentacle05_pic } # 1
+            10 = { add_trait = tentacle07_pic } # 2
+            10 = { add_trait = tentacle08_pic } # 3
+            10 = { add_trait = tentacle09_pic } # 4
+            10 = { add_trait = tentacle14_pic } # 5
+            10 = { add_trait = tentacle19_pic } # 6
+            10 = { add_trait = tentacle20_pic } # 6
+        }
+    }
+}
+assign_random_dw_hyena_pic = {
+    if = { #Women
+        limit = { is_female = yes }
+        random_list = {
+            10 = { add_trait = hyena02_pic }
+            10 = { add_trait = hyena04_pic }
+            10 = { add_trait = hyena06_pic }
+            10 = { add_trait = hyena10_pic }
+            10 = { add_trait = hyena16_pic }
+            10 = { add_trait = hyena17_pic }
+            10 = { add_trait = hyena18_pic }
+            10 = { add_trait = hyena19_pic }
+            10 = { add_trait = hyena26_pic }
+        }
+    }
+    else = { #Men
+        random_list = {
+            10 = { add_trait = hyena01_pic }
+            10 = { add_trait = hyena03_pic }
+            10 = { add_trait = hyena05_pic }
+            10 = { add_trait = hyena07_pic }
+            10 = { add_trait = hyena08_pic }
+            10 = { add_trait = hyena09_pic }
+            10 = { add_trait = hyena11_pic }
+            10 = { add_trait = hyena12_pic }
+            10 = { add_trait = hyena13_pic }
+            10 = { add_trait = hyena14_pic }
+            10 = { add_trait = hyena15_pic }
+            10 = { add_trait = hyena20_pic }
+            10 = { add_trait = hyena21_pic }
+            10 = { add_trait = hyena22_pic }
+            10 = { add_trait = hyena23_pic }
+            10 = { add_trait = hyena24_pic }
+            10 = { add_trait = hyena25_pic }
+        }
+    }
+}
+assign_random_trap_portrait = {
+    random_list = {
+        10 = { add_trait = portrait53 }
+        10 = { add_trait = portrait54 }
+        10 = { add_trait = portrait55 }
+        10 = { add_trait = portrait56 }
+        10 = { add_trait = portrait57 }
+        10 = { add_trait = portrait58 }
+        10 = { add_trait = portrait59 }
+    }
+}
+# Cycles through custom NPC images
+dw_cycle_custom_image = {
+    if = {
+        limit = { has_character_flag = dw_npc_harley }
+        if = {
+            limit = { trait = harley01_pic }
+            remove_trait = harley01_pic
+            add_trait = harley02_pic
+        }
+        else_if = {
+            limit = { trait = harley02_pic }
+            remove_trait = harley02_pic
+            add_trait = harley03_pic
+        }
+        else_if = {
+            limit = { trait = harley03_pic }
+            remove_trait = harley03_pic
+            add_trait = harley04_pic
+        }
+        else_if = {
+            limit = { trait = harley04_pic }
+            remove_trait = harley04_pic
+            add_trait = harley01_pic
+        }
+        else_if = { # For those that want to make her young looking again
+            limit = { trait = harley05_pic }
+            remove_trait = harley05_pic
+            set_character_flag = dw_harley_look_young
+            add_trait = harley01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_batgirl }
+        if = {
+            limit = { trait = batgirl01_pic }
+            remove_trait = batgirl01_pic
+            add_trait = batgirl02_pic
+        }
+        else_if = {
+            limit = { trait = batgirl02_pic }
+            remove_trait = batgirl02_pic
+            add_trait = batgirl03_pic
+        }
+        else_if = {
+            limit = { trait = batgirl03_pic }
+            remove_trait = batgirl03_pic
+            add_trait = batgirl04_pic
+        }
+        else_if = {
+            limit = { trait = batgirl04_pic }
+            remove_trait = batgirl04_pic
+            add_trait = batgirl01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_blackwidow }
+        if = {
+            limit = { trait = blackwidow01_pic }
+            remove_trait = blackwidow01_pic
+            add_trait = blackwidow02_pic
+        }
+        else_if = {
+            limit = { trait = blackwidow02_pic }
+            remove_trait = blackwidow02_pic
+            add_trait = blackwidow03_pic
+        }
+        else_if = {
+            limit = { trait = blackwidow03_pic }
+            remove_trait = blackwidow03_pic
+            add_trait = blackwidow04_pic
+        }
+        else_if = {
+            limit = { trait = blackwidow04_pic }
+            remove_trait = blackwidow04_pic
+            add_trait = blackwidow01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_redrobin }
+        if = {
+            limit = { trait = redrobin01_pic }
+            remove_trait = redrobin01_pic
+            add_trait = redrobin02_pic
+        }
+        else_if = {
+            limit = { trait = redrobin02_pic }
+            remove_trait = redrobin02_pic
+            add_trait = redrobin03_pic
+        }
+        else_if = {
+            limit = { trait = redrobin03_pic }
+            remove_trait = redrobin03_pic
+            add_trait = redrobin04_pic
+        }
+        else_if = {
+            limit = { trait = redrobin04_pic }
+            remove_trait = redrobin04_pic
+            add_trait = redrobin01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_spidergwen }
+        if = {
+            limit = { trait = spidergwen01_pic }
+            remove_trait = spidergwen01_pic
+            add_trait = spidergwen02_pic
+        }
+        else_if = {
+            limit = { trait = spidergwen02_pic }
+            remove_trait = spidergwen02_pic
+            add_trait = spidergwen03_pic
+        }
+        else_if = {
+            limit = { trait = spidergwen03_pic }
+            remove_trait = spidergwen03_pic
+            add_trait = spidergwen04_pic
+        }
+        else_if = {
+            limit = { trait = spidergwen04_pic }
+            remove_trait = spidergwen04_pic
+            add_trait = spidergwen01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_spiderman }
+        if = {
+            limit = { trait = spiderman01_pic }
+            remove_trait = spiderman01_pic
+            add_trait = spiderman02_pic
+        }
+        else_if = {
+            limit = { trait = spiderman02_pic }
+            remove_trait = spiderman02_pic
+            add_trait = spiderman03_pic
+        }
+        else_if = {
+            limit = { trait = spiderman03_pic }
+            remove_trait = spiderman03_pic
+            add_trait = spiderman04_pic
+        }
+        else_if = {
+            limit = { trait = spiderman04_pic }
+            remove_trait = spiderman04_pic
+            add_trait = spiderman01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_joker }
+        if = {
+            limit = { trait = joker01_pic }
+            remove_trait = joker01_pic
+            add_trait = joker02_pic
+        }
+        else_if = {
+            limit = { trait = joker02_pic }
+            remove_trait = joker02_pic
+            add_trait = joker03_pic
+        }
+        else_if = {
+            limit = { trait = joker03_pic }
+            remove_trait = joker03_pic
+            add_trait = joker04_pic
+        }
+        else_if = {
+            limit = { trait = joker04_pic }
+            remove_trait = joker04_pic
+            add_trait = joker01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_syndrome }
+        if = {
+            limit = { trait = syndrome01_pic }
+            remove_trait = syndrome01_pic
+            add_trait = syndrome02_pic
+        }
+        else_if = {
+            limit = { trait = syndrome02_pic }
+            remove_trait = syndrome02_pic
+            add_trait = syndrome01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_violetparr }
+        if = {
+            limit = { trait = violetparr01_pic }
+            remove_trait = violetparr01_pic
+            add_trait = violetparr02_pic
+        }
+        else_if = {
+            limit = { trait = violetparr02_pic }
+            remove_trait = violetparr02_pic
+            add_trait = violetparr03_pic
+        }
+        else_if = {
+            limit = { trait = violetparr03_pic }
+            remove_trait = violetparr03_pic
+            add_trait = violetparr01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_bobparr }
+        if = {
+            limit = { trait = bobparr01_pic }
+            remove_trait = bobparr01_pic
+            add_trait = bobparr02_pic
+        }
+        else_if = {
+            limit = { trait = bobparr02_pic }
+            remove_trait = bobparr02_pic
+            add_trait = bobparr01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_helenparr }
+        if = {
+            limit = { trait = helenparr01_pic }
+            remove_trait = helenparr01_pic
+            add_trait = helenparr02_pic
+        }
+        else_if = {
+            limit = { trait = helenparr02_pic }
+            remove_trait = helenparr02_pic
+            add_trait = helenparr01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_hela }
+        if = {
+            limit = { trait = hela01_pic }
+            remove_trait = hela01_pic
+            add_trait = hela02_pic
+        }
+        else_if = {
+            limit = { trait = hela02_pic }
+            remove_trait = hela02_pic
+            add_trait = hela01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_livewire }
+        if = {
+            limit = { trait = livewire01_pic }
+            remove_trait = livewire01_pic
+            add_trait = livewire02_pic
+        }
+        else_if = {
+            limit = { trait = livewire02_pic }
+            remove_trait = livewire02_pic
+            add_trait = livewire01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_captainmarvel }
+        if = {
+            limit = { trait = captainmarvel01_pic }
+            remove_trait = captainmarvel01_pic
+            add_trait = captainmarvel02_pic
+        }
+        else_if = {
+            limit = { trait = captainmarvel02_pic }
+            remove_trait = captainmarvel02_pic
+            add_trait = captainmarvel01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_starfire }
+        if = {
+            limit = { trait = starfire01_pic }
+            remove_trait = starfire01_pic
+            add_trait = starfire02_pic
+        }
+        else_if = {
+            limit = { trait = starfire02_pic }
+            remove_trait = starfire02_pic
+            add_trait = starfire03_pic
+        }
+        else_if = {
+            limit = { trait = starfire03_pic }
+            remove_trait = starfire03_pic
+            add_trait = starfire01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_scarletwitch }
+        if = {
+            limit = { trait = scarletwitch01_pic }
+            remove_trait = scarletwitch01_pic
+            add_trait = scarletwitch02_pic
+        }
+        else_if = {
+            limit = { trait = scarletwitch02_pic }
+            remove_trait = scarletwitch02_pic
+            add_trait = scarletwitch01_pic
+        }
+    }
+    if = {
+        limit = { has_character_flag = dw_npc_rogue }
+        if = {
+            limit = { trait = rogue01_pic }
+            remove_trait = rogue01_pic
+            add_trait = rogue02_pic
+        }
+        else_if = {
+            limit = { trait = rogue02_pic }
+            remove_trait = rogue02_pic
+            add_trait = rogue01_pic
+        }
+    }
+}

@@ -6,12 +6,12 @@ namespace = DWSex
 
 ### .100 - .199  Male and Female (consensual) - from the perspective of the MALE, on a bed
 ## event_target:male_lover_1  - If a futa female is the one 'driving' the experience, she can be set as the male_lover_1, although some images are clearly dudes.
-## event_target:female_lover_1 
+## event_target:female_lover_1
 ## supported flags for custom desc text are: dw_target_wife, dw_target_mom, dw_target_daughter
 
 # .110 - Kissing/Fondeling
 
-# .120 - Cunninglingus 
+# .120 - Cunninglingus
 
 # .130 - BJ
 
@@ -49,6 +49,9 @@ narrative_event = {
 		}
 		text = DWSex140.3
 	}
+	immediate = {
+		event_target:dw_visit_target = { save_event_target_as = female_lover_1 }
+	}
 	option = { # Continue
 		name = DWSex140A
 		narrative_event = { id = DWSex.150 }
@@ -56,7 +59,7 @@ narrative_event = {
 	option = { # Cum inside
 		name = DWSex140B
 		event_target:female_lover_1 = {
-			character_event = { id = DWCore.9000 }
+			character_event = { id = dw_visits.9000 }
 		}
 	}
 	option = { # Pull out and finish
@@ -106,7 +109,7 @@ narrative_event = {
 	option = { # Cum inside
 		name = DWSex150B
 		event_target:female_lover_1 = {
-			character_event = { id = DWCore.9000 }
+			character_event = { id = dw_visits.9000 }
 		}
 	}
 	option = { # Pull out and finish
@@ -240,7 +243,7 @@ narrative_event = {
 
 ### .200 - .299  Female and male (consensual) - from the perspective of the FEMALE, on a bed
 ## event_target:male_lover_1
-## event_target:female_lover_1 
+## event_target:female_lover_1
 ## supported flags for custom desc text are: dw_target_husband, dw_target_dad, dw_target_son
 
 ### .300 - .399  Male and Futa (consensual) - from the perspective of the MALE, on a bed
@@ -250,7 +253,7 @@ narrative_event = {
 
 # .310 - Kissing/Fondeling
 
-# .320 - Cunninglingus 
+# .320 - Cunninglingus
 
 # .330 - BJ
 narrative_event = {
@@ -286,6 +289,9 @@ narrative_event = {
 		}
 		text = DWSex330.3
 	}
+	immediate = {
+		event_target:dw_visit_target = { save_event_target_as = futa_lover_1 }
+	}
 	option = { # Cum inside mouth
 		name = DWSex330B
 		# TODO
@@ -307,7 +313,7 @@ narrative_event = {
 
 ### .400 - .499  Female (non-Futa) and Futa (consensual) - from the perspective of the non-futa FEMALE, on a bed
 ## event_target:futa_lover_1
-## event_target:female_lover_1 
+## event_target:female_lover_1
 ## supported flags for custom desc text are: dw_target_wife, dw_target_mom, dw_target_daughter
 
 # .460 - Cowgirl
@@ -344,11 +350,14 @@ narrative_event = {
 		}
 		text = DWSex460.3
 	}
+	immediate = {
+		event_target:dw_visit_target = { save_event_target_as = futa_lover_1 }
+	}
 	option = { # Cum inside
 		name = DWSex460B
 		# TODO
 		custom_tooltip = { text = dw_pregnancy_check_tooltip }
-		hidden_tooltip = { event_target:futa_lover_1 = { character_event = { id = DWCore.9005 }}} # Pregnancy check for the female (player)
+		hidden_tooltip = { event_target:futa_lover_1 = { character_event = { id = dw_visits.9010 }}} # Pregnancy check for the female (player)
 		clear_target_flags = yes # Remove if we make an actual cum in mouth event
 	}
 	option = { # Cum outside
@@ -365,7 +374,7 @@ narrative_event = {
 
 # .510 - Kissing/Fondeling
 
-# .520 - Cunninglingus 
+# .520 - Cunninglingus
 
 # .530 - BJ
 narrative_event = {
@@ -401,6 +410,9 @@ narrative_event = {
 		}
 		text = DWSex530.3
 	}
+	immediate = {
+		event_target:dw_visit_target = { save_event_target_as = male_lover_1 }
+	}
 	option = { # Cum inside mouth
 		name = DWSex530B
 		# TODO
@@ -422,7 +434,7 @@ narrative_event = {
 
 ### .600 - .699  Futa and Female (non-Futa) (consensual) - from the perspective of the FUTA, on a bed
 ## event_target:futa_lover_1
-## event_target:female_lover_1 
+## event_target:female_lover_1
 ## supported flags for custom desc text are: dw_target_wife, dw_target_mom, dw_target_daughter
 
 # .660 - Cowgirl
@@ -459,11 +471,14 @@ narrative_event = {
 		}
 		text = DWSex660.3
 	}
+	immediate = {
+		event_target:dw_visit_target = { save_event_target_as = female_lover_1 }
+	}
 	option = { # Cum inside her pussy
 		name = DWSex660B
 		# TODO
 		custom_tooltip = { text = dw_pregnancy_check_tooltip }
-		hidden_tooltip = { event_target:female_lover_1 = { character_event = { id = DWCore.9000 }}} # Pregnancy check for the female (target)
+		hidden_tooltip = { event_target:female_lover_1 = { character_event = { id = dw_visits.9000 }}} # Pregnancy check for the female (target)
 		clear_target_flags = yes # Remove if we make an actual cum in mouth event
 	}
 	option = { # Pull out and finish
@@ -485,7 +500,7 @@ narrative_event = {
 
 # .810 - Kissing/Fondeling
 
-# .820 - Cunninglingus 
+# .820 - Cunninglingus
 
 # .830 - BJ
 
@@ -525,6 +540,9 @@ narrative_event = {
 		}
 		text = DWSex850.3
 	}
+	immediate = {
+		event_target:dw_visit_target = { save_event_target_as = futa_lover_1 }
+	}
 	option = { # Cum in his ass
 		name = DWSex850B
 		# TODO
@@ -548,7 +566,7 @@ narrative_event = {
 
 # .910 - Kissing/Fondeling
 
-# .920 - Cunninglingus 
+# .920 - Cunninglingus
 
 # .930 - BJ
 
@@ -588,6 +606,9 @@ narrative_event = {
 		}
 		text = DWSex950.3
 	}
+	immediate = {
+		event_target:dw_visit_target = { save_event_target_as = trap_lover_1 }
+	}
 	option = { # Cum in his ass
 		name = DWSex950B
 		# TODO
@@ -603,4 +624,3 @@ narrative_event = {
 # .880 - Ass appreciation
 
 # .890 - Money shot
-

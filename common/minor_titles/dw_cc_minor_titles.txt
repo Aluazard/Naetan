@@ -1,0 +1,124 @@
+########################################################
+# MINOR TITLES
+# Characters can have any number of these
+########################################################
+#	grant_limit: Max number of holders.
+#	realm_in_name: Append the name of the country after the title (Queen [of Sweden])
+#	allowed_to_hold: conditions for the character to hold the title
+#	allowed_to_grant: conditions for a ruler to grant the title
+#	regent: This is the title for regents (not really "minor")
+#	gain_effect: fires when the title is granted
+#	lose_effect: fires when a title is lost if dismissal_trigger evaluates to false
+#	message: should fire a message to the its owner when set
+#	The other fields are all character modifiers.
+
+# Court Wizard
+title_court_wizard = {
+	attribute = learning
+	dignity = 1
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 5
+	monthly_salary = 0.1
+	monthly_prestige = 0.50
+	is_unique = yes
+	allowed_to_hold = {
+		trait = mage
+		is_adult = yes
+	}
+	allowed_to_grant = {
+		is_feudal = yes # Since you need a castle to make a Wizard's Tower, you should be feudal.
+	}
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+	message = yes
+}
+
+# Wizards College Apprentice
+title_dw_the_wizards_apprentice = {
+	is_high_prio = yes
+	attribute = learning
+    dignity = 1
+    realm_in_name = no
+	grant_limit = 1
+	opinion_effect = 10
+	monthly_salary = 0.05
+	monthly_prestige = 0.1
+	
+	allowed_to_grant = {
+		society_member_of = dw_the_wizards
+		ai = no
+	}
+	
+	allowed_to_hold = {
+		custom_tooltip = {
+			text = court_physician_tooltip_1
+			NOT = {
+				primary_title = { temporary = yes } 
+			}
+		}
+		is_adult = yes
+		OR = {
+			society_member_of = dw_the_wizards
+			is_in_society = no
+		}
+		NOT = { trait = in_hiding }
+		NOT = { trait = incapable }
+		prisoner = no
+		hidden_trigger = {
+			liege = { society_member_of = dw_the_wizards }
+			ai = yes
+			NOT = { has_character_flag = completed_apprenticeship }
+			OR = {
+				FROM = { ai = no }
+				learning = 10
+				is_smart_trigger = yes
+				trait = gardener
+				trait = scholar
+				trait = mystic
+			}
+		}
+	}
+	revoke_trigger = {
+		always = no
+	}
+	gain_effect = {
+		if = {
+			limit = { NOT = { society_member_of = dw_the_wizards } }
+			join_society = dw_the_wizards
+		}
+		character_event = { id = DWSOC.1413 days = 4500 random = 1000 }  #Some years later, the apprenticeship ends
+
+		FROM = {
+			if = {
+				limit = { has_quest = quest_dw_the_wizards_find_apprentice }
+				character_event = { id = DWSOC.1409 }
+			}
+		}
+	}
+	lose_effect = {
+	}
+	retire_effect = {
+	}
+
+	message = yes
+}
+
+# Mother Lilith Title
+title_mother_lilith = {			# this title is not granted by a character to another, it is automatically obtained
+								# when one character becomes emperor of china. It is used solely to identify them as such
+	is_offmap_holder = yes
+	offmap_power = offmap_lilith
+	show_as_title = yes
+	dignity = 1000 				# this should always be higher than 0, or it won't be applied in all cases
+}
+# Wellspring Title
+title_wellspring = {			# this title is not granted by a character to another, it is automatically obtained
+								# when one character becomes emperor of china. It is used solely to identify them as such
+	is_offmap_holder = yes
+	offmap_power = offmap_wellspring
+	show_as_title = yes
+	dignity = 1000 				# this should always be higher than 0, or it won't be applied in all cases
+}

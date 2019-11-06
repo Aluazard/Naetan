@@ -1,0 +1,41 @@
+dw_apply_therianthrope_traits = {
+    # Every child that runs this is considered to have been birthed by a mother that successfully bread with a beast
+
+    # This trait basically identifies one as a shapechanger
+    add_trait = therianthrope
+
+    # Here is where we determine what kind of shapechanger
+    if = {
+        limit = {
+            mother = { has_character_flag = dw_pregnancy_hyena }
+        }
+        add_trait = hyena_kin
+    }
+    else_if = {
+        limit = {
+            mother = { has_character_flag = dw_pregnancy_dog }
+        }
+        add_trait = dog_kin
+    }
+    else_if = {
+        limit = {
+            mother = { has_character_flag = dw_pregnancy_wolf }
+        }
+        add_trait = wolf_kin
+    }
+    else_if = {
+        limit = {
+            mother = { has_character_flag = dw_pregnancy_horse }
+        }
+        add_trait = horse_kin
+    }
+    else_if = {
+        limit = {
+            mother = { has_character_flag = dw_pregnancy_cat }
+        }
+        add_trait = cat_kin
+    }
+
+    # When all is said and done, we need to clear mom's flags.
+    mother = { dw_clear_animal_pregnancy_flags = yes }
+}

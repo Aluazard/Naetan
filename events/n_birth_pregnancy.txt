@@ -116,15 +116,13 @@ character_event = {
 					}
 				}
 				mother_even_if_dead = {
-					NOT = {
-						OR = {
-							trait = leshnik
-							trait = leshnik_1
-							trait = leshnik_2
-							trait = leshnik_3
-							trait = leshnik_4
-							trait = leshnik_5
-						}
+					OR = {
+						trait = leshnik
+						trait = leshnik_1
+						trait = leshnik_2
+						trait = leshnik_3
+						trait = leshnik_4
+						trait = leshnik_5
 					}
 				}
 			}
@@ -140,15 +138,13 @@ character_event = {
 					}
 				}
 				father_even_if_dead = {
-					NOT = {
-						OR = {
-							trait = leshnik
-							trait = leshnik_1
-							trait = leshnik_2
-							trait = leshnik_3
-							trait = leshnik_4
-							trait = leshnik_5
-						}
+					OR = {
+						trait = leshnik
+						trait = leshnik_1
+						trait = leshnik_2
+						trait = leshnik_3
+						trait = leshnik_4
+						trait = leshnik_5
 					}
 				}
 			}

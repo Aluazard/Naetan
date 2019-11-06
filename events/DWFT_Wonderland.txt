@@ -98,7 +98,7 @@ character_event = {
 		}
 		if = { # If we managed to have Alice as a valid target, then we do a random event
 			limit = {
-				event_target:its_alice = { 
+				event_target:its_alice = {
 					character = yes
 				}
 			}
@@ -261,7 +261,7 @@ narrative_event = {
 			}
 		}
 		name = "DWFairyTales2037A"
-		hidden_tooltip = { event_target:its_queenie = { character_event = { id = DWCore.9000 }}} # Pregnancy check
+		hidden_tooltip = { event_target:its_queenie = { character_event = { id = dw_visits.9000 }}} # Pregnancy check
 	}
 	option = { # Oh boy. Let's slow our roll. - No Pregnancy check
 		trigger = {

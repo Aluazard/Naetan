@@ -1,0 +1,55 @@
+agile = {
+	opposites =  {
+		clumsy
+	}
+	inherit_chance = 10
+	intrigue = 1
+	martial = 2
+
+	health = 0.5
+	fertility = 0.1
+
+	combat_rating = 10
+
+	sex_appeal_opinion = 5
+}
+clumsy = {
+	opposites =  {
+		agile
+	}
+	inherit_chance = 10
+	intrigue = -1
+	stewardship = -1
+	martial = -1
+
+	combat_rating = -10
+}
+powered = {
+	# Represents unnatural energies within the person
+	inherit_chance = 50 # A fair chance for the kids to end up with it.
+	martial = 3 # Able to impact battlefields
+	health = 0.5 # Body is naturally hardened to deal with the energy
+	fertility = -0.25 # negative impact on reproduction capabilities
+	combat_rating = 10 # a clear advantage in one on one combat
+}
+resilience = { # Very similar to sturdy, yet can stack with robust
+	opposites = {
+		sturdy
+		feeble
+	}
+	random = no
+	inherit_chance = 10
+	combat_rating = 5
+	health = 1
+}
+mind_control = {
+    random = no
+	# Mind control allows one to see a persons desires, fears, and tweak them accordingly, potentially breaking the target and making them a willing thrall
+	intrigue = 3 # Intrigue is a snap with a little mental manipulation
+	learning = 2 # Being able to browse the thoughts of others
+
+	combat_rating = 5 # While difficult to use in combat, they're able us it as a weak type of foresight
+
+	opposite_opinion = 100 # Someone with mind control can easily sway the broken to like them
+	same_opinion = -50 # Those who can mind control others, are extremely distrustful around others like them
+}

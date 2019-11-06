@@ -1,0 +1,15 @@
+# This file contains scripted triggers for the intent of cross-mod compatibility
+
+# Checking for the presence of other mods
+dw_using_ala_body_mod = {
+    has_global_flag = Ala_Body_Mod
+}
+dw_using_dwf_dicktits_mod = {
+    has_global_flag = dwf_dicktits_active
+}
+dw_using_sast_mod = {
+    has_global_flag = sast_is_present
+}
+dw_using_christianity_mod = {
+    has_global_flag = christ_enabled
+}

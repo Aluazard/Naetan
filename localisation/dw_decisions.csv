@@ -1,10 +1,4 @@
 #CODE;ENGLISH;;;;;;;;;;;;;x
-# Tooltips related to Decisions
-dw_visit_recovery;30-day Visit Recovery;;;;;;;;;;;;;x
-dw_30_day_cooldown;30 day cooldown;;;;;;;;;;;;;x
-dw_90_day_cooldown;90 day cooldown;;;;;;;;;;;;;x
-dw_180_day_cooldown;180 day cooldown;;;;;;;;;;;;;x
-dw_fasting_tooltip;Not Fasting;;;;;;;;;;;;;x
 # Decisions
 dw_motivate_chancellor_claim;Motivate Chancellor;;;;;;;;;;;;;x
 dw_motivate_chancellor_claim_desc;Your Chancellor is presently working to fabricate a claim in your name. Selecting this will call them to you, so that you may attempt to push for success in their work.;;;;;;;;;;;;;x
@@ -14,8 +8,6 @@ dw_hire_jester;Hire a Court Jester;;;;;;;;;;;;;x
 dw_hire_jester_desc;You place a want add for a Court Jester, who shall respond?;;;;;;;;;;;;;x
 dw_go_shopping;Go Shopping;;;;;;;;;;;;;x
 dw_go_shopping_desc;You have one or more locations in your realm where you can go shopping.;;;;;;;;;;;;;x
-dw_visit_wizard_tower;Visit the Wizard Tower;;;;;;;;;;;;;x
-dw_visit_wizard_tower_desc;Will the arcane arts raise you to new levels, or result in your downfall?;;;;;;;;;;;;;x
 dw_keep_slave;Keep Slave;;;;;;;;;;;;;x
 dw_keep_slave_desc;Keeping a slave removes them from your prison and adds them to your court proper. They're still a branded slave, and as such you can later sell them if you so choose.;;;;;;;;;;;;;x
 dw_sell_slave;Sell Slave;;;;;;;;;;;;;x
@@ -48,8 +40,6 @@ dw_hermione_purity_spell;Hermione's Purity Spell;;;;;;;;;;;;;x
 dw_hermione_purity_spell_desc;Hermione has learned how to remove lustful or hedonistic traits from people. If they don't already have those traits, they'll become chaste. If they're already chaste, they'll become celibate.;;;;;;;;;;;;;x
 dw_hermione_love_potion;Hermione's Love Potion;;;;;;;;;;;;;x
 dw_hermione_love_potion_desc;You attempt to have your target drink the love potion. And while many seek love potions, few wish to be on the receiving end of them, so there is a chance the attempt fails. The greater the difference in Intrigue, the better the chance for success.;;;;;;;;;;;;;x
-dw_spend_time_with;Spend time with...;;;;;;;;;;;;;x
-dw_spend_time_with_desc;Spend time with your lover, spouse, or concubine. Why wait for the vanilla game to decide when you'll be getting together? Seize your love life today!;;;;;;;;;;;;;x
 dw_correct_dynasty;Correct Dynasty;;;;;;;;;;;;;x
 dw_correct_dynasty_desc;There are times where for no apparent reason CK2 will not make a child of your bloodline, especially as a female ruler, even if you've made arrangements for your children to be of your bloodline. This will pull them back into your bloodline, not as bastards, but legitimate heirs.;;;;;;;;;;;;;x
 dw_campaign_style_selection;Campaign Style Selection;;;;;;;;;;;;;x
@@ -136,3 +126,118 @@ dw_rise_of_pack_campaign;Meet with Fenris;;;;;;;;;;;;;x
 dw_rise_of_pack_campaign_desc;This is the campaign start, where you meet with Fenris and show your true self to the world (obtain the werewolf trait).;;;;;;;;;;;;;x
 dw_werewolf_bitch_start;Werewolf in Court;;;;;;;;;;;;;x
 dw_werewolf_bitch_start_desc;A new courtier has arrived, and there is something very alluring about them.;;;;;;;;;;;;;x
+#####
+dw_choosing_sides;Choosing Sides;;;;;;;;;;;;;x
+dw_choosing_sides_desc;Choose a side in the struggle between Heroes and Villains.;;;;;;;;;;;;;x
+dw_build_lair;Build a lair;;;;;;;;;;;;;x
+dw_build_lair_desc;Every villain needs a lair, otherwise they're just a wannabe villain.;;;;;;;;;;;;;x
+dw_build_hall;Build a hall;;;;;;;;;;;;;x
+dw_build_hall_desc;Every hero has a hall, whether it be for solitude or as a beacon of justice.;;;;;;;;;;;;;x
+dw_go_on_mission;Go on a Mission;;;;;;;;;;;;;x
+dw_go_on_mission_desc;Heros and Villains like to keep busy on occasion.;;;;;;;;;;;;;x
+dw_recruit_teammate;Recruit a teammate;;;;;;;;;;;;;x
+dw_recruit_teammate_desc;What's better than one hero or villain? A team full of them!;;;;;;;;;;;;;x
+dw_upgrade_lair;Upgrade lair;;;;;;;;;;;;;x
+dw_upgrade_lair_desc;Lair upgrades will take 3 to 6 months to complete.;;;;;;;;;;;;;x
+dw_upgrade_hall;Upgrade hall;;;;;;;;;;;;;x
+dw_upgrade_hall_desc;Hall upgrades will take 3 to 6 months to complete.;;;;;;;;;;;;;x
+dw_spend_time_with;Spend time with [ROOT.GetFirstName];;;;;;;;;;;;;x
+dw_spend_time_with_desc;Court room politics got you down? Tired of petty peasant complaints? Threats looming at your borders?\n  Get away from it all for a brief time by spending time with someone close to you.\n  GAMEPLAY: Adult related content - depending on the pairing - pregnancies may result.;;;;;;;;;;;;;
+dw_make_my_nemesis;Make my Nemesis;;;;;;;;;;;;;x
+dw_make_my_nemesis_desc;Have you harassed the someone to where they had -400 opinion points alone towards you, yet they still never decided to view you as a rival or enemy?\n  Well, heroes and villains don't have that trouble very often. It's like a special power that they have, in being able to choose who'll be their foe. Now you do to!;;;;;;;;;;;;;x
+dw_out_of_the_shadows_decision;Out of the Shadows;;;;;;;;;;;;;x
+dw_out_of_the_shadows_decision_desc;You're different from most others. You're tentacle-kin, a being that has bonded with a symbiote.\n  You normally hide this side of you, as the church is quick to judge, and most fear anything that is different.\n But why hide yourself any longer? What do you have to fear?;;;;;;;;;;;;;x
+dw_remove_custom_pic;Remove custom picture;;;;;;;;;;;;;x
+dw_remove_custom_pic_desc;Not a fan of the image used, or you just prefer the CK2 image option?\n  Fret ye no more!\n  With this decision you can remove the custom image. Get to purging those unwanted images!;;;;;;;;;;;;;x
+dw_give_me_random_tentacle_image;Random Tentacle Avatar;;;;;;;;;;;;;x
+dw_give_me_random_tentacle_image_desc;So you've decided to come out to the world and make it known that you're unnatural? Disappointed that you don't have more to show for it than a character modifier?\n  Worry no more you slimy kin to alien spawn!\n  With this handy dandy decision, you can give yourself a random tentacle-kin inspired avatar image to replace your current character image.;;;;;;;;;;;;;x
+dw_no_more_custom_tentacle_pic;Forbid Custom Tentacle Pic;;;;;;;;;;;;;x
+dw_no_more_custom_tentacle_pic_desc;Have a small issue where you've so many tentacle-kin coming out, that it seems like one in every five npc's look the same? Is the npc just unlucky in getting a suitable random image? Or perhaps you just don't want the mental picture of your chick looking like... whatever this is?\n  Worry no more!\n  With this you can remove the custom tentacle inspired picture, plus set a flag that will forbid them from ever getting another one!;;;;;;;;;;;;;x
+dw_mind_control_attempt;Attempt Mind Control;;;;;;;;;;;;;x
+dw_mind_control_attempt_desc;You've decided it's time to flex your mental prowess against this individual. Your success will be determined by their own mental fortitude, with the more drastic action you perform, the more likely it is to fail and possibly draw attention to yourself.\n\n  Taking such actions is also taxing, so you cannot perform this action more than once every thirty days.;;;;;;;;;;;;;x
+dw_special_settings;HV Mod Settings;;;;;;;;;;;;;x
+dw_special_settings_desc;You've the option to change some default mod setting values.;;;;;;;;;;;;;x
+dw_purge_tentacle_trait;Purge Symbiote Trait;;;;;;;;;;;;;x
+dw_purge_tentacle_trait_desc;Gets rid of the Symbiote trait, and a custom image if one was applied as well.;;;;;;;;;;;;;x
+dw_cycle_custom_npc_image;Cycle Custom Image;;;;;;;;;;;;;x
+dw_cycle_custom_npc_image_desc;Some custom NPCs in the Heroes and Villains mod have multiple images. You can use this decision to cycle through the images.;;;;;;;;;;;;;x
+dw_dash_matures_named;Dash Matures;;;;;;;;;;;;;x
+dw_dash_matures_desc;AI specific decision to swap out images upon becoming an adult.;;;;;;;;;;;;;x
+dw_harley_gets_old_named;Harley Old Portrait;;;;;;;;;;;;;x
+dw_harley_gets_old_desc;Harley applies and updated portrait when she ages.;;;;;;;;;;;;;x
+dw_out_of_the_abyss_decision;Out of the Abyss;;;;;;;;;;;;;x
+dw_out_of_the_abyss_decision_desc;You know that unholy blood pulses through your veins. You also know that just like everyone else, you cannot decide who your parents are.\n  Selecting this will have you make it known to the world.;;;;;;;;;;;;;x
+dw_out_of_their_skin_decision;Out of your Skin;;;;;;;;;;;;;x
+dw_out_of_their_skin_decision_desc;You know that you're not fully human. Part of you holds an animal spirit, and when embraced, you can alter your appearance to match your animal spirit.\n  Selecting this will have you make it known to the world.;;;;;;;;;;;;;x
+dw_prisoner_rape;Rape Prisoner;;;;;;;;;;;;;x
+dw_prisoner_rape_desc;You're a villain, and you do villainous things. This ranks pretty high up there in regards to being bad.;;;;;;;;;;;;;x
+dw_give_me_random_hyena_image;Random Hyena-kin image;;;;;;;;;;;;;x
+dw_give_me_random_hyena_image_desc;I've the blood of the hyena flowing through me. Why should I shrink away from my heritage? Let the world see me for who I am.;;;;;;;;;;;;;x
+dw_no_more_custom_hyena_pic;No custom Hyena-kin Picture;;;;;;;;;;;;;x
+dw_no_more_custom_hyena_pic_desc;Not happy with the character constantly choosing a hyena-kin image that you don't like? Just use this to flag them and they should never try to give themselves a random Hyena-kin image again.;;;;;;;;;;;;;x
+dw_visit_grand_inn;Visit the Grand Inn;;;;;;;;;;;;;x
+dw_visit_grand_inn_desc;You built it, now it's time to stop by for a visit.;;;;;;;;;;;;;x
+dw_visit_wizard_tower;Visit the Wizard Tower;;;;;;;;;;;;;x
+dw_visit_wizard_tower_desc;You built it, now it's time to stop by for a visit.;;;;;;;;;;;;;x
+dw_purge_therianthrope_trait;Purge Therianthrope Traits;;;;;;;;;;;;;x
+dw_purge_therianthrope_trait_desc;We're having the ai remove their traits since it was turned off as a mod setting.;;;;;;;;;;;;;x
+dw_purge_demonkin_trait;Purge Demon-kin Trait;;;;;;;;;;;;;x
+dw_purge_demonkin_trait_desc;We're having the ai remove their traits since it was turned off as a mod setting.;;;;;;;;;;;;;x
+dw_give_npc_futa_potion;Give Futa Form potion;;;;;;;;;;;;;x
+dw_give_npc_futa_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_symbiote_potion;Give Symbiote Union potion;;;;;;;;;;;;;x
+dw_give_npc_symbiote_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_gender_swap_potion;Give Gender Swap potion;;;;;;;;;;;;;x
+dw_give_npc_gender_swap_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_youthfulness_potion;Give Youthfulness potion;;;;;;;;;;;;;x
+dw_give_npc_youthfulness_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_breast_expansion_potion;Give Breast Expansion potion.;;;;;;;;;;;;;x
+dw_give_npc_breast_expansion_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_cock_growth_potion;Give Cock Growth potion.;;;;;;;;;;;;;x
+dw_give_npc_cock_growth_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_minor_health_potion;Give Minor Health Potion;;;;;;;;;;;;;x
+dw_give_npc_minor_health_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_major_health_potion;Give Major Health Potion;;;;;;;;;;;;;x
+dw_give_npc_major_health_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_beauty_potion;Give Beauty Potion;;;;;;;;;;;;;x
+dw_give_npc_beauty_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_oblivion_potion;Give Oblivion Potion;;;;;;;;;;;;;x
+dw_give_npc_oblivion_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_giant_growth_potion;Give Giant Growth Potion;;;;;;;;;;;;;x
+dw_give_npc_giant_growth_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_awaken_heritage_potion;Give Awaken Heritage potion.;;;;;;;;;;;;;x
+dw_give_npc_awaken_heritage_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_elder_blood_potion;Give Elder Blood potion.;;;;;;;;;;;;;x
+dw_give_npc_elder_blood_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_give_npc_love_potion;Give Love Potion;;;;;;;;;;;;;x
+dw_give_npc_love_potion_desc;Give the individual the potion, where they may or may not take the potion.;;;;;;;;;;;;;x
+dw_cast_quick_heal;Cast Quick Heal;;;;;;;;;;;;;x
+dw_cast_quick_heal_desc;The weakest form of healing magic, yet the most highly used. This spell removes the wounded trait from the target. It cannot affect a more serious wound, and does nothing for old healed wounds (scars) or diseases.;;;;;;;;;;;;;x
+dw_cast_midas_touch;Cast Midas Touch;;;;;;;;;;;;;x
+dw_cast_midas_touch_desc;Named for the greedy King that later came to regret his greed, this spell is much less dangerous. More akin to the power of a Philosopher's Stone, this spell transmute iron to gold.;;;;;;;;;;;;;x
+dw_cast_lightning_bolt;Cast Lightning Bolt;;;;;;;;;;;;;x
+dw_cast_lightning_bolt_desc;Evocation Specialists have the ability to call down a lightning strike on a targeted individual. Lightning strikes do have a chance to miss, yet when they hit, the individual struck has a high chance of dying from such a strike. Perhaps the best part, people have been dying from Lightning strikes since the beginning of time, so no one should know it was you. Maybe...;;;;;;;;;;;;;x
+dw_cast_disintegrate;Cast Disintegrate;;;;;;;;;;;;;x
+dw_cast_disintegrate_desc;Disintegrate your target. Causes the death reason to be Vanished, so only you should know what happened.\n  This is considered a cheat spell, as it always hits and is only used by the player. The main reason for this spell is as a mechanism for cleaning up some of the insignificant characters in court that appear in the later stages of the game.;;;;;;;;;;;;;x
+dw_mage_summon_familiar;Summon Familiar;;;;;;;;;;;;;x
+dw_mage_summon_familiar_desc;A Mage has the ability to summon a familiar to serve them. The exact creature called is out of the mage's control. The summoning ceremony instead focuses on compatibility, creating a link between the nearest compatible creature, which will then join and serve its master. (Look at your character modifiers after casting the spell to see what you got.)\n  Casting this spell when you already have a familiar will dismiss the current one.;;;;;;;;;;;;;x
+dw_mage_summon_imp_familiar;Summon Imp Familiar;;;;;;;;;;;;;x
+dw_mage_summon_imp_familiar_desc;Summoning an Imp and binding it to your will requires a Summoner Specialist, due to its complexity. A Summoner Specialist can have an Imp familiar in addition to an animal familiar. An Imp Familiar's benefits for the caster are considered to be stronger than those of an animal familiar.\n  There is a cooldown for the spell, however, you cannot re-cast the spell if you already have an Imp familiar. So the only way the cool down really comes into play is if something destroys your Imp Familiar.;;;;;;;;;;;;;x
+dw_cast_commune;Cast Commune;;;;;;;;;;;;;x
+dw_cast_commune_desc;The Commune spell is a method of obtaining knowledge from those beyond our world. The Summoner is able to understand the ramblings of this individuals and glean insight from them. There are different types of insight that can be gained. The insight isn't permanent. Instead, it is relevant for about six months, as by then our world has changed enough that the information loses it's foresight benefits.;;;;;;;;;;;;;x
+dw_cast_minor_heal;Cast Minor Heal;;;;;;;;;;;;;x
+dw_cast_minor_heal_desc;Stronger than Quick Heal, yet weaker than Major Heal. These differences are also apparent in the cooldowns. Stronger than the minor heal potion, as the spell can address multiple items at once.;;;;;;;;;;;;;x
+dw_cast_major_heal;Cast Major Heal;;;;;;;;;;;;;x
+dw_cast_major_heal_desc;The strongest healing magic to a transmutation specialist. It is very taxing, and takes close to a year to replenish the energy necessary to cast it again. Stronger than a major healing potion, as it can address multiple items at once.;;;;;;;;;;;;;x
+dw_cast_undead_horde;Cast Undead Horde;;;;;;;;;;;;;x
+dw_cast_undead_horde_desc;Raise the dead from nearby graves and battlefields to fill your ranks with undead foot soldiers.;;;;;;;;;;;;;x
+dw_remove_trait_virgin;Remove Virgin Trait;;;;;;;;;;;;;x
+dw_remove_trait_virgin_desc;Self removal of the virgin trait if you're no longer a virgin, or if the mod's Body Traits game rule is turned off.\n  Handling it this way in an attempt to reduce heavy game lag/processing, as NPC's will automatically remove their traits when applicable via this message instead of what was formerly an overly complex annual check.;;;;;;;;;;;;;x
+dw_remove_trait_dicktits;Remove Dick or Tits trait;;;;;;;;;;;;;x
+dw_remove_trait_dicktits_desc;Self removal of Dick or Tits traits provided by Dark World Reborn. Should only be visible if someone has a Dick or Tits trait and the Game Rule allowing them is turned off. As this decision is only meant to be a clean-up type action.;;;;;;;;;;;;;x
+dw_decree_thee_prostitute;Decree Thee a Prostitute;;;;;;;;;;;;;x
+dw_decree_thee_prostitute_desc;With the power of your position, inform an individual that they are now a part of the time honored profession of prostitution!;;;;;;;;;;;;;x
+dw_whore_no_more;Whore No More;;;;;;;;;;;;;x
+dw_whore_no_more_desc;Inform [ROOT.GetFirstName] that they shall no longer work as a prostitute.\n\n  NOTE: Once you tell a person to no longer be a prostitute, they cannot be forced to be made one again. So purge your prostitutes carefully.;;;;;;;;;;;;;x
+dw_give_npc_mana_potion;Give Mana Potion;;;;;;;;;;;;;x
+dw_give_npc_mana_potion_desc;A potion that mages will always consume if given to them.;;;;;;;;;;;;;x

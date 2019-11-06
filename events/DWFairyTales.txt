@@ -95,15 +95,15 @@ narrative_event = {
 	desc = "DWFairyTales100"
 	picture = beautybeast_belle2
 	title = dw_beauty_beast
-	
+
 	ai = no #We're going to make this a player only event since it ultimately has the chance of introducing Belle or Gaston into a court
-	
+
 	is_triggered_only = yes # Triggered by bi_yearly random on_action
-	
+
 	trigger = {
 		NOT = { has_global_flag = dw_beauty_beast_triggered } # We don't want this happening more than once a play session
 	}
-	
+
 	option = { #Unlocks being able to visit the town in the future.
 		name = "DWFairyTales100A"
 		set_global_flag = dw_beauty_beast_triggered
@@ -224,7 +224,7 @@ character_event = {
 					has_character_flag = dw_beauty_corruption_2
 					has_character_flag = dw_beauty_corruption_3
 				}
-				NOR = { 
+				NOR = {
 					has_global_flag = dw_belle_in_court
 					has_global_flag = dw_beast_with_belle
 				}
@@ -253,9 +253,9 @@ narrative_event = {
 	desc = "DWFairyTales121"
 	picture = cobbler
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .120
-	
+
 	option = { # Buy some shoes if I've the cash
 		trigger = {
 			wealth = 1
@@ -266,7 +266,7 @@ narrative_event = {
 	}
 	option = { # Is Beauty around?
 		trigger = {  # We don't show this if Beauty has already joined our court or has shacked up with the Beast
-			NOR = { 
+			NOR = {
 				has_global_flag = dw_belle_in_court
 				has_global_flag = dw_beast_with_belle
 			}
@@ -278,16 +278,16 @@ narrative_event = {
 		name = "DWFairyTales121C"
 	}
 }
-# .122 Cobbler Gives thanks for defeat of the Beast 
+# .122 Cobbler Gives thanks for defeat of the Beast
 narrative_event = {
 	id = DWFairyTales.122
 	desc = "DWFairyTales122"
 	picture = cobbler
-	title = dw_beauty_beast	
-	is_triggered_only = yes # Triggered from .120	
+	title = dw_beauty_beast
+	is_triggered_only = yes # Triggered from .120
 	option = { # Is Beauty around?
 		trigger = {  # We don't show this if Beauty has already joined our court or has shacked up with the Beast
-			NOR = { 
+			NOR = {
 				has_global_flag = dw_belle_in_court
 				has_global_flag = dw_beast_with_belle
 			}
@@ -309,9 +309,9 @@ narrative_event = {
 	desc = "DWFairyTales123"
 	picture = cobbler
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .120
-	
+
 	option = { # Buy some shoes if I've the cash
 		trigger = {
 			wealth = 1
@@ -324,7 +324,7 @@ narrative_event = {
 		trigger = {
 			NOT = { has_global_flag = dw_belle_in_court } # We don't show this if Beauty has already joined our court
 		}
-		name = "DWFairyTales123B" 
+		name = "DWFairyTales123B"
 		character_event = { id = DWFairyTales.130 } # We check to see where she is.
 	}
 	option = { # Just looking around today
@@ -337,15 +337,15 @@ narrative_event = {
 	desc = "DWFairyTales124"
 	picture = cobbler
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .120
-	
+
 	option = { # I'm here to claim Belle
-		name = "DWFairyTales124A" 
+		name = "DWFairyTales124A"
 		character_event = { id = DWFairyTales.2 } # No need to be fancy, we just give Belle to the player
 	}
 	option = { # I'm here to just visit Belle
-		name = "DWFairyTales124B" 
+		name = "DWFairyTales124B"
 		character_event = { id = DWFairyTales.520 } # Who's she fucking now?
 	}
 	option = { # Buy some shoes if I've the cash
@@ -410,7 +410,7 @@ character_event = {
 			break = yes # takes us out of the immediate block
 		}
 		if = { # We've not yet started to shape beauty
-			limit = { 
+			limit = {
 				NOR = {
 					has_character_flag = dw_beauty_corruption_1
 					has_character_flag = dw_beauty_corruption_2
@@ -438,9 +438,9 @@ narrative_event = {
 	desc = "DWFairyTales140"
 	picture = beautybeast_belle1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .130
-	
+
 	option = { # Brought Belle a romantic book
 		trigger = {
 			diplomacy = 7
@@ -476,9 +476,9 @@ narrative_event = {
 	desc = "DWFairyTales149"
 	picture = cobbler
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .130
-	
+
 	option = { # Okay, take care.
 		name = "DWFairyTales149A"
 	}
@@ -489,9 +489,9 @@ narrative_event = {
 	desc = "DWFairyTales150"
 	picture = beautybeast_belle1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .140
-	
+
 	option = { #Until next time
 		name = "DWFairyTales150A"
 		set_character_flag = dw_beauty_affection_1
@@ -503,9 +503,9 @@ narrative_event = {
 	desc = "DWFairyTales160"
 	picture = beautybeast_belle1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .140
-	
+
 	option = { #Until next time
 		name = "DWFairyTales160A"
 		set_character_flag = dw_beauty_corruption_1
@@ -517,9 +517,9 @@ narrative_event = {
 	desc = "DWFairyTales170"
 	picture = beautybeast_belle1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .140
-	
+
 	option = { #Introduced to Gaston
 		name = "DWFairyTales170A"
 		narrative_event = { id = DWFairyTales.180 }
@@ -534,10 +534,10 @@ narrative_event = {
 	desc = "DWFairyTales180"
 	picture = beautybeast_gaston1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .170
-	
-	option = { 
+
+	option = {
 		name = "DWFairyTales180A"
 		narrative_event = { id = DWFairyTales.185 }
 	}
@@ -548,9 +548,9 @@ narrative_event = {
 	desc = "DWFairyTales185"
 	picture = beautybeast_gaston1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .180
-	
+
 	option = { # I'm interested
 		trigger = {
 			NOR = { # If this arrangement has already been proposed via .320, we don't want to rehash it.
@@ -605,7 +605,7 @@ narrative_event = {
 				has_character_flag = dw_beauty_gaston_nobeauty_hunt_1
 			}
 		}
-		name = "DWFairyTales185D"		
+		name = "DWFairyTales185D"
 	}
 }
 # .190 Gaston and the player get busy (homosexual context)
@@ -614,19 +614,17 @@ narrative_event = {
 	desc = "DWFairyTales190"
 	picture = beautybeast_gaston_gunshow
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .185
-	
+
 	option = { # You should come join my court.
 		name = "DWFairyTales190A"
-		add_character_modifier = { name = dw_good_sex duration = 90 }		
 		hidden_tooltip = {
 			character_event = { id = DWFairyTales.1 } # Creates Gaston
 		}
 	}
 	option = { # No invitation to court
-		name = "DWFairyTales190B"		
-		add_character_modifier = { name = dw_good_sex duration = 90 }
+		name = "DWFairyTales190B"
 	}
 }
 # .195 Gaston and the player get busy (straight content)
@@ -635,20 +633,18 @@ narrative_event = {
 	desc = "DWFairyTales195"
 	picture = beautybeast_gaston_gunshow
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .185
-	
+
 	option = { # You should come join my court.
 		name = "DWFairyTales195A"
-		add_character_modifier = { name = dw_good_sex duration = 90 }		
 		hidden_tooltip = {
 			character_event = { id = DWFairyTales.1 } # Creates Gaston
 		}
 	}
 	option = { # No invitation to court
-		name = "DWFairyTales195B"		
-		add_character_modifier = { name = dw_good_sex duration = 90 }
-		hidden_tooltip = { character_event = { id = DWCore.9010 }} # Chance that female gets knocked up by Gaston
+		name = "DWFairyTales195B"
+		hidden_tooltip = { character_event = { id = dw_visits.9020 }} # Chance that female gets knocked up by Gaston
 	}
 }
 # .199 Gaston and the player get busy (futa content)
@@ -657,20 +653,18 @@ narrative_event = {
 	desc = "DWFairyTales199"
 	picture = beautybeast_gaston_gunshow
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .185
-	
+
 	option = { # You should come join my court.
 		name = "DWFairyTales199A"
-		add_character_modifier = { name = dw_good_sex duration = 90 }		
 		hidden_tooltip = {
 			character_event = { id = DWFairyTales.1 } # Creates Gaston
 		}
 	}
 	option = { # No invitation to court
-		name = "DWFairyTales199B"		
-		add_character_modifier = { name = dw_good_sex duration = 90 }
-		hidden_tooltip = { character_event = { id = DWCore.9010 }} # Chance that female gets knocked up by Gaston
+		name = "DWFairyTales199B"
+		hidden_tooltip = { character_event = { id = dw_visits.9020 }} # Chance that female gets knocked up by Gaston
 	}
 }
 # .200 The player and Beauty head over to the lodge for a drink (check for special events - hidden)
@@ -689,9 +683,9 @@ narrative_event = {
 	desc = "DWFairyTales201"
 	picture = lodge
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .200
-	
+
 	#option = { # Get Beauty Drunk
 	#	trigger = {
 	#		OR = {
@@ -734,7 +728,7 @@ narrative_event = {
 	desc = "DWFairyTales210"
 	picture = lodge
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .201
 
 	option = { # Tell me what bothers you Belle - Belle shares the curse of the Beast
@@ -768,9 +762,9 @@ narrative_event = {
 	desc = "DWFairyTales220"
 	picture = beautybeast_belle2
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .210 / .260
-	
+
 	option = { # I shall find a way to help you
 		name = "DWFairyTales220A"
 		narrative_event = { id = DWFairyTales.221 }
@@ -782,9 +776,9 @@ narrative_event = {
 	desc = "DWFairyTales221"
 	picture = beautybeast_belle2
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .220
-	
+
 	option = { # Until next time
 		name = "DWFairyTales221A"
 		set_character_flag = dw_beauty_beast_curse_1
@@ -796,9 +790,9 @@ narrative_event = {
 	desc = "DWFairyTales230"
 	picture = beautybeast_belle2
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .201
-	
+
 	option = { # What a wealth of new ideas
 		name = "DWFairyTales230A"
 		add_character_modifier = { name = dw_intellectually_stimulated duration = 120 }
@@ -811,9 +805,9 @@ narrative_event = {
 	desc = "DWFairyTales240"
 	picture = beautybeast_belle2
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .201
-	
+
 	option = { # Leave her wanting more
 		name = "DWFairyTales240A"
 		set_character_flag = dw_belle_seduction_1
@@ -841,17 +835,15 @@ narrative_event = {
 	desc = "DWFairyTales250"
 	picture = beautybeast_belle_seduction1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .240
 
 	option = { # Return with me
 		name = "DWFairyTales250A"
-		add_character_modifier = { name = dw_good_sex duration = 90 }
 		narrative_event = { id = DWFairyTales.260 }
 	}
 	option = { # Thanks!
 		name = "DWFairyTales250A"
-		add_character_modifier = { name = dw_good_sex duration = 90 }
 	}
 }
 # .260 Beauty turns down the offer to return to the players court after an evening of love making
@@ -860,9 +852,9 @@ narrative_event = {
 	desc = "DWFairyTales260"
 	picture = beautybeast_belle2
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .250 / .270
-	
+
 	option = { # I cannot, as I'm cursed
 		name = "DWFairyTales260A"
 		narrative_event = { id = DWFairyTales.220 }
@@ -874,17 +866,15 @@ narrative_event = {
 	desc = "DWFairyTales270"
 	picture = beautybeast_belle_seduction1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .240
-	
+
 	option = { # Return with me
 		name = "DWFairyTales270A"
-		add_character_modifier = { name = dw_good_sex duration = 90 }
 		narrative_event = { id = DWFairyTales.260 }
 	}
 	option = { # Thanks!
 		name = "DWFairyTales270A"
-		add_character_modifier = { name = dw_good_sex duration = 90 }
 	}
 }
 # .280 Visiting the Bakery (we first check for any special visit needs - hidden)
@@ -914,9 +904,9 @@ narrative_event = {
 	desc = "DWFairyTales281"
 	picture = bakery
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .280
-	
+
 	option = { # Yum, warm buns
 		name = "DWFairyTales281A"
 		add_character_modifier = { name = dw_excellent_meal duration = 60 }
@@ -962,9 +952,9 @@ narrative_event = {
 	desc = "DWFairyTales291"
 	picture = lodge
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .290
-	
+
 	option = { # Enjoy the atmosphere for the evening
 		name = "DWFairyTales291A"
 		if = {
@@ -1014,12 +1004,11 @@ narrative_event = {
 	desc = "DWFairyTales300"
 	picture = lodge_barmaid_service1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .291
-	
+
 	option = { # Service with a smile
 		name = "DWFairyTales300A"
-		add_character_modifier = { name = dw_good_sex duration = 90 }
 		set_character_flag = dw_babette_service_1
 	}
 }
@@ -1029,9 +1018,9 @@ narrative_event = {
 	desc = "DWFairyTales310"
 	picture = beautybeast_gaston1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .291
-	
+
 	option = { # Compare hunting tales
 		trigger = {
 			OR = {
@@ -1063,9 +1052,9 @@ narrative_event = {
 	desc = "DWFairyTales320"
 	picture = beautybeast_gaston1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .310
-	
+
 	option = { # Agree to 'hunting' Belle with Gaston
 		trigger = {
 			is_adult = yes
@@ -1104,9 +1093,9 @@ narrative_event = {
 	desc = "DWFairyTales330"
 	picture = beautybeast_gaston_triplets1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .320
-	
+
 	option = { # My turn
 		name = "DWFairyTales330A"
 		if = { # If we've a dick, we go to one event
@@ -1129,12 +1118,11 @@ narrative_event = {
 	desc = "DWFairyTales333"
 	picture = beautybeast_triplets2
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .330
-	
+
 	option = { # My turn
 		name = "DWFairyTales333A"
-		add_character_modifier = { name = dw_good_sex duration = 90 }
 		set_character_flag = dw_bimbette_service_1
 	}
 }
@@ -1144,12 +1132,11 @@ narrative_event = {
 	desc = "DWFairyTales336"
 	picture = beautybeast_triplets3
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .330
-	
+
 	option = { # My turn
 		name = "DWFairyTales336A"
-		add_character_modifier = { name = dw_good_sex duration = 90 }
 		set_character_flag = dw_bimbette_service_1
 	}
 }
@@ -1159,9 +1146,9 @@ narrative_event = {
 	desc = "DWFairyTales340"
 	picture = beautybeast_gaston1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered by .310
-	
+
 	option = { # Join Gaston and the Bimbettes
 		name = "DWFairyTales340A"
 		narrative_event = { id = DWFairyTales.330 }
@@ -1216,9 +1203,9 @@ narrative_event = {
 	desc = "DWFairyTales351"
 	picture = forest1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .350
-	
+
 	option = { # What manner of beast is this?
 		name = "DWFairyTales351A"
 		set_character_flag = dw_beast_hunt_1
@@ -1231,9 +1218,9 @@ narrative_event = {
 	desc = "DWFairyTales353"
 	picture = forest1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .350
-	
+
 	option = { # A lucky charm
 		name = "DWFairyTales353A"
 		add_character_modifier = {
@@ -1248,9 +1235,9 @@ narrative_event = {
 	desc = "DWFairyTales360"
 	picture = beautybeast_belle1
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .130
-	
+
 	option = { # Sure, I'll walk with you
 		trigger = {
 			is_married = yes # Belle confronts the player already being married
@@ -1272,9 +1259,9 @@ narrative_event = {
 	desc = "DWFairyTales361"
 	picture = beautybeast_belle2
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .360
-	
+
 	option = { # My marriage is one of political convenience, not love (Affection increases)
 		name = "DWFairyTales361A"
 		clr_character_flag = dw_beauty_affection_1
@@ -1300,9 +1287,9 @@ narrative_event = {
 	desc = "DWFairyTales365"
 	picture = beautybeast_belle2
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .360
-	
+
 	option = { # I won't let my feelings be restricted by station (Affection increases)
 		name = "DWFairyTales365A"
 		clr_character_flag = dw_beauty_affection_1
@@ -1328,9 +1315,9 @@ narrative_event = {
 	desc = "DWFairyTales367"
 	picture = beautybeast_belle2
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .361 / .365
-	
+
 	option = {
 		name = "DWFairyTales367A"
 	}
@@ -1341,9 +1328,9 @@ narrative_event = {
 	desc = "DWFairyTales368"
 	picture = beautybeast_belle2
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .361 / .365
-	
+
 	option = {
 		name = "DWFairyTales368A"
 	}
@@ -1354,9 +1341,9 @@ narrative_event = {
 	desc = "DWFairyTales369"
 	picture = beautybeast_belle2
 	title = dw_beauty_beast
-	
+
 	is_triggered_only = yes # Triggered from .361 / .365
-	
+
 	option = {
 		name = "DWFairyTales369A"
 	}
@@ -1596,13 +1583,13 @@ character_event = {
 				modifier = { # Commanders are a little more difficult
 					factor = 3
 					event_target:dw_beast_target = {
-						has_minor_title = title_commander 
+						has_minor_title = title_commander
 					}
 				}
 				modifier = { # Council member individuals are slightly more difficult
 					factor = 2
 					event_target:dw_beast_target = {
-						has_job_title = yes 
+						has_job_title = yes
 					}
 				}
 				modifier = { # A ruler is even more difficult
@@ -1617,13 +1604,13 @@ character_event = {
 				modifier = { # Commanders are a little more difficult
 					factor = 2
 					event_target:dw_beast_target = {
-						has_minor_title = title_commander 
+						has_minor_title = title_commander
 					}
 				}
 				modifier = { # Council member  individuals are slightly more difficult
 					factor = 1.5
 					event_target:dw_beast_target = {
-						has_job_title = yes 
+						has_job_title = yes
 					}
 				}
 				modifier = { # A ruler is even more difficult
@@ -1736,7 +1723,7 @@ narrative_event = {
 	id = DWFairyTales.420
 	desc = "DWFairyTales420"
 	picture = beautybeast_belle1
-	title = dw_beauty_beast	
+	title = dw_beauty_beast
 	is_triggered_only = yes # Triggered from .130
 	option = { # Sure, I'll walk with you - Aware of the curse
 		trigger = {
@@ -2254,7 +2241,7 @@ narrative_event = {
 	id = DWFairyTales.450
 	desc = "DWFairyTales450"
 	picture = beautybeast_belle3
-	title = dw_beauty_beast	
+	title = dw_beauty_beast
 	is_triggered_only = yes # Triggered from .130
 	option = { # Beast is still alive
 		trigger = {
@@ -2519,7 +2506,6 @@ narrative_event = {
 	is_triggered_only = yes # Triggered from .480
 	option = { # You're quite the good fuck Belle
 		name = "DWFairyTales481A"
-		add_character_modifier = { name = dw_good_sex duration = 30 }
 	}
 }
 # .483 The player meets Belle again, corrupt 2, Belle to be shared (part 2) - female player satisfies Belle
@@ -2531,7 +2517,6 @@ narrative_event = {
 	is_triggered_only = yes # Triggered from .480
 	option = { # You're quite the good fuck Belle
 		name = "DWFairyTales483A"
-		add_character_modifier = { name = dw_good_sex duration = 30 }
 	}
 }
 # .490 The player meets Belle again, corrupt 3 - player shares plans on how to keep Belle
@@ -2587,7 +2572,7 @@ narrative_event = {
 	picture = beautybeast_belle_beast_seduce1
 	title = dw_beauty_beast_hunt
 	is_triggered_only = yes # Triggered from .500
-	option = { # 
+	option = { #
 		name = "DWFairyTales501A"
 		narrative_event = { id = DWFairyTales.502 }
 	}
@@ -2633,7 +2618,7 @@ character_event = {
 	id = DWFairyTales.510
 	hide_window = yes # Nothing to see here
 	is_triggered_only = yes # Triggered from .111
-	immediate = { 
+	immediate = {
 		random_list = {
 			25 = { # Generic placeholder event #TODO
 				narrative_event = { id = DWFairyTales.511 }
@@ -2657,7 +2642,7 @@ character_event = {
 	id = DWFairyTales.520
 	hide_window = yes # Nothing to see here
 	is_triggered_only = yes # Triggered from .124
-	immediate = { 
+	immediate = {
 		random_list = {
 			25 = { # Generic placeholder event #TODO
 				narrative_event = { id = DWFairyTales.521 }

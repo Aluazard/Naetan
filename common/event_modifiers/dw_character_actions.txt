@@ -1,0 +1,14 @@
+# These event_modifiers are related to on going character actions
+# Meaning the character is doing this periodically during the duration in order to obtain the effect
+
+dw_on_patrol = {
+	icon = 13
+	general_opinion = 10 # People are thankful for their protector
+	local_revolt_risk = -0.1
+}
+dw_extortion = {
+	icon = 6
+	monthly_character_wealth = 5
+	town_opinion = -10 # The town folk are often the victims
+	church_opinion = -10 # The church is an occasional victim, and frowns on the extortion competition
+}

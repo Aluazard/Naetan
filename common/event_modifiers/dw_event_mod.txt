@@ -11,9 +11,9 @@
 #  7 - Prestige 			- 25
 #  8 - Piety 				- 26
 #  9 - Titles 				- 27
-# 10 - Council 				- 28 
+# 10 - Council 				- 28
 # 11 - Laws 				- 29
-# 12 - Tech 				- 30 
+# 12 - Tech 				- 30
 # 13 - Military 			- 31
 # 14 - Plots 				- 32
 # 15 - Messages 			- 33
@@ -164,7 +164,7 @@ dw_fairy_nectar_intoxication = {
 dw_comfortable_footwear = {
 	icon = 18
 	health = 0.25 # The new footwear reduces strain on the body and gives your step some extra pep.
-	city_tax_modifier = 0.1 # Word travels about your new footwear, leading to a +10% temporary increase in shoe sales in cities	
+	city_tax_modifier = 0.1 # Word travels about your new footwear, leading to a +10% temporary increase in shoe sales in cities
 }
 
 dw_lucky_charm = { # It may not have any true magical benefit, however, the confidence a lucky charm entails has an effect on how one is seen by others
@@ -220,7 +220,7 @@ dw_lilith_stage_2 = { # Succubus Evolution: Leech
 	intrigue = 3 # Their skills at seduction grow stronger, as does hiding their tracks
 	fertility = 0.2
 	general_opinion = 5
-	sex_appeal_opinion = 10	
+	sex_appeal_opinion = 10
 	# I'm listing the specific religion opinion modifiers, as the general church_opinion negative hit would also imply Lilith's church isn't happy with her own children
 	christian_opinion = -3 # Those of faith start to notice that something isn't quite right
 	muslim_opinion = -3 # Those of faith start to notice that something isn't quite right
@@ -279,7 +279,7 @@ dw_incubus_stage_2 = { # Incubus Evolution: Leech
 	intrigue = 2 # Their skills at seduction grow stronger, as does hiding their tracks
 	fertility = 0.2
 	general_opinion = 5
-	sex_appeal_opinion = 10	
+	sex_appeal_opinion = 10
 	# I'm listing the specific religion opinion modifiers, as the general church_opinion negative hit would also imply Lilith's church isn't happy with her own children
 	christian_opinion = -3 # Those of faith start to notice that something isn't quite right
 	muslim_opinion = -3 # Those of faith start to notice that something isn't quite right
@@ -414,7 +414,7 @@ dw_brothel_foodndrink = {
 	monthly_character_wealth = 0.5
 }
 dw_brothel_jessica_star = {
-	icon = 6	
+	icon = 6
 	monthly_character_wealth = 1.5
 }
 #dw_brothel_jessica_bar = {
@@ -427,7 +427,7 @@ dw_brothel_hypocrite_whore = { # While a whore is a person who has rights, the g
 	general_opinion = -5 # People think poorly of a hypocrite
 	diplomacy = -1 # Being viewed as a hypocrite can cloud negotiations
 	monthly_character_prestige = -0.5 # Being a hypocrite can erode one's prestige
-} 
+}
 dw_brothel_mystery_room_survivor = {
 	icon = 5 # Intrigue icon since it was a mystery :)
 	intrigue = 1 # The mystery of the experience leaves people guessing
@@ -437,11 +437,6 @@ dw_brothel_mystery_room_survivor = {
 ###End Brothel related
 
 ###Sex Related
-dw_good_sex = {
-	icon = 39
-	health = 0.1 # You feel revitalized after some good sex.
-	general_opinion = 5 # You've the after good sex glow, and you generally get along better with others since you're satisfied.
-}
 dw_rape_trauma = {
 	icon = 40
 	health = -0.5

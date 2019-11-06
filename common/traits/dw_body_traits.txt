@@ -1,0 +1,347 @@
+dw_tiny_tits = { # Flat Chested - Smaller than A
+	random = no
+	customizer = yes
+    ruler_designer_cost = 0
+    potential = {
+        is_female = yes
+    }
+	opposites = { # used to keep from duplicate boobs
+        dw_small_tits
+        dw_regular_tits
+		dw_big_tits
+		dw_huge_tits
+		dw_enormous_tits
+		dw_gigantic_tits
+	}
+	fertility = -0.10 # Yes, we're tying breast size to fertility.
+	martial = 1 # Highly prone to being tom boys and enjoy pushing themselves physically
+	same_opinion = 5 # Feels a bond with those of the same chest size.
+	sex_appeal_opinion = -10 # The bane of being flat chested is disinterest
+	ai_ambition = 10 # They seek to prove themselves
+}
+
+dw_small_tits = { # Small chest - A
+	random = no
+	customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate boobs
+        dw_tiny_tits
+        dw_regular_tits
+		dw_big_tits
+		dw_huge_tits
+		dw_enormous_tits
+		dw_gigantic_tits
+	}
+	fertility = -0.05 # Yes, we're tying breast size to fertility.
+	learning = 1 # Born to be bookworms
+	same_opinion = 5 # Feels a bond with those of the same chest size.
+    sex_appeal_opinion = -5 # Struggle to grab attention like their larger chested friends
+	ai_rationality = 5 # Studious and prone to looking at their available options
+}
+
+dw_regular_tits = { # Average chest - B
+	random = no
+	customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate boobs
+        dw_tiny_tits
+        dw_small_tits
+		dw_big_tits
+		dw_huge_tits
+		dw_enormous_tits
+		dw_gigantic_tits
+	}
+	diplomacy = 1 # The talkers and peacemakers
+}
+
+dw_big_tits = { # Large chest - C
+	random = no
+	customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate boobs
+        dw_tiny_tits
+        dw_small_tits
+        dw_regular_tits
+		dw_huge_tits
+		dw_enormous_tits
+		dw_gigantic_tits
+	}
+	sex_appeal_opinion = 5 # Large enough where eye contact is an occasional issue
+	fertility = 0.05 # Larger boobs means more fertile, as they're better milk producers obviously. Right?
+	intrigue = 1 # Learning to navigate the constant attention and flirtatious advances has led to an improved intrigue
+}
+
+dw_huge_tits = { # Huge chest - D
+	random = no
+	customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate boobs
+        dw_tiny_tits
+        dw_small_tits
+        dw_regular_tits
+		dw_big_tits
+		dw_enormous_tits
+		dw_gigantic_tits
+	}
+	sex_appeal_opinion = 10 # Seen before their eyes
+	fertility = 0.10 # Larger boobs means more fertile, as they're better milk producers obviously. Right?
+	intrigue = 1 # A flirt and someone who uses their assets to get their way
+	combat_rating = -1 # Gets in the way occasionally
+}
+
+dw_enormous_tits = { # Enormous - E
+	random = no
+	customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate boobs
+        dw_tiny_tits
+        dw_small_tits
+        dw_regular_tits
+		dw_big_tits
+		dw_huge_tits
+		dw_gigantic_tits
+	}
+	sex_appeal_opinion = 12 # They've got eyes?
+	fertility = 0.15 # Larger boobs means more fertile, as they're better milk producers obviously. Right?
+	intrigue = 2 # A flirt and someone who uses their assets to get their way
+	learning = -1 # The breasts are so large, they take some of the critical blood flow that would otherwise power the mind.
+	combat_rating = -2 # Size becoming a clear hinderance
+	ai_rationality = -10 # Prone to make bad decisions
+}
+
+dw_gigantic_tits = { # Gigantic chest - F+
+	random = no
+	customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate boobs
+        dw_tiny_tits
+        dw_small_tits
+        dw_regular_tits
+		dw_big_tits
+		dw_huge_tits
+		dw_enormous_tits
+	}
+	sex_appeal_opinion = 12 # Somewhat intimidating, while others would be willing to be suffocated by them.
+	fertility = 0.20 # Larger boobs means more fertile, as they're better milk producers obviously. Right?
+	intrigue = 3 # A flirt and someone who uses their assets to get their way
+	learning = -2 # The breasts are so large, they take some of the critical blood flow that would otherwise power the mind.
+	combat_rating = -3 # Has trouble clapping their hands in front of their chest, let alone swinging a blade.
+	ai_rationality = -15 #Known to make bad decisions
+}
+
+dw_tiny_dick = { # Tiny dick ~2-3 inches
+	random = no
+    customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate dicks
+        dw_small_dick
+        dw_regular_dick
+		dw_big_dick
+		dw_huge_dick
+		dw_enormous_dick
+        dw_gigantic_dick
+	}
+    is_visible = {
+        dw_knows_about_my_dick_size = yes
+    }
+	learning = 1 # Drawn to books as a means of escape
+	fertility = -0.25 # Has a hard time getting deep enough to plant any seed
+	ai_zeal = 10 # Commonly supporters of their faith
+    male_insult = INSULT_NEEDLEDICK
+	male_insult_adj = INSULT_ITTYBITTY
+}
+
+dw_small_dick = { # Small dick ~4-5 inches
+	random = no
+    customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate dicks
+        dw_tiny_dick
+        dw_regular_dick
+		dw_big_dick
+		dw_huge_dick
+		dw_enormous_dick
+        dw_gigantic_dick
+	}
+    is_visible = {
+        dw_knows_about_my_dick_size = yes
+    }
+	martial = 1 # Constantly getting into contests of strength and wit as a means of compensating
+	fertility = -0.10 # Has a hard time getting deep enough to plant any seed
+	ai_ambition = 20 # Napoleon complex
+}
+
+dw_regular_dick = { # Average dick ~ 6-7 inches
+	random = no
+    customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate dicks
+        dw_tiny_dick
+        dw_small_dick
+		dw_big_dick
+		dw_huge_dick
+		dw_enormous_dick
+        dw_gigantic_dick
+	}
+    is_visible = {
+        dw_knows_about_my_dick_size = yes
+    }
+	diplomacy = 1 # Thinks this whole penis size things is overrated, since it's how you use it
+	ai_rationality = 10 # Prone to being more logical
+}
+
+dw_big_dick = { # Large dick ~ 7-8 inches
+	random = no
+    customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate dicks
+        dw_tiny_dick
+        dw_small_dick
+        dw_regular_dick
+		dw_huge_dick
+		dw_enormous_dick
+        dw_gigantic_dick
+	}
+    is_visible = {
+        dw_knows_about_my_dick_size = yes
+    }
+	intrigue = 1 # People are curious if it's really as big as they say
+	fertility = 0.10 # Deeper seed deposits
+	ai_zeal = -5 # Generally inviting of those who'd like to see their dick
+}
+
+dw_huge_dick = { # Huge dick ~ 9-10 inches
+	random = no
+    customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate dicks
+        dw_tiny_dick
+        dw_small_dick
+        dw_regular_dick
+		dw_big_dick
+		dw_enormous_dick
+        dw_gigantic_dick
+	}
+    is_visible = {
+        dw_knows_about_my_dick_size = yes
+    }
+	intrigue = 1 # People are curious if it's really as big as they say
+	learning = -1 # Not enough blood to split between two heads
+	fertility = 0.15 # Deeper seed deposits
+	ai_zeal = -10 # Very inviting of those who'd like to see their dick
+	ai_rationality = -5 # Prone to think with their dick
+}
+
+dw_enormous_dick = { # Enormous dick ~ 11-12 inches
+	random = no
+    customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate dicks
+        dw_tiny_dick
+        dw_small_dick
+        dw_regular_dick
+		dw_big_dick
+		dw_huge_dick
+        dw_gigantic_dick
+	}
+    is_visible = {
+        dw_knows_about_my_dick_size = yes
+    }
+	intrigue = 2 # Certainly the rumors exhaggerate, right?
+	learning = -2 # Not enough blood to split between two heads
+	fertility = 0.25 # Deeper seed deposits and a lot of it too
+	ai_zeal = -15 # Very inviting of those who'd like to see their dick
+	ai_rationality = -10 # Prone to think with their dick
+	ai_ambition = -10 # Generally content as they're happy with their gifts
+}
+
+dw_gigantic_dick = { # larger than 12 inches
+	random = no
+    customizer = yes
+    ruler_designer_cost = 0
+    opposites = { # used to keep from duplicate dicks
+        dw_tiny_dick
+        dw_small_dick
+        dw_regular_dick
+		dw_big_dick
+		dw_huge_dick
+		dw_enormous_dick
+	}
+    is_visible = {
+        dw_knows_about_my_dick_size = yes
+    }
+    intrigue = 2 # Certainly the rumors exhaggerate, right?
+	learning = -2 # Not enough blood to split between two heads
+	fertility = 0.30 # Deeper seed deposits and a lot of it too
+	ai_zeal = -25 # Very inviting of those who'd like to see their dick
+	ai_rationality = -20 # Prone to think with their dick
+	ai_ambition = -20 # Generally content as they're happy with their gifts
+}
+enchanting = { # Meant to be show the beautiful amongst the fair
+	customizer = yes
+	potential = {
+		is_female = yes
+        trait = fair
+	}
+	opposites = {
+		ugly
+        disfigured
+	}
+	sex_appeal_opinion = 10 # Considering this stacks with other bonuses, it represents a beauty that people heavily desire
+	diplomacy = 2 # People tend to be more agreeable and make concessions they wouldn't normally in hopes to impress
+}
+futa = { # Futanari
+	random = no
+	customizer = yes
+	ruler_designer_cost = 0
+	potential = {
+		is_female = yes
+	}
+	birth = 10 # Out of 10000 births, 10 will be born as futas
+	inherit_chance = 25
+	both_parent_has_trait_inherit_chance = 100
+    fertility = -0.25 # The heightened sex drive and extra equipment seems to have a balancing effect of a subdued fertility
+	sex_appeal_opinion = 5 # People find them exotic
+
+    female_insult = INSULT_FREAK
+	female_insult_adj = INSULT_GROTESQUE
+	female_compliment = COMPL_BEAUTY
+	female_compliment_adj = COMPL_FAIR
+}
+heterochromia = {
+	random = no
+	customizer = yes
+	same_opinion = 5 # A rarity that people who share the trait view each other as being members of an exclusive group
+	general_opinion = -3 # While today it may be seen as cool, in the past it raised concerns about the supernatural, possession, or other evil/tainted markings
+	inherit_chance = 20 # Even with a parent that has heterochromia, it's a rarity to pass it along to their offspring
+	birth = 10 # Out of 10,000 births, 10 will be born with the trait
+	monthly_character_piety = 0.10 # Characters with heterochromia are seen to be very connected to the spirit world, or nature.
+	female_insult = INSULT_FREAK
+	female_insult_adj = INSULT_GROTESQUE
+	male_insult = INSULT_FREAK
+	male_insult_adj = INSULT_GROTESQUE
+}
+virgin = {
+	random = no
+	ruler_designer_cost = 0
+	sex_appeal_opinion = 10 #Generally desired as they're 'safe' in terms of disease, and there is a desire to be their first
+	general_opinion = 3 #Generally seen as someone pure and upstanding
+	diplomacy = 1 #Generally seen to be honest and upstanding, someone who's word can be trusted.
+	health = 0.25 #A little healthier, as the body hasn't been exposed to mixing with who knows where their partners have been...
+}
+trap = {
+	random = no
+	customizer = no
+	potential = {
+		is_female = no
+	}
+	same_opinion = 10 # People tend to see them as freaks, so they find friendship in each other, and share clothing and makeup tips
+	general_opinion = -5 # People tend to be bothered by the person straying from their sexual 'norm'
+	intrigue = 2 # Adept at hiding who they are and noticing things about others
+	fertility = -0.25 # Seem to be much more in touch with their feminine side, perhaps at the expense of their manhood
+	male_insult = INSULT_FREAK
+	male_insult_adj = INSULT_GROTESQUE
+	male_compliment = COMPL_BEAUTY
+	male_compliment_adj = COMPL_FAIR
+	ai_zeal = -25 # Typically tolerant of others, largely due to their own rare nature
+}

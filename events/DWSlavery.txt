@@ -1,6 +1,6 @@
 #Dark World Slavery events
 # We add "has_character_flag = asked_for_better_prison" to our slaves to keep them from asking for better lodgings
-# Selecting a new slave, choosing their training, learning of training completion: 1 - 99 
+# Selecting a new slave, choosing their training, learning of training completion: 1 - 99
 # Slave Training: Common Labor 100 - 199
 # Slave Training: Warrior 200 - 299
 # Slave Training: Skilled 300 - 399
@@ -55,7 +55,7 @@ narrative_event = {
 		event_target:dw_slave_target = {
 			add_character_modifier = { name = dw_slave_pleasure_1 duration = -1 } # Stage 1 flag, indefinite duration - as we'll be changing it manually
 			set_character_flag = dw_slave_training_in_progress
-			character_event = { id = DWSlavery.400 } 
+			character_event = { id = DWSlavery.400 }
 		}
 	}
 	option = { # Warrior Slave Training
@@ -116,7 +116,7 @@ narrative_event = {
 		event_target:dw_slave_target = {
 			add_character_modifier = { name = dw_slave_pleasure_1 duration = -1 } # Stage 1 flag, indefinite duration - as we'll be changing it manually
 			set_character_flag = dw_slave_training_in_progress
-			character_event = { id = DWSlavery.400 } 
+			character_event = { id = DWSlavery.400 }
 		}
 	}
 	option = { # Warrior Slave Training
@@ -195,8 +195,8 @@ character_event = {
 		}
 		if = {
 			limit = { # If the slave is already trained in three areas and doesn't have a learning of 10 OR they're a child, they can't learn a forth
-				NOR = { 
-					learning = 10 
+				NOR = {
+					learning = 10
 					is_adult = yes
 				}
 				calc_true_if = {
@@ -541,10 +541,10 @@ character_event = {
 # .210 Slave evaluation check to see if the advance (slave - hidden)
 character_event = {
 	id = DWSlavery.210
-	
+
 	is_triggered_only = yes
 	hide_window = yes
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -639,10 +639,10 @@ character_event = {
 # .310 Slave evaluation check to see if the advance (slave - hidden)
 character_event = {
 	id = DWSlavery.310
-	
+
 	is_triggered_only = yes
 	hide_window = yes
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -820,8 +820,8 @@ narrative_event = {
 	is_triggered_only = yes # Triggered from .700
 	option = {
 		name = "DWSlavery701A" #Yes, time for a little branding
-		FROM = { 
-			add_trait = branded_slave 
+		FROM = {
+			add_trait = branded_slave
 			abdicate = yes #If the person is landed, it should pass onto their heirs.
 		}
 	}
@@ -854,12 +854,12 @@ narrative_event = {
 				NOT = { character = ROOT } # No selling to ourselves, hopefully anyway
 			}
 			save_event_target_as = dw_slave_buyer
-		}		
+		}
 	}
 	option = {
 		name = "DWSlavery801A" #Yes, Sold!
 		calculate_slave_sale_value = yes
-		event_target:dw_slave_target = {			
+		event_target:dw_slave_target = {
 			move_character = event_target:dw_slave_buyer
 			remove_slave_prisoner_modifiers_for_sale = yes
 		}
@@ -888,7 +888,7 @@ narrative_event = {
 	is_triggered_only = yes # Triggered by .900
 	option = {
 		name = "DWSlavery901A" #Yes, Kept!
-		event_target:dw_slave_target = { 
+		event_target:dw_slave_target = {
 			prisoner = no # Prisoner no more
 			move_character = ROOT # Adds them to the host court instead of letting them return to their previous liege
 			hidden_tooltip = { # We clean-up flags and modifiers that may have been set during imprisonment and slave training
@@ -960,7 +960,7 @@ narrative_event = {
 	is_triggered_only = yes # Triggered by .903
 	option = {
 		name = "DWSlavery910A" # Yes, make a bodyguard
-		event_target:dw_slave_target = { 
+		event_target:dw_slave_target = {
 			add_character_modifier = { name = dw_slave_bodyguard duration = -1 }
 		}
 	}
@@ -981,7 +981,7 @@ narrative_event = {
 	is_triggered_only = yes # Triggered by .903
 	option = {
 		name = "DWSlavery912A" # Yes, make a gladiator
-		event_target:dw_slave_target = { 
+		event_target:dw_slave_target = {
 			add_trait = gladiator
 		}
 	}
@@ -1001,47 +1001,9 @@ narrative_event = {
 	title = dw_slave_profession_decision_target
 	is_triggered_only = yes # Triggered by .903
 	option = {
+		trigger = { NOT = { event_target:dw_slave_target = { trait = prostitute } } }
 		name = "DWSlavery914A" # Yes, make a whore
-		if = { # If the slave was a whore before we made them a slave, then they may have gotten better
-			limit = {
-				event_target:dw_slave_target = { # We're assuming a retired whore was at least experienced before retiring, so the pleasure training would make them Exclusive
-					OR = {
-						trait = experienced_whore
-						trait = retired_whore
-					}
-				}
-			}
-			event_target:dw_slave_target = {
-				remove_trait = experienced_whore
-				remove_trait = retired_whore
-				add_trait = exclusive_whore
-			}
-		}
-		if = { # If the slave was a whore before we made them a slave, then they may have gotten better
-			limit = {
-				event_target:dw_slave_target = { 
-					trait = cheap_whore
-				}
-			}
-			event_target:dw_slave_target = {
-				remove_trait = cheap_whore
-				add_trait = experienced_whore
-			}
-		}
-		if = { # If the slave has no whore traits already, we make them a cheap whore
-			limit = {
-				event_target:dw_slave_target = {
-					NOR = {
-						trait = exclusive_whore
-						trait = experienced_whore
-						trait = cheap_whore
-					}
-				}
-			}
-			event_target:dw_slave_target = {
-				add_trait = cheap_whore
-			}
-		}
+		add_trait = prostitute
 	}
 	option = {
 		name = "DWSlavery914B" # Leave them as a generic slave

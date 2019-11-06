@@ -2531,356 +2531,6 @@ remove_virginity_trait = {
 #		set_variable = { which = dick_size value = 7 }
 #	}
 #}
-add_tits = {
-	random_list = {
-		8 = {
-			trigger = { NOT = { trait = trap }}
-			modifier = {
-				factor = 5
-				mother_even_if_dead = {	trait = gigantic_tits }
-			}
-            modifier = {
-				factor = 3
-				mother_even_if_dead = {	trait = enormous_tits }
-			}
-			add_trait = gigantic_tits
-		}
-		10 = {
-            trigger = { NOT = { trait = trap }}
-			modifier = {
-				factor = 5
-				mother_even_if_dead = { trait = enormous_tits }
-			}
-            modifier = {
-				factor = 3
-				mother_even_if_dead = {
-                    OR = {
-                        trait = gigantic_tits
-                        trait = huge_tits
-                    }
-                }
-			}
-			add_trait = enormous_tits
-		}
-		11 = {
-            trigger = { NOT = { trait = trap }}
-			modifier = {
-				factor = 5
-				mother_even_if_dead = { trait = huge_tits }
-			}
-            modifier = {
-				factor = 3
-				mother_even_if_dead = {
-                    OR = {
-                        trait = enormous_tits
-                        trait = big_tits
-                    }
-                }
-			}
-			add_trait = huge_tits
-		}
-		12 = {
-            trigger = { NOT = { trait = trap }}
-			modifier = {
-				factor = 5
-				mother_even_if_dead = { trait = big_tits }
-			}
-            modifier = {
-				factor = 3
-				mother_even_if_dead = {
-                    OR = {
-                        trait = huge_tits
-                        trait = regular_tits
-                    }
-                }
-			}
-			add_trait = big_tits
-		}
-		15 = {
-            trigger = { NOT = { trait = trap }}
-			modifier = {
-				factor = 5
-				mother_even_if_dead = { trait = regular_tits }
-			}
-            modifier = {
-				factor = 3
-				mother_even_if_dead = {
-                    OR = {
-                        trait = big_tits
-                        trait = small_tits
-                    }
-                }
-			}
-			add_trait = regular_tits
-		}
-		12 = {
-            modifier = {
-				factor = 5
-				mother_even_if_dead = { trait = small_tits }
-			}
-            modifier = {
-				factor = 3
-				mother_even_if_dead = {
-                    OR = {
-                        trait = regular_tits
-                        trait = tiny_tits
-                    }
-                }
-			}
-			add_trait = small_tits
-		}
-		8 = {
-            modifier = {
-				factor = 5
-                OR = {
-                    mother_even_if_dead = { trait = tiny_tits }
-                    trait = trap
-                }
-			}
-            modifier = {
-				factor = 3
-				mother_even_if_dead = { trait = small_tits }
-			}
-			add_trait = tiny_tits
-		}
-	}
-	set_character_flag = dw_boobs_checked # flag set to help prevent follow-up size executions
-
-}
-add_cock = {
-	random_list = {
-		5 = {
-			modifier = {
-				factor = 5
-				true_father_even_if_dead = { trait = gigantic_dick }
-			}
-            modifier = {
-				factor = 3
-				true_father_even_if_dead = { trait = enormous_dick }
-			}
-			add_trait = gigantic_dick
-		}
-		8 = {
-			modifier = {
-				factor = 5
-				true_father_even_if_dead = { trait = enormous_dick }
-			}
-            modifier = {
-				factor = 3
-				true_father_even_if_dead = {
-                    OR = {
-                        trait = gigantic_dick
-    					trait = huge_dick
-                    }
-				}
-			}
-			add_trait = enormous_dick
-		}
-		10 = {
-            modifier = {
-				factor = 5
-				true_father_even_if_dead = { trait = huge_dick }
-			}
-            modifier = {
-				factor = 3
-				true_father_even_if_dead = {
-                    OR = {
-                        trait = enormous_dick
-    					trait = big_dick
-                    }
-				}
-			}
-			add_trait = huge_dick
-		}
-		12 = {
-            modifier = {
-				factor = 5
-				true_father_even_if_dead = { trait = big_dick }
-			}
-            modifier = {
-				factor = 3
-				true_father_even_if_dead = {
-                    OR = {
-                        trait = huge_dick
-    					trait = regular_dick
-                    }
-				}
-			}
-			add_trait = big_dick
-		}
-		15 = {
-            modifier = {
-				factor = 5
-				true_father_even_if_dead = { trait = regular_dick }
-			}
-            modifier = {
-				factor = 3
-				true_father_even_if_dead = {
-                    OR = {
-                        trait = big_dick
-    					trait = small_dick
-                    }
-				}
-			}
-			add_trait = regular_dick
-		}
-		12 = {
-            trigger = { NOT = { trait = futa }}
-            modifier = {
-				factor = 5
-				true_father_even_if_dead = { trait = small_dick }
-			}
-            modifier = {
-				factor = 3
-				true_father_even_if_dead = {
-                    OR = {
-                        trait = regular_dick
-    					trait = tiny_dick
-                    }
-				}
-			}
-			add_trait = small_dick
-		}
-		8 = {
-            trigger = { NOT = { trait = futa }}
-            modifier = {
-				factor = 5
-				true_father_even_if_dead = { trait = tiny_dick }
-			}
-            modifier = {
-				factor = 3
-				true_father_even_if_dead = { trait = small_dick }
-			}
-			add_trait = tiny_dick
-		}
-	}
-	set_character_flag = dw_junk_checked
-}
-remove_cock = {
-	if = {
-		limit = {
-			OR = {
-				trait = micro_dick
-				trait = tiny_dick
-				trait = small_dick
-				trait = regular_dick
-				trait = big_dick
-				trait = huge_dick
-				trait = enormous_dick
-				trait = gigantic_dick
-			}
-		}
-		remove_trait = micro_dick
-		remove_trait = tiny_dick
-		remove_trait = small_dick
-		remove_trait = regular_dick
-		remove_trait = big_dick
-		remove_trait = huge_dick
-		remove_trait = enormous_dick
-		remove_trait = gigantic_dick
-		clr_character_flag = dw_junk_checked
-	}
-}
-cock_grows = {
-	if = {
-		limit = {
-			trait = enormous_dick
-		}
-		remove_trait = enormous_dick
-		add_trait = gigantic_dick
-	}
-	else_if = {
-		limit = {
-			trait = huge_dick
-		}
-		remove_trait = huge_dick
-		add_trait = enormous_dick
-	}
-	else_if = {
-		limit = {
-			trait = big_dick
-		}
-		remove_trait = big_dick
-		add_trait = huge_dick
-	}
-	else_if = {
-		limit = {
-			trait = regular_dick
-		}
-		remove_trait = regular_dick
-		add_trait = big_dick
-	}
-	else_if = {
-		limit = {
-			trait = small_dick
-		}
-		remove_trait = small_dick
-		add_trait = regular_dick
-	}
-	else_if = {
-		limit = {
-			trait = tiny_dick
-		}
-		remove_trait = tiny_dick
-		add_trait = small_dick
-	}
-	else = {
-		remove_trait = micro_dick
-		add_trait = tiny_dick
-	}
-	# We also update the variable, so the growth could impact any future children of theirs
-	change_variable = { which = dick_size value = 1 }
-}
-tits_grow = {
-	if = {
-		limit = {
-			trait = enormous_tits
-		}
-		remove_trait = enormous_tits
-		add_trait = gigantic_tits
-	}
-	else_if = {
-		limit = {
-			trait = huge_tits
-		}
-		remove_trait = huge_tits
-		add_trait = enormous_tits
-	}
-	else_if = {
-		limit = {
-			trait = big_tits
-		}
-		remove_trait = big_tits
-		add_trait = huge_tits
-	}
-	else_if = {
-		limit = {
-			trait = regular_tits
-		}
-		remove_trait = regular_tits
-		add_trait = big_tits
-	}
-	else_if = {
-		limit = {
-			trait = small_tits
-		}
-		remove_trait = small_tits
-		add_trait = regular_tits
-	}
-	else_if = {
-		limit = {
-			trait = tiny_tits
-		}
-		remove_trait = tiny_tits
-		add_trait = small_tits
-	}
-	else = {
-		remove_trait = micro_tits
-		add_trait = tiny_tits
-	}
-	# We also update the variable, so the growth could impact any future children of theirs
-	change_variable = { which = breast_size value = 1 }
-}
 beast_lover_check = {
 	if = {
 		limit = {
@@ -2911,7 +2561,7 @@ improve_appearance = {
 	# This should never be called if they're already a bombshell
 	if = {
 		limit = { trait = fair }
-		add_trait = bombshell
+		add_trait = enchanting
 	}
 	else_if = {
 		limit = { trait = ugly }
@@ -3080,19 +2730,19 @@ calculate_slave_sale_value = {
 			}
 		}
 		# Tit size
-		if = { limit = { event_target:dw_slave_target = { trait = tiny_tits } } change_variable = { which = local_slave_sell_price value = 0.25 } }
-		else_if = { limit = { event_target:dw_slave_target = { trait = small_tits } } change_variable = { which = local_slave_sell_price value = 0.5 } }
-		else_if = { limit = { event_target:dw_slave_target = { trait = regular_tits } } change_variable = { which = local_slave_sell_price value = 1 } }
-		else_if = { limit = { event_target:dw_slave_target = { trait = big_tits } } change_variable = { which = local_slave_sell_price value = 1.25 } }
-		else_if = { limit = { event_target:dw_slave_target = { trait = huge_tits } }	change_variable = { which = local_slave_sell_price value = 1.5 } }
-		else_if = { limit = { event_target:dw_slave_target = { trait = enormous_tits } } change_variable = { which = local_slave_sell_price value = 1.75 } }
+		if = { limit = { event_target:dw_slave_target = { trait = dw_tiny_tits } } change_variable = { which = local_slave_sell_price value = 0.25 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = dw_small_tits } } change_variable = { which = local_slave_sell_price value = 0.5 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = dw_regular_tits } } change_variable = { which = local_slave_sell_price value = 1 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = dw_big_tits } } change_variable = { which = local_slave_sell_price value = 1.25 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = dw_huge_tits } }	change_variable = { which = local_slave_sell_price value = 1.5 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = dw_enormous_tits } } change_variable = { which = local_slave_sell_price value = 1.75 } }
 		else = { change_variable = { which = local_slave_sell_price value = 2 } } # Gigantic tit size
 		# Dick size
-		if = { limit = { event_target:dw_slave_target = { trait = tiny_dick } }	change_variable = { which = local_slave_sell_price value = 0.3 } }
-		else_if = { limit = { event_target:dw_slave_target = { trait = small_dick } } change_variable = { which = local_slave_sell_price value = 0.6 } }
-		else_if = { limit = { event_target:dw_slave_target = { trait = regular_dick } }	change_variable = { which = local_slave_sell_price value = 1 } }
-		else_if = { limit = { event_target:dw_slave_target = { trait = big_dick } } change_variable = { which = local_slave_sell_price value = 1.3 } }
-		else_if = { limit = { event_target:dw_slave_target = { trait = huge_dick } }	change_variable = { which = local_slave_sell_price value = 1.6 } }
+		if = { limit = { event_target:dw_slave_target = { trait = dw_tiny_dick } }	change_variable = { which = local_slave_sell_price value = 0.3 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = dw_small_dick } } change_variable = { which = local_slave_sell_price value = 0.6 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = dw_regular_dick } }	change_variable = { which = local_slave_sell_price value = 1 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = dw_big_dick } } change_variable = { which = local_slave_sell_price value = 1.3 } }
+		else_if = { limit = { event_target:dw_slave_target = { trait = dw_huge_dick } }	change_variable = { which = local_slave_sell_price value = 1.6 } }
 		else = { change_variable = { which = local_slave_sell_price value = 2 } } # Horse dick size
 		# Exotic considerations
 		if = { limit = { event_target:dw_slave_target = { trait = trap } } change_variable = { which = local_slave_sell_price value = 3 } }
@@ -3138,7 +2788,7 @@ calculate_slave_sale_value = {
 		change_variable = { which = local_slave_sell_price value = 2 }
 	}
 	if = { # Physical Beauty
-		limit = { event_target:dw_slave_target = { trait = bombshell } }
+		limit = { event_target:dw_slave_target = { trait = enchanting } }
 		change_variable = { which = local_slave_sell_price value = 1 }
 	}
 	if = { # Physically Undesirable
@@ -3281,18 +2931,11 @@ calculate_gloryhole_payment = {
 			}
 			modifier = { # A pro
 				factor = 0.5
-				OR = {
-					trait = seducer
-					trait = seductress
-					trait = experienced_whore
-					trait = exclusive_whore
-				}
+				trait = prostitute
 			}
 			modifier = { # Above Average
 				factor = 0.75
 				OR = {
-					trait = cheap_whore
-					trait = retired_whore
 					trait = possessed
 					trait = hedonist
 					trait = lustful
@@ -3315,8 +2958,7 @@ calculate_gloryhole_payment = {
 				OR = {
 					trait = seducer
 					trait = seductress
-					trait = experienced_whore
-					trait = exclusive_whore
+					trait = prostitute
 				}
 			}
 		}
@@ -3340,15 +2982,13 @@ calculate_gloryhole_payment = {
 				OR = {
 					trait = seducer
 					trait = seductress
-					trait = experienced_whore
-					trait = exclusive_whore
+					trait = prostitute
 				}
 			}
 			modifier = { # Above Average
 				factor = 1.5
 				OR = {
-					trait = cheap_whore
-					trait = retired_whore
+					trait = prostitute
 					trait = possessed
 					trait = hedonist
 					trait = lustful
@@ -3371,15 +3011,12 @@ calculate_gloryhole_payment = {
 				OR = {
 					trait = seducer
 					trait = seductress
-					trait = experienced_whore
-					trait = exclusive_whore
+					trait = prostitute
 				}
 			}
 			modifier = { # Above Average
 				factor = 3
 				OR = {
-					trait = cheap_whore
-					trait = retired_whore
 					trait = possessed
 					trait = hedonist
 					trait = lustful
@@ -3505,7 +3142,7 @@ determine_potions_for_sale = {
 			trigger = {
 				is_adult = yes
 				has_cock = yes
-				NOT = { trait = gigantic_dick } # want to ensure there is room to grow
+				NOT = { trait = dw_gigantic_dick } # want to ensure there is room to grow
 				wealth = 50
 			}
 			set_character_flag = dw_penis_enlargement_potion_buyer
@@ -3514,7 +3151,7 @@ determine_potions_for_sale = {
 			trigger = {
 				is_adult = yes
 				is_female = yes
-				NOT = { trait = gigantic_tits } # want to ensure there is room to grow
+				NOT = { trait = dw_gigantic_tits } # want to ensure there is room to grow
 				wealth = 50
 			}
 			set_character_flag = dw_breast_enlargement_potion_buyer
@@ -3929,7 +3566,7 @@ dw_major_beneficial_soul_corruption_effect = {
 		limit = {
 			NAND = {
 				trait = fair
-				trait = bombshell
+				trait = enchanting
 				trait = strong
 				trait = genius
 			}
@@ -3956,9 +3593,10 @@ dw_major_beneficial_soul_corruption_effect = {
 			20 = {
 				trigger = {
 					trait = fair
-					NOT = { trait = bombshell }
+					NOT = { trait = enchanting }
 				}
 				set_character_flag = dw_add_bombshell
+				set_character_flag = dw_add_enchanting # Just because I don't remember if I changed it and too lazy to check right at the moment
 				narrative_event = { id = DWSOC.7100 days = 5}
 			}
 			# lose weak
@@ -4198,244 +3836,3 @@ detract_lilith_offmap_super_huge_effect = {
 #		add_lilith_offmap_minor_effect = yes
 #	}
 #}
-
-
-### VANILLA SCRIPTED_EFFECTS THAT ARE MEANT TO BE REPLACED FOR DARK WORLD SUPPORT - POTENTIAL MOD CONFLICT CODE IF ANOTHER MOD ALTERS THESE
-#Tries to impregnate either event_target:sex_partner or THIS if all conditions are met (Duplicate of vanilla scripted_effect meant to alter the original one)
-impregnate_effect_event_target = {
-	# Dark World - Removed the opposite sex if / limit check as a female can be impregnated by another female if it is a futanari
-
-	#If THIS is a female which can get pregnant
-	if = {
-		limit = {
-			is_female = yes
-			OR = {  # No one 45+ unless they're immortal
-				NOT = { age = 45 }
-				trait = immortal # Dark World added
-			}
-			is_pregnant = no
-			health = 3
-			event_target:sex_partner = {
-				has_cock = yes # Dark World added
-			}
-		}
-
-		#THIS is not consort/spouse of anyone or is consort/spouse of event_target:sex_partner
-		if = {
-			limit = {
-				OR = {
-					AND = {
-						is_married = no
-						is_consort = no
-					}
-					AND = {
-						is_consort = yes
-						consort = { character = event_target:sex_partner }
-					}
-					AND = {
-						is_married = yes
-						spouse = { character = event_target:sex_partner }
-					}
-				}
-			}
-			event_target:sex_partner = { impregnate = PREV }
-		}
-
-		#THIS is consort/spouse of someone else than event_target:sex_partner
-		if = {
-			limit = {
-				OR = {
-					AND = {
-						is_married = yes
-						NOT = { spouse = { character = event_target:sex_partner } }
-					}
-					AND = {
-						is_consort = yes
-						NOT = { consort = { character = event_target:sex_partner } }
-					}
-				}
-			}
-			event_target:sex_partner = { impregnate_cuckoo = PREV }
-		}
-	}
-
-	#If event_target:sex_partner is a female which can get pregnant
-	if = {
-		limit = {
-			event_target:sex_partner = {
-				is_female = yes
-				OR = { # No one 45+ unless they're immortal
-					NOT = { age = 45 }
-					trait = immortal # Dark World added
-				}
-				is_pregnant = no
-				health = 3
-				PREV = {
-					has_cock = yes # Dark World added
-				}
-			}
-		}
-
-		#event_target:sex_partner is not consort/spouse of anyone or is consort/spouse of THIS
-		if = {
-			limit = {
-				event_target:sex_partner = {
-					OR = {
-						AND = {
-							is_married = no
-							is_consort = no
-						}
-						AND = {
-							is_consort = yes
-							consort = { character = PREVPREV }
-						}
-						AND = {
-							is_married = yes
-							spouse = { character = PREVPREV }
-						}
-					}
-				}
-			}
-			impregnate = event_target:sex_partner
-		}
-
-		#event_target:sex_partner is consort/spouse of someone else than THIS
-		if = {
-			limit = {
-				event_target:sex_partner = {
-					OR = {
-						AND = {
-							is_married = yes
-							NOT = { spouse = { character = PREVPREV } }
-						}
-						AND = {
-							is_consort = yes
-							NOT = { consort = { character = PREVPREV } }
-						}
-					}
-				}
-			}
-
-			impregnate_cuckoo = event_target:sex_partner
-		}
-	}
-}
-#Tries to impregnate either ROOT or FROM if all conditions are met (Duplicate of vanilla scripted_effect meant to alter the original one)
-impregnate_effect = {
-	# Dark World - Removed the opposite sex if / limit check as a female can be impregnated by another female if it is a futanari
-
-	#If ROOT is a female which can get pregnant
-	if = {
-		limit = {
-			is_female = yes
-			OR = {  # No one 45+ unless they're immortal
-				NOT = { age = 45 }
-				trait = immortal # Dark World added
-			}
-			is_pregnant = no
-			health = 3
-			FROM = {
-				has_cock = yes # Dark World added - We want to ensure the person who's doing the impregnating has a cock
-			}
-		}
-
-		#ROOT is not consort/spouse of anyone or is consort/spouse of FROM
-		if = {
-			limit = {
-				OR = {
-					AND = {
-						is_married = no
-						is_consort = no
-					}
-					AND = {
-						is_consort = yes
-						consort = { character = FROM }
-					}
-					AND = {
-						is_married = yes
-						spouse = { character = FROM }
-					}
-				}
-			}
-			FROM = { impregnate = ROOT }
-		}
-
-		#ROOT is consort/spouse of someone else than FROM
-		if = {
-			limit = {
-				OR = {
-					AND = {
-						is_married = yes
-						NOT = { spouse = { character = FROM } }
-					}
-					AND = {
-						is_consort = yes
-						NOT = { consort = { character = FROM } }
-					}
-				}
-			}
-			FROM = { impregnate_cuckoo = ROOT }
-		}
-	}
-
-	#If FROM is a female which can get pregnant
-	if = {
-		limit = {
-			FROM = {
-				is_female = yes
-				OR = {  # No one 45+ unless they're immortal
-					NOT = { age = 45 }
-					trait = immortal # Dark World added
-				}
-				is_pregnant = no
-				health = 3
-				ROOT = {
-					has_cock = yes # Dark World added - We want to ensure the person who's doing the impregnating has a cock
-				}
-			}
-		}
-
-		#FROM is not consort/spouse of anyone or is consort/spouse of ROOT
-		if = {
-			limit = {
-				FROM = {
-					OR = {
-						AND = {
-							is_married = no
-							is_consort = no
-						}
-						AND = {
-							is_consort = yes
-							consort = { character = ROOT }
-						}
-						AND = {
-							is_married = yes
-							spouse = { character = ROOT }
-						}
-					}
-				}
-			}
-			impregnate = FROM
-		}
-
-		#FROM is consort/spouse of someone else than ROOT
-		if = {
-			limit = {
-				FROM = {
-					OR = {
-						AND = {
-							is_married = yes
-							NOT = { spouse = { character = ROOT } }
-						}
-						AND = {
-							is_consort = yes
-							NOT = { consort = { character = ROOT } }
-						}
-					}
-				}
-			}
-
-			impregnate_cuckoo = FROM
-		}
-	}
-}

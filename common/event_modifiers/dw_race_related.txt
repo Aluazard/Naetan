@@ -1,0 +1,38 @@
+# Event_modifiers that are related to racial traits
+
+dw_out_of_the_shadows = { # Related to tentacle-kin making their existence known
+	icon = 81
+	monthly_character_prestige = 0.5 # It takes balls to come out public
+	combat_rating = 10 # Without needing to hide themselves, they can better use their abilities.
+	general_opinion = -10 # Fear of the unnatural
+	church_opinion = -15 # Unholy spawn
+}
+dw_out_of_the_abyss = { # Related to demon-kin making their existence known
+	icon = 81
+	monthly_character_prestige = 0.5 # It takes balls to come out public
+	monthly_character_piety = -0.5 # The gods turn away from demon_kin
+	combat_rating = 10 # Without needing to hide themselves, they can better use their abilities.
+	general_opinion = -5 # Fear of the unnatural
+	church_opinion = -20 # Unholy demon!
+}
+dw_out_of_their_skin = { # Related to shapeshifters making their existence known
+	icon = 81
+	monthly_character_prestige = 0.5 # It takes balls to come out public
+	combat_rating = 10 # Without needing to hide themselves, they can better use their abilities.
+	general_opinion = -5 # Fear of the unnatural
+	church_opinion = -10 # Unholy spawn
+}
+dw_out_of_the_sky = { # Related to Angel-kin making their existence known
+	icon = 81
+	monthly_character_piety = 0.5 # The eye(s) of God(s) are upon them
+	monthly_character_prestige = 0.5 # It takes balls to come out public
+	general_opinion = 10 # People feel their faith emboldened by proof of the divine
+	church_opinion  = 10 # Chruch fold are doubly emboldened by proof of the divine
+}
+dw_enemy_of_mankind = { # Related to symbiotes or anything else that clearly preys on mankind - outside of other humans
+	icon = 82
+	monthly_character_piety = -1
+	combat_rating = 10 # No need to hold back any more
+	general_opinion = -75 # Most fear you
+	church_opinion = -25 # Enemy of all that is holy
+}

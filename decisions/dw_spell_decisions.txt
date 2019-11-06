@@ -1,0 +1,385 @@
+targeted_decisions = {
+    # Spell: Quick Heal
+	dw_cast_quick_heal = {
+		ai_check_interval = 12
+		filter = court_including_me
+		ai_target_filter = court_including_me
+		from_potential = {
+			trait = mage
+			NOT = { has_character_modifier = dw_quick_heal_cooldown }
+		}
+		potential = {
+			FROM = { trait = mage }
+			trait = wounded
+		}
+		allow = {
+			trait = wounded
+		}
+		effect = {
+			FROM = { save_event_target_as = dw_healer }
+			narrative_event = { id = dw_wizardtower.1010 }
+			hidden_tooltip = {
+				FROM = { add_character_modifier = { modifier = dw_quick_heal_cooldown months = 3 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	# Spell: Midas Touch
+	dw_cast_midas_touch = {
+		ai_check_interval = 18
+		filter = self
+		ai_target_filter = self
+		#from_potential = {
+		#	has_character_modifier = dw_transmutation_mage
+		#	NOT = { has_character_modifier = dw_midas_touch_cooldown }
+		#}
+		potential = {
+			FROM = { has_character_modifier = dw_transmutation_mage }
+			NOT = { has_character_modifier = dw_midas_touch_cooldown }
+		}
+		allow = {
+			NOT = { has_character_modifier = dw_midas_touch_cooldown }
+		}
+		effect = {
+			narrative_event = { id = dw_wizardtower.1020 }
+			hidden_tooltip = {
+				FROM = { add_character_modifier = { modifier = dw_midas_touch_cooldown months = 6 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0.8
+		}
+	}
+	# Spell: Lightning Bolt
+	dw_cast_lightning_bolt = {
+		ai_check_interval = 24
+		filter = all
+		ai_target_filter = court
+		from_potential = {
+			has_character_modifier = dw_evocation_mage
+			NOT = { has_character_modifier = dw_lightning_bolt_cooldown }
+		}
+		potential = {
+			is_within_diplo_range = FROM
+			FROM = { has_character_modifier = dw_evocation_mage }
+			NOT = { character = FROM } # Don't want to zap ourselves
+		}
+		allow = {
+			is_within_diplo_range = FROM
+			FROM = { NOT = { has_character_modifier = dw_lightning_bolt_cooldown }}
+		}
+		effect = {
+			FROM = { save_event_target_as = dw_spell_caster }
+			save_event_target_as = dw_spell_target
+			random_list = {
+				75 = {
+					custom_tooltip = { text = dw_target_hit }
+					character_event = { id = dw_wizardtower.1030 }
+				}
+				25 = {
+					custom_tooltip = { text = dw_target_missed }
+					narrative_event = { id = dw_wizardtower.1035 }
+				}
+			}
+
+			hidden_tooltip = {
+				FROM = { add_character_modifier = { modifier = dw_lightning_bolt_cooldown months = 6 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				FROM = { opinion = { who = ROOT value = 0 } } # If the ai's opinion is 0 or higher, they won't zap the person
+			}
+		}
+	}
+	# Spell: Disintegrate
+	dw_cast_disintegrate = {
+		filter = all
+		ai_target_filter = none
+		from_potential = {
+			has_character_modifier = dw_evocation_mage
+			NOT = { has_character_modifier = dw_disintegrate_cooldown }
+		}
+		potential = {
+			is_within_diplo_range = FROM
+			NOT = { character = FROM } # Don't want to zap ourselves
+		}
+		allow = {
+			is_within_diplo_range = FROM
+			FROM = { NOT = { has_character_modifier = dw_disintegrate_cooldown }}
+		}
+		effect = {
+			# FROM = { save_event_target_as = dw_spell_caster }
+			save_event_target_as = dw_spell_target
+			death = { death_reason = death_vanished killer = FROM }
+			FROM = { narrative_event = { id = dw_wizardtower.1040 }}
+			hidden_tooltip = {
+				FROM = { add_character_modifier = { modifier = dw_disintegrate_cooldown months = 3 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	# Mage summons a familiar
+	dw_mage_summon_familiar = {
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 18
+		#from_potential = {
+		#	trait = mage
+		#}
+		potential = {
+			trait = mage
+			character = FROM
+		}
+		allow = {
+			NOT = { has_character_modifier = dw_summon_familiar_cooldown }
+		}
+		effect = {
+			hidden_effect = {
+				add_character_modifier = {
+					name = dw_summon_familiar_cooldown
+					years = 1
+					hidden = yes
+				}
+				narrative_event = { id = dw_wizardtower.1050 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_character_modifier = dw_familiar_cat
+					has_character_modifier = dw_familiar_dog
+					has_character_modifier = dw_familiar_owl
+					has_character_modifier = dw_familiar_parrot
+					has_character_modifier = dw_familiar_wolf
+					has_character_modifier = dw_familiar_raven
+					has_character_modifier = dw_familiar_rat
+					has_character_modifier = dw_familiar_otter
+					has_character_modifier = dw_familiar_hedgehog
+				}
+			}
+		}
+	}
+	# Mage summons an imp familiar
+	dw_mage_summon_imp_familiar = {
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 18
+		#from_potential = {
+		#	has_character_modifier = dw_summoner_mage
+		#}
+		potential = {
+			character = FROM
+			has_character_modifier = dw_summoner_mage
+			NOT = { has_character_modifier = dw_familiar_imp }
+		}
+		allow = {
+			NOT = { has_character_modifier = dw_summon_imp_familiar_cooldown }
+		}
+		effect = {
+			hidden_effect = {
+				add_character_modifier = {
+					name = dw_summon_imp_familiar_cooldown
+					years = 1
+					hidden = yes
+				}
+				narrative_event = { id = dw_wizardtower.1060 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_character_modifier = dw_familiar_imp
+			}
+			modifier = {
+				factor = 0
+				NOT = { ai_zeal = 0 } # Those with a positive zeal see summoning an imp as counter to their faith.
+			}
+		}
+	}
+	# Spell: Commune
+	dw_cast_commune = {
+		ai_check_interval = 12
+		filter = self
+		ai_target_filter = self
+		#from_potential = {
+		#	has_character_modifier = dw_summoner_mage
+		#	NOT = { has_character_modifier = dw_commune_cooldown }
+		#}
+		potential = {
+			character = FROM
+			has_character_modifier = dw_summoner_mage
+		}
+		allow = {
+			FROM = { NOT = { has_character_modifier = dw_commune_cooldown }}
+		}
+		effect = {
+			# FROM = { save_event_target_as = dw_spell_caster }
+			# save_event_target_as = dw_spell_target
+			narrative_event = { id = dw_wizardtower.1070 }
+			hidden_tooltip = {
+				FROM = { add_character_modifier = { modifier = dw_commune_cooldown months = 6 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				factor = 0
+				OR = { # Won't commune due to distrust of the message
+					trait = paranoid
+					trait = cynical
+				}
+			}
+		}
+	}
+	# Spell: Minor Heal
+	dw_cast_minor_heal = {
+		ai_check_interval = 18
+		filter = court_including_me
+		ai_target_filter = court_including_me
+		from_potential = {
+			has_character_modifier = dw_transmutation_mage
+			NOT = { has_character_modifier = dw_minor_heal_cooldown }
+		}
+		potential = {
+			FROM = { has_character_modifier = dw_transmutation_mage }
+			dw_needs_minor_healing = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			FROM = { save_event_target_as = dw_spell_caster }
+			# save_event_target_as = dw_spell_target
+			narrative_event = { id = dw_wizardtower.1080 }
+			hidden_tooltip = {
+				FROM = { add_character_modifier = { modifier = dw_minor_heal_cooldown months = 6 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	# Spell: Major Heal
+	dw_cast_major_heal = {
+		ai_check_interval = 24
+		filter = court_including_me
+		ai_target_filter = court_including_me
+		from_potential = {
+			has_character_modifier = dw_transmutation_mage
+			NOT = { has_character_modifier = dw_major_heal_cooldown }
+		}
+		potential = {
+			FROM = { has_character_modifier = dw_transmutation_mage }
+			dw_needs_major_healing = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			FROM = { save_event_target_as = dw_spell_caster }
+			# save_event_target_as = dw_spell_target
+			narrative_event = { id = dw_wizardtower.1090 }
+			hidden_tooltip = {
+				FROM = { add_character_modifier = { modifier = dw_major_heal_cooldown months = 12 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	# Spell: Raise Undead Horde
+	dw_cast_undead_horde = {
+		ai_check_interval = 24
+		filter = self
+		ai_target_filter = self
+		#from_potential = {
+		#	has_character_modifier = dw_necromancer_mage
+		#	NOT = { has_character_modifier = dw_raise_undead_cooldown }
+		#}
+		potential = {
+			NOT = { has_character_modifier = dw_raise_undead_cooldown }
+			has_character_modifier = dw_necromancer_mage
+			character = FROM
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			# FROM = { save_event_target_as = dw_spell_caster }
+			# save_event_target_as = dw_spell_target
+			narrative_event = { id = dw_wizardtower.1100 }
+			hidden_tooltip = {
+				FROM = { add_character_modifier = { modifier = dw_raise_undead_cooldown months = 12 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0.75
+		}
+	}
+    #Hermione Purity Magic (removes lust/hedonist, chance to add chaste or celibate)
+	dw_hermione_purity_spell = {
+		filter = all
+		ai_target_filter = rivals # Hopefully to keep the ai from scoping and hitting a friendly
+		from_potential = { # From is the person targeting the person to evoke the decision
+			piety = 25
+			any_courtier = { # We ensure that we've Hermione in the court, and that she has enough piety to cast the spell
+				has_character_flag = dw_npc_hermione
+			}
+		}
+		potential = { # This is where we check the target to ensure they're valid
+			NOT = { character = FROM } # We don't want to target ourselves by accident
+			is_within_diplo_range = FROM # The target should be within the diplomatic range of the 'caster' for targeting purposes
+		}
+		allow = {
+			NOR = {
+				trait = in_hiding
+				trait = celibate
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					trait = chaste
+				}
+				remove_trait = chaste
+				add_trait = celibate
+			}
+			if = {
+				limit = {
+					NOR = {
+						trait = lustful
+						trait = hedonist
+						trait = celibate
+					}
+				}
+				add_trait = chaste
+			}
+			if = {
+				limit = {
+					OR = {
+						trait = lustful
+						trait = hedonist
+					}
+				}
+				remove_trait = lustful
+				remove_trait = hedonist
+			}
+			FROM = {
+				piety = -25
+			}
+		}
+		ai_will_do = {
+			factor = 0.05 # 5% chance the ai chooses to do this if they ever have that chance
+		}
+	}
+}

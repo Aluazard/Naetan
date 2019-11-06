@@ -1,0 +1,301 @@
+namespace = dw_randomevent
+
+# Agility trait part 1
+narrative_event = {
+	id = dw_randomevent.100
+	is_triggered_only = yes
+	desc = dw_randomevent100
+	picture = agility_01
+	window = "BiggerEventWindow"
+	title = agility_title
+    trigger = {
+        OR = {
+            trait = hero
+            trait = villain
+        }
+        NOT = { trait = agile }
+    }
+	option = { # I should explore this further
+		name = dw_randomevent100a
+		narrative_event = { id = dw_randomevent.101 days = 90 random = 120 }
+	}
+	option = { # This isn't for me
+		name = dw_randomevent100b
+	}
+}
+# Agility trait part 2
+narrative_event = {
+	id = dw_randomevent.101
+	is_triggered_only = yes
+	picture = oops
+	desc = {
+		trigger = { is_female = yes }
+		text = dw_randomevent101
+		picture = agility_03
+	}
+	desc = {
+		trigger = { is_female = no }
+		text = dw_randomevent101
+		picture = agility_02
+	}
+	window = "BiggerEventWindow"
+	title = agility_title
+	option = { # I'm more agile than before
+		name = dw_randomevent101a
+		if = {
+			limit = { trait = clumsy }
+			remove_trait = clumsy
+		}
+		else = {
+			add_trait = agile
+		}
+	}
+}
+# Tentacle encounter 01
+narrative_event = {
+	id = dw_randomevent.110
+	is_triggered_only = yes
+	desc = dw_randomevent110
+	picture = tentacle_01
+	window = "BiggerEventWindow"
+	title = symbiote_danger_title
+	only_rulers = yes # Pretrigger
+    trigger = {
+        any_courtier_or_vassal = {
+            is_female = yes
+            trait = tentacle
+            NOT = { has_character_modifier = dw_out_of_the_shadows }
+        }
+    }
+    immediate = {
+        random_courtier_or_vassal = { # a female tentacle being
+            limit = {
+                is_female = yes
+                trait = tentacle
+                NOT = { has_character_modifier = dw_out_of_the_shadows }
+            }
+            save_event_target_as = tentacle_being
+        }
+        random_courtier_or_vassal = { # a male who's ensared
+            limit = {
+                NOT = { trait = tentacle }
+                is_female = no
+                ai = yes
+            }
+            save_event_target_as = tentacle_target
+        }
+    }
+	option = { # I shall slay the tentacle beast
+		name = dw_randomevent110a
+		event_target:tentacle_being = { death = { death_reason = death_battle killer = ROOT } }
+        event_target:tentacle_target = { opinion = { modifier = opinion_saved_me months = 60 who = ROOT } }
+        ai_chance = {
+            factor = 60
+            modifier = {
+                factor = 0
+                OR = {
+                    trait = craven # Too chicken to help
+                    trait = tentacle # No reason to stop a brethern from seeding
+                }
+            }
+        }
+	}
+	option = { # I'll leave them be
+		name = dw_randomevent110b
+        event_target:tentacle_being = { opinion = { modifier = approves_of_my_behaviour months = 12 who = ROOT } }
+        event_target:tentacle_target = { add_trait = tentacle }
+        ai_chance = {
+            factor = 10
+        }
+	}
+    option = { # I must warn others
+        name = dw_randomevent110c
+        event_target:tentacle_being = {
+            add_character_modifier = { name = dw_enemy_of_mankind duration = -1 }
+            opinion = { modifier = approves_of_my_behaviour months = 12 who = ROOT }
+        }
+        event_target:tentacle_target = {
+            add_character_modifier = { name = dw_victim_of_attack duration = -1 }
+            add_trait = tentacle
+        }
+        ai_chance = {
+            factor = 40
+            modifier = {
+                factor = 0
+                trait = tentacle # No ratting out our own, could draw too much attention
+            }
+        }
+    }
+}
+# Tentacle encounter 02
+narrative_event = {
+	id = dw_randomevent.120
+	is_triggered_only = yes
+	desc = dw_randomevent120
+	picture = tentacle_02
+	window = "BiggerEventWindow"
+	title = symbiote_danger_title
+	only_rulers = yes # Pretrigger
+    trigger = {
+        any_courtier_or_vassal = {
+            trait = tentacle
+            NOT = { age = 18 } # A young symbiote feeds
+            NOT = { has_character_modifier = dw_out_of_the_shadows }
+        }
+    }
+    immediate = {
+        random_courtier_or_vassal = { # a young tentacle being
+            limit = {
+                trait = tentacle
+                NOT = { age = 18 }
+                NOT = { has_character_modifier = dw_out_of_the_shadows }
+            }
+            save_event_target_as = tentacle_being
+        }
+        random_courtier_or_vassal = { # a person who's ensared
+            limit = {
+                NOT = { trait = tentacle }
+                ai = yes
+            }
+            save_event_target_as = tentacle_target
+        }
+    }
+	option = { # I shall slay the tentacle beast
+		name = dw_randomevent120a
+		event_target:tentacle_being = { death = { death_reason = death_battle killer = ROOT } }
+        event_target:tentacle_target = { opinion = { modifier = opinion_saved_me months = 60 who = ROOT } }
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0
+                OR = {
+                    trait = craven # Too chicken to help
+                    trait = tentacle # No reason to stop a brethern from seeding
+                }
+            }
+        }
+	}
+	option = { # Kids these days
+        name = dw_randomevent120b
+        event_target:tentacle_being = { opinion = { modifier = approves_of_my_behaviour months = 12 who = ROOT } }
+        event_target:tentacle_target = {
+            add_trait = tentacle
+            random = {
+                chance = 50
+                add_trait = slow
+            }
+        }
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 100
+                trait = tentacle
+            }
+        }
+    }
+    option = { # I must warn others
+        name = dw_randomevent120c
+        event_target:tentacle_being = {
+            add_character_modifier = { name = dw_enemy_of_mankind duration = -1 }
+            opinion = { modifier = approves_of_my_behaviour months = 12 who = ROOT }
+        }
+        event_target:tentacle_target = {
+            add_character_modifier = { name = dw_victim_of_attack duration = -1 }
+            add_trait = tentacle
+            random = {
+                chance = 50
+                add_trait = imbecile
+            }
+        }
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0
+                trait = tentacle # No ratting out our own, could draw too much attention
+            }
+        }
+    }
+}
+# Hela appears on a villain's battlefield
+narrative_event = {
+	id = dw_randomevent.130
+	is_triggered_only = yes
+	desc = dw_randomevent130
+	picture = hela_01
+	window = "BiggerEventWindow"
+	title = dw_hela_battleground_title
+	ai = no # Player only pre-trigger
+    trigger = {
+        trait = villain
+		NOT = {
+			OR = {
+				has_global_flag = dw_hela_ignore
+				has_global_flag = dw_npc_hela_alive
+			}
+		}
+    }
+	option = { # Yes, join me
+		name = dw_randomevent130a
+		dw_create_hela = yes
+		location = {
+			ROOT = {
+				spawn_unit = { # The dead rise to join the battle
+		            province = PREV
+		            owner = ROOT
+		            match_character = FROM
+		            match_mult = 0.1
+		            attrition = 0
+		            maintenance_multiplier = 0 # The dead need no maintenance
+					reinforces = yes # Hela will reinforce the army with more dead over time.
+		        }
+			}
+		}
+	}
+	option = { # Not now
+		name = dw_randomevent130b
+	}
+	option = { # Never bother me.
+		name = dw_randomevent130c
+	}
+}
+# War dog vendor
+narrative_event = {
+	id = dw_randomevent.140
+	is_triggered_only = yes
+	desc = dw_randomevent140
+	picture = wardog_01
+	window = "BiggerEventWindow"
+	title = dw_wardog_title
+	only_rulers = yes # Pretrigger
+	prisoner = no # Pretrigger
+	has_global_flag = dw_bestiality_on # Pretrigger
+    trigger = {
+		NOT = { has_character_modifier = dw_war_dog }
+		OR = {
+			wealth = 10
+			trait = mind_control
+		}
+
+    }
+	option = { # I'll take one, as a gift
+		trigger = { trait = mind_control }
+		name = dw_randomevent140a
+		tooltip_info = mind_control
+		add_character_modifier = { modifier = dw_war_dog years = 8}
+	}
+	option = { # I'll take one, for 6
+		trigger = { stewardship = 10 }
+		name = dw_randomevent140b
+		tooltip_info = stewardship
+		wealth = -6
+		add_character_modifier = { modifier = dw_war_dog years = 8}
+	}
+	option = { # I'll take one
+		name = dw_randomevent140c
+		wealth = -10
+		add_character_modifier = { modifier = dw_war_dog years = 8}
+	}
+	option = { # I must decline your gift
+		name = dw_randomevent140d
+	}
+}

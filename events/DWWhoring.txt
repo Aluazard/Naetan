@@ -60,8 +60,8 @@ narrative_event = {
 	option = { #Special Options
 		trigger = {
 			OR = {
-				has_global_flag = dw_bordello_gloryhole 
-				has_global_flag = dw_bordello_mystery_room 
+				has_global_flag = dw_bordello_gloryhole
+				has_global_flag = dw_bordello_mystery_room
 				has_global_flag = dw_bordello_poledancer
 				AND = {
 					has_global_flag = dw_jessica_created
@@ -178,9 +178,9 @@ character_event = {
 					modifier = {
 						factor = 2 # twice as likely to happen is the customer fits some body types
 						OR = {
-							trait = huge_tits
-							trait = enormous_tits
-							trait = gigantic_tits
+							trait = dw_huge_tits
+							trait = dw_enormous_tits
+							trait = dw_gigantic_tits
 							race = irish # customer has red hair
 						}
 					}
@@ -197,13 +197,13 @@ character_event = {
 			limit = {
 				trait = trap
 			}
-			random_list = { 
+			random_list = {
 				10 = { # A customer is shackled and taken by two men
 					modifier = {
 						factor = 2 # twice as likely to happen is the customer fits some body types
 						OR = {
-							trait = tiny_dick
-							trait = small_dick
+							trait = dw_tiny_dick
+							trait = dw_small_dick
 						}
 					}
 					narrative_event = { id = DWWhoring.3003 }
@@ -238,7 +238,7 @@ narrative_event = {
 	immediate = {
 		random_courtier = {
 			limit = {
-				has_character_flag = dw_npc_jessica				
+				has_character_flag = dw_npc_jessica
 			}
 			save_event_target_as = dw_jessica_target
 		}
@@ -269,11 +269,7 @@ narrative_event = {
 			limit = {
 				location = {
 					any_province_character = {
-						OR = {
-							trait = cheap_whore
-							trait = experienced_whore
-							trait = exclusive_whore
-						}
+						trait = prostitute
 						is_female = yes
 						NOT = { trait = futa } # We don't want to accidentally grab a futa if the customer is only wanting a 'normal' female
 						ai = yes #we don't want the player being pulled into these events against their will
@@ -284,11 +280,7 @@ narrative_event = {
 			location = {
 				random_province_character = {
 					limit = {
-						OR = {
-							trait = cheap_whore
-							trait = experienced_whore
-							trait = exclusive_whore
-						}
+						trait = prostitute
 						NOT = { trait = futa } # We don't want to accidentally grab a futa if the customer is only wanting a 'normal' female
 						is_female = yes
 						ai = yes
@@ -320,8 +312,8 @@ narrative_event = {
 				modifier = {
 					factor = 0 # zeroes out to not be an option if we've non-futa, or if they've a small sized dick
 					NOT = { trait = futa }
-					trait = tiny_dick
-					trait = small_dick
+					trait = dw_tiny_dick
+					trait = dw_small_dick
 				}
 				narrative_event = { id = DWWhoring.120 }
 			}
@@ -402,11 +394,7 @@ narrative_event = {
 			limit = {
 				location = {
 					any_province_character = {
-						OR = {
-							trait = cheap_whore
-							trait = experienced_whore
-							trait = exclusive_whore
-						}
+						trait = prostitute
 						is_female = no
 						ai = yes #we don't want the player being pulled into these events against their will
 					}
@@ -416,11 +404,7 @@ narrative_event = {
 			location = {
 				random_province_character = {
 					limit = {
-						OR = {
-							trait = cheap_whore
-							trait = experienced_whore
-							trait = exclusive_whore
-						}
+						trait = prostitute
 						is_female = no
 						ai = yes
 					}
@@ -474,11 +458,6 @@ narrative_event = {
 		}
 		name = DWWhoring22A
 		narrative_event = { id = DWWhoring.300 }
-		hidden_tooltip = {
-			event_target:dw_brothel_whore = {
-				character_event = { id = DWCore.9200 } #Chance for homosexual trait to be obtained
-			}
-		}
 	}
 	option = { # Female fucked by male whore
 		trigger = {
@@ -519,11 +498,7 @@ narrative_event = {
 			limit = {
 				location = {
 					any_province_character = {
-						OR = {
-							trait = cheap_whore
-							trait = experienced_whore
-							trait = exclusive_whore
-						}
+						trait = prostitute
 						is_female = yes
 						trait = futa
 						ai = yes #we don't want the player being pulled into these events against their will
@@ -534,11 +509,7 @@ narrative_event = {
 			location = {
 				random_province_character = {
 					limit = {
-						OR = {
-							trait = cheap_whore
-							trait = experienced_whore
-							trait = exclusive_whore
-						}
+						trait = prostitute
 						trait = futa
 						is_female = yes
 						ai = yes
@@ -665,43 +636,26 @@ narrative_event = {
 			event_target:dw_brothel_whore = { character = yes }
 		}
 		name = "DWWhoring100A"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
-		event_target:dw_brothel_whore = {
-			character_event = { id = DWCore.9000 } # Pregnancy check for the female
-		}
+		opinion = { modifier = dw_good_sex who = event_target:dw_brothel_whore  }
+		event_target:dw_brothel_whore = { opinion = { modifier = dw_good_sex who = ROOT }}
 	}
 	option = { # Cum outside named whore
 		trigger = {
 			event_target:dw_brothel_whore = { character = yes }
 		}
 		name = "DWWhoring100B"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 	option = { # Cum inside common whore
 		trigger = {
 			NOT = { event_target:dw_brothel_whore = { character = yes }}
 		}
 		name = "DWWhoring100C"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 	option = { # Cum outside common whore
 		trigger = {
 			NOT = { event_target:dw_brothel_whore = { character = yes }}
 		}
 		name = "DWWhoring100D"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 }
 # .110 Female whore finger bangs female customer
@@ -727,20 +681,12 @@ narrative_event = {
 			event_target:dw_brothel_whore = { character = yes }
 		}
 		name = "DWWhoring110A"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 	option = { # Unnamed Whore end
 		trigger = {
 			NOT = { event_target:dw_brothel_whore = { character = yes }}
 		}
 		name = "DWWhoring110B"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 }
 # .120 Female common whore fucked by a futa customer
@@ -752,10 +698,6 @@ narrative_event = {
 	is_triggered_only = yes # Triggered by .12
 	option = { # Finally I feel empty
 		name = DWWhoring120A
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 }
 
@@ -783,40 +725,24 @@ narrative_event = {
 			event_target:dw_brothel_whore = { character = yes }
 		}
 		name = "DWWhoring300A"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 	option = { # Cum outside customer
 		trigger = {
 			event_target:dw_brothel_whore = { character = yes }
 		}
 		name = "DWWhoring300B"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 	option = { # Cum inside customer
 		trigger = {
 			NOT = { event_target:dw_brothel_whore = { character = yes }}
 		}
 		name = "DWWhoring300C"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 	option = { # Cum outside customer
 		trigger = {
 			NOT = { event_target:dw_brothel_whore = { character = yes }}
 		}
 		name = "DWWhoring300D"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 }
 # .310 Male whore fucks female customer
@@ -843,12 +769,10 @@ narrative_event = {
 			event_target:dw_brothel_whore = { character = yes }
 		}
 		name = "DWWhoring310A"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
+		opinion = { modifier = dw_good_sex who = event_target:dw_brothel_whore  }
+		event_target:dw_brothel_whore = { opinion = { modifier = dw_good_sex who = ROOT }}
 		event_target:dw_brothel_whore = {
-			character_event = { id = DWCore.9005 } # Pregnancy check for the customer
+			character_event = { id = dw_visits.9010 } # Pregnancy check for the customer
 		}
 	}
 	option = { # Cum outside customer
@@ -856,10 +780,6 @@ narrative_event = {
 			event_target:dw_brothel_whore = { character = yes }
 		}
 		name = "DWWhoring310B"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 	## Common whore
 	option = { # Cum inside customer
@@ -867,21 +787,13 @@ narrative_event = {
 			NOT = { event_target:dw_brothel_whore = { character = yes }}
 		}
 		name = "DWWhoring310C"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
-		character_event = { id = DWCore.9010 } # Pregnancy check for the customer
+		character_event = { id = dw_visits.9020 } # Pregnancy check for the customer
 	}
 	option = { # Cum outside customer
 		trigger = {
 			NOT = { event_target:dw_brothel_whore = { character = yes }}
 		}
 		name = "DWWhoring310D"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 }
 ## .400 - .499 Futa specific whores
@@ -909,12 +821,10 @@ narrative_event = {
 			event_target:dw_brothel_whore = { character = yes }
 		}
 		name = "DWWhoring400A"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
+		opinion = { modifier = dw_good_sex who = event_target:dw_brothel_whore  }
+		event_target:dw_brothel_whore = { opinion = { modifier = dw_good_sex who = ROOT }}
 		event_target:dw_brothel_whore = {
-			character_event = { id = DWCore.9000 } # Pregnancy check for the female
+			character_event = { id = dw_visits.9000 } # Pregnancy check for the female
 		}
 	}
 	option = { # Cum outside named whore
@@ -922,30 +832,18 @@ narrative_event = {
 			event_target:dw_brothel_whore = { character = yes }
 		}
 		name = "DWWhoring400B"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 	option = { # Cum inside common whore
 		trigger = {
 			NOT = { event_target:dw_brothel_whore = { character = yes }}
 		}
 		name = "DWWhoring400C"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 	option = { # Cum outside common whore
 		trigger = {
 			NOT = { event_target:dw_brothel_whore = { character = yes }}
 		}
 		name = "DWWhoring400D"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 }
 # .410 Futa whore fucks female customer
@@ -972,12 +870,10 @@ narrative_event = {
 			event_target:dw_brothel_whore = { character = yes }
 		}
 		name = "DWWhoring410A"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
+		opinion = { modifier = dw_good_sex who = event_target:dw_brothel_whore  }
+		event_target:dw_brothel_whore = { opinion = { modifier = dw_good_sex who = ROOT }}
 		event_target:dw_brothel_whore = {
-			character_event = { id = DWCore.9005 } # Pregnancy check for the customer
+			character_event = { id = dw_visits.9010 } # Pregnancy check for the customer
 		}
 	}
 	option = { # Cum outside customer
@@ -985,10 +881,6 @@ narrative_event = {
 			event_target:dw_brothel_whore = { character = yes }
 		}
 		name = "DWWhoring410B"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 	## Common whore
 	option = { # Cum inside customer
@@ -996,21 +888,13 @@ narrative_event = {
 			NOT = { event_target:dw_brothel_whore = { character = yes }}
 		}
 		name = "DWWhoring410C"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
-		character_event = { id = DWCore.9010 } # Pregnancy check for the customer
+		character_event = { id = dw_visits.9020 } # Pregnancy check for the customer
 	}
 	option = { # Cum outside customer
 		trigger = {
 			NOT = { event_target:dw_brothel_whore = { character = yes }}
 		}
 		name = "DWWhoring410D"
-		add_character_modifier = {
-			name = dw_good_sex
-			duration = 30
-		}		
 	}
 }
 
@@ -1253,24 +1137,7 @@ narrative_event = {
 	is_triggered_only = yes # Triggered by .500
 	option = { # Money Earned
 		name = DWWhoring600A
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 5 # Higher than normal due to two customers
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 10
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 15
-		}
+		wealth = 10
 	}
 }
 # .610 Female working whore takes two cocks - male named customer
@@ -1287,48 +1154,14 @@ narrative_event = {
 			chance = 25 # 25% chance the plea is ignored
 			narrative_event = { id = DWWhoring.611 }
 		}
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 6 # Higher than normal due to two customers, and double-penetration
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 12
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 18
-		}
+		wealth = 12
 	}
 	option = { # Instruct them to fill me up
 		name = DWWhoring610B
-		event_target:dw_brothel_male_john = { 
-			character_event = { id = DWCore.9005 } # Pregnancy check to see if john gets working whore pregnant.
+		event_target:dw_brothel_male_john = {
+			character_event = { id = dw_visits.9010 } # Pregnancy check to see if john gets working whore pregnant.
 		}
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 6 # Higher than normal due to two customers, and double-penetration
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 12
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 18
-		}
+		wealth = 12
 	}
 }
 # .611 Female working whore takes two cocks - male named customer cums inside after being told not to do so.
@@ -1371,24 +1204,7 @@ narrative_event = {
 	is_triggered_only = yes # Triggered by .500
 	option = { # Money Earned
 		name = DWWhoring620A
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 2.5 # standard rate
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 5
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 7.5
-		}
+		wealth = 5
 	}
 }
 # .630 Female Futa working whore fucks female, while being pegged - female named customer
@@ -1401,48 +1217,14 @@ narrative_event = {
 	is_triggered_only = yes # Triggered by .500
 	option = { # Fill the customer as requested
 		name = DWWhoring630A
-		event_target:dw_brothel_female_jane = { 
-			character_event = { id = DWCore.9000 } # Pregnancy check to see if working futa gets the female customer pregnant
+		event_target:dw_brothel_female_jane = {
+			character_event = { id = dw_visits.9000 } # Pregnancy check to see if working futa gets the female customer pregnant
 		}
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 5 # Higher than normal due to two customers
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 10
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 15
-		}
+		wealth = 10
 	}
 	option = { # Don't give the customer your seed
 		name = DWWhoring630B
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 5 # Higher than normal due to two customers
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 10
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 15
-		}
+		wealth = 10
 	}
 }
 # .640 Female working whore takes futa cock - futa named customer
@@ -1459,48 +1241,14 @@ narrative_event = {
 			chance = 25 # 25% chance the plea is ignored
 			narrative_event = { id = DWWhoring.641 }
 		}
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 2.5
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 5
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 7.5
-		}
+		wealth = 5
 	}
 	option = { # Instruct them to fill me up
 		name = DWWhoring640B
-		event_target:dw_brothel_female_futa = { 
-			character_event = { id = DWCore.9005 } # Pregnancy check to see if futa gets working whore pregnant.
+		event_target:dw_brothel_female_futa = {
+			character_event = { id = dw_visits.9010 } # Pregnancy check to see if futa gets working whore pregnant.
 		}
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 2.5
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 5
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 7.5
-		}
+		wealth = 5
 	}
 }
 # .641 Female working whore takes futa cock - futa named customer
@@ -1543,24 +1291,7 @@ narrative_event = {
 	is_triggered_only = yes # Triggered by .500
 	option = { # Money Earned
 		name = DWWhoring650A
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 2.5 # standard rate
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 5
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 7.5
-		}
+		wealth = 5
 	}
 }
 # .660 Female working whore takes 2 futa cocks - futa named customer
@@ -1581,48 +1312,14 @@ narrative_event = {
 			chance = 25 # 25% chance the plea is ignored
 			narrative_event = { id = DWWhoring.661 }
 		}
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 5 # higher due to 2 customers
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 7.5
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 15
-		}
+		wealth = 7.5
 	}
 	option = { # Instruct them to fill me up
 		name = DWWhoring660B
-		event_target:dw_brothel_female_futa = { 
-			character_event = { id = DWCore.9005 } # Pregnancy check to see if futa gets working whore pregnant.
+		event_target:dw_brothel_female_futa = {
+			character_event = { id = dw_visits.9010 } # Pregnancy check to see if futa gets working whore pregnant.
 		}
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 5 # higher due to 2 customers
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 7.5
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 15
-		}
+		wealth = 7.5
 	}
 }
 # .661 Female working whore takes 2 futa cocks - futa named customer
@@ -1665,24 +1362,7 @@ narrative_event = {
 	is_triggered_only = yes # Triggered by .500
 	option = { # Money Earned
 		name = DWWhoring670A
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 2.5
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 5
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 7.5
-		}
+		wealth = 5
 	}
 }
 
@@ -1697,24 +1377,7 @@ narrative_event = {
 	is_triggered_only = yes # Triggered by .500
 	option = { # Money Earned
 		name = DWWhoring800A
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 2.5
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 5
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 7.5
-		}
+		wealth = 5
 	}
 }
 ## .900 Male Traps Working
@@ -1728,24 +1391,7 @@ narrative_event = {
 	is_triggered_only = yes # Triggered by .500
 	option = { # Money Earned
 		name = DWWhoring900A
-		if = {
-			limit = {
-				trait = cheap_whore
-			}
-			wealth = 2.5
-		}
-		if = {
-			limit = {
-				trait = experienced_whore
-			}
-			wealth = 5
-		}
-		if = {
-			limit = {
-				trait = exclusive_whore
-			}
-			wealth = 7.5
-		}
+		wealth = 5
 	}
 }
 
@@ -1759,148 +1405,6 @@ character_event = {
 	}
 }
 
-# .1000 Whore no more - liege requests a character stop whoring
-character_event = {
-	id = DWWhoring.1000
-	hide_window = yes # Nothing to see here
-	is_triggered_only = yes # Triggered by targeted decision
-	immediate = {
-		FROM = {
-			save_event_target_as = dw_nomore_whore
-		}
-		if = { # If the whore has any of these traits or conditions, then they'll retire from whoring
-			limit = {
-				FROM = {
-					OR = {
-						trait = retired_whore # Shouldn't be possible to also have this, but just in case we'll include it here
-						trait = chaste # conflicts with belief
-						trait = celibate # conflicts with belief
-						trait = monk # conflicts with belief
-						trait = nun # conflicts with belief
-						trait = angel # conflicts with belief
-						trait = martial_cleric # conflicts with belief
-						trait = scholarly_theologian # conflicts with belief
-						trait = mastermind_theologian # conflicts with belief
-						trait = zealous # conflicts with belief
-						trait = depressed # heart not in it
-						trait = victim # heart not in it
-						trait = shy # too embarrassed
-						trait = syphilitic # too sickly
-						trait = has_tuberculosis # too sickly
-						trait = has_typhoid_fever # too sickly
-						trait = has_typhus # too sickly
-						trait = has_bubonic_plague # too sickly
-						trait = has_measles # too sickly
-						trait = has_small_pox # too sickly
-						trait = pneumonic # too sickly
-						trait = leper # too sickly
-						trait = infirm # too injured
-						trait = maimed # too injured
-						trait = incapable # unable
-						trait = eunuch # unable
-						trait = frog # unable
-						age = 50 # too old for this shit
-						trait = genius # risks outweigh rewards
-						trait = quick # risks outweigh rewards
-						trait = shrewd # risks outweigh rewards
-						trait = scholar # risks outweigh rewards
-						trait = theologian # risks outweigh rewards
-						trait = mystic # risks outweigh rewards
-						trait = mage # risks outweigh rewards
-						trait = erudite # risks outweigh rewards
-						trait = branded_slave # will obey their liege
-						trait = content # will obey their liege
-						trait = trusting # will obey their liege
-						trait = pregnant # one bun in the oven is enough
-						is_married = yes # Getting hitched keeps someone from working, in order to avoid headaches
-					}
-				}
-			}
-			narrative_event = { id = DWWhoring.1001 } # Whore retires
-			break = yes # Take us out of the immediate block
-		}
-		# If we reach here, then it's not a guaranteed end to whoring.
-		random_list = {
-			#TODO Add modifiers to the percentages
-			75 = { # 75% likely to stop
-				narrative_event = { id = DWWhoring.1001 } # Whore retires
-			}
-			25 = { # 25% likely to keep on whoring
-				narrative_event = { id = DWWhoring.1003 } # Whore keeps on whoring
-			}
-		}
-	}
-}
-# .1001 Liege learns that the whore has agreed to retire
-narrative_event = {
-	id = DWWhoring.1001
-	desc = DWWhoring1001
-	picture = brothel
-	title = dw_whore_nomore_title
-	is_triggered_only = yes # Triggered by .1000
-	option = { # Wonderful news
-		name = DWWhoring1001A
-		event_target:dw_nomore_whore = {
-			remove_trait = cheap_whore
-			remove_trait = experienced_whore
-			remove_trait = exclusive_whore
-			add_trait = retired_whore
-		}
-	}
-}
-# .1003 Liege learns that the whore has will keep whoring
-narrative_event = {
-	id = DWWhoring.1003
-	desc = DWWhoring1003
-	picture = brothel
-	title = dw_whore_nomore_title
-	is_triggered_only = yes # Triggered by .1000
-	option = { # Wonderful news
-		name = DWWhoring1003A
-		event_target:dw_nomore_whore = {
-			random = {
-				chance = 25 # 25% they get the stubborn trait
-				add_trait = stubborn
-			}
-		}
-	}
-}
-# .1009 Retire from whoring via old age
-character_event = {
-	id = DWWhoring.1009
-	min_age = 50 # 50 year olds or older pre-trigger requirement
-	hide_window = yes # Nothing to see here
-	is_triggered_only = yes # triggered via annual on_action pulse
-	trigger = { # only need to check old whores
-		OR = {
-			trait = cheap_whore
-			trait = experienced_whore
-			trait = exclusive_whore
-		}
-		NOT = { trait = immortal }
-	}
-	immediate = {
-		add_trait = retired_whore
-		if ={
-			limit = {
-				trait = cheap_whore
-			}
-			remove_trait = cheap_whore
-		}
-		if ={
-			limit = {
-				trait = experienced_whore
-			}
-			remove_trait = experienced_whore
-		}
-		if ={
-			limit = {
-				trait = exclusive_whore
-			}
-			remove_trait = exclusive_whore
-		}
-	}
-}
 # .1100 Shantae Dancing
 narrative_event = {
 	id = DWWhoring.1100
@@ -1921,10 +1425,12 @@ narrative_event = {
 	}
 	option = { # Join my court Shantae
 		trigger = {
+			NOT = { has_global_flag = dw_npc_shantae_alive }
 			NOT = { ai = yes }
 		}
 		name = DWWhoring1100A
-		hidden_tooltip = { character_event = { id = DWWhoring.1101 } }
+		# hidden_tooltip = { character_event = { id = DWWhoring.1101 } }
+		dw_create_shantae = yes
 		custom_tooltip = { text = dw_add_npc_court }
 	}
 	option = { # Just relax and enjoy the show for the evening
@@ -1935,71 +1441,38 @@ narrative_event = {
 			}
 			remove_trait = stressed
 		}
-		hidden_tooltip = { 
+		hidden_tooltip = {
 			if = {
 				limit = {
 					NOT = { has_character_flag = dw_saw_shantae }
 				}
 			}
-			set_character_flag = dw_saw_shantae 
+			set_character_flag = dw_saw_shantae
 		}
 	}
 	option = { # Go find me a whore
 		name = DWWhoring1100C
 		narrative_event = { id = DWWhoring.2 }
-		hidden_tooltip = { 
+		hidden_tooltip = {
 			if = {
 				limit = {
 					NOT = { has_character_flag = dw_saw_shantae }
 				}
 			}
-			set_character_flag = dw_saw_shantae 
+			set_character_flag = dw_saw_shantae
 		}
 	}
 }
 # .1101 Shantae Created
-character_event = {
-	id = DWWhoring.1101
-	hide_window = yes
-	is_triggered_only = yes # .1100
-	immediate = {
-		create_character = {
-		  random_traits = no
-		  name = "Shantae"
-		  religion = ROOT
-		  culture = ROOT
-		  race = egyptian_arabic
-		  dna = akhgbhfbaah
-		  female = yes
-		  age = 17
-		  attributes = {
-			intrigue = 5
-		  }
-		  health = 5
-		  fertility = 0.50
-		  trait = flamboyant_schemer # Likes to keep herself entertained with a little drama
-		  trait = fair # She is easy on the eyes
-		  trait = lustful # She oozes sex, both literally and figuratively
-		  trait = greedy # She likes wealth
-		  trait = diligent # She's worked hard to get where she's at in life
-		  trait = gregarious # Known to be a bit chatty
-		  trait = big_tits # Larger than average... obviously
-		  trait = portrait25 # Custom portrait for Shantae
-		  trait = experienced_whore # She's not new to using what she has for financial gain
-		}
-		new_character = {
-			set_character_flag = dw_boobs_checked
-			set_character_flag = dw_npc_shantae
-			set_global_flag = dw_created_shantae
-			if = {  # For Christianity mod compatibility, to prevent a second set of tits getting assigned later
-				limit = {
-					has_global_flag = christ_enabled
-				}
-				set_character_flag = nada_checked
-			}
-		}
-	}
-}
+#character_event = {
+#	id = DWWhoring.1101
+#	hide_window = yes
+#	is_triggered_only = yes # .1100
+#	immediate = {
+#		dw_create_shantae = yes
+#	}
+#}
+
 # .2000 Glory Hole, Male working - 1
 narrative_event = {
 	id = DWWhoring.2000
@@ -2173,7 +1646,7 @@ narrative_event = {
 		hidden_tooltip = {
 			determine_jessica_bribery_attempt = yes
 		}
-	}	
+	}
 }
 # .5004 Jessica - Fuck-off! (Failed Bribery)
 narrative_event = {

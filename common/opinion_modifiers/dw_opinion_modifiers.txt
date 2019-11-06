@@ -41,41 +41,6 @@ dw_opinion_patron_artwork = {
 	months = 6
 }
 
-## Sex Related
-dw_opinion_good_head = {
-	opinion = 15
-	months = 3
-}
-dw_opinion_good_fuck = {
-	opinion = 15
-	months = 6
-}
-dw_opinion_sexual_disgust= {
-	opinion = -15
-	months = 12
-}
-dw_opinion_bad_dog_raper_owner = {
-	opinion = -50
-	months = 12
-}
-dw_opinion_good_dog_owner = {
-	opinion = 10
-	months = 12
-}
-dw_opinion_good_dog_slut = {
-	opinion = 10
-	months = 12
-}
-dw_opinion_dynasty_assault = { # For when a female ruler forbids a customer to cum inside them, and the customer does so anyway.
-	opinion = -50
-	prison_reason = yes
-	months = 12
-}
-dw_opinion_good_cock_tease = { # For acts that arouse with no promise of release - sort of like paying for a lap dance, you don't expect to cum, just to be really erotically entertained by the act
-	opinion = 20
-	months = 6
-}
-
 ## How someone was treated
 dw_opinion_got_their_way = {
 	opinion = 20
@@ -242,4 +207,67 @@ dw_opinion_mind_manipulator = {
 	prison_reason = yes # The impacted person viewing the tentacle-kin with such admiration is the dead give away of such a heinous act
 	execute_reason = yes
 	banish_reason = yes
+}
+
+dw_reassured_me = {
+    opinion = 10
+    months = 12
+}
+dw_bought_prison_release = {
+    opinion = 10
+    months = 36
+}
+dw_broke_out_of_prison = { # larger & longer opinion due to the personal risk when compared to dw_bought_prison_release
+    opinion = 15
+    months = 60
+}
+dw_good_company = {
+    opinion = 5
+    months = 3
+}
+dw_my_nemesis = {
+    opinion = -500
+    crime = yes # Considers the individual to be a foe/rival for related game mechanics (dueling)
+    disable_non_aggression_pacts = yes
+    years = 5
+}
+dw_healed_me = {
+    opinion = 20
+    months = 12
+}
+dw_mind_control_friendly = {
+    opinion = 25
+    months = 12
+}
+dw_mind_control_notice_me = {
+    opinion = 10
+    months = 12
+}
+dw_mind_control_obedience = {
+    #AI will accept all diplomatic interactions. Also makes the trigger obedient return true
+    opinion = 50
+    months = 2400 # For life
+    obedient = yes
+}
+dw_mind_control_assault = {
+    opinion = -50
+    months = 60
+    crime = yes
+    disable_non_aggression_pacts = yes
+}
+dw_showed_good_etiquette = {
+    opinion = 10
+    months = 6
+}
+dw_showed_poor_etiquette = {
+    opinion = -10
+    months = 6
+}
+dw_supported_performance = {
+    opinion = 10
+    months = 6
+}
+dw_ridculed_performance = {
+    opinion = -10
+    months = 6
 }

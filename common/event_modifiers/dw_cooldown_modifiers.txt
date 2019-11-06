@@ -1,0 +1,36 @@
+# Cool down modifiers
+
+dw_mind_control_cooldown = {
+	icon = 82
+	learning = -1
+}
+dw_midas_touch_cooldown = {
+	icon = 80
+}
+dw_lightning_bolt_cooldown = {
+	icon = 80
+}
+dw_quick_heal_cooldown = {
+	icon = 80
+}
+dw_disintegrate_cooldown = {
+	icon = 80
+}
+dw_summon_familiar_cooldown = {
+	icon = 80
+}
+dw_summon_imp_familiar_cooldown = {
+	icon = 80
+}
+dw_commune_cooldown = {
+	icon = 80
+}
+dw_minor_heal_cooldown ={
+	icon = 80
+}
+dw_major_heal_cooldown ={
+	icon = 80
+}
+dw_raise_undead_cooldown = {
+	icon = 80
+}

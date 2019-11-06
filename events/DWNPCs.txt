@@ -19,7 +19,7 @@ character_event = {
 			age = 45
 			trait = vampire
 			trait = ugly
-			trait = regular_dick
+			trait = dw_regular_dick
 			trait = portrait131
 		}
 		new_character = {
@@ -47,7 +47,7 @@ character_event = {
 			age = 40
 			trait = vampire
 			trait = ugly
-			trait = regular_dick
+			trait = dw_regular_dick
 			trait = portrait134
 			attributes = {
 				intrigue = 9
@@ -67,7 +67,7 @@ character_event = {
 	id = DWNPC.03
 	ai = no # We only want the player to spawn her
 	hide_window = yes # Nothing to see here
-	is_triggered_only = yes # 
+	is_triggered_only = yes #
 	trigger = {
 		NOT = { has_global_flag = dw_vampirella_created } # We only create her once
 	}
@@ -88,7 +88,7 @@ character_event = {
 			trait = patient # Being long lived, she works towards the long game
 			trait = just # Finds it hard to look the other way
 			trait = adventurer # She's taken to exploration and artifact hunting over the years, seldom staying long in one place
-			trait = big_tits
+			trait = dw_big_tits
 			trait = vampire_ancient # Daughter of Lilith, one of the first vampires, has lived centuries.
 			trait = immortal # She has achieved immortality
 			trait = portrait135 # custom Vampirella portrait
@@ -120,7 +120,7 @@ namespace = DWLilith
 # .5 Lilith created and given offmap_ruler control
 character_event = {
 	id = DWLilith.5
-	ai = yes 
+	ai = yes
 	hide_window = yes # Nothing to see here
 	is_triggered_only = yes # Triggered via on_action
 	trigger = {
@@ -145,11 +145,11 @@ character_event = {
 					health = 9.5
 					historical = yes
 					trait = fair
-					trait = bombshell
+					trait = enchanting
 					trait = quick
 					trait = patient
 					trait = proud
-					trait = huge_tits
+					trait = dw_huge_tits
 					trait = immortal
 					trait = lilith
 					trait = portrait42 # Liliths custom portrait
@@ -179,7 +179,7 @@ namespace = DWMana
 # .5 Wellspring created and given offmap_ruler control
 character_event = {
 	id = DWMana.5
-	ai = yes 
+	ai = yes
 	hide_window = yes # Nothing to see here
 	is_triggered_only = yes # Triggered via on_action
 	trigger = {
@@ -256,7 +256,7 @@ character_event = {
 		  trait = diligent
 		  trait = proud
 		  trait = brave
-		  trait = big_dick
+		  trait = dw_big_dick
 		  trait = portrait37 # Custom portrait for Gaston
 		  trait = rough_terrain_leader
 		}
@@ -274,7 +274,7 @@ character_event = {
 				}
 				save_event_target_as = dw_fairy_lover
 				host = { character_event = { id = DWFairyTales.99 }} # Event that adds npc as a lover
-				host = {character_event = { id = DWCore.9000 }} #If I did this correctly, the player (a female) will be ROOT and Garson will be the FROM when the event runs
+				host = {character_event = { id = dw_visits.9000 }} #If I did this correctly, the player (a female) will be ROOT and Garson will be the FROM when the event runs
 			}
 			if = { # If Gaston is obtained via a male sleeping with him
 				limit = {
@@ -284,7 +284,7 @@ character_event = {
 				}
 				save_event_target_as = dw_fairy_lover
 				host = { character_event = { id = DWFairyTales.99 }} # Event that adds npc as a lover
-			}			
+			}
 		}
 	}
 }
@@ -320,7 +320,7 @@ character_event = {
 		  trait = kind # Not really charitable as little, yet she is kind and thinks positively of most that she meets.
 		  trait = humble # Even being as smart as she is, Belle isn't one to boast and is more likely to self depreciate herself.
 		  trait = content # Belle doesn't seek to make waves, and is largely accepting of her position. Even going so far as to question the player if it's alright for them to be interested in her.
-		  trait = small_tits # I've always thought that Belle's ass was hotter and more impressive then her chest, seeing it as being on the small side in how it was represented.
+		  trait = dw_small_tits # I've always thought that Belle's ass was hotter and more impressive then her chest, seeing it as being on the small side in how it was represented.
 		  trait = portrait27 # Custom portrait for Belle
 		  trait = virgin # If we include a seduce Belle option, we'll need to do a check to remove this trait.
 		}
@@ -351,7 +351,7 @@ character_event = {
 				limit = {
 					host = {
 						has_character_flag = dw_took_belle
-					}					
+					}
 				}
 				add_trait = depressed # She was taken and her village suffered
 			}
@@ -398,7 +398,7 @@ character_event = {
 		  trait = envious # Her jealousy has driven her to do the most vile deeds
 		  trait = deceitful # Will use any trick to get what she desires
 		  trait = ambitious # She desires to reside at the top of the heap
-		  trait = regular_tits # 
+		  trait = dw_regular_tits #
 		  trait = portrait38 # Custom portrait
 		}
 		new_character = {
@@ -443,12 +443,12 @@ character_event = {
 		  fertility = 0.50
 		  trait = charismatic_negotiator # A natural gift in swaying others, from the Huntsman to the dwarves
 		  trait = fair # Skin pale as snow, lips red like blood, and hair of ebony
-		  trait = bombshell # She ends up growing into a woman who's beauty trumps her step mother who was the fairest of them all
+		  trait = enchanting # She ends up growing into a woman who's beauty trumps her step mother who was the fairest of them all
 		  trait = dull # A true dimwit, in the fable she is almost murdered twice while staying with the dwarves before finally falling for the old poison apple trick.
 		  trait = kind # She treats those she meets with kindness, rarely asking for anything in return
 		  trait = humble # Even though she is beautiful, she is humble enough to accept and perform any task, even cleaning a household. Few nobles would be so comfortable.
 		  trait = honest # She seeks to deceive no one. Readily admitting her deed to the dwarves when she ate their food.
-		  trait = regular_tits # 
+		  trait = dw_regular_tits #
 		  trait = portrait28 # Custom portrait
 		  trait = virgin # While not necessarily chaste (she's a bit of a flirt), she has so far manage to maintain her virginity
 		}
@@ -498,7 +498,7 @@ character_event = {
 		  trait = kind # She treats those she meets with kindness, even trying to please and be accepted by those who were cruel to her
 		  trait = humble # She wasn't a braggart, and had a lower view of her own beauty than others perceived.
 		  trait = cynical # She believed more in magic and in speaking with animals than most religions would tolerate
-		  trait = regular_tits # 
+		  trait = dw_regular_tits #
 		  trait = portrait33 # Custom portrait
 		  trait = virgin # While not necessarily chaste (she's a definite romantic who desires to be swept off her feet), she has so far manage to maintain her virginity
 		}
@@ -549,7 +549,7 @@ character_event = {
 		  trait = diligent # To handle all of that hair, brushing it, that requires some serious diligence
 		  trait = gregarious # For someone who was locked away, she managed to avoid being shy and instead speaks to any and all who'll have a conversation with her
 		  trait = trusting # She'll readily open her legs, trusting the intention that her partner has isn't simply using her
-		  trait = regular_tits # 
+		  trait = dw_regular_tits #
 		  trait = portrait32 # Custom portrait
 		  # Not a virgin as she gives it up so quickly in the fable that we can assume that she's broken her own hymen potentially via intense toe curling masturbation sessions
 		}
@@ -594,13 +594,13 @@ character_event = {
 		  health = 5
 		  fertility = 0.50
 		  trait = thrifty_clerk # Given a basic understanding on governing
-		  trait = fair # 
+		  trait = fair #
 		  trait = charitable # Wasn't shy about giving things away, like her kingdom...
 		  trait = kind # Sees the best in people, unfortunately even if it isn't there
 		  trait = brave # self sacrifice, forging off after her sister against the perils of nature
 		  trait = diligent # She pushed on and kept at it when others may have decided they tried hard enough
 		  trait = trusting # She was easily duped both in love and in handing her power over to someone who didn't plan on returning it
-		  trait = regular_tits # 
+		  trait = dw_regular_tits #
 		  trait = portrait29 # Custom portrait
 		  trait = virgin # Not chaste - as she was willing to wed the first warm blooded male she came across, but still a virgin when she comes of age solely because of satellite parenting
 		}
@@ -646,13 +646,13 @@ character_event = {
 		  fertility = 0.50
 		  trait = intricate_webweaver # Was taught more how to hide her nature than to focus on proper ruling
 		  trait = fair # So hot that even ice finds it difficult to chill her out
-		  trait = bombshell # Along with her cryogenic capabilities, which seems fae based, she also has an almost otherworldly beauty about her, making her true parentage a very valid question 
+		  trait = enchanting # Along with her cryogenic capabilities, which seems fae based, she also has an almost otherworldly beauty about her, making her true parentage a very valid question
 		  trait = stubborn # Has been known to be pig headed
 		  trait = temperate # Over indulgence isn't her thing
 		  trait = wroth # Many of her mistakes are due to her emotional outbursts
 		  trait = deceitful # She's fooled others and kept her true self hidden from even her own sister for years
 		  trait = cynical # She's learned to question that which is around her
-		  trait = regular_tits # 
+		  trait = dw_regular_tits #
 		  trait = portrait30 # Custom portrait
 		  trait = virgin # Mainly due to her not trusting herself to get close to others
 		}
@@ -698,13 +698,13 @@ character_event = {
 		  fertility = 0.50
 		  trait = charismatic_negotiator # Her skill at communicating is seen by her working many arrangements (father, sea witch) and even managing while mute
 		  trait = fair # One of the most beautiful daughters of the deep
-		  trait = bombshell # Looks so enchanting that her beauty was mesmerising
+		  trait = enchanting # Looks so enchanting that her beauty was mesmerising
 		  trait = stutter # No Mute trait, but this works just as well
 		  trait = temperate # Over indulgence isn't her thing
 		  trait = diligent # Her feet felt as though she was walking on blades, yet she pushed on and would still dance for the one she desired.
 		  trait = envious # Her envy is largely what led to her situation, she was jealous of the temple girl, and only her love can be said to have kept her from killing the prince
 		  trait = trusting # She put too much faith in those around her, with minimal consideration of the consequences
-		  trait = regular_tits # 
+		  trait = dw_regular_tits #
 		  trait = portrait31 # Custom portrait
 		  # No way in hell that she wasn't giving it over upon request to the prince
 		}
@@ -756,7 +756,7 @@ character_event = {
 		  trait = just # She stood up for those who were falsely accused
 		  trait = gregarious # Spoke to just about anyone and everyone
 		  trait = trusting # She tried some things recommended by people she just met, that others would have been sceptical
-		  trait = regular_tits # 
+		  trait = dw_regular_tits #
 		  trait = portrait34 # Custom portrait
 		  trait = virgin # Although perhaps not for long given how trusting and experimental she is
 		}
@@ -808,7 +808,7 @@ character_event = {
 		  trait = content # Every indication is she was happy and content with her life
 		  trait = gregarious # Her comfort level in speaking to just about anyone led her to chatting up the old woman and pricking her finger on a spindle
 		  trait = trusting # She trusted those who hid her curse from her, as well as the cook who was supposed to be cutting up her children and feeding them to the Ogress
-		  trait = regular_tits # 
+		  trait = dw_regular_tits #
 		  trait = portrait35 # Custom portrait
 		  trait = virgin # Although not for long as she apparently starts kicking out kids quickly
 		}
@@ -860,7 +860,7 @@ character_event = {
 		  trait = ambitious # Her pursuit for power and self improvement largely defines who she is
 		  trait = cynical # Religions are for the weak minded, she has experienced and knows true power
 		  trait = erudite # All acknowledge her learning and power, even her enemies
-		  trait = regular_tits # 
+		  trait = dw_regular_tits #
 		  trait = fairy
 		  trait = portrait39 # Custom portrait
 		  # Unlikely to still be a virgin so no trait
@@ -883,7 +883,7 @@ character_event = {
 character_event = {
 	id = DWFairyTales.13
 	hide_window = yes # Nothing to see here
-	is_triggered_only = yes # 
+	is_triggered_only = yes #
 	immediate = {
 		create_character = {
 		  random_traits = no
@@ -913,7 +913,7 @@ character_event = {
 		  trait = content # She enjoys her lifestyle, and has no real ambitions outside of a little more freedom to move about.
 		  trait = trusting # She's duped on a number of occasions in the fairy tale
 		  trait = stubborn # Her pride often strengthens her stubbornness and desire to not be wrong
-		  trait = regular_tits # 
+		  trait = dw_regular_tits #
 		  trait = portrait36 # Custom portrait
 		  trait = virgin # She's not chaste, and uses her womanly wiles in the fable to distract the sorceror, but she'll be a virgin until we get the events going
 		}
@@ -966,7 +966,7 @@ character_event = {
 		  trait = arbitrary # Many have lost their lives or faced punishment for the smallest whims
 		  trait = gregarious # A professional at running her mouth, and even occasionally allows others to participate in a conversation as well
 		  trait = paranoid # And rightfully so. Having wronged so many people, more than one has sought revenge.
-		  trait = small_tits # Itty bitty, although on her small frame they may seem almost average in size.
+		  trait = dw_small_tits # Itty bitty, although on her small frame they may seem almost average in size.
 		  trait = portrait40 # Custom portrait
 		}
 		new_character = {
@@ -987,7 +987,7 @@ character_event = {
 character_event = {
 	id = DWFairyTales.15
 	hide_window = yes # Nothing to see here
-	is_triggered_only = yes # 
+	is_triggered_only = yes #
 	immediate = {
 		create_character = {
 		  random_traits = no
@@ -1014,7 +1014,7 @@ character_event = {
 		  trait = patient # Being immortal (before their freedom from the lamp), has taught the genie patience
 		  trait = wroth # Has some definite triggers that cause extreme, and intimidating anger
 		  trait = gregarious # Enjoys talking to others when they're available - almost to the point of craving interaction
-		  trait = enormous_dick # A monstrous beast that matches his impressive physique
+		  trait = dw_enormous_dick # A monstrous beast that matches his impressive physique
 		  trait = portrait43 # Custom portrait
 		}
 		new_character = {
@@ -1030,7 +1030,7 @@ namespace = DWNight
 # .1000 Fenris created
 character_event = {
 	id = DWNight.1000
-	ai = yes 
+	ai = yes
 	hide_window = yes # Nothing to see here
 	is_triggered_only = yes # Triggered via on_action
 	trigger = {
@@ -1062,7 +1062,7 @@ character_event = {
 					trait = brave
 					trait = hunter
 					trait = brilliant_strategist
-					trait = big_dick
+					trait = dw_big_dick
 					trait = immortal
 					trait = werewolf_ancient
 					trait = portrait130 # Fenris custom portrait
@@ -1086,7 +1086,7 @@ character_event = {
 # .2000 Vladimir created
 character_event = {
 	id = DWNight.2000
-	ai = yes 
+	ai = yes
 	hide_window = yes # Nothing to see here
 	is_triggered_only = yes # Triggered via on_action
 	trigger = {
@@ -1116,7 +1116,7 @@ character_event = {
 					trait = cruel
 					trait = impaler
 					trait = elusive_shadow
-					trait = regular_dick
+					trait = dw_regular_dick
 					trait = immortal
 					trait = vampire_ancient
 					trait = portrait4 #Vlad's custom portrait
@@ -1163,7 +1163,7 @@ character_event = {
 			trait = brave # Withdraws from no werewolf
 			trait = patient # More patient than most, allowing her to get closer through observation of habits and willing to stay in one spot for an ambush
 			trait = skilled_tactician # She's a very capable hunter, with her tactics a fine example of what allowed her to get so close
-			trait = regular_tits
+			trait = dw_regular_tits
 			trait = monster_hunter
 			trait = portrait8 # custom portrait
 			attributes = {
@@ -1214,7 +1214,7 @@ character_event = {
 			trait = cruel # Her methods are quite sadistic when she punishes her enemies
 			trait = diligent # She's persistent, relentless in her pursuit
 			trait = cynical # Her outlook on life is very jaded from having lost so many loved ones
-			trait = regular_tits
+			trait = dw_regular_tits
 			trait = dhampir # She was born of a mother who was raped by a vampire
 			trait = monster_hunter # She specializes in hunting vampires
 			trait = portrait80 # custom Bloodrayne portrait

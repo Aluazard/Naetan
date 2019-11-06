@@ -174,9 +174,9 @@ narrative_event = {
 	desc = "DWWerewolf1110"
 	picture = DWWerewolf_FeralHowl
 	title = dw_young_werewolf_hunts
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Yay!
 		name = "DWWerewolf1110A"
 		change_intrigue = 1 #increases intrigue by 1 for the knowledge gained from successful stalking
@@ -188,9 +188,9 @@ narrative_event = {
 	desc = "DWWerewolf1120"
 	picture = DWWerewolf_RabbitHunt
 	title = dw_young_werewolf_hunts
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Yay!
 		name = "DWWerewolf1120A"
 		change_martial = 1 #increases by 1 for the knowledge gained from successful event
@@ -214,9 +214,9 @@ narrative_event = {
 	desc = "DWWerewolf1180"
 	picture = DWWerewolf_FeralHowl
 	title = dw_young_werewolf_hunts
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Yay!
 		name = "DWWerewolf1180A"
 		add_character_modifier = { name = dw_werewolf_young_fun_hunt duration = 60 }
@@ -228,9 +228,9 @@ narrative_event = {
 	desc = "DWWerewolf1190"
 	picture = DWWerewolf_FeralHowl
 	title = dw_young_werewolf_hunts
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Shit!
 		name = "DWWerewolf1190A"
 		add_character_modifier = { name = dw_werewolf_young_bad_hunt duration = 60 }
@@ -251,7 +251,7 @@ narrative_event = {
 					ai = yes # We don't want to hit the player
 					is_female = yes # Chick's required
 					is_adult = yes # Adults only
-					NOR = { 
+					NOR = {
 						has_character_modifier = dw_alpha_bitch  # No alpha females
 						has_character_modifier = dw_werewolf_bitch # We don't want anyone who's already a bitch
 						age = 50 # No grannies
@@ -263,7 +263,7 @@ narrative_event = {
 						trait = mystic
 						trait = lunatic
 						trait = possessed
-					}					
+					}
 				}
 			}
 			random_realm_character = {
@@ -271,7 +271,7 @@ narrative_event = {
 					ai = yes # We don't want to hit the player
 					is_female = yes # Chick's required
 					is_adult = yes # Adults only
-					NOR = { 
+					NOR = {
 						has_character_modifier = dw_alpha_bitch  # No alpha females
 						has_character_modifier = dw_werewolf_bitch # We don't want anyone who's already a bitch
 						age = 50 # No grannies
@@ -501,7 +501,7 @@ character_event = {
 	id = DWWerewolf.2030
 	hide_window = yes # Nothing to see here
 	is_triggered_only = yes # by .2000
-	immediate = {	
+	immediate = {
 		random_list = {
 			25 = { # Hunt a deer
 				narrative_event = { id = DWWerewolf.2100 }
@@ -554,7 +554,7 @@ narrative_event = {
 	desc = "DWWerewolf2040"
 	picture = DWWerewolf_FeralHowl
 	title = dw_adult_werewolf_hunts
-	
+
 	is_triggered_only = yes
 
 	option = { # Drink away the beast
@@ -605,7 +605,7 @@ narrative_event = {
 				modifier = {
 					factor = 0 # It's possible to be too far gone that the cat won't approach due to sensing the beast within
 					OR = {
-						has_character_modifier = dw_werewolf_corruption_stage4 
+						has_character_modifier = dw_werewolf_corruption_stage4
 						has_character_modifier = dw_werewolf_corruption_stage5
 					}
 				}
@@ -632,7 +632,7 @@ narrative_event = {
 	option = { # Use martial skills to bring it down
 		trigger = {
 			martial = 10
-		}		
+		}
 		tooltip_info = martial
 		name = "DWWerewolf2100A"
 		random_list = {
@@ -647,7 +647,7 @@ narrative_event = {
 	option = { # Use intrigue to stalk and ambush
 		trigger = {
 			intrigue = 10
-		}		
+		}
 		tooltip_info = intrigue
 		name = "DWWerewolf2100B"
 		random_list = {
@@ -659,7 +659,7 @@ narrative_event = {
 			}
 		}
 	}
-	option = { # Hunt to the best of my ability 
+	option = { # Hunt to the best of my ability
 		name = "DWWerewolf2100C"
 		random_list = {
 			80 = { # Successful Hunt
@@ -802,7 +802,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -824,7 +824,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -855,7 +855,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -878,7 +878,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -905,7 +905,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -932,18 +932,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -1072,7 +1072,7 @@ narrative_event = {
 			chance = 20
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -1098,7 +1098,7 @@ narrative_event = {
 			chance = 20
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -1107,8 +1107,8 @@ narrative_event = {
 	option = { # I shall do my best to kill them all
 		name = DWWerewolf2133B
 		random_list = { # Slightly lower chance of serious wound due to not showing restraint
-			30 = { 
-				# Nothing 
+			30 = {
+				# Nothing
 			}
 			35 = {
 				add_trait = wounded
@@ -1128,8 +1128,8 @@ narrative_event = {
 	option = { # Kill those I must, allow others to live
 		name = DWWerewolf2133C
 		random_list = { # Higher chance of a serious wound due to taking it careful
-			20 = { 
-				# Nothing 
+			20 = {
+				# Nothing
 			}
 			50 = {
 				add_trait = wounded
@@ -1162,7 +1162,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -1186,7 +1186,7 @@ narrative_event = {
 	option = { # Use martial skills to bring it down
 		trigger = {
 			martial = 10
-		}		
+		}
 		tooltip_info = martial
 		name = "DWWerewolf2140A"
 		random_list = {
@@ -1202,7 +1202,7 @@ narrative_event = {
 	option = { # Use intrigue to stalk and ambush
 		trigger = {
 			intrigue = 10
-		}		
+		}
 		tooltip_info = intrigue
 		name = "DWWerewolf2140B"
 		random_list = {
@@ -1215,7 +1215,7 @@ narrative_event = {
 			}
 		}
 	}
-	option = { # Hunt to the best of my ability 
+	option = { # Hunt to the best of my ability
 		name = "DWWerewolf2140C"
 		random_list = {
 			70 = { # Successful Hunt
@@ -1356,7 +1356,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -1378,7 +1378,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -1409,7 +1409,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -1432,7 +1432,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -1459,7 +1459,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -1486,18 +1486,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -1544,7 +1544,7 @@ narrative_event = {
 			chance = 20
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -1565,7 +1565,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -1594,7 +1594,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -1614,7 +1614,7 @@ narrative_event = {
 	desc = DWWerewolf2193
 	picture = DWWerewolf_Death2
 	title = dw_adult_werewolf_death_title
-	is_triggered_only = yes # by 
+	is_triggered_only = yes # by
 	option = { # I is dead
 		name = DWWerewolf2193A
 		death = {
@@ -1635,7 +1635,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -1662,18 +1662,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -1695,7 +1695,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -1722,18 +1722,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -1756,7 +1756,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -1783,18 +1783,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -1817,7 +1817,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -1844,18 +1844,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -1877,7 +1877,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -1904,18 +1904,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -1938,7 +1938,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -1965,18 +1965,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -2263,7 +2263,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -2290,18 +2290,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -2341,7 +2341,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -2370,7 +2370,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -2399,7 +2399,7 @@ narrative_event = {
 			chance = 40
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -2426,7 +2426,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -2453,18 +2453,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -2486,7 +2486,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -2513,18 +2513,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -2546,7 +2546,7 @@ narrative_event = {
 			chance = 20
 			if = {
 				limit = {
-					has_character_modifier = dw_werewolf_corruption_stage1 
+					has_character_modifier = dw_werewolf_corruption_stage1
 				}
 				remove_character_modifier = dw_werewolf_corruption_stage1
 			}
@@ -2567,7 +2567,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -2594,18 +2594,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -2628,7 +2628,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -2655,18 +2655,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -2681,7 +2681,7 @@ narrative_event = {
 	desc = DWWerewolf2299
 	picture = DWWerewolf_Death1
 	title = dw_adult_werewolf_death_title
-	is_triggered_only = yes # by 
+	is_triggered_only = yes # by
 	option = { # I is dead
 		name = DWWerewolf2299A
 		death = {
@@ -2976,9 +2976,9 @@ narrative_event = {
 	desc = "DWWerewolf3000"
 	picture = DWWerewolf_FuckFemaleBitch1
 	title = dw_adult_werewolf_hunts
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = { #We select our bitch
 		random_realm_character = {
 			limit = {
@@ -2990,7 +2990,7 @@ narrative_event = {
 			save_event_target_as = dw_selected_bitch
 		}
 	}
-	
+
 	option = {
 		name = "DWWerewolf3000A"
 		add_lover = event_target:dw_selected_bitch
@@ -3006,7 +3006,7 @@ narrative_event = {
 				months = 12
 			}
 			add_lover = ROOT
-			character_event = { id = DWCore.9000 } # Pregnancy check
+			character_event = { id = dw_visits.9000 } # Pregnancy check
 			if = {
 				limit = {
 					ai = no # Checks to see if our target is the character
@@ -3022,9 +3022,9 @@ narrative_event = {
 	desc = "DWWerewolf3005"
 	picture = DWWerewolf_FuckFemaleBitch1
 	title = dw_adult_werewolf_hunts
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = DWWerewolf3005A
 	}
@@ -3035,9 +3035,9 @@ narrative_event = {
 	desc = "DWWerewolf3010"
 	picture = DWWerewolf_FemaleFuckFemaleBitch1
 	title = dw_adult_werewolf_hunts
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = { #We select our bitch
 		random_realm_character = {
 			limit = {
@@ -3049,7 +3049,7 @@ narrative_event = {
 			save_event_target_as = dw_selected_bitch
 		}
 	}
-	
+
 	option = {
 		name = "DWWerewolf3010A"
 		add_lover = event_target:dw_selected_bitch
@@ -3074,9 +3074,9 @@ narrative_event = {
 	desc = "DWWerewolf3020"
 	picture = DWWerewolf_FutaFuckFemaleBitch1
 	title = dw_adult_werewolf_hunts
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = { #We select our bitch
 		random_realm_character = {
 			limit = {
@@ -3088,7 +3088,7 @@ narrative_event = {
 			save_event_target_as = dw_selected_bitch
 		}
 	}
-	
+
 	option = {
 		name = "DWWerewolf3020A"
 		add_lover = event_target:dw_selected_bitch
@@ -3104,7 +3104,7 @@ narrative_event = {
 				months = 12
 			}
 			add_lover = ROOT
-			character_event = { id = DWCore.9000 } # Pregnancy check
+			character_event = { id = dw_visits.9000 } # Pregnancy check
 			if = {
 				limit = {
 					ai = no # Checks to see if our target is the character
@@ -3128,13 +3128,13 @@ narrative_event = {
 			NOT = { event_target:dw_graveyard_bitch = { intrigue = 10 } } # Her wit was lacking
 		}
 		name = DWWerewolf3100A
-		event_target:dw_graveyard_bitch = { 
+		event_target:dw_graveyard_bitch = {
 			add_character_modifier = { name = dw_werewolf_bitch duration = -1 }
 			opinion = { modifier = dw_opinion_ima_bitch who = ROOT }
-			character_event = { id = DWCore.9000 } # Pregnancy check
+			character_event = { id = dw_visits.9000 } # Pregnancy check
 		}
-		add_character_modifier = { name = dw_good_sex duration = 30 }
 		opinion = { modifier = dw_opinion_my_bitch who = event_target:dw_graveyard_bitch }
+		event_target:dw_graveyard_bitch = { opinion = { modifier = dw_good_sex who = ROOT }}
 	}
 	option = { # She managed to avoid my attempt
 		trigger = {
@@ -3142,21 +3142,23 @@ narrative_event = {
 			NOT = { event_target:dw_graveyard_bitch = { intrigue = 15 } } # but not high enough to turn the table
 		}
 		name = DWWerewolf3100B
-		event_target:dw_graveyard_bitch = { 
-			character_event = { id = DWCore.9000 } # Pregnancy check
+		event_target:dw_graveyard_bitch = {
+			character_event = { id = dw_visits.9000 } # Pregnancy check
+			opinion = { modifier = dw_good_sex who = ROOT }
 		}
-		add_character_modifier = { name = dw_good_sex duration = 30 }
+		opinion = { modifier = dw_good_sex who = event_target:dw_graveyard_bitch }
 	}
 	option = { # She's an alpha bitch!?!
 		trigger = {
 			event_target:dw_graveyard_bitch = { intrigue = 15 } # Her mental sharpness turned the tables
 		}
 		name = DWWerewolf3100C
-		event_target:dw_graveyard_bitch = { 
-			add_character_modifier = { name = dw_alpha_bitch duration = -1 } 
-			character_event = { id = DWCore.9000 } # Pregnancy check
+		event_target:dw_graveyard_bitch = {
+			add_character_modifier = { name = dw_alpha_bitch duration = -1 }
+			character_event = { id = dw_visits.9000 } # Pregnancy check
+			opinion = { modifier = dw_good_sex who = ROOT }
 		}
-		add_character_modifier = { name = dw_good_sex duration = 30 }
+		opinion = { modifier = dw_good_sex who = event_target:dw_graveyard_bitch }
 	}
 }
 # .3199 Adult Female Werewolf fails to find a sexual partner
@@ -3172,7 +3174,7 @@ narrative_event = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -3199,18 +3201,18 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
@@ -3226,14 +3228,14 @@ narrative_event = {
 	desc = "DWWerewolf4000"
 	picture = DWWerewolf_Drinking
 	title = dw_adult_werewolf_beast_drowned
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Only the most basic stage can of corruption can be drowned. Anything else is only a temporary reprieve.
 		name = "DWWerewolf4000A"
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 		}
@@ -3245,14 +3247,14 @@ narrative_event = {
 	desc = "DWWerewolf4010"
 	picture = DWWerewolf_CatRest
 	title = dw_adult_werewolf_beast_subsides
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Good kitty - chance to calm the beast within
 		name = "DWWerewolf4010A"
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 		}
@@ -3278,16 +3280,16 @@ narrative_event = {
 	desc = "DWWerewolf4020"
 	picture = DWWerewolf_CorneredFeral
 	title = dw_adult_werewolf_beast_gains
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # You're making me mad, you won't like me when I'm mad
 		name = "DWWerewolf4020A"
 		if = {
 			limit = { # The werewolf is lost, if they're a ruler, they abdicate their holdings as they become feral
 				has_character_modifier = dw_werewolf_corruption_stage5
 			}
-			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }		
+			add_character_modifier = { name = dw_werewolf_corruption_complete duration = -1 }
 			remove_character_modifier = dw_werewolf_corruption_stage5
 			narrative_event = { id = DWWerewolf.9900 days = 1}
 		}
@@ -3314,38 +3316,38 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 			add_character_modifier = { name = dw_werewolf_corruption_stage2 duration = -1 }
 		}
 		if = {
 			limit = {
-				NOR = { 
-					has_character_modifier = dw_werewolf_corruption_stage1 
-					has_character_modifier = dw_werewolf_corruption_stage2 
-					has_character_modifier = dw_werewolf_corruption_stage3 
-					has_character_modifier = dw_werewolf_corruption_stage4 
+				NOR = {
+					has_character_modifier = dw_werewolf_corruption_stage1
+					has_character_modifier = dw_werewolf_corruption_stage2
+					has_character_modifier = dw_werewolf_corruption_stage3
+					has_character_modifier = dw_werewolf_corruption_stage4
 					has_character_modifier = dw_werewolf_corruption_stage5
 					has_character_modifier = dw_werewolf_corruption_complete
 				}
 			}
 			add_character_modifier = { name = dw_werewolf_corruption_stage1 duration = -1 }
 		}
-	}	
+	}
 }
 # .4030 Adult Female Werewolf quiets the beast within through drowning the voice via reading
 narrative_event = {
 	id = DWWerewolf.4030
 	desc = "DWWerewolf4030"
 	picture = DWWerewolf_Rest_Read_Female1
-	title = dw_adult_werewolf_beast_subsides	
+	title = dw_adult_werewolf_beast_subsides
 	is_triggered_only = yes # triggered by .2040
 	option = { # Beast read to death
 		name = "DWWerewolf4030A"
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 		}
@@ -3365,13 +3367,13 @@ narrative_event = {
 	picture = DWWerewolf_Rest_MoonDust
 	title = dw_adult_werewolf_moondust_title
 	is_triggered_only = yes # triggered by .2040
-	option = { # 
+	option = { #
 		name = "DWWerewolf4040A"
 		wealth = -10 # Money to cover material costs
 		piety = 25 # For the spiritual ceremony
 		if = {
 			limit = {
-				has_character_modifier = dw_werewolf_corruption_stage1 
+				has_character_modifier = dw_werewolf_corruption_stage1
 			}
 			remove_character_modifier = dw_werewolf_corruption_stage1
 		}
@@ -3410,7 +3412,7 @@ narrative_event = {
 	id = DWWerewolf.4050
 	desc = "DWWerewolf4050"
 	picture = DWWerewolf_Rest_Play
-	title = dw_adult_werewolf_beast_subsides	
+	title = dw_adult_werewolf_beast_subsides
 	is_triggered_only = yes # triggered by .2040/.2030
 	option = { # Beast successfully ignored
 		name = "DWWerewolf4050A"
@@ -3471,13 +3473,13 @@ narrative_event = {
 	desc = "DWWerewolf9900"
 	picture = DWWerewolf_CorneredFeral
 	title = dw_werewolf_gone_feral
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
 		NOT = { has_character_flag = dw_werewolf_ancient } #Fenris can't be lost to the beast within
 	}
-	
+
 	option = {
 		name = "DWWerewolf9900A"
 		abdicate = yes # The feral werewolf leaves behind their holdings

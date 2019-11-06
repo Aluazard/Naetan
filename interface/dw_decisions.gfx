@@ -63,4 +63,32 @@ spriteTypes = {
 		name = "GFX_dw_diablerie_study"
 		texturefile = "gfx/interface/dw_vampire_hunts.dds"
 	}
+	spriteType = {
+		name = "GFX_dw_choosing_sides"
+		texturefile = "gfx/interface/dw_decision.dds"
+	}
+	spriteType = {
+		name = "GFX_dw_recruit_teammate"
+		texturefile = "gfx/interface/dw_decision.dds"
+	}
+	spriteType = {
+		name = "GFX_dw_go_on_mission"
+		texturefile = "gfx/interface/dw_lair.dds"
+	}
+	spriteType = {
+		name = "GFX_dw_special_settings"
+		texturefile = "gfx/interface/dw_settings.dds"
+	}
+	spriteType = {
+		name = "GFX_dw_purge_tentacle_trait"
+		texturefile = "gfx/interface/dw_settings.dds"
+	}
+	spriteType = {
+		name = "GFX_dw_visit_grand_inn"
+		texturefile = "gfx/interface/dw_visit_grand_inn.dds"
+	}
+	spriteType = {
+		name = "GFX_dw_visit_wizard_tower"
+		texturefile = "gfx/interface/dw_visit_wizard_tower.dds"
+	}
 }

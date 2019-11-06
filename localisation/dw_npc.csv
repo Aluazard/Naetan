@@ -1,0 +1,83 @@
+# NPC Events
+dw_npc01v;With a lair having been created, I've the opportunity to now recruit henchmen into my service.\n  I do need to be mindful of the size of my court, as these individuals would be joining me there, and if I'm not careful, too many people in my court can lead to complications.\n  A random henchman will lead to a villain from the people who will enter my service. There are at times other, named individuals who may join me as well.;;;;;;;;;;;;;x
+dw_npc01va;Random Henchman;;;;;;;;;;;;;x
+dw_npc01vb;Harley Quinn;;;;;;;;;;;;;x
+dw_npc01vc;Poison Ivy;;;;;;;;;;;;;x
+dw_npc01vd;Vulture;;;;;;;;;;;;;x
+dw_npc01ve;The Joker;;;;;;;;;;;;;x
+dw_npc_nada;Nothing this time;;;;;;;;;;;;;x
+dw_npc01h;With a hero hall having been created, I've the opportunity to now recruit sidekicks into my service.\n  I do need to be mindful of the size of my court, as these individuals would be joining me there, and if I'm not careful, too many people in my court can lead to complications.\n  A random sidekick will lead to a hero from among the people who will enter my service. There are at times other, named individuals who may join me as well.;;;;;;;;;;;;;x
+dw_npc01ha;Random Sidekick;;;;;;;;;;;;;x
+dw_npc01hb;Batgirl;;;;;;;;;;;;;x
+dw_npc01hc;Black Widow;;;;;;;;;;;;;x
+dw_npc01hd;Red Robin;;;;;;;;;;;;;x
+dw_npc01he;Spider-Gwen;;;;;;;;;;;;;x
+dw_npc01hf;Raven;;;;;;;;;;;;;x
+dw_npc03;The answer to my recruitment effort is [dw_henchman_recruit.GetBestName].\n  They will now join my court, unless I send them away.;;;;;;;;;;;;;x
+dw_npc03a;Welcome to the team.;;;;;;;;;;;;;x
+dw_npc03b;I've no need for your service.;;;;;;;;;;;;;x
+dw_npc06;The answer to my recruitment effort is [dw_henchman_recruit.GetBestName].\n  They will now join my court, unless I send them away.;;;;;;;;;;;;;x
+dw_npc06a;Welcome to the team.;;;;;;;;;;;;;x
+dw_npc06b;I've no need for your service.;;;;;;;;;;;;;x
+dw_npc100;I'm relaxing in my lair when a door bangs open.\n  "Hello there Boss [ROOT.GetLordLady]. I heard ya was looking fer the bestest henchman around. So's it's suddenly obvious, you're talking about little ole me! Ain't that right Boss [ROOT.GetLordLady]?"\n  The flamboyant woman is dressed as a jester. A jester who drags a massive club behind her.\n  "I'm called lots'o stuff, but I normally go by Harley Quinn. I'm pretty good at a bunch of stuff. Hitting things, finding things, hiding things, taking things. So what do ya think Boss [ROOT.GetLordLady]?"\n  Well, I have to admit she is what I've had on my mind I suppose. Am I really ready for this?\n  GAMEPLAY: the first option adds them to your court. The second banishes them to somewhere else in the world. The third one prevents them from appearing any more during this play session.;;;;;;;;;;;;;x
+dw_npc100a;Welcome to the team Harley.;;;;;;;;;;;;;x
+dw_npc100b;Not now, perhaps in the future.;;;;;;;;;;;;;x
+dw_npc100c;I never want to see you again.;;;;;;;;;;;;;x
+dw_npc101;Just when I think it's over, Harley stops for a moment.\n  "Oh yeah. Just so's we don't have any bad surprises, I like ta keep things lively, and ya know, I'm a woman who likes a bit of variety. So's I'll be changing my look from time to time, but if you've one you prefer to see the most, let me know. You are after all, the Boss [ROOT.GetLordLady]."\n  GAMEPLAY: You can choose the icon that will appear for Harley in your court.;;;;;;;;;;;;;x
+dw_npc101a;I'll take option 1.;;;;;;;;;;;;;x
+dw_npc101b;I'll take option 2.;;;;;;;;;;;;;x
+dw_npc101c;I'll take option 3.;;;;;;;;;;;;;x
+dw_npc101d;I'll take option 4.;;;;;;;;;;;;;x
+dw_npc200;I'm considering my next course of action when I see the door open. A young woman, dressed in a black and yellow outfit, with a cape, and a mask that covers much of her face and head, which has little horns on it. On her chest is a bold yellow image of what looks like a bat.\n  I watch as she comes in and stands before me. She smiles at me before reaching up and taking off her mask. She seems confident as she presents herself.\n  "Greetings [ROOT.GetFOA]. I'm Barbara Gordon, although those who prey upon the weak may better know me as Batgirl. I understand you're seeking allies to stand against evil. I'm here to answer that call if you'll have me."\n  I did put out a call for aid, and I had heard about her. So I must say I was expecting her arrival. Now the only question is do I really wish to have her join forces with me or not.\n  GAMEPLAY: the first option adds them to your court. The second banishes them to somewhere else in the world. The third one prevents them from appearing any more during this play session.;;;;;;;;;;;;;x
+dw_npc200a;Welcome to the team Batgirl.;;;;;;;;;;;;;x
+dw_npc200b;Not now, perhaps in the future.;;;;;;;;;;;;;x
+dw_npc200c;I never want to see you again.;;;;;;;;;;;;;x
+dw_npc201;As Barbara is getting ready to leave the room, she stops as if in thought. She then blushes a bit before speaking up.\n  "Oh, I almost forgot. Since I'm here working to support you, I guess I should ask if you've a preferred way I should appear in court. Sometimes my mask feels like a second skin, so if you'd rather see me with it on, I'm willing to wear it more often."\n  GAMEPLAY: You can choose the icon that will appear for Batgirl in your court.;;;;;;;;;;;;;x
+dw_npc201a;I'll take option 1.;;;;;;;;;;;;;x
+dw_npc201b;I'll take option 2.;;;;;;;;;;;;;x
+dw_npc201c;I'll take option 3.;;;;;;;;;;;;;x
+dw_npc201d;I'll take option 4.;;;;;;;;;;;;;x
+dw_npc300;I'm considering my next course of action when I see the door open. A young woman enters, with vibrant red hair, alluring eyes, and rich, full lips. I realize I'm being influenced somehow and clear my throat as I refocus myself. The woman, dressed in green, with a lot of skin showing, chuckles briefly to herself.\n  "Greetings [ROOT.GetFOA]. I'm Pamela Isley, although most folks simply call me Poison Ivy. I understand that you're seeking like minded individuals, and well, I thought it over, and decided to look into you. I've been impressed with you so far, and I figured that you're the kind of person that I could ally with. Any questions?"\n  I did put out a call for henchmen, and I had heard about her myself. I even ensured that my desire reached her ears, so I must say I was expecting her arrival. Now the only question is do I really wish to have her join forces with me or not.\n  GAMEPLAY: the first option adds them to your court. The second banishes them to somewhere else in the world. The third one prevents them from appearing any more during this play session.;;;;;;;;;;;;;x
+dw_npc300a;Welcome to the team Poison Ivy.;;;;;;;;;;;;;x
+dw_npc300b;Not now, perhaps in the future.;;;;;;;;;;;;;x
+dw_npc300c;I never want to see you again.;;;;;;;;;;;;;x
+dw_npc400;I'm considering my next course of action when I see the door open. A young woman enters, smiles, and with a seemingly natural glance, takes in the whole of the room. She stops just a few steps away from me, her black leather and cloth outfit befitting the kind of attire that specializes in clandestine missions. Her smile is inviting, while her eyes have a mischievous sparkle to them. A natural action that I can tell would easily lead many men to underestimating her.\n  "Greetings  [ROOT.GetFOA]. I'm Natasha Romanov, although some have come to call me Black Widow. I've heard you were seeking to set-up a team and after looking into you, I've decided that this might be a team that I'd be interested in joining. So I suppose the question is now up to you, whether I'm in or not?"\n  I did put out a call for sidekicks, and I had heard about her myself. I even ensured that my desire reached her ears, so I must say I was expecting her arrival. Now the only question is do I really wish to have her join forces with me or not.\n  GAMEPLAY: the first option adds them to your court. The second banishes them to somewhere else in the world. The third one prevents them from appearing any more during this play session.;;;;;;;;;;;;;x
+dw_npc400a;Welcome to the team Natasha.;;;;;;;;;;;;;x
+dw_npc400b;Not now, perhaps in the future.;;;;;;;;;;;;;x
+dw_npc400c;I never want to see you again.;;;;;;;;;;;;;x
+dw_npc401;Nastasha pauses a moment after my welcoming her to the team, as if she's weighing her words.\n  "I'm not really big on masks, but my work does often have me changing up my looks a bit. When I'm not on a mission though, I could see where it could be an issue if I'm constantly changing my looks if I stop by your court. So, this is your chance to let me know if there is a certain way you'd like me to look normally."\n  GAMEPLAY: You can choose the icon that will appear for the character in your court.;;;;;;;;;;;;;x
+dw_npc401a;I'll take option 1.;;;;;;;;;;;;;x
+dw_npc401b;I'll take option 2.;;;;;;;;;;;;;x
+dw_npc401c;I'll take option 3.;;;;;;;;;;;;;x
+dw_npc401d;I'll take option 4.;;;;;;;;;;;;;x
+dw_npc500;I'm pondering my next project when I notice I've a visitor. It's a young man where a very functional set of black and red leather armor. He scans the room, and noticing we're alone, takes off his mask, as if to show his confidence in me.\n  "Good day [ROOT.GetFOA]. I'm Timothy Drake, or Tim Drake as I'm more commonly called. Well, when someone is calling me by my actual name I suppose. People usually call me Robin, although I'm working to move beyond that mantle, as another is taking on that name. Now I go by Red Robin."\n  I inquire why he chose to name himself after an expensive Burger restaurant chain.\n  "What? Bah. Not that it's important anyway I guess. I still have the old outfit on hand and I'll have to be honest that most villains refer to me as Robin, but I'd like to try and avoid confusion if possible. So, anyway, I understand you're looking to put together a team, and well, I'm in between teams myself right now. So I'm available if you want me."\n  Well, I did put out the word on recruiting with the intention of attracting this individual. Now the only question is do I really wish to have them join forces with me or not.\n  GAMEPLAY: the first option adds them to your court. The second banishes them to somewhere else in the world. The third one prevents them from appearing any more during this play session.;;;;;;;;;;;;;x
+dw_npc500a;Welcome to the team Tim.;;;;;;;;;;;;;x
+dw_npc500b;Not now, perhaps in the future.;;;;;;;;;;;;;x
+dw_npc500c;I never want to see you again.;;;;;;;;;;;;;x
+dw_npc501;After I welcome Tim Drake to the team, he promises to carry his own weight, and then brings up one more thing.\n  "I don't know your preference for how I normally look on day to day affairs, but I'm fine with keeping the mask on or off. Just let me know if you've a preference."\n  GAMEPLAY: You can choose the icon that will appear for the character in your court.;;;;;;;;;;;;;x
+dw_npc501a;I'll take option 1.;;;;;;;;;;;;;x
+dw_npc501b;I'll take option 2.;;;;;;;;;;;;;x
+dw_npc501c;I'll take option 3.;;;;;;;;;;;;;x
+dw_npc501d;I'll take option 4.;;;;;;;;;;;;;x
+dw_npc600;I'm practicing my diabolical laugh when I notice a large shape swoop into the room. The shape stands and it's an bald gentleman, with an interesting green leather outfit with various features. The man stands with somewhat of a stoop, not quite a hunchback, but one could make the mistake if they only glanced at him quickly. His beady eyes focus on me and he spreads his arms as to show off his outfit.\n  "Well met [ROOT.GetFOA]. I was given the name of Adrian Toomes at birth, yet I now prefer to be called The Vulture! I am a learned man who and would be glad to provide my services to this team that I hear you're assembling. And while I know that some underestimate me, seeing a hunched over old man, I assure you, this is simply a ruse, and I've seen no more than three decades in my time. A shaved head, and a slight stoop, and the fools take me as an easy target. Hehehehehe."\n  Well, I did put out the word on recruiting with the intention of attracting this individual. Now the only question is do I really wish to have them join forces with me or not.\n  GAMEPLAY: the first option adds them to your court. The second banishes them to somewhere else in the world. The third one prevents them from appearing any more during this play session.;;;;;;;;;;;;;x
+dw_npc600a;Welcome to the team Vulture.;;;;;;;;;;;;;x
+dw_npc600b;Not now, perhaps in the future.;;;;;;;;;;;;;x
+dw_npc600c;I never want to see you again.;;;;;;;;;;;;;x
+dw_npc700;I'm watching a spider working on it's web up in the corner, when I notice movement over by the door. Turning, I see a woman, dressed in a very distinctive cloth outfit, complete with a mask and hood. Parts of the outfit remind me of a web pattern.\n  "Hey, uh, how are you [ROOT.GetFOA]? I'm here because I heard you were looking for teammates, and I was in the neighborhood... and well, here I am. Oh, I'm Gwen Stacy, although I usually go by Spider-Gwen."\n  I can't help but ask why she'd have part of her real name combined with her nickname or alias.\n  "Yeah, well, I was called Spider-Woman for a bit, but it seemed like every so often folks were finding out who I was, and then I found out there were other Spider folks, like even another Spider-Woman, and so Spider-Gwen seems to have stuck as to how folks know which one is me."\n  Well, I did put out the word on recruiting with the intention of attracting this individual. Now the only question is do I really wish to have them join forces with me or not.\n  GAMEPLAY: the first option adds them to your court. The second banishes them to somewhere else in the world. The third one prevents them from appearing any more during this play session.;;;;;;;;;;;;;x
+dw_npc700a;Welcome to the team Gwen.;;;;;;;;;;;;;x
+dw_npc700b;Not now, perhaps in the future.;;;;;;;;;;;;;x
+dw_npc700c;I never want to see you again.;;;;;;;;;;;;;x
+dw_npc701;After I welcome Spider-Gwen to the team, she begins humming a little tune, then suddenly stops.\n  "Oh yeah. I don't want to freak anyone out by constantly changing how I look when I'm just chilling around here, so, uh, do you have a preference? I mean, I can go mask, or just the hood, short hair, long hair, just let me know."\n  GAMEPLAY: You can choose the icon that will appear for the character in your court.;;;;;;;;;;;;;x
+dw_npc701a;I'll take option 1.;;;;;;;;;;;;;x
+dw_npc701b;I'll take option 2.;;;;;;;;;;;;;x
+dw_npc701c;I'll take option 3.;;;;;;;;;;;;;x
+dw_npc701d;I'll take option 4.;;;;;;;;;;;;;x
+dw_npc800;I'm plotting my next move in the lair's study, when the door slams open. In comes either the palest man I've ever seen, or he's heavily powdered his face. Green hair flies about his head, and an eerie grin stretches across his face, extended by red markings.\n  The figure makes a flamboyant bow, his purple and green clothing swishing about on his thin frame. He stands, with playing cards in his hand. Each a different brand, and all with various versions of a joker.\n  "Hahaha, I must say! You've the look of one not too surprised to see me. Most would be scrambling for their weapon, or recoiling in fear. Could it be that you've been waiting for me?"\n  I acknowledge that I've had people specifically asking around for the one who calls himself The Joker.\n  "Oh ho! And what does one as humble as I have that one so great as you desires?"\n  I've heard about the Joker's instability, yet he's clearly a mastermind. Based on what I've heard, I also believe he seeks recognition. I focus on that part, indicating that I'm considering potential partners in crime.\n  "Oh do tell? Done our homework have we? If you know what you're in for, then this just might be a blast."\n  GAMEPLAY: the first option adds them to your court. The second banishes them to somewhere else in the world. The third one prevents them from appearing any more during this play session.;;;;;;;;;;;;;x
+dw_npc800a;Welcome to the team Joker.;;;;;;;;;;;;;x
+dw_npc800b;Not now, perhaps in the future.;;;;;;;;;;;;;x
+dw_npc800c;I never want to see you again.;;;;;;;;;;;;;x
+dw_npc801;After I welcome the Joker to the team, he gives another flamboyant bow and then with a spin, adopts an eerie grin.\n  "I suppose you should know, that I'm a man who isn't entirely comfortable with my skin. Indeed, I enjoy changing up my look on occasion. That aside, you being all welcoming of me... I'm willing to consider how you'd prefer I appear while in your court. Well?"\n  GAMEPLAY: You can choose the icon that will appear for the character in your court.;;;;;;;;;;;;;x
+dw_npc801a;I'll take option 1.;;;;;;;;;;;;;x
+dw_npc801b;I'll take option 2.;;;;;;;;;;;;;x
+dw_npc801c;I'll take option 3.;;;;;;;;;;;;;x
+dw_npc801d;I'll take option 4.;;;;;;;;;;;;;x

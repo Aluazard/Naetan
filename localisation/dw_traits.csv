@@ -1,44 +1,40 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ### Traits
 ## Body Parts
-micro_tits;Micro Tits;;;;;;;;;;;;;x
-micro_tits_desc;You're so flat, your chest would be mistaken for a young man's.;;;;;;;;;;;;;x
-tiny_tits;Tiny Tits;;;;;;;;;;;;;x
-tiny_tits_desc;Breasts as flat as a board that don't even fill an A cup.;;;;;;;;;;;;;x
-small_tits;Small Tits;;;;;;;;;;;;;x
-small_tits_desc;Breasts about the size of an egg that equates to an A cup size.;;;;;;;;;;;;;x
-regular_tits;Average Tits;;;;;;;;;;;;;x
-regular_tits_desc;Breasts about the size of an apple that equates to a cup size ranging from B to C.;;;;;;;;;;;;;x
-big_tits;Large Tits;;;;;;;;;;;;;x
-big_tits_desc;Breasts about the size of a grapefruit that equates to a cup size ranging from D to E.;;;;;;;;;;;;;x
-huge_tits;Huge Tits;;;;;;;;;;;;;x
-huge_tits_desc;Breasts about the size of pineapple that equates to about a F cup size.;;;;;;;;;;;;;x
-enormous_tits;Enormous Tits;;;;;;;;;;;;;x
-enormous_tits_desc;Knockers about the size of a cantaloupe that equates to about a G cup size.;;;;;;;;;;;;;x
-gigantic_tits;Gigantic Tits;;;;;;;;;;;;;x
-gigantic_tits_desc;Knockers about the size of a watermelon that equates to cup size of H and above.;;;;;;;;;;;;;x
-micro_dick;Micro Dick;;;;;;;;;;;;;x
-micro_dick_desc;An inch or two if lucky. Very difficult to procreate.;;;;;;;;;;;;;x
-tiny_dick;Tiny Dick;;;;;;;;;;;;;x
-tiny_dick_desc;This little guy is three inches or shorter in length.;;;;;;;;;;;;;x
-small_dick;Small Dick;;;;;;;;;;;;;x
-small_dick_desc;A dick that runs around 4-5 inches in length.;;;;;;;;;;;;;x
-regular_dick;Average Dick;;;;;;;;;;;;;x
-regular_dick_desc;Your typical penis, running around 6-7 inches long.;;;;;;;;;;;;;x
-big_dick;Big Dick;;;;;;;;;;;;;x
-big_dick_desc;An impressive cock that is around 8-9 inches long.;;;;;;;;;;;;;x
-huge_dick;Huge Dick;;;;;;;;;;;;;x
-huge_dick_desc;An intimidating specimen that is about 10-11 inches long.;;;;;;;;;;;;;x
-enormous_dick;Enormous Dick;;;;;;;;;;;;;x
-enormous_dick_desc;This beast a solid foot in length.;;;;;;;;;;;;;x
-gigantic_dick;Gigantic Dick;;;;;;;;;;;;;x
-gigantic_dick_desc;A true monster, coming in at 14 or more inches long.;;;;;;;;;;;;;x
+dw_tiny_tits;Tiny Tits;;;;;;;;;;;;;x
+dw_tiny_tits_desc;Breasts as flat as a board that don't even fill an A cup.;;;;;;;;;;;;;x
+dw_small_tits;Small Tits;;;;;;;;;;;;;x
+dw_small_tits_desc;Breasts about the size of an egg that equates to an A cup size.;;;;;;;;;;;;;x
+dw_regular_tits;Average Tits;;;;;;;;;;;;;x
+dw_regular_tits_desc;Breasts about the size of an apple that equates to a cup size ranging from B to C.;;;;;;;;;;;;;x
+dw_big_tits;Large Tits;;;;;;;;;;;;;x
+dw_big_tits_desc;Breasts about the size of a grapefruit that equates to a cup size ranging from D to E.;;;;;;;;;;;;;x
+dw_huge_tits;Huge Tits;;;;;;;;;;;;;x
+dw_huge_tits_desc;Breasts about the size of pineapple that equates to about a F cup size.;;;;;;;;;;;;;x
+dw_enormous_tits;Enormous Tits;;;;;;;;;;;;;x
+dw_enormous_tits_desc;Knockers about the size of a cantaloupe that equates to about a G cup size.;;;;;;;;;;;;;x
+dw_gigantic_tits;Gigantic Tits;;;;;;;;;;;;;x
+dw_gigantic_tits_desc;Knockers about the size of a watermelon that equates to cup size of H and above.;;;;;;;;;;;;;x
+dw_tiny_dick;Tiny Dick;;;;;;;;;;;;;x
+dw_tiny_dick_desc;This little guy is three inches or shorter in length.;;;;;;;;;;;;;x
+dw_small_dick;Small Dick;;;;;;;;;;;;;x
+dw_small_dick_desc;A dick that runs around 4-5 inches in length.;;;;;;;;;;;;;x
+dw_regular_dick;Average Dick;;;;;;;;;;;;;x
+dw_regular_dick_desc;Your typical penis, running around 6-7 inches long.;;;;;;;;;;;;;x
+dw_big_dick;Big Dick;;;;;;;;;;;;;x
+dw_big_dick_desc;An impressive cock that is around 8-9 inches long.;;;;;;;;;;;;;x
+dw_huge_dick;Huge Dick;;;;;;;;;;;;;x
+dw_huge_dick_desc;An intimidating specimen that is about 10-11 inches long.;;;;;;;;;;;;;x
+dw_enormous_dick;Enormous Dick;;;;;;;;;;;;;x
+dw_enormous_dick_desc;This beast a solid foot in length.;;;;;;;;;;;;;x
+dw_gigantic_dick;Gigantic Dick;;;;;;;;;;;;;x
+dw_gigantic_dick_desc;A true monster, coming in at 14 or more inches long.;;;;;;;;;;;;;x
 futa;Futanari;;;;;;;;;;;;;x
 futa_desc;An extremely female looking hermaphrodite. Prone to being oversexed, though typically not fertile.;;;;;;;;;;;;;x
 trap;Trap;;;;;;;;;;;;;x
 trap_desc;A pretty male who can pass as a female with the right clothing. Some have found ways to have breasts.;;;;;;;;;;;;;x
-bombshell;Bombshell;;;;;;;;;;;;;x
-bombshell_desc;A beauty amongst other beauties.;;;;;;;;;;;;;x
+enchanting;Enchanting Beauty;;;;;;;;;;;;;x
+enchanting_desc;One who could claim to be the fairest of them all.;;;;;;;;;;;;;x
 heterochromia;Heterochromia;;;;;;;;;;;;;x
 heterochromia_desc;Two different colored iris's, viewed to be signs of the supernatural or spiritual.;;;;;;;;;;;;;x
 ## Negative Traits
@@ -53,8 +49,6 @@ lilith;Succubus;;;;;;;;;;;;;x
 lilith_desc;You gain energy through rituals of pleasure.;;;;;;;;;;;;;x
 incubus;Incubus;;;;;;;;;;;;;x
 incubus_desc;You've the blood of oversexed demons flowing through you.;;;;;;;;;;;;;x
-vampire;Vampire;;;;;;;;;;;;;x
-vampire_desc;A creature of the night that lives off the energy of others. Doesn't sparkle.;;;;;;;;;;;;;x
 vampire_ancient;Ancient Vampire;;;;;;;;;;;;;x
 vampire_ancient_desc;One of the first vampires, it has lived centuries and is a master of deception.;;;;;;;;;;;;;x
 dhampir;Dhampir;;;;;;;;;;;;;x
@@ -71,8 +65,6 @@ elf;Elf;;;;;;;;;;;;;x
 elf_desc;A rarity to be seen. Most have died or moved on from our earthly realm, over to the lands of the fae.;;;;;;;;;;;;;x
 orc;Orc;;;;;;;;;;;;;x
 orc_desc;They're a primitive, bestial species of legend. Not seen in centuries, most believe them to never have existed.;;;;;;;;;;;;;x
-tentacle;Tentacle-kin;;;;;;;;;;;;;x
-tentacle_desc;An abomination that people fear and despise, while it sees others as little more than cattle.;;;;;;;;;;;;;x
 kitsune;Kitsune;;;;;;;;;;;;;x
 kitsune_desc;A fox person from the far east. Naturally intelligent and enjoys a good prank.;;;;;;;;;;;;;x
 neko;Neko;;;;;;;;;;;;;x
@@ -81,8 +73,6 @@ fairy;Fairy;;;;;;;;;;;;;x
 fairy_desc;One of the fae, known to be able to grow to human size, while others claim they're just part fae.;;;;;;;;;;;;;x
 platypi;Platypi;;;;;;;;;;;;;x
 platypi_desc;A mysterious race, believed to be an extremely rare strain of lycanthropy, or perhaps related to the fae.;;;;;;;;;;;;;x
-genie;Genie;;;;;;;;;;;;;x
-genie_desc;One of the mystical beings that has gained freedom and mortality by escaping their lamp.;;;;;;;;;;;;;x
 ## Cheat Traits
 designer_cheat_25;Age Cheat;;;;;;;;;;;;;x
 designer_cheat_25_desc;This should only appear in the Game Designer;;;;;;;;;;;;;x
@@ -91,6 +81,8 @@ designer_cheat_50_desc;This should only appear in the Game Designer;;;;;;;;;;;;;
 designer_cheat_100;Age Cheat;;;;;;;;;;;;;x
 designer_cheat_100_desc;This should only appear in the Game Designer;;;;;;;;;;;;;x
 ## Professions
+prostitute;Prostitute;;;;;;;;;;;;;x
+prostitute_desc;A person who trades their body for personal gain.;;;;;;;;;;;;;x
 exclusive_whore;Exclusive Whore;;;;;;;;;;;;;x
 exclusive_whore_desc;A Whore who has the fame to be more selective and expensive with who receives services.;;;;;;;;;;;;;x
 experienced_whore;Experienced Whore;;;;;;;;;;;;;x
@@ -103,8 +95,6 @@ assassin;Assassin;;;;;;;;;;;;;x
 assassin_desc;One who dances with death.;;;;;;;;;;;;;x
 monster_hunter;Monster Hunter;;;;;;;;;;;;;x
 monster_hunter_desc;A person who has been trained to combat supernatural threats.;;;;;;;;;;;;;x
-mage;Mage;;;;;;;;;;;;;x
-mage_desc;Trained in the arcane arts. Sometimes referred to as a wizard or a witch.;;;;;;;;;;;;;x
 branded_slave;Branded Slave;;;;;;;;;;;;;x
 branded_slave_desc;You've been marked for life. All shall know you as a slave.;;;;;;;;;;;;;x
 ## Status Traits
@@ -113,6 +103,68 @@ virgin_desc;Acknowledged by all to not have laid with another.;;;;;;;;;;;;;x
 ## Command Traits
 stable_whore;Stable Whore;;;;;;;;;;;;;x
 stable_whore_desc;Horses under your command are more aggressive and brave.;;;;;;;;;;;;;x
+###
+hero;Hero;;;;;;;;;;;;;x
+hero_desc;Heroes stand against villains and often stand as examples of truth and justice.;;;;;;;;;;;;;x
+villain;Villain;;;;;;;;;;;;;x
+villain_desc;Villains conflict against heroes and are often guided by greed or pure ambition.;;;;;;;;;;;;;x
+agile;Agile;;;;;;;;;;;;;x
+agile_desc;This person has impressive hand-eye coordination, response time and flexibility.;;;;;;;;;;;;;x
+clumsy;Clumsy;;;;;;;;;;;;;x
+clumsy_desc;This person is prone to tripping, dropping things, or similar inconveniences, due to a lack of coordination.;;;;;;;;;;;;;x
+mind_control;Mind Control;;;;;;;;;;;;;x
+mind_control_desc;Allows one to see a persons desires, fears, and tweak them accordingly, potentially breaking the target.;;;;;;;;;;;;;x
+mind_broke;Mind Broken;;;;;;;;;;;;;x
+mind_broke_desc;Their mind broken, they can't resist the directions of one with Mind Control.;;;;;;;;;;;;;x
+tentacle;Tentacle-kin;;;;;;;;;;;;;x
+tentacle_desc;Symbiote or tentacle-kin are people born with, or possessed by a parasitic entity. Seen as unnatural, most keep the affliction hidden.;;;;;;;;;;;;;x
+powered;Powered;;;;;;;;;;;;;x
+powered_desc;Represents any kind of unnatural power dwelling within a person that they've a measure of control over.;;;;;;;;;;;;;x
+resilience;Resilence;;;;;;;;;;;;;x
+resilience_desc;Can take a beating. A stronger version of sturdy, which can also stack with robust instead of being an opposite of it.;;;;;;;;;;;;;x
+therianthrope;Therianthrope;;;;;;;;;;;;;x
+therianthrope_desc;Not entirely human, this person is also bound with an animal spirit, allowing the opportunity for shapeshifting.;;;;;;;;;;;;;x
+hyena_kin;Hyena-kin;;;;;;;;;;;;;x
+hyena_kin_desc;The spirit of the hyena exists within this person.;;;;;;;;;;;;;x
+demon_kin;Demon-kin;;;;;;;;;;;;;x
+demon_kin_desc;Unholy blood courses through this person's veins.;;;;;;;;;;;;;x
+dog_kin;Dog-kin;;;;;;;;;;;;;x
+dog_kin_desc;The spirit of the dog exists within this person.;;;;;;;;;;;;;x
+horse_kin;Horse-kin;;;;;;;;;;;;;x
+horse_kin_desc;The spirit of the horse exists within this person.;;;;;;;;;;;;;x
+wolf_kin;Wolf-kin;;;;;;;;;;;;;x
+wolf_kin_desc;The spirit of the wolf exists within the person.;;;;;;;;;;;;;x
+mage;Mage;;;;;;;;;;;;;x
+mage_desc;A practitioner of the arcane, who often finds themselves outside of society.;;;;;;;;;;;;;x
+orc_blood;Orc Blood;;;;;;;;;;;;;x
+orc_blood_desc;The blood of orcs flows through this person's veins.;;;;;;;;;;;;;x
+elf_blood;Elf Blood;;;;;;;;;;;;;x
+elf_blood_desc;The blood of elves flows through this person's veins.;;;;;;;;;;;;;x
+fae_kin;Fae-kin;;;;;;;;;;;;;x
+fae_kin_desc;The blood of the fae (fairies and their ilk) flows through this person's veins.;;;;;;;;;;;;;x
+genie;Genie;;;;;;;;;;;;;x
+genie_desc;A person with supernatural power and knowledge, who has been forced into a role of servitude.;;;;;;;;;;;;;x
+vampire;Vampire;;;;;;;;;;;;;x
+vampire_desc;Said to be a cross between demon and therianthrope, this being requires blood for sustenance.;;;;;;;;;;;;;x
+angel_kin;Angel-kin;;;;;;;;;;;;;x
+angel_kin_desc;The blood of the divine courses through this person's veins.;;;;;;;;;;;;;x
+cat_kin;Cat-kin;;;;;;;;;;;;;x
+cat_kin_desc;The spirit of the cat exists within the person.;;;;;;;;;;;;;x
+nymph_kin;Nymph-kin;;;;;;;;;;;;;x
+nymph_kin_desc;The blood of a Nymph flows through this person's veins.;;;;;;;;;;;;;x
+fox_kin;Fox-kin;;;;;;;;;;;;;x
+fox_kin_desc;The blood of a Fox Spirit (Kitsune) flows through this person's veins.;;;;;;;;;;;;;x
+dragon_kin;Dragon-blood;;;;;;;;;;;;;x
+dragon_kin_desc;The blood of a Dragon is said to flow through this person's veins.;;;;;;;;;;;;;x
+dw_out_adventuring;Out Adventuring;;;;;;;;;;;;;x
+dw_out_adventuring_desc;This person has taken some time away from the burdens of court to do a little adventuring.;;;;;;;;;;;;;x
+### Designer Cheat Related
+dw_designer_cheat_25;Minus 25;;;;;;;;;;;;;x
+dw_designer_cheat_25_desc;Reduces age.;;;;;;;;;;;;;x
+dw_designer_cheat_50;Minus 50;;;;;;;;;;;;;x
+dw_designer_cheat_50_desc;Reduces age.;;;;;;;;;;;;;x
+dw_designer_cheat_100;Minus 100;;;;;;;;;;;;;x
+dw_designer_cheat_100_desc;Reduces age.;;;;;;;;;;;;;x
 ### Insults and Compliments
 INSULT_LICH;lich;;;;;;;;;;;;;x
 INSULT_ROTTEN;rotten;;;;;;;;;;;;;x

@@ -1,0 +1,60 @@
+decisions = {
+    dw_recruit_teammate = { # Heroes and Villains can recruit others
+		# is_high_prio = yes # Will show an alert once decision is enabled
+		ai_check_interval = 60 # We only want the ai checking this once every five years
+		potential = {
+			OR = {
+				AND = {
+					has_valid_lair = yes
+					trait = villain
+				}
+				AND = {
+					has_valid_hall = yes
+					trait = hero
+				}
+			}
+		}
+		allow = {
+			NOT = { is_incapable = yes }
+			wealth = 10
+		}
+		effect = {
+			wealth = -10
+			if = {
+				limit = { trait = villain }
+				character_event = { id = dw_npc.01}
+			}
+			else_if = {
+				limit = { trait = hero }
+				character_event = { id = dw_npc.02}
+			}
+		}
+		ai_will_do = {
+			#Factors for an AI character to take the decision (1 = 100% chance)
+			factor = 0.50 # 50% chance
+		}
+	}
+    dw_go_on_mission = {
+		ai_check_interval = 12 # Once a year
+		potential = {
+			OR = {
+				trait = hero
+				trait = villain
+			}
+		}
+		allow = {
+			NOT = { trait = in_hiding }
+			custom_tooltip = {
+				text = dw_character_on_a_mission
+				NOT = { has_character_flag = dw_on_mission }
+			}
+		}
+		effect = {
+			set_character_flag = dw_on_mission
+			character_event = { id = dw_hvevents.2000 }
+		}
+		ai_will_do = {
+			factor = 0.5 # 50% likely to go on a mission
+		}
+	}
+}

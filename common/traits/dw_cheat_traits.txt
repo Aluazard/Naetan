@@ -1,0 +1,12 @@
+designer_cheat_25 = { # Impacts Rule Designer only, has no associated trait icon
+	ruler_designer_cost = -25
+	hidden = yes
+}
+designer_cheat_50 = { # Impacts Rule Designer only, has no associated trait icon
+	ruler_designer_cost = -50
+	hidden = yes
+}
+designer_cheat_100 = { # Impacts Rule Designer only, has no associated trait icon
+	ruler_designer_cost = -100
+	hidden = yes
+}

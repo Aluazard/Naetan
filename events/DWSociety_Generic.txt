@@ -1,6 +1,6 @@
 ### Dark World Generic Society events (meaning it can happen to multiple Dark World - and potentially vanilla societies)
-## Joining a Dark World Society .90 - 
-## Soul Corruption .7000 - 
+## Joining a Dark World Society .90 -
+## Soul Corruption .7000 -
 
 namespace = DWSOC
 
@@ -74,7 +74,7 @@ narrative_event = {
     id = DWSOC.100
 	picture = a_placeholder
 	title = dw_society_inquiry_title
-    is_triggered_only = yes 
+    is_triggered_only = yes
     desc = { # The Chosen of Lilith
     	trigger = {
    			interested_in_society = dw_the_chosen_of_lilith
@@ -169,7 +169,7 @@ narrative_event = {
     id = DWSOC.101
 	picture = a_placeholder
 	title = dw_society_inquiry_title
-    is_triggered_only = yes 
+    is_triggered_only = yes
     desc = { # The Chosen of Lilith
     	trigger = {
    			interested_in_society = dw_the_chosen_of_lilith
@@ -202,7 +202,7 @@ narrative_event = {
     id = DWSOC.102
 	picture = a_placeholder
 	title = dw_society_inquiry_title
-    is_triggered_only = yes 
+    is_triggered_only = yes
     desc = { # The Chosen of Lilith
     	trigger = {
    			interested_in_society = dw_the_chosen_of_lilith
@@ -333,7 +333,7 @@ narrative_event = {
     id = DWSOC.104
 	picture = a_placeholder
 	title = dw_society_inquiry_title
-    is_triggered_only = yes 
+    is_triggered_only = yes
     desc = { # Succubus
     	trigger = {
    			trait = lilith
@@ -386,7 +386,7 @@ narrative_event = {
     id = DWSOC.105
 	picture = a_placeholder
 	title = dw_society_inquiry_title
-    is_triggered_only = yes 
+    is_triggered_only = yes
     desc = { # Succubus - from 104
     	trigger = {
    			trait = lilith
@@ -421,7 +421,7 @@ narrative_event = {
     id = DWSOC.106
 	picture = a_placeholder
 	title = dw_society_inquiry_title
-    is_triggered_only = yes 
+    is_triggered_only = yes
     desc = { # Succubus - from 104
     	trigger = {
    			trait = lilith
@@ -462,7 +462,7 @@ narrative_event = {
     id = DWSOC.107
 	picture = a_placeholder
 	title = dw_society_inquiry_title
-    is_triggered_only = yes 
+    is_triggered_only = yes
     desc = { # Incubus - from 104
     	trigger = {
    			trait = incubus
@@ -497,7 +497,7 @@ narrative_event = {
     id = DWSOC.108
 	picture = a_placeholder
 	title = dw_society_inquiry_title
-    is_triggered_only = yes 
+    is_triggered_only = yes
     desc = { # Incubus
     	trigger = {
    			trait = incubus
@@ -540,7 +540,7 @@ narrative_event = {
 	desc = DWSOC110
 	picture = wizard_society_approach3
 	title = dw_society_inquiry_title
-    is_triggered_only = yes 
+    is_triggered_only = yes
 	trigger = {
 		# Should only fire for those with interest in one of the Dark World Societies
 		OR = {
@@ -562,7 +562,7 @@ narrative_event = {
 	desc = DWSOC111
 	picture = wizard_society_redpill
 	title = dw_society_inquiry_title
-    is_triggered_only = yes 
+    is_triggered_only = yes
 	trigger = {
 		# Should only fire for those with interest in one of the Dark World Societies
 		OR = {
@@ -572,7 +572,7 @@ narrative_event = {
 		# Should only fire for those still alive - a special check as they may die from the red pill effect.
 		is_alive = yes
 	}
-	immediate = { 
+	immediate = {
 		set_character_flag = society_join_block
 		# TODO Red Pill Effect
 	}
@@ -583,7 +583,7 @@ narrative_event = {
     }
     option = { # dies
         name = DWSOC111B
-    }	
+    }
 }
 
 ## Wizards College Blue Pill
@@ -592,7 +592,7 @@ narrative_event = {
 	desc = DWSOC112
 	picture = wizard_society_bluepill
 	title = dw_society_inquiry_title
-    is_triggered_only = yes 
+    is_triggered_only = yes
 	trigger = {
 		# Should only fire for those with interest in one of the Dark World Societies
 		OR = {
@@ -648,60 +648,60 @@ narrative_event = {
 		name = DWSOC7050A
 		trigger_switch = {
 			on_trigger = has_character_flag
-			corruption_remove_kind = { 
+			corruption_remove_kind = {
 				remove_trait = kind
-				clr_character_flag = corruption_remove_kind 
+				clr_character_flag = corruption_remove_kind
 			}
-			corruption_add_cruel = { 
+			corruption_add_cruel = {
 				add_trait = cruel
-				clr_character_flag = corruption_add_cruel 
+				clr_character_flag = corruption_add_cruel
 			}
-			corruption_remove_just = { 
+			corruption_remove_just = {
 				remove_trait = just
 				clr_character_flag = corruption_remove_just
 			}
-			corruption_add_arbitrary = { 
+			corruption_add_arbitrary = {
 				add_trait = arbitrary
 				clr_character_flag = corruption_add_arbitrary
 			}
-			corruption_remove_honest = { 
+			corruption_remove_honest = {
 				remove_trait = honest
 				clr_character_flag = corruption_remove_honest
 			}
-			corruption_add_deceitful = { 
+			corruption_add_deceitful = {
 				add_trait = deceitful
 				clr_character_flag = corruption_add_deceitful
 			}
-			corruption_add_possessed = { 
+			corruption_add_possessed = {
 				add_trait = possessed
 				clr_character_flag = corruption_add_possessed
 			}
-			corruption_add_lunatic = { 
+			corruption_add_lunatic = {
 				add_trait = lunatic
 				clr_character_flag = corruption_add_lunatic
 			}
-			corruption_add_hunchback = { 
+			corruption_add_hunchback = {
 				add_trait = hunchback
 				clr_character_flag = corruption_add_hunchback
 			}
-			corruption_add_ugly = { 
+			corruption_add_ugly = {
 				add_trait = ugly
 				clr_character_flag = corruption_add_ugly
 			}
-			corruption_add_weak = { 
+			corruption_add_weak = {
 				add_trait = weak
 				clr_character_flag = corruption_add_weak
 			}
-			corruption_add_stressed = { 
+			corruption_add_stressed = {
 				add_trait = stressed
 				clr_character_flag = corruption_add_stressed
 			}
-			corruption_add_stutter = { 
+			corruption_add_stutter = {
 				add_trait = stutter
 				clr_character_flag = corruption_add_stutter
 			}
 		}
-	}	
+	}
 }
 
 #Beneficial Soul Corruption event
@@ -730,69 +730,68 @@ narrative_event = {
 		trigger_switch = {
 			on_trigger = has_character_flag
 			# Minors
-			dw_remove_feeble = { 
+			dw_remove_feeble = {
 				remove_trait = feeble
-				clr_character_flag = dw_remove_feeble 
+				clr_character_flag = dw_remove_feeble
 			}
-			dw_add_robust = { 
+			dw_add_robust = {
 				add_trait = robust
-				clr_character_flag = dw_add_robust 
+				clr_character_flag = dw_add_robust
 			}
-			dw_remove_dull = { 
+			dw_remove_dull = {
 				remove_trait = dull
 				clr_character_flag = dw_remove_dull
 			}
-			dw_add_shrewd = { 
+			dw_add_shrewd = {
 				add_trait = shrewd
 				clr_character_flag = dw_add_shrewd
 			}
-			dw_remove_shy = { 
+			dw_remove_shy = {
 				remove_trait = shy
 				clr_character_flag = dw_remove_shy
 			}
-			dw_add_gregarious = { 
+			dw_add_gregarious = {
 				add_trait = gregarious
 				clr_character_flag = dw_add_gregarious
 			}
 			# Majors
-			dw_remove_ugly = { 
+			dw_remove_ugly = {
 				remove_trait = ugly
-				clr_character_flag = dw_remove_ugly 
+				clr_character_flag = dw_remove_ugly
 			}
-			dw_add_fair = { 
+			dw_add_fair = {
 				add_trait = fair
-				clr_character_flag = dw_add_fair 
+				clr_character_flag = dw_add_fair
 			}
-			dw_add_bombshell = { 
-				add_trait = bombshell
-				clr_character_flag = dw_add_bombshell 
+			dw_add_enchanting = {
+				add_trait = enchanting
+				clr_character_flag = dw_add_enchanting
 			}
-			dw_remove_weak = { 
+			dw_remove_weak = {
 				remove_trait = weak
-				clr_character_flag = dw_remove_weak 
+				clr_character_flag = dw_remove_weak
 			}
-			dw_add_strong = { 
+			dw_add_strong = {
 				add_trait = strong
-				clr_character_flag = dw_add_strong 
+				clr_character_flag = dw_add_strong
 			}
-			dw_remove_imbecile = { 
+			dw_remove_imbecile = {
 				remove_trait = imbecile
-				clr_character_flag = dw_remove_imbecile 
+				clr_character_flag = dw_remove_imbecile
 			}
-			dw_remove_slow = { 
+			dw_remove_slow = {
 				remove_trait = slow
-				clr_character_flag = dw_remove_slow 
+				clr_character_flag = dw_remove_slow
 			}
-			dw_add_quick = { 
+			dw_add_quick = {
 				add_trait = quick
-				clr_character_flag = dw_add_quick 
+				clr_character_flag = dw_add_quick
 			}
-			dw_lose_quick_add_genius = { 
+			dw_lose_quick_add_genius = {
 				remove_trait = quick
 				add_trait = genius
-				clr_character_flag = dw_lose_quick_add_genius 
+				clr_character_flag = dw_lose_quick_add_genius
 			}
 		}
-	}	
+	}
 }
-

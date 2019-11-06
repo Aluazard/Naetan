@@ -1,0 +1,174 @@
+#CODE;ENGLISH;;;;;;;;;;;;;x
+dw_ca_lair_1;Basic Lair;;;;;;;;;;;;;x
+dw_ca_lair_2;Villainous Lair;;;;;;;;;;;;;x
+dw_ca_lair_3;Great Villainous Lair;;;;;;;;;;;;;x
+dw_ca_lair_4;Grand Villainous Lair;;;;;;;;;;;;;x
+dw_ca_lair_5;Mighty Villainous Lair;;;;;;;;;;;;;x
+dw_ca_lair_desc;Where Villains scheme, train, hoard, and sleep. A home away from home.;;;;;;;;;;;;;x
+dw_ca_hall_1;Basic Hall;;;;;;;;;;;;;x
+dw_ca_hall_2;Heroic Hall;;;;;;;;;;;;;x
+dw_ca_hall_3;Great Heroic Hall;;;;;;;;;;;;;x
+dw_ca_hall_4;Grand Heroic Hall;;;;;;;;;;;;;x
+dw_ca_hall_5;Mighty Heroic Hall;;;;;;;;;;;;;x
+dw_ca_hall_desc;Where Heroes meet, train, plan, and sleep. A home away from home.;;;;;;;;;;;;;x
+dw_no_lair_1;Basic Lair;;;;;;;;;;;;;x
+dw_no_lair_2;Villainous Lair;;;;;;;;;;;;;x
+dw_no_lair_3;Great Villainous Lair;;;;;;;;;;;;;x
+dw_no_lair_4;Grand Villainous Lair;;;;;;;;;;;;;x
+dw_no_lair_5;Mighty Villainous Lair;;;;;;;;;;;;;x
+dw_no_hall_1;Basic Hall;;;;;;;;;;;;;x
+dw_no_hall_2;Heroic Hall;;;;;;;;;;;;;x
+dw_no_hall_3;Great Heroic Hall;;;;;;;;;;;;;x
+dw_no_hall_4;Grand Heroic Hall;;;;;;;;;;;;;x
+dw_no_hall_5;Mighty Heroic Hall;;;;;;;;;;;;;x
+dw_tb_lair_1;Basic Lair;;;;;;;;;;;;;x
+dw_tb_lair_2;Villainous Lair;;;;;;;;;;;;;x
+dw_tb_lair_3;Great Villainous Lair;;;;;;;;;;;;;x
+dw_tb_lair_4;Grand Villainous Lair;;;;;;;;;;;;;x
+dw_tb_lair_5;Mighty Villainous Lair;;;;;;;;;;;;;x
+dw_tb_hall_1;Basic Hall;;;;;;;;;;;;;x
+dw_tb_hall_2;Heroic Hall;;;;;;;;;;;;;x
+dw_tb_hall_3;Great Heroic Hall;;;;;;;;;;;;;x
+dw_tb_hall_4;Grand Heroic Hall;;;;;;;;;;;;;x
+dw_tb_hall_5;Mighty Heroic Hall;;;;;;;;;;;;;x
+dw_fp_lair_1;Basic Lair;;;;;;;;;;;;;x
+dw_fp_lair_2;Villainous Lair;;;;;;;;;;;;;x
+dw_fp_lair_3;Great Villainous Lair;;;;;;;;;;;;;x
+dw_fp_lair_4;Grand Villainous Lair;;;;;;;;;;;;;x
+dw_fp_lair_5;Mighty Villainous Lair;;;;;;;;;;;;;x
+dw_fp_hall_1;Basic Hall;;;;;;;;;;;;;x
+dw_fp_hall_2;Heroic Hall;;;;;;;;;;;;;x
+dw_fp_hall_3;Great Heroic Hall;;;;;;;;;;;;;x
+dw_fp_hall_4;Grand Heroic Hall;;;;;;;;;;;;;x
+dw_fp_hall_5;Mighty Heroic Hall;;;;;;;;;;;;;x
+dw_ca_wizard_tower_1;Wizard Tower;;;;;;;;;;;;;x
+dw_ca_wizard_tower_2;Wizard Tower;;;;;;;;;;;;;x
+dw_ca_wizard_tower_3;Wizard Tower;;;;;;;;;;;;;x
+dw_ca_wizard_tower_4;Tower of the Arch Mage;;;;;;;;;;;;;x
+dw_no_wizard_tower_1;Wizard Tower;;;;;;;;;;;;;x
+dw_no_wizard_tower_2;Wizard Tower;;;;;;;;;;;;;x
+dw_no_wizard_tower_3;Wizard Tower;;;;;;;;;;;;;x
+dw_no_wizard_tower_4;Tower of the Arch Mage;;;;;;;;;;;;;x
+dw_tb_wizard_tower_1;Wizard Tower;;;;;;;;;;;;;x
+dw_tb_wizard_tower_2;Wizard Tower;;;;;;;;;;;;;x
+dw_tb_wizard_tower_3;Wizard Tower;;;;;;;;;;;;;x
+dw_tb_wizard_tower_4;Tower of the Arch Mage;;;;;;;;;;;;;x
+dw_fp_wizard_tower_1;Wizard Tower;;;;;;;;;;;;;x
+dw_fp_wizard_tower_2;Wizard Tower;;;;;;;;;;;;;x
+dw_fp_wizard_tower_3;Wizard Tower;;;;;;;;;;;;;x
+dw_fp_wizard_tower_4;Tower of the Arch Mage;;;;;;;;;;;;;x
+dw_wizard_tower_desc;An impressive tower that houses those who dabble in the arcane.;;;;;;;;;;;;;x
+dw_arch_wizard_tower_desc;An impressive tower that houses those who claim mastery over the arcane.;;;;;;;;;;;;;x
+dw_ca_grand_inn_1;Grand Inn;;;;;;;;;;;;;x
+dw_ca_grand_inn_2;Grand Silver Inn;;;;;;;;;;;;;x
+dw_ca_grand_inn_3;Grand Gold Inn;;;;;;;;;;;;;x
+dw_ca_grand_inn_4;Grand Diamond Inn;;;;;;;;;;;;;x
+dw_no_grand_inn_1;Grand Inn;;;;;;;;;;;;;x
+dw_no_grand_inn_2;Grand Silver Inn;;;;;;;;;;;;;x
+dw_no_grand_inn_3;Grand Gold Inn;;;;;;;;;;;;;x
+dw_no_grand_inn_4;Grand Diamond Inn;;;;;;;;;;;;;x
+dw_tb_grand_inn_1;Grand Inn;;;;;;;;;;;;;x
+dw_tb_grand_inn_2;Grand Silver Inn;;;;;;;;;;;;;x
+dw_tb_grand_inn_3;Grand Gold Inn;;;;;;;;;;;;;x
+dw_tb_grand_inn_4;Grand Diamond Inn;;;;;;;;;;;;;x
+dw_fp_grand_inn_1;Grand Inn;;;;;;;;;;;;;x
+dw_fp_grand_inn_2;Grand Silver Inn;;;;;;;;;;;;;x
+dw_fp_grand_inn_3;Grand Gold Inn;;;;;;;;;;;;;x
+dw_fp_grand_inn_4;Grand Diamond Inn;;;;;;;;;;;;;x
+dw_grand_inn_desc;An investment by the ruler, an inn of grand scale to provide improved comforts for travelers and entertainment.;;;;;;;;;;;;;x
+dw_lilith_shrine;Shrine to Lilith;;;;;;;;;;;;;x
+dw_lilith_shrine_desc;A simple shrine dedicated to Lilith.;;;;;;;;;;;;;x
+dw_slave_pen_1;Slave Pens;;;;;;;;;;;;;x
+dw_slave_pen_2;Slave Pens;;;;;;;;;;;;;x
+dw_slave_pen_3;Slave Pens;;;;;;;;;;;;;x
+dw_slave_pen_desc;A group of huts where captured slaves are trained and sold.;;;;;;;;;;;;;x
+dw_warrior_circle_1;Warrior's Circle;;;;;;;;;;;;;x
+dw_warrior_circle_2;Warrior's Circle;;;;;;;;;;;;;x
+dw_warrior_circle_3;Warrior's Circle;;;;;;;;;;;;;x
+dw_warrior_circle_desc;Where people gather to watch and cheer those testing their mettle.;;;;;;;;;;;;;x
+dw_mystic_hut;Mystic's Hut;;;;;;;;;;;;;x
+dw_mystic_hut_desc;A specialist in areas that most don't understand. Respected and feared.;;;;;;;;;;;;;x
+dw_slave_port_1;Slave Trade Port;;;;;;;;;;;;;x
+dw_slave_port_2;Slave Trade Port;;;;;;;;;;;;;x
+dw_slave_port_3;Slave Trade Port;;;;;;;;;;;;;x
+dw_slave_port_desc;A slave focused trading port. Doesn't provide training, only trade.;;;;;;;;;;;;;x
+dw_slave_wagon_1;Slave Wagon;;;;;;;;;;;;;x
+dw_slave_wagon_2;Slave Wagon;;;;;;;;;;;;;x
+dw_slave_wagon_3;Slave Wagon;;;;;;;;;;;;;x
+dw_slave_wagon_4;Slave Wagon;;;;;;;;;;;;;x
+dw_slave_wagon_5;Slave Wagon;;;;;;;;;;;;;x
+dw_slave_wagon_desc;Conquered slaves are centrally trained and transported, improving their usefulness.;;;;;;;;;;;;;x
+dw_slave_dungeon_1;Slavers Dungeon;;;;;;;;;;;;;x
+dw_slave_dungeon_2;Slavers Dungeon;;;;;;;;;;;;;x
+dw_slave_dungeon_3;Slavers Dungeon;;;;;;;;;;;;;x
+dw_slave_dungeon_desc;A modified dungeon that allows for collecting and training slaves.;;;;;;;;;;;;;x
+dw_brothel_1;Bordello;;;;;;;;;;;;;x
+dw_brothel_2;Bordello;;;;;;;;;;;;;x
+dw_brothel_3;Bordello;;;;;;;;;;;;;x
+dw_brothel_desc;A place of entertainment, where one can go for companionship.;;;;;;;;;;;;;x
+dw_arena_1;Arena;;;;;;;;;;;;;x
+dw_arena_2;Arena;;;;;;;;;;;;;x
+dw_arena_3;Arena;;;;;;;;;;;;;x
+dw_arena_desc;Smaller than a Coliseum and more likely to hold combat events than games.;;;;;;;;;;;;;x
+dw_chapel_lilith;Temple to Lilith;;;;;;;;;;;;;x
+dw_chapel_lilith_desc;A place of worship to Lilith, hidden where only the faithful may find it.;;;;;;;;;;;;;x
+dw_assassins_guild_1;Assassins Guild;;;;;;;;;;;;;x
+dw_assassins_guild_2;Assassins Guild;;;;;;;;;;;;;x
+dw_assassins_guild_3;Assassins Guild;;;;;;;;;;;;;x
+dw_assassins_guild_desc;An inn with staff who have a very specific set of skills.;;;;;;;;;;;;;x
+dw_slave_market_1;Slave Market;;;;;;;;;;;;;x
+dw_slave_market_2;Slave Market;;;;;;;;;;;;;x
+dw_slave_market_3;Slave Market;;;;;;;;;;;;;x
+dw_slave_market_desc;An extension of a city market where humans are the commodity.;;;;;;;;;;;;;x
+dw_redlight_district_1;Red Light District;;;;;;;;;;;;;x
+dw_redlight_district_2;Red Light District;;;;;;;;;;;;;x
+dw_redlight_district_3;Red Light District;;;;;;;;;;;;;x
+dw_redlight_district_desc;A collection of buildings specializing in adult entertainment.;;;;;;;;;;;;;x
+dw_coliseum_1;Coliseum;;;;;;;;;;;;;x
+dw_coliseum_2;Coliseum;;;;;;;;;;;;;x
+dw_coliseum_3;Coliseum;;;;;;;;;;;;;x
+dw_coliseum_desc;A large place where people gather to witness games or gladiatorial combat.;;;;;;;;;;;;;x
+dw_exotic_emporium_1;Exotic Emporium;;;;;;;;;;;;;x
+dw_exotic_emporium_2;Exotic Emporium;;;;;;;;;;;;;x
+dw_exotic_emporium_3;Exotic Emporium;;;;;;;;;;;;;x
+dw_exotic_emporium_desc;A collection of rarities from around the world for the discerning shopper.;;;;;;;;;;;;;x
+dw_alchemist_shop_1;Alchemist Shop;;;;;;;;;;;;;x
+dw_alchemist_shop_2;Alchemist Market;;;;;;;;;;;;;x
+dw_alchemist_shop_3;Alchemist Guild;;;;;;;;;;;;;x
+dw_alchemist_shop_desc;A shop filled with a variety of herbal salves, powders, and potions.;;;;;;;;;;;;;x
+dw_craftsmen_guild_1;Craftsmen Guild;;;;;;;;;;;;;x
+dw_craftsmen_guild_2;Craftsmen Guild;;;;;;;;;;;;;x
+dw_craftsmen_guild_3;Craftsmen Guild;;;;;;;;;;;;;x
+dw_craftsmen_guild_desc;A guild representing smiths, carpenters, and other skilled labor.;;;;;;;;;;;;;x
+dw_alchemist_den_1;Alchemist Hovel;;;;;;;;;;;;;x
+dw_alchemist_den_2;Alchemist Den;;;;;;;;;;;;;x
+dw_alchemist_den_3;Alchemist Shop;;;;;;;;;;;;;x
+dw_herbalist_wagon;Herbalist Wagon;;;;;;;;;;;;;x
+dw_herbalist_wagon_desc;A wagon driven by a wise woman that specializes in various herbal remedies.;;;;;;;;;;;;;x
+dw_morale_wagon_1;Morale Wagon;;;;;;;;;;;;;x
+dw_morale_wagon_2;Morale Wagon;;;;;;;;;;;;;x
+dw_morale_wagon_3;Morale Wagon;;;;;;;;;;;;;x
+dw_morale_wagon_4;Morale Wagon;;;;;;;;;;;;;x
+dw_morale_wagon_5;Morale Wagon;;;;;;;;;;;;;x
+dw_morale_wagon_desc;Filled with captured women and the occasional male, for meeting the needs of troops.;;;;;;;;;;;;;x
+dw_whore_pen_1;Whore Pen;;;;;;;;;;;;;x
+dw_whore_pen_2;Whore Hut;;;;;;;;;;;;;x
+dw_whore_pen_3;Whore Shack;;;;;;;;;;;;;x
+dw_whore_pen_desc;Captured and undesired women, along with the occasional male, provide morale boosting services.;;;;;;;;;;;;;x
+dw_lilith_shrine_wagon;Shrine to Lilith;;;;;;;;;;;;;x
+dw_lilith_shrine_wagon_desc;A small shrine to Lilith that is secured in a chest during travels.;;;;;;;;;;;;;x
+dw_lilith_temple;Temple to Lilith;;;;;;;;;;;;;x
+dw_lilith_temple_desc;A room in your holding that is dedicated to Lilith, where the devout can worship.;;;;;;;;;;;;;x
+dw_lilith_shrine_outdoors;Lilith Nature Shrine;;;;;;;;;;;;;x
+dw_lilith_shrine_outdoors_merchant;Lilith Nature Shrine;;;;;;;;;;;;;x
+dw_lilith_shrine_outdoors_tribal;Lilith Nature Shrine;;;;;;;;;;;;;x
+dw_lilith_shrine_outdoors_feudal;Lilith Nature Shrine;;;;;;;;;;;;;x
+dw_lilith_shrine_outdoors_desc;A place of worship that is hidden outdoors in nature, where the faithful may visit;;;;;;;;;;;;;x
+dw_exotic_warehouse_1;Exotic Trader Warehouse;;;;;;;;;;;;;x
+dw_exotic_warehouse_2;Exotic Trader Warehouse;;;;;;;;;;;;;x
+dw_exotic_warehouse_3;Exotic Trader Warehouse;;;;;;;;;;;;;x
+dw_exotic_warehouse_desc;A trading hub for exotic goods, which also has a small store for as of yet unclaimed goods.;;;;;;;;;;;;;x
+dw_exotic_bazaar;Exotic Bazaar;;;;;;;;;;;;;x
+dw_exotic_bazaar_desc;A corner of the town market has been renovated to secure and offer more exotic goods.;;;;;;;;;;;;;x
+dw_exotic_collector;Exotic Curio Collector;;;;;;;;;;;;;x
+dw_exotic_collector_desc;A villager who collects and is willing to sell exotic curiosities they've acquired.;;;;;;;;;;;;;x

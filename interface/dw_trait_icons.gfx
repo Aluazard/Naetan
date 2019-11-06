@@ -1,111 +1,97 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_trait_micro_tits"
-		texturefile = "gfx/traits/tits_micro.tga"
+		name = "GFX_trait_dw_tiny_tits"
+		texturefile = "gfx/traits/tiny_tits.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_tiny_tits"
-		texturefile = "gfx/traits/tits_tiny.tga"
+		name = "GFX_trait_dw_small_tits"
+		texturefile = "gfx/traits/small_tits.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_small_tits"
-		texturefile = "gfx/traits/tits_small.tga"
+		name = "GFX_trait_dw_regular_tits"
+		texturefile = "gfx/traits/regular_tits.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_regular_tits"
-		texturefile = "gfx/traits/tits_average.tga"
+		name = "GFX_trait_dw_big_tits"
+		texturefile = "gfx/traits/big_tits.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_big_tits"
-		texturefile = "gfx/traits/tits_large.tga"
+		name = "GFX_trait_dw_huge_tits"
+		texturefile = "gfx/traits/huge_tits.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_huge_tits"
-		texturefile = "gfx/traits/tits_huge.tga"
+		name = "GFX_trait_dw_enormous_tits"
+		texturefile = "gfx/traits/enormous_tits.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_enormous_tits"
-		texturefile = "gfx/traits/tits_enormous.tga"
+		name = "GFX_trait_dw_gigantic_tits"
+		texturefile = "gfx/traits/gigantic_tits.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_gigantic_tits"
-		texturefile = "gfx/traits/tits_gigantic.tga"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
-		name = "GFX_trait_micro_dick"
-		texturefile = "gfx/traits/dick_micro.tga"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
-		name = "GFX_trait_tiny_dick"
+		name = "GFX_trait_dw_tiny_dick"
 		texturefile = "gfx/traits/dick_tiny.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_small_dick"
+		name = "GFX_trait_dw_small_dick"
 		texturefile = "gfx/traits/dick_small.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_regular_dick"
+		name = "GFX_trait_dw_regular_dick"
 		texturefile = "gfx/traits/dick_average.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_big_dick"
+		name = "GFX_trait_dw_big_dick"
 		texturefile = "gfx/traits/dick_large.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_huge_dick"
+		name = "GFX_trait_dw_huge_dick"
 		texturefile = "gfx/traits/dick_huge.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_enormous_dick"
+		name = "GFX_trait_dw_enormous_dick"
 		texturefile = "gfx/traits/dick_horse.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_gigantic_dick"
+		name = "GFX_trait_dw_gigantic_dick"
 		texturefile = "gfx/traits/dick_gigantic.tga"
 		noOfFrames = 1
 		norefcount = yes
@@ -119,8 +105,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_bombshell"
-		texturefile = "gfx/traits/bombshell.tga"
+		name = "GFX_trait_enchanting"
+		texturefile = "gfx/traits/enchanting.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -252,20 +238,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_mage"
-		texturefile = "gfx/traits/mage.tga"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
-		name = "GFX_trait_gladiator"
-		texturefile = "gfx/traits/gladiator.tga"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
 		name = "GFX_trait_branded_slave"
 		texturefile = "gfx/traits/slave_brand.tga"
 		noOfFrames = 1
@@ -336,13 +308,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_genie"
-		texturefile = "gfx/traits/genie.tga"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
 		name = "GFX_trait_dhampir"
 		texturefile = "gfx/traits/dhampir.tga"
 		noOfFrames = 1
@@ -355,5 +320,187 @@ spriteTypes = {
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_hero"
+		texturefile = "gfx/traits/hero.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_villain"
+		texturefile = "gfx/traits/villain.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_agile"
+		texturefile = "gfx/traits/agile.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_clumsy"
+		texturefile = "gfx/traits/clumsy.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mind_control"
+		texturefile = "gfx/traits/mind_control.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_powered"
+		texturefile = "gfx/traits/powered.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_therianthrope"
+		texturefile = "gfx/traits/therianthrope.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_hyena_kin"
+		texturefile = "gfx/traits/hyena_kin.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_resilience"
+		texturefile = "gfx/traits/resilience.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_demon_kin"
+		texturefile = "gfx/traits/demon_kin.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dog_kin"
+		texturefile = "gfx/traits/dog_kin.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_horse_kin"
+		texturefile = "gfx/traits/horse_kin.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_wolf_kin"
+		texturefile = "gfx/traits/wolf_kin.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mage"
+		texturefile = "gfx/traits/mage.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_orc_blood"
+		texturefile = "gfx/traits/orc_blood.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_genie"
+		texturefile = "gfx/traits/genie.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_vampire"
+		texturefile = "gfx/traits/vampire.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_angel_kin"
+		texturefile = "gfx/traits/angel.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_cat_kin"
+		texturefile = "gfx/traits/cat_kin.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dw_out_adventuring"
+		texturefile = "gfx/traits/out_adventuring.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_elf_blood"
+		texturefile = "gfx/traits/elf.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_fae_kin"
+		texturefile = "gfx/traits/fairy.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_nymph_kin"
+		texturefile = "gfx/traits/nymph_kin.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_fox_kin"
+		texturefile = "gfx/traits/fox_kin.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dragon_kin"
+		texturefile = "gfx/traits/dragon_kin.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_prostitute"
+		texturefile = "gfx/traits/prostitute.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 }

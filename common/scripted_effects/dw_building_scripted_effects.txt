@@ -1,0 +1,29 @@
+# Grand Inn - Look Around
+dw_look_around_grand_inn = {
+    random_list = {
+        10 = { # Bar brawl remains
+            trigger = { has_character_flag = dw_lively_inn }
+            narrative_event = { id = dw_grandinn.130 }
+        }
+        10 = { # Bard
+            trigger = {
+                OR = {
+                    has_character_flag = dw_calm_inn
+                    has_character_flag = dw_lively_inn
+                }
+            }
+            narrative_event = { id = dw_grandinn.140 }
+        }
+        10 = { # Rogue recruitment
+            trigger = {
+                NOT = {
+                    OR = {
+                        has_global_flag = dw_npc_rogue_alive
+                        has_global_flag = dw_npc_ignore_rogue
+                    }
+                }
+            }
+            narrative_event = { id = dw_grandinn.150 }
+        }
+    }
+}

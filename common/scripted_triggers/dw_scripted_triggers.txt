@@ -1,137 +1,3 @@
-## VANILLA SCRIPTED TRIGGERS THAT ARE MEANT TO BE OVERRIDDEN - POTENTIAL MOD CONFLICT
-has_fertile_trait_trigger = {
-	OR = {
-		trait = underhanded_rogue
-		trait = charismatic_negotiator
-		trait = grey_eminence
-		trait = thrifty_clerk
-		trait = fortune_builder
-		trait = midas_touched
-		trait = strong
-		trait = hedonist
-		trait = lustful
-		trait = dancing_plague
-		trait = big_tits
-		trait = huge_tits
-		trait = enormous_tits
-		trait = gigantic_tits
-		trait = big_dick
-		trait = huge_dick
-		trait = enormous_dick
-		trait = incubus
-		trait = werewolf
-		trait = orc
-		trait = neko
-	}
-}
-has_infertile_trait_trigger = {
-	OR = {
-		trait = homosexual
-		trait = eunuch
-		trait = scholarly_theologian
-		trait = mastermind_theologian
-		trait = stressed
-		trait = depressed
-		trait = ill
-		trait = pneumonic
-		trait = leper
-		trait = syphilitic
-		trait = has_aztec_disease
-		trait = infirm
-		trait = incapable
-		trait = inbred
-		trait = weak
-		trait = celibate
-		trait = chaste
-		trait = mangled
-		trait = severely_injured
-		trait = dysentery
-		trait = food_poisoning
-		trait = cancer
-		trait = tiny_tits
-		trait = small_tits
-		trait = tiny_dick
-		trait = small_dick
-		trait = futa
-		trait = trap
-		trait = victim
-		trait = vampire
-		trait = vampire_ancient
-		trait = werewolf_ancient
-		trait = angel
-		trait = elf
-		trait = fairy
-		trait = platypi
-	}
-}
-is_virgin_trigger = {
-	OR = {
-		NOT = { is_adult = yes  }
-		trait = celibate
-		trait = chaste
-		trait = shy
-		is_ascetic_trigger = yes # Things like monks, nuns, etc
-		trait = virgin
-	}
-}
-
-## DARK WORLD SPECIFIC - SHOULDN'T CAUSE MOD CONFLICT
-# Dark World Content Checks
-has_dw_campaign_started = { # Simple check to see if a person has set-up their preferences. Some events will still execute if the campaign preferences haven't been set
-	has_global_flag = dw_campaign_started
-}
-has_used_bonus = {
-	has_global_flag = dw_bonus_used
-}
-has_lilith_start = {
-	has_game_rule = { name = dw_major_campaign value = dw_lilith_campaign }
-}
-has_werewolf_bitch_start = {
-	has_game_rule = { name = dw_major_campaign value = dw_werewolf_bitch_campaign }
-}
-has_neko_start = {
-	has_game_rule = { name = dw_major_campaign value = dw_neko_campaign }
-}
-has_vampire_start = {
-	has_game_rule = { name = dw_major_campaign value = dw_vampire_campaign }
-}
-has_orc_start = {
-	has_game_rule = { name = dw_major_campaign value = dw_orc_campaign }
-}
-has_elf_start = {
-	has_game_rule = { name = dw_major_campaign value = dw_elf_campaign }
-}
-has_kitsune_start = {
-	has_game_rule = { name = dw_major_campaign value = dw_kitsune_campaign }
-}
-has_angel_start = {
-	has_game_rule = { name = dw_major_campaign value = dw_angel_campaign }
-}
-has_tentacle_start = {
-	has_game_rule = { name = dw_major_campaign value = dw_tentacle_campaign }
-}
-has_heaven_hell_content = {
-	has_game_rule = { name = dw_heaven_hell_content value = dw_yes_lilith }
-}
-has_classic_monsters_content = {
-	has_game_rule = { name = dw_classic_monsters_content value = dw_yes_classic }
-}
-has_fae_content = {
-	has_game_rule = { name = dw_fae_content value = dw_yes_fae }
-}
-has_far_east_content = {
-	has_game_rule = { name = dw_far_east_content value = dw_yes_far_east }
-}
-has_seeds_chaos_content = {
-	has_game_rule = { name = dw_seeds_chaos_content value = dw_yes_seeds_chaos }
-}
-has_gender_bender_content = {
-	has_game_rule = { name = dw_gender_bender_content value = dw_yes_futa }
-}
-has_bestiality_content = {
-	has_game_rule = { name = dw_bestiality_content value = dw_yes_bestiality }
-}
-
 # Court checks
 has_female_spymaster = {
 	job_spymaster = {
@@ -140,17 +6,6 @@ has_female_spymaster = {
 }
 
 # Character Type checks
-has_cock = {
-	OR = {
-		AND = { # Guy grouping
-			is_female = no # It's a guy
-			NOT = { trait = eunuch } # Lost their equipment
-			NOT = { trait = frog } # No to say a frog can't have a go at it, just that it won't be making any babies with characters
-		}
-		# Female exception that is allowed to have a cock
-		trait = futa # It's a chick with a dick
-	}
-}
 is_potential_slut = { # someone who could be convinced to fuck for the sake of fucking
 	OR = {
 		trait = lustful
@@ -917,106 +772,6 @@ has_strong_mind = {
 	}
 }
 ### Location / Building Related
-has_valid_arena = { # A valid Arena is available
-	any_realm_province = {
-		any_province_holding = {
-			OR = {
-				has_building = dw_arena_1 # castle
-				has_building = dw_coliseum_1 # city
-				has_building = dw_warrior_circle_1 # tribal
-				has_building = no_wrestling_1 # nomad wrestling pit
-			}
-		}
-	}
-}
-has_valid_alchemist = { # A valid Alchemist is available
-	any_realm_province = {
-		any_province_holding = {
-			OR = {
-				has_building = dw_alchemist_den_1 # Castle
-				has_building = dw_alchemist_shop_1 # City
-				has_building = dw_mystic_hut # Tribal
-				has_building = dw_herbalist_wagon # Nomad
-			}
-		}
-	}
-}
-has_valid_brothel = { # A valid Brothel is available
-	any_realm_province = {
-		any_province_holding = {
-			OR = {
-				has_building = dw_brothel_1 # Castle
-				has_building = dw_redlight_district_1 # City
-				has_building = dw_morale_wagon_1 # Nomad
-				has_building = dw_whore_pen_1 # Tribal
-			}
-		}
-	}
-}
-has_valid_stable = {
-	capital_scope = {
-		OR = {
-			has_building = ca_stable_1 # Castle
-			has_building = fp_stable_1 # Merchant Republic
-			has_building = ca_culture_group_altaic_1 # Culture based Castle
-			has_building = ca_culture_group_iberian_1
-			has_building = ca_culture_hungarian_1
-			has_building = ca_culture_group_byzantine_1
-			has_building = ca_culture_group_south_slavic_1
-			has_building = ca_culture_moors_1
-			has_building = ca_steppe_stable_1 # Steppe based Castle
-			has_building = ca_desert_stable_1
-			has_building = no_horse_breeder_1 # Nomad
-			has_building = tb_steppe_stable_1 # Tribal
-			has_building = tb_desert_stable_1
-		}
-	}
-}
-has_valid_brothel_for_renovation = { # A valid Brothel that is within the ruler's castle that they can improve upon in their capital for the on_event quest chain
-	capital_scope = { # This should allow our ruler to scope out and visit it in another location within their realm, as any_realm_province only resolves to locations directly managed
-		has_building = dw_brothel_1 # Castle
-	}
-}
-has_valid_slavery_location = {
-	any_realm_province = {
-		any_province_holding = {
-			OR = {
-				has_building = dw_slave_dungeon_1 # Castle
-				has_building = dw_slave_wagon_1 # Nomad
-				has_building = dw_slave_pen_1 # Tribal
-				has_building = fp_cellar_3 # Merchant Republic
-				has_building = dw_slave_market_1 # City
-				has_building = dw_slave_port_1 # Tradepost
-			}
-		}
-	}
-}
-has_valid_temple_to_lilith = {
-	capital_scope = {
-		OR = {
-			has_building = dw_chapel_lilith # Castle
-			has_building = dw_lilith_shrine_outdoors_feudal
-			has_building = dw_lilith_shrine_wagon # Nomad
-			has_building = dw_lilith_shrine_outdoors
-			has_building = dw_lilith_shrine # Tribal
-			has_building = dw_lilith_shrine_outdoors_tribal
-			has_building = dw_lilith_temple # Merchant Republic
-			has_building = dw_lilith_shrine_outdoors_merchant
-		}
-	}
-}
-has_valid_emporium = {
-	any_realm_province = {
-		any_province_holding = {
-			OR = {
-				has_building = dw_exotic_emporium_1 # City
-				has_building = dw_exotic_warehouse_1 # Tradepost (hopefully scopes for Merchant Republics)
-				has_building = dw_exotic_collector # Nomad
-				has_building = dw_exotic_bazaar # tribal
-			}
-		}
-	}
-}
 ### Prisoner related
 check_for_valid_prisoner_sacrifice = {
 	any_courtier = {
@@ -1025,7 +780,7 @@ check_for_valid_prisoner_sacrifice = {
 		NOT = { has_character_modifier = dw_slave_training } # Avoids grabbing a slave in training
 		NOT = { has_character_flag = dw_spared_sacrifice } # We don't choose someone we already spared
 		is_alive = yes # In hopes of avoiding reselecting someone who was recently sacrificed - since some folks reported that happened
-	}	
+	}
 }
 
 # Slave related
@@ -1037,7 +792,7 @@ is_slave = {
 }
 is_disobedient_slave = {
 	# It is possible to have conflicting traits - such as being content, yet stubborn - in those instances, they cancel each other out and we assume your average slave compliance
-	NOR = { 
+	NOR = {
 		trait = naive_appeaser
 		trait = timid
 		trait = slow
@@ -1338,7 +1093,7 @@ has_arcane_college_prerequisites = {
 }
 ## Offmap related triggers
 # Likes/Dislikes triggers
-likes_angels = { 
+likes_angels = {
 	trait = angel
 }
 likes_fae = {
@@ -1347,4 +1102,85 @@ likes_fae = {
 		trait = fairy
 		trait = orc
 	}
+}
+has_mental_resistance = {
+    OR = {
+        # Those a the peak of their education paths have either strong focus or sheer natural apptitude.
+        trait = grey_eminence
+        trait = brilliant_strategist
+        trait = midas_touched
+        trait = elusive_shadow
+        trait = mastermind_theologian
+        # Some children show a clear mental fortitude comparable to adults
+        trait = willful
+        trait = brooding
+        # Mental illness - while it can be caused by mental manipulation, once in place, it is difficult to deal with
+        trait = lunatic
+        trait = possessed
+        # Some have clear mental prowess
+        trait = genius
+        trait = quick
+        # Lifestyle - some people live such a way that they develop it
+        trait = schemer
+        trait = mystic
+        trait = strategist
+        # Other traits contribute as well
+        trait = cynical
+        trait = paranoid
+        # TODO add iron_will trait
+        trait = mind_control # One who can use it, is also resistant to it
+    }
+}
+has_mental_weakness = {
+    OR = {
+        # Those with minimal education show a lack of focus or apptitude
+        trait = naive_appeaser
+        trait = misguided_warrior
+        trait = indulgent_wastrel
+        trait = amateurish_plotter
+        trait = detached_priest
+        # Some children are like open books
+        trait = curious
+        trait = idolizer
+        # Mental illness - some mental states are a sign of weakness
+        trait = depressed
+        trait = drunkard
+        # Some have clear mental weakness
+        trait = imbecile
+        trait = inbred
+        trait = slow
+        # Lifestyle - some people live such a way that they develop it
+        trait = hedonist # a little too open to trying things
+        # Other traits contribute as well
+        trait = trusting
+        trait = content
+    }
+}
+dw_is_probably_black = { # This is for trying to determine when to use some artwork
+    OR = {
+        culture_group = east_african
+        culture_group = central_african
+        culture_group = west_african
+        race = ethiopian
+        race = somali
+        race = nubian
+        race = daju
+        race = kanuri
+        race = hausa
+        race = zaghawa
+        race = manden
+        race = soninke
+        race = songhay
+    }
+}
+dw_is_able_to_go_out_adventuring = {
+    NOT = {
+        OR = {
+            trait = in_hiding
+            trait = incapable
+            trait = on_pilgrimage
+            trait = on_indian_pilgrimage
+            trait = dw_out_adventuring
+        }
+    }
 }

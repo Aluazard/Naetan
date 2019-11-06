@@ -1,0 +1,1 @@
+# This file contains scripted effects for the intent of cross-mod compatibility

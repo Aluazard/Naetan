@@ -67,3 +67,27 @@ dw_armor_female_wolf_plate;Wolf Plate Mail;;;;;;;;;;;;;x
 dw_armor_female_wolf_plate_desc;Women's plate mail, made of steel and silver, with sculpted wolf heads at the shoulders. Said to protect one from werewolves.;;;;;;;;;;;;;x
 dw_diablerie_book;Diableries;;;;;;;;;;;;;x
 dw_diablerie_book_desc;A black bound book which carries a slight scent of charred flesh. Claims to hold the path to vampiric immortality.;;;;;;;;;;;;;x
+dw_hiccup_dragon_plate;Sleeping Dragon Plate;;;;;;;;;;;;;x
+dw_hiccup_dragon_plate_desc;A ceramic plate depicting a young man laying down, while encircled by a sleeping dragon.;;;;;;;;;;;;;x
+dw_dildo_01;Ye Ole Dildo;;;;;;;;;;;;;x
+dw_dildo_01_desc;A quality crafted implement for pleasure.;;;;;;;;;;;;;x
+dw_astrid_doll;Norse Maiden Doll;;;;;;;;;;;;;x
+dw_astrid_doll_desc;A fine made doll, which has an unnatural warmth when held.;;;;;;;;;;;;;x
+dw_helmet_01;Helm of the Devourer;;;;;;;;;;;;;x
+dw_helmet_01_desc;An intimidating helmet, with the face bearing a mandible shape, and the sides bearing curved horns.;;;;;;;;;;;;;x
+dw_breed_collar;Breeding Collar;;;;;;;;;;;;;x
+dw_breed_collar_desc;This ancient gold studded collar is said to allow the wearer's body to be impregnated by beasts.;;;;;;;;;;;;;x
+dw_venom_blade;Venom Blade;;;;;;;;;;;;;x
+dw_venom_blade_desc;A blade of unknown craftsmanship, with a red hued blade that seems to drip with toxins. It is highly poisonous to any that are cut by it.;;;;;;;;;;;;;x
+dw_dragon_horn;Dragon Horn;;;;;;;;;;;;;x
+dw_dragon_horn_desc;This horn produces a bone rattling sound that strikes fear in the hearts of enemies, while bolstering your own troops.;;;;;;;;;;;;;x
+dw_crimson_claw_banner;Crimson Claw Banner;;;;;;;;;;;;;x
+dw_crimson_claw_banner_desc;A banner with a cruel and violent history. It has been carried in some of the bloodiest battles in history, where the wielders are said to give no quarter.;;;;;;;;;;;;;x
+dw_demon_bestiary_scroll;Demon Bestiary;;;;;;;;;;;;;x
+dw_demon_bestiary_scroll_desc;This vile scroll holds details on demons, theories related to summoning, and deals to be struck for increased power.;;;;;;;;;;;;;x
+dw_human_health_scroll;Evolution of Embalming;;;;;;;;;;;;;x
+dw_human_health_scroll_desc;This scroll includes intricate details of the human body, which can be useful in either embalming, or medical pursuits.;;;;;;;;;;;;;x
+dw_historic_trade_practices;Historic Trade Practices;;;;;;;;;;;;;x
+dw_historic_trade_practices_desc;This scroll contains details about the inner workings of a former merchant company that traded across Europe and North Africa.;;;;;;;;;;;;;x
+ancient_engineering_scroll;Ancient Engineering;;;;;;;;;;;;;x
+ancient_engineering_scroll_desc;This scroll details the construction of a large monument. The construction methods used differ from today, while the details offer one to learn from the past.;;;;;;;;;;;;;x

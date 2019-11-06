@@ -1,0 +1,52 @@
+# Applies the combat training modifier that can be gained through the mission decision
+dw_apply_combat_training = {
+    if = {
+        limit = { has_character_modifier = dw_combat_master_9 }
+        remove_character_modifier = dw_combat_master_9
+        add_character_modifier = { name = dw_combat_master_10 duration = -1 }
+    }
+    else_if = {
+        limit = { has_character_modifier = dw_combat_master_8 }
+        remove_character_modifier = dw_combat_master_8
+        add_character_modifier = { name = dw_combat_master_9 duration = -1 }
+    }
+    else_if = {
+        limit = { has_character_modifier = dw_combat_master_7 }
+        remove_character_modifier = dw_combat_master_7
+        add_character_modifier = { name = dw_combat_master_8 duration = -1 }
+    }
+    else_if = {
+        limit = { has_character_modifier = dw_combat_master_6 }
+        remove_character_modifier = dw_combat_master_6
+        add_character_modifier = { name = dw_combat_master_7 duration = -1 }
+    }
+    else_if = {
+        limit = { has_character_modifier = dw_combat_master_5 }
+        remove_character_modifier = dw_combat_master_5
+        add_character_modifier = { name = dw_combat_master_6 duration = -1 }
+    }
+    else_if = {
+        limit = { has_character_modifier = dw_combat_master_4 }
+        remove_character_modifier = dw_combat_master_4
+        add_character_modifier = { name = dw_combat_master_5 duration = -1 }
+    }
+    else_if = {
+        limit = { has_character_modifier = dw_combat_master_3 }
+        remove_character_modifier = dw_combat_master_3
+        add_character_modifier = { name = dw_combat_master_4 duration = -1 }
+    }
+    else_if = {
+        limit = { has_character_modifier = dw_combat_master_2 }
+        remove_character_modifier = dw_combat_master_2
+        add_character_modifier = { name = dw_combat_master_3 duration = -1 }
+    }
+    else_if = {
+        limit = { has_character_modifier = dw_combat_master_1 }
+        remove_character_modifier = dw_combat_master_1
+        add_character_modifier = { name = dw_combat_master_2 duration = -1 }
+    }
+    else_if = {
+        limit = { NOT = { has_character_modifier = dw_combat_master_10 } }
+        add_character_modifier = { name = dw_combat_master_1 duration = -1 }
+    }
+}

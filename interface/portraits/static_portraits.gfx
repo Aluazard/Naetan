@@ -175,8 +175,155 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_01"
+		texturefile = "gfx/static_portraits/dw_portraits_01.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_02"
+		texturefile = "gfx/static_portraits/dw_portraits_02.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_03"
+		texturefile = "gfx/static_portraits/dw_portraits_03.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_04"
+		texturefile = "gfx/static_portraits/dw_portraits_04.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_05"
+		texturefile = "gfx/static_portraits/dw_portraits_05.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_06"
+		texturefile = "gfx/static_portraits/dw_portraits_06.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_07"
+		texturefile = "gfx/static_portraits/dw_portraits_07.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_08"
+		texturefile = "gfx/static_portraits/dw_portraits_08.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_09"
+		texturefile = "gfx/static_portraits/dw_portraits_09.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_10"
+		texturefile = "gfx/static_portraits/dw_portraits_10.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_11"
+		texturefile = "gfx/static_portraits/dw_portraits_11.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_12"
+		texturefile = "gfx/static_portraits/dw_portraits_12.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_13"
+		texturefile = "gfx/static_portraits/dw_portraits_13.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_14"
+		texturefile = "gfx/static_portraits/dw_portraits_14.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_15"
+		texturefile = "gfx/static_portraits/dw_portraits_15.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_16"
+		texturefile = "gfx/static_portraits/dw_portraits_16.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_17"
+		texturefile = "gfx/static_portraits/dw_portraits_17.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_18"
+		texturefile = "gfx/static_portraits/dw_portraits_18.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_19"
+		texturefile = "gfx/static_portraits/dw_portraits_19.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_20"
+		texturefile = "gfx/static_portraits/dw_portraits_20.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_portrait_dw_portraits_21"
+		texturefile = "gfx/static_portraits/dw_portraits_21.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
     portraitType = {
-        name = "PORTRAIT_static_1"
+        name = "PORTRAIT_static_dw_1"
 		effectFile = "gfx/FX/portrait.lua"
         weight = {
             additive_modifier = {
@@ -259,7 +406,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_2"
+        name = "PORTRAIT_static_dw_2"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -343,7 +490,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_3"
+        name = "PORTRAIT_static_dw_3"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -427,7 +574,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_4"
+        name = "PORTRAIT_static_dw_4"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -511,7 +658,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_5"
+        name = "PORTRAIT_static_dw_5"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -595,7 +742,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_6"
+        name = "PORTRAIT_static_dw_6"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -679,7 +826,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_7"
+        name = "PORTRAIT_static_dw_7"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -763,7 +910,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_8"
+        name = "PORTRAIT_static_dw_8"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -847,7 +994,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_9"
+        name = "PORTRAIT_static_dw_9"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -931,7 +1078,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_10"
+        name = "PORTRAIT_static_dw_10"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -1015,7 +1162,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_11"
+        name = "PORTRAIT_static_dw_11"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -1099,7 +1246,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_12"
+        name = "PORTRAIT_static_dw_12"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -1183,7 +1330,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_13"
+        name = "PORTRAIT_static_dw_13"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -1267,7 +1414,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_14"
+        name = "PORTRAIT_static_dw_14"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -1351,7 +1498,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_15"
+        name = "PORTRAIT_static_dw_15"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -1435,7 +1582,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_16"
+        name = "PORTRAIT_static_dw_16"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -1519,7 +1666,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_17"
+        name = "PORTRAIT_static_dw_17"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -1603,7 +1750,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_18"
+        name = "PORTRAIT_static_dw_18"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -1687,7 +1834,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_19"
+        name = "PORTRAIT_static_dw_19"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -1771,7 +1918,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_20"
+        name = "PORTRAIT_static_dw_20"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -1855,7 +2002,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_21"
+        name = "PORTRAIT_static_dw_21"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -1939,7 +2086,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_22"
+        name = "PORTRAIT_static_dw_22"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -2023,7 +2170,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_23"
+        name = "PORTRAIT_static_dw_23"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -2107,7 +2254,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_24"
+        name = "PORTRAIT_static_dw_24"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -2191,7 +2338,7 @@ spriteTypes = {
 		}
 	}
     portraitType = {
-        name = "PORTRAIT_static_25"
+        name = "PORTRAIT_static_dw_25"
 		effectFile = "gfx/FX/portrait.lua"
 
         weight = {
@@ -2273,5 +2420,1726 @@ spriteTypes = {
 				26 = { portrait_has_trait = portrait650 }
 			}
 		}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_26"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = harley01_pic
+				portrait_has_trait = harley02_pic
+				portrait_has_trait = harley03_pic
+				portrait_has_trait = harley04_pic
+				portrait_has_trait = harley05_pic
+				portrait_has_trait = batgirl01_pic
+				portrait_has_trait = batgirl02_pic
+				portrait_has_trait = batgirl03_pic
+				portrait_has_trait = batgirl04_pic
+				portrait_has_trait = poisonivy01_pic
+				portrait_has_trait = dashparr02_pic
+				portrait_has_trait = hela01_pic
+				portrait_has_trait = hela02_pic
+				portrait_has_trait = spidergwen01_pic
+				portrait_has_trait = spidergwen02_pic
+				portrait_has_trait = spidergwen03_pic
+				portrait_has_trait = spidergwen04_pic
+				portrait_has_trait = captainmarvel01_pic
+				portrait_has_trait = captainmarvel02_pic
+				portrait_has_trait = livewire01_pic
+				portrait_has_trait = livewire02_pic
+				portrait_has_trait = blackwidow01_pic
+				portrait_has_trait = blackwidow02_pic
+				portrait_has_trait = blackwidow03_pic
+				portrait_has_trait = blackwidow04_pic
+				portrait_has_trait = powergirl01_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_01:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = harley01_pic }
+						2 = { portrait_has_trait = harley02_pic }
+						3 = { portrait_has_trait = harley03_pic }
+						4 = { portrait_has_trait = harley04_pic }
+						5 = { portrait_has_trait = harley05_pic }
+						6 = { portrait_has_trait = batgirl01_pic }
+						7 = { portrait_has_trait = batgirl02_pic }
+						8 = { portrait_has_trait = batgirl03_pic }
+						9 = { portrait_has_trait = batgirl04_pic }
+						10 = { portrait_has_trait = poisonivy01_pic }
+						11 = { portrait_has_trait = dashparr02_pic }
+						12 = { portrait_has_trait = hela01_pic }
+						13 = { portrait_has_trait = hela02_pic }
+						14 = { portrait_has_trait = spidergwen01_pic }
+						15 = { portrait_has_trait = spidergwen02_pic }
+						16 = { portrait_has_trait = spidergwen03_pic }
+						17 = { portrait_has_trait = spidergwen04_pic }
+						18 = { portrait_has_trait = captainmarvel01_pic }
+						19 = { portrait_has_trait = captainmarvel02_pic }
+						20 = { portrait_has_trait = livewire01_pic }
+						21 = { portrait_has_trait = livewire02_pic }
+						22 = { portrait_has_trait = blackwidow01_pic }
+						23 = { portrait_has_trait = blackwidow02_pic }
+						24 = { portrait_has_trait = blackwidow03_pic }
+						25 = { portrait_has_trait = blackwidow04_pic }
+						26 = { portrait_has_trait = powergirl01_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_27"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = redrobin01_pic
+				portrait_has_trait = redrobin02_pic
+				portrait_has_trait = redrobin03_pic
+				portrait_has_trait = redrobin04_pic
+				portrait_has_trait = vulture01_pic
+				portrait_has_trait = violetparr02_pic
+				portrait_has_trait = bobparr02_pic
+				portrait_has_trait = helenparr02_pic
+				portrait_has_trait = spiderman01_pic
+				portrait_has_trait = spiderman02_pic
+				portrait_has_trait = spiderman03_pic
+				portrait_has_trait = spiderman04_pic
+				portrait_has_trait = venom01_pic
+				portrait_has_trait = twosix01_pic
+				portrait_has_trait = astrid01_pic
+				portrait_has_trait = hiccup01_pic
+				portrait_has_trait = joker01_pic
+				portrait_has_trait = joker02_pic
+				portrait_has_trait = joker03_pic
+				portrait_has_trait = joker04_pic
+				portrait_has_trait = helenparr01_pic
+				portrait_has_trait = violetparr01_pic
+				portrait_has_trait = bobparr01_pic
+				portrait_has_trait = dashparr01_pic
+				portrait_has_trait = syndrome01_pic
+				portrait_has_trait = syndrome02_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_02:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = redrobin01_pic }
+						2 = { portrait_has_trait = redrobin02_pic }
+						3 = { portrait_has_trait = redrobin03_pic }
+						4 = { portrait_has_trait = redrobin04_pic }
+						5 = { portrait_has_trait = vulture01_pic }
+						6 = { portrait_has_trait = violetparr02_pic }
+						7 = { portrait_has_trait = bobparr02_pic }
+						8 = { portrait_has_trait = helenparr02_pic }
+						9 = { portrait_has_trait = spiderman01_pic }
+						10 = { portrait_has_trait = spiderman02_pic }
+						11 = { portrait_has_trait = spiderman03_pic }
+						12 = { portrait_has_trait = spiderman04_pic }
+						13 = { portrait_has_trait = venom01_pic }
+						14 = { portrait_has_trait = twosix01_pic }
+						15 = { portrait_has_trait = astrid01_pic }
+						16 = { portrait_has_trait = hiccup01_pic }
+						17 = { portrait_has_trait = joker01_pic }
+						18 = { portrait_has_trait = joker02_pic }
+						19 = { portrait_has_trait = joker03_pic }
+						20 = { portrait_has_trait = joker04_pic }
+						21 = { portrait_has_trait = helenparr01_pic }
+						22 = { portrait_has_trait = violetparr01_pic }
+						23 = { portrait_has_trait = bobparr01_pic }
+						24 = { portrait_has_trait = dashparr01_pic }
+						25 = { portrait_has_trait = syndrome01_pic }
+						26 = { portrait_has_trait = syndrome02_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_28"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = tentacle01_pic
+				portrait_has_trait = tentacle02_pic
+				portrait_has_trait = tentacle03_pic
+				portrait_has_trait = tentacle04_pic
+				portrait_has_trait = tentacle05_pic
+				portrait_has_trait = tentacle06_pic
+				portrait_has_trait = tentacle07_pic
+				portrait_has_trait = tentacle08_pic
+				portrait_has_trait = tentacle09_pic
+				portrait_has_trait = tentacle10_pic
+				portrait_has_trait = tentacle11_pic
+				portrait_has_trait = tentacle12_pic
+				portrait_has_trait = tentacle13_pic
+				portrait_has_trait = tentacle14_pic
+				portrait_has_trait = tentacle15_pic
+				portrait_has_trait = tentacle16_pic
+				portrait_has_trait = tentacle17_pic
+				portrait_has_trait = tentacle18_pic
+				portrait_has_trait = tentacle19_pic
+				portrait_has_trait = tentacle20_pic
+				portrait_has_trait = tentacle21_pic
+				portrait_has_trait = tentacle22_pic
+				portrait_has_trait = tentacle23_pic
+				portrait_has_trait = tentacle24_pic
+				portrait_has_trait = tentacle25_pic
+				portrait_has_trait = tentacle26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_03:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = tentacle01_pic }
+						2 = { portrait_has_trait = tentacle02_pic }
+						3 = { portrait_has_trait = tentacle03_pic }
+						4 = { portrait_has_trait = tentacle04_pic }
+						5 = { portrait_has_trait = tentacle05_pic }
+						6 = { portrait_has_trait = tentacle06_pic }
+						7 = { portrait_has_trait = tentacle07_pic }
+						8 = { portrait_has_trait = tentacle08_pic }
+						9 = { portrait_has_trait = tentacle09_pic }
+						10 = { portrait_has_trait = tentacle10_pic }
+						11 = { portrait_has_trait = tentacle11_pic }
+						12 = { portrait_has_trait = tentacle12_pic }
+						13 = { portrait_has_trait = tentacle13_pic }
+						14 = { portrait_has_trait = tentacle14_pic }
+						15 = { portrait_has_trait = tentacle15_pic }
+						16 = { portrait_has_trait = tentacle16_pic }
+						17 = { portrait_has_trait = tentacle17_pic }
+						18 = { portrait_has_trait = tentacle18_pic }
+						19 = { portrait_has_trait = tentacle19_pic }
+						20 = { portrait_has_trait = tentacle20_pic }
+						21 = { portrait_has_trait = tentacle21_pic }
+						22 = { portrait_has_trait = tentacle22_pic }
+						23 = { portrait_has_trait = tentacle23_pic }
+						24 = { portrait_has_trait = tentacle24_pic }
+						25 = { portrait_has_trait = tentacle25_pic }
+						26 = { portrait_has_trait = tentacle26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_29"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = killerfrost01_pic
+				portrait_has_trait = killerfrost02_pic
+				portrait_has_trait = batman01_pic
+				portrait_has_trait = batman02_pic
+				portrait_has_trait = volcana01_pic
+				portrait_has_trait = starfire01_pic
+				portrait_has_trait = starfire02_pic
+				portrait_has_trait = giganta01_pic
+				portrait_has_trait = giganta02_pic
+				portrait_has_trait = blackfire01_pic
+				portrait_has_trait = blackfire02_pic
+				portrait_has_trait = thanos01_pic
+				portrait_has_trait = beastboy01_pic
+				portrait_has_trait = blackcat01_pic
+				portrait_has_trait = artemiscrock01_pic
+				portrait_has_trait = artemiscrock02_pic
+				portrait_has_trait = jinx01_pic
+				portrait_has_trait = desiree01_pic
+				portrait_has_trait = desiree02_pic
+				portrait_has_trait = mirage01_pic
+				portrait_has_trait = wonderwoman01_pic
+				portrait_has_trait = wonderwoman02_pic
+				portrait_has_trait = wolverine01_pic
+				portrait_has_trait = wolverine02_pic
+				portrait_has_trait = rogue01_pic
+				portrait_has_trait = rogue02_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_04:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = killerfrost01_pic }
+						2 = { portrait_has_trait = killerfrost02_pic }
+						3 = { portrait_has_trait = batman01_pic }
+						4 = { portrait_has_trait = batman02_pic }
+						5 = { portrait_has_trait = volcana01_pic }
+						6 = { portrait_has_trait = starfire01_pic }
+						7 = { portrait_has_trait = starfire02_pic }
+						8 = { portrait_has_trait = giganta01_pic }
+						9 = { portrait_has_trait = giganta02_pic }
+						10 = { portrait_has_trait = blackfire01_pic }
+						11 = { portrait_has_trait = blackfire02_pic }
+						12 = { portrait_has_trait = thanos01_pic }
+						13 = { portrait_has_trait = beastboy01_pic }
+						14 = { portrait_has_trait = blackcat01_pic }
+						15 = { portrait_has_trait = artemiscrock01_pic }
+						16 = { portrait_has_trait = artemiscrock02_pic }
+						17 = { portrait_has_trait = jinx01_pic }
+						18 = { portrait_has_trait = desiree01_pic }
+						19 = { portrait_has_trait = desiree02_pic }
+						20 = { portrait_has_trait = mirage01_pic }
+						21 = { portrait_has_trait = wonderwoman01_pic }
+						22 = { portrait_has_trait = wonderwoman02_pic }
+						23 = { portrait_has_trait = wolverine01_pic }
+						24 = { portrait_has_trait = wolverine02_pic }
+						25 = { portrait_has_trait = rogue01_pic }
+						26 = { portrait_has_trait = rogue02_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_30"
+			effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = platypoa01_pic
+				portrait_has_trait = raven01_pic
+				portrait_has_trait = nightwing01_pic
+				portrait_has_trait = nightwing02_pic
+				portrait_has_trait = missmartian01_pic
+				portrait_has_trait = deathstroke01_pic
+				portrait_has_trait = deathstroke02_pic
+				portrait_has_trait = thor01_pic
+				portrait_has_trait = thor02_pic
+				portrait_has_trait = loki01_pic
+				portrait_has_trait = loki02_pic
+				portrait_has_trait = storm01_pic
+				portrait_has_trait = emmafrost01_pic
+				portrait_has_trait = jeangrey01_pic
+				portrait_has_trait = jeangrey02_pic
+				portrait_has_trait = jubilee01_pic
+				portrait_has_trait = jubilee02_pic
+				portrait_has_trait = shadowcat01_pic
+				portrait_has_trait = charlesxavier01_pic
+				portrait_has_trait = deadpool01_pic
+				portrait_has_trait = domino01_pic
+				portrait_has_trait = supergirl01_pic
+				portrait_has_trait = superman01_pic
+				portrait_has_trait = milesmorales01_pic
+				portrait_has_trait = milesmorales02_pic
+				portrait_has_trait = catwoman01_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_05:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = platypoa01_pic }
+						2 = { portrait_has_trait = raven01_pic }
+						3 = { portrait_has_trait = nightwing02_pic }
+						4 = { portrait_has_trait = nightwing02_pic }
+						5 = { portrait_has_trait = missmartian01_pic }
+						6 = { portrait_has_trait = deathstroke01_pic }
+						7 = { portrait_has_trait = deathstroke02_pic }
+						8 = { portrait_has_trait = thor01_pic }
+						9 = { portrait_has_trait = thor02_pic }
+						10 = { portrait_has_trait = loki01_pic }
+						11 = { portrait_has_trait = loki02_pic }
+						12 = { portrait_has_trait = storm01_pic }
+						13 = { portrait_has_trait = emmafrost01_pic }
+						14 = { portrait_has_trait = jeangrey01_pic }
+						15 = { portrait_has_trait = jeangrey02_pic }
+						16 = { portrait_has_trait = jubilee01_pic }
+						17 = { portrait_has_trait = jubilee02_pic }
+						18 = { portrait_has_trait = shadowcat01_pic }
+						19 = { portrait_has_trait = charlesxavier01_pic }
+						20 = { portrait_has_trait = deadpool01_pic }
+						21 = { portrait_has_trait = domino01_pic }
+						22 = { portrait_has_trait = supergirl01_pic }
+						23 = { portrait_has_trait = superman01_pic }
+						24 = { portrait_has_trait = milesmorales01_pic }
+						25 = { portrait_has_trait = milesmorales02_pic }
+						26 = { portrait_has_trait = catwoman01_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_31"
+			effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = starfire03_pic
+				portrait_has_trait = violetparr03_pic
+				portrait_has_trait = scarletwitch01_pic
+				portrait_has_trait = scarletwitch02_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_06:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = starfire03_pic }
+						2 = { portrait_has_trait = violetparr03_pic }
+						3 = { portrait_has_trait = scarletwitch01_pic }
+						4 = { portrait_has_trait = scarletwitch02_pic }
+						5 = { always = no }
+						6 = { always = no }
+						7 = { always = no }
+						8 = { always = no }
+						9 = { always = no }
+						10 = { always = no }
+						11 = { always = no }
+						12 = { always = no }
+						13 = { always = no }
+						14 = { always = no }
+						15 = { always = no }
+						16 = { always = no }
+						17 = { always = no }
+						18 = { always = no }
+						19 = { always = no }
+						20 = { always = no }
+						21 = { always = no }
+						22 = { always = no }
+						23 = { always = no }
+						24 = { always = no }
+						25 = { always = no }
+						26 = { always = no }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_32"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = hyena01_pic
+				portrait_has_trait = hyena02_pic
+				portrait_has_trait = hyena03_pic
+				portrait_has_trait = hyena04_pic
+				portrait_has_trait = hyena05_pic
+				portrait_has_trait = hyena06_pic
+				portrait_has_trait = hyena07_pic
+				portrait_has_trait = hyena08_pic
+				portrait_has_trait = hyena09_pic
+				portrait_has_trait = hyena10_pic
+				portrait_has_trait = hyena11_pic
+				portrait_has_trait = hyena12_pic
+				portrait_has_trait = hyena13_pic
+				portrait_has_trait = hyena14_pic
+				portrait_has_trait = hyena15_pic
+				portrait_has_trait = hyena16_pic
+				portrait_has_trait = hyena17_pic
+				portrait_has_trait = hyena18_pic
+				portrait_has_trait = hyena19_pic
+				portrait_has_trait = hyena20_pic
+				portrait_has_trait = hyena21_pic
+				portrait_has_trait = hyena22_pic
+				portrait_has_trait = hyena23_pic
+				portrait_has_trait = hyena24_pic
+				portrait_has_trait = hyena25_pic
+				portrait_has_trait = hyena26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_07:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = hyena01_pic }
+						2 = { portrait_has_trait = hyena02_pic }
+						3 = { portrait_has_trait = hyena03_pic }
+						4 = { portrait_has_trait = hyena04_pic }
+						5 = { portrait_has_trait = hyena05_pic }
+						6 = { portrait_has_trait = hyena06_pic }
+						7 = { portrait_has_trait = hyena07_pic }
+						8 = { portrait_has_trait = hyena08_pic }
+						9 = { portrait_has_trait = hyena09_pic }
+						10 = { portrait_has_trait = hyena10_pic }
+						11 = { portrait_has_trait = hyena11_pic }
+						12 = { portrait_has_trait = hyena12_pic }
+						13 = { portrait_has_trait = hyena13_pic }
+						14 = { portrait_has_trait = hyena14_pic }
+						15 = { portrait_has_trait = hyena15_pic }
+						16 = { portrait_has_trait = hyena16_pic }
+						17 = { portrait_has_trait = hyena17_pic }
+						18 = { portrait_has_trait = hyena18_pic }
+						19 = { portrait_has_trait = hyena19_pic }
+						20 = { portrait_has_trait = hyena20_pic }
+						21 = { portrait_has_trait = hyena21_pic }
+						22 = { portrait_has_trait = hyena22_pic }
+						23 = { portrait_has_trait = hyena23_pic }
+						24 = { portrait_has_trait = hyena24_pic }
+						25 = { portrait_has_trait = hyena25_pic }
+						26 = { portrait_has_trait = hyena26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_33"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = wolf01_pic
+				portrait_has_trait = wolf02_pic
+				portrait_has_trait = wolf03_pic
+				portrait_has_trait = wolf04_pic
+				portrait_has_trait = wolf05_pic
+				portrait_has_trait = wolf06_pic
+				portrait_has_trait = wolf07_pic
+				portrait_has_trait = wolf08_pic
+				portrait_has_trait = wolf09_pic
+				portrait_has_trait = wolf10_pic
+				portrait_has_trait = wolf11_pic
+				portrait_has_trait = wolf12_pic
+				portrait_has_trait = wolf13_pic
+				portrait_has_trait = wolf14_pic
+				portrait_has_trait = wolf15_pic
+				portrait_has_trait = wolf16_pic
+				portrait_has_trait = wolf17_pic
+				portrait_has_trait = wolf18_pic
+				portrait_has_trait = wolf19_pic
+				portrait_has_trait = wolf20_pic
+				portrait_has_trait = wolf21_pic
+				portrait_has_trait = wolf22_pic
+				portrait_has_trait = wolf23_pic
+				portrait_has_trait = wolf24_pic
+				portrait_has_trait = wolf25_pic
+				portrait_has_trait = wolf26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_08:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = wolf01_pic }
+						2 = { portrait_has_trait = wolf02_pic }
+						3 = { portrait_has_trait = wolf03_pic }
+						4 = { portrait_has_trait = wolf04_pic }
+						5 = { portrait_has_trait = wolf05_pic }
+						6 = { portrait_has_trait = wolf06_pic }
+						7 = { portrait_has_trait = wolf07_pic }
+						8 = { portrait_has_trait = wolf08_pic }
+						9 = { portrait_has_trait = wolf09_pic }
+						10 = { portrait_has_trait = wolf10_pic }
+						11 = { portrait_has_trait = wolf11_pic }
+						12 = { portrait_has_trait = wolf12_pic }
+						13 = { portrait_has_trait = wolf13_pic }
+						14 = { portrait_has_trait = wolf14_pic }
+						15 = { portrait_has_trait = wolf15_pic }
+						16 = { portrait_has_trait = wolf16_pic }
+						17 = { portrait_has_trait = wolf17_pic }
+						18 = { portrait_has_trait = wolf18_pic }
+						19 = { portrait_has_trait = wolf19_pic }
+						20 = { portrait_has_trait = wolf20_pic }
+						21 = { portrait_has_trait = wolf21_pic }
+						22 = { portrait_has_trait = wolf22_pic }
+						23 = { portrait_has_trait = wolf23_pic }
+						24 = { portrait_has_trait = wolf24_pic }
+						25 = { portrait_has_trait = wolf25_pic }
+						26 = { portrait_has_trait = wolf26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_34"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = horse01_pic
+				portrait_has_trait = horse02_pic
+				portrait_has_trait = horse03_pic
+				portrait_has_trait = horse04_pic
+				portrait_has_trait = horse05_pic
+				portrait_has_trait = horse06_pic
+				portrait_has_trait = horse07_pic
+				portrait_has_trait = horse08_pic
+				portrait_has_trait = horse09_pic
+				portrait_has_trait = horse10_pic
+				portrait_has_trait = horse11_pic
+				portrait_has_trait = horse12_pic
+				portrait_has_trait = horse13_pic
+				portrait_has_trait = horse14_pic
+				portrait_has_trait = horse15_pic
+				portrait_has_trait = horse16_pic
+				portrait_has_trait = horse17_pic
+				portrait_has_trait = horse18_pic
+				portrait_has_trait = horse19_pic
+				portrait_has_trait = horse20_pic
+				portrait_has_trait = horse21_pic
+				portrait_has_trait = horse22_pic
+				portrait_has_trait = horse23_pic
+				portrait_has_trait = horse24_pic
+				portrait_has_trait = horse25_pic
+				portrait_has_trait = horse26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_09:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = horse01_pic }
+						2 = { portrait_has_trait = horse02_pic }
+						3 = { portrait_has_trait = horse03_pic }
+						4 = { portrait_has_trait = horse04_pic }
+						5 = { portrait_has_trait = horse05_pic }
+						6 = { portrait_has_trait = horse06_pic }
+						7 = { portrait_has_trait = horse07_pic }
+						8 = { portrait_has_trait = horse08_pic }
+						9 = { portrait_has_trait = horse09_pic }
+						10 = { portrait_has_trait = horse10_pic }
+						11 = { portrait_has_trait = horse11_pic }
+						12 = { portrait_has_trait = horse12_pic }
+						13 = { portrait_has_trait = horse13_pic }
+						14 = { portrait_has_trait = horse14_pic }
+						15 = { portrait_has_trait = horse15_pic }
+						16 = { portrait_has_trait = horse16_pic }
+						17 = { portrait_has_trait = horse17_pic }
+						18 = { portrait_has_trait = horse18_pic }
+						19 = { portrait_has_trait = horse19_pic }
+						20 = { portrait_has_trait = horse20_pic }
+						21 = { portrait_has_trait = horse21_pic }
+						22 = { portrait_has_trait = horse22_pic }
+						23 = { portrait_has_trait = horse23_pic }
+						24 = { portrait_has_trait = horse24_pic }
+						25 = { portrait_has_trait = horse25_pic }
+						26 = { portrait_has_trait = horse26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_35"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = dog01_pic
+				portrait_has_trait = dog02_pic
+				portrait_has_trait = dog03_pic
+				portrait_has_trait = dog04_pic
+				portrait_has_trait = dog05_pic
+				portrait_has_trait = dog06_pic
+				portrait_has_trait = dog07_pic
+				portrait_has_trait = dog08_pic
+				portrait_has_trait = dog09_pic
+				portrait_has_trait = dog10_pic
+				portrait_has_trait = dog11_pic
+				portrait_has_trait = dog12_pic
+				portrait_has_trait = dog13_pic
+				portrait_has_trait = dog14_pic
+				portrait_has_trait = dog15_pic
+				portrait_has_trait = dog16_pic
+				portrait_has_trait = dog17_pic
+				portrait_has_trait = dog18_pic
+				portrait_has_trait = dog19_pic
+				portrait_has_trait = dog20_pic
+				portrait_has_trait = dog21_pic
+				portrait_has_trait = dog22_pic
+				portrait_has_trait = dog23_pic
+				portrait_has_trait = dog24_pic
+				portrait_has_trait = dog25_pic
+				portrait_has_trait = dog26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_10:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = dog01_pic }
+						2 = { portrait_has_trait = dog02_pic }
+						3 = { portrait_has_trait = dog03_pic }
+						4 = { portrait_has_trait = dog04_pic }
+						5 = { portrait_has_trait = dog05_pic }
+						6 = { portrait_has_trait = dog06_pic }
+						7 = { portrait_has_trait = dog07_pic }
+						8 = { portrait_has_trait = dog08_pic }
+						9 = { portrait_has_trait = dog09_pic }
+						10 = { portrait_has_trait = dog10_pic }
+						11 = { portrait_has_trait = dog11_pic }
+						12 = { portrait_has_trait = dog12_pic }
+						13 = { portrait_has_trait = dog13_pic }
+						14 = { portrait_has_trait = dog14_pic }
+						15 = { portrait_has_trait = dog15_pic }
+						16 = { portrait_has_trait = dog16_pic }
+						17 = { portrait_has_trait = dog17_pic }
+						18 = { portrait_has_trait = dog18_pic }
+						19 = { portrait_has_trait = dog19_pic }
+						20 = { portrait_has_trait = dog20_pic }
+						21 = { portrait_has_trait = dog21_pic }
+						22 = { portrait_has_trait = dog22_pic }
+						23 = { portrait_has_trait = dog23_pic }
+						24 = { portrait_has_trait = dog24_pic }
+						25 = { portrait_has_trait = dog25_pic }
+						26 = { portrait_has_trait = dog26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_36"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = cat01_pic
+				portrait_has_trait = cat02_pic
+				portrait_has_trait = cat03_pic
+				portrait_has_trait = cat04_pic
+				portrait_has_trait = cat05_pic
+				portrait_has_trait = cat06_pic
+				portrait_has_trait = cat07_pic
+				portrait_has_trait = cat08_pic
+				portrait_has_trait = cat09_pic
+				portrait_has_trait = cat10_pic
+				portrait_has_trait = cat11_pic
+				portrait_has_trait = cat12_pic
+				portrait_has_trait = cat13_pic
+				portrait_has_trait = cat14_pic
+				portrait_has_trait = cat15_pic
+				portrait_has_trait = cat16_pic
+				portrait_has_trait = cat17_pic
+				portrait_has_trait = cat18_pic
+				portrait_has_trait = cat19_pic
+				portrait_has_trait = cat20_pic
+				portrait_has_trait = cat21_pic
+				portrait_has_trait = cat22_pic
+				portrait_has_trait = cat23_pic
+				portrait_has_trait = cat24_pic
+				portrait_has_trait = cat25_pic
+				portrait_has_trait = cat26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_11:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = cat01_pic }
+						2 = { portrait_has_trait = cat02_pic }
+						3 = { portrait_has_trait = cat03_pic }
+						4 = { portrait_has_trait = cat04_pic }
+						5 = { portrait_has_trait = cat05_pic }
+						6 = { portrait_has_trait = cat06_pic }
+						7 = { portrait_has_trait = cat07_pic }
+						8 = { portrait_has_trait = cat08_pic }
+						9 = { portrait_has_trait = cat09_pic }
+						10 = { portrait_has_trait = cat10_pic }
+						11 = { portrait_has_trait = cat11_pic }
+						12 = { portrait_has_trait = cat12_pic }
+						13 = { portrait_has_trait = cat13_pic }
+						14 = { portrait_has_trait = cat14_pic }
+						15 = { portrait_has_trait = cat15_pic }
+						16 = { portrait_has_trait = cat16_pic }
+						17 = { portrait_has_trait = cat17_pic }
+						18 = { portrait_has_trait = cat18_pic }
+						19 = { portrait_has_trait = cat19_pic }
+						20 = { portrait_has_trait = cat20_pic }
+						21 = { portrait_has_trait = cat21_pic }
+						22 = { portrait_has_trait = cat22_pic }
+						23 = { portrait_has_trait = cat23_pic }
+						24 = { portrait_has_trait = cat24_pic }
+						25 = { portrait_has_trait = cat25_pic }
+						26 = { portrait_has_trait = cat26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_37"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = fox01_pic
+				portrait_has_trait = fox02_pic
+				portrait_has_trait = fox03_pic
+				portrait_has_trait = fox04_pic
+				portrait_has_trait = fox05_pic
+				portrait_has_trait = fox06_pic
+				portrait_has_trait = fox07_pic
+				portrait_has_trait = fox08_pic
+				portrait_has_trait = fox09_pic
+				portrait_has_trait = fox10_pic
+				portrait_has_trait = fox11_pic
+				portrait_has_trait = fox12_pic
+				portrait_has_trait = fox13_pic
+				portrait_has_trait = fox14_pic
+				portrait_has_trait = fox15_pic
+				portrait_has_trait = fox16_pic
+				portrait_has_trait = fox17_pic
+				portrait_has_trait = fox18_pic
+				portrait_has_trait = fox19_pic
+				portrait_has_trait = fox20_pic
+				portrait_has_trait = fox21_pic
+				portrait_has_trait = fox22_pic
+				portrait_has_trait = fox23_pic
+				portrait_has_trait = fox24_pic
+				portrait_has_trait = fox25_pic
+				portrait_has_trait = fox26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_12:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = fox01_pic }
+						2 = { portrait_has_trait = fox02_pic }
+						3 = { portrait_has_trait = fox03_pic }
+						4 = { portrait_has_trait = fox04_pic }
+						5 = { portrait_has_trait = fox05_pic }
+						6 = { portrait_has_trait = fox06_pic }
+						7 = { portrait_has_trait = fox07_pic }
+						8 = { portrait_has_trait = fox08_pic }
+						9 = { portrait_has_trait = fox09_pic }
+						10 = { portrait_has_trait = fox10_pic }
+						11 = { portrait_has_trait = fox11_pic }
+						12 = { portrait_has_trait = fox12_pic }
+						13 = { portrait_has_trait = fox13_pic }
+						14 = { portrait_has_trait = fox14_pic }
+						15 = { portrait_has_trait = fox15_pic }
+						16 = { portrait_has_trait = fox16_pic }
+						17 = { portrait_has_trait = fox17_pic }
+						18 = { portrait_has_trait = fox18_pic }
+						19 = { portrait_has_trait = fox19_pic }
+						20 = { portrait_has_trait = fox20_pic }
+						21 = { portrait_has_trait = fox21_pic }
+						22 = { portrait_has_trait = fox22_pic }
+						23 = { portrait_has_trait = fox23_pic }
+						24 = { portrait_has_trait = fox24_pic }
+						25 = { portrait_has_trait = fox25_pic }
+						26 = { portrait_has_trait = fox26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_38"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = dragon01_pic
+				portrait_has_trait = dragon02_pic
+				portrait_has_trait = dragon03_pic
+				portrait_has_trait = dragon04_pic
+				portrait_has_trait = dragon05_pic
+				portrait_has_trait = dragon06_pic
+				portrait_has_trait = dragon07_pic
+				portrait_has_trait = dragon08_pic
+				portrait_has_trait = dragon09_pic
+				portrait_has_trait = dragon10_pic
+				portrait_has_trait = dragon11_pic
+				portrait_has_trait = dragon12_pic
+				portrait_has_trait = dragon13_pic
+				portrait_has_trait = dragon14_pic
+				portrait_has_trait = dragon15_pic
+				portrait_has_trait = dragon16_pic
+				portrait_has_trait = dragon17_pic
+				portrait_has_trait = dragon18_pic
+				portrait_has_trait = dragon19_pic
+				portrait_has_trait = dragon20_pic
+				portrait_has_trait = dragon21_pic
+				portrait_has_trait = dragon22_pic
+				portrait_has_trait = dragon23_pic
+				portrait_has_trait = dragon24_pic
+				portrait_has_trait = dragon25_pic
+				portrait_has_trait = dragon26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_13:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = dragon01_pic }
+						2 = { portrait_has_trait = dragon02_pic }
+						3 = { portrait_has_trait = dragon03_pic }
+						4 = { portrait_has_trait = dragon04_pic }
+						5 = { portrait_has_trait = dragon05_pic }
+						6 = { portrait_has_trait = dragon06_pic }
+						7 = { portrait_has_trait = dragon07_pic }
+						8 = { portrait_has_trait = dragon08_pic }
+						9 = { portrait_has_trait = dragon09_pic }
+						10 = { portrait_has_trait = dragon10_pic }
+						11 = { portrait_has_trait = dragon11_pic }
+						12 = { portrait_has_trait = dragon12_pic }
+						13 = { portrait_has_trait = dragon13_pic }
+						14 = { portrait_has_trait = dragon14_pic }
+						15 = { portrait_has_trait = dragon15_pic }
+						16 = { portrait_has_trait = dragon16_pic }
+						17 = { portrait_has_trait = dragon17_pic }
+						18 = { portrait_has_trait = dragon18_pic }
+						19 = { portrait_has_trait = dragon19_pic }
+						20 = { portrait_has_trait = dragon20_pic }
+						21 = { portrait_has_trait = dragon21_pic }
+						22 = { portrait_has_trait = dragon22_pic }
+						23 = { portrait_has_trait = dragon23_pic }
+						24 = { portrait_has_trait = dragon24_pic }
+						25 = { portrait_has_trait = dragon25_pic }
+						26 = { portrait_has_trait = dragon26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_39"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = demon01_pic
+				portrait_has_trait = demon02_pic
+				portrait_has_trait = demon03_pic
+				portrait_has_trait = demon04_pic
+				portrait_has_trait = demon05_pic
+				portrait_has_trait = demon06_pic
+				portrait_has_trait = demon07_pic
+				portrait_has_trait = demon08_pic
+				portrait_has_trait = demon09_pic
+				portrait_has_trait = demon10_pic
+				portrait_has_trait = demon11_pic
+				portrait_has_trait = demon12_pic
+				portrait_has_trait = demon13_pic
+				portrait_has_trait = demon14_pic
+				portrait_has_trait = demon15_pic
+				portrait_has_trait = demon16_pic
+				portrait_has_trait = demon17_pic
+				portrait_has_trait = demon18_pic
+				portrait_has_trait = demon19_pic
+				portrait_has_trait = demon20_pic
+				portrait_has_trait = demon21_pic
+				portrait_has_trait = demon22_pic
+				portrait_has_trait = demon23_pic
+				portrait_has_trait = demon24_pic
+				portrait_has_trait = demon25_pic
+				portrait_has_trait = demon26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_14:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = demon01_pic }
+						2 = { portrait_has_trait = demon02_pic }
+						3 = { portrait_has_trait = demon03_pic }
+						4 = { portrait_has_trait = demon04_pic }
+						5 = { portrait_has_trait = demon05_pic }
+						6 = { portrait_has_trait = demon06_pic }
+						7 = { portrait_has_trait = demon07_pic }
+						8 = { portrait_has_trait = demon08_pic }
+						9 = { portrait_has_trait = demon09_pic }
+						10 = { portrait_has_trait = demon10_pic }
+						11 = { portrait_has_trait = demon11_pic }
+						12 = { portrait_has_trait = demon12_pic }
+						13 = { portrait_has_trait = demon13_pic }
+						14 = { portrait_has_trait = demon14_pic }
+						15 = { portrait_has_trait = demon15_pic }
+						16 = { portrait_has_trait = demon16_pic }
+						17 = { portrait_has_trait = demon17_pic }
+						18 = { portrait_has_trait = demon18_pic }
+						19 = { portrait_has_trait = demon19_pic }
+						20 = { portrait_has_trait = demon20_pic }
+						21 = { portrait_has_trait = demon21_pic }
+						22 = { portrait_has_trait = demon22_pic }
+						23 = { portrait_has_trait = demon23_pic }
+						24 = { portrait_has_trait = demon24_pic }
+						25 = { portrait_has_trait = demon25_pic }
+						26 = { portrait_has_trait = demon26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_40"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = angel01_pic
+				portrait_has_trait = angel02_pic
+				portrait_has_trait = angel03_pic
+				portrait_has_trait = angel04_pic
+				portrait_has_trait = angel05_pic
+				portrait_has_trait = angel06_pic
+				portrait_has_trait = angel07_pic
+				portrait_has_trait = angel08_pic
+				portrait_has_trait = angel09_pic
+				portrait_has_trait = angel10_pic
+				portrait_has_trait = angel11_pic
+				portrait_has_trait = angel12_pic
+				portrait_has_trait = angel13_pic
+				portrait_has_trait = angel14_pic
+				portrait_has_trait = angel15_pic
+				portrait_has_trait = angel16_pic
+				portrait_has_trait = angel17_pic
+				portrait_has_trait = angel18_pic
+				portrait_has_trait = angel19_pic
+				portrait_has_trait = angel20_pic
+				portrait_has_trait = angel21_pic
+				portrait_has_trait = angel22_pic
+				portrait_has_trait = angel23_pic
+				portrait_has_trait = angel24_pic
+				portrait_has_trait = angel25_pic
+				portrait_has_trait = angel26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_15:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = angel01_pic }
+						2 = { portrait_has_trait = angel02_pic }
+						3 = { portrait_has_trait = angel03_pic }
+						4 = { portrait_has_trait = angel04_pic }
+						5 = { portrait_has_trait = angel05_pic }
+						6 = { portrait_has_trait = angel06_pic }
+						7 = { portrait_has_trait = angel07_pic }
+						8 = { portrait_has_trait = angel08_pic }
+						9 = { portrait_has_trait = angel09_pic }
+						10 = { portrait_has_trait = angel10_pic }
+						11 = { portrait_has_trait = angel11_pic }
+						12 = { portrait_has_trait = angel12_pic }
+						13 = { portrait_has_trait = angel13_pic }
+						14 = { portrait_has_trait = angel14_pic }
+						15 = { portrait_has_trait = angel15_pic }
+						16 = { portrait_has_trait = angel16_pic }
+						17 = { portrait_has_trait = angel17_pic }
+						18 = { portrait_has_trait = angel18_pic }
+						19 = { portrait_has_trait = angel19_pic }
+						20 = { portrait_has_trait = angel20_pic }
+						21 = { portrait_has_trait = angel21_pic }
+						22 = { portrait_has_trait = angel22_pic }
+						23 = { portrait_has_trait = angel23_pic }
+						24 = { portrait_has_trait = angel24_pic }
+						25 = { portrait_has_trait = angel25_pic }
+						26 = { portrait_has_trait = angel26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_41"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = orc01_pic
+				portrait_has_trait = orc02_pic
+				portrait_has_trait = orc03_pic
+				portrait_has_trait = orc04_pic
+				portrait_has_trait = orc05_pic
+				portrait_has_trait = orc06_pic
+				portrait_has_trait = orc07_pic
+				portrait_has_trait = orc08_pic
+				portrait_has_trait = orc09_pic
+				portrait_has_trait = orc10_pic
+				portrait_has_trait = orc11_pic
+				portrait_has_trait = orc12_pic
+				portrait_has_trait = orc13_pic
+				portrait_has_trait = orc14_pic
+				portrait_has_trait = orc15_pic
+				portrait_has_trait = orc16_pic
+				portrait_has_trait = orc17_pic
+				portrait_has_trait = orc18_pic
+				portrait_has_trait = orc19_pic
+				portrait_has_trait = orc20_pic
+				portrait_has_trait = orc21_pic
+				portrait_has_trait = orc22_pic
+				portrait_has_trait = orc23_pic
+				portrait_has_trait = orc24_pic
+				portrait_has_trait = orc25_pic
+				portrait_has_trait = orc26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_16:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = orc01_pic }
+						2 = { portrait_has_trait = orc02_pic }
+						3 = { portrait_has_trait = orc03_pic }
+						4 = { portrait_has_trait = orc04_pic }
+						5 = { portrait_has_trait = orc05_pic }
+						6 = { portrait_has_trait = orc06_pic }
+						7 = { portrait_has_trait = orc07_pic }
+						8 = { portrait_has_trait = orc08_pic }
+						9 = { portrait_has_trait = orc09_pic }
+						10 = { portrait_has_trait = orc10_pic }
+						11 = { portrait_has_trait = orc11_pic }
+						12 = { portrait_has_trait = orc12_pic }
+						13 = { portrait_has_trait = orc13_pic }
+						14 = { portrait_has_trait = orc14_pic }
+						15 = { portrait_has_trait = orc15_pic }
+						16 = { portrait_has_trait = orc16_pic }
+						17 = { portrait_has_trait = orc17_pic }
+						18 = { portrait_has_trait = orc18_pic }
+						19 = { portrait_has_trait = orc19_pic }
+						20 = { portrait_has_trait = orc20_pic }
+						21 = { portrait_has_trait = orc21_pic }
+						22 = { portrait_has_trait = orc22_pic }
+						23 = { portrait_has_trait = orc23_pic }
+						24 = { portrait_has_trait = orc24_pic }
+						25 = { portrait_has_trait = orc25_pic }
+						26 = { portrait_has_trait = orc26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_42"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = elf01_pic
+				portrait_has_trait = elf02_pic
+				portrait_has_trait = elf03_pic
+				portrait_has_trait = elf04_pic
+				portrait_has_trait = elf05_pic
+				portrait_has_trait = elf06_pic
+				portrait_has_trait = elf07_pic
+				portrait_has_trait = elf08_pic
+				portrait_has_trait = elf09_pic
+				portrait_has_trait = elf10_pic
+				portrait_has_trait = elf11_pic
+				portrait_has_trait = elf12_pic
+				portrait_has_trait = elf13_pic
+				portrait_has_trait = elf14_pic
+				portrait_has_trait = elf15_pic
+				portrait_has_trait = elf16_pic
+				portrait_has_trait = elf17_pic
+				portrait_has_trait = elf18_pic
+				portrait_has_trait = elf19_pic
+				portrait_has_trait = elf20_pic
+				portrait_has_trait = elf21_pic
+				portrait_has_trait = elf22_pic
+				portrait_has_trait = elf23_pic
+				portrait_has_trait = elf24_pic
+				portrait_has_trait = elf25_pic
+				portrait_has_trait = elf26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_17:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = elf01_pic }
+						2 = { portrait_has_trait = elf02_pic }
+						3 = { portrait_has_trait = elf03_pic }
+						4 = { portrait_has_trait = elf04_pic }
+						5 = { portrait_has_trait = elf05_pic }
+						6 = { portrait_has_trait = elf06_pic }
+						7 = { portrait_has_trait = elf07_pic }
+						8 = { portrait_has_trait = elf08_pic }
+						9 = { portrait_has_trait = elf09_pic }
+						10 = { portrait_has_trait = elf10_pic }
+						11 = { portrait_has_trait = elf11_pic }
+						12 = { portrait_has_trait = elf12_pic }
+						13 = { portrait_has_trait = elf13_pic }
+						14 = { portrait_has_trait = elf14_pic }
+						15 = { portrait_has_trait = elf15_pic }
+						16 = { portrait_has_trait = elf16_pic }
+						17 = { portrait_has_trait = elf17_pic }
+						18 = { portrait_has_trait = elf18_pic }
+						19 = { portrait_has_trait = elf19_pic }
+						20 = { portrait_has_trait = elf20_pic }
+						21 = { portrait_has_trait = elf21_pic }
+						22 = { portrait_has_trait = elf22_pic }
+						23 = { portrait_has_trait = elf23_pic }
+						24 = { portrait_has_trait = elf24_pic }
+						25 = { portrait_has_trait = elf25_pic }
+						26 = { portrait_has_trait = elf26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_43"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = fae01_pic
+				portrait_has_trait = fae02_pic
+				portrait_has_trait = fae03_pic
+				portrait_has_trait = fae04_pic
+				portrait_has_trait = fae05_pic
+				portrait_has_trait = fae06_pic
+				portrait_has_trait = fae07_pic
+				portrait_has_trait = fae08_pic
+				portrait_has_trait = fae09_pic
+				portrait_has_trait = fae10_pic
+				portrait_has_trait = fae11_pic
+				portrait_has_trait = fae12_pic
+				portrait_has_trait = fae13_pic
+				portrait_has_trait = fae14_pic
+				portrait_has_trait = fae15_pic
+				portrait_has_trait = fae16_pic
+				portrait_has_trait = fae17_pic
+				portrait_has_trait = fae18_pic
+				portrait_has_trait = fae19_pic
+				portrait_has_trait = fae20_pic
+				portrait_has_trait = fae21_pic
+				portrait_has_trait = fae22_pic
+				portrait_has_trait = fae23_pic
+				portrait_has_trait = fae24_pic
+				portrait_has_trait = fae25_pic
+				portrait_has_trait = fae26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_18:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = fae01_pic }
+						2 = { portrait_has_trait = fae02_pic }
+						3 = { portrait_has_trait = fae03_pic }
+						4 = { portrait_has_trait = fae04_pic }
+						5 = { portrait_has_trait = fae05_pic }
+						6 = { portrait_has_trait = fae06_pic }
+						7 = { portrait_has_trait = fae07_pic }
+						8 = { portrait_has_trait = fae08_pic }
+						9 = { portrait_has_trait = fae09_pic }
+						10 = { portrait_has_trait = fae10_pic }
+						11 = { portrait_has_trait = fae11_pic }
+						12 = { portrait_has_trait = fae12_pic }
+						13 = { portrait_has_trait = fae13_pic }
+						14 = { portrait_has_trait = fae14_pic }
+						15 = { portrait_has_trait = fae15_pic }
+						16 = { portrait_has_trait = fae16_pic }
+						17 = { portrait_has_trait = fae17_pic }
+						18 = { portrait_has_trait = fae18_pic }
+						19 = { portrait_has_trait = fae19_pic }
+						20 = { portrait_has_trait = fae20_pic }
+						21 = { portrait_has_trait = fae21_pic }
+						22 = { portrait_has_trait = fae22_pic }
+						23 = { portrait_has_trait = fae23_pic }
+						24 = { portrait_has_trait = fae24_pic }
+						25 = { portrait_has_trait = fae25_pic }
+						26 = { portrait_has_trait = fae26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_44"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = nymph01_pic
+				portrait_has_trait = nymph02_pic
+				portrait_has_trait = nymph03_pic
+				portrait_has_trait = nymph04_pic
+				portrait_has_trait = nymph05_pic
+				portrait_has_trait = nymph06_pic
+				portrait_has_trait = nymph07_pic
+				portrait_has_trait = nymph08_pic
+				portrait_has_trait = nymph09_pic
+				portrait_has_trait = nymph10_pic
+				portrait_has_trait = nymph11_pic
+				portrait_has_trait = nymph12_pic
+				portrait_has_trait = nymph13_pic
+				portrait_has_trait = nymph14_pic
+				portrait_has_trait = nymph15_pic
+				portrait_has_trait = nymph16_pic
+				portrait_has_trait = nymph17_pic
+				portrait_has_trait = nymph18_pic
+				portrait_has_trait = nymph19_pic
+				portrait_has_trait = nymph20_pic
+				portrait_has_trait = nymph21_pic
+				portrait_has_trait = nymph22_pic
+				portrait_has_trait = nymph23_pic
+				portrait_has_trait = nymph24_pic
+				portrait_has_trait = nymph25_pic
+				portrait_has_trait = nymph26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_19:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = nymph01_pic }
+						2 = { portrait_has_trait = nymph02_pic }
+						3 = { portrait_has_trait = nymph03_pic }
+						4 = { portrait_has_trait = nymph04_pic }
+						5 = { portrait_has_trait = nymph05_pic }
+						6 = { portrait_has_trait = nymph06_pic }
+						7 = { portrait_has_trait = nymph07_pic }
+						8 = { portrait_has_trait = nymph08_pic }
+						9 = { portrait_has_trait = nymph09_pic }
+						10 = { portrait_has_trait = nymph10_pic }
+						11 = { portrait_has_trait = nymph11_pic }
+						12 = { portrait_has_trait = nymph12_pic }
+						13 = { portrait_has_trait = nymph13_pic }
+						14 = { portrait_has_trait = nymph14_pic }
+						15 = { portrait_has_trait = nymph15_pic }
+						16 = { portrait_has_trait = nymph16_pic }
+						17 = { portrait_has_trait = nymph17_pic }
+						18 = { portrait_has_trait = nymph18_pic }
+						19 = { portrait_has_trait = nymph19_pic }
+						20 = { portrait_has_trait = nymph20_pic }
+						21 = { portrait_has_trait = nymph21_pic }
+						22 = { portrait_has_trait = nymph22_pic }
+						23 = { portrait_has_trait = nymph23_pic }
+						24 = { portrait_has_trait = nymph24_pic }
+						25 = { portrait_has_trait = nymph25_pic }
+						26 = { portrait_has_trait = nymph26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_45"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = genie01_pic
+				portrait_has_trait = genie02_pic
+				portrait_has_trait = genie03_pic
+				portrait_has_trait = genie04_pic
+				portrait_has_trait = genie05_pic
+				portrait_has_trait = genie06_pic
+				portrait_has_trait = genie07_pic
+				portrait_has_trait = genie08_pic
+				portrait_has_trait = genie09_pic
+				portrait_has_trait = genie10_pic
+				portrait_has_trait = genie11_pic
+				portrait_has_trait = genie12_pic
+				portrait_has_trait = genie13_pic
+				portrait_has_trait = genie14_pic
+				portrait_has_trait = genie15_pic
+				portrait_has_trait = genie16_pic
+				portrait_has_trait = genie17_pic
+				portrait_has_trait = genie18_pic
+				portrait_has_trait = genie19_pic
+				portrait_has_trait = genie20_pic
+				portrait_has_trait = genie21_pic
+				portrait_has_trait = genie22_pic
+				portrait_has_trait = genie23_pic
+				portrait_has_trait = genie24_pic
+				portrait_has_trait = genie25_pic
+				portrait_has_trait = genie26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_20:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = genie01_pic }
+						2 = { portrait_has_trait = genie02_pic }
+						3 = { portrait_has_trait = genie03_pic }
+						4 = { portrait_has_trait = genie04_pic }
+						5 = { portrait_has_trait = genie05_pic }
+						6 = { portrait_has_trait = genie06_pic }
+						7 = { portrait_has_trait = genie07_pic }
+						8 = { portrait_has_trait = genie08_pic }
+						9 = { portrait_has_trait = genie09_pic }
+						10 = { portrait_has_trait = genie10_pic }
+						11 = { portrait_has_trait = genie11_pic }
+						12 = { portrait_has_trait = genie12_pic }
+						13 = { portrait_has_trait = genie13_pic }
+						14 = { portrait_has_trait = genie14_pic }
+						15 = { portrait_has_trait = genie15_pic }
+						16 = { portrait_has_trait = genie16_pic }
+						17 = { portrait_has_trait = genie17_pic }
+						18 = { portrait_has_trait = genie18_pic }
+						19 = { portrait_has_trait = genie19_pic }
+						20 = { portrait_has_trait = genie20_pic }
+						21 = { portrait_has_trait = genie21_pic }
+						22 = { portrait_has_trait = genie22_pic }
+						23 = { portrait_has_trait = genie23_pic }
+						24 = { portrait_has_trait = genie24_pic }
+						25 = { portrait_has_trait = genie25_pic }
+						26 = { portrait_has_trait = genie26_pic }
+					}
+			}
+	}
+	portraitType = {
+      name = "PORTRAIT_static_dw_46"
+	effectFile = "gfx/FX/portrait.lua"
+      weight = {
+          additive_modifier = {
+              value = 1000000
+              portrait_clothing = yes
+			OR = {
+				portrait_has_trait = vampire01_pic
+				portrait_has_trait = vampire02_pic
+				portrait_has_trait = vampire03_pic
+				portrait_has_trait = vampire04_pic
+				portrait_has_trait = vampire05_pic
+				portrait_has_trait = vampire06_pic
+				portrait_has_trait = vampire07_pic
+				portrait_has_trait = vampire08_pic
+				portrait_has_trait = vampire09_pic
+				portrait_has_trait = vampire10_pic
+				portrait_has_trait = vampire11_pic
+				portrait_has_trait = vampire12_pic
+				portrait_has_trait = vampire13_pic
+				portrait_has_trait = vampire14_pic
+				portrait_has_trait = vampire15_pic
+				portrait_has_trait = vampire16_pic
+				portrait_has_trait = vampire17_pic
+				portrait_has_trait = vampire18_pic
+				portrait_has_trait = vampire19_pic
+				portrait_has_trait = vampire20_pic
+				portrait_has_trait = vampire21_pic
+				portrait_has_trait = vampire22_pic
+				portrait_has_trait = vampire23_pic
+				portrait_has_trait = vampire24_pic
+				portrait_has_trait = vampire25_pic
+				portrait_has_trait = vampire26_pic
+			}
+ 		}
+      }
+
+      layer = {
+          "GFX_empty:c0"
+          "GFX_empty:c2"
+          "GFX_empty:c3"
+          "GFX_empty:c1"
+          "GFX_empty:c4"
+          "GFX_empty:p1:h:y"
+          "GFX_portrait_dw_portraits_21:c5"
+      }
+
+      allow_property_values = {
+          1 = {
+              0 = { always = yes }
+          }
+          5 = {
+						0 = { always = no }
+						1 = { portrait_has_trait = vampire01_pic }
+						2 = { portrait_has_trait = vampire02_pic }
+						3 = { portrait_has_trait = vampire03_pic }
+						4 = { portrait_has_trait = vampire04_pic }
+						5 = { portrait_has_trait = vampire05_pic }
+						6 = { portrait_has_trait = vampire06_pic }
+						7 = { portrait_has_trait = vampire07_pic }
+						8 = { portrait_has_trait = vampire08_pic }
+						9 = { portrait_has_trait = vampire09_pic }
+						10 = { portrait_has_trait = vampire10_pic }
+						11 = { portrait_has_trait = vampire11_pic }
+						12 = { portrait_has_trait = vampire12_pic }
+						13 = { portrait_has_trait = vampire13_pic }
+						14 = { portrait_has_trait = vampire14_pic }
+						15 = { portrait_has_trait = vampire15_pic }
+						16 = { portrait_has_trait = vampire16_pic }
+						17 = { portrait_has_trait = vampire17_pic }
+						18 = { portrait_has_trait = vampire18_pic }
+						19 = { portrait_has_trait = vampire19_pic }
+						20 = { portrait_has_trait = vampire20_pic }
+						21 = { portrait_has_trait = vampire21_pic }
+						22 = { portrait_has_trait = vampire22_pic }
+						23 = { portrait_has_trait = vampire23_pic }
+						24 = { portrait_has_trait = vampire24_pic }
+						25 = { portrait_has_trait = vampire25_pic }
+						26 = { portrait_has_trait = vampire26_pic }
+					}
+			}
 	}
 }

@@ -1,0 +1,48 @@
+# Event_modifiers that are simply a means of tracking if an item is owned or not.
+# Items that are consumable and not artifacts
+
+dw_futa_potion = {
+	icon = 85
+}
+dw_symbiote_potion = {
+	icon = 85
+}
+dw_gender_swap_potion = {
+	icon = 85
+}
+dw_youthfulness_potion = {
+	icon = 85
+}
+dw_breast_expansion_potion = {
+	icon = 85
+}
+dw_cock_growth_potion = {
+	icon = 85
+}
+dw_minor_healing_potion = {
+	icon = 85
+}
+dw_major_healing_potion = {
+	icon = 85
+}
+dw_beauty_potion = {
+	icon = 85
+}
+dw_oblivion_potion = {
+	icon = 85
+}
+dw_giant_growth_potion = {
+	icon = 85
+}
+dw_awaken_heritage_potion = {
+	icon = 85
+}
+dw_elder_blood_potion = {
+	icon = 85
+}
+dw_love_potion = {
+	icon = 85
+}
+dw_mana_potion = {
+	icon = 85
+}

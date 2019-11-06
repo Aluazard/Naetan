@@ -1,0 +1,115 @@
+decisions = {
+    # work as a prostitute
+	dw_work_as_prostitute = {
+		ai_check_interval = 6
+		potential = {
+			is_adult = yes
+			has_valid_brothel = yes
+		}
+		allow = {
+			trait = prostitute
+			prisoner = no
+			is_incapable = no
+			custom_tooltip = { # We want to limit how often someone can whore themselves, mainly to not create a cash making exploit
+				text = dw_whore_recovery
+				NOT = { has_character_flag = dw_whore_recovery }
+			}
+		}
+		effect = {
+			hidden_tooltip = {
+				set_character_flag = dw_whore_recovery
+				character_event = { id = DWWhoring.999 days = 30 } #clear flag after a month
+			}
+			character_event = { id = DWWhoring.500 }
+		}
+		ai_will_do = {
+			factor = 0.5 # 50%
+		}
+	}
+    #Visit the brothel
+	dw_visit_brothel = {
+		ai_check_interval = 12
+		potential = {
+			has_valid_brothel = yes
+			is_adult = yes
+		}
+		allow = {
+            is_incapable = no
+			prisoner = no
+			wealth = 2
+		}
+		effect = {
+			character_event = { id = DWWhoring.1 }
+		}
+		ai_will_do = {
+			factor = 0.1 # AI is a base 10% likely to visit a brothel
+			modifier = {
+				factor = 0
+                OR = {
+                    ai_zeal = 20 # To religious or bound to societal norms to visit
+                    ai_rationality = 20 # Risk isn't worth the reward
+                    ai_honor = 20 # Being with one who isn't a true love is dishonorable
+                }
+			}
+			modifier = { # Those who are held by societal or spiritual beliefs are less concerned
+				factor = 2
+				NOT = { ai_zeal = -19 } # Less than -19 should make it -20 or below
+			}
+			modifier = { # Fails to see the risk, only pleasure
+				factor = 3
+				NOT = { ai_rationality = -19 } # Less than -19 should make it -20 or below
+			}
+            modifier = { # Sees no problem in seeking love in the arms of another
+				factor = 2
+				NOT = { ai_honor = -19 } # Less than -19 should make it -20 or below
+			}
+		}
+	}
+}
+targeted_decisions = {
+    # Make someone into a prostitute
+	dw_decree_thee_prostitute = {
+		filter = home_court
+		ai_target_filter = none
+		from_potential = {
+            ai = no
+		}
+		potential = {
+            has_valid_brothel = yes
+            FROM = { ai = no }
+            NOT = { trait = prostitute }
+            NOT = { has_character_flag = dw_disallow_prostitute }
+		}
+		allow = {
+            NOT = { trait = prostitute }
+		}
+		effect = {
+			add_trait = prostitute
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    # Remove the prostitute trait
+	dw_whore_no_more = {
+		filter = home_court
+		ai_target_filter = none
+		from_potential = {
+            ai = no
+		}
+		potential = {
+            FROM = { ai = no }
+            trait = prostitute
+		}
+		allow = {
+            trait = prostitute
+		}
+		effect = {
+			remove_trait = prostitute
+            set_character_flag = dw_disallow_prostitute
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,8 +1,7 @@
 #character
 on_startup = {
 	events = {
-		DWCore.1 # Sets the global value of Dark_World_Reborn_Present for mods that want to verify Dark World Reborn is present
-		DWCore.30 #Virgin trait assignment
+		DWBody.30 #Virgin trait assignment
 	}
 }
 
@@ -15,30 +14,16 @@ on_chronicle_start = {
 #character
 on_yearly_pulse = {
 	events = {
-		DWCore.39 #Virgin trait assignment revisited to see if anyone needs to lose it
-		DWWhoring.1009 # Old whores retire
-		DWNight.4999 # Vampire's lose a point of health due to the cost of the power required to continue to fuel their existence.
+		DWBody.30 #Virgin trait assignment
 	}
 }
 
 #character
 on_bi_yearly_pulse = {
-	events = {
-		DWNight.2000 #Vladimir appears in a random realm that is the player's
-	}
-	random_events = {
-		#Dark World Fairy Tales Events
-		100 = DWFairyTales.100 # Beauty and the Beast
-		100 = DWFairyTales.2000 # Wonderland
-	}
 }
 
 #character
 on_five_year_pulse = {
-	random_events = {
-		100 = DWCourt.3100 # Marshall has a morale building idea
-		100 = DWFuta.100 #Futa merchant event
-	}
 }
 
 # character
@@ -48,38 +33,34 @@ on_decade_pulse = {
 # character
 on_adulthood = {
 	events = {
-		DWCore.31 #Virgin trait assignment
-		DWCore.8010 #Custom portrait / modifier upon becoming an adult for certain traits
+		DWBody.30 #Virgin trait assignment
 	}
 }
 
 # character
 on_birth = {
-	events = { 
-		DWCore.8000 #Checking racial trait assignment at birth
-		DWCore.8200 # Serpent's Purge (alchemy potion effect) or any similar still birth magic
+	events = {
 	}
 }
 
 # Sent to employers of both spouses - ROOT is employer. FROM is employers "employee". new_character is the other spouse.
 on_marriage = {
 	events = {
-		DWCore.33 #Virgin trait removal
- 		DWCourt.900 # Jus Primae Noctis (Right of the first night)
+		DWBody.33 #Virgin trait removal
  	}
 }
 
 #character (at 2 months)
 on_pregnancy = {
 	events = {
-		DWCore.35 #Virgin trait removal
+		DWBody.35 #Virgin trait removal
  	}
 }
 
 # When a pagan ruler forces a prisoner to be his consort
 on_forced_consort = {
 	events = {
-		DWCore.37 #Virgin trait removal
+		DWBody.33 #Virgin trait removal
 	}
 }
 
@@ -91,28 +72,11 @@ on_siege_over_winner = {
 
 on_death = {
 	events = {
-		DWSOC.1415 #Announces hermetics apprentice death
 	}
 }
 
 # Fires every two years for characters who are members of any society
 on_society_bi_yearly_pulse = {
-	events = {
-		DWSOC.1000 # Wizards College quest tombola
-		DWSOC.7200 # Chosen of Lilith quest tombola
-		DWSOC.7000 # Society Corruption chance - multiple societies
-	}
-	
-	random_events = {
-		100 = DWSOC.20000 # Chosen of Lilith: Orgy
-		100 = DWSOC.20010 # Chosen of Lilith: Night on the Town
-		75 = DWSOC.20030 # Chosen of Lilith: Grand Summoning
-		100 = DWSOC.20060 # Chosen of Lilith: Infernal Choir (only with Rivals)
-		75 = DWSOC.7854 # Chosen of Lilith: Demon Hunters Attack
-		50 = DWSOC.1620 # Wizards College: Divine Summoning
-		50 = DWSOC.1460 # Wizards College: Gathering of the Minds
-		150 = 0 # Nothing
-	}
 }
 
 # A character has switched their society interest
@@ -120,7 +84,6 @@ on_society_bi_yearly_pulse = {
 # From = Society
 on_character_switch_society_interest = {
 	events = {
-		DWSOC.90 #Interest shown in Dark World Societies
 	}
 }
 
@@ -195,3 +158,17 @@ on_society_destroyed = {
 	}
 }
 
+on_become_imprisoned_any_reason = {
+	events = {
+		dw_hvevents.100 # Handles players characters imprisoned by others
+	}
+}
+
+### on combat pulse
+#FROM is the character who is the commander of the opposing side
+#FROMFROM is the character who is the LIEGE of the commander of the opposing side
+on_combat_pulse = {
+	random_events = {
+		500 = dw_randomevent.130 # Hela Appears - Potential Villain Recruit
+	}
+}

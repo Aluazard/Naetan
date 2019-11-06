@@ -156,3 +156,119 @@ dw_wound_19;Combat Damage;;;;;;;;;;;;;x
 dw_wound_20;Combat Damage;;;;;;;;;;;;;x
 ### Offmap related
 dw_offmap_slow_your_roll;Slow your roll;;;;;;;;;;;;;x
+### Body related
+dw_big_dick_public;Big Dick Known;;;;;;;;;;;;;x
+dw_subterranean_lair_00;Subterranean Lair: Basic;;;;;;;;;;;;;x
+dw_aboveground_lair_00;Aboveground Lair: Basic;;;;;;;;;;;;;x
+dw_justice_hall_00;Justice Hall: Basic;;;;;;;;;;;;;x
+dw_solitude_hall_00;Solitude Hall: Basic;;;;;;;;;;;;;x
+dw_subterranean_lair_01;Subterranean Lair: Upgrade I;;;;;;;;;;;;;x
+dw_aboveground_lair_01;Aboveground Lair: Upgrade I;;;;;;;;;;;;;x
+dw_justice_hall_01;Justice Hall: Upgrade I;;;;;;;;;;;;;x
+dw_solitude_hall_01;Solitude Hall: Upgrade I;;;;;;;;;;;;;x
+dw_inspired_tinkerer;Inspired Tinkerer;;;;;;;;;;;;;x
+dw_combat_master_1;Combat Apprentice: Stage 1;;;;;;;;;;;;;x
+dw_combat_master_2;Combat Apprentice: Stage 2;;;;;;;;;;;;;x
+dw_combat_master_3;Combat Apprentice: Stage 3;;;;;;;;;;;;;x
+dw_combat_master_4;Combat Apprentice: Stage 4;;;;;;;;;;;;;x
+dw_combat_master_5;Combat Journeyman: Stage 1;;;;;;;;;;;;;x
+dw_combat_master_6;Combat Journeyman: Stage 2;;;;;;;;;;;;;x
+dw_combat_master_7;Combat Journeyman: Stage 3;;;;;;;;;;;;;x
+dw_combat_master_8;Combat Journeyman: Stage 4;;;;;;;;;;;;;x
+dw_combat_master_9;Combat Journeyman: Stage 5;;;;;;;;;;;;;x
+dw_combat_master_10;Combat Master;;;;;;;;;;;;;x
+dw_on_patrol;On Patrol;;;;;;;;;;;;;x
+dw_extortion;Engaging in Extortion;;;;;;;;;;;;;x
+dw_bought_prison_release;Paid Prison Release;;;;;;;;;;;;;x
+dw_broke_out_of_prison;Broke out of Prison;;;;;;;;;;;;;x
+dw_tech_upgrade_intrigue_eyewear;High Tech Eyewear;;;;;;;;;;;;;x
+dw_tech_upgrade_assassin_gear;Assassin Gear;;;;;;;;;;;;;x
+dw_great_snuggle;Great Snuggle;;;;;;;;;;;;;x
+dw_kinky_good;Kinky (Good);;;;;;;;;;;;;x
+dw_kinky_bad;Kinky (Bad);;;;;;;;;;;;;x
+dw_knee_buckling_orgasm;Knee Buckling Orgasm;;;;;;;;;;;;;x
+dw_made_me_squirt;Made me squirt;;;;;;;;;;;;;x
+dw_good_company;Good company;;;;;;;;;;;;;x
+dw_harleys_hyenas;Harley's Hyenas;;;;;;;;;;;;;x
+dw_good_sissy;Good Sissy;;;;;;;;;;;;;x
+dw_my_nemesis;My Nemesis;;;;;;;;;;;;;x
+dw_out_of_the_shadows;Out of the Shadows;;;;;;;;;;;;;x
+dw_mind_control_obedience;Obedience;;;;;;;;;;;;;x
+dw_mind_control_friendly;Forced Friendly;;;;;;;;;;;;;x
+dw_mind_control_assault;Mental Assault;;;;;;;;;;;;;x
+dw_mind_control_cooldown;Mind Control Recovery;;;;;;;;;;;;;x
+dw_mind_control_notice_me;Notice Me;;;;;;;;;;;;;x
+dw_socially_embarrassed;Socially Embarrassed;;;;;;;;;;;;;x
+dw_enemy_of_mankind;Enemy of Mankind;;;;;;;;;;;;;x
+dw_victim_of_attack;Victim of an Attack;;;;;;;;;;;;;x
+dw_intense_training;Intense Training;;;;;;;;;;;;;x
+dw_green_with_ivy;Green with Ivy;;;;;;;;;;;;;x
+dw_tech_upgrade_generic;Gear Upgrade;;;;;;;;;;;;;x
+dw_saved_the_day;Saved the Day;;;;;;;;;;;;;x
+dw_illustrious_leader;Illustrious Leader;;;;;;;;;;;;;x
+dw_animal_lover;Lover of Animals;;;;;;;;;;;;;x
+dw_animal_bitch;Breeder Bitch;;;;;;;;;;;;;x
+dw_good_master;Good Master;;;;;;;;;;;;;x
+dw_good_pet;Good Pet;;;;;;;;;;;;;x
+dw_tech_upgrade_bracers;High Tech Bracers;;;;;;;;;;;;;x
+dw_war_dog;War Dog;;;;;;;;;;;;;x
+dw_reassured_me;Reassured Me;;;;;;;;;;;;;x
+dw_out_of_the_abyss;Out of the Abyss;;;;;;;;;;;;;x
+dw_out_of_their_skin;Out of their Skin;;;;;;;;;;;;;x
+dw_raped_me;Raped Me;;;;;;;;;;;;;x
+dw_dominated_me;Dominated Me;;;;;;;;;;;;;x
+dw_out_of_the_sky;Out of the Sky;;;;;;;;;;;;;x
+dw_futa_potion;Futa Form potion.;;;;;;;;;;;;;x
+dw_symbiote_potion;Symbiote Union potion;;;;;;;;;;;;;x
+dw_gender_swap_potion;Gender Swap potion;;;;;;;;;;;;;x
+dw_youthfulness_potion;Potion of Youthfulness;;;;;;;;;;;;;x
+dw_breast_expansion_potion;Breast Expansion potion;;;;;;;;;;;;;x
+dw_cock_growth_potion;Cock Growth potion;;;;;;;;;;;;;x
+dw_minor_healing_potion;Minor Healing Potion;;;;;;;;;;;;;x
+dw_major_healing_potion;Major Healing Potion;;;;;;;;;;;;;x
+dw_aphrodite_allure;Aphrodite's Blessing;;;;;;;;;;;;;x
+dw_beauty_potion;Beauty Potion;;;;;;;;;;;;;x
+dw_oblivion_potion;Oblivion Potion;;;;;;;;;;;;;x
+dw_giant_growth_potion;Giant Growth Potion;;;;;;;;;;;;;x
+dw_awaken_heritage_potion;Awaken Heritage potion;;;;;;;;;;;;;x
+dw_elder_blood_potion;Elder Blood potion;;;;;;;;;;;;;x
+dw_builders_boon;Builders Boon;;;;;;;;;;;;;x
+dw_love_potion;Love Potion;;;;;;;;;;;;;x
+dw_mana_potion;Mana Potion;;;;;;;;;;;;;x
+dw_quick_heal_cooldown;Quick Heal Cooldown;;;;;;;;;;;;;x
+dw_healed_me;Healed me.;;;;;;;;;;;;;x
+dw_transmutation_mage;Transmutation Specialist;;;;;;;;;;;;;x
+dw_midas_touch_cooldown;Midas Touch Cooldown;;;;;;;;;;;;;x
+dw_evocation_mage;Evocation Specialist;;;;;;;;;;;;;x
+dw_necromancer_mage;Necromancy Specialist;;;;;;;;;;;;;x
+dw_summoner_mage;Summoner Specialist;;;;;;;;;;;;;x
+dw_lightning_bolt_cooldown;Lightning Bolt Cooldown;;;;;;;;;;;;;x
+dw_disintegrate_cooldown;Disintegrate Cooldown;;;;;;;;;;;;;x
+dw_summon_familiar_cooldown;Summon Familiar Cooldown;;;;;;;;;;;;;x
+dw_summon_imp_familiar_cooldown;Summon Imp Familiar Cooldown;;;;;;;;;;;;;x
+dw_familiar_cat;Cat Familiar;;;;;;;;;;;;;x
+dw_familiar_dog;Dog Familiar;;;;;;;;;;;;;x
+dw_familiar_owl;Owl Familiar;;;;;;;;;;;;;x
+dw_familiar_parrot;Parrot Familiar;;;;;;;;;;;;;x
+dw_familiar_wolf;Wolf Familiar;;;;;;;;;;;;;x
+dw_familiar_raven;Raven Familiar;;;;;;;;;;;;;x
+dw_familiar_rat;Rat Familiar;;;;;;;;;;;;;x
+dw_familiar_otter;Otter Familiar;;;;;;;;;;;;;x
+dw_familiar_hedgehog;Hedgehog Familiar;;;;;;;;;;;;;x
+dw_familiar_imp;Imp Familiar;;;;;;;;;;;;;x
+dw_commune_justice;Commune: Justice;;;;;;;;;;;;;x
+dw_commune_guardian;Commune: Guardian;;;;;;;;;;;;;x
+dw_commune_purge;Commune: Purge;;;;;;;;;;;;;x
+dw_commune_prosperity;Commune: Prosperity;;;;;;;;;;;;;x
+dw_commune_stability;Commune: Stability;;;;;;;;;;;;;x
+dw_commune_conflict;Commune: Conflict;;;;;;;;;;;;;x
+dw_commune_cooldown;Commune Cooldown;;;;;;;;;;;;;x
+dw_minor_heal_cooldown;Minor Heal Cooldown;;;;;;;;;;;;;x
+dw_major_heal_cooldown;Major Heal Cooldown;;;;;;;;;;;;;x
+dw_raise_undead_cooldown;Undead Horde Cooldown;;;;;;;;;;;;;x
+dw_aura_of_death;Aura of Death;;;;;;;;;;;;;x
+dw_strong_aura_of_death;Strong Aura of Death;;;;;;;;;;;;;x
+dw_showed_good_etiquette;Good Etiquette;;;;;;;;;;;;;x
+dw_showed_poor_etiquette;Poor Etiquette;;;;;;;;;;;;;x
+dw_supported_performance;Supported Performance;;;;;;;;;;;;;x
+dw_ridculed_performance;Ridiculed Performance;;;;;;;;;;;;;x
