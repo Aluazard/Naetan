@@ -1,0 +1,148 @@
+archon = {
+	learning = 10
+	fertility = -0.5
+	immortal = yes
+	random = no
+	customizer = no
+
+	is_visible = {
+		OR = {
+			character = FROM
+			is_close_relative = FROM
+			has_character_flag = n_archon_revealed
+		}
+	}
+}
+
+archon_mark = {
+	learning = 5
+	random = no
+	customizer = no
+
+	is_visible = {
+		OR = {
+			character = FROM
+			is_close_relative = FROM
+			has_character_flag = n_mark_revealed
+		}
+	}
+}
+
+aspect_air = {
+	learning = 5
+	martial = 5
+	diplomacy = 5
+	random = no
+	customizer = no
+
+	is_visible = {
+		OR = {
+			character = FROM
+			is_close_relative = FROM
+			has_character_flag = n_archon_revealed
+		}
+	}
+}
+
+aspect_darkness = {
+	learning = 5
+	martial = -5
+	diplomacy = -5
+	intrigue = 20
+	random = no
+	customizer = no
+
+	is_visible = {
+		OR = {
+			character = FROM
+			is_close_relative = FROM
+			has_character_flag = n_archon_revealed
+		}
+	}
+}
+
+aspect_fire = {
+	learning = 5
+	martial = 20
+	diplomacy = -5
+	random = no
+	customizer = no
+
+	is_visible = {
+		OR = {
+			character = FROM
+			is_close_relative = FROM
+			has_character_flag = n_archon_revealed
+		}
+	}
+}
+
+aspect_light = {
+	learning = 5
+	martial = 10
+	diplomacy = 5
+	stewardship = 5
+	random = no
+	customizer = no
+
+	is_visible = {
+		OR = {
+			character = FROM
+			is_close_relative = FROM
+			has_character_flag = n_archon_revealed
+		}
+	}
+}
+
+aspect_soul = {
+	learning = 10
+	martial = -5
+	diplomacy = 15
+	stewardship = 5
+	random = no
+	customizer = no
+
+	is_visible = {
+		OR = {
+			character = FROM
+			is_close_relative = FROM
+			has_character_flag = n_archon_revealed
+		}
+	}
+}
+
+aspect_terra = {
+	learning = 5
+	martial = -5
+	intrigue = -5
+	stewardship = 5
+	diplomacy = 20
+	fertility = 1
+	random = no
+	customizer = no
+
+	is_visible = {
+		OR = {
+			character = FROM
+			is_close_relative = FROM
+			has_character_flag = n_archon_revealed
+		}
+	}
+}
+
+aspect_water = {
+	learning = 5
+	martial = 5
+	intrigue = 10
+	stewardship = -5
+	random = no
+	customizer = no
+
+	is_visible = {
+		OR = {
+			character = FROM
+			is_close_relative = FROM
+			has_character_flag = n_archon_revealed
+		}
+	}
+}

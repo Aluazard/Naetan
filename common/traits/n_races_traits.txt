@@ -22,7 +22,7 @@ aossi = {
 
 	opposite_opinion = -10
 	
-	is_visible = { 
+	is_visible = {
 		NOT = { has_character_flag = racial_traits_off }
 	}
 }
@@ -202,7 +202,7 @@ nua = {
 		leshnik_5
 	}
 
-	opposite_opinion = -1000
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -233,7 +233,7 @@ nua_1 = {
 		leshnik_5
 	}
 
-	opposite_opinion = -1000
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -264,7 +264,7 @@ nua_2 = {
 		leshnik_5
 	}
 
-	opposite_opinion = -1000
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -295,7 +295,7 @@ nua_3 = {
 		leshnik_5
 	}
 
-	opposite_opinion = -1000
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -326,7 +326,7 @@ nua_4 = {
 		leshnik_5
 	}
 
-	opposite_opinion = -1000
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }
@@ -357,7 +357,7 @@ nua_5 = {
 		leshnik_5
 	}
 
-	opposite_opinion = -1000
+	opposite_opinion = -10
 	
 	is_visible = { 
 		NOT = { has_character_flag = racial_traits_off }

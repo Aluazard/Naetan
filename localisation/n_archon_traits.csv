@@ -1,0 +1,18 @@
+archon;Archon;;;;;;;;;x
+archon_desc;This is an Archon. The Archons are revered by most all societies as the embodiment of magic. Although many practicioners of Ledrith (sorcery) exist they must all gain energy from outside sources, Archons do not. They are ledrith incarnate, beings of incredible power. Though they can be killed in combat or by others, they do not age or die.;;;;;;;;;;;;;x
+archon_mark;Mark of the Archon;;;;;;;;;x
+archon_mark_desc;At birth, some are marked by a strange power. Nobody knows who, or what. Some say it's the gods, others divine providence. It matters not, those marked are not yet Archons but they have the potential. \n Many perilous roads lie ahead for this child, for to become an Archon one must be strong of mind and body.;;;;;;;;;;;;;x
+aspect_air;§CAspect of Air§!;;;;;;;;;x
+aspect_darkness;§KAspect of Darkness§!;;;;;;;;;x
+aspect_fire;§RAspect of Fire§!;;;;;;;;;x
+aspect_light;§MAspect of Light§!;;;;;;;;;x
+aspect_soul;§PAspect of the Soul§!;;;;;;;;;x
+aspect_terra;§FAspect of Terra§!;;;;;;;;;x
+aspect_water;§BAspect of Water§!;;;;;;;;;x
+aspect_air_desc;One of the seven aspects of Ledrith, air calls upon the wind and weathers of the world, bending the very air of the world to this Archon's will.;;;;;;;;;;;;;x
+aspect_darkness_desc;One of the seven aspects of Ledrith, darkness consumes all. The monsters that go bump in the night, the fear of shadows, this is what this Archon embodies. No intrigue, lie, murder or vile deed is far from this one.;;;;;;;;;;;;;x
+aspect_fire_desc;One of the seven aspects of Ledrith, fire lights up all. A natural enemy to darkness, fire is what flows through this Archon's veins. Though a force for extinguishing the impure and driving away the darkness, fire if not tended can be terror of its own. An aspect of chaos if one is not careful.;;;;;;;;;;;;;x
+aspect_light_desc;One of the seven aspects of Ledrith, the eternal light is forever bright. A light to all, this Archon lets light and justice flow through them. Full of life and light are the halls of this Archon, and far away are the denizens of darkness.;;;;;;;;;;;;;x
+aspect_soul_desc;One of the seven aspects of Ledrith, the soul is a tricky thing. This Archon, inscrutible by all knows only his/her own designs. No knowledge, no secret is hidden from the master of the soul, and this Archon is as likely to unravel it as mend it.;;;;;;;;;;;;;x
+aspect_terra_desc;One of the seven aspects of Ledrith, terra is the giver of life. A bringer of fertility, this Archon sees only life where he/she walks paying no heed to death. Though this Archon's love is great, there is no hesitation to destroy those who oppose them.;;;;;;;;;;;;;x
+aspect_water_desc;One of the seven aspects of Ledrith, water is the wild, chaotic force of this world. A manipulator of the storm, this Archon of water is much like the waves, beautiful and terrifying. For this Archon, ships and the sea is their home, and the seas pay homage to them.;;;;;;;;;;;;;x

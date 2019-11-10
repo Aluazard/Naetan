@@ -1,0 +1,66 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_archon"
+		texturefile = "gfx/traits/magic/archon.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+		name = "GFX_trait_archon_mark"
+		texturefile = "gfx/traits/magic/archon_mark.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+		name = "GFX_trait_aspect_air"
+		texturefile = "gfx/traits/magic/aspect_air.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+		name = "GFX_trait_aspect_darkness"
+		texturefile = "gfx/traits/magic/aspect_darkness.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+		name = "GFX_trait_aspect_fire"
+		texturefile = "gfx/traits/magic/aspect_fire.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+		name = "GFX_trait_aspect_light"
+		texturefile = "gfx/traits/magic/aspect_light.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_aspect_soul"
+		texturefile = "gfx/traits/magic/aspect_soul.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_aspect_terra"
+		texturefile = "gfx/traits/magic/aspect_terra.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_aspect_water"
+		texturefile = "gfx/traits/magic/aspect_water.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}
