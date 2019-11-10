@@ -1,5 +1,8 @@
-	title = c_eferuri
-	max_settlements = 2
-	culture = bedouin_arabic
-	religion = norse_pagan_reformed
-	b_sohict = tribal
+	title = c_maives
+	max_settlements = 5
+	culture = kalleon
+	religion = eros_triad
+
+	b_bellside = castle
+	b_silverhost = city
+	b_littlevein = temple

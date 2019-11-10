@@ -1,5 +1,10 @@
-	title = c_kemyut
+	title = c_neunweil
 	max_settlements = 6
-	culture = kanuri
-	religion = catholic
-	b_kirarda = tribal
+	culture = kalleon
+	religion = eros_triad
+
+	b_grassmond = castle
+	b_steelcrest = city
+	b_sunspire = temple
+	b_purlrun = castle
+

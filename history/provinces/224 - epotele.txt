@@ -1,5 +1,9 @@
 	title = c_epotele
 	max_settlements = 5
-	culture = panjabi
-	religion = zoroastrian
-	b_dotyut = tribal
+	culture = kalleon
+	religion = eros_triad
+
+	b_lastfort = castle
+	b_rimerock = city
+	b_dewfair = city
+	b_steepacre = temple

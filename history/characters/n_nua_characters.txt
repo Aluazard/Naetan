@@ -88,3 +88,33 @@
 	}
 	dynasty = 7
 }
+
+10 = {
+	name = Arnest 
+	culture = kalleon
+	religion = eros_triad
+	14290.1.1 = {
+		birth = 14284.1.1
+	}
+	dynasty = 8
+}
+
+11 = {
+	name = Aven 
+	culture = kalleon
+	religion = eros_triad
+	14290.1.1 = {
+		birth = 14284.1.1
+	}
+	dynasty = 8
+}
+
+12 = {
+	name = Ashen 
+	culture = kalleon
+	religion = eros_triad
+	14290.1.1 = {
+		birth = 14274.1.1
+	}
+	dynasty = 9
+}

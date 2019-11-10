@@ -1,5 +1,8 @@
-	title = c_kalarda
-	max_settlements = 2
-	culture = manden
-	religion = bogomilist
-	b_karak = tribal
+	title = c_weilshafen
+	max_settlements = 5
+	culture = kalleon
+	religion = eros_triad
+
+	b_scorchdale = castle
+	b_mudtville = city
+	b_thornband = city

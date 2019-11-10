@@ -1,5 +1,8 @@
-	title = c_qelaide
-	max_settlements = 2
-	culture = english
-	religion = baltic_pagan_reformed
-	b_walence = tribal
+	title = c_alensier
+	max_settlements = 5
+	culture = kalleon
+	religion = eros_triad
+
+	b_nightcairn = castle
+	b_coldfield = city
+	b_ravenstall = city

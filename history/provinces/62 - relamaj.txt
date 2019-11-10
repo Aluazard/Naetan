@@ -1,5 +1,8 @@
-	title = c_relamaj
+	title = c_landsen
 	max_settlements = 6
-	culture = greek
-	religion = zikri
-	b_kayn = tribal
+	culture = kalleon
+	religion = eros_triad
+
+	b_graychill = castle
+	b_thornscar = city
+	b_silentgarde = city
