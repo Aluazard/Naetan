@@ -1,7 +1,0 @@
-# Tracks event_modifiers that are related to one's body traits
-
-dw_big_dick_public = {
-    icon = 39
-    sex_appeal_opinion = 10 # The desire to know if size really does matter
-    monthly_character_prestige = 0.5 # Has the balls (literally) to come out public
-}

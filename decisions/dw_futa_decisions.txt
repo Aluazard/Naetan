@@ -1,2 +1,0 @@
-### Decisions specific to Futa mod
-# Currently no more futa specific decisions
