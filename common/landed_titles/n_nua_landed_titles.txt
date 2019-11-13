@@ -1,3 +1,99 @@
+k_alanis = {
+	color = { 255 61 61 }
+	color2 = { 255 61 61 }
+	culture = alanis
+	religion = eros_duo
+	title = king
+	title_female = queen
+	capital = 406
+
+	d_alanisia = {
+		color = { 255 61 61 }
+		color2 = { 255 61 61 }
+		culture = alanis
+		religion = eros_duo
+		title = aearl
+		title_female = aearl
+		capital = 406
+	
+		c_crucible = {
+			capital = 406
+			b_blaufurt = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_musa = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_mavila = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_revara = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_parint = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_soissy = {
+				title = sherriff
+				title_female = sherriff
+			}
+			color = { 255 61 61 }
+			color2 = { 255 61 61 }
+			culture = alanis
+			religion = eros_duo
+			title = comte
+			title_female = comtess
+		}
+		c_ermeco = {
+			capital = 234
+			b_cantasaro = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_pontegat = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_trintis = {
+				title = sherriff
+				title_female = sherriff
+			}
+			color = { 255 70 61 }
+			color2 = { 255 70 61 }
+			culture = alanis
+			religion = eros_duo
+			title = comte
+			title_female = comtess
+		}
+		c_nari = {
+			capital = 233
+			b_mefni = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_estanico = {
+				title = sherriff
+				title_female = sherriff
+			}
+			b_fueba = {
+				title = sherriff
+				title_female = sherriff
+			}
+			color = { 255 80 70 }
+			color2 = { 255 80 70 }
+			culture = alanis
+			religion = eros_duo
+			title = comte
+			title_female = comtess
+		}
+	}
+}
+
 k_crinia = {
 	color = { 250 128 0 }
 	color2 = { 250 128 0 }

@@ -1,6 +1,6 @@
 14325.1.1 = {
-	holder = 13
+	holder = 12
 	law = succ_primogeniture
 	law = agnatic_succession
-	liege = d_kalleon
+	liege = d_alanisia
 }

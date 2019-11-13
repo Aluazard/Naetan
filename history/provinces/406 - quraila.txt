@@ -1,5 +1,11 @@
-	title = c_quraila
+	title = c_crucible
 	max_settlements = 7
-	culture = finnish
-	religion = bon_reformed
-	b_ewalarda = tribal
+	culture = alanis
+	religion = eros_duo
+
+	b_blaufurt = castle
+	b_soissy = castle
+	b_parint = city
+	b_revara = city
+	b_mavila = city
+	b_musa = temple

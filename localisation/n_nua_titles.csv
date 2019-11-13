@@ -1,9 +1,11 @@
 k_crinia;Kalleon;;;;;;;;;;;;;
+k_alanis;Alanis;;;;;;;;;;;;;
 
 d_ante_cryta;Ante-Cryta;;;;;;;;;;;;;
 d_postre_cryta;Postre-Cryta;;;;;;;;;;;;;
 d_kings_shore;Kings Shore;;;;;;;;;;;;;
 d_kalleon;Kalleon Fields;;;;;;;;;;;;;
+d_alanisia;Alanisia;;;;;;;;;;;;;
 
 c_lisele;Cryta;;;;;;;;;;;;;
 c_dazay;Dayan;;;;;;;;;;;;;
@@ -31,6 +33,9 @@ c_landsen;Landsen;;;;;;;;;;;;;;
 c_maives;Maives;;;;;;;;;;;;;;
 c_edenreem;Edenreem;;;;;;;;;;;;;;
 c_weilshafen;Weilshafen;;;;;;;;;;;;;;
+c_crucible;Crucible;;;;;;;;;;;;;;
+c_ermeco;Ermeco;;;;;;;;;;;;;;
+c_nari;Nari;;;;;;;;;;;;;;
 
 b_sasayn;Sasayn;;;;;;;;;;;;;
 b_miserth;Miserth;;;;;;;;;;;;;
@@ -109,3 +114,15 @@ b_bronzehand;Bronzehand;;;;;;;;;;;;;
 b_thornband;Thornband;;;;;;;;;;;;;
 b_mudtville;Mudtville;;;;;;;;;;;;;
 b_scorchdale;Scorchdale;;;;;;;;;;;;;
+b_blaufurt;Blaufurt;;;;;;;;;;;;;
+b_soissy;Soissy;;;;;;;;;;;;;
+b_parint;Parint;;;;;;;;;;;;;
+b_revara;Revara;;;;;;;;;;;;;
+b_mavila;Mavila;;;;;;;;;;;;;
+b_musa;Musa;;;;;;;;;;;;;
+b_cantasaro;Contasaro;;;;;;;;;;;;;
+b_pontegat;Pontegat;;;;;;;;;;;;;
+b_trintis;Trintis;;;;;;;;;;;;;
+b_fueba;Fueba;;;;;;;;;;;;;
+b_estanico;Estanico;;;;;;;;;;;;;
+b_mefni;Mefni;;;;;;;;;;;;;

@@ -1,5 +1,8 @@
-	title = c_wegalk
+	title = c_nari
 	max_settlements = 7
-	culture = kurdish
-	religion = baltic_pagan_reformed
-	b_echaa = tribal
+	culture = alanis
+	religion = eros_duo
+
+	b_mefni = castle
+	b_estanico = city
+	b_fueba = temple

@@ -1,5 +1,8 @@
-	title = c_koramaj
+	title = c_ermeco
 	max_settlements = 7
-	culture = breton
-	religion = buddhist
-	b_ninarak = tribal
+	culture = alanis
+	religion = eros_duo
+
+	b_pontegat = castle
+	b_trintis = city
+	b_cantasaro = city

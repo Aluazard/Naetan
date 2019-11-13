@@ -1,3 +1,4 @@
+#Kalleon Characters
 1 = {
 	name = Reric
 	culture = crytan
@@ -109,7 +110,7 @@
 	dynasty = 8
 }
 
-12 = {
+13 = {
 	name = Ashen 
 	culture = kalleon
 	religion = eros_triad
@@ -117,4 +118,15 @@
 		birth = 14274.1.1
 	}
 	dynasty = 9
+}
+
+#Alanis Characters
+12 = {
+	name = Karl 
+	culture = alanis
+	religion = eros_duo
+	14274.1.1 = {
+		birth = 14274.1.1
+	}
+	dynasty = 10
 }
