@@ -1,3 +1,26 @@
+### Wilderness Race Traits
+wilderness = {
+	potential = {
+	 culture_group = wilderness
+ 	}
+	immortal = yes
+	fertility_penalty = -1
+	diplomacy_penalty = -30
+	stewardship_penalty = -30
+	martial_penalty = -30
+	intrigue_penalty = -30
+	learning_penalty = -30
+	cannot_marry = yes
+	incapacitating = yes
+	cannot_inherit = yes
+	global_revolt_risk = -1000.15
+	ai_ambition = -100
+	ai_rationality = 100
+	ai_honor = 100
+	ai_zeal = -100
+ 	ai_greed = -100
+}
+
 ### Aos Si Race Traits
 aossi = {	
 	learning = 2

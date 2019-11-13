@@ -1,4 +1,14 @@
 # Population Modifiers for levy and morale
+# Wilderness Pop
+wilderness_population = {
+	icon = 148
+	tax_income = -0.005
+	local_tax_modifier = -1
+	local_revolt_risk = -1
+	levy_size = -2
+	levy_reinforce_rate = -1
+	fort_level = 1000
+}
 # Nua Pop
 nua_population_1 = {
 	local_tax_modifier = 0

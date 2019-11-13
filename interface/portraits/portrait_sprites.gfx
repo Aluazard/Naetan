@@ -1902,24 +1902,3 @@ spriteTypes = {
 	}
 	
 }
-	
-############## Greenskin ##########################
-
-	spriteType = {
-		name = "GFX_orc_background"
-		texturefile = "gfx/characters/greenskins/orc.dds"
-		noOfFrames = 1
-		norefcount = yes
-		can_be_lowres = yes
-	}
-	
-########### Fixed Portraits by BR ############
-
-	spriteType = {
-		name = "GFX_character_monster"
-		texturefile = "gfx/characters/shared/BR_fixed_portraits.dds"
-		noOfFrames = 4
-		norefcount = yes
-		can_be_lowres = yes
-	}
-}
