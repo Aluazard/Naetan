@@ -1,0 +1,21 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+opinion_rejected;Spurned at Night;Repousse vos avances;;;;;;;;;;;;x
+visit_chamber_sin;Visit [Root.GetFirstName]'s Bedchamber;Visitez la chambre de [Root.GetFirstName];;;;;;;;;;;;x
+visit_chamber_sin_desc;You can Visit [Root.GetFirstName]'s Bedchamber and attempt to seduce your way inside.;Vous pouvez vous rendre dans la chambre de [Root.GetFirstName] et lui faire des avances;;;;;;;;;;;;x
+visited_chambers;Visited Chambers Recently;Chambre visitée récemment;;;;;;;;;;;;x
+visited_chambers_desc;You were recently in chambers with someone.;Chambre visitée récemment avec quelqu'un d'autre;;;;;;;;;;;;x
+adopt_sinfertile;Adopt an Acarpous life;Adopter vie de débauche;;;;;;;;;;;;x
+adopt_sinfertile_desc;You've decided you have enough children so no more.;Vous avez décidé que vous aviez assez d'enfants.;;;;;;;;;;;;x
+revoke_sinfertile;Renounce Acarpous life;Renoncer vie de débauche;;;;;;;;;;;;x
+revoke_sinfertile_desc;You've lived a Acarpous life but no longer, more children can't hurt.;Renoncer vie de débauche, plus jamais d'enfant malheureux;;;;;;;;;;;;x
+sinfertile;Acarpous;Débauché;;;;;;;;;;;;x
+sinfertile_desc;You have enough children.;Vous avez assez d'enfants;;;;;;;;;;;;x
+sinfertile2;Acarpous;Débauché;;;;;;;;;;;;x
+sinfertile2_desc;You have enough children.;Vous avez assez d'enfants;;;;;;;;;;;;x
+EVTDESCvisit_chamber_sin.0;[FromFrom.GetFirstName] has happened upon your chambers. [FromFrom.GetSheHe] whispers sweet innuendoes in your ear as [FromFrom.GetSheHe] slides [FromFrom.GetHerHis] hand up your thigh.;[FromFrom.GetFirstName] arrive dans la chambre de [FromFrom.GetSheHe] lui glissant des mots doux à l'oreille [FromFrom.GetSheHe] doucement [FromFrom.GetHerHis] vous glissez vos mains entre ses cuisses.;;;;;;;;;;;;x
+EVTOPTAvisit_chamber_sin.0;Get in here! *[FromFrom.GetFirstName] is dragged inside*;Entre ici ! *[FromFrom.GetFirstName] est tiré par les cheveux à l'intérieur de la chambre *;;;;;;;;;;;;x
+EVTOPTBvisit_chamber_sin.0;I can't.;Je ne peux pas !;;;;;;;;;;;;x
+EVTDESCvisit_chamber_sin.1;[From.GetFirstName] showed you a night, one you will, hopefuly, remember forever.;[From.GetFirstName] vous a tout montré cette nuit qui sera inoubliable.;;;;;;;;;;;;x
+EVTOPTAvisit_chamber_sin.1;It's good to be me!;C'est bon d'être le maitre !;;;;;;;;;;;;x
+EVTDESCvisit_chamber_sin.2;[From.GetFirstName] showed you the door, seemingly immune to your charms.;[From.GetFirstName] vous montre la porte, insensible à vos charmes;;;;;;;;;;;;x
+EVTOPTAvisit_chamber_sin.2;But, but how?!;Mais, mais, comment ?;;;;;;;;;;;;x

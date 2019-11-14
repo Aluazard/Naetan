@@ -1,0 +1,3 @@
+opinion_rejected = {
+	opinion = -10
+}

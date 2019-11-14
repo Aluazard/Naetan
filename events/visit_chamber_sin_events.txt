@@ -1,0 +1,445 @@
+namespace = visit_chamber_sin
+character_event = {
+	id = visit_chamber_sin.0
+	desc = EVTDESCvisit_chamber_sin.0
+	picture = GFX_evt_lovers
+	is_triggered_only = yes
+
+	immediate = {
+		FROMFROM = { set_character_flag = sin_visited_chambers }
+	}
+
+	option = {
+		name = EVTOPTAvisit_chamber_sin.0
+		ai_chance = {
+			factor = 0.9
+			modifier = {
+				factor = 0
+				trait = celibate
+			}
+			modifier = {
+				factor = 0.33
+				trait = chaste
+			}
+			modifier = {
+				factor = 3
+				trait = lustful
+			}
+			modifier = {
+				factor = 10
+				trait = hedonist
+			}
+			modifier = {
+				factor = 0
+				NOT = { opinion = { who = FROMFROM value = 0 } }
+			}
+			modifier = {
+				factor = 10
+				opinion = { who = FROMFROM value = 25 }
+			}
+		}
+		hidden_tooltip = {
+			FROMFROM = { character_event = { id = visit_chamber_sin.1 days = 1 } }
+		}
+	}
+	option = {
+		name = EVTOPTBvisit_chamber_sin.0
+		ai_chance = {
+			factor = 0.1
+			modifier = {
+				factor = 10
+				trait = celibate
+			}
+			modifier = {
+				factor = 3
+				trait = chaste
+			}
+			modifier = {
+				factor = 0.33
+				trait = lustful
+			}
+			modifier = {
+				factor = 0
+				trait = hedonist
+			}
+			modifier = {
+				factor = 10
+				NOT = { opinion = { who = FROMFROM value = 0 } }
+			}
+			modifier = {
+				factor = 0
+				opinion = { who = FROMFROM value = 75 }
+			}
+		}
+		hidden_tooltip = {
+			FROMFROM = { character_event = { id = visit_chamber_sin.2 } }
+		}
+	}
+}
+character_event = {
+	id = visit_chamber_sin.1
+	desc = EVTDESCvisit_chamber_sin.1
+	picture = GFX_evt_lovers
+	is_triggered_only = yes
+
+	immediate = {
+		ROOT = {
+			IF = {
+				limit = {
+					is_female = no
+					NOT = { trait = eunuch }
+					FROM = {
+						is_female = yes
+						is_pregnant = no
+						NOT = { age = 40 }
+					}
+				}
+				random = {
+					chance = 100
+					modifier = {
+						factor = 0
+						ROOT = {
+							NOT = { fertility = 0 }
+						}
+					}
+					modifier = {
+						factor = 0
+						FROM = {
+							NOT = { fertility = 0 }
+						}
+					}
+					modifier = {
+						factor = 0.05
+						ROOT = {
+							fertility = 0
+							NOT = { fertility = 0.10 }
+						}
+					}
+					modifier = {
+						factor = 0.05
+						FROM = {
+							fertility = 0
+							NOT = { fertility = 0.10 }
+						}
+					}
+					modifier = {
+						factor = 0.10
+						ROOT = {
+							fertility = 0.10
+							NOT = { fertility = 0.20 }
+						}
+					}
+					modifier = {
+						factor = 0.10
+						FROM = {
+							fertility = 0.10
+							NOT = { fertility = 0.20 }
+						}
+					}
+					modifier = {
+						factor = 0.20
+						ROOT = {
+							fertility = 0.20
+							NOT = { fertility = 0.30 }
+						}
+					}
+					modifier = {
+						factor = 0.20
+						FROM = {
+							fertility = 0.20
+							NOT = { fertility = 0.30 }
+						}
+					}
+					modifier = {
+						factor = 0.30
+						ROOT = {
+							fertility = 0.30
+							NOT = { fertility = 0.40 }
+						}
+					}
+					modifier = {
+						factor = 0.30
+						FROM = {
+							fertility = 0.30
+							NOT = { fertility = 0.40 }
+						}
+					}
+					modifier = {
+						factor = 0.40
+						ROOT = {
+							fertility = 0.40
+							NOT = { fertility = 0.50 }
+						}
+					}
+					modifier = {
+						factor = 0.40
+						FROM = {
+							fertility = 0.40
+							NOT = { fertility = 0.50 }
+						}
+					}
+					modifier = {
+						factor = 0.50
+						ROOT = {
+							fertility = 0.50
+							NOT = { fertility = 0.60 }
+						}
+					}
+					modifier = {
+						factor = 0.50
+						FROM = {
+							fertility = 0.50
+							NOT = { fertility = 0.60 }
+						}
+					}
+					modifier = {
+						factor = 0.60
+						ROOT = {
+							fertility = 0.60
+							NOT = { fertility = 0.70 }
+						}
+					}
+					modifier = {
+						factor = 0.60
+						FROM = {
+							fertility = 0.60
+							NOT = { fertility = 0.70 }
+						}
+					}
+					modifier = {
+						factor = 0.70
+						ROOT = {
+							fertility = 0.70
+							NOT = { fertility = 0.80 }
+						}
+					}
+					modifier = {
+						factor = 0.70
+						FROM = {
+							fertility = 0.70
+							NOT = { fertility = 0.80 }
+						}
+					}
+					modifier = {
+						factor = 0.80
+						ROOT = {
+							fertility = 0.80
+							NOT = { fertility = 0.90 }
+						}
+					}
+					modifier = {
+						factor = 0.80
+						FROM = {
+							fertility = 0.80
+							NOT = { fertility = 0.90 }
+						}
+					}
+					modifier = {
+						factor = 0.90
+						ROOT = {
+							fertility = 0.90
+							NOT = { fertility = 1 }
+						}
+					}
+					modifier = {
+						factor = 0.90
+						FROM = {
+							fertility = 0.90
+							NOT = { fertility = 1 }
+						}
+					}
+					impregnate = FROM
+				}
+			
+			}
+		}
+		FROM = {
+			IF = {
+				limit = {
+					is_female = no
+					NOT = { trait = eunuch }
+					ROOT = {
+						is_female = yes
+						is_pregnant = no
+						NOT = { age = 40 }
+					}
+				}
+				random = {
+					chance = 100
+					modifier = {
+						factor = 0
+						ROOT = {
+							NOT = { fertility = 0 }
+						}
+					}
+					modifier = {
+						factor = 0
+						FROM = {
+							NOT = { fertility = 0 }
+						}
+					}
+					modifier = {
+						factor = 0.05
+						ROOT = {
+							fertility = 0
+							NOT = { fertility = 0.10 }
+						}
+					}
+					modifier = {
+						factor = 0.05
+						FROM = {
+							fertility = 0
+							NOT = { fertility = 0.10 }
+						}
+					}
+					modifier = {
+						factor = 0.10
+						ROOT = {
+							fertility = 0.10
+							NOT = { fertility = 0.20 }
+						}
+					}
+					modifier = {
+						factor = 0.10
+						FROM = {
+							fertility = 0.10
+							NOT = { fertility = 0.20 }
+						}
+					}
+					modifier = {
+						factor = 0.20
+						ROOT = {
+							fertility = 0.20
+							NOT = { fertility = 0.30 }
+						}
+					}
+					modifier = {
+						factor = 0.20
+						FROM = {
+							fertility = 0.20
+							NOT = { fertility = 0.30 }
+						}
+					}
+					modifier = {
+						factor = 0.30
+						ROOT = {
+							fertility = 0.30
+							NOT = { fertility = 0.40 }
+						}
+					}
+					modifier = {
+						factor = 0.30
+						FROM = {
+							fertility = 0.30
+							NOT = { fertility = 0.40 }
+						}
+					}
+					modifier = {
+						factor = 0.40
+						ROOT = {
+							fertility = 0.40
+							NOT = { fertility = 0.50 }
+						}
+					}
+					modifier = {
+						factor = 0.40
+						FROM = {
+							fertility = 0.40
+							NOT = { fertility = 0.50 }
+						}
+					}
+					modifier = {
+						factor = 0.50
+						ROOT = {
+							fertility = 0.50
+							NOT = { fertility = 0.60 }
+						}
+					}
+					modifier = {
+						factor = 0.50
+						FROM = {
+							fertility = 0.50
+							NOT = { fertility = 0.60 }
+						}
+					}
+					modifier = {
+						factor = 0.60
+						ROOT = {
+							fertility = 0.60
+							NOT = { fertility = 0.70 }
+						}
+					}
+					modifier = {
+						factor = 0.60
+						FROM = {
+							fertility = 0.60
+							NOT = { fertility = 0.70 }
+						}
+					}
+					modifier = {
+						factor = 0.70
+						ROOT = {
+							fertility = 0.70
+							NOT = { fertility = 0.80 }
+						}
+					}
+					modifier = {
+						factor = 0.70
+						FROM = {
+							fertility = 0.70
+							NOT = { fertility = 0.80 }
+						}
+					}
+					modifier = {
+						factor = 0.80
+						ROOT = {
+							fertility = 0.80
+							NOT = { fertility = 0.90 }
+						}
+					}
+					modifier = {
+						factor = 0.80
+						FROM = {
+							fertility = 0.80
+							NOT = { fertility = 0.90 }
+						}
+					}
+					modifier = {
+						factor = 0.90
+						ROOT = {
+							fertility = 0.90
+							NOT = { fertility = 1 }
+						}
+					}
+					modifier = {
+						factor = 0.90
+						FROM = {
+							fertility = 0.90
+							NOT = { fertility = 1 }
+						}
+					}
+					impregnate = ROOT
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTAvisit_chamber_sin.1
+		add_character_modifier = { name = visited_chambers days = 30 }
+		FROMFROM = { add_character_modifier = { name = visited_chambers days = 30 } }
+		hidden_tooltip = { clr_character_flag = sin_visited_chambers }
+	}
+}
+character_event = {
+	id = visit_chamber_sin.2
+	desc = EVTDESCvisit_chamber_sin.2
+	picture = GFX_evt_lovers
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAvisit_chamber_sin.2
+		opinion = { modifier = opinion_rejected who = FROM days = 30 }
+		hidden_tooltip = { clr_character_flag = sin_visited_chambers }
+	}
+}
