@@ -1,725 +1,855 @@
-k_alanis = {
-	color = { 255 61 61 }
-	color2 = { 255 61 61 }
-	culture = alanis
-	religion = eros_duo
-	title = king
-	title_female = queen
-	capital = 406
+e_nua = {
+	color = { 124 92 255 }
+	color2 = { 124 92 255 }
+	title = emperor
+	title_female = empress
 
-	d_alanisia = {
+	k_alanis = {
 		color = { 255 61 61 }
 		color2 = { 255 61 61 }
 		culture = alanis
 		religion = eros_duo
-		title = aearl
-		title_female = aearl
+		title = king
+		title_female = queen
 		capital = 406
 	
-		c_crucible = {
-			capital = 406
-			b_blaufurt = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_musa = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_mavila = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_revara = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_parint = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_soissy = {
-				title = sherriff
-				title_female = sherriff
-			}
+		d_alanisia = {
 			color = { 255 61 61 }
 			color2 = { 255 61 61 }
 			culture = alanis
 			religion = eros_duo
-			title = comte
-			title_female = comtess
+			title = aearl
+			title_female = aearl
+			capital = 406
+		
+			c_crucible = {
+				capital = 406
+				b_blaufurt = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_musa = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_mavila = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_revara = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_parint = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_soissy = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 255 61 61 }
+				color2 = { 255 61 61 }
+				culture = alanis
+				religion = eros_duo
+				title = comte
+				title_female = comtess
+			}
+			c_ermeco = {
+				capital = 234
+				b_cantasaro = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_pontegat = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_trintis = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 255 70 61 }
+				color2 = { 255 70 61 }
+				culture = alanis
+				religion = eros_duo
+				title = comte
+				title_female = comtess
+			}
+			c_nari = {
+				capital = 233
+				b_mefni = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_estanico = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_fueba = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 255 80 70 }
+				color2 = { 255 80 70 }
+				culture = alanis
+				religion = eros_duo
+				title = comte
+				title_female = comtess
+			}
+			c_saldas = {
+				capital = 282
+				b_benirona = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_tabos = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_florousi = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_balern = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 255 80 70 }
+				color2 = { 255 80 70 }
+				culture = alanis
+				religion = eros_duo
+				title = comte
+				title_female = comtess
+			}
+			c_lunresa = {
+				capital = 340
+				b_kerathea = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_versicca = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_rejo = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 255 80 70 }
+				color2 = { 255 80 70 }
+				culture = alanis
+				religion = eros_duo
+				title = comte
+				title_female = comtess
+			}
 		}
-		c_ermeco = {
-			capital = 234
-			b_cantasaro = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_pontegat = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_trintis = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 255 70 61 }
-			color2 = { 255 70 61 }
+		d_ethen = {
+			color = { 300 61 120 }
+			color2 = { 300 61 120 }
 			culture = alanis
 			religion = eros_duo
-			title = comte
-			title_female = comtess
-		}
-		c_nari = {
-			capital = 233
-			b_mefni = {
-				title = sherriff
-				title_female = sherriff
+			title = aearl
+			title_female = aearl
+			capital = 339
+		
+			c_salevero = {
+				capital = 339
+				b_vade = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_santavi = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_estonalto = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 300 61 120 }
+				color2 = { 300 61 120 }
+				culture = alanis
+				religion = eros_duo
+				title = comte
+				title_female = comtess
 			}
-			b_estanico = {
-				title = sherriff
-				title_female = sherriff
+			c_pontelona = {
+				capital = 345
+				b_ascotri = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_alvemao = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_vozani = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_malla = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 315 61 120 }
+				color2 = { 315 61 120 }
+				culture = alanis
+				religion = eros_duo
+				title = comte
+				title_female = comtess
 			}
-			b_fueba = {
-				title = sherriff
-				title_female = sherriff
+			c_arele = {
+				capital = 129
+				b_gidze = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_freazela = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_banhel = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 315 100 110 }
+				color2 = { 315 100 110 }
+				culture = alanis
+				religion = eros_duo
+				title = comte
+				title_female = comtess
 			}
-			color = { 255 80 70 }
-			color2 = { 255 80 70 }
-			culture = alanis
-			religion = eros_duo
-			title = comte
-			title_female = comtess
 		}
 	}
-}
-
-k_crinia = {
-	color = { 250 128 0 }
-	color2 = { 250 128 0 }
-	culture = kalleon
-	religion = eros_triad
-	title = king
-	title_female = queen
-	capital = 93
-
-	d_kalleon = {
-		color = { 185 15 15 }
-		color2 = { 185 15 15 }
-		culture = kalleon
-		religion = eros_triad
-		title = aearl
-		title_female = aearl
-		capital = 187
 	
-		c_neunweil = {
-			capital = 187
-			b_purlrun = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_sunspire = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_steelcrest = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_grassmond = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 185 219 67 }
-			color2 = { 185 219 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-
-		c_epotele = {
-			capital = 224
-			b_steepacre = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_dewfair = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_rimerock = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_lastfort = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 190 219 67 }
-			color2 = { 190 219 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-
-		c_alensier = {
-			capital = 317
-			b_nightcairn = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_coldfield = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_ravenstall = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 230 219 67 }
-			color2 = { 230 219 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-
-		c_landsen = {
-			capital = 62
-			b_silentgarde = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_thornscar = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_graychill = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 210 180 67 }
-			color2 = { 210 180 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-
-		c_maives = {
-			capital = 59
-			b_bellside = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_silverhost = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_littlevein = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 210 180 67 }
-			color2 = { 210 180 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-
-		c_edenreem = {
-			capital = 60
-			b_elderfort = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_bronzehand = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_oxburgh = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_lastfell = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 150 120 67 }
-			color2 = { 150 120 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-
-		c_weilshafen = {
-			capital = 61
-			b_thornband = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_mudtville = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_scorchdale = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 180 120 67 }
-			color2 = { 180 120 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-	}
-
-	d_kings_shore = {
-		color = { 209 15 15 }
-		color2 = { 209 15 15 }
+	k_crinia = {
+		color = { 250 128 0 }
+		color2 = { 250 128 0 }
 		culture = kalleon
 		religion = eros_triad
-		title = aearl
-		title_female = aearl
+		title = king
+		title_female = queen
 		capital = 93
 	
-		c_kings_shore = {
+		d_kalleon = {
+			color = { 185 15 15 }
+			color2 = { 185 15 15 }
+			culture = kalleon
+			religion = eros_triad
+			title = aearl
+			title_female = aearl
+			capital = 187
+		
+			c_neunweil = {
+				capital = 187
+				b_purlrun = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_sunspire = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_steelcrest = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_grassmond = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 185 219 67 }
+				color2 = { 185 219 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+	
+			c_epotele = {
+				capital = 224
+				b_steepacre = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_dewfair = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_rimerock = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_lastfort = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 190 219 67 }
+				color2 = { 190 219 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+	
+			c_alensier = {
+				capital = 317
+				b_nightcairn = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_coldfield = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_ravenstall = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 230 219 67 }
+				color2 = { 230 219 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+	
+			c_landsen = {
+				capital = 62
+				b_silentgarde = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_thornscar = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_graychill = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 210 180 67 }
+				color2 = { 210 180 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+	
+			c_maives = {
+				capital = 59
+				b_bellside = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_silverhost = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_littlevein = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 210 180 67 }
+				color2 = { 210 180 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+	
+			c_edenreem = {
+				capital = 60
+				b_elderfort = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_bronzehand = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_oxburgh = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_lastfell = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 150 120 67 }
+				color2 = { 150 120 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+	
+			c_weilshafen = {
+				capital = 61
+				b_thornband = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_mudtville = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_scorchdale = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 180 120 67 }
+				color2 = { 180 120 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+		}
+	
+		d_kings_shore = {
+			color = { 209 15 15 }
+			color2 = { 209 15 15 }
+			culture = kalleon
+			religion = eros_triad
+			title = aearl
+			title_female = aearl
 			capital = 93
-			b_kings_shore = {
-				title = sherriff
-				title_female = sherriff
+		
+			c_kings_shore = {
+				capital = 93
+				b_kings_shore = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_werth = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_garring = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_falkerstone = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_raefus = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_braewood = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_alar = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 252 219 67 }
+				color2 = { 252 219 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
 			}
-			b_werth = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_garring = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_falkerstone = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_raefus = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_braewood = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_alar = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 252 219 67 }
-			color2 = { 252 219 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-
-		c_kalleon = {
-			capital = 386
-			b_kalleon = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_dorston = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_darnstall = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_parverhill = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 252 219 67 }
-			color2 = { 252 219 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-
-		c_ante_kalleon = {
-			capital = 94
-			b_sasayn = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_miserth = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_arnstey = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 252 219 67 }
-			color2 = { 252 219 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-
-		c_postre_kalleon = {
-			capital = 186
-			b_mearley = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_glottenham = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 252 219 67 }
-			color2 = { 252 219 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-
-		c_wessen = {
-			capital = 185
-			b_tegara = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_warington = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_hartelon = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 252 219 67 }
-			color2 = { 252 219 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-
-		c_regehre = {
-			capital = 222
-			b_arnas = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_ranhold = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_sella = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 252 219 67 }
-			color2 = { 252 219 67 }
-			culture = kalleon
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-	}
-	d_ante_cryta = {
-		color = { 252 219 67 }
-		color2 = { 252 219 67 }
-		culture = crytan
-		religion = eros_triad
-		title = aearl
-		title_female = aearl
-		capital = 49
 	
-		c_lisele = {
+			c_kalleon = {
+				capital = 386
+				b_kalleon = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_dorston = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_darnstall = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_parverhill = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 252 219 67 }
+				color2 = { 252 219 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+	
+			c_ante_kalleon = {
+				capital = 94
+				b_sasayn = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_miserth = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_arnstey = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 252 219 67 }
+				color2 = { 252 219 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+	
+			c_postre_kalleon = {
+				capital = 186
+				b_mearley = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_glottenham = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 252 219 67 }
+				color2 = { 252 219 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+	
+			c_wessen = {
+				capital = 185
+				b_tegara = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_warington = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_hartelon = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 252 219 67 }
+				color2 = { 252 219 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+	
+			c_regehre = {
+				capital = 222
+				b_arnas = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_ranhold = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_sella = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 252 219 67 }
+				color2 = { 252 219 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+		}
+		d_ante_cryta = {
+			color = { 252 219 67 }
+			color2 = { 252 219 67 }
+			culture = crytan
+			religion = eros_triad
+			title = aearl
+			title_female = aearl
 			capital = 49
-			b_temarda = {
-				title = sherriff
-				title_female = sherriff
+		
+			c_lisele = {
+				capital = 49
+				b_temarda = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_saran = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_kalleas = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_avenham = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 252 219 67 }
+				color2 = { 252 219 67 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
 			}
-			b_saran = {
-				title = sherriff
-				title_female = sherriff
+			
+			c_larda = {
+				capital = 50
+				b_talleon = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 252 200 67 }
+				color2 = { 252 200 67 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
 			}
-			b_kalleas = {
-				title = sherriff
-				title_female = sherriff
+			
+			c_dazay = {
+				capital = 181
+				b_aras = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 250 200 67 }
+				color2 = { 250 200 67 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
 			}
-			b_avenham = {
-				title = sherriff
-				title_female = sherriff
+		
+			c_roummur = {
+				capital = 182
+				b_kelfast = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 150 178 67 }
+				color2 = { 150 178 67 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
 			}
-			color = { 252 219 67 }
-			color2 = { 252 219 67 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
+		
+			c_butka = {
+				capital = 184
+				b_lasict = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_anarsis = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 150 120 40 }
+				color2 = { 150 120 40 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+		
+			c_nasutka = {
+				capital = 313
+				b_narsis = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_anas = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 43 120 40 }
+				color2 = { 43 120 40 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
+		
+			c_luray = {
+				capital = 183
+				b_tiseva = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_fellhall = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 43 100 40 }
+				color2 = { 43 100 40 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
 		}
 		
-		c_larda = {
-			capital = 50
-			b_talleon = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 252 200 67 }
-			color2 = { 252 200 67 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-		
-		c_dazay = {
-			capital = 181
-			b_aras = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 250 200 67 }
-			color2 = { 250 200 67 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-	
-		c_roummur = {
-			capital = 182
-			b_kelfast = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 150 178 67 }
-			color2 = { 150 178 67 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-	
-		c_butka = {
-			capital = 184
-			b_lasict = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_anarsis = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 150 120 40 }
-			color2 = { 150 120 40 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-	
-		c_nasutka = {
-			capital = 313
-			b_narsis = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_anas = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 43 120 40 }
-			color2 = { 43 120 40 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-	
-		c_luray = {
-			capital = 183
-			b_tiseva = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_fellhall = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 43 100 40 }
-			color2 = { 43 100 40 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-	}
-	
-	d_postre_cryta = {
-		color = { 12 201 44 }
-		color2 = { 12 201 44 }
-		culture = crytan
-		religion = eros_triad
-		title = aearl
-		title_female = aearl
-		capital = 127
-	
-		c_ablizo = {
-			capital = 127
-			b_neras = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_avantar = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_allas = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_pomas = {
-				title = sherriff
-				title_female = sherriff
-			}
+		d_postre_cryta = {
 			color = { 12 201 44 }
 			color2 = { 12 201 44 }
 			culture = crytan
 			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-	
-		c_dalara = {
-			capital = 56
-			b_naluri = {
-				title = sherriff
-				title_female = sherriff
+			title = aearl
+			title_female = aearl
+			capital = 127
+		
+			c_ablizo = {
+				capital = 127
+				b_neras = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_avantar = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_allas = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_pomas = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 12 201 44 }
+				color2 = { 12 201 44 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
 			}
-			b_kossan = {
-				title = sherriff
-				title_female = sherriff
+		
+			c_dalara = {
+				capital = 56
+				b_naluri = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_kossan = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 100 238 123 }
+				color2 = { 100 238 123 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
 			}
-			color = { 100 238 123 }
-			color2 = { 100 238 123 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-	
-		c_belfast = {
-			capital = 371
-			b_rolartin = {
-				title = sherriff
-				title_female = sherriff
+		
+			c_belfast = {
+				capital = 371
+				b_rolartin = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_caras = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_avast = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 100 215 123 }
+				color2 = { 100 215 123 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
 			}
-			b_caras = {
-				title = sherriff
-				title_female = sherriff
+			c_lourda = {
+				capital = 117
+				b_waernell = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_clapton = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_curdington = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 100 215 123 }
+				color2 = { 100 215 123 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
 			}
-			b_avast = {
-				title = sherriff
-				title_female = sherriff
+		
+			c_minbury = {
+				capital = 293
+				b_wegence = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_gancaster = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_barnacton = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_nartley = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 110 215 123 }
+				color2 = { 110 215 123 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
 			}
-			color = { 100 215 123 }
-			color2 = { 100 215 123 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-		c_lourda = {
-			capital = 117
-			b_waernell = {
-				title = sherriff
-				title_female = sherriff
+		
+			c_tegartin = {
+				capital = 57
+				b_winict = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_unas = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 150 215 123 }
+				color2 = { 150 215 123 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
 			}
-			b_clapton = {
-				title = sherriff
-				title_female = sherriff
+		
+			c_summerswind = {
+				capital = 58
+				b_summerswind = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 200 215 123 }
+				color2 = { 200 215 123 }
+				culture = crytan
+				religion = eros_triad
+				title = comte
+				title_female = comtess
 			}
-			b_curdington = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 100 215 123 }
-			color2 = { 100 215 123 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-	
-		c_minbury = {
-			capital = 293
-			b_wegence = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_gancaster = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_barnacton = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_nartley = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 110 215 123 }
-			color2 = { 110 215 123 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-	
-		c_tegartin = {
-			capital = 57
-			b_winict = {
-				title = sherriff
-				title_female = sherriff
-			}
-			b_unas = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 150 215 123 }
-			color2 = { 150 215 123 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
-		}
-	
-		c_summerswind = {
-			capital = 58
-			b_summerswind = {
-				title = sherriff
-				title_female = sherriff
-			}
-			color = { 200 215 123 }
-			color2 = { 200 215 123 }
-			culture = crytan
-			religion = eros_triad
-			title = comte
-			title_female = comtess
 		}
 	}
 }

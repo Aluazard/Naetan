@@ -1,5 +1,9 @@
-	title = c_danamaj
+	title = c_saldas
 	max_settlements = 7
-	culture = pictish
-	religion = khurmazta
-	b_balern = tribal
+	culture = alanis
+	religion = eros_duo
+
+	b_balern = castle
+	b_florousi = city
+	b_tabos = city
+	b_benirona = temple

@@ -1,0 +1,40 @@
+republic_governments = {
+	nuan_mercantile_government = {
+		preferred_holdings = { CITY }
+		allowed_holdings = { 
+			CITY
+			CASTLE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Accepts other republics
+			nuan_mercantile_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_mercantile"
+		title_prefix = "city_"
+		potential = {
+			# OR = {
+			# 	culture = tocharian
+			# 	culture = alanis
+			# }
+		}
+		
+		color = { 209 125 130 }
+		
+		can_imprison_without_reason = no
+		can_revoke_without_reason = no
+		
+		can_build_tribal = no
+		
+		capital_move_delay = 600
+
+		## Modifiers
+		court_size_modifier = 5
+	}
+}

@@ -8,6 +8,11 @@
 	culture = kalleon
 }
 
+10 = {
+	name = "Alta-Alanisia"
+	culture = alanis
+}
+
 1000 = {
 	name = Goldrix
 	culture = leshanka

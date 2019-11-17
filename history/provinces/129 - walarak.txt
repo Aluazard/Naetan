@@ -1,5 +1,8 @@
-	title = c_walarak
+	title = c_arele
 	max_settlements = 7
-	culture = bulgarian
-	religion = fraticelli
-	b_awinaide = tribal
+	culture = tocharian
+	religion = eros_duo
+
+	b_banhel = city
+	b_freazela = city
+	b_gidze = city

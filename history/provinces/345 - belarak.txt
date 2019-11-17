@@ -1,5 +1,9 @@
-	title = c_belarak
+	title = c_pontelona
 	max_settlements = 6
-	culture = saka
-	religion = interface_skin
-	b_darda = tribal
+	culture = tocharian
+	religion = eros_duo
+
+	b_vozani = castle
+	b_alvemao = city
+	b_ascotri = temple
+	b_malla = temple

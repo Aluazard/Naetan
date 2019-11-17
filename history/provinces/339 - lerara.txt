@@ -1,5 +1,8 @@
-	title = c_lerara
+	title = c_salevero
 	max_settlements = 5
-	culture = hungarian
-	religion = monothelite
-	b_rolorgia = tribal
+	culture = tocharian
+	religion = eros_duo
+
+	b_vade = castle
+	b_santavi = city
+	b_estonalto = temple

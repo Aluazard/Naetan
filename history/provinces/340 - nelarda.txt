@@ -1,5 +1,8 @@
-	title = c_nelarda
+	title = c_lunresa
 	max_settlements = 7
-	culture = norse
-	religion = yazidi
-	b_efolict = tribal
+	culture = alanis
+	religion = eros_duo
+
+	b_rejo = castle
+	b_versicca = city
+	b_kerathea = city

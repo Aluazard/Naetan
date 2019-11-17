@@ -6,22 +6,26 @@ feudal_governments = {
 			CITY
 			FORT
 			HOSPITAL
-			
 			TEMPLE
 		}
 		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
 			TRIBAL
 		}
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
-			feudal_government
-			republic_government
-			merchant_republic_government
+			nuan_fiefdom_government
+			nuan_mercantile_government
 		}
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
 		}
 		frame_suffix = "_fiefdom"
 		potential = {
+			# OR = {
+			# 	culture = belfast
+			# 	culture = tocharian
+			# 	culture = kalleon
+			# 	culture = crytan
+			# }
 		}
 		
 		color = { 150 0 0 }

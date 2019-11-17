@@ -1,0 +1,6 @@
+14325.1.1 = {
+	holder = 16
+	law = succ_primogeniture
+	law = agnatic_succession
+	liege = d_ethen
+}

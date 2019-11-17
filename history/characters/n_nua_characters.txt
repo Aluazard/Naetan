@@ -130,3 +130,31 @@
 	}
 	dynasty = 10
 }
+
+14 = {
+	name = Geoffrey 
+	culture = alanis
+	religion = eros_duo
+	14270.1.1 = {
+		birth = 14270.1.1
+	}
+	dynasty = 10
+}
+15 = {
+	name = Geoff 
+	culture = tocharian
+	religion = eros_duo
+	14282.1.1 = {
+		birth = 14282.1.1
+	}
+	dynasty = 11
+}
+15 = {
+	name = Even 
+	culture = tocharian
+	religion = eros_duo
+	14285.1.1 = {
+		birth = 14285.1.1
+	}
+	dynasty = 12
+}
