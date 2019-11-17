@@ -1,6 +1,6 @@
 eros_group = {
-	has_coa_on_barony_only =yes
-    graphical_culture = persiangfx
+	has_coa_on_barony_only = yes
+    graphical_culture = nuagfx
     crusade_cb = crusade
     playable = yes
     ai_peaceful = yes # Will make Hordes lose their super aggressiveness
@@ -33,8 +33,8 @@ eros_group = {
         pc_marriage = yes
         psc_marriage = yes
         divine_blood = yes
-        max_consorts = 50
-        max_wives = 50
+        max_consorts = 20
+        max_wives = 20
         women_can_take_consorts = yes
     }
 
@@ -64,13 +64,12 @@ eros_group = {
         pc_marriage = yes
         psc_marriage = yes
         divine_blood = yes
-        max_consorts = 50
-        max_wives = 50
+        max_consorts = 20
+        max_wives = 20
         women_can_take_consorts = yes
     }
 
     communion_whispers = {
-        parent = eros_triad
         graphical_culture = westerngfx
         interface_skin = { christian_interface }
         
@@ -96,13 +95,12 @@ eros_group = {
         pc_marriage = yes
         psc_marriage = yes
         divine_blood = yes
-        max_consorts = 50
-        max_wives = 50
+        max_consorts = 20
+        max_wives = 20
         women_can_take_consorts = yes
     }
 
     paragons_cryta = {
-        parent = eros_triad
         graphical_culture = westerngfx
         interface_skin = { christian_interface }
         
@@ -127,9 +125,9 @@ eros_group = {
         pc_marriage = yes
         psc_marriage = yes
         divine_blood = yes
-        max_consorts = 50
-        max_wives = 50
-        women_can_take_consorts = yes
+        max_consorts = 20
+        max_wives = 20
+        women_can_take_consorts = no
     }
 }
 

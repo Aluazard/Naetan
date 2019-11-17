@@ -3,18 +3,63 @@
 	culture = crytan
 }
 
+2 = {
+	name = "Evas"
+	culture = crytan
+}
+
+3 = {
+	name = "Corale"
+	culture = crytan
+}
+
+4 = {
+	name = "Ante-Vase"
+	culture = crytan
+}
+
+5 = {
+	name = "Nariisa"
+	culture = crytan
+}
+
 6 = {
-	name = Kalleas
+	name = "Kalleas"
+	culture = kalleon
+}
+
+7 = {
+	name = "Karas"
+	culture = kalleon
+}
+
+8 = {
+	name = "Gistelle"
+	culture = kalleon
+}
+
+9 = {
+	name = "Genistra"
 	culture = kalleon
 }
 
 10 = {
-	name = "Alta-Alanisia"
+	name = "Alta-Alansia"
 	culture = alanis
 }
 
+11 = {
+	name = "Postre-Alansia"
+	culture = tocharian
+}
+
+12 = {
+	name = "Centre-Alansia"
+	culture = tocharian
+}
+
 1000 = {
-	name = Goldrix
+	name = "Goldrix"
 	culture = leshanka
 }
 
