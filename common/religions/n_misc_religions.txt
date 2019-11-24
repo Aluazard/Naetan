@@ -1,0 +1,22 @@
+wilderness_group = {
+	uninhabited = {
+		graphical_culture = wildernessgfx
+
+		icon = 5
+		color = { 0.50 0.50 0.50 }
+
+		high_god_name = GOD_WILDERNESS
+
+		god_names = {
+			GOD_WILDERNESS
+		}
+
+		evil_god_names = {
+			GOD_ENTROPY
+		}
+
+		female_temple_holders = no
+		max_wives = 0
+		max_consorts = 0
+	}
+}

@@ -1,5 +1,6 @@
-	title = c_rirayn
+	title = c_ethen_muil
 	max_settlements = 5
-	culture = greek
-	religion = hellenic_pagan
-	b_tecarda = tribal
+	culture = forest
+	religion = uninhabited
+
+	b_ethen_muil = tribal

@@ -1,0 +1,14 @@
+9999 = {
+	name = "Forest"
+	culture = forest
+	religion = uninhabited
+	trait = wilderness
+	
+	10000.1.1 = {
+		birth = yes
+	}
+	20000.1.1 = {
+		death = yes
+	}
+	dynasty = 9999
+}

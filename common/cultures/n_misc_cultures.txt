@@ -1,14 +1,14 @@
 wilderness = {
-	wilderness = {
+	forest = {
 		graphical_cultures = { wildernessgfx }
 		used_for_random = no
 		color = { 0.8 0.8 0.8 }
 		
 		male_names = {
-			Wilderness Wildlands Moors
+			Wilderness Wildlands Moors Forest
 		}
 		female_names = {
-			Wilderness Wildlands Moors
+			Wilderness Wildlands Moors Forest
 		}
 		
 		from_dynasty_prefix = ""

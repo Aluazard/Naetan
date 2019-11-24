@@ -1,6 +1,6 @@
 spriteType = {
-	name = "GFX_settlement_castle_nuagfx_englishgfx"
-	texturefile = "gfx/interface/holdings/nuan_castle.tga"
+	name = "GFX_settlement_castle_englishgfx"
+	texturefile = "gfx\\interface\\holdings\\nuan_castle.tga"
 	noOfFrames = 1
 	norefcount = yes
 }

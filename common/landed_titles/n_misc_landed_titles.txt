@@ -1,0 +1,12 @@
+c_ethen_muil = {
+	capital = 32
+	b_silentgarde = {
+	}
+	forest = "The Ethen Forest"
+	color = { 210 180 67 }
+	color2 = { 210 180 67 }
+	title = sanctuary
+	title_female = sanctuary
+	culture = forest
+	religion = uninhabited
+}
