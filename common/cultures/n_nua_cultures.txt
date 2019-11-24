@@ -8,13 +8,20 @@ nua = {
             nuagfx englishgfx
         }
         
-        color = { 0.8 0.2 0.2 }
+        color = { 89 150 255 }
         
         male_names = {
-            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet Geoff Gabel 
+            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet 
+            Geoff Gabel Heimart Aldis Melcher Ihone Berengarius Odger Acur Amaury Malcolinus Arnoldus Serlo Janyn Harman Gervis Barnabe Guibe Garnot 
+            Ranald Roule Emeric Tommy Quinn Anscoul Neal Gilibertus Rowan Samson Rouland Davit Reimund Oudin Goisfridus Gerould Arther Warinus Imgelramus 
+            Iohannes Asselin Oenus Hutchin Alfonce Bartly Diggin Hervey Milon Rolant Aimeri Mighell Charlys Owayne Beneger Reyner Gefroi Barnaby Han Gerves Richard 
+            Reimund Ansfrid Farrimond Fairman Godfry Derric Joachim Looys Adenot Jasper Radulf Otebon Jacob Tomkin Bartolomeus Jourdain Baynard Armant 
         }
         female_names = {
-            Bèle Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+            Bele Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+            Aelina Helena Elezabeth Luned Emelnie Elison Mahenyld Jessimond Iseuda Jesmaine Minnie Richolda Alisceon Alienor Alia Helewisa Miriald Adelaide Ymenia 
+            Imayn Sueteluue Haouys Jana Mare Aelisia Melisenda Mehenilda Eudeline Ysabiau Mawd Marion Johamma Missa Isold Imania Isobella Ameline Ewe Guenevere Gwen
+            Tyfainne Jaquelot AuicEleanor Aales Ada Ismay Bess Rozeman Ibbe Maria Izett Krea Afra Beleite Beth Mylle Isabelot Jacquelyn Mirielda Anachorita 
         }
         from_dynasty_prefix = "of "
         bastard_dynasty_prefix = "Bast"
@@ -37,10 +44,17 @@ nua = {
         color = { 0.8 0.2 0.2 }
         
         male_names = {
-            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet Geoff Gabel 
+            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet 
+            Geoff Gabel Heimart Aldis Melcher Ihone Berengarius Odger Acur Amaury Malcolinus Arnoldus Serlo Janyn Harman Gervis Barnabe Guibe Garnot 
+            Ranald Roule Emeric Tommy Quinn Anscoul Neal Gilibertus Rowan Samson Rouland Davit Reimund Oudin Goisfridus Gerould Arther Warinus Imgelramus 
+            Iohannes Asselin Oenus Hutchin Alfonce Bartly Diggin Hervey Milon Rolant Aimeri Mighell Charlys Owayne Beneger Reyner Gefroi Barnaby Han Gerves Richard 
+            Reimund Ansfrid Farrimond Fairman Godfry Derric Joachim Looys Adenot Jasper Radulf Otebon Jacob Tomkin Bartolomeus Jourdain Baynard Armant 
         }
         female_names = {
-            Bèle Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+            Bele Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+            Aelina Helena Elezabeth Luned Emelnie Elison Mahenyld Jessimond Iseuda Jesmaine Minnie Richolda Alisceon Alienor Alia Helewisa Miriald Adelaide Ymenia 
+            Imayn Sueteluue Haouys Jana Mare Aelisia Melisenda Mehenilda Eudeline Ysabiau Mawd Marion Johamma Missa Isold Imania Isobella Ameline Ewe Guenevere Gwen
+            Tyfainne Jaquelot AuicEleanor Aales Ada Ismay Bess Rozeman Ibbe Maria Izett Krea Afra Beleite Beth Mylle Isabelot Jacquelyn Mirielda Anachorita 
         }
         from_dynasty_prefix = "of "
         bastard_dynasty_prefix = "Bast"
@@ -63,10 +77,17 @@ nua = {
         color = { 0.8 0.2 0.2 }
         
         male_names = {
-            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet Geoff Gabel 
+            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet 
+            Geoff Gabel Heimart Aldis Melcher Ihone Berengarius Odger Acur Amaury Malcolinus Arnoldus Serlo Janyn Harman Gervis Barnabe Guibe Garnot 
+            Ranald Roule Emeric Tommy Quinn Anscoul Neal Gilibertus Rowan Samson Rouland Davit Reimund Oudin Goisfridus Gerould Arther Warinus Imgelramus 
+            Iohannes Asselin Oenus Hutchin Alfonce Bartly Diggin Hervey Milon Rolant Aimeri Mighell Charlys Owayne Beneger Reyner Gefroi Barnaby Han Gerves Richard 
+            Reimund Ansfrid Farrimond Fairman Godfry Derric Joachim Looys Adenot Jasper Radulf Otebon Jacob Tomkin Bartolomeus Jourdain Baynard Armant 
         }
         female_names = {
-            Bèle Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+            Bele Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+            Aelina Helena Elezabeth Luned Emelnie Elison Mahenyld Jessimond Iseuda Jesmaine Minnie Richolda Alisceon Alienor Alia Helewisa Miriald Adelaide Ymenia 
+            Imayn Sueteluue Haouys Jana Mare Aelisia Melisenda Mehenilda Eudeline Ysabiau Mawd Marion Johamma Missa Isold Imania Isobella Ameline Ewe Guenevere Gwen
+            Tyfainne Jaquelot AuicEleanor Aales Ada Ismay Bess Rozeman Ibbe Maria Izett Krea Afra Beleite Beth Mylle Isabelot Jacquelyn Mirielda Anachorita 
         }
         from_dynasty_prefix = "of "
         bastard_dynasty_prefix = "Bast"
@@ -89,10 +110,17 @@ nua = {
         color = { 0.8 0.2 0.2 }
         
         male_names = {
-            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet Geoff Gabel 
+            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet 
+            Geoff Gabel Heimart Aldis Melcher Ihone Berengarius Odger Acur Amaury Malcolinus Arnoldus Serlo Janyn Harman Gervis Barnabe Guibe Garnot 
+            Ranald Roule Emeric Tommy Quinn Anscoul Neal Gilibertus Rowan Samson Rouland Davit Reimund Oudin Goisfridus Gerould Arther Warinus Imgelramus 
+            Iohannes Asselin Oenus Hutchin Alfonce Bartly Diggin Hervey Milon Rolant Aimeri Mighell Charlys Owayne Beneger Reyner Gefroi Barnaby Han Gerves Richard 
+            Reimund Ansfrid Farrimond Fairman Godfry Derric Joachim Looys Adenot Jasper Radulf Otebon Jacob Tomkin Bartolomeus Jourdain Baynard Armant 
         }
         female_names = {
-            Bèle Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+            Bele Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+            Aelina Helena Elezabeth Luned Emelnie Elison Mahenyld Jessimond Iseuda Jesmaine Minnie Richolda Alisceon Alienor Alia Helewisa Miriald Adelaide Ymenia 
+            Imayn Sueteluue Haouys Jana Mare Aelisia Melisenda Mehenilda Eudeline Ysabiau Mawd Marion Johamma Missa Isold Imania Isobella Ameline Ewe Guenevere Gwen
+            Tyfainne Jaquelot AuicEleanor Aales Ada Ismay Bess Rozeman Ibbe Maria Izett Krea Afra Beleite Beth Mylle Isabelot Jacquelyn Mirielda Anachorita 
         }
         from_dynasty_prefix = "of "
         bastard_dynasty_prefix = "Bast"
@@ -115,10 +143,17 @@ nua = {
         color = { 0.8 0.2 0.2 }
         
         male_names = {
-            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet Geoff Gabel 
+            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet 
+            Geoff Gabel Heimart Aldis Melcher Ihone Berengarius Odger Acur Amaury Malcolinus Arnoldus Serlo Janyn Harman Gervis Barnabe Guibe Garnot 
+            Ranald Roule Emeric Tommy Quinn Anscoul Neal Gilibertus Rowan Samson Rouland Davit Reimund Oudin Goisfridus Gerould Arther Warinus Imgelramus 
+            Iohannes Asselin Oenus Hutchin Alfonce Bartly Diggin Hervey Milon Rolant Aimeri Mighell Charlys Owayne Beneger Reyner Gefroi Barnaby Han Gerves Richard 
+            Reimund Ansfrid Farrimond Fairman Godfry Derric Joachim Looys Adenot Jasper Radulf Otebon Jacob Tomkin Bartolomeus Jourdain Baynard Armant 
         }
         female_names = {
-            Bèle Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+            Bele Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+            Aelina Helena Elezabeth Luned Emelnie Elison Mahenyld Jessimond Iseuda Jesmaine Minnie Richolda Alisceon Alienor Alia Helewisa Miriald Adelaide Ymenia 
+            Imayn Sueteluue Haouys Jana Mare Aelisia Melisenda Mehenilda Eudeline Ysabiau Mawd Marion Johamma Missa Isold Imania Isobella Ameline Ewe Guenevere Gwen
+            Tyfainne Jaquelot AuicEleanor Aales Ada Ismay Bess Rozeman Ibbe Maria Izett Krea Afra Beleite Beth Mylle Isabelot Jacquelyn Mirielda Anachorita 
         }
         from_dynasty_prefix = "of "
         bastard_dynasty_prefix = "Bast"
@@ -141,10 +176,17 @@ nua = {
         color = { 0.8 0.2 0.2 }
         
         male_names = {
-            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet Geoff Gabel 
+            Alphonsins Guiart Segarus Bernard Hugue Rex Haveron Renfry Gerfast Humfrey Viliame Jeffry Evrart Willelmus Ademar Andriu Nel Hamonet 
+            Geoff Gabel Heimart Aldis Melcher Ihone Berengarius Odger Acur Amaury Malcolinus Arnoldus Serlo Janyn Harman Gervis Barnabe Guibe Garnot 
+            Ranald Roule Emeric Tommy Quinn Anscoul Neal Gilibertus Rowan Samson Rouland Davit Reimund Oudin Goisfridus Gerould Arther Warinus Imgelramus 
+            Iohannes Asselin Oenus Hutchin Alfonce Bartly Diggin Hervey Milon Rolant Aimeri Mighell Charlys Owayne Beneger Reyner Gefroi Barnaby Han Gerves Richard 
+            Reimund Ansfrid Farrimond Fairman Godfry Derric Joachim Looys Adenot Jasper Radulf Otebon Jacob Tomkin Bartolomeus Jourdain Baynard Armant 
         }
         female_names = {
-            Bèle Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+            Bele Emoni Aeleis Alice Iohane Averil Marina Rosamund Theophania Eua Ebeta Aaliz Tiphina Madallaine Alisoun Janeta Ahelissa Jeanette Magdalin Auelyna
+            Aelina Helena Elezabeth Luned Emelnie Elison Mahenyld Jessimond Iseuda Jesmaine Minnie Richolda Alisceon Alienor Alia Helewisa Miriald Adelaide Ymenia 
+            Imayn Sueteluue Haouys Jana Mare Aelisia Melisenda Mehenilda Eudeline Ysabiau Mawd Marion Johamma Missa Isold Imania Isobella Ameline Ewe Guenevere Gwen
+            Tyfainne Jaquelot AuicEleanor Aales Ada Ismay Bess Rozeman Ibbe Maria Izett Krea Afra Beleite Beth Mylle Isabelot Jacquelyn Mirielda Anachorita 
         }
         from_dynasty_prefix = "of "
         bastard_dynasty_prefix = "of "

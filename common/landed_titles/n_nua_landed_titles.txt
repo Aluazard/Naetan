@@ -1,3 +1,15 @@
+k_eros_triad = {
+	color = { 124 92 255 }
+	color2 = { 124 92 255 }
+	landless = yes
+	short_name = yes
+	primary = yes
+	title = archon
+	title_female = archon
+	culture = kalleon
+	religion = eros_triad
+	controls_religion = eros_triad
+}
 e_nua = {
 	color = { 124 92 255 }
 	color2 = { 124 92 255 }
@@ -470,8 +482,9 @@ e_nua = {
 					title_female = sherriff
 				}
 				b_parverhill = {
-					title = sherriff
-					title_female = sherriff
+					title = inquisitor
+					title_female = inquisitor
+					holy_site = eros_triad
 				}
 				color = { 252 219 67 }
 				color2 = { 252 219 67 }

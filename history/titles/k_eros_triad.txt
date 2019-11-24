@@ -1,0 +1,4 @@
+14325.1.1 = {
+	holder = 999
+	controls_religion = eros_triad
+}

@@ -1,5 +1,8 @@
-	title = c_roumyut
-	max_settlements = 2
-	culture = lombard
-	religion = finnish_pagan
+	title = c_ezith
+	max_settlements = 3
+	culture = leshanka
+	religion = phezeth
+
 	b_liryut = tribal
+	b_anak = tribal
+	b_oris = tribal

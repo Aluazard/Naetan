@@ -16,6 +16,7 @@ eros_group = {
             
         crusade_name = "TRIAD'S RITE"
         scripture_name = TRIAD_MESSOS
+
         god_names = {
              EROS_1 EROS_2 EROS_3
         }
@@ -26,6 +27,7 @@ eros_group = {
         can_grant_claim = yes
         can_call_crusade = yes
         can_demand_religious_conversion = yes
+        priests_can_marry = yes
 
         piety_name = TRIADS_LOVE
 

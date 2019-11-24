@@ -158,3 +158,13 @@
 	}
 	dynasty = 12
 }
+
+999 = {
+	name = "Aeorlingas IX"
+	culture = kalleon
+	religion = eros_triad
+	14285.1.1 = {
+		birth = 14285.1.1
+	}
+	dynasty = 999
+}

@@ -89,6 +89,36 @@ spriteTypes = {
 		noOfFrames = 6
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_charframe_150_erostriad"
+		texturefile = "gfx/interface/charframes/charframe_150_erostriad.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_erostriad"
+		texturefile = "gfx/interface/charframes/charframe_100_erostriad.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_erostriad"
+		texturefile = "gfx/interface/charframes/charframe_75_erostriad.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_erostriad"
+		texturefile = "gfx/interface/charframes/charframe_50_erostriad.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_erostriad"
+		texturefile = "gfx/interface/charframes/charframe_34_erostriad.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
 	
 	### government icons
 	spriteType = {
@@ -98,6 +128,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_mercantile_government"
 		texturefile = "gfx/interface/governments/government_icon_mercantile.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_erostriad_government"
+		texturefile = "gfx/interface/governments/government_icon_erostriad.dds"
 	}
 }
 

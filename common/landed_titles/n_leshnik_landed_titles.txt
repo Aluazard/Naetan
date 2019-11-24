@@ -27,5 +27,43 @@ d_dhezlarn = {
 		religion = phezeth
 		title = contra
 		title_female = contras
-	}	
+	}
+	c_ezith = {
+		capital = 47
+		b_oris = {
+			title = keric
+			title_female = keric
+		}
+		b_anak = {
+			title = keric
+			title_female = keric
+		}
+		b_liryut = {
+			title = keric
+			title_female = keric
+		}
+		color = { 15 25 15 }
+		color2 = { 15 25 15 }
+		culture = leshanka
+		religion = phezeth
+		title = contra
+		title_female = contras
+	}
+	c_qinevat = {
+		capital = 10
+		b_reavers_bay = {
+			title = keric
+			title_female = keric
+		}
+		b_kevati = {
+			title = keric
+			title_female = keric
+		}
+		color = { 20 25 15 }
+		color2 = { 20 25 15 }
+		culture = leshanka
+		religion = phezeth
+		title = contra
+		title_female = contras
+	}		
 }
