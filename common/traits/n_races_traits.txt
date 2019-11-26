@@ -1,15 +1,16 @@
 ### Wilderness Race Traits
 wilderness = {
 	potential = {
-	 culture_group = wilderness
+	 culture_group = wilderness_group
  	}
 	immortal = yes
-	fertility_penalty = -1
-	diplomacy_penalty = -30
-	stewardship_penalty = -30
-	martial_penalty = -30
-	intrigue_penalty = -30
-	learning_penalty = -30
+	fertility_penalty = -100
+	diplomacy_penalty = -100
+	stewardship_penalty = -100
+	martial_penalty = -100
+	intrigue_penalty = -100
+	learning_penalty = -100
+	levy_size = -100
 	cannot_marry = yes
 	incapacitating = yes
 	cannot_inherit = yes

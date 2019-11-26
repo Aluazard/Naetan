@@ -12,6 +12,10 @@ is_leshnik = {
 	graphical_culture = leshnikgfx
 }
 
+is_wilderness = {
+	graphical_culture = wildernessgfx
+}
+
 is_young_race = {
 	OR = {
 		trait = nua_1

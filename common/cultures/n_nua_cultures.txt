@@ -1,4 +1,4 @@
-nua = {
+nua_group = {
     graphical_cultures = {
         nuagfx englishgfx 
     }

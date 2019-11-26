@@ -1,12 +1,14 @@
 c_ethen_muil = {
 	capital = 32
-	b_silentgarde = {
+	b_ethen_muil = {
+		title = sanctuary
+		title_female = sanctuary
 	}
 	forest = "The Ethen Forest"
-	color = { 210 180 67 }
-	color2 = { 210 180 67 }
+	color = { 28 175 62 }
+	color2 = { 28 175 62 }
 	title = sanctuary
 	title_female = sanctuary
 	culture = forest
-	religion = uninhabited
+	religion = wilderness
 }

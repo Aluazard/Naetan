@@ -1,4 +1,4 @@
 14325.1.1 = {
-	law = agnatic_succession
 	liege = c_edenreem
+	law = agnatic_succession
 }

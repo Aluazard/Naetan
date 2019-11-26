@@ -1,5 +1,10 @@
 wilderness_group = {
-	uninhabited = {
+	playable = no
+	ai_peaceful = yes
+	graphical_culture = wildernessgfx
+	has_coa_on_barony_only =yes
+	
+	wilderness = {
 		graphical_culture = wildernessgfx
 
 		icon = 5

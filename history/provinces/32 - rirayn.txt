@@ -1,6 +1,6 @@
 	title = c_ethen_muil
 	max_settlements = 5
 	culture = forest
-	religion = uninhabited
+	religion = wilderness
 
 	b_ethen_muil = tribal

@@ -1,5 +1,8 @@
 tribal_governments = {
 	leshnik_pillagers_government = {
+		potential = {
+			culture_group = leshnik
+		}
 		preferred_holdings = { TRIBAL }
 		allowed_holdings = {
 			TRIBAL
@@ -31,5 +34,39 @@ tribal_governments = {
 		can_be_granted_kingdoms_and_empires_by_other_government = yes
 		free_retract_vassalage = yes
 		aggression = 10
+	}
+
+	wilderness_government = {
+		potential = {
+			religion_group = wilderness_group
+		}
+
+		preferred_holdings = { TRIBAL }
+		allowed_holdings = {
+			TRIBAL
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+		}
+		frame_suffix = "_wilderness"
+		potential = {
+		}
+		
+		color = { 22 165 30 }
+
+		barons_need_dynasty = no
+		
+		capital_move_delay = 9999
+		
+		marriage_ignore_religion = no
+
+		can_usurp_kingdoms_and_empires = no
+		can_imprison_without_reason = no
+		can_create_empires = no
+		vassal_government_opinion_penalties = no
+		can_grant_kingdoms_and_empires_to_other_government_group = no
+		can_be_granted_kingdoms_and_empires_by_other_government = no
+		free_retract_vassalage = yes
+		aggression = -100
+		honor = 100
 	}
 }

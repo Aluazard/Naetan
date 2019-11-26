@@ -19,5 +19,11 @@ character_event = {
 			}
 			add_leshnik_age = yes
 		}
+		if = {
+			limit = {
+				is_wilderness = yes
+			}
+			add_wilderness_age = yes
+		}
 	}
 }

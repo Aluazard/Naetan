@@ -63,3 +63,8 @@
 	culture = leshanka
 }
 
+9999 = {
+	name = "Keepers"
+	culture = forest
+}
+
