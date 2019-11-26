@@ -1,0 +1,40 @@
+
+song = {
+	name = "crusaderkings2_maintitle.ogg"
+	song_name = "Crusader Kings 2 Maintitle"
+	
+	chance = {
+		factor = 1 
+	}
+	volume = 0.48
+}
+
+song = {
+	name = "Woodland_Fantasy.ogg"
+	song_name = "Woodland Fantasy"
+	
+	chance = {
+		factor = 1 
+	}
+	volume = 0.48
+}
+
+song = {
+	name = "The_Old_Tower_Inn.ogg"
+	song_name = "The Old Tower Inn"
+	
+	chance = {
+		factor = 1 
+	}
+	volume = 0.48
+}
+
+song = {
+	name = "On_The_Road.ogg"
+	song_name = "On The Road"
+	
+	chance = {
+		factor = 1 
+	}
+	volume = 0.48
+}
