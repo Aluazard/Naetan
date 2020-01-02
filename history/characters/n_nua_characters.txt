@@ -159,6 +159,16 @@
 	dynasty = 12
 }
 
+16 = {
+	name = "Assith" 
+	culture = kalleon
+	religion = eros_triad
+	14290.1.1 = {
+		birth = 14290.1.1
+	}
+	dynasty = 7
+}
+
 999 = {
 	name = "Aeorlingas IX"
 	culture = kalleon

@@ -20,6 +20,13 @@ wilderness_group;Uninhabited;;;;;;;;;;x
 wilderness;Wilderness;;;;;;;;;;x
 wilderness_full;Wilderness;;;;;;;;;;x
 wilderness_DESC;All things in the end turn to dust. The wilderness is not the enemy of the living but the epilogue of sentient life. The trees and grass and rocks will live long after man ceases to be. So they shall stay, for all time. (Note: This is an unplayable religion, because you're trees brah);;;;;;;;;;x
+sidhe_group;Sidhe;;;;;;;;;;x
+daoine_sidhe;Daoine Sidhe;;;;;;;;;;x
+daoine_sidhe_full;Way of the Daoine Sidhe;;;;;;;;;;x
+daoine_sidhe_DESC;In Aos Si culture, the Sidhe is the meeting place of the tribe, it is where the elders preside over legal issues, where marriage vows are said, and even where children, however few there may be, are born into the world. The word Sidhe mains mound or hill as well, where the dead are buried. Even their name, Aos Si, means mound-builders. This is why the Sidhe is important. \n For Aos Si, the Daoine Sidhe is the primary religion, adhering mainly to the dense jungled forests of the homeland. The Si much like the Nua care for racial purity, but maybe out of necessity rather than descrimination, though it is not un-heard of for Aos Si to leave the forest to live with their interracial mates.;;;;;;;;;;x
+liath_sidhe;Liath Sidhe;;;;;;;;;;x
+liath_sidhe_full;Way of the Liath Sidhe;;;;;;;;;;x
+liath_sidhe_DESC;In Aos Si culture, the Sidhe is the meeting place of the tribe, it is where the elders preside over legal issues, where marriage vows are said, and even where children, however few there may be, are born into the world. The word Sidhe mains mound or hill as well, where the dead are buried. Even their name, Aos Si, means mound-builders. This is why the Sidhe is important. \n For Aos Si, the Liath Sidhe is primarily worship by those on the coast, adhering more to the sea than to the forests. The Si much like the Nua care for racial purity, but maybe out of necessity rather than descrimination, though it is not un-heard of for Aos Si to leave the forest to live with their interracial mates.;;;;;;;;;;x
 
 #Gods and Piety Localisation
 GOD_WILDERNESSS;The Wilderness;;;;;;;;;;x

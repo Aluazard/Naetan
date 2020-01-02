@@ -45,6 +45,7 @@ c_lunresa;Lunresa;;;;;;;;;;;;;;
 c_salevero;Salevero;;;;;;;;;;;;;;
 c_arele;Arele;;;;;;;;;;;;;;
 c_pontelona;Pontelona;;;;;;;;;;;;;;
+c_tiverway;Tiverway;;;;;;;;;;;;;;
 
 b_sasayn;Sasayn;;;;;;;;;;;;;
 b_miserth;Miserth;;;;;;;;;;;;;
@@ -152,3 +153,6 @@ b_ascotri;Ascotri;;;;;;;;;;;;;
 b_alvemao;Alvemao;;;;;;;;;;;;;
 b_vozani;Vozani;;;;;;;;;;;;;
 b_malla;Mal-la;;;;;;;;;;;;;
+b_rorbon;Rorbon;;;;;;;;;;;;;
+b_newnasloe;Newnasloe;;;;;;;;;;;;;
+b_barkana;Barkana;;;;;;;;;;;;;

@@ -1,5 +1,8 @@
-	title = c_turalid
-	max_settlements = 2
-	culture = hausa
-	religion = buddhist
-	b_duyarda = tribal
+	title = c_tiverway
+	max_settlements = 5
+	culture = kalleon
+	religion = eros_triad
+
+	b_barkana = castle
+	b_rorbon = city
+	b_newnasloe = temple

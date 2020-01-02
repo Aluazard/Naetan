@@ -20,12 +20,12 @@ feudal_governments = {
 		}
 		frame_suffix = "_fiefdom"
 		potential = {
-			# OR = {
-			# 	culture = belfast
-			# 	culture = tocharian
-			# 	culture = kalleon
-			# 	culture = crytan
-			# }
+			OR = {
+				culture = belfast
+				culture = alanis
+				culture = kalleon
+				culture = crytan
+			}
 		}
 		
 		color = { 150 0 0 }

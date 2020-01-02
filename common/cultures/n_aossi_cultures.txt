@@ -1,0 +1,145 @@
+sidhe = {
+	graphical_cultures = {
+        aossigfx westerngfx 
+	}
+	
+	iefyr = {
+        graphical_cultures = {
+            aossigfx westerngfx
+        }
+        
+        color = { 0 85 34 }
+        
+        male_names = {
+			Halamar Elnaril Wyninn Orrian Ailmer Vulas Illitran Filvendor Thuridan Paeral Kharis Nevarth Otaehryn Ninleyn Ayen Aimon Traeliorn Eldaerenth Kerym 
+			Eltaor Vaalyun Hastios Aien Galaeron Usunaar Theodluin Avourel Ivaran Ranaeril Vesryn Taerentym Bialaer Ivasaar Ayred Maiele Neldor Gormer Siveril 
+        }
+        female_names = {
+			Deulara Shael Sylmare Nuala Haciathra Ellarian Neia Mylaela Sylmare Zilyana Zestari Nephinae Melarue Teriani Alenia Makaela Naevys Phelorna Amnestria 
+			Sarya Sillavana Ikeshia Myantha Alavara Vanya Kythaela Soliana Elmyra Tiriana Faunalyn Ilyana Nicudivh Yrathea Lymseia Elanil Elanalue Namys Valindra 
+        }
+        from_dynasty_prefix = "e "
+        bastard_dynasty_prefix = "e "
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	nym = {
+        graphical_cultures = {
+            aossigfx westerngfx
+        }
+        
+        color = { 0 85 34 }
+        
+        male_names = {
+			Halamar Elnaril Wyninn Orrian Ailmer Vulas Illitran Filvendor Thuridan Paeral Kharis Nevarth Otaehryn Ninleyn Ayen Aimon Traeliorn Eldaerenth Kerym 
+			Eltaor Vaalyun Hastios Aien Galaeron Usunaar Theodluin Avourel Ivaran Ranaeril Vesryn Taerentym Bialaer Ivasaar Ayred Maiele Neldor Gormer Siveril 
+        }
+        female_names = {
+			Deulara Shael Sylmare Nuala Haciathra Ellarian Neia Mylaela Sylmare Zilyana Zestari Nephinae Melarue Teriani Alenia Makaela Naevys Phelorna Amnestria 
+			Sarya Sillavana Ikeshia Myantha Alavara Vanya Kythaela Soliana Elmyra Tiriana Faunalyn Ilyana Nicudivh Yrathea Lymseia Elanil Elanalue Namys Valindra 
+        }
+        from_dynasty_prefix = "e "
+        bastard_dynasty_prefix = "e "
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	sinaht = {
+        graphical_cultures = {
+            aossigfx westerngfx
+        }
+        
+        color = { 0 85 34 }
+        
+        male_names = {
+			Halamar Elnaril Wyninn Orrian Ailmer Vulas Illitran Filvendor Thuridan Paeral Kharis Nevarth Otaehryn Ninleyn Ayen Aimon Traeliorn Eldaerenth Kerym 
+			Eltaor Vaalyun Hastios Aien Galaeron Usunaar Theodluin Avourel Ivaran Ranaeril Vesryn Taerentym Bialaer Ivasaar Ayred Maiele Neldor Gormer Siveril 
+        }
+        female_names = {
+			Deulara Shael Sylmare Nuala Haciathra Ellarian Neia Mylaela Sylmare Zilyana Zestari Nephinae Melarue Teriani Alenia Makaela Naevys Phelorna Amnestria 
+			Sarya Sillavana Ikeshia Myantha Alavara Vanya Kythaela Soliana Elmyra Tiriana Faunalyn Ilyana Nicudivh Yrathea Lymseia Elanil Elanalue Namys Valindra 
+        }
+        from_dynasty_prefix = "e "
+        bastard_dynasty_prefix = "e "
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	maiele = {
+        graphical_cultures = {
+            aossigfx westerngfx
+        }
+        
+        color = { 0 85 34 }
+        
+        male_names = {
+			Halamar Elnaril Wyninn Orrian Ailmer Vulas Illitran Filvendor Thuridan Paeral Kharis Nevarth Otaehryn Ninleyn Ayen Aimon Traeliorn Eldaerenth Kerym 
+			Eltaor Vaalyun Hastios Aien Galaeron Usunaar Theodluin Avourel Ivaran Ranaeril Vesryn Taerentym Bialaer Ivasaar Ayred Maiele Neldor Gormer Siveril 
+        }
+        female_names = {
+			Deulara Shael Sylmare Nuala Haciathra Ellarian Neia Mylaela Sylmare Zilyana Zestari Nephinae Melarue Teriani Alenia Makaela Naevys Phelorna Amnestria 
+			Sarya Sillavana Ikeshia Myantha Alavara Vanya Kythaela Soliana Elmyra Tiriana Faunalyn Ilyana Nicudivh Yrathea Lymseia Elanil Elanalue Namys Valindra 
+        }
+        from_dynasty_prefix = "e "
+        bastard_dynasty_prefix = "e "
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	namys = {
+        graphical_cultures = {
+            aossigfx westerngfx
+        }
+        
+        color = { 0 85 34 }
+        
+        male_names = {
+			Halamar Elnaril Wyninn Orrian Ailmer Vulas Illitran Filvendor Thuridan Paeral Kharis Nevarth Otaehryn Ninleyn Ayen Aimon Traeliorn Eldaerenth Kerym 
+			Eltaor Vaalyun Hastios Aien Galaeron Usunaar Theodluin Avourel Ivaran Ranaeril Vesryn Taerentym Bialaer Ivasaar Ayred Maiele Neldor Gormer Siveril 
+        }
+        female_names = {
+			Deulara Shael Sylmare Nuala Haciathra Ellarian Neia Mylaela Sylmare Zilyana Zestari Nephinae Melarue Teriani Alenia Makaela Naevys Phelorna Amnestria 
+			Sarya Sillavana Ikeshia Myantha Alavara Vanya Kythaela Soliana Elmyra Tiriana Faunalyn Ilyana Nicudivh Yrathea Lymseia Elanil Elanalue Namys Valindra 
+        }
+        from_dynasty_prefix = "e "
+        bastard_dynasty_prefix = "e "
+
+        modifier = default_culture_modifier
+        pat_grf_name_chance = 30
+        mat_grf_name_chance = 10
+        father_name_chance = 25
+        
+        pat_grm_name_chance = 20
+        mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+}

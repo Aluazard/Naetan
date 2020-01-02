@@ -1,0 +1,69 @@
+sidhe_group = {
+	has_coa_on_barony_only = yes
+    graphical_culture = aossigfx
+    crusade_cb = crusade
+    playable = yes
+    ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+    ai_convert_same_group = 1
+	ai_convert_other_group = 1
+
+	daoine_sidhe = {
+		graphical_culture = aossigfx
+        interface_skin = { pagan_interface }
+        
+        icon = 5 #14
+        color = { 0.8 0.8 0.6 }
+            
+        crusade_name = DAOINE_WILDHUNT
+        scripture_name = DAOINE_SCRIPTS
+
+        god_names = {
+			SIDHE
+	   }
+        
+        can_excommunicate = yes
+        can_grant_divorce = yes
+        can_grant_invasion_cb = invasion
+        can_grant_claim = yes
+        can_call_crusade = yes
+        can_demand_religious_conversion = yes
+        priests_can_marry = yes
+
+        piety_name = DAOINE_LIGHT
+
+        bs_marriage = yes
+        pc_marriage = yes
+        psc_marriage = yes
+        divine_blood = yes
+	}
+
+	liath_sidhe = {
+		graphical_culture = aossigfx
+        interface_skin = { pagan_interface }
+        
+        icon = 14 #5
+        color = { 0.8 0.8 0.6 }
+            
+        crusade_name = LIATH_WILDHUNT
+        scripture_name = LIATH_SCRIPTS
+
+		god_names = {
+			SIDHE
+	   }
+        
+        can_excommunicate = yes
+        can_grant_divorce = yes
+        can_grant_invasion_cb = invasion
+        can_grant_claim = yes
+        can_call_crusade = yes
+        can_demand_religious_conversion = yes
+        priests_can_marry = yes
+
+        piety_name = LIATH_LIGHT
+
+        bs_marriage = yes
+        pc_marriage = yes
+        psc_marriage = yes
+        divine_blood = yes
+	}
+}

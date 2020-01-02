@@ -1,0 +1,20 @@
+2000 = {
+	name = Nicudivh
+	female = yes
+	culture = iefyr
+	religion = daoine_sidhe
+	14250.1.1 = {
+		birth = yes
+	}
+	dynasty = 2000
+}
+
+2001 = {
+	name = Aaris
+	culture = nym
+	religion = daoine_sidhe
+	14230.1.1 = {
+		birth = yes
+	}
+	dynasty = 2000
+}

@@ -1,5 +1,5 @@
-	title = c_turyut
-	max_settlements = 7
-	culture = khitan
-	religion = finnish_pagan_reformed
-	b_kalict = tribal
+title = c_isilynor 
+max_settlements = 4
+
+culture = iefyr
+religion = daoine_sidhe

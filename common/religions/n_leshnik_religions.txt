@@ -3,7 +3,7 @@ phezeth_group = {
     graphical_culture = leshnikgfx
     crusade_cb = crusade
     playable = yes
-    ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+    ai_peaceful = no # Will make Hordes lose their super aggressiveness
     ai_convert_same_group = 1
 	ai_convert_other_group = 1
 	

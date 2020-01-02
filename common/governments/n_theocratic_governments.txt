@@ -29,6 +29,9 @@ theocracy_governments = {
 			AND = {
 				religion = eros_triad
 			}
+			AND = {
+				controls_religion = yes
+			}
 		}
 		
 		color = { 220 220 220 }

@@ -1,5 +1,6 @@
-	title = c_sinele
-	max_settlements = 5
-	culture = bosnian
-	religion = mazdaki
-	b_rotict = tribal
+	title = c_iefyr
+	max_settlements = 4
+	culture = iefyr
+	religion = daoine_sidhe
+
+	b_iefyr = nomad

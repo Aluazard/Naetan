@@ -1,5 +1,6 @@
-	title = c_qosarda
-	max_settlements = 7
-	culture = alan
-	religion = orthodox
-	b_bosay = tribal
+	title = c_allais
+	max_settlements = 4
+	culture = iefyr
+	religion = daoine_sidhe
+
+	b_allais = temple

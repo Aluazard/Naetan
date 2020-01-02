@@ -16,6 +16,9 @@ tribal_governments = {
 		}
 		frame_suffix = "_pillagers"
 		potential = {
+			OR = {
+				culture = leshanka
+			}
 		}
 		
 		color = { 15 15 15 }

@@ -1,0 +1,73 @@
+e_iefyr_forest = {
+	capital = 396
+	color = { 0 85 34 }
+	color2 = { 0 85 34 }
+
+	landless = yes
+
+	culture = iefyr
+	religion = daoine_sidhe
+}
+
+e_nym_forest = {
+	capital = 442
+	color = { 0 100 34 }
+	color2 = { 0 100 34 }
+
+	landless = yes
+
+	culture = nym
+	religion = daoine_sidhe
+}
+
+c_iefyr = {
+	capital = 396
+	b_iefyr = {
+		title = sithe
+		title_female = sithe
+	}
+	color = { 0 85 34 }
+	color2 = { 0 85 34 }
+	culture = iefyr
+	religion = daoine_sidhe
+
+	title = alsidhe
+	title_female = alsidhe
+}
+
+c_isilynor = {
+	capital = 264
+	color = { 0 85 34 }
+	color2 = { 0 85 34 }
+	culture = iefyr
+	religion = daoine_sidhe
+
+	title = alsidhe
+	title_female = alsidhe
+}
+
+c_erahotha = {
+	capital = 442
+	b_erahotha = {
+		title = sithe
+		title_female = sithe
+	}
+	color = { 0 85 34 }
+	color2 = { 0 85 34 }
+	culture = nym
+	religion = daoine_sidhe
+
+	title = alsidhe
+	title_female = alsidhe
+}
+
+c_allais = {
+	capital = 341
+	color = { 0 85 50 }
+	color2 = { 0 85 50 }
+	culture = iefyr
+	religion = daoine_sidhe
+
+	title = alsidhe
+	title_female = alsidhe
+}

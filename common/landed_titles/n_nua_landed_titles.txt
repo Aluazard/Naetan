@@ -577,6 +577,28 @@ e_nua = {
 				title = comte
 				title_female = comtess
 			}
+
+			c_tiverway = {
+				capital = 314
+				b_barkana = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_rorbon = {
+					title = sherriff
+					title_female = sherriff
+				}
+				b_newnasloe = {
+					title = sherriff
+					title_female = sherriff
+				}
+				color = { 252 219 67 }
+				color2 = { 252 219 67 }
+				culture = kalleon
+				religion = eros_triad
+				title = comte
+				title_female = comtess
+			}
 		}
 		d_ante_cryta = {
 			color = { 252 219 67 }

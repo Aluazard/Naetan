@@ -1,5 +1,6 @@
 	title = c_erahotha
-	max_settlements = 2
-	culture = irish
-	religion = jain
-	b_qicam = tribal
+	max_settlements = 4
+	culture = nym
+	religion = daoine_sidhe
+
+	b_erahotha = nomad

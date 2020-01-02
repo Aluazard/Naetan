@@ -149,6 +149,36 @@ spriteTypes = {
 		noOfFrames = 6
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_charframe_150_sidhe"
+		texturefile = "gfx/interface/charframes/charframe_150_tribal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_sidhe"
+		texturefile = "gfx/interface/charframes/charframe_100_tribal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_sidhe"
+		texturefile = "gfx/interface/charframes/charframe_75_tribal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_sidhe"
+		texturefile = "gfx/interface/charframes/charframe_50_tribal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_sidhe"
+		texturefile = "gfx/interface/charframes/charframe_34_tribal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
 	
 	### government icons
 	spriteType = {
@@ -164,7 +194,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/governments/government_icon_erostriad.dds"
 	}
 	spriteType = {
-		name = "GFX_icon_pillagers_government"
+		name = "GFX_icon_sidhe_government"
+		texturefile = "gfx/interface/governments/government_icon_pillagers.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_wilderness_government"
 		texturefile = "gfx/interface/governments/government_icon_pillagers.dds"
 	}
 }
