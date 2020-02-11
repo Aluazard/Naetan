@@ -2,7 +2,7 @@ namespace = aging_events
 
 # .01 aging events for nua
 character_event = { 
-	id = aging_events.02
+	id = aging_events.01
 	is_triggered_only = yes
 	hide_window = yes
 	
@@ -24,6 +24,12 @@ character_event = {
 				is_wilderness = yes
 			}
 			add_wilderness_age = yes
+		}
+		if = {
+			limit = {
+				is_aossi = yes
+			}
+			add_aossi_age = yes
 		}
 	}
 }

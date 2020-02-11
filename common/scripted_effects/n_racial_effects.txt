@@ -18,6 +18,51 @@ add_racial_trait = {
 	}
 }
 
+add_aossi_age = {
+	remove_trait = aossi
+	remove_trait = aossi_1
+	remove_trait = aossi_2
+	remove_trait = aossi_3
+	remove_trait = aossi_4
+	remove_trait = aossi_5
+	
+	if = {
+		limit = { age < 25 }
+		add_trait = aossi_1
+	}
+	if = {
+		limit = {
+			age >= 25
+			age < 81
+		}
+		remove_trait = aossi_1
+		add_trait = aossi_2
+	}
+	if = {
+		limit = {
+			age >= 81
+			age < 101
+		}
+		remove_trait = aossi_2
+		add_trait = aossi_3
+	}
+	if = {
+		limit = {
+			age >= 101
+			age < 121
+		}
+		remove_trait = aossi_3
+		add_trait = aossi_4
+	}
+	if = {
+		limit = {
+			age > 121
+		}
+		remove_trait = aossi_4
+		add_trait = aossi_5
+	}
+}
+
 add_nua_age = {
 	remove_trait = nua
 	remove_trait = nua_1

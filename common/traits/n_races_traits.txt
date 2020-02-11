@@ -42,6 +42,17 @@ aossi = {
 		nua_3
 		nua_4
 		nua_5
+		aossi_1
+		aossi_2
+		aossi_3
+		aossi_4
+		aossi_5
+		leshnik
+		leshnik_1
+		leshnik_2
+		leshnik_3
+		leshnik_4
+		leshnik_5
 	}
 
 	opposite_opinion = -10
@@ -70,6 +81,17 @@ aossi_1 = {
 		nua_3
 		nua_4
 		nua_5
+		aossi
+		aossi_2
+		aossi_3
+		aossi_4
+		aossi_5
+		leshnik
+		leshnik_1
+		leshnik_2
+		leshnik_3
+		leshnik_4
+		leshnik_5
 	}
 
 	opposite_opinion = -10
@@ -100,6 +122,17 @@ aossi_2 = {
 		nua_3
 		nua_4
 		nua_5
+		aossi
+		aossi_1
+		aossi_3
+		aossi_4
+		aossi_5
+		leshnik
+		leshnik_1
+		leshnik_2
+		leshnik_3
+		leshnik_4
+		leshnik_5
 	}
 
 	opposite_opinion = -10
@@ -130,6 +163,17 @@ aossi_3 = {
 		nua_3
 		nua_4
 		nua_5
+		aossi
+		aossi_1
+		aossi_2
+		aossi_4
+		aossi_5
+		leshnik
+		leshnik_1
+		leshnik_2
+		leshnik_3
+		leshnik_4
+		leshnik_5
 	}
 
 	opposite_opinion = -10
@@ -160,6 +204,17 @@ aossi_4 = {
 		nua_3
 		nua_4
 		nua_5
+		aossi
+		aossi_1
+		aossi_2
+		aossi_3
+		aossi_5
+		leshnik
+		leshnik_1
+		leshnik_2
+		leshnik_3
+		leshnik_4
+		leshnik_5
 	}
 
 	opposite_opinion = -10
@@ -190,6 +245,17 @@ aossi_5 = {
 		nua_3
 		nua_4
 		nua_5
+		aossi
+		aossi_1
+		aossi_2
+		aossi_3
+		aossi_4
+		leshnik
+		leshnik_1
+		leshnik_2
+		leshnik_3
+		leshnik_4
+		leshnik_5
 	}
 
 	opposite_opinion = -10

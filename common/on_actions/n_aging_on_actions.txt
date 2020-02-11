@@ -1,32 +1,32 @@
 on_startup = {
 	events = {
-		aging_events.02 # Sets age
+		aging_events.01 # Sets age
 	}
 }
 
 # Fires for the player when the game starts
 on_chronicle_start = {
 	events = {
-		aging_events.02 # Sets age
+		aging_events.01 # Sets age
 	}
 }
 
 on_yearly_pulse = { # Meant to catch anyone added over the course of the year by the game
 	events = {
-		aging_events.02 # Sets age
+		aging_events.01 # Sets age
 	}
 }
 
 # character
 on_adulthood = {
 	events = {
-		aging_events.02 # Sets age
+		aging_events.01 # Sets age
 	}
 }
 
 # character
 on_birth = {
 	events = {
-		aging_events.02 # Sets age
+		aging_events.01 # Sets age
 	}
 }
